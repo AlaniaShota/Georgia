@@ -1,9 +1,9 @@
 // import React from 'react'
 
-const Gid = () => {
+const TourGuide = () => {
     return (
-        <div>Gid</div>
+        <div>Tour Guide</div>
     )
 }
 
-export default Gid
+export default TourGuide

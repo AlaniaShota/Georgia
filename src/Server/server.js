@@ -241,7 +241,7 @@ createServer({
       id: "el24",
       img: "/assets/georgian-traditional-food/Gozinaki.jpg",
       type: "DESSERT",
-      name: "Most iconic: Gozinaki",
+      name: "Gozinaki",
       location: "",
       about:
         "Gozinaki is a traditional Georgian dessert with a crunchy texture, made with honey-fried, caramelized nuts such as walnuts, almonds, and hazelnuts. This sweet treat is often cut into diamond shapes, and it is traditionally consumed on Christmas and New Year.",
