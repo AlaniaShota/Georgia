@@ -4,6 +4,7 @@ import mapImg from '../../assets/traditional-food-img/georgia-map.png'
 import RestaurantCard from './Components/RestaurantCard'
 import FilterButton from './Components/FilterButton'
 import { Link, useSearchParams } from 'react-router-dom'
+import RandomFood from './Components/RandomFood'
 
 
 const leadMoreContent = 15
@@ -30,12 +31,14 @@ const TraditionalFood = () => {
 
   return (
     <div>
-      <img src={foodImg} alt="Tbilisi" className='object-cover h-[518px] w-full' />
-      <div className='absolute top-[190px] left-[590px]'>
-        <img src={mapImg} alt="Georgian Map" className='object-cover' />
-        <h1 className=' text-center text-2xl text-[#fff] font-bold leading-9'>Georgia</h1>
+      <div className='flex w-full justify-center items-center'>
+        <img src={foodImg} alt="Tbilisi" className='object-cover h-[518px] w-full' />
+        <div className='absolute'>
+          <img src={mapImg} alt="Georgian Map" className='object-cover' />
+          <h1 className='text-center text-2xl text-[#fff] font-bold leading-9'>Georgia</h1>
+        </div>
       </div>
-      <div className='container'>
+      <div className='lg:container sm:mx-8 lg:mx-0'>
         <p className='flex flex-wrap mt-7 text-lg font-normal'>
           Georgia is known for its delicious food. While traveling in Georgia you will notice that throughout the country
           the taste and flavor differs. Every province of Georgia has its own variation of traditional cuisine.
@@ -47,6 +50,9 @@ const TraditionalFood = () => {
           <p className='text-base font-light py-3'>The best traditional places in Georgia, recommended by food professionals</p>
           <RestaurantCard />
         </div>
+        {traditionalFood.sort(() => 0.5 - Math.random()).slice(0, 2).map((item, index) => (
+          <RandomFood key={index} randomFood={item} designClass={index === 0 ? 'flex-row rounded-r-lg' : ' flex-row-reverse rounded-l-lg'} />
+        ))}
         <FilterButton search={setSearchParams} categoryFilter={categoryFilter} />
         <div className='grid grid-cols-3 gap-5'>
           {displayedTraditionalFood.slice(0, next).map(item => (
@@ -87,7 +93,6 @@ const TraditionalFood = () => {
               </span>
             </button>
           )}
-
         </div>}
       </div>
     </div>

@@ -1,7 +1,7 @@
 
 const FilterButton = ({ search, categoryFilter }) => {
     return (
-        <div className='my-5'>
+        <div className='mb-5 mt-20'>
             <button
                 className="border border-buttonBorder hover:bg-buttonHover py-1 px-4 mr-4 rounded-md"
                 onClick={() => search({ type: 'SAVORY PIE' })}>
