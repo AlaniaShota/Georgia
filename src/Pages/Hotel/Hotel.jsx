@@ -1,8 +1,15 @@
-// import React from 'react'
+import { Helmet } from "react-helmet"
 
 const Hotel = () => {
   return (
-    <div>Hotel</div>
+    <div>
+      
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Hotel</title>
+      </Helmet>
+      Hotel
+    </div>
   )
 }
 

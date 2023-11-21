@@ -1,8 +1,15 @@
-// import React from 'react'
+import { Helmet } from "react-helmet"
 
 const Home = () => {
     return (
-        <div>Hello Vite</div>
+        <div>
+
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Home</title>
+            </Helmet>
+            Home
+        </div>
     )
 }
 

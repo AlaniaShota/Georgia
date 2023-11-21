@@ -5,6 +5,7 @@ import RestaurantCard from './Components/RestaurantCard'
 import FilterButton from './Components/FilterButton'
 import { Link, useSearchParams } from 'react-router-dom'
 import RandomFood from './Components/RandomFood'
+import { Helmet } from "react-helmet";
 
 
 const leadMoreContent = 15
@@ -31,6 +32,10 @@ const TraditionalFood = () => {
 
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Traditional food</title>
+      </Helmet>
       <div className='flex w-full justify-center items-center'>
         <img src={foodImg} alt="Tbilisi" className='object-cover h-[518px] w-full' />
         <div className='absolute'>

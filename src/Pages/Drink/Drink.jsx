@@ -1,7 +1,14 @@
+import { Helmet } from "react-helmet"
 
 const Drink = () => {
   return (
-    <div>Drink</div>
+    <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Drink</title>
+      </Helmet>
+      Drink
+    </div>
   )
 }
 
