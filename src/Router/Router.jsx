@@ -7,6 +7,7 @@ import TraditionalFood from '../Pages/TraditionalFood/TraditionalFood'
 import TourGuide from '../Pages/Gid/Gid'
 import DetailFood from '../Pages/TraditionalFood/Components/DetailFood'
 import Drink from '../Pages/Drink/Drink'
+import TraditionalFoodLibery from '../Pages/TraditionalFood/Components/TraditionalFoodLibery'
 
 export const router = createBrowserRouter([
     {
@@ -26,15 +27,16 @@ export const router = createBrowserRouter([
             },
             {
                 path: 'traditional-food',
-                element: <TraditionalFood />
+                element: <TraditionalFood />,
+                
+            },{
+                path: 'library',
+                element: <TraditionalFoodLibery />
             },
+
             {
                 path: "traditional-food/:id",
                 element: <DetailFood />,
-            },
-            {
-                path: "drink",
-                element: <Drink />,
             },
             {
                 path: 'gid',

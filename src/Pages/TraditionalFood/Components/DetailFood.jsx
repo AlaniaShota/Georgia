@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, useParams, useLocation } from 'react-router-dom';
-import RecommendationRestaurant from './RecommendationRestaurant';
+import RecommendationRestaurant from './Recommendation/RecommendationRestaurant';
 
 const DetailFood = () => {
     const [moreInformation, setMoreInformation] = useState(null)

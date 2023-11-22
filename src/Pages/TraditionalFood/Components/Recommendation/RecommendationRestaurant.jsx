@@ -13,7 +13,7 @@ const RecommendationRestaurant = () => {
 
     return (
         <div className='mt-8 '>
-            <h1 className='pl-4 text-2xl'>Recommendation Restaurant</h1>
+            <h1 className=' text-2xl'>Recommendation Restaurant</h1>
             <div className='grid grid-cols-3 gap-8 mt-4'>
                 {randomData.map(item => (
                     <div key={item.id} className='flex flex-col justify-between border drop-shadow-md  rounded-lg bg-whiteBackground'>
