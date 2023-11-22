@@ -10,13 +10,13 @@ export default {
       },
       backgroundColor: {
         buttonHover: "rgb(59 130 246 / 0.1)",
-        whiteBackground:'#fff',
-        blueBackground : '#1976d2'
+        whiteBackground: "#fff",
+        blueBackground: "#1976d2",
       },
       textColor: {
         buttonColor: "#1976D2",
         textSecondColor: "#00000099",
-        whiteText: '#ffffff'
+        whiteText: "#ffffff",
       },
     },
   },
