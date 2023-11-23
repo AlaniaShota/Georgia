@@ -1,7 +1,12 @@
 import { useEffect, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
+
+import { dishesDescription, dishesTitle } from "./Card/constants";
+
 import FilterButton from "./FilterButton";
 import RandomFood from "./Random/RandomFood";
+
+import foodImg from "../../../assets/traditional-food-img/georgia-traditional-food-image.jpg";
 
 const leadMoreContent = 15;
 
@@ -26,22 +31,30 @@ const TraditionalFoodLibery = () => {
   const displayedTraditionalFood = categoryFilter
     ? traditionalFood.filter((van) => van.type === categoryFilter)
     : traditionalFood;
+
   return (
     <div>
-      <div className="lg:container sm:mx-8 lg:mx-0">
+      <div className="flex w-full justify-start items-center flex-wrap">
+        <img
+          src={foodImg}
+          alt="Tbilisi"
+          className="object-cover h-[737px] w-full"
+        />
+        <div className="absolute ml-40">
+          <h1 className="text-left text-2xl text-whiteText font-bold cursor-default">
+            {dishesTitle}
+          </h1>
+          <p className="w-[497px] text-whiteText text-base font-normal cursor-default">
+            {dishesDescription}
+          </p>
+        </div>
+      </div>
+      <div className="lg:container sm:mx-8 lg:mx-0 my-20 [&>*:nth-child(2)]:flex-row-reverse">
         {traditionalFood
           .sort(() => 0.5 - Math.random())
           .slice(0, 2)
           .map((item, index) => (
-            <RandomFood
-              key={index}
-              randomFood={item}
-              designClass={
-                index === 0
-                  ? "flex-row rounded-r-lg"
-                  : " flex-row-reverse rounded-l-lg"
-              }
-            />
+            <RandomFood key={index} randomFood={item} />
           ))}
         <FilterButton
           search={setSearchParams}
@@ -77,7 +90,7 @@ const TraditionalFoodLibery = () => {
             <div className="p-4">
               <div className="flex justify-center items-center w-full">
                 <Link
-                  to={`/traditional-food/${item.id}`}
+                  to={`/library/${item.id}`}
                   state={{
                     search: `?${searchParams.toString()}`,
                     type: categoryFilter,

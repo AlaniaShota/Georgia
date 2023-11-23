@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useParams, useLocation } from "react-router-dom";
+
 import RecommendationRestaurant from "./Recommendation/RecommendationRestaurant";
 
 const DetailFood = () => {
@@ -18,7 +19,7 @@ const DetailFood = () => {
 
   function ItemContent() {
     return (
-      <div className="border drop-shadow-md rounded-lg bg-whiteBackground">
+      <div className="border drop-shadow-md rounded-lg bg-whiteBackground my-20">
         <img
           src={moreInformation.img}
           alt={moreInformation.name}

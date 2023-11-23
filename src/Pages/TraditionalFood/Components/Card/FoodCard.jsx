@@ -1,7 +1,12 @@
-import { useState, useEffect } from "react";
+import { motion, useInView } from "framer-motion";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+
+import { dishesDescription, dishesTitle } from "./constants";
+
 const FoodCard = () => {
   const [foodCard, setFoodCard] = useState([]);
+  const ref = useRef(null);
 
   useEffect(() => {
     fetch("/api/foods")
@@ -9,18 +14,24 @@ const FoodCard = () => {
       .then((data) => setFoodCard(data.foods));
   }, []);
 
+  const isInView = useInView(ref, { once: true });
+
   return (
-    <div className="grid grid-cols-3  gap-5 lg:container sm:mx-8 lg:mx-0">
+    <motion.div
+      ref={ref}
+      style={{
+        transform: isInView ? "none" : "translateX(-200px)",
+        opacity: isInView ? 1 : 0,
+        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+      }}
+      className="grid grid-cols-3  gap-5 h-96"
+    >
       <div className="flex flex-col justify-between items-start">
-        <h1 className="text-2xl font-bold mb-5">Unique Georgian Dishes</h1>
-        <p className="text-sm text-textSecondColor pr-6">
-          Taste the diversity of Georgian cuisine at a traditional supra, a
-          communal feast, where a variety of dishes and beverages is served.
-          Supra is an essential part of the country`s cultural identity and
-          offers a unique opportunity to taste the delicious regional dishes and
-          dive into the atmosphere of real Georgia. Don`t miss out on this
-          opportunity to immerse yourself in the culture of the country through
-          its gastronomy!
+        <h1 className="text-2xl font-bold mb-5 cursor-default">
+          {dishesTitle}
+        </h1>
+        <p className="text-sm text-textSecondColor pr-6 cursor-default">
+          {dishesDescription}
         </p>
         <Link to="/library">
           <button className="border border-buttonBorder hover:bg-buttonHover py-1 px-4 mr-4 mt-5 rounded-md">
@@ -31,18 +42,24 @@ const FoodCard = () => {
         </Link>
       </div>
       {foodCard.slice(0, 2).map((item) => (
-        <div
+        <Link
+          to={`/traditional-food/${item.id}`}
           key={item.id}
-          className="flex border drop-shadow-md rounded-lg bg-whiteBackground"
+          className="flex "
         >
-          <img
+          <motion.img
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.9 }}
+            style={{
+              transition: "all 0.9s",
+            }}
             src={item.img}
             alt={item.name}
             className="h-full object-cover rounded-md"
           />
-        </div>
+        </Link>
       ))}
-    </div>
+    </motion.div>
   );
 };
 

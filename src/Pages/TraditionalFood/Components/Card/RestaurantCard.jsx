@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
@@ -39,9 +40,13 @@ const RestaurantCard = () => {
             </div>
             <Link to={item.visit} className="ml-2 mb-2">
               <button className=" hover:bg-buttonHover hover:rounded-md py-1 px-2">
-                <span className="text-buttonColor text-sm font-medium">
+                <motion.h3
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.9 }}
+                  className="text-buttonColor text-sm font-medium"
+                >
                   WEBSITE
-                </span>
+                </motion.h3>
               </button>
             </Link>
           </div>

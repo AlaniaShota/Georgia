@@ -33,7 +33,6 @@ const FilterButton = ({ search, categoryFilter }) => {
       </button>
       {categoryFilter ? (
         <button
-          // className="border border-buttonBorder hover:bg-buttonHover py-1 px-4 mr-4 rounded-md"
           onClick={() => search({})}
         >
           <span>Clear filter</span>
