@@ -35,9 +35,7 @@ const DetailFood = () => {
         <div className="flex justify-between">
           <div className="flex flex-col flex-wrap justify-center items-start px-4">
             {moreInformation.type ? (
-              <h6 className="text-secondColor">
-                {moreInformation.type}
-              </h6>
+              <h6 className="text-secondColor">{moreInformation.type}</h6>
             ) : null}
             <h1 className="text-4xl">{moreInformation.name}</h1>
             {moreInformation.location ? (
