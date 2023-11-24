@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-const leadMoreContent = 3;
+const loadMoreContentCount = 3;
 
 const RestaurantCard = () => {
   const [recommendationRestaurant, setRecommendationRestaurant] = useState([]);
-  const [next, setNext] = useState(leadMoreContent);
+  const [next, setNext] = useState(loadMoreContentCount);
 
   useEffect(() => {
     fetch("/api/restaurants")
@@ -15,7 +15,7 @@ const RestaurantCard = () => {
   });
 
   const handleMoreItem = () => {
-    setNext(next + leadMoreContent);
+    setNext(next + loadMoreContentCount);
   };
 
   return (
@@ -24,7 +24,7 @@ const RestaurantCard = () => {
         {recommendationRestaurant.slice(0, next).map((item) => (
           <div
             key={item.id}
-            className="flex flex-col justify-between h-[355px] border drop-shadow-md rounded-lg bg-whiteBackground"
+            className="flex flex-col justify-between h-[355px] border drop-shadow-md rounded-lg bg-white"
           >
             <img
               src={item.img}
@@ -34,16 +34,16 @@ const RestaurantCard = () => {
             />
             <div className="flex flex-col pl-4 ">
               <h1 className="text-xl font-normal">{item.name}</h1>
-              <h3 className="text-sm text-textSecondColor font-light">
+              <h3 className="text-sm text-secondColor font-light">
                 {item.location}
               </h3>
             </div>
             <Link to={item.visit} className="ml-2 mb-2">
-              <button className=" hover:bg-buttonHover hover:rounded-md py-1 px-2">
+              <button className=" hover:bg-middleBlueHoverColor hover:rounded-md py-1 px-2">
                 <motion.h3
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.9 }}
-                  className="text-buttonColor text-sm font-medium"
+                  className="text-darkBlueText text-sm font-medium"
                 >
                   WEBSITE
                 </motion.h3>
@@ -56,9 +56,9 @@ const RestaurantCard = () => {
         {next < recommendationRestaurant?.length && (
           <button
             onClick={handleMoreItem}
-            className="border border-buttonBorder hover:bg-buttonHover  py-1 px-4 rounded-md"
+            className="border border-middleBlueBorderColor hover:bg-middleBlueHoverColor  py-1 px-4 rounded-md"
           >
-            <span className=" text-md text-buttonColor ">LOAD MORE</span>
+            <span className=" text-md text-darkBlueText ">LOAD MORE</span>
           </button>
         )}
       </div>

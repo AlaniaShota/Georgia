@@ -1,18 +1,18 @@
 import { useEffect, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 
-import { dishesDescription, dishesTitle } from "./Card/constants";
+import { Dishes_Title, Dishes_Description } from "./Card/constants";
 
 import FilterButton from "./FilterButton";
 import RandomFood from "./Random/RandomFood";
 
 import foodImg from "../../../assets/traditional-food-img/georgia-traditional-food-image.jpg";
 
-const leadMoreContent = 15;
+const loadMoreContentCount = 15;
 
 const TraditionalFoodLibery = () => {
   const [traditionalFood, setTraditionalFood] = useState([]);
-  const [next, setNext] = useState(leadMoreContent);
+  const [next, setNext] = useState(loadMoreContentCount);
   const [showMore, setShowMore] = useState(false);
   const [searchParams, setSearchParams] = useSearchParams();
 
@@ -23,7 +23,7 @@ const TraditionalFoodLibery = () => {
   }, []);
 
   const handleMoreItem = () => {
-    setNext(next + leadMoreContent);
+    setNext(next + loadMoreContentCount);
   };
 
   const categoryFilter = searchParams.get("type");
@@ -41,11 +41,11 @@ const TraditionalFoodLibery = () => {
           className="object-cover h-[737px] w-full"
         />
         <div className="absolute ml-40">
-          <h1 className="text-left text-2xl text-whiteText font-bold cursor-default">
-            {dishesTitle}
+          <h1 className="text-left text-2xl text-white font-bold cursor-default">
+            {Dishes_Title}
           </h1>
-          <p className="w-[497px] text-whiteText text-base font-normal cursor-default">
-            {dishesDescription}
+          <p className="w-[497px] text-white font-normal cursor-default">
+            {Dishes_Description}
           </p>
         </div>
       </div>
@@ -64,7 +64,7 @@ const TraditionalFoodLibery = () => {
       <div className="grid grid-cols-3 gap-5 lg:container sm:mx-8 lg:mx-0">
         {displayedTraditionalFood.slice(0, next).map((item) => (
           <div
-            className="flex flex-col justify-between border drop-shadow-md rounded-lg bg-whiteBackground"
+            className="flex flex-col justify-between border drop-shadow-md rounded-lg bg-white"
             key={item.id}
           >
             <img
@@ -75,15 +75,15 @@ const TraditionalFoodLibery = () => {
             <div className="p-4">
               <h1 className="text-xl font-normal">{item.name}</h1>
               {item.location ? (
-                <h3 className="text-sm text-textSecondColor font-normal my-3">
+                <h3 className="text-sm text-secondColor font-normal my-3">
                   {item.location}
                 </h3>
               ) : (
-                <h3 className="text-sm text-textSecondColor font-normal my-3">
-                  Most iconic:{" "}
+                <h3 className="text-sm text-secondColor font-normal my-3">
+                  Most iconic:
                 </h3>
               )}
-              <h3 className="text-sm text-textSecondColor font-normal">
+              <h3 className="text-sm text-secondColor font-normal">
                 {showMore ? item.about : `${item.about.substring(0, 200)}`}
               </h3>
             </div>
@@ -98,10 +98,10 @@ const TraditionalFoodLibery = () => {
                   onClick={() => setShowMore(!showMore)}
                 >
                   <button
-                    className="border border-buttonBorder hover:bg-buttonHover rounded-md py-1 px-4"
+                    className="border border-middleBlueBorderColor hover:bg-middleBlueHoverColor rounded-md py-1 px-4"
                     onClick={handleMoreItem}
                   >
-                    <span className="text-sm font-medium text-buttonColor">
+                    <span className="text-sm font-medium text-darkBlueText">
                       SHOW MORE
                     </span>
                   </button>
@@ -115,10 +115,10 @@ const TraditionalFoodLibery = () => {
         <div className="flex justify-center items-center my-10">
           {next < traditionalFood?.length && (
             <button
-              className="border border-buttonBorder  hover:bg-buttonHover  py-1 px-4 rounded-md"
+              className="border border-middleBlueBorderColor  hover:bg-middleBlueHoverColor  py-1 px-4 rounded-md"
               onClick={handleMoreItem}
             >
-              <span className=" text-md text-buttonColor">LOAD MORE</span>
+              <span className=" text-md text-darkBlueText">LOAD MORE</span>
             </button>
           )}
         </div>

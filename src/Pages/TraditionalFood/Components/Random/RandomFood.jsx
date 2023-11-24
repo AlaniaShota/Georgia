@@ -9,7 +9,7 @@ const RandomFood = ({ randomFood }) => {
   return (
     <Link
       to={`/library/${randomFood.id}`}
-      className={`flex justify-between  basis-1 my-4  border drop-shadow-md  rounded-lg bg-whiteBackground`}
+      className={`flex justify-between  basis-1 my-4  border drop-shadow-md  rounded-lg bg-white`}
     >
       <motion.div
         ref={ref}
@@ -21,7 +21,7 @@ const RandomFood = ({ randomFood }) => {
         className="flex flex-col justify-center px-6 py-5 w-[650px]"
       >
         <h1 className="text-3xl text-start">{randomFood.name}</h1>
-        <p className="text-sm text-textSecondColor pt-4">
+        <p className="text-sm text-secondColor pt-4">
           {`${randomFood.about.substring(0, 500)}...`}
         </p>
       </motion.div>

@@ -20,7 +20,7 @@ const RecommendationRestaurant = () => {
         {randomData.map((item) => (
           <div
             key={item.id}
-            className="flex flex-col justify-between border drop-shadow-md  rounded-lg bg-whiteBackground"
+            className="flex flex-col justify-between border drop-shadow-md  rounded-lg bg-white"
           >
             <img
               src={item.img}
@@ -30,13 +30,13 @@ const RecommendationRestaurant = () => {
             />
             <div className="flex flex-col justify-center my-6 pl-4 ">
               <h1 className="text-xl font-normal">{item.name}</h1>
-              <h3 className="text-sm text-textSecondColor font-light">
+              <h3 className="text-sm text-secondColor font-light">
                 {item.location}
               </h3>
             </div>
             <Link to={item.visit} className="ml-2 mb-2">
-              <button className=" hover:bg-buttonHover hover:rounded-md py-1 px-2">
-                <span className="text-buttonColor text-sm font-medium">
+              <button className=" hover:bg-middleBlueHoverColor hover:rounded-md py-1 px-2">
+                <span className="text-darkBlueText text-sm font-medium">
                   WEBSITE
                 </span>
               </button>

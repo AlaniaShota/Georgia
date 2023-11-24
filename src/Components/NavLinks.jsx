@@ -30,7 +30,7 @@ const NavLinks = ({ scrolled }) => {
   ];
   return (
     <>
-      <header className="flex lg:items-center lg:justify-end lg:flex-row sm:flex-col w-full  text-xl  text-whiteText ">
+      <header className="flex lg:items-center lg:justify-end lg:flex-row sm:flex-col w-full  text-xl  text-white ">
         {links.map((item) => (
           <div
             className={`flex sm:flex-col lg:flex-row sm:static sm:items-start sm:w-auto transition-colors duration-500 ease-in ${

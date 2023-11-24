@@ -5,17 +5,17 @@ import RestaurantCard from "./Components/Card/RestaurantCard";
 import FoodCard from "./Components/Card/FoodCard";
 import { SliderLibrary } from "./Components/SliderLibrary";
 import {
-  aboutPage,
-  pageTitle,
-  recommendationTitle,
-  recommendationWord,
-  supraDescription,
-  supraTitle,
-  tamadaDescription,
-  tamadaTitle,
-  traditionFirstDescription,
-  traditionTitle,
-  traditionSecondDescription,
+  Page_Title,
+  About_Page,
+  Tradition_Title,
+  Tradition_First_Description,
+  Tradition_Second_Description,
+  Supra_Title,
+  Supra_Description,
+  Recommendation_Title,
+  Recommendation_Word,
+  Tamada_Title,
+  Tamada_Description,
 } from "./constants";
 
 const TraditionalFood = () => {
@@ -32,41 +32,41 @@ const TraditionalFood = () => {
           className="object-cover h-[737px] w-full"
         />
         <div className="absolute ml-40">
-          <h1 className="text-left text-2xl text-[#fff] font-bold cursor-default">
-            {pageTitle}
+          <h1 className="text-left text-2xl text-white font-bold cursor-default">
+            {Page_Title}
           </h1>
-          <p className="w-[497px] text-[#fff] text-base font-normal cursor-default">
-            {aboutPage}
+          <p className="w-[497px] text-white font-normal cursor-default">
+            {About_Page}
           </p>
         </div>
       </div>
       <div className="my-20 lg:container sm:mx-8 lg:mx-0 ">
         <div className="flex flex-col justify-center items-center ">
           <h1 className="text-2xl font-bold mb-5 text-center cursor-default">
-            {traditionTitle}
+            {Tradition_Title}
           </h1>
-          <p className="text-base text-textSecondColor font-medium mb-5 text-center w-[740px] cursor-default">
-            {traditionFirstDescription}
+          <p className="text-secondColor font-medium mb-5 text-center w-[740px] cursor-default">
+            {Tradition_First_Description}
           </p>
-          <p className="text-center text-textSecondColor text-base font-medium w-[740px] cursor-default">
-            {traditionSecondDescription}
+          <p className="text-center text-secondColor font-medium w-[740px] cursor-default">
+            {Tradition_Second_Description}
           </p>
         </div>
         <div className="my-20 grid grid-cols-2 gap-2  ">
           <div className="flex flex-col justify-evenly items-start ">
-            <h1 className="text-2xl font-bold cursor-default">{supraTitle}</h1>
+            <h1 className="text-2xl font-bold cursor-default">{Supra_Title}</h1>
             <p className=" lg:text-lg sm:text-sm font-semibold ">
-              {supraDescription}
+              {Supra_Description}
             </p>
           </div>
           <SliderLibrary />
         </div>
         <div className="flex flex-col my-20 ">
           <h1 className="text-xl font-semibold cursor-default">
-            {recommendationTitle}
+            {Recommendation_Title}
           </h1>
-          <p className="text-base font-light py-3 cursor-default">
-            {recommendationWord}
+          <p className="font-light py-3 cursor-default">
+            {Recommendation_Word}
           </p>
           <RestaurantCard />
         </div>
@@ -78,11 +78,11 @@ const TraditionalFood = () => {
               className="w-full rounded-xl border drop-shadow-lg"
             />
             <div className="absolute ml-20">
-              <h1 className="text-left text-2xl text-[#fff] font-bold cursor-default">
-                {tamadaTitle}
+              <h1 className="text-left text-2xl text-white font-bold cursor-default">
+                {Tamada_Title}
               </h1>
-              <p className="w-[497px] text-[#fff] text-base font-normal cursor-default">
-                {tamadaDescription}
+              <p className="w-[497px] text-white font-normal cursor-default">
+                {Tamada_Description}
               </p>
             </div>
           </div>
