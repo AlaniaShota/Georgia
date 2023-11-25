@@ -19,6 +19,11 @@ const Header = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
+
+    //მაქვს ბაგი მეგონა ვფიქრობ სქროლვის ბრალია სხვა ფეიჯზე გადასვილას დასქროლილ ადგილას მტოვებს
+    // return () => {
+    //   window.removeEventListener("scroll", handleScroll);
+    // };
   }, []);
 
   return (
