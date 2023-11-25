@@ -39,27 +39,31 @@ const RestaurantCard = () => {
               </h3>
             </div>
             <Link to={item.visit} className="ml-2 mb-2">
-              <button className=" hover:bg-middleBlueHoverColor hover:rounded-md py-1 px-2">
-                <motion.h3
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.9 }}
-                  className="text-darkBlueText text-sm font-medium"
-                >
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                className=" hover:bg-middleBlueHoverColor hover:rounded-md py-1 px-2"
+              >
+                <h3 className="text-darkBlueText text-sm font-medium">
                   WEBSITE
-                </motion.h3>
-              </button>
+                </h3>
+              </motion.button>
             </Link>
           </div>
         ))}
       </div>
       <div className="flex justify-center items-center my-10">
         {next < recommendationRestaurant?.length && (
-          <button
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
             onClick={handleMoreItem}
             className="border border-middleBlueBorderColor hover:bg-middleBlueHoverColor  py-1 px-4 rounded-md"
           >
             <span className=" text-md text-darkBlueText ">LOAD MORE</span>
-          </button>
+          </motion.button>
         )}
       </div>
     </>

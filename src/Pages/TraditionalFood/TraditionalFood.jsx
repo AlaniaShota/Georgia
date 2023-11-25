@@ -32,10 +32,10 @@ const TraditionalFood = () => {
           className="object-cover h-[737px] w-full"
         />
         <div className="absolute ml-40">
-          <h1 className="text-left text-2xl text-white font-bold cursor-default">
+          <h1 className="text-left pb-2 text-4xl text-white font-bold cursor-default">
             {Page_Title}
           </h1>
-          <p className="w-[497px] text-white font-normal cursor-default">
+          <p className="w-[497px] pt-2 text-white font-normal cursor-default">
             {About_Page}
           </p>
         </div>

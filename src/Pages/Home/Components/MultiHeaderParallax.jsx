@@ -21,7 +21,7 @@ const MultiHeaderParallax = () => {
     <div className="flex w-full justify-center items-center">
       <div
         ref={ref}
-        className="w-full h-screen overflow-hidden relative grid place-items-center border border-red-800"
+        className="w-full h-screen overflow-hidden relative grid place-items-center"
       >
         <motion.h1
           style={{ y: textY }}

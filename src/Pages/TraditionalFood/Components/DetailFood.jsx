@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Link, useParams, useLocation } from "react-router-dom";
 
@@ -26,11 +27,16 @@ const DetailFood = () => {
           className="rounded-t-lg object-contain"
         />
         <Link to={`..${search}`} relative="path" className="flex mt-2 pl-4">
-          <button className="border border-middleBlueBorderColor hover:bg-middleBlueHoverColor rounded-md py-2 px-4">
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+            className="border border-middleBlueBorderColor hover:bg-middleBlueHoverColor rounded-md py-2 px-4"
+          >
             <span className="text-darkBlueText font-medium">
               &larr; BACK TO {searchCategory}
             </span>
-          </button>
+          </motion.button>
         </Link>
         <div className="flex justify-between">
           <div className="flex flex-col flex-wrap justify-center items-start px-4">

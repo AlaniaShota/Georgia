@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -35,11 +36,16 @@ const RecommendationRestaurant = () => {
               </h3>
             </div>
             <Link to={item.visit} className="ml-2 mb-2">
-              <button className=" hover:bg-middleBlueHoverColor hover:rounded-md py-1 px-2">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                className=" hover:bg-middleBlueHoverColor hover:rounded-md py-1 px-2"
+              >
                 <span className="text-darkBlueText text-sm font-medium">
                   WEBSITE
                 </span>
-              </button>
+              </motion.button>
             </Link>
           </div>
         ))}

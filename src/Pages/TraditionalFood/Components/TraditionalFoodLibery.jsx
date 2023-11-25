@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 
@@ -97,14 +98,17 @@ const TraditionalFoodLibery = () => {
                   }}
                   onClick={() => setShowMore(!showMore)}
                 >
-                  <button
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.9 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 17 }}
                     className="border border-middleBlueBorderColor hover:bg-middleBlueHoverColor rounded-md py-1 px-4"
                     onClick={handleMoreItem}
                   >
                     <span className="text-sm font-medium text-darkBlueText">
                       SHOW MORE
                     </span>
-                  </button>
+                  </motion.button>
                 </Link>
               </div>
             </div>
@@ -114,12 +118,15 @@ const TraditionalFoodLibery = () => {
       {categoryFilter ? null : (
         <div className="flex justify-center items-center my-10">
           {next < traditionalFood?.length && (
-            <button
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
               className="border border-middleBlueBorderColor  hover:bg-middleBlueHoverColor  py-1 px-4 rounded-md"
               onClick={handleMoreItem}
             >
               <span className=" text-md text-darkBlueText">LOAD MORE</span>
-            </button>
+            </motion.button>
           )}
         </div>
       )}

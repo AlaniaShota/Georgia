@@ -20,6 +20,9 @@ export default {
       opacity: {
         5: 0.2,
       },
+      // scrollMargin: {
+      //   '96': '24rem',
+      // },
     },
   },
   plugins: [],
