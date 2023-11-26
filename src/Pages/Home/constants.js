@@ -13,3 +13,7 @@ export const Wine_Description =
 export const Cradle_Wine_Title = "The Cradle of Wine";
 export const Cradle_Wine_Description =
   "Georgians have been using the Qvevri method for making wine for 8,000 years, and it has become a leading wine-making method worldwide. This long and harmonious co-existence of clay and vine is all part of Georgia`s much-celebrated wine culture.";
+
+export const Cuisine_Title = "Cuisine";
+export const Cuisine_Description =
+  "Georgian cuisine is unique even though it reflects some elements of others since, over the centuries, it has benefitted from the best techniques and traditions of Europe and the Near East to create its own refined tastes. That is why Georgian cuisine is so rich and diverse, with every region having its own distinct products and inimitable dishes.";

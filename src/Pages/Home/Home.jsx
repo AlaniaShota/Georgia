@@ -3,14 +3,15 @@ import { Helmet } from "react-helmet";
 import MultiHeaderParallax from "./Components/MultiHeaderParallax";
 import MultiAlphabetDrag from "./Components/MultiAlphabetDrag";
 import MultiHeritageAnimation from "./Components/MultiHeritageAnimation";
+import MultiCuisineMouseMove from "./Components/MultiCuisineMouseMove";
 
 const cardVariants = {
   offscreen: {
-    y: 200,
+    y: 100,
   },
 
   onscreen: {
-    y: 150,
+    y: 70,
     transition: {
       type: "spring",
       bounce: 0.4,
@@ -25,10 +26,10 @@ function Card({ customComponent, isFirst }) {
       case "A":
         return <MultiAlphabetDrag />;
       case "B":
-        return <MultiHeritageAnimation />;
+        return <MultiCuisineMouseMove />;
       // სატესტოდ
-      // case "C":
-      //   return <MultiAlphabetDrag />;
+      case "C":
+        return <MultiHeritageAnimation />;
       default:
         return null;
     }

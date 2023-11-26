@@ -1,6 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useRef } from "react";
+
 import {
   Culture_Title,
   Culture_Description,
