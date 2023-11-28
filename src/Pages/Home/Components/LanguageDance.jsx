@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import ReactPlayer from "react-player";
-// import danceVideo from "../../../assets/home-video/Khorumi.mp4";
+import danceVideo from "../../../assets/home-video/Khorumi.mp4";
 import { Dance_Description, Dance_Title } from "../constants";
 
 const LanguageDance = () => {
@@ -35,7 +35,7 @@ const LanguageDance = () => {
       </div>
       <div onClick={handleClick}>
         <ReactPlayer
-          // url={danceVideo}
+          url={danceVideo}
           playing={isPlaying}
           controls
           style={{ objectFit: "cover", marginRight: "20px" }}
