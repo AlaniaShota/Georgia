@@ -754,7 +754,7 @@ createServer({
       "/restaurants",
       (schema, request) => {
         return schema.restaurants.all();
-      }
+      },
       // { timing: 2000, headers: { "Cache-Control": "no-store" } }
     );
 

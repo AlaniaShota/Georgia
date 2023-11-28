@@ -4,20 +4,33 @@ export default {
     container: {
       padding: "10rem",
     },
+
     extend: {
       borderColor: {
-        buttonBorder: "rgba(25, 118, 210, 0.5)",
+        middleBlueBorderColor: "rgba(25, 118, 210, 0.5)",
       },
       backgroundColor: {
-        buttonHover: "rgb(59 130 246 / 0.1)",
-        whiteBackground:'#fff',
-        blueBackground : '#1976d2'
+        middleBlueHoverColor: "rgb(59 130 246 / 0.1)",
+        darkBlueBackground: "#1976D2",
+        whiteSecondBackground: "#ffffffcc",
       },
       textColor: {
-        buttonColor: "#1976D2",
-        textSecondColor: "#00000099",
-        whiteText: '#ffffff'
+        darkBlueText: "#1976D2",
+        BlackSecondColor: "#00000099",
+        whiteSecondText: "#ffffffcc",
       },
+      opacity: {
+        5: 0.2,
+      },
+      height: {
+        630: "630px",
+      },
+      width: {
+        497: "497px",
+      },
+      // scrollMargin: {
+      //   '96': '24rem',
+      // },
     },
   },
   plugins: [],
