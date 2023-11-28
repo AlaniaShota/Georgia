@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import ReactPlayer from "react-player";
-// import folkVideo from "../../../assets/home-video/Dato_Kenchiashvili_,_Bichiko_Navrozashvili.mp4";
+import folkVideo from "../../../assets/home-video/Dato_Kenchiashvili_,_Bichiko_Navrozashvili.mp4";
 import { Link } from "react-router-dom";
 import { Folk_Description, Folk_Title } from "../constants";
 
@@ -15,7 +15,7 @@ const UniqueFolk = () => {
     <div className="flex justify-between items-center h-630 bg-black border drop-shadow-md rounded-md">
       <div onClick={handleClick}>
         <ReactPlayer
-          // url={folkVideo}
+          url={folkVideo}
           playing={isPlaying}
           controls
           style={{ objectFit: "cover", marginLeft: "20px" }}
