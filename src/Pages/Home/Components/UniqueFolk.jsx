@@ -1,9 +1,9 @@
-import { motion } from "framer-motion";
 import { useState } from "react";
 import ReactPlayer from "react-player";
 import folkVideo from "../../../assets/home-video/Dato_Kenchiashvili_,_Bichiko_Navrozashvili.mp4";
 import { Link } from "react-router-dom";
 import { Folk_Description, Folk_Title } from "../constants";
+import { ExploreButton } from "../../../Components/Button";
 
 const UniqueFolk = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -29,16 +29,9 @@ const UniqueFolk = () => {
           {Folk_Description}
         </p>
         <Link to="unique-folk">
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.9 }}
-            transition={{ type: "spring", stiffness: 400, damping: 17 }}
-            className="border border-white hover:bg-whiteSecondBackground py-1 px-4 rounded-md"
-          >
-            <span className="text-sm font-normal text-white hover:text-black">
-              EXPLORE
-            </span>
-          </motion.button>
+          <ExploreButton>
+            <span className="text-sm font-normal">EXPLORE</span>
+          </ExploreButton>
         </Link>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Button } from "../../../../Components/Button";
 
 const loadMoreContentCount = 3;
 
@@ -38,32 +39,21 @@ const RestaurantCard = () => {
                 {item.location}
               </h3>
             </div>
-            <Link to={item.visit} className="ml-2 mb-2">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.9 }}
-                transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                className=" hover:bg-middleBlueHoverColor hover:rounded-md py-1 px-2"
-              >
-                <h3 className="text-darkBlueText text-sm font-medium">
+            <Link to={item.visit} className="ml-4 mb-2">
+              <Button>
+                <span className="text-darkBlueText text-sm font-medium">
                   WEBSITE
-                </h3>
-              </motion.button>
+                </span>
+              </Button>
             </Link>
           </div>
         ))}
       </div>
       <div className="flex justify-center items-center my-10">
         {next < recommendationRestaurant?.length && (
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.9 }}
-            transition={{ type: "spring", stiffness: 400, damping: 17 }}
-            onClick={handleMoreItem}
-            className="border border-middleBlueBorderColor hover:bg-middleBlueHoverColor  py-1 px-4 rounded-md"
-          >
+          <Button onClick={handleMoreItem}>
             <span className=" text-md text-darkBlueText ">LOAD MORE</span>
-          </motion.button>
+          </Button>
         )}
       </div>
     </>

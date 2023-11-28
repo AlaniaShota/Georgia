@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 import { Dishes_Title, Dishes_Description } from "./constants";
+import { Button } from "../../../../Components/Button";
 
 const FoodCard = () => {
   const [foodCard, setFoodCard] = useState([]);
@@ -33,16 +34,11 @@ const FoodCard = () => {
           {Dishes_Description}
         </p>
         <Link to="/library">
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.9 }}
-            transition={{ type: "spring", stiffness: 400, damping: 17 }}
-            className="border border-middleBlueBorderColor hover:bg-middleBlueHoverColor py-1 px-4 mr-4 mt-5 rounded-md"
-          >
+          <Button>
             <span className="text-sm font-normal text-darkBlueText">
               EXPLORE MORE
             </span>
-          </motion.button>
+          </Button>
         </Link>
       </motion.div>
       {foodCard.slice(0, 2).map((item) => (

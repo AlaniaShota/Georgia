@@ -1,9 +1,9 @@
-import { motion } from "framer-motion";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import ReactPlayer from "react-player";
 import danceVideo from "../../../assets/home-video/Khorumi.mp4";
 import { Dance_Description, Dance_Title } from "../constants";
+import { ExploreButton } from "../../../Components/Button";
 
 const LanguageDance = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -21,16 +21,9 @@ const LanguageDance = () => {
           {Dance_Description}
         </p>
         <Link to="national-ballet">
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.9 }}
-            transition={{ type: "spring", stiffness: 400, damping: 17 }}
-            className="border border-white hover:bg-whiteSecondBackground py-1 px-4 rounded-md"
-          >
-            <span className="text-sm font-normal text-white hover:text-black">
-              EXPLORE
-            </span>
-          </motion.button>
+          <ExploreButton>
+            <span className="text-sm font-normal">EXPLORE</span>
+          </ExploreButton>
         </Link>
       </div>
       <div onClick={handleClick}>

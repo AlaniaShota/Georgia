@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Cuisine_Description, Cuisine_Title } from "../constants";
 import testImg from "../../../assets/home-img/test.jpeg";
 import { Link } from "react-router-dom";
+import { ExploreButton } from "../../../Components/Button";
 
 const MultiCuisineMouseMove = () => {
   const [mousePosition, setMousePosition] = useState({
@@ -61,17 +62,10 @@ const MultiCuisineMouseMove = () => {
             <p className="w-497 py-8 text-center text-BlackSecondColor font-normal cursor-default">
               {Cuisine_Description}
             </p>
-            <Link to="heritage">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.9 }}
-                transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                className="border border-middleBlueBorderColor hover:bg-middleBlueHoverColor py-1 px-4   rounded-md"
-              >
-                <span className="text-sm font-normal text-darkBlueText">
-                  EXPLORE
-                </span>
-              </motion.button>
+            <Link to="">
+              <ExploreButton>
+                <span className="text-sm text-black font-normal">EXPLORE</span>
+              </ExploreButton>
             </Link>
           </div>
         </div>

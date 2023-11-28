@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { Button } from "../../../../Components/Button";
 
 const RecommendationRestaurant = () => {
   const [randomRestaurant, setRandomRestaurant] = useState([]);
@@ -35,17 +36,12 @@ const RecommendationRestaurant = () => {
                 {item.location}
               </h3>
             </div>
-            <Link to={item.visit} className="ml-2 mb-2">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.9 }}
-                transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                className=" hover:bg-middleBlueHoverColor hover:rounded-md py-1 px-2"
-              >
+            <Link to={item.visit} className="ml-4 mb-2">
+              <Button>
                 <span className="text-darkBlueText text-sm font-medium">
                   WEBSITE
                 </span>
-              </motion.button>
+              </Button>
             </Link>
           </div>
         ))}

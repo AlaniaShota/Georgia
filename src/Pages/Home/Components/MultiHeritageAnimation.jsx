@@ -4,6 +4,7 @@ import { useRef } from "react";
 
 import { Cradle_Wine_Title, Cradle_Wine_Description } from "../constants";
 import kvevriImg from "../../../assets/home-img/akhaltsikhe-winemakeing.jpg";
+import { ExploreButton } from "../../../Components/Button";
 
 const MultiHeritageAnimation = () => {
   const ref = useRef();
@@ -40,16 +41,9 @@ const MultiHeritageAnimation = () => {
             {Cradle_Wine_Description}
           </p>
           <Link to="heritage">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.9 }}
-              transition={{ type: "spring", stiffness: 400, damping: 17 }}
-              className="border border-white hover:bg-whiteSecondBackground py-1 px-4  mt-10 rounded-md"
-            >
-              <span className="text-sm font-normal text-white hover:text-black">
-                EXPLORE
-              </span>
-            </motion.button>
+            <ExploreButton>
+              <span className="text-sm font-normal">EXPLORE</span>
+            </ExploreButton>
           </Link>
         </motion.div>
       </div>

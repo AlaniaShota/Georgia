@@ -8,6 +8,7 @@ import FilterButton from "./FilterButton";
 import RandomFood from "./Random/RandomFood";
 
 import foodImg from "../../../assets/traditional-food-img/georgia-traditional-food-image.jpg";
+import { Button } from "../../../Components/Button";
 
 const loadMoreContentCount = 15;
 
@@ -98,17 +99,11 @@ const TraditionalFoodLibery = () => {
                   }}
                   onClick={() => setShowMore(!showMore)}
                 >
-                  <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.9 }}
-                    transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                    className="border border-middleBlueBorderColor hover:bg-middleBlueHoverColor rounded-md py-1 px-4"
-                    onClick={handleMoreItem}
-                  >
+                  <Button onClick={handleMoreItem}>
                     <span className="text-sm font-medium text-darkBlueText">
                       SHOW MORE
                     </span>
-                  </motion.button>
+                  </Button>
                 </Link>
               </div>
             </div>
@@ -118,15 +113,9 @@ const TraditionalFoodLibery = () => {
       {categoryFilter ? null : (
         <div className="flex justify-center items-center my-10">
           {next < traditionalFood?.length && (
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.9 }}
-              transition={{ type: "spring", stiffness: 400, damping: 17 }}
-              className="border border-middleBlueBorderColor  hover:bg-middleBlueHoverColor  py-1 px-4 rounded-md"
-              onClick={handleMoreItem}
-            >
+            <Button onClick={handleMoreItem}>
               <span className=" text-md text-darkBlueText">LOAD MORE</span>
-            </motion.button>
+            </Button>
           )}
         </div>
       )}

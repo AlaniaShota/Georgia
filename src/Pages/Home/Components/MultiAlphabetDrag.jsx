@@ -4,6 +4,7 @@ import { useRef } from "react";
 import alphabetImg from "../../../assets/home-img/Language-Header.jpeg";
 import { Alphabet_Title, Alphabet_Description } from "../constants";
 import { Link } from "react-router-dom";
+import { ExploreButton } from "../../../Components/Button";
 
 const MultiAlphabetDrag = () => {
   const titleRef = useRef(null);
@@ -41,17 +42,10 @@ const MultiAlphabetDrag = () => {
           </motion.p>
         </motion.div>
 
-        <Link to="heritage">
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.9 }}
-            transition={{ type: "spring", stiffness: 400, damping: 17 }}
-            className="border border-white hover:bg-whiteSecondBackground py-1 px-4  mt-10 rounded-md"
-          >
-            <span className="text-sm font-normal text-white hover:text-black">
-              EXPLORE
-            </span>
-          </motion.button>
+        <Link to="language">
+          <ExploreButton>
+            <span className="text-sm font-normal">EXPLORE</span>
+          </ExploreButton>
         </Link>
       </div>
     </div>
