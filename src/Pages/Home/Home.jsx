@@ -1,16 +1,18 @@
-import { Helmet } from "react-helmet"
+import { Helmet } from "react-helmet";
+import MultiHeaderParallax from "./Components/MultiHeaderParallax";
 
 const Home = () => {
-    return (
-        <div>
+  return (
+    <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Home</title>
+      </Helmet>
+      <div>
+        <MultiHeaderParallax />
+      </div>
+    </div>
+  );
+};
 
-            <Helmet>
-                <meta charSet="utf-8" />
-                <title>Home</title>
-            </Helmet>
-            Home
-        </div>
-    )
-}
-
-export default Home
+export default Home;

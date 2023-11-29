@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet"
+import { Helmet } from "react-helmet";
 
 const Location = () => {
   return (
@@ -9,7 +9,7 @@ const Location = () => {
       </Helmet>
       Location
     </div>
-  )
-}
+  );
+};
 
-export default Location
+export default Location;
