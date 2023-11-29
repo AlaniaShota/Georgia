@@ -1,8 +1,12 @@
 import { Helmet } from "react-helmet";
 import languageImg from "../../assets/home-img/Language-Header.jpeg";
+
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { TextPlugin } from "gsap/TextPlugin";
 import {
-  Language_Description,
   Language_Title,
+  Language_Description,
   Stages_Title,
   Stages_description,
   Source_Title,
@@ -23,6 +27,31 @@ import {
 } from "./constants";
 
 const LanguagePage = () => {
+  const titleTextRef = useRef(null);
+  const descriptionTextRef = useRef(null);
+
+  useEffect(() => {
+    const firstTextElement = titleTextRef.current;
+    const secondTextElement = descriptionTextRef.current;
+    gsap.registerPlugin(TextPlugin);
+
+    gsap.to(firstTextElement, {
+      stagger: 0.02,
+      duration: 3,
+      delay: 1,
+      text: Language_Title,
+      ease: "power1.inOut",
+    });
+
+    gsap.to(secondTextElement, {
+      stagger: 0.02,
+      duration: 5,
+      delay: 3,
+      text: Language_Description,
+      ease: "power1.inOut",
+    });
+  });
+
   return (
     <>
       <Helmet>
@@ -36,12 +65,14 @@ const LanguagePage = () => {
           className="object-cover h-[737px] w-full"
         />
         <div className="absolute  ml-40">
-          <h1 className="text-left pb-5 text-4xl text-white font-bold cursor-default">
-            {Language_Title}
-          </h1>
-          <p className="w-497 pt-2 text-white font-normal cursor-default">
-            {Language_Description}
-          </p>
+          <h1
+            className="text-left pb-5 text-4xl text-white font-bold cursor-default"
+            ref={titleTextRef}
+          ></h1>
+          <p
+            className="w-497 pt-2 text-white font-normal cursor-default"
+            ref={descriptionTextRef}
+          ></p>
         </div>
       </div>
       <div className="my-20 lg:container sm:mx-8 lg:mx-0 ">

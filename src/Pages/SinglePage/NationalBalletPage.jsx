@@ -1,6 +1,9 @@
 import { Helmet } from "react-helmet";
 import balletImg from "../../assets/home-img/mastery-of-generation.jpg";
 import coupleImg from "../../assets/home-img/dance-gnta.webp";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { TextPlugin } from "gsap/TextPlugin";
 import {
   Dance_Title,
   Dance_Description,
@@ -16,6 +19,31 @@ import {
 } from "./constants";
 
 const NationalBalletPage = () => {
+  const titleTextRef = useRef(null);
+  const descriptionTextRef = useRef(null);
+
+  useEffect(() => {
+    const firstTextElement = titleTextRef.current;
+    const secondTextElement = descriptionTextRef.current;
+    gsap.registerPlugin(TextPlugin);
+
+    gsap.to(firstTextElement, {
+      stagger: 0.02,
+      duration: 3,
+      delay: 1,
+      text: Dance_Title,
+      ease: "power1.inOut",
+    });
+
+    gsap.to(secondTextElement, {
+      stagger: 0.02,
+      duration: 5,
+      delay: 3,
+      text: Dance_Description,
+      ease: "power1.inOut",
+    });
+  });
+  
   return (
     <>
       <Helmet>
@@ -29,12 +57,14 @@ const NationalBalletPage = () => {
           className="bg-cover h-[737px] w-full"
         />
         <div className="absolute  ml-40">
-          <h1 className="text-left pb-5 text-4xl text-white font-bold cursor-default">
-            {Dance_Title}
-          </h1>
-          <p className="w-497 pt-2 text-white font-normal cursor-default">
-            {Dance_Description}
-          </p>
+          <h1
+            className="text-left pb-5 text-4xl text-white font-bold cursor-default"
+            ref={titleTextRef}
+          ></h1>
+          <p
+            className="w-497 pt-2 text-white font-normal cursor-default"
+            ref={descriptionTextRef}
+          ></p>
         </div>
       </div>
       <div className="my-20 lg:container sm:mx-8 lg:mx-0 ">

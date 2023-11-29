@@ -1,12 +1,10 @@
-import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Link, useSearchParams } from "react-router-dom";
-
+import { gsap } from "gsap";
+import { TextPlugin } from "gsap/TextPlugin";
 import { Dishes_Title, Dishes_Description } from "./Card/constants";
-
 import FilterButton from "./FilterButton";
 import RandomFood from "./Random/RandomFood";
-
 import foodImg from "../../../assets/traditional-food-img/georgia-traditional-food-image.jpg";
 import { Button } from "../../../Components/Button";
 
@@ -18,10 +16,33 @@ const TraditionalFoodLibery = () => {
   const [showMore, setShowMore] = useState(false);
   const [searchParams, setSearchParams] = useSearchParams();
 
+  const titleTextRef = useRef(null);
+  const descriptionTextRef = useRef(null);
+
   useEffect(() => {
     fetch("/api/foods")
       .then((res) => res.json())
       .then((data) => setTraditionalFood(data.foods));
+    const firstTextElement = titleTextRef.current;
+    const secondTextElement = descriptionTextRef.current;
+
+    gsap.registerPlugin(TextPlugin);
+
+    gsap.to(firstTextElement, {
+      stagger: 0.02,
+      duration: 3,
+      delay: 1,
+      text: Dishes_Title,
+      ease: "power1.inOut",
+    });
+
+    gsap.to(secondTextElement, {
+      stagger: 0.02,
+      duration: 5,
+      delay: 3,
+      text: Dishes_Description,
+      ease: "power1.inOut",
+    });
   }, []);
 
   const handleMoreItem = () => {
@@ -43,12 +64,14 @@ const TraditionalFoodLibery = () => {
           className="object-cover h-[737px] w-full"
         />
         <div className="absolute ml-40">
-          <h1 className="text-left text-2xl text-white font-bold cursor-default">
-            {Dishes_Title}
-          </h1>
-          <p className="w-497 text-white font-normal cursor-default">
-            {Dishes_Description}
-          </p>
+          <h1
+            className="text-left text-2xl text-white font-bold cursor-default"
+            ref={titleTextRef}
+          ></h1>
+          <p
+            className="w-497 text-white font-normal cursor-default"
+            ref={descriptionTextRef}
+          ></p>
         </div>
       </div>
       <div className="lg:container sm:mx-8 lg:mx-0 my-20 [&>*:nth-child(2)]:flex-row-reverse">

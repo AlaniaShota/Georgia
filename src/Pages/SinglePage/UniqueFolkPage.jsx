@@ -26,8 +26,36 @@ import folkImg from "../../assets/home-img/lilesvanurisimgera.jpg";
 import mountainImg from "../../assets/home-img/shutterstock-1303327465.webp";
 import songImg from "../../assets/home-img/shutterstock-1648681876(1).webp";
 import danceImg from "../../assets/home-img/why-georgia-dance.webp";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { TextPlugin } from "gsap/TextPlugin";
 
 const UniqueFolkPage = () => {
+  const titleTextRef = useRef(null);
+  const descriptionTextRef = useRef(null);
+
+  useEffect(() => {
+    const firstTextElement = titleTextRef.current;
+    const secondTextElement = descriptionTextRef.current;
+    gsap.registerPlugin(TextPlugin);
+
+    gsap.to(firstTextElement, {
+      stagger: 0.02,
+      duration: 3,
+      delay: 1,
+      text: Folk_Title,
+      ease: "power1.inOut",
+    });
+
+    gsap.to(secondTextElement, {
+      stagger: 0.02,
+      duration: 5,
+      delay: 3,
+      text: Folk_Description,
+      ease: "power1.inOut",
+    });
+  });
+
   return (
     <>
       <Helmet>
@@ -41,12 +69,14 @@ const UniqueFolkPage = () => {
           className="bg-cover h-[737px] w-full"
         />
         <div className="absolute  ml-40">
-          <h1 className="text-left pb-5 text-4xl text-white font-bold cursor-default">
-            {Folk_Title}
-          </h1>
-          <p className="w-497 pt-2 text-white font-normal cursor-default">
-            {Folk_Description}
-          </p>
+          <h1
+            className="text-left pb-5 text-4xl text-white font-bold cursor-default"
+            ref={titleTextRef}
+          ></h1>
+          <p
+            className="w-497 pt-2 text-white font-normal cursor-default"
+            ref={descriptionTextRef}
+          ></p>
         </div>
       </div>
       <div className="my-20 lg:container sm:mx-8 lg:mx-0 ">
