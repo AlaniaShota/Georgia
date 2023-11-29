@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Link, useParams, useLocation } from "react-router-dom";
 
