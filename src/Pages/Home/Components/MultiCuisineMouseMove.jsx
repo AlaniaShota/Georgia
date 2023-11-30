@@ -62,7 +62,7 @@ const MultiCuisineMouseMove = () => {
             <p className="w-497 py-8 text-center text-BlackSecondColor font-normal cursor-default">
               {Cuisine_Description}
             </p>
-            <Link to="">
+            <Link to="delicious">
               <ExploreButton>
                 <span className="text-sm text-black font-normal">EXPLORE</span>
               </ExploreButton>

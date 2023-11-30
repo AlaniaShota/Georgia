@@ -122,3 +122,43 @@ export const Genius_Third_Description =
   "A performance of Georgian folk dance and song performed in national dress makes for a gorgeous sight, which is why you’ll never find less than a packed house whenever Georgians are ready to perform them on the world’s largest stages.";
 export const Genius_Fourth_Description =
   "This has been but a small tour through Georgian folklore. However, there is always more to discover. You can best experience this depth by coming here, to Georgia! Share On";
+
+export const Delicious_Cuisine_Title = "Georgian Delicious Cuisine";
+export const Delicious_Cuisine_Description =
+  "Year after year, discoveries of millennia-old artifacts such as kitchenware and agricultural implements prove that an exceptional gastronomic culture existed on the territory of modern Georgia for thousands of years.";
+export const Wine_Wheat_Honey_Title = "Wine, Wheat, Honey";
+export const Wine_Wheat_Honey_First_Description =
+  "A Georgian created the story of Amirani, built Uplistsikhe, grew numerous varieties of grapevines, wrote The Knight in the Panther’s Skin, carved Vardzia into a cliff, came up with satsivi recipe, built Svetitskhoveli, and made sulguni cheese. “Whoever made sulguni and satsivi has done as much to preserve Georgia as the victorious knights at Didgori,” writes the publicist Akaki Bakradze. ";
+export const Wine_Wheat_Honey_Second_Description =
+  "Georgia is a gastronomic country, where the table, cuisine, customs, rituals, creative spirit, and nature are reflected in food as clearly as in art, sculpture, or music. ";
+export const Wine_Wheat_Honey_Third_Description =
+  "The botanical map of Georgia has only gotten richer over the centuries, and Georgian farmers have grown all sorts of new things in their homeland. Various cultures have come from foreign lands bringing crops such as beans, corn, rice, tomatoes, and eggplants. Then, the Georgians matched each to their cuisine and tastes, making new recipes that spread from region to region. ";
+export const Wine_Wheat_Honey_Fourth_Description =
+  "Georgia is recognized as the birthplace of grapevines, wheat, and honey. Making wine in clay vessels qvevri has an 8,000 year-old-history and, in 2013, was recognized as a Monument of Intangible Cultural Heritage by UNESCO. Kakhetian churchkhela, made from natural grape juice, wheat flour and walnuts, is a great energy bar variety that is gaining more popularity globally. ";
+export const Kind_Of_Flavor_Title = "What Kind of Flavor Does Georgia Have?";
+export const Kind_Of_Flavor_First_Description =
+  "Okay, so what is it that makes Georgian cuisine stand out? What kind of flavor does Georgian cuisine have? ";
+export const Kind_Of_Flavor_Second_Description =
+  "In the spring, when the gardens, forests, and meadows are draped in green, field greens (pkhali) – nettles, goosefoot, purslane, savory, kale, ransoms, and smilax – appear in the kitchens. There are many different ways to make pkhali patties - with oil and walnuts, or just chop them as they are and season with salt and vinegar, or serve them as a soup or a salad.";
+export const Vegetarians_Vegans_Title =
+  "Georgian cuisine is heaven for vegetarians and vegans. ";
+export const Vegetarians_Vegans_First_Description =
+  "Amazingly delicious fruits and vegetables come along with summer. Fresh eggplant with walnuts is a delicacy of the Georgian supra and is made year-round. Starting in late summer, every family is making sauces, like sour plum tkemali sauce, spicy ajika, and tomato sauce for the winter.";
+export const Vegetarians_Vegans_Second_Description =
+  "Amazing smells waft around once the dishes are getting generously seasoned with pennyroyal, fennel, basil, and the major seasoning of Georgian cuisine – coriander, which pairs well with both meat and vegetable dishes. ";
+export const Vegetarians_Vegans_Third_Description =
+  "In autumn the entire country is permeated with the smell of badagi. Dozens of varieties of grapevines grow and are part of the country`s identity. Making tatara (condensed grape juice) and making churchkhela out of it is a tasty tradition of many Georgian families.";
+export const Question_Title = "Asian? No, Georgian!";
+export const Answer_First_Word =
+  "Georgia, the main country along the Silk Road connecting Asia and Europe, took parts of different continents’ cuisine and adopted them.";
+export const Answer_Second_Word =
+  "Staple Georgian dishes include, but are not limited to:";
+export const Answer_Description =
+  "Every region in this small country has a defining dish. For example, shechamandi, a kind of soup made of matsoni, buttermilk, cornel, or sorrel, is only made in Kartli. In Svaneti, we have the unique narchvi cheese, kubdari pie and potato mash with cheese, tashmijabi. Samegrelo has cheesy polenta elarji and cheese rolls in mint sauce, gebzhalia. Guria has satsivi sauce and kupati sausages. Imereti has chicken in isrim-makvali sauce and a dozen kinds of pkhali. Ajapsandali stew is a truly urban, Tbilisi dish. Mtsvadi is grilled everywhere, but Kakhetian mtsvadi is especially famous. Mtianeti has dambalkhacho cheese. Meskheti has khinkali filled with sun-dried meat, apokhti, and condensed mulberry sauce bakmazi. Apkhazeti has its unique ajika and apkhazura sausages. Samachablo has khabizgina and mkhlovani pies, and Ajara has curds-based kuruti and borano. ";
+export const Why_Georgia_Title = "But Even So, Why Georgia?";
+export const Why_Georgia_First_Description =
+  "Every region in Georgia has an impressive dish on the table. There are many flavors to enjoy, but the crown jewel of Georgian cuisine is khachapuri.";
+export const Why_Georgia_Second_Description =
+  "Khachapuri is a cheese-filled pastry and nowadays, every region has a different variation. The Meskhetian flaky “chalma khachapuri” is revolutionary, and the boat-shaped Ajarian khachapuri has become extremely popular. The most widespread is Imeretian khachapuri, with delicious squeaky cheese, wrapped up into thin, round dough. ";
+export const Why_Georgia_Third_Description =
+  "Khachapuri is the heart of Georgia, a fitting metaphor for the warmth of its food and people.";

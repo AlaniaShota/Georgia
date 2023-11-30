@@ -78,7 +78,7 @@ const HeritagePage = () => {
         </div>
       </div>
       <div className="my-20 lg:container sm:mx-8 lg:mx-0 ">
-        <div className="flex flex-col justify-center items-start mb-10">
+        <div className="flex flex-col justify-center items-start mb-10 px-20">
           <h1 className="mb-6 text-3xl font-bold">{Testament_Title}</h1>
           <img
             src={testamentImg}
@@ -98,7 +98,7 @@ const HeritagePage = () => {
             {Testament_Fourth_Description}
           </p>
         </div>
-        <div className="flex flex-col justify-center items-start my-10">
+        <div className="flex flex-col justify-center items-start my-10 px-20">
           <h2 className="mb-6 text-3xl font-bold">{Vine_Clay_Title}</h2>
           <img
             src={kvevriImg}
@@ -112,7 +112,7 @@ const HeritagePage = () => {
             {Vine_Clay_Second_Description}
           </p>
         </div>
-        <div className="flex flex-col justify-center items-start my-10">
+        <div className="flex flex-col justify-center items-start my-10 px-20">
           <h2 className="mb-6 text-3xl font-bold">{Wine_Song_Title}</h2>
           <img
             src={foulkImg}
@@ -126,7 +126,7 @@ const HeritagePage = () => {
             {Wine_Song_Second_Description}
           </p>
         </div>
-        <div className="flex flex-col justify-center items-start my-10">
+        <div className="flex flex-col justify-center items-start my-10 px-20">
           <h2 className="mb-6 text-3xl font-bold">{Wine_Food_Title}</h2>
           <img
             src={wineImg}

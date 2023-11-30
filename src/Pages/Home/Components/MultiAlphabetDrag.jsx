@@ -1,15 +1,40 @@
 import { motion } from "framer-motion";
-import { useRef } from "react";
-
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { TextPlugin } from "gsap/TextPlugin";
 import alphabetImg from "../../../assets/home-img/Language-Header.jpeg";
 import { Alphabet_Title, Alphabet_Description } from "../constants";
 import { Link } from "react-router-dom";
 import { ExploreButton } from "../../../Components/Button";
 
+gsap.registerPlugin(TextPlugin);
+
 const MultiAlphabetDrag = () => {
   const titleRef = useRef(null);
-
   const descriptionRef = useRef(null);
+  const titleTextRef = useRef(null);
+  const descriptionTextRef = useRef(null);
+
+  useEffect(() => {
+    const firstTextElement = titleTextRef.current;
+    const secondTextElement = descriptionTextRef.current;
+
+    gsap.to(firstTextElement, {
+      stagger: 0.02,
+      duration: 3,
+      delay: 1,
+      text: { value: Alphabet_Title },
+      ease: "power1.inOut",
+    });
+
+    gsap.to(secondTextElement, {
+      stagger: 0.02,
+      duration: 5,
+      delay: 3,
+      text: Alphabet_Description,
+      ease: "power1.inOut",
+    });
+  });
 
   return (
     <div className="flex items-center justify-between  h-630  border drop-shadow-md rounded-md">
@@ -26,9 +51,8 @@ const MultiAlphabetDrag = () => {
             dragElastic={0.5}
             drag
             dragConstraints={titleRef}
-          >
-            {Alphabet_Title}
-          </motion.h1>
+            ref={titleTextRef}
+          ></motion.h1>
         </motion.div>
         <motion.div ref={descriptionRef}>
           <motion.p
@@ -37,11 +61,9 @@ const MultiAlphabetDrag = () => {
             dragElastic={0.5}
             drag
             dragConstraints={descriptionRef}
-          >
-            {Alphabet_Description}
-          </motion.p>
+            ref={descriptionTextRef}
+          ></motion.p>
         </motion.div>
-
         <Link to="language">
           <ExploreButton>
             <span className="text-sm font-normal">EXPLORE</span>
