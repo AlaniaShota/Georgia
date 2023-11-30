@@ -11,6 +11,7 @@ const UniqueFolk = () => {
   const handleClick = () => {
     setIsPlaying(!isPlaying);
   };
+  
   return (
     <div className="flex justify-between items-center h-630 bg-black border drop-shadow-md rounded-md">
       <div onClick={handleClick}>

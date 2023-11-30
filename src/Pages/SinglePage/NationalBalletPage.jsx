@@ -31,7 +31,7 @@ const NationalBalletPage = () => {
       stagger: 0.02,
       duration: 3,
       delay: 1,
-      text: Dance_Title,
+      text: { value: Dance_Title },
       ease: "power1.inOut",
     });
 
@@ -43,7 +43,7 @@ const NationalBalletPage = () => {
       ease: "power1.inOut",
     });
   });
-  
+
   return (
     <>
       <Helmet>
@@ -68,7 +68,7 @@ const NationalBalletPage = () => {
         </div>
       </div>
       <div className="my-20 lg:container sm:mx-8 lg:mx-0 ">
-        <div className="flex flex-col justify-center items-start mb-10">
+        <div className="flex flex-col justify-center items-start mb-10 px-20">
           <h1 className="mb-6 text-3xl font-bold">{Dance_Era_Title}</h1>
           <img
             src={coupleImg}

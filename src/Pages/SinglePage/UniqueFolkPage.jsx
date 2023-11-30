@@ -43,16 +43,14 @@ const UniqueFolkPage = () => {
       stagger: 0.02,
       duration: 3,
       delay: 1,
-      text: Folk_Title,
-      ease: "power1.inOut",
+      text: { value: Folk_Title, ease: "power1.inOut" },
     });
 
     gsap.to(secondTextElement, {
       stagger: 0.02,
       duration: 5,
       delay: 3,
-      text: Folk_Description,
-      ease: "power1.inOut",
+      text: { value: Folk_Description, ease: "power1.inOut" },
     });
   });
 
@@ -80,7 +78,7 @@ const UniqueFolkPage = () => {
         </div>
       </div>
       <div className="my-20 lg:container sm:mx-8 lg:mx-0 ">
-        <div className="flex flex-col justify-center items-start mb-10">
+        <div className="flex flex-col justify-center items-start mb-10 px-20">
           <h1 className="mb-6 text-3xl font-bold">{Mountain_Title}</h1>
           <img
             src={mountainImg}
@@ -100,7 +98,7 @@ const UniqueFolkPage = () => {
             {Mountain_Fourth_Description}
           </p>
         </div>
-        <div className="flex flex-col justify-center items-start my-10">
+        <div className="flex flex-col justify-center items-start my-10 px-20">
           <h2 className="mb-6 text-3xl font-bold">{Poetry_Title}</h2>
           <p className="mb-4 text-BlackSecondColor">
             {Poetry_First_Description}
@@ -112,7 +110,7 @@ const UniqueFolkPage = () => {
             {Poetry_Third_Description}
           </p>
         </div>
-        <div className="flex flex-col justify-center items-start my-10">
+        <div className="flex flex-col justify-center items-start my-10 px-20">
           <h2 className="mb-6 text-3xl font-bold">{Song_Title}</h2>
           <img
             src={songImg}
@@ -128,7 +126,7 @@ const UniqueFolkPage = () => {
             {Song_Fourth_Description}
           </p>
         </div>
-        <div className="flex flex-col justify-center items-start my-10">
+        <div className="flex flex-col justify-center items-start my-10 px-20">
           <h2 className="mb-6 text-3xl font-bold">{Genius_Title}</h2>
           <img
             src={danceImg}
