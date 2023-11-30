@@ -1,42 +1,35 @@
+import { motion } from "framer-motion";
+import { Button } from "../../../Components/Button";
+
 const FilterButton = ({ search, categoryFilter }) => {
   return (
     <div className="mb-5 mt-20">
-      <button
-        className="border border-middleBlueBorderColor hover:bg-middleBlueHoverColor py-1 px-4 mr-4 rounded-md"
-        onClick={() => search({ type: "SAVORY PIE" })}
-      >
+      <Button margin="4" onClick={() => search({ type: "SAVORY PIE" })}>
         <span className="text-sm font-normal text-darkBlueText">
           SAVORY PIE
         </span>
-      </button>
-      <button
-        className="border border-middleBlueBorderColor hover:bg-middleBlueHoverColor py-1 px-4 mr-4 rounded-md"
-        onClick={() => search({ type: "STEW" })}
-      >
+      </Button>
+      <Button margin="4" onClick={() => search({ type: "STEW" })}>
         <span className="text-sm font-normal text-darkBlueText">STEW</span>
-      </button>
-      <button
-        className="border border-middleBlueBorderColor hover:bg-middleBlueHoverColor py-1 px-4 mr-4 rounded-md"
-        onClick={() => search({ type: "CHEESE" })}
-      >
+      </Button>
+      <Button margin="4" onClick={() => search({ type: "CHEESE" })}>
         <span className="text-sm font-normal text-darkBlueText">CHEESE</span>
-      </button>
-      <button
-        className="border border-middleBlueBorderColor hover:bg-middleBlueHoverColor py-1 px-4 mr-4 rounded-md"
-        onClick={() => search({ type: "SAUCE" })}
-      >
+      </Button>
+      <Button margin="4" onClick={() => search({ type: "SAUCE" })}>
         <span className="text-sm font-normal text-darkBlueText">SAUCE</span>
-      </button>
-      <button
-        className="border border-middleBlueBorderColor hover:bg-middleBlueHoverColor py-1 px-4 mr-4 rounded-md"
-        onClick={() => search({ type: "DESSERT" })}
-      >
+      </Button>
+      <Button margin="4" onClick={() => search({ type: "DESSERT" })}>
         <span className="text-sm font-normal text-darkBlueText">DESSERT</span>
-      </button>
+      </Button>
       {categoryFilter ? (
-        <button onClick={() => search({})}>
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.9 }}
+          transition={{ type: "spring", stiffness: 400, damping: 17 }}
+          onClick={() => search({})}
+        >
           <span>Clear filter</span>
-        </button>
+        </motion.button>
       ) : null}
     </div>
   );

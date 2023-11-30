@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 import { Dishes_Title, Dishes_Description } from "./constants";
+import { Button } from "../../../../Components/Button";
 
 const FoodCard = () => {
   const [foodCard, setFoodCard] = useState([]);
@@ -29,15 +30,15 @@ const FoodCard = () => {
         <h1 className="text-2xl font-bold mb-5 cursor-default">
           {Dishes_Title}
         </h1>
-        <p className="text-sm text-secondColor pr-6 cursor-default">
+        <p className="text-sm text-BlackSecondColor pr-6 cursor-default">
           {Dishes_Description}
         </p>
         <Link to="/library">
-          <button className="border border-middleBlueBorderColor hover:bg-middleBlueHoverColor py-1 px-4 mr-4 mt-5 rounded-md">
+          <Button>
             <span className="text-sm font-normal text-darkBlueText">
               EXPLORE MORE
             </span>
-          </button>
+          </Button>
         </Link>
       </motion.div>
       {foodCard.slice(0, 2).map((item) => (

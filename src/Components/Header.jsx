@@ -20,7 +20,7 @@ const Header = () => {
 
     window.addEventListener("scroll", handleScroll);
 
-    //მაქვს ბაგი მეგონა ვფიქრობ სქროლვის ბრალია სხვა ფეიჯზე გადასვილას დასქროლილ ადგილას მტოვებს
+    //მაქვს ბაგი ვფიქრობ სქროლვის ბრალია სხვა ფეიჯზე გადასვილას დასქროლილ ადგილას მტოვებს
     // return () => {
     //   window.removeEventListener("scroll", handleScroll);
     // };
@@ -36,7 +36,7 @@ const Header = () => {
         <Link to="/" className="flex items-center">
           <img src={iconImg} alt="Georgia Flag" className="w-10 object-cover" />
           <span
-            className={`ml-2 transition-colors text-xl duration-500 ease-in ${
+            className={`ml-4 transition-colors text-xl duration-500 ease-in ${
               scrolled ? "text-black" : " text-white"
             }`}
           >
