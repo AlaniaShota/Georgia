@@ -59,7 +59,7 @@ const MultiCuisineMouseMove = () => {
             <h1 className=" text-4xl  font-bold cursor-default">
               {Cuisine_Title}
             </h1>
-            <p className="w-497 py-8 text-center text-BlackSecondColor font-normal cursor-default">
+            <p className="w-497 py-8 text-center text-black font-normal cursor-default">
               {Cuisine_Description}
             </p>
             <Link to="delicious">

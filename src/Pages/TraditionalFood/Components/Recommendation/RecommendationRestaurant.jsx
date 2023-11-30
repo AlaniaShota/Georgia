@@ -35,7 +35,7 @@ const RecommendationRestaurant = () => {
                 {item.location}
               </h3>
             </div>
-            <Link to={item.visit} className="ml-4 mb-2">
+            <Link to={item.visit} target="_blank" className="ml-4 mb-2">
               <Button>
                 <span className="text-darkBlueText text-sm font-medium">
                   WEBSITE

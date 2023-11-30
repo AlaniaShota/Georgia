@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const TravelAndCreatePage = () => {
-  return (
-    <div>TravelAndCreatePage</div>
-  )
-}
+  return <div>TravelAndCreatePage</div>;
+};
 
-export default TravelAndCreatePage
+export default TravelAndCreatePage;

@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const UniqueNaturePage = () => {
-  return (
-    <div>UniqueNaturePage</div>
-  )
-}
+  return <div>UniqueNaturePage</div>;
+};
 
-export default UniqueNaturePage
+export default UniqueNaturePage;
