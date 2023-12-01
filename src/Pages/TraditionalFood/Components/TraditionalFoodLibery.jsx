@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { gsap } from "gsap";
 import { TextPlugin } from "gsap/TextPlugin";
@@ -7,6 +7,9 @@ import FilterButton from "./FilterButton";
 import RandomFood from "./Random/RandomFood";
 import foodImg from "../../../assets/traditional-food-img/georgia-traditional-food-image.jpg";
 import { Button } from "../../../Components/Button";
+import Header from "../../../Components/Header";
+
+gsap.registerPlugin(TextPlugin);
 
 const loadMoreContentCount = 15;
 
@@ -16,34 +19,11 @@ const TraditionalFoodLibery = () => {
   const [showMore, setShowMore] = useState(false);
   const [searchParams, setSearchParams] = useSearchParams();
 
-  const titleTextRef = useRef(null);
-  const descriptionTextRef = useRef(null);
-
   useEffect(() => {
     fetch("/api/foods")
       .then((res) => res.json())
       .then((data) => setTraditionalFood(data.foods));
-    const firstTextElement = titleTextRef.current;
-    const secondTextElement = descriptionTextRef.current;
-
-    gsap.registerPlugin(TextPlugin);
-
-    gsap.to(firstTextElement, {
-      stagger: 0.02,
-      duration: 3,
-      delay: 1,
-      text: Dishes_Title,
-      ease: "power1.inOut",
-    });
-
-    gsap.to(secondTextElement, {
-      stagger: 0.02,
-      duration: 5,
-      delay: 3,
-      text: Dishes_Description,
-      ease: "power1.inOut",
-    });
-  }, []);
+  });
 
   const handleMoreItem = () => {
     setNext(next + loadMoreContentCount);
@@ -56,24 +36,12 @@ const TraditionalFoodLibery = () => {
     : traditionalFood;
 
   return (
-    <div>
-      <div className="flex w-full justify-start items-center flex-wrap">
-        <img
-          src={foodImg}
-          alt="Tbilisi"
-          className="object-cover h-[737px] w-full"
-        />
-        <div className="absolute ml-40">
-          <h1
-            className="text-left text-2xl text-white font-bold cursor-default"
-            ref={titleTextRef}
-          ></h1>
-          <p
-            className="w-497 text-white font-normal cursor-default"
-            ref={descriptionTextRef}
-          ></p>
-        </div>
-      </div>
+    <>
+      <Header
+        titleText={Dishes_Title}
+        descriptionText={Dishes_Description}
+        img={foodImg}
+      />
       <div className="lg:container sm:mx-8 lg:mx-0 my-20 [&>*:nth-child(2)]:flex-row-reverse">
         {traditionalFood
           .sort(() => 0.5 - Math.random())
@@ -108,27 +76,23 @@ const TraditionalFoodLibery = () => {
                   Most iconic:
                 </h3>
               )}
-              <h3 className="text-sm text-BlackSecondColor font-normal">
+              <p className="text-sm text-BlackSecondColor font-normal">
                 {showMore ? item.about : `${item.about.substring(0, 200)}`}
-              </h3>
+              </p>
             </div>
-            <div className="p-4">
-              <div className="flex justify-center items-center w-full">
-                <Link
-                  to={`/library/${item.id}`}
-                  state={{
-                    search: `?${searchParams.toString()}`,
-                    type: categoryFilter,
-                  }}
-                  onClick={() => setShowMore(!showMore)}
-                >
-                  <Button onClick={handleMoreItem}>
-                    <span className="text-sm font-medium text-darkBlueText">
-                      SHOW MORE
-                    </span>
-                  </Button>
-                </Link>
-              </div>
+            <div className="flex justify-center items-center w-full p-4">
+              <Link
+                to={`/library/${item.id}`}
+                state={{
+                  search: `?${searchParams.toString()}`,
+                  type: categoryFilter,
+                }}
+                onClick={() => setShowMore(!showMore)}
+              >
+                <Button border onClick={handleMoreItem}>
+                  <span className=" text-darkBlueText">SEE MORE</span>
+                </Button>
+              </Link>
             </div>
           </div>
         ))}
@@ -136,13 +100,13 @@ const TraditionalFoodLibery = () => {
       {categoryFilter ? null : (
         <div className="flex justify-center items-center my-10">
           {next < traditionalFood?.length && (
-            <Button onClick={handleMoreItem}>
+            <Button border onClick={handleMoreItem}>
               <span className=" text-md text-darkBlueText">LOAD MORE</span>
             </Button>
           )}
         </div>
       )}
-    </div>
+    </>
   );
 };
 

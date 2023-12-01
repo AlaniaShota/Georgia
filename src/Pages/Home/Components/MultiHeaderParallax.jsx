@@ -22,7 +22,7 @@ const MultiHeaderParallax = () => {
     gsap.to(secondaryTextElement, {
       stagger: 0.02,
       color: "#B22222",
-      duration: 5,
+      duration: 2,
       delay: 2,
       ease: "power1.inOut",
       text: {

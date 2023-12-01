@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 
 import swiperImgFifth from "../../../assets/traditional-food-img/georgia-traditional-food-image5.jpg";
 import swiperImgSixth from "../../../assets/traditional-food-img/georgia-traditional-food-image6.jpg";
@@ -29,21 +29,20 @@ export function SliderLibrary() {
   return (
     <>
       <Swiper
-        centeredSlides={true}
         autoplay={{
-          delay: 5000,
+          delay: 15000,
           disableOnInteraction: false,
         }}
-        effect="fade"
-        modules={[Autoplay]}
-        className="mySwiper  lg:w-[550px] lg:h-[650px] sm:w-[450px] sm:h-[550px]"
+        navigation={true}
+        modules={[Autoplay, Navigation]}
+        className="lg:w-[550px] sm:w-[450px] sm:h-[550px] rounded-md border shadow-xl"
       >
         {sliderImg.map((item, index) => (
-          <SwiperSlide key={index} className="rounded-lg">
+          <SwiperSlide key={index} className="">
             <img
               src={item}
               alt="Traditional Food"
-              className="object-cover w-full h-full rounded-md"
+              className="object-cover w-full h-full rounded-md "
             />
           </SwiperSlide>
         ))}

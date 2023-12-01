@@ -1,9 +1,6 @@
 import { Helmet } from "react-helmet";
 import balletImg from "../../assets/home-img/mastery-of-generation.jpg";
 import coupleImg from "../../assets/home-img/dance-gnta.webp";
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { TextPlugin } from "gsap/TextPlugin";
 import {
   Dance_Title,
   Dance_Description,
@@ -17,56 +14,20 @@ import {
   Dance_Universal_Second_Description,
   Dance_Universal_Third_Description,
 } from "./constants";
+import Header from "../../Components/Header";
 
 const NationalBalletPage = () => {
-  const titleTextRef = useRef(null);
-  const descriptionTextRef = useRef(null);
-
-  useEffect(() => {
-    const firstTextElement = titleTextRef.current;
-    const secondTextElement = descriptionTextRef.current;
-    gsap.registerPlugin(TextPlugin);
-
-    gsap.to(firstTextElement, {
-      stagger: 0.02,
-      duration: 3,
-      delay: 1,
-      text: { value: Dance_Title },
-      ease: "power1.inOut",
-    });
-
-    gsap.to(secondTextElement, {
-      stagger: 0.02,
-      duration: 5,
-      delay: 3,
-      text: Dance_Description,
-      ease: "power1.inOut",
-    });
-  });
-
   return (
     <>
       <Helmet>
         <meta charSet="utf-8" />
         <title>Georgia - National Ballet</title>
       </Helmet>
-      <div className="flex w-full justify-start items-center flex-wrap">
-        <img
-          src={balletImg}
-          alt="Tbilisi"
-          className="bg-cover h-[737px] w-full"
-        />
-        <div className="absolute  ml-40">
-          <h1
-            className="text-left pb-5 text-4xl text-white font-bold cursor-default"
-            ref={titleTextRef}
-          ></h1>
-          <p
-            className="w-497 pt-2 text-white font-normal cursor-default"
-            ref={descriptionTextRef}
-          ></p>
-        </div>
-      </div>
+      <Header
+        titleText={Dance_Title}
+        descriptionText={Dance_Description}
+        img={balletImg}
+      />
       <div className="my-20 lg:container sm:mx-8 lg:mx-0 ">
         <div className="flex flex-col justify-center items-start mb-10 px-20">
           <h1 className="mb-6 text-3xl font-bold">{Dance_Era_Title}</h1>

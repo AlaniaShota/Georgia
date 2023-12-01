@@ -6,8 +6,7 @@ import pkhaliImg from "../../assets/home-img/meadow-pkhali-gnta.webp";
 import khinkaliImg from "../../assets/home-img/a-vegetarian-guide-to-georgian-food-qartuli-kerdzebis-vegetarianuli-gzamkvlevi-skhvadaskhva-khinkali.webp";
 import acharuliImg from "../../assets/home-img/acharuli-khachapuri-gnta.webp";
 import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { TextPlugin } from "gsap/TextPlugin";
+import Header from "../../Components/Header";
 import {
   Delicious_Cuisine_Title,
   Delicious_Cuisine_Description,
@@ -37,56 +36,24 @@ import { Link } from "react-router-dom";
 
 const DeliciousPage = () => {
   const [food, setFood] = useState([]);
-  const titleTextRef = useRef(null);
-  const descriptionTextRef = useRef(null);
 
   useEffect(() => {
     fetch("/api/foods")
       .then((res) => res.json())
       .then((data) => setFood(data.foods));
-    const firstTextElement = titleTextRef.current;
-    const secondTextElement = descriptionTextRef.current;
-    gsap.registerPlugin(TextPlugin);
-
-    gsap.to(firstTextElement, {
-      stagger: 0.02,
-      duration: 3,
-      delay: 1,
-      text: Delicious_Cuisine_Title,
-      ease: "power1.inOut",
-    });
-
-    gsap.to(secondTextElement, {
-      stagger: 0.02,
-      duration: 5,
-      delay: 3,
-      text: Delicious_Cuisine_Description,
-      ease: "power1.inOut",
-    });
   });
+
   return (
     <>
       <Helmet>
         <meta charSet="utf-8" />
         <title>Georgian Delicious Cuisine</title>
       </Helmet>
-      <div className="flex w-full justify-start items-center flex-wrap">
-        <img
-          src={deliciousImg}
-          alt="Tbilisi"
-          className="object-cover h-[737px] w-full"
-        />
-        <div className="absolute  ml-40">
-          <h1
-            className="text-left pb-5 text-4xl text-white font-bold cursor-default"
-            ref={titleTextRef}
-          ></h1>
-          <p
-            className="w-497 pt-2 text-white font-normal cursor-default"
-            ref={descriptionTextRef}
-          ></p>
-        </div>
-      </div>
+      <Header
+        titleText={Delicious_Cuisine_Title}
+        descriptionText={Delicious_Cuisine_Description}
+        img={deliciousImg}
+      />
       <div className="my-20 lg:container sm:mx-8 lg:mx-0 lg:">
         <div className="flex flex-col justify-center items-start mb-10 px-20">
           <h1 className="mb-6 text-3xl font-bold">{Wine_Wheat_Honey_Title}</h1>

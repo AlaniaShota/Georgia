@@ -1,4 +1,11 @@
 import { Helmet } from "react-helmet";
+
+import folkImg from "../../assets/home-img/lilesvanurisimgera.jpg";
+import mountainImg from "../../assets/home-img/shutterstock-1303327465.webp";
+import songImg from "../../assets/home-img/shutterstock-1648681876(1).webp";
+import danceImg from "../../assets/home-img/why-georgia-dance.webp";
+import Header from "../../Components/Header";
+
 import {
   Folk_Title,
   Folk_Description,
@@ -22,61 +29,19 @@ import {
   Genius_Third_Description,
   Genius_Fourth_Description,
 } from "./constants";
-import folkImg from "../../assets/home-img/lilesvanurisimgera.jpg";
-import mountainImg from "../../assets/home-img/shutterstock-1303327465.webp";
-import songImg from "../../assets/home-img/shutterstock-1648681876(1).webp";
-import danceImg from "../../assets/home-img/why-georgia-dance.webp";
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { TextPlugin } from "gsap/TextPlugin";
 
 const UniqueFolkPage = () => {
-  const titleTextRef = useRef(null);
-  const descriptionTextRef = useRef(null);
-
-  useEffect(() => {
-    const firstTextElement = titleTextRef.current;
-    const secondTextElement = descriptionTextRef.current;
-    gsap.registerPlugin(TextPlugin);
-
-    gsap.to(firstTextElement, {
-      stagger: 0.02,
-      duration: 3,
-      delay: 1,
-      text: { value: Folk_Title, ease: "power1.inOut" },
-    });
-
-    gsap.to(secondTextElement, {
-      stagger: 0.02,
-      duration: 5,
-      delay: 3,
-      text: { value: Folk_Description, ease: "power1.inOut" },
-    });
-  });
-
   return (
     <>
       <Helmet>
         <meta charSet="utf-8" />
         <title>Georgia - Unique Folklore</title>
       </Helmet>
-      <div className="flex w-full justify-start items-center flex-wrap">
-        <img
-          src={folkImg}
-          alt="Tbilisi"
-          className="bg-cover h-[737px] w-full"
-        />
-        <div className="absolute  ml-40">
-          <h1
-            className="text-left pb-5 text-4xl text-white font-bold cursor-default"
-            ref={titleTextRef}
-          ></h1>
-          <p
-            className="w-497 pt-2 text-white font-normal cursor-default"
-            ref={descriptionTextRef}
-          ></p>
-        </div>
-      </div>
+      <Header
+        titleText={Folk_Title}
+        descriptionText={Folk_Description}
+        img={folkImg}
+      />
       <div className="my-20 lg:container sm:mx-8 lg:mx-0 ">
         <div className="flex flex-col justify-center items-start mb-10 px-20">
           <h1 className="mb-6 text-3xl font-bold">{Mountain_Title}</h1>

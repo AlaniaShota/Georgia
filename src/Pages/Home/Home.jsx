@@ -4,9 +4,8 @@ import MultiHeaderParallax from "./Components/MultiHeaderParallax";
 import MultiAlphabetDrag from "./Components/MultiAlphabetDrag";
 import MultiHeritageAnimation from "./Components/MultiHeritageAnimation";
 import MultiCuisineMouseMove from "./Components/MultiCuisineMouseMove";
-import UniqueFolk from "./Components/UniqueFolk";
-import LanguageDance from "./Components/LanguageDance";
 import MultiAdventureScroll from "./Components/MultiAdventureScroll";
+import Video from "./Components/Video";
 
 const cardVariants = {
   offscreen: {
@@ -33,10 +32,8 @@ function Card({ customComponent, isFirst }) {
       case "C":
         return <MultiHeritageAnimation />;
       case "D":
-        return <UniqueFolk />;
+        return <Video />;
       case "E":
-        return <LanguageDance />;
-      case "F":
         return <MultiAdventureScroll />;
       default:
         return null;
@@ -57,7 +54,7 @@ function Card({ customComponent, isFirst }) {
   );
 }
 
-const customComponentsData = [["A"], ["B"], ["C"], ["D"], ["E"], ["F"]];
+const customComponentsData = [["A"], ["B"], ["C"], ["D"], ["E"]];
 const Home = () => {
   return (
     <div>

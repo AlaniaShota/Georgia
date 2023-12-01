@@ -17,31 +17,35 @@ const RecommendationRestaurant = () => {
   return (
     <div className="mt-8 ">
       <h1 className="pl-4 text-2xl">Recommendation Restaurant</h1>
-      <div className="grid grid-cols-3 gap-8 mt-4">
+      <div className="grid grid-cols-3 gap-12 mt-4">
         {randomData.map((item) => (
           <div
             key={item.id}
-            className="flex flex-col justify-between border drop-shadow-md  rounded-lg bg-white"
+            className="flex flex-col  border drop-shadow-md rounded-md bg-white"
           >
             <img
               src={item.img}
               alt={item.name}
               loading="lazy"
-              className="rounded-t-lg object-cover  h-52"
+              className="rounded-t-md object-cover w-full h-52"
             />
-            <div className="flex flex-col justify-center my-6 pl-4 ">
-              <h1 className="text-xl font-normal">{item.name}</h1>
-              <h3 className="text-sm text-BlackSecondColor font-light">
-                {item.location}
-              </h3>
+            <div className="grid grid-cols-2 m-4">
+              <div className="flex flex-col items-start">
+                <h1 className="text-xl font-normal">{item.name}</h1>
+                <p className="text-xs text-BlackSecondColor font-light">
+                  {item.location}
+                </p>
+              </div>
+              <Link
+                to={item.visit}
+                target="_blank"
+                className="flex justify-end items-end"
+              >
+                <Button>
+                  <span className="text-darkBlueText font-medium">WEBSITE</span>
+                </Button>
+              </Link>
             </div>
-            <Link to={item.visit} target="_blank" className="ml-4 mb-2">
-              <Button>
-                <span className="text-darkBlueText text-sm font-medium">
-                  WEBSITE
-                </span>
-              </Button>
-            </Link>
           </div>
         ))}
       </div>

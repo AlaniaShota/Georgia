@@ -571,7 +571,7 @@ createServer({
       id: "el1",
       name: "Funicular Complex",
       img: "/assets/traditional-food-restaurant/Amo-Rame.jpg",
-      location: "Mtatsminda Plateau, Tbilisi, Georgia",
+      location: "Mtatsminda Plateau, Tbilisi",
       visit: "http://www.funicular.ge/",
       mapLocation:
         "https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d95333.81483588627!2d44.704445698857505!3d41.69501277043012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d41.694992!2d44.786808!5e0!3m2!1ska!2sge!4v1700296912632!5m2!1ska!2sge",
@@ -588,7 +588,7 @@ createServer({
       id: "el2",
       name: "Salobie Bia",
       img: "/assets/traditional-food-restaurant/Salobie-Bia.jpg",
-      location: "17 Shota Rustaveli Ave, Tbilisi, Georgia",
+      location: "17 Shota Rustaveli Ave, Tbilisi",
       visit: "https://www.facebook.com/salobiebia/",
       mapLocation:
         "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11915.879801482084!2d44.7974509!3d41.6995844!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440d010fcaf96f%3A0xa54989d014b0576d!2z4YOh4YOQ4YOa4YOd4YOR4YOY4YOUIOGDkeGDmOGDkA!5e0!3m2!1ska!2sge!4v1700567663676!5m2!1ska!2sge",
@@ -605,7 +605,7 @@ createServer({
       id: "el3",
       name: "Amo Rame",
       img: "/assets/traditional-food-restaurant/Amo-Rame.jpg",
-      location: "4 Pavle Ingorokva St, Tbilisi, Georgia",
+      location: "4 Pavle Ingorokva St, Tbilisi",
       visit: "https://www.facebook.com/AmoRameTbilisi/",
       mapLocation:
         "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11917.153642091907!2d44.7980779!3d41.6927092!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cee8866b6a5%3A0xf4afe8a96e07772a!2z4YOQ4YOb4YOdIOGDoOGDkOGDm-GDlA!5e0!3m2!1ska!2sge!4v1700571144193!5m2!1ska!2sge",
@@ -622,7 +622,7 @@ createServer({
       id: "el4",
       name: "Tsiskvili",
       img: "/assets/traditional-food-restaurant/Tsiskvili.jpg",
-      location: "40/2 Akaki Beliashvili St, Tbilisi, Georgia",
+      location: "40/2 Akaki Beliashvili St, Tbilisi",
       visit: "https://www.facebook.com/Tsiskvili/",
       mapLocation:
         "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11902.584484602728!2d44.779815!3d41.771287!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40446d91e60380ed%3A0x43e7896ceb2cc479!2z4YOU4YOX4YOc4YOdIOGDrOGDmOGDoeGDpeGDleGDmOGDmuGDmA!5e0!3m2!1ska!2sge!4v1700571325522!5m2!1ska!2sge",
@@ -639,7 +639,7 @@ createServer({
       id: "el5",
       name: "Mapshalia",
       img: "/assets/traditional-food-restaurant/Mapshalia.jpg",
-      location: "137 Davit Aghmashenebeli Ave, Tbilisi, Georgia",
+      location: "137 Davit Aghmashenebeli Ave, Tbilisi",
       visit: "https://www.facebook.com/maphshalia/",
       mapLocation:
         "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11912.933758662102!2d44.7931645!3d41.7154813!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440d2bf47feb13%3A0x9a51031a7271f012!2z4YOb4YOQ4YOk4YOo4YOQ4YOa4YOY4YOQ!5e0!3m2!1ska!2sge!4v1700571410787!5m2!1ska!2sge",
@@ -656,7 +656,7 @@ createServer({
       id: "el6",
       name: "Leila",
       img: "/assets/traditional-food-restaurant/Leila.jpg",
-      location: "18 Ioane Shavteli St, Tbilisi, Georgia",
+      location: "18 Ioane Shavteli St, Tbilisi",
       visit: "https://www.facebook.com/profile.php?id=100070404811150",
       mapLocation:
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d744.7930462973575!2d44.80638254533768!3d41.69521848282067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cf071db4b39%3A0x2432cf9f7e4580e6!2z4YOa4YOU4YOY4YOa4YOQ!5e0!3m2!1ska!2sge!4v1700571613786!5m2!1ska!2sge",
@@ -673,7 +673,7 @@ createServer({
       id: "el7",
       name: "Maspindzelo",
       img: "/assets/traditional-food-restaurant/Maspindzelo.jpg",
-      location: "7 Vakhtang Gorgasali Street, Tbilisi, Georgia",
+      location: "7 Vakhtang Gorgasali Street, Tbilisi",
       visit: "http://www.mgroup.ge/mgroup/",
       mapLocation:
         "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11917.92012047668!2d44.8126276!3d41.6885719!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440d1f09c47353%3A0x9af070ed0772a0df!2z4YOb4YOQ4YOh4YOe4YOY4YOc4YOr4YOU4YOa4YOd!5e0!3m2!1ska!2sge!4v1700571693203!5m2!1ska!2sge",
@@ -690,7 +690,7 @@ createServer({
       id: "el8",
       name: "Porto Franco",
       img: "/assets/traditional-food-restaurant/Porto-Franco.jpg",
-      location: "40 Konstantine Gamsakhurdia Street, Batumi , Georgia",
+      location: "40 Konstantine Gamsakhurdia Street, Batumi",
       visit: "https://www.facebook.com/RestaurantPortoFranco/",
       mapLocation:
         "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11925.438141149567!2d41.6400251!3d41.6479733!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4067863e5b012b5d%3A0x263210ad2db1177d!2z4YOe4YOd4YOg4YOi4YOdIOGDpOGDoOGDkOGDnOGDmeGDnQ!5e0!3m2!1ska!2sge!4v1700571790480!5m2!1ska!2sge",
@@ -707,7 +707,7 @@ createServer({
       id: "el9",
       name: "Kakhelebi",
       img: "/assets/traditional-food-restaurant/Kakhelebi.jpg",
-      location: "Kakheti Hwy, Tbilisi, Georgia",
+      location: "Kakheti Hwy, Tbilisi",
       visit: "https://www.kakhelebi.ge/",
       mapLocation:
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186.00588757439874!2d44.78056140904037!3d41.761626750720175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40446d872dfe23eb%3A0x29627378c032a30!2z4YOZ4YOQ4YOu4YOU4YOa4YOU4YOR4YOYIOGDkeGDlOGDmuGDmOGDkOGDqOGDleGDmOGDmuGDluGDlA!5e0!3m2!1ska!2sge!4v1700571903595!5m2!1ska!2sge",
@@ -724,7 +724,7 @@ createServer({
       id: "el10",
       name: "Cafe Stamba",
       img: "/assets/traditional-food-restaurant/Cafe-Stamba.jpg",
-      location: "14 Merab Kostava St, Tbilisi, Georgia",
+      location: "14 Merab Kostava St, Tbilisi",
       visit: "https://stambahotel.com/",
       mapLocation:
         "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11914.774853352987!2d44.7881813!3d41.7055473!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4044733d29d9dda5%3A0xa11c043ada551c4b!2z4YOZ4YOQ4YOk4YOUIOGDoeGDouGDkOGDm-GDkeGDkA!5e0!3m2!1ska!2sge!4v1700571971401!5m2!1ska!2sge",

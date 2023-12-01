@@ -162,3 +162,33 @@ export const Why_Georgia_Second_Description =
   "Khachapuri is a cheese-filled pastry and nowadays, every region has a different variation. The Meskhetian flaky “chalma khachapuri” is revolutionary, and the boat-shaped Ajarian khachapuri has become extremely popular. The most widespread is Imeretian khachapuri, with delicious squeaky cheese, wrapped up into thin, round dough. ";
 export const Why_Georgia_Third_Description =
   "Khachapuri is the heart of Georgia, a fitting metaphor for the warmth of its food and people.";
+
+export const Season_Title = "4 Seasons in Georgia";
+export const Season_Description =
+  "Did you know that at the intersection of Europe and Asia, at the foot of the Caucasus Mountains, on the shores of the Black Sea, there is a small country called Georgia?";
+export const Spring_Title = "Spring";
+export const Spring_First_Description =
+  "This country explodes with green colors in spring, starting a new cycle of the seasons` wheel. The ancient Georgian historical monuments located on the mountains and in the valleys look spectacular all year round, but they take on a sublime appearance as the plants and flowers around them start to blossom. ";
+export const Spring_Second_Description =
+  "Above the ancient capital of Mtskheta, gazing down from Jvari Monastery upon the confluence of the Mtkvari and Aragvi Rivers, where the unique Svetitskhoveli Church stands, is an untold pleasure. Elsewhere, you can visit cities that are carved into cliffs, Uplistsikhe and Vardzia, or travel to the semi-desert and take inspiration from the unfathomable architecture of the Davit Gareji Monastery or Natlismtsemeli Complex. Meanwhile, you will be fascinated by the frescos of the Gelati and Bagrati Cathedrals. ";
+export const Spring_Third_Description =
+  "There are more than 1,000 significant historical monuments in Georgia, and it is an endless joy to wander through the nature of Georgia, including its deciduous, pine, alpine, and subtropical forests. Meanwhile, with more than 90 lakes and around 60 waterfalls, those who love hiking are in for a genuine adventure. ";
+export const Summer_Title = "Summer";
+export const Summer_First_Description =
+  "The natural settings and historical monuments of Georgia on hot days of summer are of course unforgettable. Still, most shrewd tourists tend to cool down in the mountainous delights of Svaneti, Tusheti, Khevsureti, and Upper Ajara. ";
+export const Summer_Second_Description =
+  "Hikers can scale Kazbegi, Ushba, and Tetnuldi, while those looking for something more cozy can wander into the staggering caves of Prometheus, Sataplia, and Tetra. Overall, there are about 30 caves in Georgia and more than 26,000 rivers, many of which are suitable for rafting or kayaking.";
+export const Summer_Third_Description =
+  "Of course, those looking to party will head to the Black Sea in summer, where there are resorts aplenty. Family holidays are also immensely popular at this time of year in Batumi and the surrounding towns and villages.";
+export const Fall_Title = "Fall";
+export const Fall_First_Description =
+  "Fall in Georgia is many people’s favorite time of year to visit Georgia. In particular, its mountains and valleys awash with red and yellow colors are incomparable. The temperature is usually warm and comfortable making all regions and their forests, lakes, waterfalls, and caves a glorious experience to visit.";
+export const Fall_Second_Description =
+  "Georgia in the fall season has a unique feeling of abundance. This is perhaps best sampled by partaking in the grape harvest, picking off a bunch of ripe grapes with your hand, placing them in the wine press, pressing them, and eventually of course tasting a new wine. Then, after you can learn how churchkhela is made, you will have a Georgian fall to remember.";
+export const Winter_Title = "Winter";
+export const Winter_First_Description =
+  "Since winter in much of Georgia is not largely characterized by heavy snow or biting winds, this can also be an amazing time to visit. ";
+export const Winter_Second_Description =
+  "Of course, there is plentiful snow at the  European-style winter resorts of Gudauri, Mestia, Town Bakuriani, and Goderdzi, where you can ski on and off-piste, go snowboarding, take a ski tour, or even go heliskiing or paragliding. A whole world of adventure awaits. ";
+export const Winter_Third_Description =
+  "At every such resort, there are contests and tournaments that you can take part in. Complementing all of these attractions and activities is of course the delicious Georgian cuisine, offering a gastronomic revelation any time of year. ";

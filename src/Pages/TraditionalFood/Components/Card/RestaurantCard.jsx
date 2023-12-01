@@ -20,37 +20,41 @@ const RestaurantCard = () => {
 
   return (
     <>
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid grid-cols-3 gap-12 mt-5">
         {recommendationRestaurant.slice(0, next).map((item) => (
           <div
             key={item.id}
-            className="flex flex-col justify-between h-[355px] border drop-shadow-md rounded-lg bg-white"
+            className="flex flex-col  border drop-shadow-lg rounded-md bg-white"
           >
             <img
               src={item.img}
               alt={item.name}
               loading="lazy"
-              className="rounded-t-lg object-cover w-full h-52"
+              className="rounded-t-md object-cover w-full h-52"
             />
-            <div className="flex flex-col pl-4 ">
-              <h1 className="text-xl font-normal">{item.name}</h1>
-              <h3 className="text-sm text-BlackSecondColor font-light">
-                {item.location}
-              </h3>
+            <div className="grid grid-cols-2 m-4">
+              <div className="flex flex-col items-start">
+                <h1 className="text-xl font-normal">{item.name}</h1>
+                <p className="text-xs text-BlackSecondColor font-light">
+                  {item.location}
+                </p>
+              </div>
+              <Link
+                to={item.visit}
+                target="_blank"
+                className="flex justify-end items-end"
+              >
+                <Button>
+                  <span className="text-darkBlueText font-medium">WEBSITE</span>
+                </Button>
+              </Link>
             </div>
-            <Link to={item.visit} target="_blank" className="ml-4 mb-2">
-              <Button>
-                <span className="text-darkBlueText text-sm font-medium">
-                  WEBSITE
-                </span>
-              </Button>
-            </Link>
           </div>
         ))}
       </div>
-      <div className="flex justify-center items-center my-10">
+      <div className="flex justify-center items-center mt-10">
         {next < recommendationRestaurant?.length && (
-          <Button onClick={handleMoreItem}>
+          <Button border onClick={handleMoreItem}>
             <span className=" text-md text-darkBlueText ">LOAD MORE</span>
           </Button>
         )}

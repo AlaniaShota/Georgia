@@ -24,3 +24,14 @@ export const Folk_Description =
 export const Dance_Title = "The Language Of Dance";
 export const Dance_Description =
   "The history of Georgian dance predates the birth of Christ. Its performances depict stories about love, war, beliefs, and work. When the unique features of Georgian dance are discussed, the first things noted are always the flexibility of the men and the elegance of the women.";
+
+export const First_Scroll_Title = "4 Seasons in Georgia";
+export const First_Scroll_Description =
+  "Did you know that at the intersection of Europe and Asia, at the foot of the Caucasus Mountains, on the shores of the Black Sea, there is a small country called Georgia?";
+
+export const Second_Scroll_Title = "Discover Beauty of Georgia";
+export const Second_Scroll_Description =
+  "Travel and Create an Unforgettable Adventure!";
+
+export const Third_Scroll_Title = "A Country That Creates Your Adventure";
+export const Third_Scroll_Description = "Discover Unique Nature!";

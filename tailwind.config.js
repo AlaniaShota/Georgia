@@ -24,6 +24,7 @@ export default {
       },
       height: {
         630: "630px",
+        737: "737px",
       },
       width: {
         497: "497px",
