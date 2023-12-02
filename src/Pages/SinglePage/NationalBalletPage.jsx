@@ -30,7 +30,7 @@ const NationalBalletPage = () => {
           <h1 className="mb-6 text-3xl font-bold">{Dance_Era_Title}</h1>
           <img
             src={coupleImg}
-            alt="Testament"
+            alt="Image"
             className="mb-6 object-cover rounded-md drop-shadow-md"
           />
           <p className="mb-4 text-BlackSecondColor">

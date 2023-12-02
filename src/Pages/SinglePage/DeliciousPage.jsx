@@ -56,7 +56,7 @@ const DeliciousPage = () => {
           <h1 className="mb-6 text-3xl font-bold">{Wine_Wheat_Honey_Title}</h1>
           <img
             src={supraImg}
-            alt="Testament"
+            alt="Image"
             className="mb-6 object-cover rounded-md drop-shadow-md w-full"
           />
           <p className="mb-4 text-BlackSecondColor">
@@ -76,7 +76,7 @@ const DeliciousPage = () => {
           <h2 className="mb-6 text-3xl font-bold">{Kind_Of_Flavor_Title}</h2>
           <img
             src={badriganiImg}
-            alt="Testament"
+            alt="Image"
             className="mb-6 object-cover rounded-md drop-shadow-md"
           />
           <p className="mb-4 text-BlackSecondColor">
@@ -92,7 +92,7 @@ const DeliciousPage = () => {
           </h2>
           <img
             src={pkhaliImg}
-            alt="Testament"
+            alt="Image"
             className="mb-6 object-cover rounded-md drop-shadow-md"
           />
           <p className="mb-4 text-BlackSecondColor">
@@ -109,7 +109,7 @@ const DeliciousPage = () => {
           <h2 className="mb-6 text-3xl font-bold">{Question_Title}</h2>
           <img
             src={khinkaliImg}
-            alt="Testament"
+            alt="Image"
             className="mb-6 object-cover rounded-md drop-shadow-md"
           />
           <h3 className="mb-4 text-BlackSecondColor">{Answer_First_Word}</h3>
@@ -129,7 +129,7 @@ const DeliciousPage = () => {
           <h2 className="mb-6 text-3xl font-bold">{Why_Georgia_Title}</h2>
           <img
             src={acharuliImg}
-            alt="Testament"
+            alt="Image"
             className="mb-6 object-cover rounded-md drop-shadow-md"
           />
           <p className="mb-4 text-BlackSecondColor">

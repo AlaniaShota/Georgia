@@ -19,6 +19,7 @@ export default {
         BlackSecondColor: "#00000099",
         whiteSecondText: "#ffffffcc",
       },
+
       opacity: {
         5: 0.2,
       },

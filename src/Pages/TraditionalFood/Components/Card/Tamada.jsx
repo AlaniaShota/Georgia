@@ -65,12 +65,12 @@ const Tamada = () => {
           ref={titleTextRef}
           initial={{ opacity: 0 }}
           animate={titleAnimation}
-          className="text-left text-2xl text-white font-bold"
+          className="text-left text-4xl text-white font-bold"
         ></motion.h1>
         <motion.p
           initial={{ opacity: 0 }}
           animate={descriptionAnimation}
-          className="w-497 pt-6 text-whiteSecondText font-normal"
+          className="w-497 pt-6 text-whiteSecondText text-lg font-semibold"
         >
           {Tamada_Description}
         </motion.p>

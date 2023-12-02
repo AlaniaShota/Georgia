@@ -41,7 +41,7 @@ const FoodCard = () => {
       className="grid grid-cols-3  gap-5 h-96 my-20"
     >
       <motion.div className="flex flex-col justify-around items-start cursor-default">
-        <motion.h1 className="text-2xl font-bold ">{Dishes_Title}</motion.h1>
+        <motion.h1 className="text-3xl font-bold ">{Dishes_Title}</motion.h1>
         <motion.p className=" text-BlackSecondColor pr-8">
           {Dishes_Description}
         </motion.p>

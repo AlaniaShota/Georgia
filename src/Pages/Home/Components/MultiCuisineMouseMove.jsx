@@ -54,15 +54,15 @@ const MultiCuisineMouseMove = () => {
           <div
             onMouseEnter={textEnter}
             onMouseLeave={textLeave}
-            className="flex flex-col justify-center items-center  px-12 h-[479px] w-full cursor-none"
+            className="flex flex-col justify-center items-center h-[479px] w-full cursor-none"
           >
             <h1 className=" text-4xl  font-bold ">{Cuisine_Title}</h1>
-            <p className="w-497 py-8 text-center text-black font-normal">
+            <p className="w-497 py-8 px-4 text-center text-black text-lg font-light">
               {Cuisine_Description}
             </p>
             <Link to="delicious">
               <ExploreButton>
-                <span className="text-lg text-black font-normal">EXPLORE</span>
+                <span className="text-lg text-black ">EXPLORE</span>
               </ExploreButton>
             </Link>
           </div>

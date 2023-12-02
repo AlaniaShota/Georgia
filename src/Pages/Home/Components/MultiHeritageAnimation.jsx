@@ -37,12 +37,12 @@ const MultiHeritageAnimation = () => {
           <h1 className=" text-4xl text-white font-bold ">
             {Cradle_Wine_Title}
           </h1>
-          <p className="w-497 mt-6  text-whiteSecondText font-normal ">
+          <p className="w-497 py-8 text-whiteSecondText text-lg ">
             {Cradle_Wine_Description}
           </p>
           <Link to="heritage">
             <ExploreButton>
-              <span className="text-lg font-normal">EXPLORE</span>
+              <span className="text-lg ">EXPLORE</span>
             </ExploreButton>
           </Link>
         </motion.div>

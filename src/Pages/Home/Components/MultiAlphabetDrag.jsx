@@ -64,13 +64,13 @@ const MultiAlphabetDrag = () => {
       />
       <div className="absolute ml-40 bg-transparent opacity-100 cursor-default">
         <motion.h1
-          className="text-3xl text-white font-bold "
+          className="text-4xl text-white font-bold "
           ref={titleTextRef}
           initial={{ opacity: 0, y: 50 }}
           animate={titleAnimation}
         />
         <motion.div initial={{ opacity: 0 }} animate={descriptionAnimation}>
-          <p className="w-497 transition-opacity  ease-in-out font-extralight pt-6 pr-20 text-whiteSecondText">
+          <p className="w-497 transition-opacity  ease-in-out text-lg font-light py-8 pr-18 text-whiteSecondText">
             {Alphabet_Description}
           </p>
           <Link to="language">

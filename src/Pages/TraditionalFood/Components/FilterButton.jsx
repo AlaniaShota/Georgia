@@ -3,23 +3,21 @@ import { Button } from "../../../Components/Button";
 
 const FilterButton = ({ search, categoryFilter }) => {
   return (
-    <div className="mb-5 mt-20">
+    <div className="mb-5 mt-20 text-lg text-darkBlueText">
       <Button border margin="4" onClick={() => search({ type: "SAVORY PIE" })}>
-        <span className="text-sm font-normal text-darkBlueText">
-          SAVORY PIE
-        </span>
+        <span>SAVORY PIE</span>
       </Button>
       <Button border margin="4" onClick={() => search({ type: "STEW" })}>
-        <span className="text-sm font-normal text-darkBlueText">STEW</span>
+        <span>STEW</span>
       </Button>
       <Button border margin="4" onClick={() => search({ type: "CHEESE" })}>
-        <span className="text-sm font-normal text-darkBlueText">CHEESE</span>
+        <span>CHEESE</span>
       </Button>
       <Button border margin="4" onClick={() => search({ type: "SAUCE" })}>
-        <span className="text-sm font-normal text-darkBlueText">SAUCE</span>
+        <span>SAUCE</span>
       </Button>
       <Button border margin="4" onClick={() => search({ type: "DESSERT" })}>
-        <span className="text-sm font-normal text-darkBlueText">DESSERT</span>
+        <span>DESSERT</span>
       </Button>
       {categoryFilter ? (
         <motion.button

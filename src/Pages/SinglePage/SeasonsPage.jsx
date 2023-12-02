@@ -39,7 +39,7 @@ const SeasonsPage = () => {
           <h1 className="mb-6 text-3xl font-bold">{Spring_Title}</h1>
           <img
             src={fallImg}
-            alt="Testament"
+            alt="Image"
             className="mb-6 object-cover rounded-md drop-shadow-md"
           />
           <p className="mb-4 text-BlackSecondColor">
@@ -56,7 +56,7 @@ const SeasonsPage = () => {
           <h2 className="mb-6 text-3xl font-bold">{Summer_Title}</h2>
           <img
             src={springImg}
-            alt="Testament"
+            alt="Image"
             className="mb-6 object-cover rounded-md drop-shadow-md"
           />
           <p className="mb-4 text-BlackSecondColor">
@@ -73,7 +73,7 @@ const SeasonsPage = () => {
           <h2 className="mb-6 text-3xl font-bold">{Fall_Title}</h2>
           <img
             src={summerImg}
-            alt="Testament"
+            alt="Image"
             className="mb-6 object-cover rounded-md drop-shadow-md"
           />
           <p className="mb-4 text-BlackSecondColor">{Fall_First_Description}</p>
@@ -85,7 +85,7 @@ const SeasonsPage = () => {
           <h2 className="mb-6 text-3xl font-bold">{Winter_Title}</h2>
           <img
             src={winterImg}
-            alt="Testament"
+            alt="Image"
             className="mb-6 object-cover rounded-md drop-shadow-md"
           />
           <p className="mb-4 text-BlackSecondColor">

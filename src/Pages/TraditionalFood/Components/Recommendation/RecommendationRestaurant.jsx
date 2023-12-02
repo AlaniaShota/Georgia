@@ -16,12 +16,12 @@ const RecommendationRestaurant = () => {
 
   return (
     <div className="mt-8 ">
-      <h1 className="pl-4 text-2xl">Recommendation Restaurant</h1>
-      <div className="grid grid-cols-3 gap-12 mt-4">
+      <h1 className="pl-4 text-3xl font-medium">Recommendation Restaurant</h1>
+      <div className="grid grid-cols-3 gap-12 mt-5">
         {randomData.map((item) => (
           <div
             key={item.id}
-            className="flex flex-col  border drop-shadow-md rounded-md bg-white"
+            className="flex flex-col mx-4 border drop-shadow-md rounded-md bg-white"
           >
             <img
               src={item.img}

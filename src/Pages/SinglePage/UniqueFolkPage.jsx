@@ -1,5 +1,3 @@
-import { Helmet } from "react-helmet";
-
 import folkImg from "../../assets/home-img/lilesvanurisimgera.jpg";
 import mountainImg from "../../assets/home-img/shutterstock-1303327465.webp";
 import songImg from "../../assets/home-img/shutterstock-1648681876(1).webp";
@@ -44,7 +42,7 @@ const UniqueFolkPage = () => {
           <h1 className="mb-6 text-3xl font-bold">{Mountain_Title}</h1>
           <img
             src={mountainImg}
-            alt="Testament"
+            alt="Image"
             className="mb-6 object-cover rounded-md drop-shadow-md"
           />
           <p className="mb-4 text-BlackSecondColor">
@@ -76,7 +74,7 @@ const UniqueFolkPage = () => {
           <h2 className="mb-6 text-3xl font-bold">{Song_Title}</h2>
           <img
             src={songImg}
-            alt="Testament"
+            alt="Image"
             className="mb-6 object-cover rounded-md drop-shadow-md"
           />
           <p className="mb-4 text-BlackSecondColor">{Song_First_Description}</p>
@@ -92,7 +90,7 @@ const UniqueFolkPage = () => {
           <h2 className="mb-6 text-3xl font-bold">{Genius_Title}</h2>
           <img
             src={danceImg}
-            alt="Testament"
+            alt="Image"
             className="mb-6 object-cover rounded-md drop-shadow-md"
           />
           <h3 className="mb-4 text-BlackSecondColor">

@@ -59,7 +59,7 @@ const MultiAdventureScroll = () => {
                 <h1 className="text-3xl text-white font-bold ">{item.title}</h1>
               </div>
               <div>
-                <p className="text-lg w-497  font-medium pt-6 pr-20 text-whiteSecondText">
+                <p className="text-lg w-497 font-light py-8 pr-20 text-whiteSecondText">
                   {item.description}
                 </p>
               </div>

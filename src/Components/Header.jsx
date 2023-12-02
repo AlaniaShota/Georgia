@@ -85,7 +85,7 @@ const Header = ({ titlePage, titleText, descriptionText, img }) => {
             <motion.p
               initial={{ opacity: 0 }}
               animate={descriptionAnimation}
-              className="w-497 pt-4 text-white font-normal "
+              className="w-497 text-lg pt-4 text-whiteSecondText  "
             >
               {descriptionText ? descriptionText : null}
             </motion.p>

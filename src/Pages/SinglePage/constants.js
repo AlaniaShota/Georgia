@@ -192,3 +192,44 @@ export const Winter_Second_Description =
   "Of course, there is plentiful snow at the  European-style winter resorts of Gudauri, Mestia, Town Bakuriani, and Goderdzi, where you can ski on and off-piste, go snowboarding, take a ski tour, or even go heliskiing or paragliding. A whole world of adventure awaits. ";
 export const Winter_Third_Description =
   "At every such resort, there are contests and tournaments that you can take part in. Complementing all of these attractions and activities is of course the delicious Georgian cuisine, offering a gastronomic revelation any time of year. ";
+
+export const Land_Title = "Georgia - The Land Of Adventure";
+export const Land_First_Description =
+  "Do you want to experience real adventure after a tiresome daily routine at work? Do you want to take a walk through the dense forest, go rafting, hike to some of the highest summits in the region and ski down from there?";
+export const Land_Second_Description =
+  "Georgia may be small, with its 70,000 square meter area, but it undeniably holds great adventures.";
+export const Forests_Title = "Forests";
+export const Forests_First_Description =
+  "Georgia is a mountainous country, no matter where you go, you eventually find yourself in a forest. There are 14 state reservations, 13 national parks, and 24 restricted and 3 protected landscapes in Georgia. If you like hiking, plan a trip to one of the many protected sites. Wherever you go, you can enjoy untouched nature with rare species of trees, animals, and birds (some listed on the ICUN Red List), clear rivers, lakes, waterfalls, and colorful flower fields.";
+export const Forests_Second_Description =
+  "It doesn`t matter whether you choose to travel on foot, on horseback, or by bicycle (such means of transportation and the complementary roads for it are well-developed throughout Georgia) - the hiking trails make your trip easier. After a tiresome day spent hiking, relax, pitch a tent, light a bonfire, and drift away into the depths of the magical night sky.";
+export const Mountains_Title = "Mountains";
+export const Mountains_First_Description =
+  "Drawn to extremes and obsessed with conquering mountains? If that’s the case, no matter the time of the year - the Caucasus Mountains are the perfect destination for you. You don’t have to be a professional mountaineer or a rock climber to go hiking or trekking in Georgia. However, if you are experienced, then you can still dare to go to the summit of the glacier-capped, two-headed peak Ushba and its bride Tetnuldi, Shkhara, and Jangha (listing all of them would make this guide too long). With a team of experienced guides, nothing is impossible.";
+export const Mountains_Second_Description =
+  "Be it by heliski or ski touring, Georgia offers a wide selection of European-standard ski resorts, where you can ski on and off-piste. Snowboarding, snowmobiling, skiing, and other winter activities await you at the popular winter resorts of Gudauri, Mestia, Goderdzi, and Bakuriani.";
+export const Rivers_Waterfalls_Lakes_Title = "Rivers, Waterfalls, Lakes";
+export const Rivers_Waterfalls_Lakes_First_Description =
+  "Most rivers in Georgia flow from the mountains and through impassable gorges, so if you are an adrenaline junkie and a fan of active pastime, go rafting. Georgian rafters will provide the necessary equipment and safely take you down extremely difficult rivers (class 1-3).";
+export const Rivers_Waterfalls_Lakes_Second_Description =
+  "Don`t dwell much on the diversity of dozens of lakes and waterfalls scattered across Georgia. There are rivers in Georgia, such as the Mtkvari river, where even a beginner can go rafting.";
+export const Rivers_Waterfalls_Lakes_Third_Description =
+  "Kayaking is also possible on the 28 routes accessible routes from April to the end of November. Visit Abashistskali for the best kayaking throughout the year.";
+export const Canyons_Title = "Canyons";
+export const Canyons_First_Description =
+  "Okatse, Martvili Canyon, Tsalka (Dashbashi), and many other canyons carved into volcanic rocks will have you in awe of the rare biodiversity. On top of that, canyoning in Georgia always equates to several exciting adventures - hiking, abseiling over waterfalls, climbing, swimming, jumping off a cliff, and more. ";
+export const Canyons_Second_Description =
+  "Among the waterfalls of the Imereti, Samegrelo and Racha-Lechkhumi regions, there are several that even teenagers can safely go down on a rope with experienced instructors.";
+export const Caves_Caverns_Title = "Caves and Caverns";
+export const Caves_Caverns_First_Description =
+  "Did you know that the deepest caves in the world are in Georgia? There are more than 30 caves and caves in the country, including, the karst caves of Prometheus, Sataplia, Navenakhevi, Tetra and others. This is an incomplete list of the magical cave world and the natural wonders of stalagmites and stalactites. In the Sataplia cave, you can also see the footprints of dinosaurs.";
+export const Caves_Caverns_Second_Description =
+  "The adventure does not end there - Vardzia, Uplistsikhe, Gareji desert, Kvakhvreli cave complex, and many other cities and monastic complexes carved in stone, take you on an exciting journey through the history of Georgia.";
+export const Black_Sea_Title = "The Black Sea";
+export const Black_Sea_Description =
+  "Visiting the sea is always a fun adventure, but the beautiful sea coasts of Georgia offer more than swimming, tanning, and enjoying gorgeous sunsets. Cut through the waves on speed boats and conquer the entire expanse of the Black Sea with a paraglider.";
+export const Why_Georgia_Second_Title = "Still, why Georgia?";
+export const Why_Georgia_Second_First_Description =
+  "Select from numerous activities like paragliding, ziplining, kayaking, rafting, canyoning, heliskiing, ski tours, mountain climbing, hiking, horseback riding, and many others. To top it all off, experience the famous Georgian hospitality, delicious Georgian Supra, Georgian dancing, and folklore.";
+export const Why_Georgia_Second_Second_Description =
+  "Come to Georgia for an unforgettable adventure!";

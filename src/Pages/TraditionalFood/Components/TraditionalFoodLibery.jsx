@@ -58,26 +58,26 @@ const TraditionalFoodLibery = () => {
       <div className="grid grid-cols-3 gap-5 lg:container sm:mx-8 lg:mx-0">
         {displayedTraditionalFood.slice(0, next).map((item) => (
           <div
-            className="flex flex-col justify-between border drop-shadow-md rounded-lg bg-white"
+            className="flex flex-col justify-between border drop-shadow-md rounded-md bg-white"
             key={item.id}
           >
             <img
               alt={item.name}
               src={item.img}
-              className="object-cover rounded-t-lg  h-[200px]"
+              className="object-cover rounded-t-md h-[200px]"
             />
             <div className="p-4">
-              <h1 className="text-xl font-normal">{item.name}</h1>
+              <h1 className="text-2xl ">{item.name}</h1>
               {item.location ? (
-                <h3 className="text-sm text-BlackSecondColor font-normal my-3">
+                <h3 className=" text-BlackSecondColor font-light my-3">
                   {item.location}
                 </h3>
               ) : (
-                <h3 className="text-sm text-BlackSecondColor font-normal my-3">
+                <h3 className=" text-BlackSecondColor font-light my-3">
                   Most iconic:
                 </h3>
               )}
-              <p className="text-sm text-BlackSecondColor font-normal">
+              <p className=" text-BlackSecondColor font-light">
                 {showMore ? item.about : `${item.about.substring(0, 200)}`}
               </p>
             </div>

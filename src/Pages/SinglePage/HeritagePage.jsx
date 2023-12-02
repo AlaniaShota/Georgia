@@ -40,7 +40,7 @@ const HeritagePage = () => {
           <h1 className="mb-6 text-3xl font-bold">{Testament_Title}</h1>
           <img
             src={testamentImg}
-            alt="Testament"
+            alt="Image"
             className="mb-6 object-cover rounded-md drop-shadow-md"
           />
           <p className="mb-4 text-BlackSecondColor">
@@ -60,7 +60,7 @@ const HeritagePage = () => {
           <h2 className="mb-6 text-3xl font-bold">{Vine_Clay_Title}</h2>
           <img
             src={kvevriImg}
-            alt="Testament"
+            alt="Image"
             className="mb-6 object-cover rounded-md drop-shadow-md"
           />
           <p className="mb-4 text-BlackSecondColor">
@@ -74,7 +74,7 @@ const HeritagePage = () => {
           <h2 className="mb-6 text-3xl font-bold">{Wine_Song_Title}</h2>
           <img
             src={foulkImg}
-            alt="Testament"
+            alt="Image"
             className="mb-6 object-cover rounded-md drop-shadow-md"
           />
           <p className="mb-4 text-BlackSecondColor">
@@ -88,7 +88,7 @@ const HeritagePage = () => {
           <h2 className="mb-6 text-3xl font-bold">{Wine_Food_Title}</h2>
           <img
             src={wineImg}
-            alt="Testament"
+            alt="Image"
             className="mb-6 object-cover rounded-md drop-shadow-md"
           />
           <h3 className="mb-4 text-BlackSecondColor">{Wine_Food_Word}</h3>

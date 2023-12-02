@@ -48,7 +48,7 @@ const MultiHeaderParallax = () => {
         <AnimatePresence>
           <motion.div
             style={{ y: textY }}
-            className="font-light text-white text-7xl md:text-9xl relative z-20"
+            className="font-light text-white text-9xl md:text-9xl relative z-20"
           >
             <h1>
               Why <span ref={textRef}>Georgia</span>

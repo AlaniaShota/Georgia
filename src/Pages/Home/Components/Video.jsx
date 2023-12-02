@@ -51,7 +51,7 @@ const Video = () => {
           </div>
           <div className="flex flex-col justify-center items-end bg-transparent opacity-100 pr-10  cursor-default">
             <h1 className=" text-4xl text-white font-bold ">{item.title}</h1>
-            <p className="w-497  text-right text-whiteSecondText font-normal  pl-7 pt-6 ">
+            <p className="w-497 text-lg text-right text-whiteSecondText font-light  pl-7 py-8 ">
               {item.description}
             </p>
             <Link to={item.link}>

@@ -34,15 +34,15 @@ const RestaurantCard = () => {
             />
             <div className="grid grid-cols-2 m-4">
               <div className="flex flex-col items-start">
-                <h1 className="text-xl font-normal">{item.name}</h1>
-                <p className="text-xs text-BlackSecondColor font-light">
+                <h1 className="text-lg font-semibold">{item.name}</h1>
+                <p className="text-xs  text-BlackSecondColor font-light">
                   {item.location}
                 </p>
               </div>
               <Link
                 to={item.visit}
                 target="_blank"
-                className="flex justify-end items-end"
+                className="flex justify-end items-end "
               >
                 <Button>
                   <span className="text-darkBlueText font-medium">WEBSITE</span>

@@ -34,7 +34,7 @@ const DetailFood = () => {
             alt={moreInformation.name}
             className="rounded-t-lg object-contain"
           />
-          <Link to={`..${search}`} relative="path" className="flex mt-2 pl-4">
+          <Link to={`..${search}`} relative="path" className="flex mt-10 pl-4">
             <Button>
               <span className="text-darkBlueText font-medium">
                 &larr; BACK TO {searchCategory}
@@ -44,17 +44,19 @@ const DetailFood = () => {
           <div className="flex justify-between">
             <div className="flex flex-col flex-wrap justify-center items-start px-4">
               {moreInformation.type ? (
-                <h6 className="text-BlackSecondColor">
+                <h6 className="text-BlackSecondColor font-light">
                   {moreInformation.type}
                 </h6>
               ) : null}
-              <h1 className="text-4xl">{moreInformation.name}</h1>
+              <h1 className="text-4xl font-semibold">{moreInformation.name}</h1>
               {moreInformation.location ? (
-                <h4 className="text-BlackSecondColor text-xl">
+                <h4 className="text-BlackSecondColor text-lg font-light">
                   {moreInformation.location}
                 </h4>
               ) : (
-                <h4 className="text-BlackSecondColor text-xl">Most iconic:</h4>
+                <h4 className="text-BlackSecondColor font-medium">
+                  Most iconic:
+                </h4>
               )}
             </div>
             <div className="my-8 px-4">
@@ -65,9 +67,7 @@ const DetailFood = () => {
               />
             </div>
           </div>
-          <p className="text-xl font-medium px-4 pb-5">
-            {moreInformation.about}
-          </p>
+          <p className="text-lg  px-4 pb-5">{moreInformation.about}</p>
           <RecommendationRestaurant />
         </div>
       </>
