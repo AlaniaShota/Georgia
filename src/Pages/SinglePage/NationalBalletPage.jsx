@@ -19,11 +19,8 @@ import Header from "../../Components/Header";
 const NationalBalletPage = () => {
   return (
     <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Georgia - National Ballet</title>
-      </Helmet>
       <Header
+        titlePage={"Georgia - National Ballet"}
         titleText={Dance_Title}
         descriptionText={Dance_Description}
         img={balletImg}

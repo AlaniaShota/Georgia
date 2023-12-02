@@ -21,11 +21,8 @@ import Header from "../../Components/Header";
 const TraditionalFood = () => {
   return (
     <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Traditional food</title>
-      </Helmet>
       <Header
+        titlePage={"Traditional food"}
         titleText={Page_Title}
         descriptionText={About_Page}
         img={foodImg}

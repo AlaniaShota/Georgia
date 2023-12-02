@@ -4,10 +4,11 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { gsap } from "gsap";
 import { TextPlugin } from "gsap/TextPlugin";
+import { Helmet } from "react-helmet";
 
 gsap.registerPlugin(TextPlugin);
 
-const Header = ({ titleText, descriptionText, img }) => {
+const Header = ({ titlePage, titleText, descriptionText, img }) => {
   const titleTextRef = useRef(null);
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -41,6 +42,7 @@ const Header = ({ titleText, descriptionText, img }) => {
     }
   }, [
     inView,
+    titlePage,
     titleText,
     descriptionText,
     titleAnimation,
@@ -54,33 +56,43 @@ const Header = ({ titleText, descriptionText, img }) => {
   };
 
   return (
-    <div className="flex flex-col">
-      <div className="flex w-full justify-start items-center flex-wrap cursor-default">
-        <img src={img} alt={titleText} className="object-cover h-737 w-full" />
-        <motion.div
-          ref={ref}
-          initial="hidden"
-          animate={inView ? "visible" : "hidden"}
-          variants={titleVariants}
-          transition={{ duration: 1 }}
-          className="absolute ml-40 bg-transparent opacity-100"
-        >
-          <motion.h1
-            className="text-left  text-4xl text-white font-bold "
-            ref={titleTextRef}
-            initial={{ opacity: 0, y: 50 }}
-            animate={titleAnimation}
-          ></motion.h1>
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={descriptionAnimation}
-            className="w-497 pt-4 text-white font-normal "
+    <>
+      <Helmet>
+        {/* <meta charSet="utf-8" /> */}
+        <title>{titlePage}</title>
+      </Helmet>
+      <div className="flex flex-col">
+        <div className="flex w-full justify-start items-center flex-wrap cursor-default">
+          <img
+            src={img}
+            alt={titleText}
+            className="object-cover h-737 w-full"
+          />
+          <motion.div
+            ref={ref}
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={titleVariants}
+            transition={{ duration: 1 }}
+            className="absolute ml-40 bg-transparent opacity-100"
           >
-            {descriptionText ? descriptionText : null}
-          </motion.p>
-        </motion.div>
+            <motion.h1
+              className="text-left  text-4xl text-white font-bold "
+              ref={titleTextRef}
+              initial={{ opacity: 0, y: 50 }}
+              animate={titleAnimation}
+            ></motion.h1>
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={descriptionAnimation}
+              className="w-497 pt-4 text-white font-normal "
+            >
+              {descriptionText ? descriptionText : null}
+            </motion.p>
+          </motion.div>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

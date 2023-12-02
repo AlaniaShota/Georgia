@@ -45,11 +45,8 @@ const DeliciousPage = () => {
 
   return (
     <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Georgian Delicious Cuisine</title>
-      </Helmet>
       <Header
+        titlePage={"Georgian Delicious Cuisine"}
         titleText={Delicious_Cuisine_Title}
         descriptionText={Delicious_Cuisine_Description}
         img={deliciousImg}

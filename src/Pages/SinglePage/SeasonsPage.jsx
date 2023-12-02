@@ -28,11 +28,8 @@ import Header from "../../Components/Header";
 const SeasonsPage = () => {
   return (
     <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>4 Seasons in Georgia</title>
-      </Helmet>
       <Header
+        titlePage={"4 Seasons in Georgia"}
         titleText={Season_Title}
         descriptionText={Season_Description}
         img={natureImg}

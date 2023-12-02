@@ -29,11 +29,8 @@ import Header from "../../Components/Header";
 const HeritagePage = () => {
   return (
     <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Georgia - The Cradle of Wine</title>
-      </Helmet>
       <Header
+        titlePage={"Georgia - The Cradle of Wine"}
         titleText={Cradle_Wine_Title}
         descriptionText={Cradle_Wine_Description}
         img={HeritageImg}

@@ -59,12 +59,12 @@ const Home = () => {
   return (
     <div>
       <Helmet>
-        <meta charSet="utf-8" />
+        {/* <meta charSet="utf-8" /> */}
         <title>Home</title>
       </Helmet>
-      <div>
+      <>
         <MultiHeaderParallax />
-      </div>
+      </>
       <div className="lg:container sm:mx-8 lg:mx-0 ">
         {customComponentsData.map(([componentType], index) => (
           <Card

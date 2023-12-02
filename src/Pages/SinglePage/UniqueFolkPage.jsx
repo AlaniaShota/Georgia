@@ -33,11 +33,8 @@ import {
 const UniqueFolkPage = () => {
   return (
     <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Georgia - Unique Folklore</title>
-      </Helmet>
       <Header
+        titlePage={"Georgia - Unique Folklore"}
         titleText={Folk_Title}
         descriptionText={Folk_Description}
         img={folkImg}

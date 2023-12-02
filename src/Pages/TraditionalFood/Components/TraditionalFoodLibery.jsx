@@ -23,7 +23,7 @@ const TraditionalFoodLibery = () => {
     fetch("/api/foods")
       .then((res) => res.json())
       .then((data) => setTraditionalFood(data.foods));
-  });
+  }, []);
 
   const handleMoreItem = () => {
     setNext(next + loadMoreContentCount);
@@ -38,6 +38,7 @@ const TraditionalFoodLibery = () => {
   return (
     <>
       <Header
+        titlePage={"Traditional food Library"}
         titleText={Dishes_Title}
         descriptionText={Dishes_Description}
         img={foodImg}

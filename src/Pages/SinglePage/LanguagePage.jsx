@@ -26,11 +26,8 @@ import Header from "../../Components/Header";
 const LanguagePage = () => {
   return (
     <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Georgian Unique Alphabet</title>
-      </Helmet>
       <Header
+        titlePage={"Georgian Unique Alphabet"}
         titleText={Language_Title}
         descriptionText={Language_Description}
         img={languageImg}

@@ -22,7 +22,7 @@ const FoodCard = () => {
       cardAnimation.start({
         opacity: 1,
         y: 0,
-        transition: { duration: 3, delay: 2 },
+        transition: { duration: 2, delay: 1 },
       });
     }
   }, [inView, cardAnimation]);

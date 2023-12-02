@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "../Components/Layout";
+import { ScrollToTop } from "../Components/ScrollToTop";
 import Home from "../Pages/Home/Home";
 import Location from "../Pages/Location/Location";
 import Hotel from "../Pages/Hotel/Hotel";
@@ -18,7 +19,13 @@ import UniqueNaturePage from "../Pages/SinglePage/UniqueNaturePage";
 
 export const router = createBrowserRouter([
   {
-    element: <Layout />,
+    element: (
+      <>
+        <Layout />,
+        <ScrollToTop />
+      </>
+    ),
+
     children: [
       {
         path: "/",
