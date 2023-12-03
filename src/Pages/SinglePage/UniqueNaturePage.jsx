@@ -8,7 +8,7 @@ import caveImg from "../../assets/home-img/prometheus-cave-gnta.webp";
 import seaImg from "../../assets/home-img/seaside-adjara-black-sea.webp";
 import kaykingImg from "../../assets/home-img/kayaking-techura-gnta.webp";
 
-import Header from "../../Components/Header";
+import { Header } from "../../Components/index";
 
 import {
   Land_Title,
@@ -37,7 +37,7 @@ import {
   Why_Georgia_Second_Second_Description,
 } from "./constants";
 
-const UniqueNaturePage = () => {
+export const UniqueNaturePage = () => {
   return (
     <>
       <Header
@@ -160,5 +160,3 @@ const UniqueNaturePage = () => {
     </>
   );
 };
-
-export default UniqueNaturePage;

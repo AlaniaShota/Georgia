@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const NavLinks = ({ scrolled }) => {
+export const NavLinks = ({ scrolled }) => {
   const links = [
     {
       id: "el1",
@@ -47,5 +47,3 @@ const NavLinks = ({ scrolled }) => {
     </>
   );
 };
-
-export default NavLinks;

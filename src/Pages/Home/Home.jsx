@@ -1,11 +1,13 @@
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
-import MultiHeaderParallax from "./Components/MultiHeaderParallax";
-import MultiAlphabetDrag from "./Components/MultiAlphabetDrag";
-import MultiHeritageAnimation from "./Components/MultiHeritageAnimation";
-import MultiCuisineMouseMove from "./Components/MultiCuisineMouseMove";
-import MultiAdventureScroll from "./Components/MultiAdventureScroll";
-import Video from "./Components/Video";
+import {
+  MultiAdventureScroll,
+  MultiAlphabetDrag,
+  MultiCuisineMouseMove,
+  MultiHeaderParallax,
+  MultiHeritageAnimation,
+  Video,
+} from "./Components/index";
 
 const cardVariants = {
   offscreen: {
@@ -55,7 +57,8 @@ function Card({ customComponent, isFirst }) {
 }
 
 const customComponentsData = [["A"], ["B"], ["C"], ["D"], ["E"]];
-const Home = () => {
+
+export const Home = () => {
   return (
     <div>
       <Helmet>
@@ -77,5 +80,3 @@ const Home = () => {
     </div>
   );
 };
-
-export default Home;

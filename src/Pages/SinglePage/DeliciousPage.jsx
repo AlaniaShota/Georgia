@@ -1,12 +1,11 @@
-import { Helmet } from "react-helmet";
 import deliciousImg from "../../assets/home-img/georgia-traditional-dinner.jpg";
 import supraImg from "../../assets/home-img/jewells-restaurant-supra-menu.jpg";
 import badriganiImg from "../../assets/home-img/eggplant-with-hazelnuts-gnta.webp";
 import pkhaliImg from "../../assets/home-img/meadow-pkhali-gnta.webp";
 import khinkaliImg from "../../assets/home-img/a-vegetarian-guide-to-georgian-food-qartuli-kerdzebis-vegetarianuli-gzamkvlevi-skhvadaskhva-khinkali.webp";
 import acharuliImg from "../../assets/home-img/acharuli-khachapuri-gnta.webp";
-import { useEffect, useRef } from "react";
-import Header from "../../Components/Header";
+import { useEffect } from "react";
+import { Header } from "../../Components/index";
 import {
   Delicious_Cuisine_Title,
   Delicious_Cuisine_Description,
@@ -34,7 +33,7 @@ import {
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const DeliciousPage = () => {
+export const DeliciousPage = () => {
   const [food, setFood] = useState([]);
 
   useEffect(() => {
@@ -115,7 +114,7 @@ const DeliciousPage = () => {
           <h3 className="mb-4 text-BlackSecondColor">{Answer_First_Word}</h3>
           <h3 className="mb-4 text-BlackSecondColor">{Answer_Second_Word}</h3>
           {food.slice(0, 14).map((item) => (
-            <ul className="" key={item.in}>
+            <ul key={item.id}>
               <li className="my-1 hover:text-red-500 p-1 duration-400">
                 <Link to={`/library/${item.id}`}>
                   <span>{item.name}</span>
@@ -146,5 +145,3 @@ const DeliciousPage = () => {
     </>
   );
 };
-
-export default DeliciousPage;

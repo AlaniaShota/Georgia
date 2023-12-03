@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import NavLinks from "./NavLinks";
+import { NavLinks } from "./index";
 import iconImg from "../assets/icon/pngwing.com.png";
 
-const MenuBar = () => {
+export const MenuBar = () => {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
+      if (window.scrollY > 670) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -52,5 +52,3 @@ const MenuBar = () => {
     </div>
   );
 };
-
-export default MenuBar;

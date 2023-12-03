@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
 
-const Hotel = () => {
+export const Hotel = () => {
   return (
     <div>
       <Helmet>
@@ -11,5 +11,3 @@ const Hotel = () => {
     </div>
   );
 };
-
-export default Hotel;

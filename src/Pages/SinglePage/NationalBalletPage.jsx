@@ -1,4 +1,3 @@
-import { Helmet } from "react-helmet";
 import balletImg from "../../assets/home-img/mastery-of-generation.jpg";
 import coupleImg from "../../assets/home-img/dance-gnta.webp";
 import {
@@ -14,9 +13,9 @@ import {
   Dance_Universal_Second_Description,
   Dance_Universal_Third_Description,
 } from "./constants";
-import Header from "../../Components/Header";
+import { Header } from "../../Components/index";
 
-const NationalBalletPage = () => {
+export const NationalBalletPage = () => {
   return (
     <>
       <Header
@@ -60,5 +59,3 @@ const NationalBalletPage = () => {
     </>
   );
 };
-
-export default NationalBalletPage;

@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
 
-const Location = () => {
+export const Location = () => {
   return (
     <div>
       <Helmet>
@@ -11,5 +11,3 @@ const Location = () => {
     </div>
   );
 };
-
-export default Location;

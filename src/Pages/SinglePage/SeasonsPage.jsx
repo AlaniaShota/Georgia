@@ -1,4 +1,3 @@
-import { Helmet } from "react-helmet";
 import natureImg from "../../assets/home-img/why-georgia-nature.jpg";
 import fallImg from "../../assets/home-img/Fall.webp";
 import springImg from "../../assets/home-img/Spring.webp";
@@ -23,9 +22,9 @@ import {
   Winter_Second_Description,
   Winter_Third_Description,
 } from "./constants";
-import Header from "../../Components/Header";
+import { Header } from "../../Components/index";
 
-const SeasonsPage = () => {
+export const SeasonsPage = () => {
   return (
     <>
       <Header
@@ -102,5 +101,3 @@ const SeasonsPage = () => {
     </>
   );
 };
-
-export default SeasonsPage;

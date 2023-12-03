@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Link } from "react-router-dom";
 
-const RandomFood = ({ randomFood }) => {
+export const RandomFood = ({ randomFood }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -35,5 +35,3 @@ const RandomFood = ({ randomFood }) => {
     </Link>
   );
 };
-
-export default RandomFood;

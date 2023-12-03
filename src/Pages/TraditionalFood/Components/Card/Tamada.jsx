@@ -8,7 +8,7 @@ import { Tamada_Title, Tamada_Description } from "../../constants";
 
 gsap.registerPlugin(TextPlugin);
 
-const Tamada = () => {
+export const Tamada = () => {
   const titleTextRef = useRef(null);
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -78,5 +78,3 @@ const Tamada = () => {
     </motion.div>
   );
 };
-
-export default Tamada;

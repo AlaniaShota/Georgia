@@ -1,8 +1,9 @@
-import Footer from "./Footer";
+// import { MenuBar, Footer } from "./index";
+import { MenuBar } from "./MenuBar";
+import { Footer } from "./Footer";
 import { Outlet } from "react-router-dom";
-import MenuBar from "./MenuBar";
 
-const Layout = () => {
+export const Layout = () => {
   return (
     <>
       <MenuBar />
@@ -13,5 +14,3 @@ const Layout = () => {
     </>
   );
 };
-
-export default Layout;

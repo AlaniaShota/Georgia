@@ -2,7 +2,7 @@ import folkImg from "../../assets/home-img/lilesvanurisimgera.jpg";
 import mountainImg from "../../assets/home-img/shutterstock-1303327465.webp";
 import songImg from "../../assets/home-img/shutterstock-1648681876(1).webp";
 import danceImg from "../../assets/home-img/why-georgia-dance.webp";
-import Header from "../../Components/Header";
+import { Header } from "../../Components/index";
 
 import {
   Folk_Title,
@@ -28,7 +28,7 @@ import {
   Genius_Fourth_Description,
 } from "./constants";
 
-const UniqueFolkPage = () => {
+export const UniqueFolkPage = () => {
   return (
     <>
       <Header
@@ -110,5 +110,3 @@ const UniqueFolkPage = () => {
     </>
   );
 };
-
-export default UniqueFolkPage;

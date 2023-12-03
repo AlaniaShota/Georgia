@@ -1,4 +1,3 @@
-import { Helmet } from "react-helmet";
 import HeritageImg from "../../assets/home-img/kvevri.jpeg";
 import testamentImg from "../../assets/home-img/georgian-wineyard-kakheti.webp";
 import kvevriImg from "../../assets/home-img/why-georgia-cradle-of-wine.webp";
@@ -24,9 +23,9 @@ import {
   Wine_Food_Second_Description,
   Wine_Food_Third_Description,
 } from "./constants";
-import Header from "../../Components/Header";
+import { Header } from "../../Components/index";
 
-const HeritagePage = () => {
+export const HeritagePage = () => {
   return (
     <>
       <Header
@@ -106,5 +105,3 @@ const HeritagePage = () => {
     </>
   );
 };
-
-export default HeritagePage;

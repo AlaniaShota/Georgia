@@ -4,6 +4,7 @@ createServer({
   models: {
     foods: Model,
     restaurants: Model,
+    guides: Model,
   },
 
   seeds(server) {
@@ -737,14 +738,179 @@ createServer({
       fri: "Friday  1:00 PM - 12:00 AM",
       sat: "Saturday   1:00 PM - 12:00 AM",
     });
+    server.create("guide", {
+      id: 1,
+      first_name: "Gianni",
+      last_name: "Hyde-Chambers",
+      email: "ghydechambers0@berkeley.edu",
+      img: "/assets/Guide/alex-suprun-ZHvM3XIOHoE-unsplash.jpg",
+      gender: "Male",
+      status: false,
+      description:
+        "Discover the historic charm of Tbilisi with a knowledgeable guide. Uncover hidden gems in narrow streets, indulge in local cuisine, and admire the fusion of traditional and modern architecture.",
+    });
+    server.create("guide", {
+      id: 2,
+      first_name: "Cassaundra",
+      last_name: "Conklin",
+      email: "cconklin1@epa.gov",
+      gender: "Female",
+      img: "/assets/Guide/photo-1605993439219-9d09d2020fa5.avif",
+      status: true,
+      description:
+        "Embark on a journey through the Caucasus, exploring picturesque mountain landscapes, ancient fortresses, and vibrant local traditions. Your guide will illuminate the rich history and cultural tapestry of Georgia's highlands.",
+    });
+    server.create("guide", {
+      id: 3,
+      first_name: "Cosmo",
+      last_name: "Ironmonger",
+      email: "cironmonger2@goo.gl",
+      gender: "Male",
+      img: "/assets/Guide/photo-1517070208541-6ddc4d3efbcb.avif",
+      status: false,
+      description:
+        "Delight in Georgia's renowned wine culture with a guide who leads you through vineyards, ancient cellars, and wine-tasting sessions. Learn about traditional winemaking methods and savor the diverse flavors of Georgian wines.",
+    });
+    server.create("guide", {
+      id: 4,
+      first_name: "Archibaldo",
+      last_name: "O'Neary",
+      email: "aoneary3@addthis.com",
+      gender: "Male",
+      img: "/assets/Guide/photo-1528892952291-009c663ce843.avif",
+      status: false,
+      description:
+        "Explore the charming Black Sea coastline with a guide who unveils the beauty of Batumi and its surroundings. Immerse yourself in botanical gardens, waterfront promenades, and the unique blend of Georgian and Ottoman influences.",
+    });
+    server.create("guide", {
+      id: 5,
+      first_name: "Cam",
+      last_name: "Jermin",
+      email: "cjermin4@boston.com",
+      gender: "Female",
+      img: "/assets/Guide/photo-1546961329-78bef0414d7c.avif",
+      status: true,
+      description:
+        "Embark on a time-traveling adventure with a guide who navigates you through the archaeological wonders of Georgia. From ancient ruins to UNESCO World Heritage Sites, discover the layers of history etched in Georgia's landscapes.",
+    });
+    server.create("guide", {
+      id: 6,
+      first_name: "Lexie",
+      last_name: "McFade",
+      email: "lmcfade5@tinypic.com",
+      gender: "Female",
+      img: "/assets/Guide/photo-1438761681033-6461ffad8d80.avif",
+      status: true,
+      description:
+        "Indulge your taste buds with a guide who leads you through bustling markets and local eateries. Experience the richness of Georgian cuisine, from khachapuri to khinkali, as you uncover the culinary secrets of the region.",
+    });
+    server.create("guide", {
+      id: 7,
+      first_name: "Patrizius",
+      last_name: "Ledrun",
+      email: "pledrun6@sitemeter.com",
+      gender: "Male",
+      img: "/assets/Guide/photo-1530268729831-4b0b9e170218.avif",
+      status: true,
+      description:
+        "Immerse yourself in Georgia's vibrant art scene with a guide who showcases the country's contemporary and traditional artistic expressions. Visit galleries, street art hotspots, and engage with local artists, uncovering the creative pulse of Georgia.",
+    });
+    server.create("guide", {
+      id: 8,
+      first_name: "Jacki",
+      last_name: "Chastelain",
+      email: "jchastelain7@indiegogo.com",
+      gender: "Male",
+      img: "/assets/Guide/photo-1568602471122-7832951cc4c5.avif",
+      status: true,
+      description:
+        "Embark on a spiritual journey with a guide who reveals the sacred treasures of Georgian monasteries. From mountain retreats to UNESCO-listed sites, witness the architectural beauty and profound religious significance embedded in Georgia's monastic heritage.",
+    });
+    server.create("guide", {
+      id: 9,
+      first_name: "Jarred",
+      last_name: "McCree",
+      email: "jmccree8@imdb.com",
+      gender: "Male",
+      img: "/assets/Guide/photo-1573740144655-bbb6e88fb18a.avif",
+      status: true,
+      description:
+        "Escape to the countryside with a guide who introduces you to the tranquility of Georgian villages. Experience rural life, partake in local traditions, and enjoy the breathtaking landscapes that define the charm of Georgia's pastoral regions.",
+    });
+    server.create("guide", {
+      id: 10,
+      first_name: "Lemmie",
+      last_name: "Weale",
+      email: "lweale9@usgs.gov",
+      gender: "Male",
+      img: "/assets/Guide/photo-1601455763557-db1bea8a9a5a.avif",
+      status: true,
+      description:
+        "Embark on a culinary odyssey with a guide who navigates you through the diverse flavors of Georgia's regional cuisines. From Svaneti to Kakheti, savor unique dishes and learn about the cultural significance of Georgian gastronomy.",
+    });
+    server.create("guide", {
+      id: 11,
+      first_name: "Karoly",
+      last_name: "Audritt",
+      email: "kaudritta@tumblr.com",
+      gender: "Male",
+      img: "/assets/Guide/photo-1603415526960-f7e0328c63b1.avif",
+      status: true,
+      description:
+        "Discover the 'Balcony of Europe' – Borjomi – with a guide who leads you through lush landscapes, mineral springs, and the historical heart of this spa town. Uncover the rejuvenating secrets and cultural significance of this Georgian gem.",
+    });
+    server.create("guide", {
+      id: 12,
+      first_name: "Gwendolin",
+      last_name: "Ruffler",
+      email: "grufflerb@shop-pro.jp",
+      gender: "Female",
+      img: "/assets/Guide/photo-1522228115018-d838bcce5c3a.avif",
+      status: false,
+      description:
+        "Journey through Mtskheta with a guide who unveils the spiritual and historical significance of Svetitskhoveli Cathedral. Explore the UNESCO World Heritage Site, learn about its legends, and witness the architectural grandeur of this iconic Georgian landmark.",
+    });
+    server.create("guide", {
+      id: 13,
+      first_name: "Donna",
+      last_name: "Borell",
+      email: "dborellc@istockphoto.com",
+      gender: "Female",
+      img: "/assets/Guide/photo-1532074205216-d0e1f4b87368.avif",
+      status: false,
+      description:
+        "Unearth the mysteries of Vardzia with a guide who navigates you through this ancient cave city. Marvel at the rock-hewn architecture, delve into the history of medieval Georgia, and witness the cultural legacy preserved within Vardzia's labyrinthine chambers.",
+    });
+    server.create("guide", {
+      id: 14,
+      first_name: "Evangelina",
+      last_name: "Slott",
+      email: "eslottd@wikimedia.org",
+      gender: "Female",
+      img: "/assets/Guide/photo-1586297135537-94bc9ba060aa.avif",
+      status: false,
+      description:
+        "Step back in time with a guide who illuminates the wonders of Uplistsikhe, Georgia's rock-hewn town. Explore the ancient streets, chambers, and theaters carved into the rock, uncovering the historical significance of this archaeological marvel.",
+    });
+    server.create("guide", {
+      id: 15,
+      first_name: "Erl",
+      last_name: "Reuss",
+      email: "ereusse@sbwire.com",
+      gender: "Male",
+      img: "/assets/Guide/photo-1619895862022-09114b41f16f.avif",
+      status: false,
+      description:
+        "Traverse the crossroads of cultures with a guide who leads you through Georgia's diverse heritage. From Silk Road influences to modern-day intersections, discover the cultural tapestry that defines Georgia's unique identity at the crossroads of Europe and Asia.",
+    });
   },
 
   routes() {
     this.namespace = "api";
     this.logging = false;
     // this.timing = 2000
-    this.passthrough("/assets/**");
-    this.passthrough("/src/assets/**");
+    // this.passthrough("/assets/**");
+    // this.passthrough("/src/assets/**");
 
     this.get("/foods", (schema, request) => {
       return schema.foods.all();
@@ -754,6 +920,14 @@ createServer({
       "/restaurants",
       (schema, request) => {
         return schema.restaurants.all();
+      },
+      // { timing: 2000, headers: { "Cache-Control": "no-store" } }
+    );
+
+    this.get(
+      "/guides",
+      (schema, request) => {
+        return schema.guides.all();
       },
       // { timing: 2000, headers: { "Cache-Control": "no-store" } }
     );

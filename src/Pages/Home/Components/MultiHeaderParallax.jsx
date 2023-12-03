@@ -11,7 +11,7 @@ import parallaxButtonImg from "../../../assets/home-img/image-bottom.png";
 import { gsap } from "gsap";
 import { TextPlugin } from "gsap/TextPlugin";
 
-const MultiHeaderParallax = () => {
+export const MultiHeaderParallax = () => {
   const ref = useRef(null);
   const textRef = useRef(null);
 
@@ -73,5 +73,3 @@ const MultiHeaderParallax = () => {
     </div>
   );
 };
-
-export default MultiHeaderParallax;

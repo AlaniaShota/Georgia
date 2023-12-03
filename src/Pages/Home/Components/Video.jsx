@@ -11,7 +11,7 @@ import folkVideo from "../../../assets/home-video/Dato_Kenchiashvili_,_Bichiko_N
 import danceVideo from "../../../assets/home-video/Khorumi.mp4";
 import { ExploreButton } from "../../../Components/Button";
 
-const Video = () => {
+export const Video = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   const handleClick = () => {
@@ -65,5 +65,3 @@ const Video = () => {
     </>
   );
 };
-
-export default Video;

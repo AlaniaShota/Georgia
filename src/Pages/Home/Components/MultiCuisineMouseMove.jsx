@@ -6,7 +6,7 @@ import testImg from "../../../assets/home-img/test.jpeg";
 import { Link } from "react-router-dom";
 import { ExploreButton } from "../../../Components/Button";
 
-const MultiCuisineMouseMove = () => {
+export const MultiCuisineMouseMove = () => {
   const [mousePosition, setMousePosition] = useState({
     x: null,
     y: null,
@@ -77,5 +77,3 @@ const MultiCuisineMouseMove = () => {
     </div>
   );
 };
-
-export default MultiCuisineMouseMove;

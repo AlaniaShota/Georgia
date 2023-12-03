@@ -1,4 +1,3 @@
-import { Helmet } from "react-helmet";
 import languageImg from "../../assets/home-img/Language-Header.jpeg";
 import {
   Language_Title,
@@ -21,9 +20,9 @@ import {
   Features_Second_Description,
   Features_Third_Description,
 } from "./constants";
-import Header from "../../Components/Header";
+import { Header } from "../../Components/index";
 
-const LanguagePage = () => {
+export const LanguagePage = () => {
   return (
     <>
       <Header
@@ -76,5 +75,3 @@ const LanguagePage = () => {
     </>
   );
 };
-
-export default LanguagePage;

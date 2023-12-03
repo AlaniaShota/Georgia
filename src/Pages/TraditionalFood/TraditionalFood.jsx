@@ -1,8 +1,6 @@
-import { Helmet } from "react-helmet";
-
+import { Header } from "../../Components/index";
 import foodImg from "../../assets/traditional-food-img/georgia-traditional-food-image2.jpg";
-import RestaurantCard from "./Components/Card/RestaurantCard";
-import FoodCard from "./Components/Card/FoodCard";
+import { RestaurantCard, FoodCard, Tamada } from "./Components";
 import { SliderLibrary } from "./Components/SliderLibrary";
 import {
   Page_Title,
@@ -15,10 +13,8 @@ import {
   Recommendation_Title,
   Recommendation_Word,
 } from "./constants";
-import Tamada from "./Components/Card/Tamada";
-import Header from "../../Components/Header";
 
-const TraditionalFood = () => {
+export const TraditionalFood = () => {
   return (
     <>
       <Header
@@ -57,5 +53,3 @@ const TraditionalFood = () => {
     </>
   );
 };
-
-export default TraditionalFood;

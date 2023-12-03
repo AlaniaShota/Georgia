@@ -3,17 +3,15 @@ import { Link, useSearchParams } from "react-router-dom";
 import { gsap } from "gsap";
 import { TextPlugin } from "gsap/TextPlugin";
 import { Dishes_Title, Dishes_Description } from "./Card/constants";
-import FilterButton from "./FilterButton";
-import RandomFood from "./Random/RandomFood";
+import { FilterButton, RandomFood } from "./index";
+import { Header, Button } from "../../../Components/index";
 import foodImg from "../../../assets/traditional-food-img/georgia-traditional-food-image.jpg";
-import { Button } from "../../../Components/Button";
-import Header from "../../../Components/Header";
 
 gsap.registerPlugin(TextPlugin);
 
 const loadMoreContentCount = 15;
 
-const TraditionalFoodLibery = () => {
+export const TraditionalFoodLibery = () => {
   const [traditionalFood, setTraditionalFood] = useState([]);
   const [next, setNext] = useState(loadMoreContentCount);
   const [showMore, setShowMore] = useState(false);
@@ -66,18 +64,18 @@ const TraditionalFoodLibery = () => {
               src={item.img}
               className="object-cover rounded-t-md h-[200px]"
             />
-            <div className="p-4">
+            <div className="pt-1 px-4">
               <h1 className="text-2xl ">{item.name}</h1>
               {item.location ? (
-                <h3 className=" text-BlackSecondColor font-light my-3">
+                <h3 className="text-sm text-BlackSecondColor font-light my-3">
                   {item.location}
                 </h3>
               ) : (
-                <h3 className=" text-BlackSecondColor font-light my-3">
+                <h3 className="text-sm text-BlackSecondColor font-light my-3">
                   Most iconic:
                 </h3>
               )}
-              <p className=" text-BlackSecondColor font-light">
+              <p className="text-sm text-BlackSecondColor font-light">
                 {showMore ? item.about : `${item.about.substring(0, 200)}`}
               </p>
             </div>
@@ -110,5 +108,3 @@ const TraditionalFoodLibery = () => {
     </>
   );
 };
-
-export default TraditionalFoodLibery;

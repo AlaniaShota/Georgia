@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { gsap } from "gsap";
@@ -8,7 +7,7 @@ import { Helmet } from "react-helmet";
 
 gsap.registerPlugin(TextPlugin);
 
-const Header = ({ titlePage, titleText, descriptionText, img }) => {
+export const Header = ({ titlePage, titleText, descriptionText, img }) => {
   const titleTextRef = useRef(null);
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -77,7 +76,7 @@ const Header = ({ titlePage, titleText, descriptionText, img }) => {
             className="absolute ml-40 bg-transparent opacity-100"
           >
             <motion.h1
-              className="text-left  text-4xl text-white font-bold "
+              className=" w-[570px] text-4xl text-white font-bold "
               ref={titleTextRef}
               initial={{ opacity: 0, y: 50 }}
               animate={titleAnimation}
@@ -95,5 +94,3 @@ const Header = ({ titlePage, titleText, descriptionText, img }) => {
     </>
   );
 };
-
-export default Header;

@@ -233,3 +233,35 @@ export const Why_Georgia_Second_First_Description =
   "Select from numerous activities like paragliding, ziplining, kayaking, rafting, canyoning, heliskiing, ski tours, mountain climbing, hiking, horseback riding, and many others. To top it all off, experience the famous Georgian hospitality, delicious Georgian Supra, Georgian dancing, and folklore.";
 export const Why_Georgia_Second_Second_Description =
   "Come to Georgia for an unforgettable adventure!";
+
+export const Nature_Title = "Nature of Georgia";
+export const Nature_Description =
+  "To the north – towering Greater Caucasus Mountains. To the west – shimmering Black Sea. To the south – Lesser Caucasus Mountains. And to the east, a vista of valleys and fields, rivers, waterfalls, valleys, peaks, springs, lakes, reservoirs, streams, forests, caves, poppy fields, daisies, larkspur, and alpine flowers.";
+export const Land_Second_Title = "Land Given by God";
+export const Land_Second_First_Description =
+  "The legend goes like this: When God was distributing the lands to people, the Georgians were the last to show up and justified it by saying that they had been feasting, enjoying themselves and glorifying God. So God gave to them the land that he intended to keep for himself. Anyone who’s visited Georgia can say that the legend is not far from the truth. ";
+export const Land_Second_Second_Description =
+  "Ski in the mountains, then take your skis off, and several hours later, go for a dip in the sea. Walk on the snowy mountains or in the heavy rain, and then, when you’re troubled by too much sun, take off your clothes and get a tan. ";
+export const Lakes_Rivers_Title = "Lakes, Rivers, and More";
+export const Lakes_Rivers_First_Description =
+  "In this small country are 26,060 large and small rivers, 860 lakes, 55 waterfalls, and 44 reservoirs. Georgia is rich in underground palaces and the caves are of interest to spelunkers.";
+export const Lakes_Rivers_Second_Description =
+  "As of now, 28 caves have been discovered in Georgia. The Prometheus cave, near Tskaltubo, is a unique part of prehistory. The Sataplia Cave, on the other hand, is the only place in the world where you will find 120 million-year-old herbivorous and carnivorous dinosaur footprints.";
+export const Lakes_Rivers_Third_Description =
+  "In New Athos, within the occupied territory of Georgia, is the unique natural monument of the New Athos cave, which is the longest cave system in the world. It is made of Mesozoic limestone and consists of numerous caverns. ";
+export const Forests_Marshes_Title = "Forests, Marshes, and More";
+export const Forests_Marshes_First_Description =
+  "Around Georgia are many highly-esthetic, compact monuments, which have been sculpted over the centuries by nature. The unique Ispani Wetlands, close to Kobuleti, have been a part of the Georgian ecosystem since the 4th or 3rd century BCE and are of worldwide significance. They are the most untouched and only filtrating wetlands in the world, and even now attract the attention of many scientists and visitors.  ";
+export const Forests_Marshes_Second_Description =
+  "Georgia’s nature is renowned for its geographical and biological diversity. In addition to the mountains, it has all types of forests and thousands of local species of flora and fauna. ";
+export const Forests_Marshes_Third_Description =
+  "Georgia’s nature is diverse in animals, including, caucasian red deer, roe deer, wild boar, rabbits, and squirrels. As for predators, there are brown bears, wolves, badgers, lynxes, wild cats, and foxes. The mountain fauna is protected within the Greater Caucasus mountains. Many animal species that are widespread in Georgia are rare in the rest of the world and have been added to the Red List of the International Union for Conservation of Nature (IUCN). ";
+export const Waters_Climate_Title = "Waters and Climate";
+export const Waters_Climate_First_Description =
+  "There are more than 2,000 mineral and hot water springs in Georgia, along with therapeutic mud sources. Many of them are close to popular balneological resorts. ";
+export const Waters_Climate_Second_Description =
+  "Despite its small land area, Georgia contains nearly all the climate types that exist on Earth. The warm, humid, subtropical climate of the Black Sea in western Georgia, continues through the dry, continental climate of the valleys of eastern Georgia, and ends with the permafrost and glacial zone of the Caucasus Mountains. ";
+export const Waters_Climate_Third_Description =
+  "Among countries with a temperate climate, Georgia is one of the richest in plant life. More than 4,100 plant species make up the local flora (with around 6,350 species found in the Caucasus). Around 21% of those, or around 900 species, are endemic (600 to the Caucasus and 300 to Georgia). The endemism of genera is also high in Georgia, with 16 endemic and sub-endemic genera. The Goderdzi Petrified Forest, a unique natural monument in Ajara, is a noteworthy must-visit. ";
+export const Waters_Climate_Fourth_Description =
+  "Georgia is one of the centers of development and diversity for plant cultures. Grapevines, cereals, fruits, and many other notable varieties have been developed. Georgia’s biodiversity is a “living monument” of the natural and cultural heritage of the country, whose study, protection, and restoration are of great importance to all humankind. ";

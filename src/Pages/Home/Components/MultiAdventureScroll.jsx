@@ -14,7 +14,7 @@ import {
   Third_Scroll_Description,
 } from "../constants";
 
-const MultiAdventureScroll = () => {
+export const MultiAdventureScroll = () => {
   const slides = [
     {
       id: "el1",
@@ -75,5 +75,3 @@ const MultiAdventureScroll = () => {
     </div>
   );
 };
-
-export default MultiAdventureScroll;

@@ -10,7 +10,7 @@ import { useInView } from "react-intersection-observer";
 
 gsap.registerPlugin(TextPlugin);
 
-const MultiAlphabetDrag = () => {
+export const MultiAlphabetDrag = () => {
   const titleTextRef = useRef(null);
 
   const [ref, inView] = useInView({
@@ -83,5 +83,3 @@ const MultiAlphabetDrag = () => {
     </motion.div>
   );
 };
-
-export default MultiAlphabetDrag;

@@ -1,11 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link, useParams, useLocation } from "react-router-dom";
+import { RecommendationRestaurant } from "./index";
+import { Header, Button } from "../../../Components/index";
 
-import RecommendationRestaurant from "./Recommendation/RecommendationRestaurant";
-import { Button } from "../../../Components/Button";
-import Header from "../../../Components/Header";
-
-const DetailFood = () => {
+export const DetailFood = () => {
   const [moreInformation, setMoreInformation] = useState(null);
   const params = useParams();
   const location = useLocation();
@@ -80,5 +78,3 @@ const DetailFood = () => {
     </div>
   );
 };
-
-export default DetailFood;

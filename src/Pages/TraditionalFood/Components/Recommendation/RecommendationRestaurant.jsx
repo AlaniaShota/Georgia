@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { Button } from "../../../../Components/Button";
+import { Button } from "../../../../Components/index";
 
-const RecommendationRestaurant = () => {
+export const RecommendationRestaurant = () => {
   const [randomRestaurant, setRandomRestaurant] = useState([]);
   useEffect(() => {
     fetch("/api/restaurants")
@@ -52,5 +52,3 @@ const RecommendationRestaurant = () => {
     </div>
   );
 };
-
-export default RecommendationRestaurant;

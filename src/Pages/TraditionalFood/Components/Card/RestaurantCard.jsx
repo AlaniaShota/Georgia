@@ -4,7 +4,7 @@ import { Button } from "../../../../Components/Button";
 
 const loadMoreContentCount = 3;
 
-const RestaurantCard = () => {
+export const RestaurantCard = () => {
   const [recommendationRestaurant, setRecommendationRestaurant] = useState([]);
   const [next, setNext] = useState(loadMoreContentCount);
 
@@ -20,7 +20,7 @@ const RestaurantCard = () => {
 
   return (
     <>
-      <div className="grid grid-cols-3 gap-12 mt-5">
+      <div className="grid grid-cols-3 gap-16 mt-5">
         {recommendationRestaurant.slice(0, next).map((item) => (
           <div
             key={item.id}
@@ -62,5 +62,3 @@ const RestaurantCard = () => {
     </>
   );
 };
-
-export default RestaurantCard;

@@ -5,7 +5,7 @@ import { Dishes_Title, Dishes_Description } from "./constants";
 import { Button } from "../../../../Components/Button";
 import { useInView } from "react-intersection-observer";
 
-const FoodCard = () => {
+export const FoodCard = () => {
   const [foodCard, setFoodCard] = useState([]);
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -70,5 +70,3 @@ const FoodCard = () => {
     </motion.div>
   );
 };
-
-export default FoodCard;
