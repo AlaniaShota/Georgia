@@ -1,12 +1,4 @@
 export { Home } from "./Pages/Home/Home";
-export { DeliciousPage } from "./Pages/SinglePage/DeliciousPage";
-export { HeritagePage } from "./Pages/SinglePage/HeritagePage";
-export { LanguagePage } from "./Pages/SinglePage/LanguagePage";
-export { NationalBalletPage } from "./Pages/SinglePage/NationalBalletPage";
-export { SeasonsPage } from "./Pages/SinglePage/SeasonsPage";
-export { TravelAndCreatePage } from "./Pages/SinglePage/TravelAndCreatePage";
-export { UniqueFolkPage } from "./Pages/SinglePage/UniqueFolkPage";
-export { UniqueNaturePage } from "./Pages/SinglePage/UniqueNaturePage";
 export { TourGuide } from "./Pages/Guide/TourGuide";
 export { Hotel } from "./Pages/Hotel/Hotel";
 export { Location } from "./Pages/Location/Location";

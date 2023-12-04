@@ -1,10 +1,9 @@
 import { motion, useInView } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useRef } from "react";
-
+import { ExploreButton } from "../../../Components/Button";
 import { Cradle_Wine_Title, Cradle_Wine_Description } from "../constants";
 import kvevriImg from "../../../assets/home-img/akhaltsikhe-winemakeing.jpg";
-import { ExploreButton } from "../../../Components/Button";
 
 export const MultiHeritageAnimation = () => {
   const ref = useRef();

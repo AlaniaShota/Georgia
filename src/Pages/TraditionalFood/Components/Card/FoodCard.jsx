@@ -22,7 +22,7 @@ export const FoodCard = () => {
       cardAnimation.start({
         opacity: 1,
         y: 0,
-        transition: { duration: 2, delay: 1 },
+        transition: { duration: 2, delay: 0.5 },
       });
     }
   }, [inView, cardAnimation]);
@@ -36,7 +36,7 @@ export const FoodCard = () => {
     <motion.div
       ref={ref}
       variants={cardVariants}
-      initial={{ opacity: 0, y: 100 }}
+      initial={{ opacity: 0, y: 70 }}
       animate={cardAnimation}
       className="grid grid-cols-3  gap-5 h-96 my-20"
     >
