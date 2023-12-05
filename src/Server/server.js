@@ -6,6 +6,7 @@ createServer({
     restaurants: Model,
     guides: Model,
     maps: Model,
+    locations: Model,
   },
 
   seeds(server) {
@@ -14,6 +15,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Khachapuri.jpg",
       type: "SAVORY PIE",
       name: "Khachapuri",
+      isLarge: true,
       location: "Most iconic: Sakhachapure №1",
       about:
         "This simple cheese bread known as khachapuri is the most famous dish in Georgia. It is traditionally topped with melted cheese, eggs and butter. There are different types of khachapuri, and even though some new cheese varieties such as mozzarella and feta have been incorporated in the dish, the most common additions still include traditional Georgian Sulguni or Imeretian cheese. It is shaped into different forms, and depending on the baking procedure and its form, it can be consumed individually or shared. Two of the most common varieties include the Imeretian khachapuri, shaped into a circular form, and Adjaran khachapuri, the open-faced version topped with butter and a raw egg on top. Although it is considered a snack, khachapuri can often be consumed as a full meal. It can also be bought at numerous kiosks located alongside Georgian roads. Khachapuri is also often prepared in Russia, in the whole area of the former Soviet Union, and throughout the world.",
@@ -24,6 +26,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Khinkali.jpg",
       type: "DUMPLINGS",
       name: "Khinkali",
+      isLarge: false,
       location: "Most iconic: Maspindzelo",
       about:
         "These delicious Georgian dumplings known as khinkali are considered to be one of the national dishes of the country. The dumplings are filled with meat and spices, then traditionally twisted into a knot at the top. Regional differences influence the fillings and every part of Georgia has their distinctive variety. For example, in the mountainous regions, the most traditional filling is lamb, however; the most frequent variety throughout entire Georgia is a mixture of pork and beef. The vegetarian versions made with traditional Imeretian cheese or mushrooms are also quite popular. The traditional recipe was developed over time, and now includes fresh herbs such as cilantro or parsley. The meat for khinkali is never precooked – therefore, all of the juices are tucked inside the dumplings. Eating khinkali is also a part of traditional Georgian folklore: the top, where the dough is twisted into a knot, should never be eaten because it serves as a handle to hold the dumpling, and it is usually left on the plate as an indication of how many dumplings have been eaten. These flavorful dumplings are served plain or paired with freshly ground black pepper.",
@@ -34,6 +37,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Lobio.jpg",
       type: "STEW",
       name: "Lobio",
+      isLarge: false,
       location: "Most iconic: Salobie Bia",
       about:
         "Lobio is a Georgian invention that refers to a wide group of dishes that employ beans as a key ingredient. Most commonly, those are red kidney beans, boiled with various spices to create a thick stew, commonly served with mchadi, a traditional Georgian cornbread. Among numerous other varieties, lobio nigozit, which incorporates mashed beans in a thick walnut sauce, is the most common version. The dish can also appear in a form of a salad, with whole or mashed beans, and it is typically served cold.",
@@ -44,6 +48,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Chicken-tabaka.jpg",
       type: "CHICKEN DISH",
       name: "Chicken tabaka",
+      isLarge: false,
       location: "",
       about:
         "Chicken tabaka is a popular Georgian dish consisting of a chicken that is fried in a special way in a traditional pan called tapa. One should flatten the chicken on a pan by pressing it down with a weight. When it is properly prepared, the chicken should be crispy on the outside, while retaining its tenderness and moistness on the inside. The dish is often consumed with tkemali plum sauce on the side.",
@@ -54,7 +59,9 @@ createServer({
       img: "/assets/georgian-traditional-food/Ajika.jpg",
       type: "DIP",
       name: "Ajika",
+      isLarge: false,
       location: "Most iconic: Kiziki",
+      cuisine: "Samegrelo - Zemo Svaneti",
       about:
         "Ajika is a hot and spicy Georgian paste made with hot peppers, garlic, walnuts, and fresh herbs and spices such as coriander, basil, dill, and marigold petals. It is most commonly used as a flavoring for various meat and fish dishes, although it can also be used as a fiery hot dip. Ajika is usually red in color, but it can also be green if prepared with unripe peppers.",
       map: "/assets/georgian-traditional-food/traditional-food-map/Ajika.png",
@@ -64,6 +71,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Mtsvadi.jpg",
       type: "MEAT DISH",
       name: "Mtsvadi",
+      isLarge: false,
       location: "Most iconic: Lali",
       about:
         "Mtsvadi is a traditional Georgian dish consisting of a skewered shish kebab. Ground pork, mutton, or veal is typically marinated in a mixture of lemon juice, pomegranate juice, tarragon, salt, pepper, and chopped onions, so that it remains tender and juicy when grilled. Mtsvadi is often prepared outdoors over an open fire. It is recommended to serve the dish with tkemali plum sauce, raw onion rings, sliced tomatoes, and pomegranate seeds.",
@@ -74,6 +82,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Imeruli-khachapuri.jpg",
       type: "SAVORY PIE",
       name: "Imeruli khachapuri",
+      isLarge: false,
       location: "Most iconic: Funicular Complex",
       about:
         "Imeruli khachapuri is a traditional Georgian bread filled with melted cheese. Unlike traditional khachapuris, the imeruli variety is circular in shape. The dough consists of flour, salt, sugar, yeast, water, and sometimes yogurt, while the cheese filling is usually enriched with the addition of eggs. It is recommended to glaze imeruli khachapuri with butter as soon as it is out of the oven and serve it while it is still hot.",
@@ -84,7 +93,9 @@ createServer({
       img: "/assets/georgian-traditional-food/Kharcho.jpg",
       type: "MEAT SOUP",
       name: "Kharcho",
+      isLarge: false,
       location: "Most iconic: Mapshalia",
+      cuisine: "Samegrelo - Zemo Svaneti",
       about:
         "Kharcho is a hearty Georgian soup featuring beef or chicken, walnuts, and rice. It is traditionally seasoned with a Georgian spice blend called khmeli suneli (a combination of dried blue fenugreek, marigold petals, basil, parsley, fennel, coriander, bay leaves, and red pepper) and tkemali plum sauce. The soup is so popular that almost every family has their own variation and recipe. It is recommended to serve kharcho hot and garnish it with freshly chopped coriander.",
       map: "/assets/georgian-traditional-food/traditional-food-map/Kharcho.png",
@@ -94,6 +105,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Lobiani.jpg",
       type: "BREAD",
       name: "Lobiani",
+      isLarge: false,
       location: "",
       about:
         "Traditionally consumed at Barbaroba, the feast of St. Barbara, lobiani is a popular Georgian bread that is filled with mashed kidney beans and flavored with onions, parsley, coriander, and black pepper. The dough consists of flour, yeast, salt, and water. There is also a variety of the bread called rachuli lobiani, which is prepared with added bacon for extra flavor. The name lobiani is derived from the Georgian word for kidney beans, lobio. ",
@@ -104,6 +116,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Adjarian-khachapuri.jpg",
       type: "SAVORY PIE",
       name: "Adjarian khachapuri",
+      isLarge: false,
       location: "Most iconic: Porto Franco",
       about:
         "One of the most popular khachapuri varieties, adjarian is an open-faced pie that is filled with a combination of cheese and eggs. The base is made from yeasted dough that is rolled into an oblong shape and traditionally comes filled with Sulguni or Imeretian cheese, or the combination of both. The dish is finished off with an egg that is placed on top, and the pie is then additionally baked until the egg is partially set. This boat-shaped pie hails from the coastal Adjaria region, and it is usually served with a slice of butter on top. ",
@@ -114,6 +127,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Tolma.jpg",
       type: "GROUND MEAT DISH",
       name: "Tolma",
+      isLarge: false,
       location: "",
       about:
         "Tolma is a Georgian dish consisting of stuffed vegetables such as tomatoes, peppers, zucchini, and eggplants, or stuffed vine and cabbage leaves. The filling usually consists of ground meat, rice, and various herbs and spices. It is recommended to serve the stuffed leaves or vegetables warm, and to pair the dish with a dollop of sour cream on the side.",
@@ -124,6 +138,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Churchkhela.jpg",
       type: "DESSERT",
       name: "Churchkhela",
+      isLarge: true,
       location: "",
       about:
         "Churchkhela is a traditional Georgian candy that is shaped into a sausage. It originated from the Caucasus region. This candy is made by dipping a long string of nuts (usually walnut halves) in concentrated grape juice, then leaving the concoction to dry. It is so healthy and so nutritious that, in the past, it was even carried by Georgian warriors on their long journeys. Although walnuts are usually used in the preparation of churchkhela, they can be replaced by almonds, hazelnuts, or raisins.",
@@ -134,6 +149,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Kupati.jpg",
       type: "SAUSAGE",
       name: "Kupati",
+      isLarge: false,
       location: "Most iconic: Restorani Chashnagiri Sanapiro",
       about:
         "Kupati is a spicy Georgian sausage made with pork or beef, onions, and flavorings such as black pepper, cinnamon, garlic, salt, and coriander. It is especially popular in the Caucasus region. The sausage is most commonly grilled or fried before serving, when it is traditionally accompanied by sauerkraut or sliced onions, and garnished with freshly chopped coriander and pomegranate seeds.",
@@ -144,6 +160,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Badrijani.jpg",
       type: "APPETIZER",
       name: "Badrijani",
+      isLarge: false,
       location: "Most iconic: Shavi Lomi",
       about:
         "Badrijani is a heavily spiced Georgian dish consisting of eggplant slices that are coated with walnut paste, then shaped into small rolls. The eggplant slices are fried before serving, while the spread is prepared by combining ground walnuts, garlic, and fresh coriander. When served, the assembled rolls are arranged on a plate and topped with pomegranate seeds.",
@@ -154,6 +171,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Tkemali.jpg",
       type: "SAUCE",
       name: "Tkemali",
+      isLarge: false,
       location: "",
       about:
         "Tkemali is a flavorful Georgian sauce made from wild sour plums, sugar, garlic, hot red or green peppers, and herbs such as coriander, parsley, basil, and dill. There are two main types of tkemali: green or red, depending on the type of hot pepper used in its preparation. This tasty sauce is often paired with a variety of grilled meat dishes or roasted potatoes.",
@@ -164,7 +182,9 @@ createServer({
       img: "/assets/georgian-traditional-food/Kubdari.jpg",
       type: "SAVORY PIE",
       name: "Kubdari",
+      isLarge: true,
       location: "",
+      cuisine: "Samegrelo - Zemo Svaneti",
       about:
         "Kubdari is a popular Georgian bread that is traditionally filled with beef, pork, or a combination of the two, along with spices such as cumin, dill, coriander, blue fenugreek, red pepper, onions, garlic, and salt. The dough consists of flour, water, yeast, sugar, salt, and eggs. Interestingly, the meat used in this savory pie should be cut, not minced, while the salt should be local and aromatized with special herbs. It is recommended to glaze kubdari with butter and serve it hot.",
       map: "/assets/georgian-traditional-food/traditional-food-map/Kubdari.png",
@@ -174,6 +194,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Pkhali.jpg",
       type: "SIDE DISH",
       name: "Pkhali",
+      isLarge: false,
       location: "Most iconic: Zakhar Zakharich",
       about:
         "Pkhali is a traditional Georgian dish made with a large number of different leaves such as spinach, beetroot, cabbage, or nettles, although it can also be prepared with nuts and vegetables. The leaves are chopped and minced, then combined with vinegar, garlic, onions, and fresh herbs. This unique mixture is traditionally hand-shaped into balls and garnished with pomegranate seeds. Pkhali is served on the side as a dip or a flavorful condiment.",
@@ -184,7 +205,9 @@ createServer({
       img: "/assets/georgian-traditional-food/Ghomi.jpg",
       type: "PORRIDGE",
       name: "Ghomi",
+      isLarge: false,
       location: "",
+      cuisine: "Samegrelo - Zemo Svaneti",
       about:
         "Ghomi is a traditional dish from Georgia consisting of coarse and fine cornflour combined with water. Pieces of cheese such as sulguni are typically placed in the hot porridge to melt before consumption. The dish is often served with different sauces on the side, such as tkemali or bazhe.",
       map: "/assets/georgian-traditional-food/traditional-food-map/Ghomi.png",
@@ -194,6 +217,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Chakhokhbili.jpg",
       type: "STEW",
       name: "Chakhokhbili",
+      isLarge: false,
       location: "",
       about:
         "Chakhokhbili is a traditional Georgian stew made with a whole chicken that is cut into pieces and combined with onions, tomatoes, vinegar, garlic, and spices such as coriander, parsley, hot green peppers, and bay leaves. The stew has a thick consistency and is usually served hot, preferably garnished with freshly chopped coriander and accompanied by rice or bread on the side. The name chakhokhbili is derived from the Georgian word khokhobi, meaning pheasant, referring to the fact that it used to be prepared with pheasant instead of chicken in the past.",
@@ -204,7 +228,9 @@ createServer({
       img: "/assets/georgian-traditional-food/Elarji.jpg",
       type: "PORRIDGE",
       name: "Elarji",
+      isLarge: false,
       location: "Most iconic: Dadiani",
+      cuisine: "Samegrelo - Zemo Svaneti",
       about:
         "Elarji is a specialty of the Georgian Samegrelo region, prepared as a thick porridge consisting of coarse cornmeal, cornflour, and sulguni or tchkhinti cheese, depending on what's available. The dish has an extremely thick texture, and it is very elastic. If properly made, one should be able to stretch it overhead. It is traditionally served hot and consumed with Georgian bazhe sauce, made with garlic, walnuts, and various spices.",
       map: "/assets/georgian-traditional-food/traditional-food-map/Elarji.png",
@@ -214,6 +240,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Skhmeruli.jpg",
       type: "CHICKEN DISH",
       name: "Skhmeruli",
+      isLarge: false,
       location: "Most iconic: Sofia Melnikova's Fantastic Douqan",
       about:
         "Shkmeruli or chkmeruli is a traditional chicken dish originating from Georgia. A whole chicken is typically butterflied, browned on both sides, and roasted for about half an hour until fully cooked. The garlic is minced, mixed with butter, milk, and pan drippings in order to create the sauce. The chicken and the sauce are combined, traditionally in a clay dish called ketsi, and the dish is then baked for a short while before it's served. It's recommended to serve skhmeruli with cheesy mashed potatoes or crusty bread on the side.",
@@ -224,6 +251,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Chikhirtma.jpg",
       type: "CHICKEN SOUP",
       name: "Chikhirtma",
+      isLarge: false,
       location: "Most iconic: Khinklis Gemo +",
       about:
         "Chikhirtma is a flavorful and hearty Georgian soup that is believed to be a great hangover cure. It consists of chicken pieces, onions, eggs, flour, vinegar, water, and seasonings such as salt, bay leaves, and coriander. It has a slightly sour flavor and a thick, creamy consistency. The soup is usually served hot, and it is recommended to garnish it with freshly chopped coriander.",
@@ -234,7 +262,9 @@ createServer({
       img: "/assets/georgian-traditional-food/Mingrelian-khachapuri.jpg",
       type: "SAVORY PIE",
       name: "Mingrelian khachapuri",
+      isLarge: false,
       location: "",
+      cuisine: "Samegrelo - Zemo Svaneti",
       about:
         "Mingrelian khachapuri is a Georgian khachapuri variety originating from Samegrelo. Although it's quite similar to its Imeretian cousin, this khachapuri is round and it's topped with even more cheese (usually chkinti-kveli Imeretian cheese). The dough is prepared with flour, water, yeast, sugar, and salt. Once it has risen, the dough is topped with a combination of eggs and cheese, then baked until the cheese becomes bubbly and golden brown. Before serving, this khachapuri variety can be rubbed with butter, if desired.",
       map: "/assets/georgian-traditional-food/traditional-food-map/Mingrelian-khachapuri.png",
@@ -244,6 +274,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Gozinaki.jpg",
       type: "DESSERT",
       name: "Gozinaki",
+      isLarge: false,
       location: "",
       about:
         "Gozinaki is a traditional Georgian dessert with a crunchy texture, made with honey-fried, caramelized nuts such as walnuts, almonds, and hazelnuts. This sweet treat is often cut into diamond shapes, and it is traditionally consumed on Christmas and New Year.",
@@ -254,6 +285,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Ajapsandali.jpg",
       type: "STEW",
       name: "Ajapsandali",
+      isLarge: false,
       location: "",
       about:
         "Ajapsandali is a popular Georgian stew consisting of eggplants, potatoes, tomatoes, onions, bell peppers, and seasonings such as bay leaves, garlic, coriander, black pepper, and salt. The vegetables are stewed in oil, but only for a short time so that they don't lose their color and vitamins. The dish is often consumed as a family meal in Georgia, and it is especially popular during summer. For an interesting twist, try serving it cold with crumbled feta and chunks of bread.",
@@ -264,6 +296,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Chashushuli.jpg",
       type: "STEW",
       name: "Chashushuli",
+      isLarge: false,
       location: "",
       about:
         "Similar to a goulash, chashushuli is a hearty beef and tomato stew hailing from Georgia. The stew is typically made with a combination of beef (sometimes veal or pork), tomatoes, onions, water or meat broth, mushrooms, garlic, and a generous amount of spices and herbs such as basil, chili pepper, parsley, fenugreek, summer savory, and bay leaves, yielding a highly aromatic and flavor-packed dish. Chashushuli is considered a version of another traditional Georgian beef stew called ostri, which uses almost all of the same ingredients as chashushuli, but it also contains coriander seeds and involves a different method of preparation. When preparing chashushuli, the meat needs to be fried before it is mixed with the rest of the ingredients and stewed, whereas the preparation of ostri requires no pre-cooking of the meat and everything is cooked in one pot from the beginning. Spicy and filling, the stew is typically served hot with Georgian bread such as shoti and a glass of fine Saperavi wine.",
@@ -274,6 +307,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Chakapuli.jpg",
       type: "STEW",
       name: "Chakapuli",
+      isLarge: false,
       location: "Most iconic: Tsiskvili",
       about:
         "Chakapuli is a popular Georgian stew consisting of either beef or lamb meat, unripe sour plums, spring onions, green peppers, white wine, and herbs and seasonings such as tarragon, coriander, garlic, and salt. It is especially popular during spring, when the plums are still unripe. Chakapuli is often served during the feast of Orthodox Easter, and it is recommended to serve it hot with Georgian bread on the side.",
@@ -284,6 +318,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Shotis-puri.jpg",
       type: "BREAD",
       name: "Shotis puri",
+      isLarge: false,
       location: "",
       about:
         "Shotis puri or shoti is a Georgian baton-like bread made with whole wheat flour, salt, water, and yeast. It is traditionally baked until golden brown in a deep, circular oven called a tone. The freshly baked bread is then placed on wooden racks to cool, and it is usually sold wrapped in a sheet of paper. Shotis puri is consumed as an everyday bread, but it is especially popular during festive events such as Easter, Christmas, and birthdays.",
@@ -294,6 +329,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Khashlama.jpg",
       type: "MEAT DISH",
       name: "Khashlama",
+      isLarge: false,
       location: "",
       about:
         "Georgian khashlama is a straightforward and traditional meat dish originating from the Caucasus region. Although time-consuming, the dish is made by simply boiling large chunks of meat, usually beef, veal, or lamb, in hot water. The traditional version of this famous dish does not include other ingredients, except a few spices, making the boiled pieces of meat the star of the dish. Because of this, khashlama contains only the finest meat cuts available. The origins of the dish believe to be in the Georgian Kakheti region, where it is regarded as a regional signature dish. However, it is also widely popular in the neighboring Armenia, causing disputes over the true origin of the dish. Traditionally, Georgian khashlama is prepared on an open fire, slowly, until the meat is perfectly tender. It is commonly flavored with onions, garlic, bay leaves, and peppercorns. Because it is rather time-consuming, the dish is usually served on special occasions, and it is a common staple of supra, a traditional Georgian feast. Boiled pieces of meat are commonly served hot and garnished with a generous amount of coarse salt and chopped parsley.",
@@ -304,7 +340,9 @@ createServer({
       img: "/assets/georgian-traditional-food/Bazhe.jpg",
       type: "SAUCE",
       name: "Bazhe",
+      isLarge: true,
       location: "",
+      cuisine: "Samegrelo - Zemo Svaneti",
       about:
         "Bazhe is a popular Georgian sauce made with water, vinegar, walnuts, garlic, and spices such as coriander, salt, parsley, fennel, and crushed red pepper. It has a smooth consistency, and it is traditionally served at Georgian feasts. The sauce is often used with fish or poultry dishes, adding a depth of flavor, but some Georgians also consume it smeared on a slice of bread as a snack.",
       map: "/assets/georgian-traditional-food/traditional-food-map/Bazhe.png",
@@ -314,7 +352,9 @@ createServer({
       img: "/assets/georgian-traditional-food/Mchadi.jpg",
       type: "CORN BREAD",
       name: "Mchadi",
+      isLarge: false,
       location: "",
+      cuisine: "Samegrelo - Zemo Svaneti",
       about:
         "Mchadi is a popular, traditional Georgian bread consisting of cornmeal, salt, and water. The dough is usually fried in hot oil until golden brown. It is recommended to serve mchadi warm with kidney beans and cheese on the side.",
       map: "/assets/georgian-traditional-food/traditional-food-map/Mchadi.png",
@@ -324,7 +364,9 @@ createServer({
       img: "/assets/georgian-traditional-food/Satsebeli.jpg",
       type: "SAUCE",
       name: "Satsebeli",
+      isLarge: false,
       location: "",
+      cuisine: "Samegrelo - Zemo Svaneti",
       about:
         "Satsebeli is a traditional sauce originating from Georgia. It's usually made with a combination of tomatoes, red bell peppers, garlic, salt, cayenne pepper (or ajika paste), and oil. The tomatoes are chopped, mixed with sea salt, and covered overnight to release the juices. They are then cooked with bell peppers until soft and blended and passed through a sieve. The mixture is cooked with garlic and ajika (or cayenne) and seasoned with salt, and satsebeli is then stored in airtight bottles or jars with a thin film of oil on top. This sauce pairs exceptionally well with eggs, polenta, roast chicken, or khinkali dumplings.",
       map: "/assets/georgian-traditional-food/traditional-food-map/Satsebeli.png",
@@ -334,6 +376,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Ojakhuri.jpg",
       type: "MEAT DISH",
       name: "Ojakhuri",
+      isLarge: false,
       location: "",
       about:
         "Ojakhuri is a Georgian dish consisting of roasted meat (pork, chicken, lamb, or beef) and potatoes. The name of the dish means family meal in Georgian, so every family has their own recipe, variations, and they all use different seasonings for the roast. The dish is usually garnished with slices of pickled vegetables and served with accompaniments such as tkemali or ajika sauces.",
@@ -344,6 +387,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Chanakhi.jpg",
       type: "STEW",
       name: "Chanakhi",
+      isLarge: false,
       location: "",
       about:
         "Chanakhi is a hearty Georgian stew made with lamb, eggplant, sweet peppers, and tomatoes. The stew is typically flavored and seasoned with coriander, basil, pepper, and salt. This flavorful dish is traditionally served in individual clay pots, called chanakhi, hence the name. It is believed that chanakhi tastes even better if reheated the next day, when all of the flavors have been thoroughly combined.",
@@ -354,6 +398,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Satsivi.jpg",
       type: "SAUCE",
       name: "Satsivi",
+      isLarge: false,
       location: "",
       about:
         "Satsivi is a thick and aromatic nut-based paste that is traditionally prepared in Georgia. It uses walnuts as the main ingredient and is typically served as an accompaniment to meat dishes. However, it can also be served with vegetable dishes, alongside fish, or even with boiled eggs. There is no universal recipe, and the varieties differ across Georgian regions, but they all usually incorporate garlic, coriander, cinnamon, vinegar and hot peppers. The consistency and thickness of the sauce are also versatile it can either have a coarser texture or it can be served as a smooth and creamy sauce. The name satsivi means cold or cool and refers to the way the sauce is served. The most popular festive dish using this sauce is known as turkey satsivi, traditionally prepared and consumed on New Year.",
@@ -364,6 +409,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Tklapi.jpg",
       type: "DESSERT",
       name: "Tklapi",
+      isLarge: false,
       location: "",
       about:
         "Tklapi is a unique Georgian dessert consisting of cooked fruit puree that is poured on a tray in a very thin layer and left to dry in the sun for a few days. It is typically prepared with fruits such as wild plums, pears, mulberry, figs, or apples. Visually, this healthy treat looks like a piece of leather. Tklapi can be consumed on its own or used in soups and stews.",
@@ -374,6 +420,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Penovani-khachapuri.jpg",
       type: "SAVORY PIE",
       name: "Penovani khachapuri",
+      isLarge: false,
       location: "",
       about:
         "Penovani khachapuri is a Georgian khachapuri variety originating from Samtskhe-Javakheti. In order to prepare it, a combination of Imeruli and Sulguni cheese is grated and combined with egg yolks. The mixture is placed on a piece of puff pastry that's folded into triangles or squares. Before baking, each khachapuri is brushed with a mix of egg yolks and milk. These tasty small pies are ready for consumption after they puff up in the oven and become golden brown. This khachapuri variety is the easiest, speediest, and simplest to make of all the khachapuri versions.",
@@ -384,6 +431,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Kuchmachi.jpg",
       type: "OFFAL DISH",
       name: "Kuchmachi",
+      isLarge: true,
       location: "",
       about:
         "Kuchmachi is a Georgian dish made with kidneys, livers, lungs, spleens, and hearts of chickens, pigs, or beef. The offal is cooked with butter, onions, garlic, and seasonings such as bay leaves, black pepper, salt, and coriander, while some people like to add walnuts for extra flavor. The dish is usually served hot and garnished with pomegranate seeds on top.",
@@ -394,6 +442,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Pelamushi.jpg",
       type: "DESSERT",
       name: "Pelamushi",
+      isLarge: false,
       location: "",
       about:
         "Pelamushi is a Georgian dessert made with pressed and condensed grape juice, sugar, and flour. The liquid is gradually heated until it thickens, and it is then poured into serving dishes, bowls, or various molds, in order to create attractive shapes. When fully chilled, pelamushi is ready to be served, and it is recommended to garnish it with various nuts and seeds.",
@@ -404,6 +453,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Mujuji.jpg",
       type: "OFFAL DISH",
       name: "Mujuji",
+      isLarge: false,
       location: "",
       about:
         "Mujuji is a traditional Georgian dish consisting of jellied pork offal such as tails, ears, and feet. The offal is combined with vinegar, vegetables, and spices such as onions, carrots, garlic, allspice, cinnamon, bay leaves, and peppercorns. This dish can be served hot or cold, and the Georgians like to serve it with a layer of chilled fat on top.",
@@ -414,7 +464,9 @@ createServer({
       img: "/assets/georgian-traditional-food/Abkhazura.jpg",
       type: "MEATBALLS",
       name: "Abkhazura",
+      isLarge: false,
       location: "",
+      cuisine: "Samegrelo - Zemo Svaneti",
       about:
         "Abkhazura is a traditional Georgian dish originating from Abkhazia. These spicy meatballs are prepared with a combination of beef, pork, parsley, dill, coriander, pepper, onions, and summer savory. The meat needs to be tightly rolled in caul fat before it's seasoned with spices and fried in a pan. These meatballs are traditionally served with tkemali sauce.",
       map: "/assets/georgian-traditional-food/traditional-food-map/Abkhazura.png",
@@ -424,6 +476,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Gurian-khachapuri.jpg",
       type: "SAVORY PIE",
       name: "Gurian khachapuri",
+      isLarge: false,
       location: "",
       about:
         "This khachapuri variety hails from Guria, a province in the west of Georgia. Unlike other khachapuri pies, this one is crescent-shaped and it's prepared for Orthodox Christmas. The dough is filled with a combination of grated cheese and hard-boiled eggs before it's baked until golden-brown. The shape of this pie was associated with celestial bodies, and for ancient Gurians it was a symbol of strength, so nowadays there is a superstitious belief that each family member should get at least one Gurian khachapuri during the festive Christmas season.",
@@ -434,7 +487,9 @@ createServer({
       img: "/assets/georgian-traditional-food/Svanetian-khachapuri.jpg",
       type: "SAVORY PIE",
       name: "Svanetian khachapuri",
+      isLarge: false,
       location: "",
+      cuisine: "Samegrelo - Zemo Svaneti",
       about:
         "This khachapuri variety hails from Georgia's Svaneti region, hence the name. The dough is the same as the one used for other types of khachapuri, while the filling is made with a combination of high-fat cheese, eggs, and green onions. The dough is wrapped around the filling, and it is then pressed into a circular shape before being baked until golden brown. It is then brushed with butter and served hot, usually in slices or wedges.",
       map: "/assets/georgian-traditional-food/traditional-food-map/Svanetian-khachapuri.png",
@@ -444,6 +499,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Khashi.jpg",
       type: "OFFAL SOUP",
       name: "Khashi",
+      isLarge: false,
       location: "Most iconic: Culinarium Khasheria (Tbilisi)",
       about:
         "Widely regarded as an excellent hangover cure and a great remedy, khashi is a soup made by boiling beef intestines, tripe, shank, as well as other organs such as kidneys. Carrots, onions, bell peppers, and various greens may also be used. After the broth has been prepared, milk or pieces of milk-soaked bread can be added to the pot along with salt, pepper, and chopped garlic. It is said that khashi was invented when the poor had to give away all their meat to the rich, being left only with the organs, heads, and hooves of the animals. Ever since the promotion of the soup as a particularly healthy dish, it became popular among all social classes.",
@@ -454,6 +510,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Jonjoli.jpg",
       type: "PICKLING",
       name: "Jonjoli",
+      isLarge: false,
       location: "",
       about:
         "Jonjoli is an unusual Georgian appetizer made with pickled sprouts from the local jonjoli bushes. The sprouts are combined with olive oil or other pickled vegetables such as peppers, tomatoes, or cucumbers. The dish is usually garnished with onion rings and finely chopped coriander. This appetizer pairs well with kidney beans, boiled potatoes, or any type of Georgian bread.",
@@ -464,6 +521,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Achma.jpg",
       type: "SAVORY PASTRY",
       name: "Achma",
+      isLarge: false,
       location: "",
       about:
         "Achma is a Georgian dish consisting of a few layers of tender dough, a crispy top, and lots of cheese in between. It originates from the western Georgian regions of Adjara and Abkhazia. The dough is usually made with eggs, water, butter, and flour, while the cheese filling is either Georgian cheese or a combination of ricotta, mozzarella, and feta. Due to the fact that it is a layered dish with tender sheets of dough, achma is often compared to the famous lasagne.",
@@ -474,6 +532,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Buglama.jpg",
       type: "STEW",
       name: "Buglama",
+      isLarge: false,
       location: "",
       about:
         "Buglama is a popular Azerbaijani and Georgian dish consisting of lamb pieces that are stewed with onions, tomatoes, peppers, a variety of spices including black pepper and bay leaves, and a small amount of liquid. The name of the dish means steamed, referring to the fact that the lamb is cooked in its own juices. Although lamb is the most common option, it is not unusual to prepare buglama with fish.",
@@ -484,6 +543,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Soko-kecze.jpg",
       type: "SNACK",
       name: "Clay Pot Mushrooms",
+      isLarge: false,
       location: "",
       about:
         "Simple, yet delicious, soko kecze is a Georgian specialty that can be translated as mushrooms in a clay pot. The dish consists of mushrooms that are baked and served in a special ketsi dish (clay dish). The mushrooms can be either plain or filled with butter and Georgian sulguni cheese, seasoned with black pepper, and sometimes a bit of garlic. This hearty mushroom dish is best enjoyed hot, while the cheese is still gooey and stretchy.",
@@ -494,6 +554,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Chvishtari.jpg",
       type: "CORN BREAD",
       name: "Chvishtari",
+      isLarge: false,
       location: "",
       about:
         "Chvishtari is a traditional Georgian cornbread originating from Svaneti. It's usually made with a combination of cornflour, milk, eggs, oil, salt, and cheese such as feta, sulguni, and halloumi. The dough is kneaded with the cheeses until it becomes firm and smooth. It is then flattened and cooked on both sides in a greased frying pan over medium heat until lightly golden. It's recommended to eat chivshtari on the same day that it was made, preferably while still hot.",
@@ -504,6 +565,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Ispanakhis-pkhali.jpg",
       type: "DIP",
       name: "Ispanakhis pkhali",
+      isLarge: false,
       location: "",
       about:
         "Ispanakhis pkhali is a traditional Georgian dip. It is prepared with a combination of spinach, walnuts, garlic, scallions, cilantro, fenugreek, and red wine vinegar. The ingredients are combined into a homogeneous mixture that's refrigerated before serving. The mixture can then be served on a platter or shaped into smaller, individual balls. It is recommended to garnish this specialty with pomegranate seeds or whole nuts and serve them with mchadi or khachapuri.",
@@ -514,6 +576,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Sulguni.jpg",
       type: "CHEESE",
       name: "Sulguni",
+      isLarge: true,
       location: "",
       about:
         "Sulguni is a cylindrical Georgian cheese originating from the region of Samegrelo (Mingrelia). The cheese has a mild, yet complex flavor and a semi-firm texture. It can be produced from the milk of cows, buffalos, and goats (rarely), or a combination of the three. The flavors range from acidic, tangy, and sour to salty and smoky, depending on the varieties – fresh, smoked, or semi-hard. The cheese melts easily so it is often used as a pizza topping, but it can also be added to various salads or pasta dishes.",
@@ -524,6 +587,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Tenili.jpg",
       type: "CHEESE",
       name: "Tenili",
+      isLarge: false,
       location: "",
       about:
         "Tenili is a unique Georgian cheese made in the regions of Samtskhe-Javakheti and Kvemo Kartli. It can be produced from cow's or sheep's milk, but the most important thing is that the milk should have a high percentage of fat. The cheese is pressed and the warm curds are repeatedly hand-pulled into thin strands, giving it a unique shape and visual appearance. Since the process is a laborious one, tenili is typically prepared for big celebrations and feasts.",
@@ -534,6 +598,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Megruli-Sulguni.jpg",
       type: "CHEESE",
       name: "Shebolili Megruli Sulguni",
+      isLarge: false,
       location: "",
       about:
         "Originating from Samegrelo, Smoked Sulguni or Shebolili Megruli Sulguni is a Georgian cheese made from the milk of cows, buffalos, and goats (rarely), or a combination of the three. This semi-hard cheese has a dense, springy, and elastic texture underneath its natural rind. Due to the fact that the cheese is smoked, its aroma is smoky, while the flavors are both smoky and salty. The paste is yellow in color, while the crust is hard and golden brown or dark brown due to the smoking process. Smoked Sulguni melts exceptionally well, and it's recommended to serve it with ghomi, a local porridge that's a staple in Samegrelo.",
@@ -544,6 +609,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Imeruli.jpg",
       type: "CHEESE",
       name: "Imeruli",
+      isLarge: false,
       location: "",
       about:
         "Imeruli is a traditional Georgian cheese originating from the region of Imereti. This fresh curd cheese is made from cow's milk, and although it originated in Imereti, nowadays it can be found throughout the country. The cheese is brined and it's white in color. If properly prepared, it will develop porous bubbles throughout the body. When fresh and unsalted, the cheese has a chewy and stringy texture, and it's usually served with salads or light summer meals. When aged, the texture becomes slightly grainy and the flavor becomes sour. Imeruli is traditionally used in the preparation of khachapuri, the famous Georgian cheese bread.",
@@ -554,6 +620,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Khmeli-Suneli.jpg",
       type: "SPICE BLEND AND SEASONING",
       name: "Khmeli Suneli",
+      isLarge: false,
       location: "",
       about:
         "Khmeli suneli is a fragrant Georgian spice blend including fenugreek, coriander, peppercorns, dill, mint, marigold petals, and bay leaves. This spice blend is characterized by its combination of warm, bitter, nutty, and grassy flavors. It is traditionally used in various stews and meat dishes, but khmeli suneli also provides a depth of flavor to roasted vegetables and bean soups.",
@@ -564,6 +631,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Trigonella-Caerulea.jpg",
       type: "SPICE",
       name: "Khmeli Suneli",
+      isLarge: false,
       location: "",
       about:
         "Trigonella caerulea, also known as blue fenugreek, is a Georgian plant that grows wild in the mountainous parts of the country. It is typically used as a spice, giving a unique flavor to a number of dishes. The spice is prepared by grinding the seeds and pods in order to get an aromatic and slightly spicy powder. Its flavor is similar to dried fenugreek, but slightly milder.",
@@ -987,29 +1055,154 @@ createServer({
       d: "M669.4 371.3l-2.4 5.2-10.4 0.3-3.4-1.4-2.4-2.9-2.7-1.3-9 4.3-7.2 1.3-7-1.7-4.7 0.8-4.6 1.5-34.4-3.4-6.3-7.6-10 0.1-5.6 0.9-5.1-3-4.8-1.8-2.2-5.3-4.6-0.8-5.1-4.4-1.5-2.3-2-1.7-0.8-3.2-1.4-2.8-5.2-2.5-9.7-2.3-4.1 0.2 1-7.7 5.4-4.8 2.3-7.2 0.6-8.5 4.1-4.1 4.8-3.7 2.8-5.2 2-5.8 4-3.8 0.9-5.3-0.9-6.4 1.2-5.9 10-7.2 11.4-3.1 0.2-6.6 1.7-6.5-3.3-4.1-4.8 0.7-4.1 2.3-4.3 1-5.8-0.9-5.2-3.2 12.1-9.8 20.7-1.7 2.8-1.3 3.3-5.9 7.9-5.7 0.9-10.3 1.8 1.5 2.9 1.4 2.7-0.5 2.2-1.9 3.7-5.1 2-2.2 6.5-3.1 14.3-0.7 5.2-1.5 2.1 6 3.1 4.2 7 1.9 5 8.9 2.6 2.3 2.3 3.3-4.8 6-2.3 7.2 1.7 1 1 2.1 0.4 3.2 0.6 3.1 2 2 2.1 2.8 0.3 6-0.5 6.4 2.5 5.3 1.2 6.3-2.6 3.5-3.1 2.4-2.3 5.1-3.7 2.9-2.3 9.8-0.3 10.3-1.3 4 0.6 3.3 4.1 2.3 0.7 5.1 4.4-4 4.3-3.3 5.1 0.2 10.6 2.4 5.2 2.9 1.8 6.2 1.2 7.2 4.9 5.8 4 6.3-2 5.7-5.5 0.2-4.1 4 0.5 7.7-2.9 3.4 0 5.2z",
       img: "/assets/Guide/Shida Kartli.jpg",
     });
-
-    // server.create("guide", {
-    //   id: 14,
-    //   first_name: "Evangelina",
-    //   last_name: "Slott",
-    //   email: "eslottd@wikimedia.org",
-    //   gender: "Female",
-    //   img: "/assets/Guide/photo-1586297135537-94bc9ba060aa.avif",
-    //   status: false,
-    //   description:
-    //     "Step back in time with a guide who illuminates the wonders of Uplistsikhe, Georgia's rock-hewn town. Explore the ancient streets, chambers, and theaters carved into the rock, uncovering the historical significance of this archaeological marvel.",
-    // });
-    // server.create("map", {
-    //   id: 15,
-    //   first_name: "Erl",
-    //   last_name: "Reuss",
-    //   email: "ereusse@sbwire.com",
-    //   gender: "Male",
-    //   img: "/assets/Guide/photo-1619895862022-09114b41f16f.avif",
-    //   status: false,
-    //   description:
-    //     "Traverse the crossroads of cultures with a guide who leads you through Georgia's diverse heritage. From Silk Road influences to modern-day intersections, discover the cultural tapestry that defines Georgia's unique identity at the crossroads of Europe and Asia.",
-    // });
+    server.create("location", {
+      id: 1,
+      title: "Samegrelo-Zemo Svaneti",
+      title_img: "/assets/location/svaneti.jpg",
+      title_Description:
+        "Samegrelo-Zemo Svaneti is in the northwestern part of Georgia and is considered one of the most beautiful regions. It comprises two ancient historical/geographical areas – Samegrelo and Zemo Svaneti, whose centers are, Zugdidi and the town of Mestia, respectively. In this region, you will discover unique monuments of Georgian architecture from various periods of history, with centuries-old history coming to life before your eyes. Travel through the beautiful, expansive nature and enjoy the local cuisine.",
+      samegrelo_First_Description:
+        "Samegrelo is situated between the Black Sea and the Rioni, Enguri, and Tskenistskali rivers in the central part of western Georgia. The region has a humid, subtropical climate, with primarily snowless winters, hot summers, mighty rivers, marshes, springs, and lakes.",
+      samegrelo_Second_Description:
+        "The kingdom of Colchis existed in this area from the 6th to the 2nd centuries BCE. Colchis is associated with the myth of Jason and the Argonauts, as Greek mythology enthusiasts are already aware.",
+      samegrelo_Third_Description:
+        "In the 1st century BCE, Colchis fell under Roman sovereignty. Later, it became a part of unified western and eastern Georgia. ",
+      samegrelo_Fourth_Description:
+        "It then became the Odishi Principality, which was proclaimed a protectorate of Russia in the 19th century, following which it became a part of an independent democratic country in 1918. Now, the area of Samegrelo is a part of the Samegrelo-Zemo Svaneti administrative unit and is comprised of Abasha, Martvili, Senaki, Chkhorotsku, Tsalenjikha, Khobi, and the port city of Poti. ",
+      samegrelo_img: "/assets/location/samegrelo.webp",
+      nature_Samegrelo_Title: "Nature in Samegrelo",
+      nature_Samegrelo_img: "/assets/location/kolkheti-national-park.webp",
+      nature_Samegrelo_First_Description:
+        "Begin the adventure at the Kolkheti National Park on the shores of the Black Sea, around Paliastomi Lake. You can take a boat, cutter, pontoon, or kayak to see the unique Kolkhetian forest and wetlands, which are now under UNESCO protection. From the observation towers, you can see as many as one hundred species of migratory birds. ",
+      nature_Samegrelo_Second_Description:
+        "The mountainous area of Samegrelo is amazing. Go up to Tsalenjikha, 2,650 meters above sea level on the Egrisi Range, to see the colorful lakes, where you will find the glacial Tobavarchkhili Lake and the waterfalls and small lakes of the Magana river. ",
+      nature_Samegrelo_Third_Description:
+        "Put the following natural monuments on your list of places to see: Kuakantsalia, a magically swaying, 12-ton boulder in Tsalenjikha; Katsoburi Managed Reserve; Intsra Valley; Oniore and Chkhomuri Waterfalls; Martvili and Balda Canyons. ",
+      sights_Samegrelo_Title: "The Sights in Samegrelo",
+      sights_Samegrelo_img: "/assets/location/dadiani-palace-in-zugdidi.webp",
+      sights_Samegrelo_First_Description:
+        "Many tourists start their journey through Samegrelo from the magical palace in Zugdidi, the main city of Samegrelo, which has been the calling card of the region since the 17th century. It was the residence of the famous princes of Samegrelo, the Dadianis. The palace is now a state museum, where exhibits of worldwide significance and religious relics are kept. ",
+      sights_Samegrelo_Second_Description:
+        "One of the most important sites of not only Samegrelo, but all of Georgia, is Nokalakevi, the capital of western Georgia from the 5th to 6th centuries CE. ",
+      sights_Samegrelo_Third_Description:
+        "The long history of Samegrelo encompasses many architectural monuments, such as Martvili Mother of God Church (7th century), Tsaishi Cathedral (10th-11th centuries), Kortskheli Virgin Church (17th century), Khobi Monastery (13th-14th centuries), Abedati Fortress (4th-6th centuries) and Church (9th century), Rukhi Fortress (17th century), Shkhepi Fortress (4th-16th centuries), and more.",
+      sights_Samegrelo_Fourth_Description:
+        "The largest hydroelectric power station in the country, Engurhesi, is in Samegrelo. It is the most complex and magnificent structure of 20th-century Georgia. Here you can take a boat trip on the Enguri River and even have a tour inside this engineering marvel.",
+      zemo_Svaneti_Title: "Zemo Svaneti",
+      zemo_Svaneti_img: "/assets/location/marshruti-svaneti.webp",
+      zemo_Svaneti_First_Description:
+        "When it is snowing and flakes are flying all around, everything around you resembles a fine tapestry, and the towers, built of stones and boulders look like defenders of the mystical silence. ",
+      zemo_Svaneti_Second_Description:
+        "The road follows the Enguri River Valley from Samegrelo to Zemo Svaneti, which starts at the source of the Enguri River and ends at the border of Samegrelo.",
+      nature_Zemo_Svaneti_Title: "The Nature in Zemo Svaneti",
+      nature_Zemo_Svaneti_img:
+        "/assets/location/ushguli-shkhara-glacier-nakvami-lake-3.webp",
+      nature_Zemo_Svaneti_First_Description:
+        "Zemo Svaneti is in Mestia Municipality, a high-mountain region and hotspot of tourism and alpinism, with alpine nature, clear lakes, the Enguri River and its rapid tributaries, and divine waterfalls. ",
+      nature_Zemo_Svaneti_Second_Description:
+        "The noble peaks of the Caucasus Mountains stand tall in Zemo Svaneti, such as Shkhara (5,203 m), Jangha (5,078 m), Gistola (4,860 m), Tetnuldi (4,852 m), Tsurungala (4,222 m), Ailama (4,547 m), Mazeri (4,012 m), Chatini (4,412 m), and Ushba (4,700 m). ",
+      nature_Zemo_Svaneti_Third_Description:
+        "An unforgettable winter awaits you at Mestia, Hatsvali, and Tetnuldi ski resorts. In the short summers, this place is magical, and you could not hope for a better place for hiking and other adventures. ",
+      sights_Zemo_Svaneti_Title: "The Sights in Zemo Svaneti",
+      sights_Zemo_Svaneti_img:
+        "/assets/location/lamaria-the-ushguli-church-of-the-mother-of-god-2.webp",
+      sights_Zemo_Svaneti_First_Description:
+        "One of the major sights of Svaneti, and what gives it its ethnographic flavour is the Svan towers. ",
+      sights_Zemo_Svaneti_Second_Description:
+        "These giants, standing 20 to 25 meters high on a background of mountains reaching up for the sky, with their walls as thick as a meter and a half, have stood faithfully to protect the populace for centuries, holding back avalanches and enemies of any strength. The Svans lived with their families in four or five stories of the towers connected internally through wooden ladders, with the platform placed like a crown atop. The latter was used for combat purposes. ",
+      sights_Zemo_Svaneti_Third_Description:
+        "Svan towers are not the only treasure that makes this region of Georgia stand out. Start your tour in Svaneti at the Mestia Historical-Ethnographical Museum, which has a large collection of Svaneti treasures. The common place of worship of all Zemo Svaneti is in Mestia, at Seti St. George Church, where icons and crosses from the 12th to 13th centuries are kept. Visit the single-nave, two-story basilica Laghami Transfiguration of the Savior Church.",
+      sights_Zemo_Svaneti_Fourth_Description:
+        "And finally, try outstanding Svan dishes, such as kubdari and kupati seasoned with unique Svan salt, the cheesy mchadi called chishvdari, Svan khachapuri, the local bread, honey, and the once-distilled Svan vodka called rakhi. You will understand that one lifetime is not enough to know Svaneti. ",
+    });
+    server.create("location", {
+      id: 2,
+      title: "Shida Kartli",
+      title_img: "/assets/location/Shida Kartli.jpg",
+      title_Description:
+        "Shida Kartil is a historical and geographical region of Georgia, located in eastern Georgia, in the centre of Kartli. It used to be known as Zena Sopeli, and has some of Georgia’s most significant historic sites, some of which date back to the Paleolithic Era!",
+      major_Shida_Kartli_Title: "The Major Cities of Shida Kartli",
+      major_Shida_Kartli_img: "/assets/location/gori-panoramic-view.webp",
+      major_Shida_Kartli_First_Description:
+        "Begin the adventure at the Kolkheti National Park on the shores of the Black Sea, around Paliastomi Lake. You can take a boat, cutter, pontoon, or kayak to see the unique Kolkhetian forest and wetlands, which are now under UNESCO protection. From the observation towers, you can see as many as one hundred species of migratory birds. ",
+      major_Shida_Kartli_Second_Description:
+        "The mountainous area of Samegrelo is amazing. Go up to Tsalenjikha, 2,650 meters above sea level on the Egrisi Range, to see the colorful lakes, where you will find the glacial Tobavarchkhili Lake and the waterfalls and small lakes of the Magana river. ",
+      historical_Cultural_Title: "Historical and Cultural Importance",
+      historical_Cultural_First_Description:
+        "Shida Kartli’s human history begins in the Paleolithic Era, and the region was already intensely populated by the Bronze Age. The Mtkvar-Araxes culture came to be during this time period.",
+      historical_Cultural_Second_Description:
+        "The rudiments of administrative units appears during the Iron Age, the Khevis, and the first state formed during Antiquity. The state of Zena Sopeli, whose capital was Uplistsikhe, was the first true state to exist in the region.",
+      historical_Cultural_img: "/assets/location/surami-fortress-gnta.webp",
+      historical_Cultural_Third_Description:
+        "In the 4th to 3rd centuries BCE, after the unification of Iberia (Kartli), Shida Kartli was organized as a fiefdom, and then became a military unit called a Saspaspeto.",
+      historical_Cultural_Fourth_Description:
+        "Shida Kartli was the economic and cultural center of life during the unified monarchy of Georgia in the reign of David the Builder. After Samtskhe Principality was conquered by the Ottomans in the 17th century, it was separated from the kingdom of Kartli for a long time.",
+      sights_Shida_Kartli_Title:
+        "The Sights, Architecture, and Culture of Shida Kartli",
+      sights_Shida_Kartli_Img: "/assets/location/uplistsikhe.webp",
+      sights_Shida_Kartli_First_Description:
+        "Shida Kartli is extremely significant for both Georgian and European history. Its fascinating history, medieval architecture, and highly artistic monuments make it a must-see for historians and history enthusiasts.",
+      sights_Samegrelo_Second_Description:
+        "One particularly amazing sight to see is Uplistsikhe, the Bronze Age city carved into a cliff, and one of the oldest settlements in the Caucasus. There are also the region’s clifftop fortresses – Gori and Surami Citadels – whose foundations were built before the common era, as well as Grakliani Hill, which tells a history of human habitation since the Paleolithic Era.",
+      sights_Samegrelo_Third_Description:
+        "Other notable monuments of Georgian architecture and monumental painting include the churches of Ateni Sioni, Samtavro, and Ruisi; the monasteries of Kintsvisi and Kvatakhevi, and more than 100 other important monuments.",
+      nature_Shida_Kartli_Title: "The Resorts and Nature of Shida Kartli",
+      nature_Shida_Kartli_Description:
+        "Shida Kartli is a place of extended mountain ranges, diverse forests, massive fields, beautiful waterfalls, and shimmering lakes. Liakhvi Strict Nature Reserve, Dzama and Ateni Valleys, Bateti and Nadarbazevi Lakes, Damchkera and Biisi Waterfalls, and Jamjama Mountain are all places for unforgettable adventures and relaxation, while the resorts – Surami, Kvishkheti, and Garikula – are able to treat a large number of diseases with their unique climates and mineral waters.",
+      cuisine_Shida_Kartli_Title: "The Cuisine of Shida Kartli ",
+      cuisine_Shida_Kartli_First_Description:
+        "The cuisine of Kartli is rich in both fish and meat dishes, as well as vegetarian food. On the road to Surami you can try the delicious, fragrant sweet bread Nazuki. ",
+      cuisine_Shida_Kartli_Second_Description:
+        "Along with Chakapuli, you can try Pkhaleuli, sorrel, buttermilk, and cornel soups, which pair very well with Kartli wines, such as Goruli Mtsvane, Shavkapito, Chinuri, and Tavkveri. ",
+    });
+    server.create("location", {
+      id: 3,
+      title: "Samtskhe-Javakheti",
+      title_img: "/assets/location/Samcxe Javaxeti.jpg",
+      title_Description:
+        "Samtskhe-Javakheti is an administrative region made of two historical provinces of Samtskhe and Javakheti. There are two ways to get there from Tbilisi, depending on which region you are going to. If you intend to go to Borjomi (Samtskhe), traveling through the cities of Gori and Khashuri along the Western Highway is the best option. If your destination is Vardzia, Ninotsminda, Akhalkalaki, or Akhaltsikhe, then the Southern Highway via Paravani Lake is the way to go.",
+      bakuriani_Title: "Bakuriani",
+      bakuriani_img: "/assets/location/winter-panoramic-view-bakuriani.webp",
+      bakuriani_First_Description:
+        "The village of Bakuriani, is the best place in the region for both skiing and mountain sports, but it is also an ideal location for a relaxing vacation. Here, you’ll find ski runs of various difficulties, modern ski lifts, an international-level bike park, and a mixture of mid-range and high-class accommodation options.",
+      borjomi_Title: "Borjomi Resort Town",
+      borjomi_First_Description:
+        "One of Georgia’s most well-known mineral waters has its roots in Borjomi. If you’ve ever dined in a Georgian restaurant, we’re sure you already know the name!",
+      borjomi_img: "/assets/location/borjomi-panoramic-view.webp",
+      borjomi_Second_Description:
+        "The town of Borjomi is enchanting. Set among mountains covered in pine forests, on both sides of the Mtkvari River, it is a quaint mountain town out of romantic fiction. ",
+      borjomi_Third_Description:
+        "In the picturesque Borjomi Central Park you can not only drink mineral water straight from a spring, but also find a variety of dining options, amusements, and quiet corners in which to relax. ",
+      borjomi_Fourth_Description:
+        "The resort Likani is here too, which, due to its therapeutic climate, was the summer residence of the Russian emperors in the 19th century.",
+      abastumani_Title: "Abastumani",
+      abastumani_img: "/assets/location/abastumanii.webp",
+      abastumani_First_Description:
+        "This resort, at 1,340 meters above sea level, is the best place for treating multiple health conditions due to its air, climate, and sulfur-rich waters.",
+      abastumani_Second_Description:
+        "There is also an astronomical observatory in Abastumani, and the sky is clear for a majority of the year. The skies have been observed from this location for more than 80 years, and if you too wish to see the sky with your own eyes, there is a telescope for tourists in Abastumani.",
+      abastumani_Third_Description: "The Sights of Samtskhe-Javakheti",
+      abastumani_Fourth_Description:
+        "There are many historical monuments in Samtskhe-Javakheti. Once you are in the region, try to visit at the least the main ones!",
+      akhaltsikhe_Title: "Akhaltsikhe Fortress (a.k.a. Rabati)",
+      akhaltsikhe_img: "/assets/location/rabati-wide-view.webp",
+      akhaltsikhe_Description:
+        "South of Borjomi, there is a beautiful road cutting through deep valleys that will take you to Akhaltsikhe. This city is famous for its core Rabati District and the ancient fortress-city, where, centuries ago, there was a church, a mosque, and a synagogue side-by-side in one small area. This unity best conveys the history of Akhaltsikhe, as well as its current character. ",
+      vardzia_Title: "Vardzia",
+      vardzia_img: "/assets/location/vardzia.webp",
+      vardzia_First_Description:
+        "Vardzia is a city and monastery carved into a cliffside, which is associated with the reign of Queen Tamar and Georgia’s Golden Age. In this medieval stronghold, you’ll find hundreds of cave dwellings, fifteen churches, wine cellars, bakeries, apothecaries, and even secret tunnels.",
+      vardzia_Second_Description: "Khertvisi Fortress",
+      vardzia_Third_Description:
+        "Khertvisi Fortress is a 10th-century complex located in the village of Khertvisi. This monument, along with Vardzia, has been on the tentative list of World Heritage Sites since 2007, and it’s truly impressive!",
+      nature_Title: "Nature",
+      nature_First_Description:
+        "One of the sights of Samtskhe-Javakheti is the Borjomi-Kharagauli National Park, with its untouched forests and rare species of plants and animals. There are several routes that require from one to three days. You can spend the night in the tourist shelters, and there are also picnic and camping areas throughout the park.",
+      nature_Second_Description:
+        "This place is also famous for its lakes. Samtskhe-Javakheti is the location of Georgia’s largest lake full of fish, Paravani Lake, as well as the lovely Bughdasheni, Kartsakhi, Saghamo, Khanchali, and Tabatskuri Lakes, in which you can hike or watch migratory birds from specially outfitted towers.",
+      nature_Third_Description:
+        "The highest peak in the region is Didi Abuli Mountain, from where you will have a view over all of Javakheti.",
+    });
   },
 
   routes() {
@@ -1043,6 +1236,14 @@ createServer({
       "/maps",
       (schema, request) => {
         return schema.maps.all();
+      },
+      // { timing: 2000, headers: { "Cache-Control": "no-store" } }
+    );
+
+    this.get(
+      "/locations",
+      (schema, request) => {
+        return schema.locations.all();
       },
       // { timing: 2000, headers: { "Cache-Control": "no-store" } }
     );
