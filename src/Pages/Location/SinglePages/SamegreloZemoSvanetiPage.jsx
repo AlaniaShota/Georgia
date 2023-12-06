@@ -25,43 +25,43 @@ export const SamegreloZemoSvanetiPage = () => {
               titlePage={item.title}
               titleText={item.title}
               descriptionText={item.title_Description}
-              img={item.title_img}
+              img={item.title_Img}
             />
             <div className="lg:container sm:mx-8 lg:mx-0 ">
               <div className="flex flex-col my-20 px-40">
                 <p className="text-lg font-light text-BlackSecondColor pb-4">
-                  {item.samegrelo_First_Description}
+                  {item.major_First_Description}
                 </p>
                 <p className="text-lg font-light text-BlackSecondColor ">
-                  {item.samegrelo_Second_Description}
+                  {item.major_Second_Description}
                 </p>
                 <img
-                  src={item.samegrelo_img}
+                  src={item.major_Img}
                   alt={item.title}
                   className="rounded-md my-6 object-cover "
                 />
                 <p className="text-lg font-light text-BlackSecondColor pb-4">
-                  {item.samegrelo_Third_Description}
+                  {item.major_Third_Description}
                 </p>
                 <p className="text-lg font-light text-BlackSecondColor pb-4">
-                  {item.samegrelo_Fourth_Description}
+                  {item.major_Fourth_Description}
                 </p>
                 <h1 className="text-3xl mb-6 font-semibold">
-                  {item.nature_Samegrelo_Title}
+                  {item.major_Nature_Title}
                 </h1>
                 <img
-                  src={item.nature_Samegrelo_img}
-                  alt={item.nature_Samegrelo_Title}
+                  src={item.major_Nature_Img}
+                  alt={item.major_Nature_Title}
                   className="rounded-md my-6 object-cover "
                 />
                 <p className="text-lg font-light text-BlackSecondColor pb-4">
-                  {item.nature_Samegrelo_First_Description}
+                  {item.major_Nature_First_Description}
                 </p>
                 <p className="text-lg font-light text-BlackSecondColor pb-4">
-                  {item.nature_Samegrelo_Second_Description}
+                  {item.major_Nature_Second_Description}
                 </p>
                 <p className="text-lg font-light text-BlackSecondColor pb-4">
-                  {item.nature_Samegrelo_Third_Description}
+                  {item.major_Nature_Third_Description}
                 </p>
                 <div className="flex justify-center items-center">
                   {!viewMore && (
@@ -74,75 +74,79 @@ export const SamegreloZemoSvanetiPage = () => {
                   {viewMore && (
                     <div className="flex flex-col">
                       <h1 className="text-3xl mb-6 font-semibold">
-                        {item.sights_Samegrelo_Title}
+                        {item.minor_Sights_Title}
                       </h1>
                       <img
-                        src={item.sights_Samegrelo_img}
-                        alt={item.sights_Samegrelo_Title}
+                        loading="lazy"
+                        src={item.minor_Sights_Img}
+                        alt={item.minor_Sights_Title}
                         className="rounded-md my-6 object-cover "
                       />
                       <p className="text-lg font-light text-BlackSecondColor pb-4">
-                        {item.sights_Samegrelo_First_Description}
+                        {item.minor_Sights_First_Description}
                       </p>
                       <p className="text-lg font-light text-BlackSecondColor pb-4">
-                        {item.sights_Samegrelo_Second_Description}
+                        {item.minor_Sights_Second_Description}
                       </p>
                       <p className="text-lg font-light text-BlackSecondColor pb-4">
-                        {item.sights_Samegrelo_Third_Description}
+                        {item.minor_Sights_Third_Description}
                       </p>
                       <p className="text-lg font-light text-BlackSecondColor pb-4">
-                        {item.sights_Samegrelo_Fourth_Description}
+                        {item.minor_Sights_Fourth_Description}
                       </p>
                       <h1 className="text-3xl mb-6 font-semibold">
-                        {item.zemo_Svaneti_Title}
+                        {item.minor_Title}
                       </h1>
                       <img
-                        src={item.zemo_Svaneti_img}
-                        alt={item.zemo_Svaneti_Title}
+                        loading="lazy"
+                        src={item.minor_Img}
+                        alt={item.minor_Title}
                         className="rounded-md my-6 object-cover "
                       />
                       <p className="text-lg font-light text-BlackSecondColor pb-4">
-                        {item.zemo_Svaneti_First_Description}
+                        {item.minor_First_Description}
                       </p>
                       <p className="text-lg font-light text-BlackSecondColor pb-4">
-                        {item.zemo_Svaneti_Second_Description}
+                        {item.minor_Second_Description}
                       </p>
                       <h1 className="text-3xl mb-6 font-semibold">
-                        {item.nature_Zemo_Svaneti_Title}
+                        {item.minor_Nature_Title}
                       </h1>
                       <img
-                        src={item.nature_Zemo_Svaneti_img}
-                        alt={item.nature_Zemo_Svaneti_Title}
+                        loading="lazy"
+                        src={item.minor_Nature_Img}
+                        alt={item.minor_Nature_Title}
                         className="rounded-md my-6 object-cover "
                       />
                       <p className="text-lg font-light text-BlackSecondColor pb-4">
-                        {item.nature_Zemo_Svaneti_First_Description}
+                        {item.minor_Nature_First_Description}
                       </p>
                       <p className="text-lg font-light text-BlackSecondColor pb-4">
-                        {item.nature_Zemo_Svaneti_Second_Description}
+                        {item.minor_Nature_Second_Description}
                       </p>
                       <p className="text-lg font-light text-BlackSecondColor pb-4">
-                        {item.nature_Zemo_Svaneti_Third_Description}
+                        {item.minor_Nature_Third_Description}
                       </p>
                       <h1 className="text-3xl mb-6 font-semibold">
-                        {item.sights_Zemo_Svaneti_Title}
+                        {item.minorSights_Title}
                       </h1>
                       <img
-                        src={item.sights_Zemo_Svaneti_img}
-                        alt={item.sights_Zemo_Svaneti_Title}
+                        loading="lazy"
+                        src={item.minorSights_Img}
+                        alt={item.minorSights_Title}
                         className="rounded-md my-6 object-cover "
                       />
                       <p className="text-lg font-light text-BlackSecondColor pb-4">
-                        {item.sights_Zemo_Svaneti_First_Description}
+                        {item.minorSights_First_Description}
                       </p>
                       <p className="text-lg font-light text-BlackSecondColor pb-4">
-                        {item.sights_Zemo_Svaneti_Second_Description}
+                        {item.minorSights_Second_Description}
                       </p>
                       <p className="text-lg font-light text-BlackSecondColor pb-4">
-                        {item.sights_Zemo_Svaneti_Third_Description}
+                        {item.minorSights_Third_Description}
                       </p>
                       <p className="text-lg font-light text-BlackSecondColor pb-4">
-                        {item.sights_Zemo_Svaneti_Fourth_Description}
+                        {item.minorSights_Fourth_Description}
                       </p>
                     </div>
                   )}

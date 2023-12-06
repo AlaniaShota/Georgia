@@ -51,10 +51,8 @@ export const GeorgiaMap = () => {
 
   return (
     <>
-      <div className="flex flex-col my-20">
-        <h1 className="text-center text-4xl font-medium">
-          {Things_To_Do_Title}
-        </h1>
+      <div className="flex flex-col items-center my-20">
+        <h1 className=" text-4xl font-medium">{Things_To_Do_Title}</h1>
         <p className="text-center text-lg font-light pt-3 px-56">
           {Things_To_Do_Description}
         </p>

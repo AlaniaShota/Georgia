@@ -13,6 +13,37 @@ export const Header = ({ titlePage, titleText, descriptionText, img }) => {
     triggerOnce: true,
   });
 
+  // const getTextSizeClass = (text) => {
+  //   if (text.length < 100) {
+  //     return "w-[700px]";
+  //   }
+  //   if (text.length < 1000) {
+  //     return "w-[2000px]";
+  //   }
+  //   // if (text.length > 1000) {
+  //   //   return "w-[50px]";
+  //   // }
+  // };
+
+  const getTextSizeClass = (text) => {
+    let sizeClass = "";
+    switch (true) {
+      case text.length < 200:
+        sizeClass = "w-497";
+        break;
+      case text.length < 550:
+        sizeClass = "w-[570px]";
+        break;
+      case text.length < 1000:
+        sizeClass = "w-[700px]";
+        break;
+      default:
+        sizeClass = "w-[300px]";
+        break;
+    }
+    return sizeClass;
+  };
+
   const titleAnimation = useAnimation();
   const descriptionAnimation = useAnimation();
 
@@ -54,10 +85,12 @@ export const Header = ({ titlePage, titleText, descriptionText, img }) => {
     visible: { opacity: 1, y: 0 },
   };
 
+  const titleSizeClass = getTextSizeClass(titleText);
+  const descriptionSizeClass = getTextSizeClass(descriptionText);
+
   return (
     <>
       <Helmet>
-        {/* <meta charSet="utf-8" /> */}
         <title>{titlePage}</title>
       </Helmet>
       <div className="flex flex-col">
@@ -73,10 +106,10 @@ export const Header = ({ titlePage, titleText, descriptionText, img }) => {
             animate={inView ? "visible" : "hidden"}
             variants={titleVariants}
             transition={{ duration: 1 }}
-            className="absolute ml-40 bg-transparent opacity-100"
+            className="absolute  ml-40 bg-transparent opacity-100"
           >
             <motion.h1
-              className=" w-[570px] text-4xl text-white font-bold "
+              className={`${titleSizeClass}  text-4xl text-white font-bold `}
               ref={titleTextRef}
               initial={{ opacity: 0, y: 50 }}
               animate={titleAnimation}
@@ -84,7 +117,7 @@ export const Header = ({ titlePage, titleText, descriptionText, img }) => {
             <motion.p
               initial={{ opacity: 0 }}
               animate={descriptionAnimation}
-              className="w-497 text-lg pt-4 text-whiteSecondText  "
+              className={` ${descriptionSizeClass} text-lg pt-4 text-whiteSecondText  `}
             >
               {descriptionText ? descriptionText : null}
             </motion.p>

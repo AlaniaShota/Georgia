@@ -27,40 +27,40 @@ export const SamtskheJavakhetiPage = () => {
               titlePage={item.title}
               titleText={item.title}
               descriptionText={item.title_Description}
-              img={item.title_img}
+              img={item.title_Img}
             />
             <div className="lg:container sm:mx-8 lg:mx-0 ">
               <div className="flex flex-col my-20 px-40">
                 <h1 className="text-3xl mb-6 font-semibold">
-                  {item.bakuriani_Title}
+                  {item.major_Title}
                 </h1>
                 <img
                   className="rounded-md my-6 object-cover "
-                  src={item.bakuriani_img}
-                  alt={item.bakuriani_Title}
+                  src={item.major_Img}
+                  alt={item.major_Title}
                 />
                 <p className="text-lg font-light text-BlackSecondColor pb-4">
-                  {item.bakuriani_First_Description}
+                  {item.major_First_Description}
                 </p>
                 <h1 className="text-3xl mb-6 font-semibold">
-                  {item.borjomi_Title}
+                  {item.secondary_Major_Title}
                 </h1>
                 <p className="text-lg font-light text-BlackSecondColor pb-4">
-                  {item.borjomi_First_Description}
+                  {item.secondary_Major_First_Description}
                 </p>
                 <img
-                  src={item.borjomi_img}
-                  alt=""
+                  src={item.secondary_Major_Img}
+                  alt={item.secondary_Major_Title}
                   className="rounded-md my-6 object-cover "
                 />
                 <p className="text-lg font-light text-BlackSecondColor pb-4">
-                  {item.borjomi_Second_Description}
+                  {item.secondary_Major_Second_Description}
                 </p>
                 <p className="text-lg font-light text-BlackSecondColor pb-4">
-                  {item.borjomi_Third_Description}
+                  {item.secondary_Major_Third_Description}
                 </p>
                 <p className="text-lg font-light text-BlackSecondColor pb-4">
-                  {item.borjomi_Fourth_Description}
+                  {item.secondary_Major_Fourth_Description}
                 </p>
                 <div className="flex justify-center items-center">
                   {!viewMore && (
@@ -73,63 +73,63 @@ export const SamtskheJavakhetiPage = () => {
                   {viewMore && (
                     <div className="flex flex-col">
                       <h1 className="text-3xl mb-6 font-semibold">
-                        {item.abastumani_Title}
+                        {item.minor_Title}
                       </h1>
                       <img
-                        src={item.abastumani_img}
-                        alt={item.abastumani_Title}
+                        src={item.minor_Img}
+                        alt={item.minor_Title}
                         className="rounded-md my-6 object-cover "
                       />
                       <p className="text-lg font-light text-BlackSecondColor pb-4">
-                        {item.abastumani_First_Description}
+                        {item.minor_First_Description}
                       </p>
                       <p className="text-lg font-light text-BlackSecondColor pb-4">
-                        {item.abastumani_Second_Description}
+                        {item.minor_Second_Description}
                       </p>
                       <p className="text-lg font-light text-BlackSecondColor pb-4">
-                        {item.abastumani_Third_Description}
+                        {item.minor_Third_Description}
                       </p>
                       <p className="text-lg font-light text-BlackSecondColor pb-4">
-                        {item.abastumani_Fourth_Description}
+                        {item.minor_Fourth_Description}
                       </p>
                       <h1 className="text-3xl mb-6 font-semibold">
-                        {item.akhaltsikhe_Title}
+                        {item.secondary_Minor_Title}
                       </h1>
                       <img
-                        src={item.akhaltsikhe_img}
-                        alt={item.akhaltsikhe_Title}
+                        src={item.secondary_Minor_Img}
+                        alt={item.secondary_Minor_Title}
                       />
                       <p className="text-lg font-light text-BlackSecondColor pb-4">
-                        {item.akhaltsikhe_Description}
+                        {item.secondary_Minor_Description}
                       </p>
                       <h1 className="text-3xl mb-6 font-semibold">
-                        {item.vardzia_Title}
+                        {item.secondary_MinorTitle}
                       </h1>
                       <img
-                        src={item.vardzia_img}
-                        alt={item.vardzia_Title}
+                        src={item.secondary_MinorImg}
+                        alt={item.secondary_MinorTitle}
                         className="rounded-md my-6 object-cover "
                       />
                       <p className="text-lg font-light text-BlackSecondColor pb-4">
-                        {item.vardzia_First_Description}
+                        {item.secondary_MinorFirst_Description}
                       </p>
                       <p className="text-lg font-light text-BlackSecondColor pb-4">
-                        {item.vardzia_Second_Description}
+                        {item.secondary_MinorSecond_Description}
                       </p>
                       <p className="text-lg font-light text-BlackSecondColor pb-4">
-                        {item.vardzia_Third_Description}
+                        {item.secondary_MinorThird_Description}
                       </p>
                       <h1 className="text-3xl mb-6 font-semibold">
-                        {item.nature_Title}
+                        {item.minor_Nature_Title}
                       </h1>
                       <p className="text-lg font-light text-BlackSecondColor pb-4">
-                        {item.nature_First_Description}
+                        {item.minor_Nature_First_Description}
                       </p>
                       <p className="text-lg font-light text-BlackSecondColor pb-4">
-                        {item.nature_Second_Description}
+                        {item.minor_Nature_Second_Description}
                       </p>
                       <p className="text-lg font-light text-BlackSecondColor pb-4">
-                        {item.nature_Third_Description}
+                        {item.minor_Nature_Third_Description}
                       </p>
                     </div>
                   )}

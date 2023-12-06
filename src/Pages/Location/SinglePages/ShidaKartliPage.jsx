@@ -25,43 +25,43 @@ export const ShidaKartliPage = () => {
               titlePage={item.title}
               titleText={item.title}
               descriptionText={item.title_Description}
-              img={item.title_img}
+              img={item.title_Img}
             />
             <div className="lg:container sm:mx-8 lg:mx-0 ">
               <div className="flex flex-col my-20 px-40">
                 <h1 className="text-3xl mb-6 font-semibold">
-                  {item.major_Shida_Kartli_Title}
+                  {item.major_Title}
                 </h1>
                 <img
-                  src={item.major_Shida_Kartli_img}
-                  alt={item.major_Shida_Kartli_Title}
+                  src={item.major_Img}
+                  alt={item.major_Title}
                   className="rounded-md my-6 object-cover "
                 />
                 <p className="text-lg font-light text-BlackSecondColor pb-4">
-                  {item.major_Shida_Kartli_First_Description}
+                  {item.major_First_Description}
                 </p>
                 <p className="text-lg font-light text-BlackSecondColor pb-4">
-                  {item.major_Shida_Kartli_Second_Description}
+                  {item.major_Second_Description}
                 </p>
                 <h1 className="text-3xl mb-6 font-semibold">
-                  {item.historical_Cultural_Title}
+                  {item.major_Historical_Title}
                 </h1>
                 <p className="text-lg font-light text-BlackSecondColor pb-4">
-                  {item.historical_Cultural_First_Description}
+                  {item.major_Historical_First_Description}
                 </p>
                 <p className="text-lg font-light text-BlackSecondColor pb-4">
-                  {item.historical_Cultural_Second_Description}
+                  {item.major_Historical_Second_Description}
                 </p>
                 <img
-                  src={item.historical_Cultural_img}
-                  alt={item.historical_Cultural_Title}
+                  src={item.major_Historical_Img}
+                  alt={item.major_Historical_Title}
                   className="rounded-md my-6 object-cover "
                 />
                 <p className="text-lg font-light text-BlackSecondColor pb-4">
-                  {item.historical_Cultural_Third_Description}
+                  {item.major_Historical_Third_Description}
                 </p>
                 <p className="text-lg font-light text-BlackSecondColor pb-4">
-                  {item.historical_Cultural_Fourth_Description}
+                  {item.major_Historical_Fourth_Description}
                 </p>
                 <div className="flex justify-center items-center">
                   {!viewMore && (
@@ -74,36 +74,36 @@ export const ShidaKartliPage = () => {
                   {viewMore && (
                     <div className="flex flex-col">
                       <h1 className="text-3xl mb-6 font-semibold">
-                        {item.sights_Shida_Kartli_Title}
+                        {item.minor_Sights_Title}
                       </h1>
                       <img
-                        src={item.sights_Shida_Kartli_Img}
-                        alt={item.sights_Shida_Kartli_Title}
+                        src={item.minor_Sights_Img}
+                        alt={item.minor_Sights_Title}
                         className="rounded-md my-6 object-cover "
                       />
                       <p className="text-lg font-light text-BlackSecondColor pb-4">
-                        {item.sights_Shida_Kartli_First_Description}
+                        {item.minor_Sights_First_Description}
                       </p>
                       <p className="text-lg font-light text-BlackSecondColor pb-4">
-                        {item.sights_Samegrelo_Second_Description}
+                        {item.minor_Sights_Second_Description}
                       </p>
                       <p className="text-lg font-light text-BlackSecondColor pb-4">
-                        {item.sights_Samegrelo_Third_Description}
-                      </p>
-                      <h1 className="text-3xl mb-6 font-semibold">
-                        {item.nature_Shida_Kartli_Title}
-                      </h1>
-                      <p className="text-lg font-light text-BlackSecondColor pb-4">
-                        {item.nature_Shida_Kartli_Description}
+                        {item.minor_Sights_Third_Description}
                       </p>
                       <h1 className="text-3xl mb-6 font-semibold">
-                        {item.cuisine_Shida_Kartli_Title}
+                        {item.minor_Nature_Title}
                       </h1>
                       <p className="text-lg font-light text-BlackSecondColor pb-4">
-                        {item.cuisine_Shida_Kartli_First_Description}
+                        {item.minor_Nature_Description}
+                      </p>
+                      <h1 className="text-3xl mb-6 font-semibold">
+                        {item.minor_Cuisine_Title}
+                      </h1>
+                      <p className="text-lg font-light text-BlackSecondColor pb-4">
+                        {item.minor_Cuisine_First_Description}
                       </p>
                       <p className="text-lg font-light text-BlackSecondColor pb-4">
-                        {item.cuisine_Shida_Kartli_Second_Description}
+                        {item.minor_Cuisine_Second_Description}
                       </p>
                     </div>
                   )}
