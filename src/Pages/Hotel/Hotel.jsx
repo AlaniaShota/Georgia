@@ -1,15 +1,13 @@
 import { Helmet } from "react-helmet";
 
-const Hotel = () => {
+export const Hotel = () => {
   return (
     <div>
       <Helmet>
-        <meta charSet="utf-8" />
+        {/* <meta charSet="utf-8" /> */}
         <title>Hotel</title>
       </Helmet>
       Hotel
     </div>
   );
 };
-
-export default Hotel;

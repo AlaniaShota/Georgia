@@ -11,7 +11,7 @@ import parallaxButtonImg from "../../../assets/home-img/image-bottom.png";
 import { gsap } from "gsap";
 import { TextPlugin } from "gsap/TextPlugin";
 
-const MultiHeaderParallax = () => {
+export const MultiHeaderParallax = () => {
   const ref = useRef(null);
   const textRef = useRef(null);
 
@@ -22,7 +22,7 @@ const MultiHeaderParallax = () => {
     gsap.to(secondaryTextElement, {
       stagger: 0.02,
       color: "#B22222",
-      duration: 5,
+      duration: 2,
       delay: 2,
       ease: "power1.inOut",
       text: {
@@ -48,7 +48,7 @@ const MultiHeaderParallax = () => {
         <AnimatePresence>
           <motion.div
             style={{ y: textY }}
-            className="font-light text-white text-7xl md:text-9xl relative z-20"
+            className="font-light text-white text-9xl md:text-9xl relative z-20"
           >
             <h1>
               Why <span ref={textRef}>Georgia</span>
@@ -73,5 +73,3 @@ const MultiHeaderParallax = () => {
     </div>
   );
 };
-
-export default MultiHeaderParallax;
