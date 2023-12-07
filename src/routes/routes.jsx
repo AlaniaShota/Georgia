@@ -28,6 +28,7 @@ import {
   DetailFood,
   TraditionalFoodLibery,
 } from "../Pages/TraditionalFood/Components/index";
+import { Tour } from "../Pages/Location/SinglePages/Components";
 
 export const router = createBrowserRouter([
   {
@@ -57,7 +58,10 @@ export const router = createBrowserRouter([
       {
         path: "location",
         children: [
-          { index: "location", element: <Location /> },
+          {
+            index: "location",
+            element: <Location />,
+          },
           {
             path: "ajara",
             element: <AjaraPage />,
@@ -91,6 +95,10 @@ export const router = createBrowserRouter([
             element: <SamegreloZemoSvanetiPage />,
           },
           {
+            path: "samegrelo-zemo-svaneti/:id",
+            element: <Tour />,
+          },
+          {
             path: "samtskhe-javakheti",
             element: <SamtskheJavakhetiPage />,
           },
@@ -116,7 +124,6 @@ export const router = createBrowserRouter([
         path: "library",
         element: <TraditionalFoodLibery />,
       },
-
       {
         path: "library/:id",
         element: <DetailFood />,

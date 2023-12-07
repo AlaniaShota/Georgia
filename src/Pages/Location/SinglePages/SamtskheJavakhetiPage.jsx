@@ -16,7 +16,7 @@ export const SamtskheJavakhetiPage = () => {
     fetch("/api/locations")
       .then((res) => res.json())
       .then((data) => setSamtskheJavakhetiLocation(data.locations));
-  });
+  }, []);
 
   return (
     <>

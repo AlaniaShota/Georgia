@@ -14,7 +14,7 @@ export const ShidaKartliPage = () => {
     fetch("/api/locations")
       .then((res) => res.json())
       .then((data) => setShidaKartliLocation(data.locations));
-  });
+  }, []);
 
   return (
     <>

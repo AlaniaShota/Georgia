@@ -4,6 +4,7 @@ export const ButtonViewMore = ({ setViewMore }) => {
   const handleViewMore = () => {
     setViewMore(true);
   };
+
   return (
     <>
       <Button border onClick={handleViewMore}>

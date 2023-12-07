@@ -11,7 +11,7 @@ export const AjaraPage = () => {
     fetch("/api/locations")
       .then((res) => res.json())
       .then((data) => setAjaraLocation(data.locations));
-  });
+  }, []);
 
   return (
     <>

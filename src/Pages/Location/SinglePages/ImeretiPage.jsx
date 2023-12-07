@@ -14,7 +14,7 @@ export const ImeretiPage = () => {
     fetch("/api/locations")
       .then((res) => res.json())
       .then((data) => setImertiLocation(data.locations));
-  });
+  }, []);
 
   return (
     <>

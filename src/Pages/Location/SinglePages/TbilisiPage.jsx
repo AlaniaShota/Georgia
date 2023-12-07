@@ -14,7 +14,7 @@ export const TbilisiPage = () => {
     fetch("/api/locations")
       .then((res) => res.json())
       .then((data) => setTbilisiLocation(data.locations));
-  });
+  }, []);
 
   return (
     <>

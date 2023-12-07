@@ -1138,6 +1138,83 @@ createServer({
         "Svan towers are not the only treasure that makes this region of Georgia stand out. Start your tour in Svaneti at the Mestia Historical-Ethnographical Museum, which has a large collection of Svaneti treasures. The common place of worship of all Zemo Svaneti is in Mestia, at Seti St. George Church, where icons and crosses from the 12th to 13th centuries are kept. Visit the single-nave, two-story basilica Laghami Transfiguration of the Savior Church.",
       minorSights_Fourth_Description:
         "And finally, try outstanding Svan dishes, such as kubdari and kupati seasoned with unique Svan salt, the cheesy mchadi called chishvdari, Svan khachapuri, the local bread, honey, and the once-distilled Svan vodka called rakhi. You will understand that one lifetime is not enough to know Svaneti. ",
+      tour: [
+        {
+          id: "1",
+          title: "Two-Day Tour Svaneti",
+          description:
+            "If you are looking for an unforgettable adventure and find traveling through a region full of legend attractive, then you should visit Svaneti and go see Georgia's highest peak, lovely nature, untouched forests, villages with towers harmoniously adapted to the cliffs, and the mountains towering proudly above you.",
+          img: "/assets/location/upper-svaneti-gnta.webp",
+          margianiImg:
+            "/assets/location/margiani-defence-tower-and-museum-gnta.webp",
+          marginiTitle: "Margiani House Museum",
+          marginiDescription:
+            "From the roaring rivers in the valleys to mountains reaching the sky, and proudly standing Svan towers, Svaneti has many incredible sites to explore. The Svans used the towers as part of their residential homes and shelters during the enemy invasion.",
+          towerTitle: "Tower of Love in Svaneti",
+          towerDescription:
+            "As you make your way from Mestia to Ushguli, one of the highest settlements in Europe, look out for the “Tower of Love”, which stands on a huge boulder in the river Enguri.",
+          towerImg: "/assets/location/svan-tower-of-love-gnta.webp",
+          lamariaImg: "/assets/location/lamaria-gnta.webp",
+          lamariaTitle: "Lamaria (Ushguli Mother of God Church)",
+          lamariaDescription:
+            "Ushguli community in Svaneti Region is a truly captivating place; a place steeped in history, culture, unique architecture, and beautiful landscapes. In this community, north of Zhibiani Village, you’ll see one of Svaneti’s most important and impressive sights - Lamaria - also known as the Ushguli Mother of God Church. Standing atop a high hill, this small but proud church has a big historical significance.",
+          lagurkaTitle:
+            "Lagurka (The Kala church of Saints Cyricus and Julitta)",
+          lagurkaDescription:
+            "Svaneti is a region of wonders, not only standing out for its ancient rituals, traditions, and bringing the legends to life, but also famous for its fascinating historical monuments. One such monument is the church of Lagurka, named for St. Cyricus and St. Julitta, in the village of Khe. Many legends and interesting customs are associated with it.",
+          lagurkaImg:
+            "/assets/location/lagurka-the-kala-church-of-saints-cyricus-and-julitta-gnta.webp",
+          museumImg:
+            "/assets/location/svaneti-museum-of-history-and-ethnography-gnta.webp",
+          museumTitle: "The Svaneti Museum Collection",
+          museumDescription:
+            "Svaneti is an ancient region of Georgia renowned not only for its breathtaking natural beauty, but for the unique blend of Christian and pagan traditions that defines its culture. While you’re visiting Svaneti, pay a visit to the Svaneti Museum of History & Ethnography to see the grand history of the region brought to life in front of you.",
+          ethnographicTitle: "Ushguli Ethnographic Museum",
+          ethnographicDescription:
+            "In a 13th-century, Svan-style building made of limestone in Ushguli, known as machubi, you’ll learn about the ancient customs and traditions of Svaneti. ",
+          ethnographicImg: "/assets/location/ushguli-art-museum-gnta.webp",
+          houseImg: "/assets/location/mikheil-khergiani-house-museum-gnta.webp",
+          houseTitle: "Mikheil Khergiani House Museum",
+          houseDescription:
+            "Mikheil Khergiani was a legendary Svan mountaineer whose name is going to remain in the history of alpinism forever. A 4,960-meter-tall peak in the Turkestan range and an asteroid #3234 were named after him, and in people’s memory Khergiani would always be the fearless conqueror of mountains, the Tiger of the Cliffs.",
+          ushguliTitle: "Ushguli",
+          ushguliDescription:
+            "Nestled among the rolling hills and high mountains, Ushguli in winter is draped in white, while in the summer the green fields, colorful roofs, and Svan towers will take your breath away with their beauty. Visitors to Svaneti usually start taking pictures at Enguri HPP, a truly impressive, monumental dam, but we recommend that you leave space on your memory card for Ushguli too!",
+          ushguliImg: "/assets/location/ushguli-gnta.webp",
+          mestiaImg: "/assets/location/mestia-gnta.webp",
+          mestiaTitle: "Mestia",
+          mestiaDescription:
+            "They say it’s not about the destination, it’s about the journey, but can’t it be both? When you visit faraway Mestia, the journey and the destination will vie for your attention and for space in your camera.",
+        },
+        {
+          id: 2,
+          title: "One-Day Tour in Samegrelo & Imereti",
+          description:
+            "Samegrelo is one of the most interesting regions in Georgia because of its historical past, which, with its enchanting nature and fortresses, will seem to you like a true oasis. The impressions that you get on your one-day tour will be unique, exciting, and unforgettable.",
+          img: "/assets/location/martvili-tour.webp",
+          residenceImg: "/assets/location/salkhino-dadiani-residence-gnta.webp",
+          residenceTitle: "Salkhino Dadiani Residence",
+          residenceDescription:
+            "The Salkhino palace, built in the village of Salkhino in Samegrelo Region, was once the summer residence of the local nobility, the Dadiani family. Walking on the cobblestone paths between centuries-old trees up to the palace, you feel the full glory of the Dadiani princes, the 19th-century Georgian aristocracy, who were related to the French imperial family.",
+          canyonTitle: "Martvili Canyon",
+          canyonDescription:
+            "Every region in Georgia boasts its own famous natural landmarks, and Samegrelo is no different, as it is home to the stunningly beautiful Martvili Canyon. A popular tourist destination with locals and tourists alike, this breathtaking natural monument is a must-see for outdoor enthusiasts.",
+          canyonImg: "/assets/location/martvili-canyon-gnta.webp",
+          natureImg: "/assets/location/okatse-canyon-gnta.webp",
+          natureTitle: "Okatse Canyon – Imereti’s Green Nature Monument",
+          natureDescription:
+            "Imereti region is famous for its lush greenery, dramatic limestone cliffs and plentitude of water - rivers, streams and lakes. Okatse Canyon is a perfect example of this.",
+          ziplineTitle: "Martvili Canyon Zipline",
+          ziplineDescription:
+            "Martvili Canyon is located in Samegrelo Region, in Gachedili Village, or to be more precise, in the Abasha River Gorge. The canyon is 2,400 meters long, with small hiking trails through exotic nature, including waterfalls, rivers, lakes, and rocks. A boat ride on the Abasha River is also possible while other more extreme adventures are also awaiting you.",
+          ziplineImg:
+            "/assets/location/martvili-canyon-zipline-in-georgia.webp",
+          martviliImg: "/assets/location/martvili-gnta.webp",
+          martviliTitle: "Martvili",
+          martviliDescription:
+            "The small town of Martvili lies in western Georgia, in the region of Samegrelo. As you walk through this picturesque town, your eye will inevitably be drawn to the monastery built on a spot overlooking the town. This is Chkondidi, a monastery raised by the King David Agmashenebeli (the Builder).",
+        },
+      ],
     });
     server.create("location", {
       id: 2,
@@ -1538,8 +1615,8 @@ createServer({
     this.namespace = "api";
     this.logging = false;
     // this.timing = 2000
-    // this.passthrough("/assets/**");
-    // this.passthrough("/src/assets/**");
+    this.passthrough("/assets/**");
+    this.passthrough("/src/assets/**");
 
     this.get("/foods", (schema, request) => {
       return schema.foods.all();
@@ -1580,6 +1657,11 @@ createServer({
     this.get("/foods/:id", (schema, request) => {
       const id = request.params.id;
       return schema.foods.find(id);
+    });
+
+    this.get("/locations/:id", (schema, request) => {
+      const id = request.params.id;
+      return schema.locations.find(id);
     });
 
     // this.get("/restaurants/:contact", (schema, request) => {

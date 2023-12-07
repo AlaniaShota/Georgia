@@ -11,7 +11,7 @@ export const GuriaPage = () => {
     fetch("/api/locations")
       .then((res) => res.json())
       .then((data) => setGuriaLocation(data.locations));
-  });
+  }, []);
 
   return (
     <>

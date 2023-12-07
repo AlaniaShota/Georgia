@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Header } from "../../../Components";
-import { FoodCard, ButtonViewMore } from "./Components/index";
+import { FoodCard, ButtonViewMore, TourCard } from "./Components/index";
 import {
   Cuisine_Samegrelo_Description,
   Cuisine_Samegrelo_Title,
@@ -14,7 +14,7 @@ export const SamegreloZemoSvanetiPage = () => {
     fetch("/api/locations")
       .then((res) => res.json())
       .then((data) => setSamegreloLocation(data.locations));
-  });
+  }, []);
 
   return (
     <>
@@ -147,9 +147,11 @@ export const SamegreloZemoSvanetiPage = () => {
                   )}
                 </div>
               </div>
+              <TourCard tourData={item.tour} />
             </div>
           </React.Fragment>
         ))}
+
       <FoodCard
         cuisineTitle={Cuisine_Samegrelo_Title}
         cuisineDescription={Cuisine_Samegrelo_Description}

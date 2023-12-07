@@ -14,7 +14,7 @@ export const MtskhetaMtianetiPage = () => {
     fetch("/api/locations")
       .then((res) => res.json())
       .then((data) => setMtskhetaMtianetiLocation(data.locations));
-  });
+  }, []);
 
   return (
     <>

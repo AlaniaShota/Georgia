@@ -14,7 +14,7 @@ export const RachaLechkhumiKvemoSvanetiPage = () => {
     fetch("/api/locations")
       .then((res) => res.json())
       .then((data) => setRachaLechkhumiLocation(data.locations));
-  });
+  }, []);
 
   return (
     <>

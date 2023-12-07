@@ -59,7 +59,7 @@ export const FoodCard = ({
         .filter((item) => item.cuisine === filterCuisine)
         .slice(0, 2)
         .map((item) => (
-          <div key={item.id} className="flex  drop-shadow-lg rounded-md ">
+          <div key={item.id} className="flex drop-shadow-lg rounded-md ">
             <Link to={`/library/${item.id}`}>
               <motion.img
                 whileHover={{ scale: 1.05 }}

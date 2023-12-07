@@ -14,7 +14,7 @@ export const KakhetiPage = () => {
     fetch("/api/locations")
       .then((res) => res.json())
       .then((data) => setKakhetiLocation(data.locations));
-  });
+  }, []);
 
   return (
     <>
