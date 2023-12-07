@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Button, Header } from "../../../Components";
+import { Header } from "../../../Components";
+import { FoodCard, ButtonViewMore } from "./Components/index";
+import { Cuisine_Guria_Description, Cuisine_Guria_Title } from "../constant";
 
 export const GuriaPage = () => {
   const [guriaLocation, setGuriaLocation] = useState([]);
@@ -10,10 +12,6 @@ export const GuriaPage = () => {
       .then((res) => res.json())
       .then((data) => setGuriaLocation(data.locations));
   });
-
-  const handleViewMore = () => {
-    setViewMore(true);
-  };
 
   return (
     <>
@@ -62,13 +60,7 @@ export const GuriaPage = () => {
                   {item.secondary_Major_Fifth_Description}
                 </p>
                 <div className="flex justify-center items-center">
-                  {!viewMore && (
-                    <Button border onClick={handleViewMore}>
-                      <span className="text-lg text-darkBlueText">
-                        View More
-                      </span>
-                    </Button>
-                  )}
+                  {!viewMore && <ButtonViewMore setViewMore={setViewMore} />}
                   {viewMore && (
                     <div className="flex flex-col">
                       <h1 className="text-3xl mb-6 font-semibold">
@@ -121,6 +113,11 @@ export const GuriaPage = () => {
             </div>
           </React.Fragment>
         ))}
+      <FoodCard
+        cuisineTitle={Cuisine_Guria_Title}
+        cuisineDescription={Cuisine_Guria_Description}
+        filterCuisine={"Guria"}
+      />
     </>
   );
 };

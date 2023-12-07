@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { Button, Header } from "../../../Components";
+import { Header } from "../../../Components";
+import { FoodCard, ButtonViewMore } from "./Components/index";
+import {
+  Cuisine_Samegrelo_Description,
+  Cuisine_Samegrelo_Title,
+} from "../constant";
 
 export const SamegreloZemoSvanetiPage = () => {
   const [samegreloLocation, setSamegreloLocation] = useState([]);
@@ -10,10 +15,6 @@ export const SamegreloZemoSvanetiPage = () => {
       .then((res) => res.json())
       .then((data) => setSamegreloLocation(data.locations));
   });
-
-  const handleViewMore = () => {
-    setViewMore(true);
-  };
 
   return (
     <>
@@ -64,13 +65,7 @@ export const SamegreloZemoSvanetiPage = () => {
                   {item.major_Nature_Third_Description}
                 </p>
                 <div className="flex justify-center items-center">
-                  {!viewMore && (
-                    <Button border onClick={handleViewMore}>
-                      <span className="text-lg text-darkBlueText">
-                        View More
-                      </span>
-                    </Button>
-                  )}
+                  {!viewMore && <ButtonViewMore setViewMore={setViewMore} />}
                   {viewMore && (
                     <div className="flex flex-col">
                       <h1 className="text-3xl mb-6 font-semibold">
@@ -155,6 +150,11 @@ export const SamegreloZemoSvanetiPage = () => {
             </div>
           </React.Fragment>
         ))}
+      <FoodCard
+        cuisineTitle={Cuisine_Samegrelo_Title}
+        cuisineDescription={Cuisine_Samegrelo_Description}
+        filterCuisine={"Samegrelo - Zemo Svaneti"}
+      />
     </>
   );
 };

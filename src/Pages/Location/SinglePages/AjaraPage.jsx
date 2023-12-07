@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Button, Header } from "../../../Components";
+import { Header } from "../../../Components";
+import { FoodCard, ButtonViewMore } from "./Components/index";
+import { Cuisine_Ajara_Description, Cuisine_Ajara_Title } from "../constant";
 
 export const AjaraPage = () => {
   const [ajaraLocation, setAjaraLocation] = useState([]);
@@ -10,10 +12,6 @@ export const AjaraPage = () => {
       .then((res) => res.json())
       .then((data) => setAjaraLocation(data.locations));
   });
-
-  const handleViewMore = () => {
-    setViewMore(true);
-  };
 
   return (
     <>
@@ -61,13 +59,7 @@ export const AjaraPage = () => {
                   {item.secondary_Major_Third_Description}
                 </p>
                 <div className="flex justify-center items-center">
-                  {!viewMore && (
-                    <Button border onClick={handleViewMore}>
-                      <span className="text-lg text-darkBlueText">
-                        View More
-                      </span>
-                    </Button>
-                  )}
+                  {!viewMore && <ButtonViewMore setViewMore={setViewMore} />}
                   {viewMore && (
                     <div className="flex flex-col">
                       <h1 className="text-3xl mb-6 font-semibold">
@@ -113,6 +105,11 @@ export const AjaraPage = () => {
             </div>
           </React.Fragment>
         ))}
+      <FoodCard
+        cuisineTitle={Cuisine_Ajara_Title}
+        cuisineDescription={Cuisine_Ajara_Description}
+        filterCuisine={"Ajara"}
+      />
     </>
   );
 };

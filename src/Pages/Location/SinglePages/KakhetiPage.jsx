@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { Button, Header } from "../../../Components";
+import { Header } from "../../../Components";
+import { FoodCard, ButtonViewMore } from "./Components/index";
+import {
+  Cuisine_Kakheti_Title,
+  Cuisine_Kakheti_Description,
+} from "../constant";
 
 export const KakhetiPage = () => {
   const [kakhetiLocation, setKakhetiLocation] = useState([]);
@@ -10,10 +15,6 @@ export const KakhetiPage = () => {
       .then((res) => res.json())
       .then((data) => setKakhetiLocation(data.locations));
   });
-
-  const handleViewMore = () => {
-    setViewMore(true);
-  };
 
   return (
     <>
@@ -57,13 +58,7 @@ export const KakhetiPage = () => {
                   {item.major_Sixth_Description}
                 </p>
                 <div className="flex justify-center items-center">
-                  {!viewMore && (
-                    <Button border onClick={handleViewMore}>
-                      <span className="text-lg text-darkBlueText">
-                        View More
-                      </span>
-                    </Button>
-                  )}
+                  {!viewMore && <ButtonViewMore setViewMore={setViewMore} />}
                   {viewMore && (
                     <div className="flex flex-col">
                       <p className="text-lg font-light text-BlackSecondColor pb-4">
@@ -100,6 +95,11 @@ export const KakhetiPage = () => {
             </div>
           </React.Fragment>
         ))}
+      <FoodCard
+        cuisineTitle={Cuisine_Kakheti_Title}
+        cuisineDescription={Cuisine_Kakheti_Description}
+        filterCuisine={"Kakheti"}
+      />
     </>
   );
 };

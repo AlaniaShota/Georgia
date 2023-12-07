@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { Button, Header } from "../../../Components";
+import { Header } from "../../../Components";
+import { FoodCard, ButtonViewMore } from "./Components/index";
+import {
+  Cuisine_Mtskheta_Mtianeti_Description,
+  Cuisine_Mtskheta_Mtianeti_Title,
+} from "../constant";
 
 export const MtskhetaMtianetiPage = () => {
   const [mtskhetaMtianetiLocation, setMtskhetaMtianetiLocation] = useState([]);
@@ -10,10 +15,6 @@ export const MtskhetaMtianetiPage = () => {
       .then((res) => res.json())
       .then((data) => setMtskhetaMtianetiLocation(data.locations));
   });
-
-  const handleViewMore = () => {
-    setViewMore(true);
-  };
 
   return (
     <>
@@ -55,13 +56,7 @@ export const MtskhetaMtianetiPage = () => {
                   {item.secondary_Major_Second_Description}
                 </p>
                 <div className="flex justify-center items-center">
-                  {!viewMore && (
-                    <Button border onClick={handleViewMore}>
-                      <span className="text-lg text-darkBlueText">
-                        View More
-                      </span>
-                    </Button>
-                  )}
+                  {!viewMore && <ButtonViewMore setViewMore={setViewMore} />}
                   {viewMore && (
                     <div className="flex flex-col">
                       <h1 className="text-3xl mb-6 font-semibold">
@@ -104,6 +99,11 @@ export const MtskhetaMtianetiPage = () => {
             </div>
           </React.Fragment>
         ))}
+      <FoodCard
+        cuisineTitle={Cuisine_Mtskheta_Mtianeti_Title}
+        cuisineDescription={Cuisine_Mtskheta_Mtianeti_Description}
+        filterCuisine={"Mtskheta Mtianeti"}
+      />
     </>
   );
 };

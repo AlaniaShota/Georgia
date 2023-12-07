@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { Button, Header } from "../../../Components";
+import { Header } from "../../../Components";
+import { FoodCard, ButtonViewMore } from "./Components/index";
+import {
+  Cuisine_Tbilisi_Title,
+  Cuisine_Tbilisi_Description,
+} from "../constant";
 
 export const TbilisiPage = () => {
   const [tbilisiLocation, setTbilisiLocation] = useState([]);
@@ -10,10 +15,6 @@ export const TbilisiPage = () => {
       .then((res) => res.json())
       .then((data) => setTbilisiLocation(data.locations));
   });
-
-  const handleViewMore = () => {
-    setViewMore(true);
-  };
 
   return (
     <>
@@ -42,13 +43,7 @@ export const TbilisiPage = () => {
                   {item.major_Third_Description}
                 </p>
                 <div className="flex justify-center items-center">
-                  {!viewMore && (
-                    <Button border onClick={handleViewMore}>
-                      <span className="text-lg text-darkBlueText">
-                        View More
-                      </span>
-                    </Button>
-                  )}
+                  {!viewMore && <ButtonViewMore setViewMore={setViewMore} />}
                   {viewMore && (
                     <div className="flex flex-col">
                       <p className="text-lg font-light text-BlackSecondColor pb-4">
@@ -103,6 +98,11 @@ export const TbilisiPage = () => {
             </div>
           </React.Fragment>
         ))}
+      <FoodCard
+        cuisineTitle={Cuisine_Tbilisi_Title}
+        cuisineDescription={Cuisine_Tbilisi_Description}
+        filterCuisine={"Tbilisi"}
+      />
     </>
   );
 };

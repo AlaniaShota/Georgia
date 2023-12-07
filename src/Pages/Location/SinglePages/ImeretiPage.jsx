@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { Button, Header } from "../../../Components";
+import { Header } from "../../../Components";
+import { FoodCard, ButtonViewMore } from "./Components/index";
+import {
+  Cuisine_Imereti_Title,
+  Cuisine_Imereti_Description,
+} from "../constant";
 
 export const ImeretiPage = () => {
   const [imeretiLocation, setImertiLocation] = useState([]);
@@ -10,10 +15,6 @@ export const ImeretiPage = () => {
       .then((res) => res.json())
       .then((data) => setImertiLocation(data.locations));
   });
-
-  const handleViewMore = () => {
-    setViewMore(true);
-  };
 
   return (
     <>
@@ -45,13 +46,7 @@ export const ImeretiPage = () => {
                   {item.secondary_Major_Description}
                 </p>
                 <div className="flex justify-center items-center">
-                  {!viewMore && (
-                    <Button border onClick={handleViewMore}>
-                      <span className="text-lg text-darkBlueText">
-                        View More
-                      </span>
-                    </Button>
-                  )}
+                  {!viewMore && <ButtonViewMore setViewMore={setViewMore} />}
                   {viewMore && (
                     <div className="flex flex-col">
                       <h1 className="text-3xl mb-6 font-semibold">
@@ -109,6 +104,11 @@ export const ImeretiPage = () => {
             </div>
           </React.Fragment>
         ))}
+      <FoodCard
+        cuisineTitle={Cuisine_Imereti_Title}
+        cuisineDescription={Cuisine_Imereti_Description}
+        filterCuisine={"Imereti"}
+      />
     </>
   );
 };

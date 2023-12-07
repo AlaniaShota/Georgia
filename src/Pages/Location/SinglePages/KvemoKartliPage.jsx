@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { Button, Header } from "../../../Components";
+import { Header } from "../../../Components";
+import { FoodCard, ButtonViewMore } from "./Components/index";
+import {
+  Cuisine_Kvemo_Kartli_Title,
+  Cuisine_Kvemo_Kartli_Description,
+} from "../constant";
 
 export const KvemoKartliPage = () => {
   const [shidaKartliLocation, setShidaKartliLocation] = useState([]);
@@ -10,10 +15,6 @@ export const KvemoKartliPage = () => {
       .then((res) => res.json())
       .then((data) => setShidaKartliLocation(data.locations));
   });
-
-  const handleViewMore = () => {
-    setViewMore(true);
-  };
 
   return (
     <>
@@ -50,13 +51,7 @@ export const KvemoKartliPage = () => {
                   {item.major_Fourth_Description}
                 </p>
                 <div className="flex justify-center items-center">
-                  {!viewMore && (
-                    <Button border onClick={handleViewMore}>
-                      <span className="text-lg text-darkBlueText">
-                        View More
-                      </span>
-                    </Button>
-                  )}
+                  {!viewMore && <ButtonViewMore setViewMore={setViewMore} />}
                   {viewMore && (
                     <div className="flex flex-col">
                       <p className="text-lg font-light text-BlackSecondColor pb-4">
@@ -100,6 +95,11 @@ export const KvemoKartliPage = () => {
             </div>
           </React.Fragment>
         ))}
+      <FoodCard
+        cuisineTitle={Cuisine_Kvemo_Kartli_Title}
+        cuisineDescription={Cuisine_Kvemo_Kartli_Description}
+        filterCuisine={"Kvemo Kartli"}
+      />
     </>
   );
 };

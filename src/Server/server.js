@@ -17,6 +17,7 @@ createServer({
       name: "Khachapuri",
       isLarge: true,
       location: "Most iconic: Sakhachapure №1",
+      cuisine: "Ajara",
       about:
         "This simple cheese bread known as khachapuri is the most famous dish in Georgia. It is traditionally topped with melted cheese, eggs and butter. There are different types of khachapuri, and even though some new cheese varieties such as mozzarella and feta have been incorporated in the dish, the most common additions still include traditional Georgian Sulguni or Imeretian cheese. It is shaped into different forms, and depending on the baking procedure and its form, it can be consumed individually or shared. Two of the most common varieties include the Imeretian khachapuri, shaped into a circular form, and Adjaran khachapuri, the open-faced version topped with butter and a raw egg on top. Although it is considered a snack, khachapuri can often be consumed as a full meal. It can also be bought at numerous kiosks located alongside Georgian roads. Khachapuri is also often prepared in Russia, in the whole area of the former Soviet Union, and throughout the world.",
       map: "/assets/georgian-traditional-food/traditional-food-map/Khachapuri.png",
@@ -28,6 +29,7 @@ createServer({
       name: "Khinkali",
       isLarge: false,
       location: "Most iconic: Maspindzelo",
+      cuisine: "Mtskheta Mtianeti",
       about:
         "These delicious Georgian dumplings known as khinkali are considered to be one of the national dishes of the country. The dumplings are filled with meat and spices, then traditionally twisted into a knot at the top. Regional differences influence the fillings and every part of Georgia has their distinctive variety. For example, in the mountainous regions, the most traditional filling is lamb, however; the most frequent variety throughout entire Georgia is a mixture of pork and beef. The vegetarian versions made with traditional Imeretian cheese or mushrooms are also quite popular. The traditional recipe was developed over time, and now includes fresh herbs such as cilantro or parsley. The meat for khinkali is never precooked – therefore, all of the juices are tucked inside the dumplings. Eating khinkali is also a part of traditional Georgian folklore: the top, where the dough is twisted into a knot, should never be eaten because it serves as a handle to hold the dumpling, and it is usually left on the plate as an indication of how many dumplings have been eaten. These flavorful dumplings are served plain or paired with freshly ground black pepper.",
       map: "/assets/georgian-traditional-food/traditional-food-map/Khinkali.png",
@@ -39,6 +41,7 @@ createServer({
       name: "Lobio",
       isLarge: false,
       location: "Most iconic: Salobie Bia",
+      cuisine: "Kvemo Kartli",
       about:
         "Lobio is a Georgian invention that refers to a wide group of dishes that employ beans as a key ingredient. Most commonly, those are red kidney beans, boiled with various spices to create a thick stew, commonly served with mchadi, a traditional Georgian cornbread. Among numerous other varieties, lobio nigozit, which incorporates mashed beans in a thick walnut sauce, is the most common version. The dish can also appear in a form of a salad, with whole or mashed beans, and it is typically served cold.",
       map: "/assets/georgian-traditional-food/traditional-food-map/Lobio.png",
@@ -73,6 +76,7 @@ createServer({
       name: "Mtsvadi",
       isLarge: false,
       location: "Most iconic: Lali",
+      cuisine: "Kakheti",
       about:
         "Mtsvadi is a traditional Georgian dish consisting of a skewered shish kebab. Ground pork, mutton, or veal is typically marinated in a mixture of lemon juice, pomegranate juice, tarragon, salt, pepper, and chopped onions, so that it remains tender and juicy when grilled. Mtsvadi is often prepared outdoors over an open fire. It is recommended to serve the dish with tkemali plum sauce, raw onion rings, sliced tomatoes, and pomegranate seeds.",
       map: "/assets/georgian-traditional-food/traditional-food-map/Mtsvadi.png",
@@ -84,6 +88,7 @@ createServer({
       name: "Imeruli khachapuri",
       isLarge: false,
       location: "Most iconic: Funicular Complex",
+      cuisine: "Imereti",
       about:
         "Imeruli khachapuri is a traditional Georgian bread filled with melted cheese. Unlike traditional khachapuris, the imeruli variety is circular in shape. The dough consists of flour, salt, sugar, yeast, water, and sometimes yogurt, while the cheese filling is usually enriched with the addition of eggs. It is recommended to glaze imeruli khachapuri with butter as soon as it is out of the oven and serve it while it is still hot.",
       map: "/assets/georgian-traditional-food/traditional-food-map/Imeruli-khachapuri.png",
@@ -107,6 +112,7 @@ createServer({
       name: "Lobiani",
       isLarge: false,
       location: "",
+      cuisine: "Racha Lechkhumi",
       about:
         "Traditionally consumed at Barbaroba, the feast of St. Barbara, lobiani is a popular Georgian bread that is filled with mashed kidney beans and flavored with onions, parsley, coriander, and black pepper. The dough consists of flour, yeast, salt, and water. There is also a variety of the bread called rachuli lobiani, which is prepared with added bacon for extra flavor. The name lobiani is derived from the Georgian word for kidney beans, lobio. ",
       map: "/assets/georgian-traditional-food/traditional-food-map/Lobiani.png",
@@ -118,6 +124,7 @@ createServer({
       name: "Adjarian khachapuri",
       isLarge: false,
       location: "Most iconic: Porto Franco",
+      cuisine: "Ajara",
       about:
         "One of the most popular khachapuri varieties, adjarian is an open-faced pie that is filled with a combination of cheese and eggs. The base is made from yeasted dough that is rolled into an oblong shape and traditionally comes filled with Sulguni or Imeretian cheese, or the combination of both. The dish is finished off with an egg that is placed on top, and the pie is then additionally baked until the egg is partially set. This boat-shaped pie hails from the coastal Adjaria region, and it is usually served with a slice of butter on top. ",
       map: "/assets/georgian-traditional-food/traditional-food-map/Adjarian-khachapuri.png",
@@ -151,6 +158,7 @@ createServer({
       name: "Kupati",
       isLarge: false,
       location: "Most iconic: Restorani Chashnagiri Sanapiro",
+      cuisine: "Samegrelo - Zemo Svaneti",
       about:
         "Kupati is a spicy Georgian sausage made with pork or beef, onions, and flavorings such as black pepper, cinnamon, garlic, salt, and coriander. It is especially popular in the Caucasus region. The sausage is most commonly grilled or fried before serving, when it is traditionally accompanied by sauerkraut or sliced onions, and garnished with freshly chopped coriander and pomegranate seeds.",
       map: "/assets/georgian-traditional-food/traditional-food-map/Kupati.png",
@@ -162,6 +170,7 @@ createServer({
       name: "Badrijani",
       isLarge: false,
       location: "Most iconic: Shavi Lomi",
+      cuisine: "Shida Kartli",
       about:
         "Badrijani is a heavily spiced Georgian dish consisting of eggplant slices that are coated with walnut paste, then shaped into small rolls. The eggplant slices are fried before serving, while the spread is prepared by combining ground walnuts, garlic, and fresh coriander. When served, the assembled rolls are arranged on a plate and topped with pomegranate seeds.",
       map: "/assets/georgian-traditional-food/traditional-food-map/Badrijani.png",
@@ -196,6 +205,7 @@ createServer({
       name: "Pkhali",
       isLarge: false,
       location: "Most iconic: Zakhar Zakharich",
+      cuisine: "Imereti",
       about:
         "Pkhali is a traditional Georgian dish made with a large number of different leaves such as spinach, beetroot, cabbage, or nettles, although it can also be prepared with nuts and vegetables. The leaves are chopped and minced, then combined with vinegar, garlic, onions, and fresh herbs. This unique mixture is traditionally hand-shaped into balls and garnished with pomegranate seeds. Pkhali is served on the side as a dip or a flavorful condiment.",
       map: "/assets/georgian-traditional-food/traditional-food-map/Pkhali.png",
@@ -219,6 +229,7 @@ createServer({
       name: "Chakhokhbili",
       isLarge: false,
       location: "",
+      cuisine: "Kvemo Kartli",
       about:
         "Chakhokhbili is a traditional Georgian stew made with a whole chicken that is cut into pieces and combined with onions, tomatoes, vinegar, garlic, and spices such as coriander, parsley, hot green peppers, and bay leaves. The stew has a thick consistency and is usually served hot, preferably garnished with freshly chopped coriander and accompanied by rice or bread on the side. The name chakhokhbili is derived from the Georgian word khokhobi, meaning pheasant, referring to the fact that it used to be prepared with pheasant instead of chicken in the past.",
       map: "/assets/georgian-traditional-food/traditional-food-map/Chakhokhbili.png",
@@ -242,6 +253,7 @@ createServer({
       name: "Skhmeruli",
       isLarge: false,
       location: "Most iconic: Sofia Melnikova's Fantastic Douqan",
+      cuisine: "Samtskhe-Javakheti",
       about:
         "Shkmeruli or chkmeruli is a traditional chicken dish originating from Georgia. A whole chicken is typically butterflied, browned on both sides, and roasted for about half an hour until fully cooked. The garlic is minced, mixed with butter, milk, and pan drippings in order to create the sauce. The chicken and the sauce are combined, traditionally in a clay dish called ketsi, and the dish is then baked for a short while before it's served. It's recommended to serve skhmeruli with cheesy mashed potatoes or crusty bread on the side.",
       map: "/assets/georgian-traditional-food/traditional-food-map/Skhmeruli.png",
@@ -253,6 +265,7 @@ createServer({
       name: "Chikhirtma",
       isLarge: false,
       location: "Most iconic: Khinklis Gemo +",
+      cuisine: "Samtskhe-Javakheti",
       about:
         "Chikhirtma is a flavorful and hearty Georgian soup that is believed to be a great hangover cure. It consists of chicken pieces, onions, eggs, flour, vinegar, water, and seasonings such as salt, bay leaves, and coriander. It has a slightly sour flavor and a thick, creamy consistency. The soup is usually served hot, and it is recommended to garnish it with freshly chopped coriander.",
       map: "/assets/georgian-traditional-food/traditional-food-map/Chikhirtma.png",
@@ -276,6 +289,7 @@ createServer({
       name: "Gozinaki",
       isLarge: false,
       location: "",
+      cuisine: "Tbilisi",
       about:
         "Gozinaki is a traditional Georgian dessert with a crunchy texture, made with honey-fried, caramelized nuts such as walnuts, almonds, and hazelnuts. This sweet treat is often cut into diamond shapes, and it is traditionally consumed on Christmas and New Year.",
       map: "/assets/georgian-traditional-food/traditional-food-map/Gozinaki.png",
@@ -287,6 +301,7 @@ createServer({
       name: "Ajapsandali",
       isLarge: false,
       location: "",
+      cuisine: "Tbilisi",
       about:
         "Ajapsandali is a popular Georgian stew consisting of eggplants, potatoes, tomatoes, onions, bell peppers, and seasonings such as bay leaves, garlic, coriander, black pepper, and salt. The vegetables are stewed in oil, but only for a short time so that they don't lose their color and vitamins. The dish is often consumed as a family meal in Georgia, and it is especially popular during summer. For an interesting twist, try serving it cold with crumbled feta and chunks of bread.",
       map: "/assets/georgian-traditional-food/traditional-food-map/Ajapsandali.png",
@@ -296,6 +311,7 @@ createServer({
       img: "/assets/georgian-traditional-food/Chashushuli.jpg",
       type: "STEW",
       name: "Chashushuli",
+      cuisine: "Samtskhe-Javakheti",
       isLarge: false,
       location: "",
       about:
@@ -330,6 +346,7 @@ createServer({
       type: "MEAT DISH",
       name: "Khashlama",
       isLarge: false,
+      cuisine: "Racha Lechkhumi",
       location: "",
       about:
         "Georgian khashlama is a straightforward and traditional meat dish originating from the Caucasus region. Although time-consuming, the dish is made by simply boiling large chunks of meat, usually beef, veal, or lamb, in hot water. The traditional version of this famous dish does not include other ingredients, except a few spices, making the boiled pieces of meat the star of the dish. Because of this, khashlama contains only the finest meat cuts available. The origins of the dish believe to be in the Georgian Kakheti region, where it is regarded as a regional signature dish. However, it is also widely popular in the neighboring Armenia, causing disputes over the true origin of the dish. Traditionally, Georgian khashlama is prepared on an open fire, slowly, until the meat is perfectly tender. It is commonly flavored with onions, garlic, bay leaves, and peppercorns. Because it is rather time-consuming, the dish is usually served on special occasions, and it is a common staple of supra, a traditional Georgian feast. Boiled pieces of meat are commonly served hot and garnished with a generous amount of coarse salt and chopped parsley.",
@@ -378,6 +395,7 @@ createServer({
       name: "Ojakhuri",
       isLarge: false,
       location: "",
+      cuisine: "Shida Kartli",
       about:
         "Ojakhuri is a Georgian dish consisting of roasted meat (pork, chicken, lamb, or beef) and potatoes. The name of the dish means family meal in Georgian, so every family has their own recipe, variations, and they all use different seasonings for the roast. The dish is usually garnished with slices of pickled vegetables and served with accompaniments such as tkemali or ajika sauces.",
       map: "/assets/georgian-traditional-food/traditional-food-map/Ojakhuri.png",
@@ -400,6 +418,7 @@ createServer({
       name: "Satsivi",
       isLarge: false,
       location: "",
+      cuisine: "Guria",
       about:
         "Satsivi is a thick and aromatic nut-based paste that is traditionally prepared in Georgia. It uses walnuts as the main ingredient and is typically served as an accompaniment to meat dishes. However, it can also be served with vegetable dishes, alongside fish, or even with boiled eggs. There is no universal recipe, and the varieties differ across Georgian regions, but they all usually incorporate garlic, coriander, cinnamon, vinegar and hot peppers. The consistency and thickness of the sauce are also versatile it can either have a coarser texture or it can be served as a smooth and creamy sauce. The name satsivi means cold or cool and refers to the way the sauce is served. The most popular festive dish using this sauce is known as turkey satsivi, traditionally prepared and consumed on New Year.",
       map: "/assets/georgian-traditional-food/traditional-food-map/Satsivi.png",
@@ -478,6 +497,7 @@ createServer({
       name: "Gurian khachapuri",
       isLarge: false,
       location: "",
+      cuisine: "Guria",
       about:
         "This khachapuri variety hails from Guria, a province in the west of Georgia. Unlike other khachapuri pies, this one is crescent-shaped and it's prepared for Orthodox Christmas. The dough is filled with a combination of grated cheese and hard-boiled eggs before it's baked until golden-brown. The shape of this pie was associated with celestial bodies, and for ancient Gurians it was a symbol of strength, so nowadays there is a superstitious belief that each family member should get at least one Gurian khachapuri during the festive Christmas season.",
       map: "/assets/georgian-traditional-food/traditional-food-map/Gurian-khachapuri.png",
@@ -501,6 +521,7 @@ createServer({
       name: "Khashi",
       isLarge: false,
       location: "Most iconic: Culinarium Khasheria (Tbilisi)",
+      cuisine: "Tbilisi",
       about:
         "Widely regarded as an excellent hangover cure and a great remedy, khashi is a soup made by boiling beef intestines, tripe, shank, as well as other organs such as kidneys. Carrots, onions, bell peppers, and various greens may also be used. After the broth has been prepared, milk or pieces of milk-soaked bread can be added to the pot along with salt, pepper, and chopped garlic. It is said that khashi was invented when the poor had to give away all their meat to the rich, being left only with the organs, heads, and hooves of the animals. Ever since the promotion of the soup as a particularly healthy dish, it became popular among all social classes.",
       map: "/assets/georgian-traditional-food/traditional-food-map/Khashi.png",
@@ -511,6 +532,7 @@ createServer({
       type: "PICKLING",
       name: "Jonjoli",
       isLarge: false,
+      cuisine: "Kakheti",
       location: "",
       about:
         "Jonjoli is an unusual Georgian appetizer made with pickled sprouts from the local jonjoli bushes. The sprouts are combined with olive oil or other pickled vegetables such as peppers, tomatoes, or cucumbers. The dish is usually garnished with onion rings and finely chopped coriander. This appetizer pairs well with kidney beans, boiled potatoes, or any type of Georgian bread.",
@@ -523,6 +545,7 @@ createServer({
       name: "Achma",
       isLarge: false,
       location: "",
+      cuisine: "Ajara",
       about:
         "Achma is a Georgian dish consisting of a few layers of tender dough, a crispy top, and lots of cheese in between. It originates from the western Georgian regions of Adjara and Abkhazia. The dough is usually made with eggs, water, butter, and flour, while the cheese filling is either Georgian cheese or a combination of ricotta, mozzarella, and feta. Due to the fact that it is a layered dish with tender sheets of dough, achma is often compared to the famous lasagne.",
       map: "/assets/georgian-traditional-food/traditional-food-map/Achma.png",
@@ -545,6 +568,7 @@ createServer({
       name: "Clay Pot Mushrooms",
       isLarge: false,
       location: "",
+      cuisine: "Mtskheta Mtianeti",
       about:
         "Simple, yet delicious, soko kecze is a Georgian specialty that can be translated as mushrooms in a clay pot. The dish consists of mushrooms that are baked and served in a special ketsi dish (clay dish). The mushrooms can be either plain or filled with butter and Georgian sulguni cheese, seasoned with black pepper, and sometimes a bit of garlic. This hearty mushroom dish is best enjoyed hot, while the cheese is still gooey and stretchy.",
       map: "/assets/georgian-traditional-food/traditional-food-map/Soko-kecze.png",
