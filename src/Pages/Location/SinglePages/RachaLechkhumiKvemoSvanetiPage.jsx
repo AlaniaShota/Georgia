@@ -1,24 +1,23 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import { Header } from "../../../Components";
 import { FoodCard, ButtonViewMore } from "./Components/index";
 import {
   Cuisine_Racha_Lechkhumi_Description,
   Cuisine_Racha_Lechkhumi_Title,
 } from "../constant";
+import { LocationContext } from "../../../Providers/ThemeProvider";
 
 export const RachaLechkhumiKvemoSvanetiPage = () => {
-  const [rachaLechkhumiLocation, setRachaLechkhumiLocation] = useState([]);
   const [viewMore, setViewMore] = useState(false);
+  const data = useContext(LocationContext);
 
-  useEffect(() => {
-    fetch("/api/locations")
-      .then((res) => res.json())
-      .then((data) => setRachaLechkhumiLocation(data.locations));
-  }, []);
+  if (!Array.isArray(data)) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <>
-      {rachaLechkhumiLocation
+      {data
         .filter((item) => item.title === "Racha-Lechkhumi & Kvemo Svaneti")
         .map((item) => (
           <React.Fragment key={item.id}>

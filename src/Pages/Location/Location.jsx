@@ -12,6 +12,7 @@ export const Location = () => {
         descriptionText={Location_Description}
         img={locationImg}
       />
+
       <div className="lg:container sm:mx-8 lg:mx-0 ">
         <LocationCard />
         <GeorgiaMap />

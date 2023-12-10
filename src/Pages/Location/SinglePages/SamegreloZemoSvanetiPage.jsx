@@ -1,24 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import { Header } from "../../../Components";
-import { FoodCard, ButtonViewMore, TourCard } from "./Components/index";
+import { FoodCard, ButtonViewMore, Tour } from "./Components/index";
 import {
   Cuisine_Samegrelo_Description,
   Cuisine_Samegrelo_Title,
 } from "../constant";
+import { LocationContext } from "../../../Providers/ThemeProvider";
 
 export const SamegreloZemoSvanetiPage = () => {
-  const [samegreloLocation, setSamegreloLocation] = useState([]);
   const [viewMore, setViewMore] = useState(false);
 
-  useEffect(() => {
-    fetch("/api/locations")
-      .then((res) => res.json())
-      .then((data) => setSamegreloLocation(data.locations));
-  }, []);
+  const data = useContext(LocationContext);
+
+  if (!Array.isArray(data)) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <>
-      {samegreloLocation
+      {data
         .filter((item) => item.title === "Samegrelo-Zemo Svaneti")
         .map((item) => (
           <React.Fragment key={item.id}>
@@ -147,11 +147,10 @@ export const SamegreloZemoSvanetiPage = () => {
                   )}
                 </div>
               </div>
-              <TourCard tourData={item.tour} />
+              <Tour tourData={item.tour} />
             </div>
           </React.Fragment>
         ))}
-
       <FoodCard
         cuisineTitle={Cuisine_Samegrelo_Title}
         cuisineDescription={Cuisine_Samegrelo_Description}

@@ -1,21 +1,20 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import { Header } from "../../../Components";
 import { FoodCard, ButtonViewMore } from "./Components/index";
 import { Cuisine_Ajara_Description, Cuisine_Ajara_Title } from "../constant";
+import { LocationContext } from "../../../Providers/ThemeProvider";
 
 export const AjaraPage = () => {
-  const [ajaraLocation, setAjaraLocation] = useState([]);
   const [viewMore, setViewMore] = useState(false);
+  const data = useContext(LocationContext);
 
-  useEffect(() => {
-    fetch("/api/locations")
-      .then((res) => res.json())
-      .then((data) => setAjaraLocation(data.locations));
-  }, []);
+  if (!Array.isArray(data)) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <>
-      {ajaraLocation
+      {data
         .filter((item) => item.title === "Ajara")
         .map((item) => (
           <React.Fragment key={item.id}>

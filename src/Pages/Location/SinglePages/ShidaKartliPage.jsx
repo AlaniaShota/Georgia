@@ -1,24 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import { Header } from "../../../Components";
 import { FoodCard, ButtonViewMore } from "./Components/index";
 import {
   Cuisine_Shida_Kartli_Description,
   Cuisine_Shida_Kartli_Title,
 } from "../constant";
+import { LocationContext } from "../../../Providers/ThemeProvider";
 
 export const ShidaKartliPage = () => {
-  const [shidaKartliLocation, setShidaKartliLocation] = useState([]);
   const [viewMore, setViewMore] = useState(false);
 
-  useEffect(() => {
-    fetch("/api/locations")
-      .then((res) => res.json())
-      .then((data) => setShidaKartliLocation(data.locations));
-  }, []);
+  const data = useContext(LocationContext);
+
+  if (!Array.isArray(data)) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <>
-      {shidaKartliLocation
+      {data
         .filter((item) => item.title === "Shida Kartli")
         .map((item) => (
           <React.Fragment key={item.id}>

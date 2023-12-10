@@ -8,7 +8,7 @@ export const ButtonViewMore = ({ setViewMore }) => {
   return (
     <>
       <Button border onClick={handleViewMore}>
-        <span className="text-lg text-darkBlueText">View More</span>
+        <span className="text-lg text-darkBlueText">VIEW MORE</span>
       </Button>
     </>
   );

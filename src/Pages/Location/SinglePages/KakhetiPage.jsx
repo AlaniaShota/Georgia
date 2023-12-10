@@ -1,24 +1,23 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import { Header } from "../../../Components";
 import { FoodCard, ButtonViewMore } from "./Components/index";
 import {
   Cuisine_Kakheti_Title,
   Cuisine_Kakheti_Description,
 } from "../constant";
+import { LocationContext } from "../../../Providers/ThemeProvider";
 
 export const KakhetiPage = () => {
-  const [kakhetiLocation, setKakhetiLocation] = useState([]);
   const [viewMore, setViewMore] = useState(false);
+  const data = useContext(LocationContext);
 
-  useEffect(() => {
-    fetch("/api/locations")
-      .then((res) => res.json())
-      .then((data) => setKakhetiLocation(data.locations));
-  }, []);
+  if (!Array.isArray(data)) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <>
-      {kakhetiLocation
+      {data
         .filter((item) => item.title === "Kakheti")
         .map((item) => (
           <React.Fragment key={item.id}>

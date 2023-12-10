@@ -1,24 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import { Header } from "../../../Components";
 import { FoodCard, ButtonViewMore } from "./Components/index";
 import {
   Cuisine_Tbilisi_Title,
   Cuisine_Tbilisi_Description,
 } from "../constant";
+import { LocationContext } from "../../../Providers/ThemeProvider";
 
 export const TbilisiPage = () => {
-  const [tbilisiLocation, setTbilisiLocation] = useState([]);
   const [viewMore, setViewMore] = useState(false);
 
-  useEffect(() => {
-    fetch("/api/locations")
-      .then((res) => res.json())
-      .then((data) => setTbilisiLocation(data.locations));
-  }, []);
+  const data = useContext(LocationContext);
+
+  if (!Array.isArray(data)) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <>
-      {tbilisiLocation
+      {data
         .filter((item) => item.title === "Tbilisi")
         .map((item) => (
           <React.Fragment key={item.id}>

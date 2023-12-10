@@ -1,21 +1,20 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import { Header } from "../../../Components";
 import { FoodCard, ButtonViewMore } from "./Components/index";
 import { Cuisine_Guria_Description, Cuisine_Guria_Title } from "../constant";
+import { LocationContext } from "../../../Providers/ThemeProvider";
 
 export const GuriaPage = () => {
-  const [guriaLocation, setGuriaLocation] = useState([]);
   const [viewMore, setViewMore] = useState(false);
+  const data = useContext(LocationContext);
 
-  useEffect(() => {
-    fetch("/api/locations")
-      .then((res) => res.json())
-      .then((data) => setGuriaLocation(data.locations));
-  }, []);
+  if (!Array.isArray(data)) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <>
-      {guriaLocation
+      {data
         .filter((item) => item.title === "Guria")
         .map((item) => (
           <React.Fragment key={item.id}>

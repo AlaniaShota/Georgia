@@ -44,9 +44,9 @@ export const FoodCard = ({
       animate={cardAnimation}
       className="grid grid-cols-3 my-20 lg:container sm:mx-8 lg:mx-0 cursor-default gap-5 h-[480px] "
     >
-      <motion.div className="flex flex-col justify-around items-start cursor-default">
-        <motion.h1 className="text-3xl font-bold ">{cuisineTitle}</motion.h1>
-        <motion.p className=" text-BlackSecondColor pr-8">
+      <motion.div className="flex flex-col justify-around items-start cursor-default p-4 rounded-md drop-shadow-md bg-white">
+        <motion.h1 className="text-2xl font-bold ">{cuisineTitle}</motion.h1>
+        <motion.p className="text-sm text-BlackSecondColor pr-8">
           {cuisineDescription}
         </motion.p>
         <Link to="/library">

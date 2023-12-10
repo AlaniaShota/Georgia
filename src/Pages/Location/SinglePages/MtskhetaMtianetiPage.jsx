@@ -1,24 +1,23 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import { Header } from "../../../Components";
 import { FoodCard, ButtonViewMore } from "./Components/index";
 import {
   Cuisine_Mtskheta_Mtianeti_Description,
   Cuisine_Mtskheta_Mtianeti_Title,
 } from "../constant";
+import { LocationContext } from "../../../Providers/ThemeProvider";
 
 export const MtskhetaMtianetiPage = () => {
-  const [mtskhetaMtianetiLocation, setMtskhetaMtianetiLocation] = useState([]);
   const [viewMore, setViewMore] = useState(false);
+  const data = useContext(LocationContext);
 
-  useEffect(() => {
-    fetch("/api/locations")
-      .then((res) => res.json())
-      .then((data) => setMtskhetaMtianetiLocation(data.locations));
-  }, []);
+  if (!Array.isArray(data)) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <>
-      {mtskhetaMtianetiLocation
+      {data
         .filter((item) => item.title === "Mtskheta-Mtianeti")
         .map((item) => (
           <React.Fragment key={item.id}>

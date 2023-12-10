@@ -28,15 +28,15 @@ import {
   DetailFood,
   TraditionalFoodLibery,
 } from "../Pages/TraditionalFood/Components/index";
-import { Tour } from "../Pages/Location/SinglePages/Components";
+import { LocationProvider } from "../Providers/ThemeProvider";
 
 export const router = createBrowserRouter([
   {
     element: (
-      <>
+      <LocationProvider>
         <Layout />,
         <ScrollToTop />
-      </>
+      </LocationProvider>
     ),
 
     children: [
@@ -60,7 +60,11 @@ export const router = createBrowserRouter([
         children: [
           {
             index: "location",
-            element: <Location />,
+            element: (
+              <>
+                <Location />
+              </>
+            ),
           },
           {
             path: "ajara",
@@ -93,10 +97,6 @@ export const router = createBrowserRouter([
           {
             path: "samegrelo-zemo-svaneti",
             element: <SamegreloZemoSvanetiPage />,
-          },
-          {
-            path: "samegrelo-zemo-svaneti/:id",
-            element: <Tour />,
           },
           {
             path: "samtskhe-javakheti",

@@ -1,24 +1,23 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import { Header } from "../../../Components";
 import { FoodCard, ButtonViewMore } from "./Components/index";
 import {
   Cuisine_Imereti_Title,
   Cuisine_Imereti_Description,
 } from "../constant";
+import { LocationContext } from "../../../Providers/ThemeProvider";
 
 export const ImeretiPage = () => {
-  const [imeretiLocation, setImertiLocation] = useState([]);
   const [viewMore, setViewMore] = useState(false);
+  const data = useContext(LocationContext);
 
-  useEffect(() => {
-    fetch("/api/locations")
-      .then((res) => res.json())
-      .then((data) => setImertiLocation(data.locations));
-  }, []);
+  if (!Array.isArray(data)) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <>
-      {imeretiLocation
+      {data
         .filter((item) => item.title === "Imereti")
         .map((item) => (
           <React.Fragment key={item.id}>
