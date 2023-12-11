@@ -1255,6 +1255,64 @@ createServer({
         "The cuisine of Kartli is rich in both fish and meat dishes, as well as vegetarian food. On the road to Surami you can try the delicious, fragrant sweet bread Nazuki. ",
       minor_Cuisine_Second_Description:
         "Along with Chakapuli, you can try Pkhaleuli, sorrel, buttermilk, and cornel soups, which pair very well with Kartli wines, such as Goruli Mtsvane, Shavkapito, Chinuri, and Tavkveri. ",
+      tour: [
+        {
+          id: 1,
+          title: "One-Day Tour in the Dzama Valley",
+          description:
+            "On this one-day tour you will see one of the most significant examples of Georgian architecture, Kintsvisi, distinguished for its high artistic value, an amazing sight to see. You will also take in Ortubani, Mzovreti, and Sarkineti Monasteries, and, at the end of the tour, you will get to see the gorgeous Bateti Lake.",
+          img: "/assets/location/dzama-valley-gnta.webp",
+          firstImg: "/assets/location/mdzovreti-monastery-complex-gnta.webp",
+          firstTitle: "Mzovreti Monastic Complex",
+          firstDescription:
+            "The Mzovreti Monastic Complex proudly stands on the top of the rocky cliff overlooking Dzama River Valley. The ancient fort is protectively embracing a beautiful garden full of flowers with an incredibly picturesque monastery inside. Its red-tiled rooftop, little cobbled paths and abundant greenery give it a truly paradisal look.",
+          secondTitle:
+            "Ortubani Convent - Nativity of the Virgin Mary Monastery Complex",
+          secondDescription:
+            "The Ortubani Convent is located at the foot of the hill in Dzama River Valley and belongs to the Mzovreti Fortress Complex, the residence of the local aristocracy, the Tsitsishvili family. It was considered a political center of Shida Kartli Region in the 14th-17th centuries.",
+          secondImg: "/assets/location/ortubani-gnta.webp",
+          thirdImg: "/assets/location/kintsvisi-monastery-gnta.webp",
+          thirdTitle: "Kintsvisi Monastery",
+          thirdDescription:
+            "Kintsvisi Monastery stands on a rise of the Dzama River valley, near the lovely village of Kintsvisi in Shida Kartli region. Its construction is connected with the reign of Queen Tamar (1184 - 1212), often called a Golden Age in Georgian culture.",
+          fourthTitle: "Sarkineti Monastery",
+          fourthDescription:
+            "While traveling in Georgia, you will inevitably encounter numerous amazing architectural monuments like centuries-old monasteries built into cliff faces, particularly those of Vardzia, Gareja, and Uplistsikhe.",
+          fourthImg: "/assets/location/sarkineti-church-gnta.webp",
+          fifthImg: "/assets/location/bateti-lake-1.webp",
+          fifthTitle: "Bateti Lake",
+          fifthDescription:
+            "Bateti Lake, tucked away in a spectacular orchard and surrounded by dense forest, is a place of unmatched beauty. Located twenty-three kilometres from Kareli, this beautiful lake is sure to enchant all who lay eyes upon it.",
+          sixthTitle: "Kareli",
+          sixthDescription:
+            "Lakes, waterfalls, forests, fortresses, and churches-monasteries are among the many highlights that draw visitors to Kareli. Historic and religious monuments harmoniously combined with nature in particular reveal the unique history and character of the Shida Kartli region.",
+          sixthImg: "/assets/location/kareli-gnta.webp",
+        },
+        {
+          id: 2,
+          title: "One-Day Shida Kartli and Mtskheta Tour",
+          description:
+            "If you want to see Uplistsikhe, one of the oldest settlements in the Caucasus, go visit Jvari Monastery on the top of a rocky mountain, browse around a historical fortress, and see the spectacular Georgian church of Svetitskhoveli, then you must plan a one-day tour through Shida Kartli and Mtskheta.",
+          img: "/assets/location/jvari-monastery(1).webp",
+          firstImg: "/assets/location/gori-fortress-gnta.webp",
+          firstTitle: "Gori Fortress",
+          firstDescription:
+            "Gori Fortress was one of Georgia’s main citadels, dating back as far as the 13th century, with evidence of human habitation stretching back as far as the first millennium BCE. Sitting atop a rocky hill in the centre of Gori, it is an Immovable Cultural Monument of National Significance and a popular tourist attraction.",
+          secondTitle: "Svetitskhoveli – A Treasure of World Art",
+          secondDescription:
+            "You may not be surprised to learn that a country with such a rich history as Georgia is also home to a remarkable number of legends, some of which might even be true! Svetitskhoveli is a place that has preserved numerous legends and secrets for the modern generation to unravel and enjoy.",
+          secondImg: "/assets/location/svetitskhoveli-cathedral-gnta.webp",
+          thirdImg: "/assets/location/jvari-monastery-gnta.webp",
+          thirdTitle:
+            "Jvari Monastery – A Step Forward for Georgian Architecture",
+          thirdDescription:
+            "To the east of the city of Mtskheta, Jvari Monastery stands atop a rocky cliff, looking down upon Mtskheta like a stoic guardian. An outstanding monument of Georgian architecture, the name and location of the church are no coincidence, since this is where Saint Nino set up her wooden cross in the 4th century.",
+          fourthTitle: "Mtskheta",
+          fourthDescription:
+            "A popular day trip from Tbilisi, historic Mtskheta is sometimes called “Little Jerusalem” on account of the town’s immense cultural and religious significance. The former Georgian capital is also the seat of the Georgian church, and is a veritable living museum with all of the historic sites in and around the town.",
+          fourthImg: "/assets/location/mtskheta-gnta.webp",
+        },
+      ],
     });
     server.create("location", {
       id: 3,
@@ -1303,6 +1361,71 @@ createServer({
         "This place is also famous for its lakes. Samtskhe-Javakheti is the location of Georgia’s largest lake full of fish, Paravani Lake, as well as the lovely Bughdasheni, Kartsakhi, Saghamo, Khanchali, and Tabatskuri Lakes, in which you can hike or watch migratory birds from specially outfitted towers.",
       minor_Nature_Third_Description:
         "The highest peak in the region is Didi Abuli Mountain, from where you will have a view over all of Javakheti.",
+      tour: [
+        {
+          id: 1,
+          title: "One-Day Tour in Samtskhe-Javakheti",
+          description:
+            "If you are looking for the perfect route for relaxation, with panoramic views, ruins of ancient cultures, fortresses, and amazing churches, then you absolutely must plan a tour through Samtske-Javakheti. During the tour, you will be able to visit Borjomi, Vardzia, Khertvisi, and Akhaltsikhe.",
+          img: "/assets/location/javakheti-national-park-gnta.webp",
+          firstImg: "/assets/location/vardzia-gnta.webp",
+          firstTitle: "Vardzia",
+          firstDescription:
+            "No matter how many times you visit Georgia, the country will continuously charm you. Incomparable, centuries-old monuments will spread all of history out before your eyes and tell you stories that you can hear nowhere else. One of those creations is Vardzia, a grand ensemble of medieval cliff architecture and one of the most popular monuments in Georgia.",
+          secondTitle: "Khertvisi fortress",
+          secondDescription:
+            "Owing to the nation’s turbulent history on the edge of the empires, many of the defensive buildings within Georgia are centuries old, meaning you’ll be able to find outstanding monuments in every city, town, and village. One particularly well-preserved example of this is the 10th-century Khertvisi Fortress, near the village that shares its name.",
+          secondImg: "/assets/location/khertvisi-fortress-gnta.webp",
+          thirdImg: "/assets/location/akhaltsikhe-castle-gnta.webp",
+          thirdTitle: "Akhaltsikhe Castle",
+          thirdDescription:
+            "If you would like to see what a Georgian fortress in its prime might have looked like, you should pay a visit to Akhaltsikhe Fortress in the historic Rabati district of Akhaltsikhe Town. Built on a mountain overlooking the city, the reconstructed fortress gives a fantastic impression of what one of these fortifications might have looked like in their heyday.",
+          fourthTitle: "Birdwatching in Javakheti Lakes",
+          fourthDescription:
+            "The Javakheti volcanic plateau, where the Lesser Caucasus Mountains begin, is the only place in Georgia with multiple lakes in such close proximity to each other. The Kartsakhi, Bugdasheni, Madatapi, and Khanchali Lakes, as well as Suldi Swamp, are all located on the territory of Javakheti Protected Areas and are strictly guarded.",
+          fourthImg: "/assets/location/javakheti-lakes-gnta.webp",
+          fifthImg: "/assets/location/borjomi.webp",
+          fifthTitle: "Borjomi",
+          fifthDescription:
+            "If you’ve spent any time dining in Georgia, the name “Borjomi” might sound familiar to you. Nobody leaves the country without sampling the popular mineral water that seems to be served in every local restaurant, cafe, and hotel. Indeed, Borjomi mineral water is an ambassador of Georgia in 32 countries around the world. But did you know that the town of Borjomi is a gorgeous resort destination with more to offer than just Georgia’s signature sparkling water? It is a town whose healing spring waters, peaceful pine forests, and bracing mountain air has been working miracles on the sick for centuries.",
+        },
+        {
+          id: 2,
+          title: "Lake Tour in Javakheti",
+          description:
+            "Your trip will start in a volcanic/tectonic forest, continuing through Poka Monastery, which carries the name of St. Nino of Cappadocia, who spread Christianity to Georgia. You will come across the gorgeous Saghamo Lake and the village of Gorelovka along the way, ending at the mystical Madatapa Lake, where an unbelievable landscape awaits you.",
+          img: "/assets/location/saghamo-lake.webp",
+          firstImg: "/assets/location/saghamo-lake-gnta.webp",
+          firstTitle: "Saghamo Lake - A Magical Sight in Samtskhe-Javakheti",
+          firstDescription:
+            "The amazing sight of Saghamo Lake is situated in Samtskhe-Javakheti region, and specifically in Ninotsminda municipality. Wide open spaces, mountains, tranquility, and clear water make this a perfect spot for camping.",
+          secondTitle: "Paravani Lake - Perfect for Fishing",
+          secondDescription:
+            "Paravani Lake is the largest lake in Georgia in terms of water surface area. It is located in Samtskhe-Javakheti region, 2,073 meters above sea level, and is frozen all winter. The thickness of the ice cover reaches 50 to 70 cm and when frozen the lake is a particularly amazing sight, resembling a white desert.",
+          secondImg: "/assets/location/paravani-lake-gnta.webp",
+          thirdImg: "/assets/location/madatapa-lake-gnta.webp",
+          thirdTitle: "Madatapa Lake",
+          thirdDescription:
+            "The Samtskhe-Javakheti Region's Ninotsminda municipality is home to the blue-glowing Madatapa Lake. This lake's stunning surroundings are recognized as Wetlands of Worldwide Significance. Due to the lake's location along the African-Eurasian flight route, migratory and nesting birds are frequently seen there during the warm months of the year.",
+          fourthTitle: "Poka Monastery",
+          fourthDescription:
+            "On the shores of Paravani Lake in Samtskhe-Javakheti region there is a small place, where Saint Nino who brought Christianity to Georgia, rested for two days and nights on her long way from Cappadocia to Mtskheta. This is now St. Nino Monastery in Poka.",
+          fourthImg: "/assets/location/poka-monastery-gnta.webp",
+          fifthImg:
+            "/assets/location/gorelovka-village-doukhobors-museum-gnta.webp",
+          fifthTitle: "Gorelovka Village-Museum",
+          fifthDescription:
+            "Often called Georgia’s most colourful village, Gorelovka in Samtskhe-Javakheti region remains vibrant and beautiful despite having to endure some of Georgia’s most severe climate conditions and some of its longest winters.",
+          sixthTitle: "Birdwatching in Javakheti Lakes",
+          sixthDescription:
+            "The Javakheti volcanic plateau, where the Lesser Caucasus Mountains begin, is the only place in Georgia with multiple lakes in such close proximity to each other. The Kartsakhi, Bugdasheni, Madatapi, and Khanchali Lakes, as well as Suldi Swamp, are all located on the territory of Javakheti Protected Areas and are strictly guarded.",
+          sixthImg: "/assets/location/javakheti-lakes-gnta (1).webp",
+          seventhImg: "/assets/location/ninotsminda-monastery-gnta.webp",
+          seventhTitle: "Ninotsminda",
+          seventhDescription:
+            "Ninotsminda is a favorite nesting place for the Siberian Crane, which visit the town and its surrounds every year to breed. Here you will not see a lamppost or telephone pole without a crane's nest on it. Indeed, the nests woven into these poles, with a diameter larger than one meter, are incredibly beautiful.",
+        },
+      ],
     });
     server.create("location", {
       id: 4,
@@ -1350,6 +1473,72 @@ createServer({
         "White semi-sweet Tvishi, made from Tsolikouri grapes grown in a small area of Lechkhumi, also deserves attention. Make sure to try one of the most rare and expensive Georgian wines coming from Lechkhumi, Usakhelouri. ",
       minor_Cuisine_Fourth_Description:
         "In addition to the wines of Racha-Lechkhumi, try these examples of the rich local cuisine: cheese fondue khavitsi, local ham - Rachuli lori, bean pie lobiani, cornbread with dips - tskaldaskhmula, and exceptional Svan dishes including kubdari, which is a delectable filled pastry with prepared spiced meat placed within dough; chvishtari, a mixture of baked corn flour and stretchy cheese; and tashmijabi, made with potatoes and cheese.",
+      tour: [
+        {
+          id: 1,
+          title: "One-Day Tour in Racha",
+          description:
+            "The places that you will see while on this tour will truly surprise you with their grandeur, like the significant cultural monuments of various time periods, the ancient frescos, the captivating nature, and the lakes, hidden away among the cliffs. If you love wandering, then you will fall in love with this place in just a single day.",
+          img: "/assets/location/racha-lechkhumi.webp",
+          firstImg: "/assets/location/nikortsminda-cathedral.webp",
+          firstTitle: "Nikortsminda Cathedral",
+          firstDescription:
+            "Arches with luxurious carvings, frescoes with diverse stories, and a high dome reaching for the sky are among the reasons that Nikortsminda Church is recognized as a masterpiece of Georgian national architecture. Moreover, it is on the Tentative list for status of UNESCO's World Heritage. You should definitely visit this marvelous place, once you pass by in the village of Nikortsminda in the north-western Georgian region, Racha.",
+          secondTitle: "Barakoni Church",
+          secondDescription:
+            "The village of Tsesi in Racha Region is surrounded by mountains and covered in lush greenery. There, at the confluence of the Lukhuni and Rioni Rivers, stands Barakoni Church serving as a timeless monument of Georgian architecture.",
+          secondImg:
+            "/assets/location/barakoni-church-of-virgin-mary-gnta.webp",
+          thirdImg: "/assets/location/shaori-lake-gnta.webp",
+          thirdTitle: "Shaori Lake",
+          thirdDescription:
+            "In Racha Region, in the heart of snow-covered peaks, dense forests, and meadows full of flowers, the man-made Shaori Lake creates a wonderful environment for fun and relaxation.",
+          fourthTitle: "Ambrolauri",
+          fourthDescription:
+            "At the confluence of the Rioni and Krikhula Rivers, a small city was built to act as a residence for the kings of Imereti in the 17th century. This city, Ambrolauri, is today the administrative centre of Racha-Lechkhumi and Kvemo Svaneti Region, and is a place of cold winters, hot, dry summers, and beautiful wilderness.",
+          fourthImg: "/assets/location/ambrolauri-gnta.webp",
+        },
+        {
+          id: 2,
+          title: "Two-Day Tour in Racha",
+          description:
+            "During this two-day tour in Racha, you will discover Georgian architectural monuments from different time periods, visit exceptional locations, and spend time at climatic/balneological resorts like Shovi and Utsera. During your adventure in Racha, you will see Shaori Reservoir, Barakoni, Nikortsminda, and more.",
+          img: "/assets/location/lashkroba-shovi-udziro-tba-glola.webp",
+          firstImg: "/assets/location/nikortsminda-cathedral (1).webp",
+          firstTitle: "Nikortsminda Cathedral",
+          firstDescription:
+            "Arches with luxurious carvings, frescoes with diverse stories, and a high dome reaching for the sky are among the reasons that Nikortsminda Church is recognized as a masterpiece of Georgian national architecture. Moreover, it is on the Tentative list for status of UNESCO's World Heritage. You should definitely visit this marvelous place, once you pass by in the village of Nikortsminda in the north-western Georgian region, Racha.",
+          secondTitle: "Barakoni Church",
+          secondDescription:
+            "The village of Tsesi in Racha Region is surrounded by mountains and covered in lush greenery. There, at the confluence of the Lukhuni and Rioni Rivers, stands Barakoni Church serving as a timeless monument of Georgian architecture.",
+          secondImg:
+            "/assets/location/barakoni-church-of-virgin-mary-gnta (1).webp",
+          thirdImg: "/assets/location/shaori-lake-gnta (1).webp",
+          thirdTitle: "Shaori Lake",
+          thirdDescription:
+            "In Racha Region, in the heart of snow-covered peaks, dense forests, and meadows full of flowers, the man-made Shaori Lake creates a wonderful environment for fun and relaxation.",
+          fourthTitle: "Rafting on the Rioni: Utsera-Oni",
+          fourthDescription:
+            "This rafting route on the Rioni River flows through the beautiful Racha region in northern Georgia.",
+          fourthImg: "/assets/location/rafting-on-rioni-oni-ambrolauri.webp",
+          fifthImg: "/assets/location/shovi-udziro-tba-glola-gnta.webp",
+          fifthTitle: "Shovi - Lake Udziro - village Glola",
+          fifthDescription:
+            "30 kilometers away from Oni Town in Racha Region, at 1,600 meters above sea level, you can take one of the best trekking routes in this area. It starting from the Shovi resort.",
+          sixthTitle: "Ambrolauri",
+          sixthDescription:
+            "At the confluence of the Rioni and Krikhula Rivers, a small city was built to act as a residence for the kings of Imereti in the 17th century. This city, Ambrolauri, is today the administrative centre of Racha-Lechkhumi and Kvemo Svaneti Region, and is a place of cold winters, hot, dry summers, and beautiful wilderness.",
+          sixthImg: "/assets/location/ambrolauri-gnta (1).webp",
+          seventhImg: "/assets/location/oni-gnta.webp",
+          seventhTitle: "Oni",
+          seventhDescription:
+            "The cozy town of Oni is 210 kilometers from Tbilisi, on the left bank of the Rioni River, in a deep valley. Oni is first mentioned in historical sources in the 15th-16th centuries, but people have lived where the town stands now since the Bronze Age. The town itself was founded in the 2nd century BCE by Parnajom, the king of Iberia, confirmed by the discovery of items during the Bronze Age from the 6th to 3rd centuries.",
+          eighthTitle: "Shovi",
+          eighthDescription:
+            "It is not uncommon for Georgians to escape to the mountains during the summer months, with the Racha region an especially popular escape from the often oppressive summer heat. If you find yourself in Georgia between June and October, why not beat the heat by taking a visit to the Pearl of the Mountains - Shovi?",
+          eighthImg: "/assets/location/shovi-gnta.webp",
+        },
+      ],
     });
     server.create("location", {
       id: 5,
@@ -1385,6 +1574,81 @@ createServer({
         "Notable tourist attractions in Kazbegi include the mountain village of Stepantsminda, the quaint village of Sno, and Juta, one of the highest-altitude settlements in Georgia. In winter, the country’s premier ski resort Gudauri, is also a popular destination.",
       secondary_Minor_Fourth_Description:
         "Kazbegi is also home to upwards of fifty historical monuments, including churches and caves. The region’s main place of worship is the picture-perfect 14th-century Gergeti Trinity Church, the beauty of which is only enhanced by the glorious Kazbegi Mountain (5054m) that watches over it.",
+      tour: [
+        {
+          id: 1,
+          title: "One-Day Tour in Mtskheta",
+          description:
+            "Mtskheta, an exceptional choice for a day’s walk, where you can see Jvari Monastery, the symbol of Christianity coming to and spreading through Georgia, go visit Svetitskhoveli Cathedral, shining with especial beauty, and take time for the Samtavro Monastery Complex, and head to Shiomghvime Monastery, built in the 6th century.",
+          img: "/assets/location/mtskheta.webp",
+          firstImg: "/assets/location/shiomghvime-monastery-gnta.webp",
+          firstTitle: "Shio Mghvime Monastery",
+          firstDescription:
+            "The Shio Mghvime Monastery near Mtskheta began its history in the 6th century, when Saint Shio - one of the founding fathers of Christianity in Georgia - arrived to the region from Syria and started building a church.",
+          secondTitle: "Svetitskhoveli – A Treasure of World Art",
+          secondDescription:
+            "You may not be surprised to learn that a country with such a rich history as Georgia is also home to a remarkable number of legends, some of which might even be true! Svetitskhoveli is a place that has preserved numerous legends and secrets for the modern generation to unravel and enjoy.",
+          secondImg: "/assets/location/svetitskhoveli-cathedral-gnta (1).webp",
+          thirdImg: "/assets/location/jvari-monastery-gnta (1).webp",
+          thirdTitle:
+            "Jvari Monastery – A Step Forward for Georgian Architecture",
+          thirdDescription:
+            "To the east of the city of Mtskheta, Jvari Monastery stands atop a rocky cliff, looking down upon Mtskheta like a stoic guardian. An outstanding monument of Georgian architecture, the name and location of the church are no coincidence, since this is where Saint Nino set up her wooden cross in the 4th century.",
+          fourthTitle: "Samtavro Monastery – UNESCO World Heritage",
+          fourthDescription:
+            "In the center of the city of Mtskheta is an outstanding monument of Georgian architecture – Samtavro Monastery, a UNESCO World Heritage site.",
+          fourthImg: "/assets/location/samtavro-church-gnta.webp",
+          fifthImg: "/assets/location/mtskheta-gnta (1).webp",
+          fifthTitle: "Mtskheta",
+          fifthDescription:
+            "A popular day trip from Tbilisi, historic Mtskheta is sometimes called “Little Jerusalem” on account of the town’s immense cultural and religious significance. The former Georgian capital is also the seat of the Georgian church, and is a veritable living museum with all of the historic sites in and around the town.",
+        },
+        {
+          id: 2,
+          title: "Two-Day Tour in Kazbegi",
+          description:
+            "In this region, you will encounter ancient fortresses, medieval churches built atop mountain peaks, exceptional views, and places with unbelievable beauty, where the harmonious juxtaposition of the beauty of nature and of culture will make your two-day trip even more interesting and attractive.",
+          img: "/assets/location/stepantsminda-gergeti-stepantsminda-gnta.webp",
+          firstImg: "/assets/location/chaukhi-peaks-gnta.webp",
+          firstTitle: "Peaks of Chaukhi",
+          firstDescription:
+            "Chiukhi (Chaukhi) Massif is one of the most spectacular and popular mountain sights in Georgia, which attracts visitors from all around the world. The massif is famous for its multiple peaks, which are attractive for both beginners and professional climbers.",
+          secondTitle: "Ananuri Fortified Castle Ensemble",
+          secondDescription:
+            "An imposing fortress that has heroically stood the test of time, Ananuri Fortress was once the fortress of the feudal family residing on Aragvi River, from where they used to control strategic roads. Today, the remnants of this impressive fortification are a popular tourist attraction on the way to Kazbegi.",
+          secondImg:
+            "/assets/location/ananuri-fortified-castle-ensamble-gnta.webp",
+          thirdImg:
+            "/assets/location/jvari-overpass-travertine-natural-monument-gnta.webp",
+          thirdTitle: "Jvari Pass Travertine National Monument",
+          thirdDescription:
+            "Georgia’s unique geographical location is the reason for the diversity of its nature. Moving boulders, cliff pillars, deep canyons, volcanic formations, boiling lakes, and petrified forests – are all examples of impressive natural monuments and the creativity of nature. Travertine is a hard, porous, low-density, semi-crystalline rock, made as a result of the precipitation of calcium carbonate. It is often secreted from underground waters, creating stalactites and stalagmites in caves.",
+          fourthTitle: "Sno Fortress",
+          fourthDescription:
+            "Everyone should see the beautiful peaks of Kazbegi and Chiukhi Massif at least once in their life. It is impossible to get here and not admire the nature of this amazing land, wrapped in a thick layer of beautiful legends.",
+          fourthImg: "/assets/location/sno-fortress-gnta.webp",
+          fifthImg: "/assets/location/abudelauri-lakes-gnta.webp",
+          fifthTitle: "Abudelauri Lakes",
+          fifthDescription:
+            "The colourful lakes of Abudelauri are one of the most visually appealing natural sights of Georgia. This is also a wonderful hiking destination, so if you're traveling to Georgia in summer, consider adding this wild piece of paradise to your must-visit list.",
+          sixthTitle: "Gveleti Waterfall",
+          sixthDescription:
+            "The hike into the mountainous Dariali Valley is going to leave you breathless, but you’ll somehow still find a way to have your breath taken away by the splendour of Gveleti Waterfall. A short drive from popular Stepantsminda in Kazbegi, this waterfall is a must-see while in the country’s mountainous north.",
+          sixthImg: "/assets/location/gveleti-waterfall-gnta.webp",
+          seventhImg: "/assets/location/gergeti-trinity-church-gnta.webp",
+          seventhTitle: "Gergeti Trinity Church",
+          seventhDescription:
+            "Unquestionably one of Georgia’s most recognizable monuments, the Gergeti Trinity Church is sure to have crossed your Instagram page in the past. Soaring high above the clouds against a backdrop of towering mountains, this picturesque 14th century church is a must see on any Georgian adventure.",
+          eighthTitle: "Stepantsminda",
+          eighthDescription:
+            "Stepantsminda stands out on the map of Georgia, not just for being just eleven kilometres from the northern border of the country, but also due to the fact that one of the oldest crossroads between Europe and Asia passes through the town. It is not known when Stepantsminda was founded, but a treasure hoard from the 6th-5th centuries BCE was discovered here.",
+          eighthImg: "/assets/location/stepantsminda-gnta.webp",
+          ninthImg: "/assets/location/gudauri.webp",
+          ninthTitle: "Gudauri",
+          ninthDescription:
+            "Georgia is home to many exceptionally beautiful winter resorts, but Gudauri might be the most well-known of them. Situated 120 kilometers away from Tbilisi, this amazing mountain and ski resort is especially popular due to its accessibility. You can depart from sunny Tbilisi and be on the slopes before lunch. Gudauri is covered with snow for about five months out of the year, making it perfect for skiers, extreme sports enthusiasts, active travelers, and people who are drawn to the alpine charm of Georgia’s mountains.",
+        },
+      ],
     });
     server.create("location", {
       id: 6,
@@ -1419,6 +1683,64 @@ createServer({
         "One amazing natural masterpiece is the Dashbashi Canyon, which is nestled in greenery and attracts numerous visitors with its beauty and charm. In addition, the Arjevani and Gomeri mountains are must-sees during any season.",
       secondary_Minor_Third_Description:
         "And that is not all! From colorful waterfalls, captivating canyons, alpine meadows, polychromatic deserts, and beautiful lakes, Kvemo Kartli has numerous breathtaking natural wonders. Don’t miss the Algeti, Jandari, Pantiani, Kumisi, Tamarisi, and Bareti lakes as well. If you like fishing and watching migratory birds, then Kvemo Kartli should be a part of your journey to discover the best this region has to offer.",
+      tour: [
+        {
+          id: 1,
+          title: "One-Day Kvemo Kartli Tour",
+          description:
+            "You definitely should take a trip through this region, with its rich culture, because you will come across a rich cultural heritage, archeological sites, nature famed for its beauty, and relics of a centuries-old history. The tour of Tsalka Canyon, Samshvilde Settlement, and Asureti will certainly make you feel something unique.",
+          img: "/assets/location/dashbashi-in-tsalka.webp",
+          firstImg: "/assets/location/dashbashi-canyon-gnta.webp",
+          firstTitle: "Tsalka (Dashbashi) Canyon Natural Monument",
+          firstDescription:
+            "There is a place in southern Georgia that attracts adventure-seekers and adrenaline junkies wishing to experience the thrill of looking at a unique ecosystem from the ultramodern suspension bridge. Tsalka Canyon, also known as Dashbashi Canyon, is an eight-kilometre long canyon whose waterfalls, walking trails, and natural beauty make it a must-see for any nature enthusiast.",
+          secondTitle:
+            "Samshvilde - One of the oldest ruins of the Caucasus region",
+          secondDescription:
+            "The Samshvilde ruins, often called the “Orbisa Fortress,” are an archaeological treasure. They are one of the oldest ruins in the Caucasus region, distinguished by their architecture, terrain, appearance, and particular structure.",
+          secondImg:
+            "/assets/location/urban-archaeology-of-samshvilde-gnta.webp",
+          thirdImg: "/assets/location/samshvilde-medieval-ruins-gnta.webp",
+          thirdTitle: "Historic remains of Samshvilde city",
+          thirdDescription:
+            "A retrospective of Georgian culture awaits in Kvemo Kartli, 15 kilometers away from Tetritskaro. High on the hill, explore the ancient city ruins of Samshvilde.",
+          fourthTitle: "Tsalka",
+          fourthDescription:
+            "Tsalka is a region of mountains, lakes, historical monuments, and archaeological treasures. The municipality in eastern Georgia, spread across the Trialeti mountain range, is especially interesting for those seeking an active vacation.",
+          fourthImg: "/assets/location/tsalka-resorvoir-gnta.webp",
+          fifthImg: "/assets/location/asureti-gnta.webp",
+          fifthTitle: "Asureti",
+          fifthDescription:
+            "Believe it or not, you can experience a little bit of Germany while travelling through Georgia. For this, you should visit the village of Asureti, located in Tetritskaro municipality, on the banks of the Asuretiskhevi River.",
+        },
+        {
+          id: 2,
+          title: "One-Day Tour in Bolnisi and Dmanisi",
+          description:
+            "On this easy, one-day tour, you will go to Bolnisi and Dmanisi, full of historical adventures, where you will see exceptionally amazing and diverse cultural monuments, have the opportunity to relax in nature, and see the lifestyles of the first Europeans unfold in panoramas and museum exhibits before your very eyes.",
+          img: "/assets/location/bolnisi.webp",
+          firstImg: "/assets/location/bolnisi-sioni-gnta.webp",
+          firstTitle: "Bolnisi Sioni",
+          firstDescription:
+            "The town of Bolnisi in Kvemo Kartli Region is famous for it’s gold and tuff stone mining, great wine, story of Georgian Germans and some important Christian worship sites. One of those is the church named after the Dormition of the Mother of God, also known as Bolnisi Sioni, one of the oldest and most important monuments of ancient Georgian architecture.",
+          secondTitle: "Dmanisi - Home to the First Europeans",
+          secondDescription:
+            "Dmanisi, located 85 kilometers from Tbilisi, is of phenomenal interest to the world’s archaeologists. Crucially, this is where Zezva and Mzia - the first European hominids - were discovered. This discovery was made in 1991, and science journals later named the discovery Homo Georgicus and featured it among the 10 greatest discoveries.",
+          secondImg: "/assets/location/urban-archaeology-of-dmanisi-gnta.webp",
+          thirdImg: "/assets/location/tsurughasheni-church-gnta.webp",
+          thirdTitle: "Tsughrughasheni Church",
+          thirdDescription:
+            "This light, airy, colourful church stretches up towards the sky and projects a sense of peacefulness and tranquillity. Tsughrughasheni Church always leaves an indelible impression on you, no matter whether you're seeing it for the first time or you've been here for many times before. Tsughrughasheni Church stands on the right bank of the Bolnisistskali River, near the village of Bolnisi in the Kvemo Kartli Region.",
+          fourthTitle: "Bolnisi",
+          fourthDescription:
+            "Bolnisi is one of the most important agricultural municipalities of Georgia. The environment here is very beneficial for growing crops. The residents harvest thier veggies three times a year! Aside from its agricultural potency, locals are also keen to show the houses of German settlers to any visitors.",
+          fourthImg: "/assets/location/bolnisi-gnta.webp",
+          fifthImg: "/assets/location/urban-archaeology-of-dmanisi-gnta.webp",
+          fifthTitle: "Dmanisi",
+          fifthDescription:
+            "A visit to Dmanisi is like a trip back in time. You’ll find yourself in the land of people who lived here 1.8 million years ago - a land of sabre tooth tigers, the Ice Age, and of cave houses from a forgotten age. Gold hoards have been found beneath the earth, while grand architectural monuments stand atop it. This ancient settlement in southern Georgia holds many of humanity’s secrets buried in its depths. Archaeologists have come across traces of ancient civilizations in the various soil layers of Dmanisi since excavations began in 1936, attracting the attention of academics from across the world.",
+        },
+      ],
     });
     server.create("location", {
       id: 7,
@@ -1458,7 +1780,86 @@ createServer({
         "Furthermore, when you are in Kakheti you absolutely must visit Vashlovani National Park and Kilakupra Mud Volcanoes, where you’ll feel as if you’ve somehow journeyed to another planet!",
       minor_Seventh_Description:
         "Kakheti really does have it all: history, breathtaking natural beauty, amazing food and wine, and the trademark Georgian hospitality.",
+      tour: [
+        {
+          id: 1,
+          title: "Two-Day Kakheti Tour",
+          description:
+            "Come visit Kakheti, famous for its monuments from various different time periods and diverse nature, where you can go see ancient architectural monuments and impressive fortresses. This two-day tour will end up being a Kakhetian adventure for you, introducing you to new places and filling you with emotions.",
+          img: "/assets/location/kakheti-tour.webp",
+          firstImg: "/assets/location/gremi-gnta.webp",
+          firstTitle: "Gremi Monastic Complex",
+          firstDescription:
+            "Once you are in Kakheti Region, if you take the road from Telavi to Kvareli, after about a 15 to 20-minute drive, you reach Gremi Complex, a 15th-century fortress city built on high ground.",
+          secondTitle: "Gremi Archaeological Complex",
+          secondDescription:
+            "What was once a well-developed city in the 15th century, Kakheti is a location that many tourists flock to. The first population around Gremi most likely appeared in the late Bronze Age, but its history as a strategically and politically important city starts in the 15th century.",
+          secondImg: "/assets/location/gremi-archeological-complex-gnta.webp",
+          thirdImg: "/assets/location/nekresi-fire-temple-gnta.webp",
+          thirdTitle: "Nekresi Fire Temple",
+          thirdDescription:
+            "Astrology was practiced in Georgia in even the most ancient periods of Georgian history. The Fire Temple, also known as The Temple of the Sun, is proof of this.",
+          fourthTitle: "Gremi Fortress",
+          fourthDescription:
+            "This remarkable fortress, standing atop a rocky ridge for nearly 700 years, proudly overlooks the surroundings of Gremi Village, located in Kvareli Municipality in Kakheti.",
+          fourthImg: "/assets/location/gremi-fortress-gnta.webp",
+          fifthImg: "/assets/location/erekle-ii-museum-gnta.webp",
+          fifthTitle: "The Palace Museum of King Erekle II",
+          fifthDescription:
+            "The only royal palace in Georgia that has been preserved to the modern day, the Museum of King Heraclius (Erekle) II is located in the city of Telavi, Kakheti Region. This impressive palace served as the royal residence in the 17th and 18th centuries, and today it houses a museum.",
+          sixthTitle: "Old and New Shuamta",
+          sixthDescription:
+            "Built in a valley among high mountains, the monastery complexes known as Old Shuamta and New Shuamta are outstanding examples of Georgian architecture. Located seven kilometres from Telavi at the foot of Tsiv-Gombori Mountain, these structures take their name from their location, as Shua Mta translates into “among mountains”.",
+          sixthImg:
+            "/assets/location/dzveli-shuamta-and-akhali-shuamta-churches-gnta.webp",
+          seventhImg: "/assets/location/house-museum-of-chavchavadze-gnta.webp",
+          seventhTitle:
+            "The Aleksandre Chavchavadze House Museum in Tsinandali",
+          seventhDescription:
+            "Tsinandali Estate is one of the most exciting destinations in Kakheti that includes a winery and an modest, but beautiful palace, whose history is closely intertwined with that of Prince Aleksandre Chavchavadze’s family. Two branches of Chavchavadze family were immensely influential in 19th-century Georgia, a fact reflected by the number of streets named after them!",
+          eighthTitle: "Telavi",
+          eighthDescription:
+            "Telavi is the cultural center of Kakheti, a medieval city with a long and complex history, neat architecture, a royal palace, verdant surroundings, modern amenities, and hospitable people.",
+          eighthImg: "/assets/location/telavi-gnta.webp",
+        },
+        {
+          id: 2,
+          title: "One-Day Tour in Kakheti",
+          description:
+            "The most beautiful region of the most beautiful country – Kakheti, where numerous strange and wonderful sights await you, including the spectacular Georgian attraction of Davit Gareji, the village with a grand history known as Bodbe, and the tourists’ choice, a lovely example of the synthesis of past and present, the city of love – Sighnaghi.",
+          img: "/assets/location/sighnaghi.webp",
+          firstImg: "/assets/location/davit-gareja-gnta.webp",
+          firstTitle: "Davit Gareja",
+          firstDescription:
+            "The severe beauty of the semi-desert, caves carved out of the bare rock – Davit Gareja Monastery Complex, recognized by National Geographic as one of the 17 most beautiful and wild places of the world, never seizes to amaze its visitors. This unique monument of Georgian Christianity is located in Sagarejo Municipality, about 70 km east of Tbilisi.",
+          secondTitle: "Sighnaghi Museum",
+          secondDescription:
+            "If you are enthusiastic about ethnography and are interested in the life, traditions, and culture of historic Georgian tribes, you should visit the state museum in Sighnaghi in eastern Georgia.",
+          secondImg: "/assets/location/sighnaghi-museum-gnta.webp",
+          thirdImg: "/assets/location/sighnaghi-fortress-gnta.webp",
+          thirdTitle: "Sighnaghi Fortress",
+          thirdDescription:
+            "A monolithic fortress that encircles the entire city of Sighnaghi, Sighnaghi Fortress is one of the largest fortresses of its kind in all of Europe and the South Caucasus. Built by Erekle II, king of Kartli and Kakheti, in 1762, the fortress was of immense strategic importance not only for Sighnaghi, but for all of Kakheti.",
+          fourthTitle: "Zipline in Sighnaghi",
+          fourthDescription:
+            "If you want to enjoy the views of historic Sighnaghi, by overlooking the entire Alazani Valley and the Caucasus, there is not better option than the Sighnaghi Zipline.",
+          fourthImg: "/assets/location/zipline-sighnaghi-1.webp",
+          fifthImg: "/assets/location/paragliding-in-sighnaghi-2.webp",
+          fifthTitle: "Paragliding in Sighnaghi",
+          fifthDescription:
+            "Sighnaghi is a historical city, located 120 kilometers from Tbilisi in the Kakheti Region, on a southeastern slope of the Gombori Range, 840 meters above sea level.",
+          sixthTitle: "Sighnaghi",
+          sixthDescription:
+            "For a couple in love, Sighnaghi is a wonderful place to visit because of its romantic setting. Cute cobblestone streets, breathtaking views of Alazani valley and the Greater Caucasus Mountains, art, wine, fascinating history, as well as hospitable locals guarantee a lovely getaway.",
+          sixthImg: "/assets/location/sighnaghi-gnta.webp",
+          seventhImg: "/assets/location/bodbe-gnta.webp",
+          seventhTitle: "Bodbe",
+          seventhDescription:
+            "Linked to Saint Nino, the villages of Upper and Lower Bodbe are perhaps best known for the beautiful Bodbe Monastery. A short drive from Sighnaghi, these quaint villages and their iconic monastery are a fantastic day trip from Tbilisi or Sighnaghi.",
+        },
+      ],
     });
+    //აქედან უნდა გავაგრძელო
     server.create("location", {
       id: 8,
       title: "Imereti",

@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import { Header } from "../../../Components";
-import { FoodCard, ButtonViewMore } from "./Components/index";
+import { FoodCard, ButtonViewMore, Tour } from "./Components/index";
 import {
   Cuisine_Racha_Lechkhumi_Description,
   Cuisine_Racha_Lechkhumi_Title,
@@ -124,6 +124,7 @@ export const RachaLechkhumiKvemoSvanetiPage = () => {
                   )}
                 </div>
               </div>
+              <Tour tourData={item.tour} />
             </div>
           </React.Fragment>
         ))}
