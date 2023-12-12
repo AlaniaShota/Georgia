@@ -1215,6 +1215,17 @@ createServer({
             "The small town of Martvili lies in western Georgia, in the region of Samegrelo. As you walk through this picturesque town, your eye will inevitably be drawn to the monastery built on a spot overlooking the town. This is Chkondidi, a monastery raised by the King David Agmashenebeli (the Builder).",
         },
       ],
+      popular: [
+        {
+          firstImg: "/assets/location/mestia.jpg",
+          secondImg: "/assets/location/Zugdidi-town-center.jpg",
+          thirdImg: "/assets/location/martvili.jpg",
+          fourthImg: "/assets/location/ushguli-gnta.webp",
+          title: "Popular Destinations in Samegrelo-Zemo Svaneti",
+          description:
+            "Tucked in the lush greenery, with proud Greater Caucasus Mountains in the background, Samegrelo and Zemo Svaneti Regions have amazing experiences to offer. Challenge yourself with a hike to Tobavarchkhili Lake, enjoy the natural diversity in the protected areas of Martvili Canyon and Paliastomi Lake, raise a glass of Ojaleshi wine from Salkhino, looking at the sunset from Anaklia Bridge. Ski from the pristine slopes of Tetnuldi and Hatsvali, and get to know the local traditions in Zugdidi, Mestia and Ushguli.",
+        },
+      ],
     });
     server.create("location", {
       id: 2,
@@ -1311,6 +1322,17 @@ createServer({
           fourthDescription:
             "A popular day trip from Tbilisi, historic Mtskheta is sometimes called “Little Jerusalem” on account of the town’s immense cultural and religious significance. The former Georgian capital is also the seat of the Georgian church, and is a veritable living museum with all of the historic sites in and around the town.",
           fourthImg: "/assets/location/mtskheta-gnta.webp",
+        },
+      ],
+      popular: [
+        {
+          firstImg: "/assets/location/Kaspi.jpg",
+          secondImg: "/assets/location/Gori.jpg",
+          thirdImg: "/assets/location/Kareli.jpg",
+          fourthImg: "/assets/location/Khashuri.jpg",
+          title: "Popular Destinations in Shida Kartli",
+          description:
+            "In Shida Kartli, you can immerse yourself in the depth of Georgian history. Walk along the streets of the rock-hewn town Uplistsikhe, visit the picturesque monasteries of Dzama Valley, hike to Biisi Waterfall, and marvel at the terraced vineyards next to the fantastic Ateni’s Sioni Monastery. Taste Atenuri wine and sweet bread Nazuki in Surami. Ascend to the top of Jamjama Mountain.",
         },
       ],
     });
@@ -1426,6 +1448,17 @@ createServer({
             "Ninotsminda is a favorite nesting place for the Siberian Crane, which visit the town and its surrounds every year to breed. Here you will not see a lamppost or telephone pole without a crane's nest on it. Indeed, the nests woven into these poles, with a diameter larger than one meter, are incredibly beautiful.",
         },
       ],
+      popular: [
+        {
+          firstImg: "/assets/location/Akhaltsikhe.jpg",
+          secondImg: "/assets/location/Borjomi.jpg",
+          thirdImg: "/assets/location/Adigeni.jpg",
+          fourthImg: "/assets/location/Abastumani.jpg",
+          title: "Popular Destinations in Samtskhe-Javakheti",
+          description:
+            "Here you will find abandoned cyclopic fortresses built by ancient civilizations, along with Christian monuments with outstanding architecture and frescos. Visit the Paravani, Saghamo, and Khanchali Lakes to see amazing bird species. Feel the flow of centuries in cave city Vardzia, embrace the multiculturality in Akhaltsikhe Castle, and visit the Doukhobor villages. Hike in Borjomi-Kharagauli National Park and quench your thirst for adventure with Georgia’s most famous mineral water, Borjomi. Enjoy the fresh air and beautiful nature in Likani, Bakuriani, or Abastumani.",
+        },
+      ],
     });
     server.create("location", {
       id: 4,
@@ -1539,6 +1572,17 @@ createServer({
           eighthImg: "/assets/location/shovi-gnta.webp",
         },
       ],
+      popular: [
+        {
+          firstImg: "/assets/location/Tsageri.jpg",
+          secondImg: "/assets/location/Shovi.jpg",
+          thirdImg: "/assets/location/oni-gnta.webp",
+          fourthImg: "/assets/location/ambrolauri-gnta.webp",
+          title: "Destinations in Racha-Lechkhumi & Kvemo Svaneti",
+          description:
+            "The historical regions Racha-Lechkhumi & Kvemo Svaneti offer a wonderful mix of history and unspoiled natural beauty. Visit Shaori and Udziro Lakes, marvel at the frescoes of Nikortsminda Cathedral, feel the time slowing down in Oni and Shovi, ascend to the top of Khvamli Mountain, enjoy the views of Lailashi reservoir and Tsageri panorama from Muri Fortress, and unwind in the wineries around Ambrolauri and Tvishi.",
+        },
+      ],
     });
     server.create("location", {
       id: 5,
@@ -1649,6 +1693,17 @@ createServer({
             "Georgia is home to many exceptionally beautiful winter resorts, but Gudauri might be the most well-known of them. Situated 120 kilometers away from Tbilisi, this amazing mountain and ski resort is especially popular due to its accessibility. You can depart from sunny Tbilisi and be on the slopes before lunch. Gudauri is covered with snow for about five months out of the year, making it perfect for skiers, extreme sports enthusiasts, active travelers, and people who are drawn to the alpine charm of Georgia’s mountains.",
         },
       ],
+      popular: [
+        {
+          firstImg: "/assets/location/Stepantsminda.jpg",
+          secondImg: "/assets/location/Shatili.jpg",
+          thirdImg: "/assets/location/mtskheta-gnta.webp",
+          fourthImg: "/assets/location/gudauri-gnta.webp",
+          title: "Popular Destinations in Mtskheta-Mtianeti",
+          description:
+            "Mtskheta-Mtianeti Region promises to be an amazing adventure for you! Challenge yourself with mountainous routes in Kazbegi, Truso, Juta and Abudelauri, try the white water rafting at Aragvi River, spend a night in a fortress-village of Shatili, and explore the mysterious abandoned Mutso fortress. Enjoy the fresh powder at the slopes of Gudauri. Feel the closeness to nature!",
+        },
+      ],
     });
     server.create("location", {
       id: 6,
@@ -1741,7 +1796,19 @@ createServer({
             "A visit to Dmanisi is like a trip back in time. You’ll find yourself in the land of people who lived here 1.8 million years ago - a land of sabre tooth tigers, the Ice Age, and of cave houses from a forgotten age. Gold hoards have been found beneath the earth, while grand architectural monuments stand atop it. This ancient settlement in southern Georgia holds many of humanity’s secrets buried in its depths. Archaeologists have come across traces of ancient civilizations in the various soil layers of Dmanisi since excavations began in 1936, attracting the attention of academics from across the world.",
         },
       ],
+      popular: [
+        {
+          firstImg: "/assets/location/Tsalka.jpg",
+          secondImg: "/assets/location/tetritskaro-gnta.webp",
+          thirdImg: "/assets/location/bolnisi-gnta.webp",
+          fourthImg: "/assets/location/urban-archaeology-of-dmanisi-gnta.webp",
+          title: "Popular Destinations in Kvemo Kartli",
+          description:
+            "Kvemo Kartli is a multicultural region with a rich history, where you will find numerous archaeological sites, churches and mosques, fortresses and old German houses. One discovery of worldwide importance is Dmanisi Settlement, where the hominids used to live 1.8 million years ago. The former German colonies of Asureti and Bolnisi will offer your amazing stories and great wine, Algeti National Park will welcome you to the unspoiled nature and great views, and in the ancient site of Samshvilde, you’d feel like you are in an adventure movie.",
+        },
+      ],
     });
+    //აქედან უნდა გავაგრძელო
     server.create("location", {
       id: 7,
       title: "Kakheti",
@@ -1859,7 +1926,6 @@ createServer({
         },
       ],
     });
-    //აქედან უნდა გავაგრძელო
     server.create("location", {
       id: 8,
       title: "Imereti",
@@ -1901,6 +1967,79 @@ createServer({
       secondaryMinor_Title: "The Climate in Imereti",
       secondaryMinor_Description:
         "Imereti is a forested region with two major rivers, the Rioni and the Kvirila, running through it. The climate in Imereti is humid with cold winters and dry, hot summers. ",
+      tour: [
+        {
+          id: 1,
+          title: "One-Day Tour in Kutaisi",
+          description:
+            "During this one-day tour, you will see Gelati Monastery, an architectural monument of great historical and cultural significance, see the nature nestled within the greenery of Imereti, and visit the monastery complex of Motsameta for a unique experience.",
+          img: "/assets/location/kutaisi-view-with-birds.webp",
+          firstImg: "/assets/location/motsameta-monastery-gnta.webp",
+          firstTitle: "Motsameta Monastery",
+          firstDescription:
+            "It is said that if you crawl underneath the crypts at Motsameta Monastery, your wishes will come true. It is this legend that draws visitors to this 8th-century Orthodox church.",
+          secondTitle: "Bagrati Cathedral",
+          secondDescription:
+            "Every ancient structure in Georgia has its own history, a story that often helps to define modern history, but the national importance of Bagrati Cathedral cannot be overstated. Built of white stones and topped with turquoise domes, it is associated with the unification of Georgia as a nation.",
+          secondImg: "/assets/location/bagrati-cathedral-gnta.webp",
+          thirdImg: "/assets/location/prometheus-cave-gnta.webp",
+          thirdTitle: "Prometheus Cave",
+          thirdDescription:
+            "Georgia is a country of beautiful landscapes and amazing nature, but there is a sight which truly stands apart from other natural monuments – an underground cave lit with colourful lights, whose waterfalls, lakes, stone curtains, helictites, needle-like anthodites, and other unique formations you will never forget. This is Prometheus Cave, visited by more than 200,000 people every year.",
+          fourthTitle: "Gelati Monastery",
+          fourthDescription:
+            "Almost every tour to Western Georgia includes a visit to the UNESCO World Heritage Listed Gelati Monastery in the same-name village.",
+          fourthImg: "/assets/location/gelati-monastery-gnta.webp",
+          fifthImg: "/assets/location/kutaisi-gnta.webp",
+          fifthTitle: "Kutaisi",
+          fifthDescription:
+            "Founded 1,400 years before the birth of Christ, Kutaisi is one of the oldest cities in the world. It is a place of exceptional warmth, humor, and love.",
+        },
+        {
+          id: 2,
+          title: "One-Day Canyon Tour",
+          description:
+            "Discover the geographical and biological diversity of Georgia while making your way through the beautiful Okatse and Martvili Canyons, seeing the striking remnants of ancient culture at Martvili Monastery. During the tour, you will also come across the Salkhino Residence, which will fill you with all sorts of good feelings.",
+          img: "/assets/location/martvili-canyon.webp",
+          firstImg: "/assets/location/martvili-monastery-gnta.webp",
+          firstTitle: "Martvili Monastery",
+          firstDescription:
+            "From the town of Martvili in Samegrelo Region, a large monastic complex built on the top of a mountain can be admired, as a shining example of the beauty of Georgian ecclesiastical architecture. From the town center, a road and cable car make the complex easily and quickly accessible. The monastery was built in the 7th century and its present appearance of course differs somewhat from those times, having undergone changes over the centuries.",
+          secondTitle: "Salkhino Dadiani Residence",
+          secondDescription:
+            "The Salkhino palace, built in the village of Salkhino in Samegrelo Region, was once the summer residence of the local nobility, the Dadiani family. Walking on the cobblestone paths between centuries-old trees up to the palace, you feel the full glory of the Dadiani princes, the 19th-century Georgian aristocracy, who were related to the French imperial family.",
+          secondImg: "/assets/location/salkhino-dadiani-residence-gnta.webp",
+          thirdImg: "/assets/location/kinchkha-waterfall-gnta.webp",
+          thirdTitle: "Kinchkha Waterfall",
+          thirdDescription:
+            "The Kinchkha waterfall, also called the Okatse Waterfall, is one of the biggest waterfalls in Georgia.",
+          fourthTitle: "Martvili Canyon",
+          fourthDescription:
+            "Every region in Georgia boasts its own famous natural landmarks, and Samegrelo is no different, as it is home to the stunningly beautiful Martvili Canyon. A popular tourist destination with locals and tourists alike, this breathtaking natural monument is a must-see for outdoor enthusiasts.",
+          fourthImg: "/assets/location/martvili-canyon-gnta.webp",
+          fifthImg: "/assets/location/datvi-lake-gnta.webp",
+          fifthTitle: "Datvi Lake – A Natural Monument in Okatse Canyon",
+          fifthDescription:
+            "Reaching Datvi Lake requires a challenging hike, but rewards those who make the journey with a breathtaking view of the picturesque canyon lake and the towering cliffs that surround it.",
+          sixthTitle: "Okatse Canyon – Imereti’s Green Nature Monument",
+          sixthDescription:
+            "Imereti region is famous for its lush greenery, dramatic limestone cliffs and plentitude of water - rivers, streams and lakes. Okatse Canyon is a perfect example of this.",
+          sixthImg: "/assets/location/okatse-canyon-gnta.webp",
+          seventhImg:
+            "/assets/location/martvili-canyon-zipline-in-georgia.webp",
+          seventhTitle: "Martvili Canyon Zipline",
+          seventhDescription:
+            "Martvili Canyon is located in Samegrelo Region, in Gachedili Village, or to be more precise, in the Abasha River Gorge. The canyon is 2,400 meters long, with small hiking trails through exotic nature, including waterfalls, rivers, lakes, and rocks. A boat ride on the Abasha River is also possible while other more extreme adventures are also awaiting you.",
+          eighthTitle: "Kutaisi",
+          eighthDescription:
+            "Founded 1,400 years before the birth of Christ, Kutaisi is one of the oldest cities in the world. It is a place of exceptional warmth, humor, and love.",
+          eighthImg: "/assets/location/kutaisi-gnta.webp",
+          ninthImg: "/assets/location/martvili-gnta.webp",
+          ninthTitle: "Martvili",
+          ninthDescription:
+            "The small town of Martvili lies in western Georgia, in the region of Samegrelo. As you walk through this picturesque town, your eye will inevitably be drawn to the monastery built on a spot overlooking the town. This is Chkondidi, a monastery raised by the King David Agmashenebeli (the Builder).",
+        },
+      ],
     });
     server.create("location", {
       id: 9,
@@ -1939,11 +2078,63 @@ createServer({
         "Kalanda is the Gurians’ favourite holiday. This is the local New Year’s, which takes place on the 14th of January. The main symbol of Kalanda is a chichilaki (a small Christmas tree) made of twigs from a nut tree.The preparations for the holiday start in the morning, and special Gurian cheese and egg pies in the shape of the crescent moon are baked. On the 15th of January each family is visited by mekvle – a person who is supposed to bring happiness to the house.",
       secondary_Minor_Second_Description:
         "It is interesting to note that Kalandoba has its roots in the pre-Christian period.",
+      tour: [
+        {
+          id: 1,
+          title: "One-Day Tour in Guria",
+          description:
+            "This experience will convince you of how special and beautiful Guria is all over again. As part of the one-day tour, you will be able to see Shemokmedi Monastery, which was built in the Middle Ages, and visit places like Shekvetili Dendrological Park, the Black Sea, Gomi Mountain, and the Miniature Park.",
+          img: "/assets/location/gomi-mountain.webp",
+          firstImg: "/assets/location/gomi-mountain-gnta.webp",
+          firstTitle: "Gomismta",
+          firstDescription:
+            "Gomismta (Gomi Mountain) is a climatic resort that occupies one of the most prominent places on the list of resorts in the Guria Region. It is 33 km from Ozurgeti city, at 2,100-2,755 meters above sea level. Gomismta is also called the 'Resort in Clouds'.",
+          secondTitle: "Shekvetili Dendrological Park",
+          secondDescription:
+            "For years, it was a swamp and impenetrable forest, but today Shekvetili Dendrological Park attracts plenty of visitors. This unique recreational zone in Ozurgeti Municipality in the village of Shekvetili, stretches over 60 hectares between the mountains and the sea. This area, according to experts, is ideal for many types of flora and fauna.",
+          secondImg: "/assets/location/shekvetili-dendrological-park-gnta.webp",
+          thirdImg: "/assets/location/shemokmedi-monastery-complex-gnta.webp",
+          thirdTitle: "Shemokmedi Monastery Complex",
+          thirdDescription:
+            "Shemokmedi Monastery Complex is one of few religious monuments in Guria Region that was not destroyed under the Soviet government. Therefore, its original architectural appearance has been preserved.",
+          fourthTitle: "Miniature Park",
+          fourthDescription:
+            "At the Gurian seaside resort of Shekvetili, you can see all of Georgia without having to leave the resort, as the unique “Georgia in Miniatures” park can be found there!",
+          fourthImg: "/assets/location/miniature-park-gnta.webp",
+          fifthImg: "/assets/location/ozurgeti-gnta.webp",
+          fifthTitle: "Ozurgeti",
+          fifthDescription:
+            "In the Middle Ages, Ozurgeti was an extraordinarily and culturally developed region complete with churches and fortresses. By the late feudal period, Ozurgeti had already become an attractive commercial and administrative center of Guria. However, Ozurgeti’s history stretches back much farther than that, with evidence of settlements stretching as far back as the Bronze Age. Contemporary accounts of the city begin to turn up in historical documents from the 16th century onwards.",
+        },
+        {
+          id: 2,
+          title: "One-Day Tour in Shekvetili",
+          description:
+            "Your trip will start at the Dendrological Park, seeing places famed for their beauty along the way, with the chance to enjoy the captivating nature. The tour continues through the gorgeous nature of Adjara, passing through Musicians Park and ending in the Miniature Park in Shekvetili.",
+          img: "/assets/location/shekvetili-dendrological-park.webp",
+          firstImg: "/assets/location/shekvetili-dendrological-park-gnta.webp",
+          firstTitle: "Shekvetili Dendrological Park",
+          firstDescription:
+            "For years, it was a swamp and impenetrable forest, but today Shekvetili Dendrological Park attracts plenty of visitors. This unique recreational zone in Ozurgeti Municipality in the village of Shekvetili, stretches over 60 hectares between the mountains and the sea. This area, according to experts, is ideal for many types of flora and fauna.",
+          secondTitle: "Miniature Park",
+          secondDescription:
+            "At the Gurian seaside resort of Shekvetili, you can see all of Georgia without having to leave the resort, as the unique “Georgia in Miniatures” park can be found there!",
+          secondImg: "/assets/location/miniature-park-gnta.webp",
+          thirdImg: "/assets/location/musicians-park-gnta.webp",
+          thirdTitle: "Musicians Park",
+          thirdDescription:
+            "Music has a power all its own – it inspires emotions within us that can turn small moments into unforgettable memories. Melodies enjoyed with a backdrop of gorgeous views and shared with good people bring about a lasting joy that stays with you for the rest of your days. If you crave this experience, you should pay a visit to the village of Shekvetili, where in the Musicians Park, you’ll encounter a celebration of world’s music.",
+          fourthTitle: "Shekvetili",
+          fourthDescription:
+            "On the Georgian coast of the Black Sea, 45 km north of Batumi, there is a small seaside resort called Shekvetili, known for its relatively peaceful atmosphere which makes it a popular spot for family vacation.",
+          fourthImg: "/assets/location/shekvetili-gnta.webp",
+        },
+      ],
     });
     server.create("location", {
       id: 10,
       title: "Ajara",
-      title_Img: "/assets/location/mtirala-national-park.jpg",
+      title_Img: "/assets/location/lakes-georgia.jpg",
       title_Description:
         "Often called the Pearl of the Black Sea, the Ajara region is one steeped in history and beloved for its startling natural beauty. It is not only one of the first places in the world to have experienced the spread of Christianity, but also a popular beach playground with all of the modern conveniences. A visit to Ajara can include time spent sunning yourself on the beaches of the Black Sea, hiking or rafting in the mountains, hiking through the forest, visiting ancient fortresses and monasteries, and - of course - eating some of the best food you’vel ever eaten!",
       major_Title: "Batumi",
@@ -1974,6 +2165,93 @@ createServer({
       secondaryMinor_Second_Description:
         "Visitors to Ajara can participate in rafting, hiking, birdwatching, ziplining, scuba diving, horseback riding, canyoning, and camping.",
       secondaryMinor_Third_Description: "Ajara really does have it all.",
+      tour: [
+        {
+          id: 1,
+          title: "Two-Day Tour in Batumi",
+          description:
+            "Discover the wonder of the Black Sea shore, visit Batumi Botanical Garden, and, during this two-day tour, go see captivating sights such as the Delphinarium, Batumi Boulevard, Ali and Nino, the Wedding Palace, and the Dancing Fountain. Have a unique experience while capturing the modern landscape of Adjara on film.",
+          img: "/assets/location/batumi-lighthouse-gnta.webp",
+          firstImg: "/assets/location/batumi-botanical-garden.webp",
+          firstTitle: "Batumi Botanical Garden",
+          firstDescription:
+            "Imagine a botanical garden that spreads along an entire kilometer of the Black Sea coast, with more than 5,000 species of plants from different climates and landscapes, providing an array of vibrant colours. Welcome to Batumi Botanical Garden, one of the most beautiful places in Ajara Region.",
+          secondTitle:
+            "The Panoramic Wheel - One of the most popular sites in Batumi",
+          secondDescription:
+            "The Panoramic wheel can be seen from afar and has incredible panoramic views of the sea and mountains.",
+          secondImg: "/assets/location/why-you-should-visit-batumi.webp",
+          thirdImg: "/assets/location/miracle-park-gnta.webp",
+          thirdTitle: "Batumi’s Miracle Park",
+          thirdDescription:
+            "Miracle Park is an open space built on Batumi’s seaside boulevard, leading to rare examples of modern architecture and sculptures.",
+          fourthTitle: "Sherif Khimshiashvili St. 9 in Batumi",
+          fourthDescription:
+            "During the 2010s, projects by the world-famous modern architects, Shin Takamatsu (the former commercial center on Sololaki Ridge), Michele De Lucchi (the Ministry of Internal Affairs and the Bridge of Peace), and Massimiliano Fuksas (the Justice Hall, the Music Center, and the Art Gallery in Rike) were completed in Tbilisi. However, it is not famous foreign masters of the art who have brought Georgia to the world’s architectural stage, but rather a young Georgian architect whose building was constructed in 2013, and quickly won worldwide acclaim.",
+          fourthImg:
+            "/assets/location/batumi-sheriff-khimshiashvili-9-gnta.webp",
+          fifthImg: "/assets/location/batumi-dolphinarium-gnta.webp",
+          fifthTitle: "Batumi Dolphinarium",
+          fifthDescription:
+            "The residents of the Batumi Dolphinarium entertain visitors six days a week (except Mondays), rain or shine.",
+          sixthTitle: "Batumi Lighthouse",
+          sixthDescription:
+            "If you love tales of the sea, then you should pay a visit to the Batumi Lighthouse, which is located directly where the lines of latitude and longitude cross at 41 degrees.",
+          sixthImg: "/assets/location/batumi-lighthouse-gnta.webp",
+          seventhImg: "/assets/location/dancing-fountains-gnta.webp",
+          seventhTitle: "Dancing fountains - a landmark of Batumi",
+          seventhDescription:
+            "Batumi is a beautiful seaside city that invariably attracts travelers with its wide, sun-drenched beaches. And in the evening, when the Black Sea resort is lit up with lights, an enchanting water show awaits tourists - one of the largest dancing fountains in Europe, which is the hallmark of the Black Sea coast of Georgia.",
+          eighthImg: "/assets/location/monument-ali-and-nino-gnta.webp",
+          eighthTitle: "The Legend of Ali and Nino",
+          eighthDescription:
+            "Every evening, starting at 7 pm, 8-meter-high figures of a man and a woman on Batumi Boulevard start moving in circles. Every ten minutes they approach each other, merge, and separate, then again they approach, merge, and separate…",
+          ninthImg: "/assets/location/batumi-gnta.webp",
+          ninthTitle: "Batumi",
+          ninthDescription:
+            "Batumi is the best place for a seaside vacation in Georgia, especially during its “velvet season” in early autumn when the weather is warm but not too hot. Forbes Magazine even ranked Batumi in the top five best places to stay at a resort for “velvet season”. However, Batumi is worth visiting any time of year, regardless of whether you’re here for business or pleasure. The American Hospitality Academy even deemed Batumi as “the place best suited for tourists” in Georgia as far back as 2012.",
+        },
+        {
+          id: 2,
+          title: "Three-Day Tour in Upper Adjara",
+          description:
+            "Set up an unforgettable three-day adventure in the wilderness where you will see historical structures like Khikhani Fortress, Skhalta Monastery, and Tamar’s Bridge. During the tour you will also be able to see Goderdzi, the Green Lake, Khulo, Makhuntseti Waterfall, and enjoy a fantastic view.",
+          img: "/assets/location/goderdzi-petrified-forest-natural-monument.webp",
+          firstImg:
+            "/assets/location/goderdzi-alpine-botanical-garden-gnta.webp",
+          firstTitle: "Goderdzi Alpine Botanical Garden",
+          firstDescription:
+            "After exploring the sea and tropical nature, move to the alpine zone of Ajara, toward the Alpine Botanical Garden of Goderdzi.",
+          secondTitle: "Green Lake",
+          secondDescription:
+            "At an altitude of 2058 meters above sea level, 116 km away from Batumi and 6 km from Goderdzi Pass, a beautiful green lake is shimmering in a mixed forest. It is this dense forest and environment that gives the lake its bright green color.",
+          secondImg: "/assets/location/mtsvanetba.webp",
+          thirdImg: "/assets/location/khikhani-fortress-gnta.webp",
+          thirdTitle: "Khikhani Fortress",
+          thirdDescription:
+            "Atop a steep cliff in the Khulo Municipality of Ajara stands the medieval fortress of Khikhani. While much of this historical building has fallen into ruins over the centuries, four towers, a church, the walls, a wine cellar, a well, and a tone oven still remain as a testament to the fortress’ existence.",
+          fourthTitle: "Skhalta Monastery",
+          fourthDescription:
+            "One hundred kilometres from Batumi, in the Khulo Valley, you will find a unique example of medieval architecture and monumental art - Skhalta Monastery. Preserved in its original form and considered to be the oldest standing monument in Ajara, it is a must-see while you’re enjoying the Black Sea coast.",
+          fourthImg: "/assets/location/skhalta-monastery-gnta.webp",
+          fifthImg: "/assets/location/makhuntseti-waterfall-gnta.webp",
+          fifthTitle: "Makhuntseti Waterfall",
+          fifthDescription:
+            "Ajara is most famous for its seaside resorts, but the sea is not the only attraction in this beautiful region. The lush verdant mountains of the region are every bit as enchanting as the Black Sea.",
+          sixthTitle: "Khulo",
+          sixthDescription:
+            "The area of today's Khulo Municipality has been inhabited since the Bronze Age and acquired the name due to its vital role as a trading post. In ancient times, this settlement was called Khula, which meant 'trading house'. Located 85 kilometres from Batumi, its long history is represented by a number of fascinating historic monuments.",
+          sixthImg: "/assets/location/khulo-gnta.webp",
+          seventhImg: "/assets/location/goderdzi-gnta.webp",
+          seventhTitle: "Goderdzi Resort",
+          seventhDescription:
+            "Georgia is a popular destination for snow-lovers from across the world, with the always-improving Goderdzi Resort one of Georgia’s most interesting ski destinations. With its high-quality powder and variety of ski trails, Goderdzi offers everything you need for a ski vacation. However, Goderdzi Resort is not just for skiers! Lovers of alpine hiking, extreme sports, and exploring a winter wonderland will find plenty to do here too.",
+          eighthTitle: "Beshumi",
+          eighthDescription:
+            "Have you ever dreamed of waking up one beautiful morning in a cottage deep within the woods, the smells and sounds of the forest serving as your alarm clock? Have you ever wanted to see the clouds so close at hand that you could reach out and touch them? Have you ever wondered what it might be like to lay on your back and look up at the unspoiled beauty of the stars? All this and more is waiting for you in Beshumi.",
+          eighthImg: "/assets/location/beshumi-gnta.webp",
+        },
+      ],
     });
     server.create("location", {
       id: 11,
@@ -2009,6 +2287,100 @@ createServer({
         "However, Tbilisi is not all about monuments. There are smaller, no less enchanting discoveries to make. For example, in the square outside of Gabriadze’s Marionette Theatre, where the aroma of coffee constantly lingers, you’ll see an amazing puppet presentation called The Circle of Life each day at 12:00 and 19:00. It is sure to delight every traveler.",
       minor_Eighth_Description:
         "Of course, Tbilisi is also a modern, dynamic city. In the newer areas of the city, you will find universities, business centers, malls, entertainment complexes, restaurants, and nightclubs. While very much a city steeped in its rich history, Tbilisi is also a lively, dynamic place in which people gather to eat, drink, dance, and embrace the unique blend of history and 21st-century amenities that exists here.",
+      tour: [
+        {
+          id: 1,
+          title: "Architectural Tour of Rustaveli Avenue",
+          description:
+            "If you are fascinated by art, then you should definitely plan an architectural tour of Rustaveli Avenue, because there you will be able to see Tbilisi Conservatory, Kashveti Church, and the Opera and Ballet Theatre, and you will also visit some exceptional museums and appreciate the narrow streets of Mtatsminda.",
+          img: "/assets/location/rustaveli-drama-theater.webp",
+          firstImg:
+            "/assets/location/georgian-national-museum-national-gallery-of-paintings-gnta.webp",
+          firstTitle: "Georgian National Gallery",
+          firstDescription:
+            "The Georgian National Gallery (also known as Blue Gallery) holds artworks of Niko Pirosmani, Davit Kakabadze, Iakob Nikoladze, Lado Gudiashvili, and 30,000 exhibits of XX century modern classical Georgian paintings and sculptures.",
+          secondTitle: "Rustaveli Drama Theater in Tbilisi",
+          secondDescription:
+            "Have you seen Shakespeare's 'Richard the Third' or Brecht's 'Caucasian Chalk Circle'? These masterpieces by the Georgian director Robert Sturua were staged at the Shota Rustaveli Drama Theater in Tbilisi.",
+          secondImg: "/assets/location/rustaveli-drama-theater-gnta.webp",
+          thirdImg:
+            "/assets/location/moma-zurab-tsereteli-museum-of-modern-arts-gnta.webp",
+          thirdTitle: "Zurab Tsereteli Museum of Modern Art",
+          thirdDescription:
+            "His thirty-metre-tall sculpture, The Tears of Grief, stands on the banks of the Hudson River in the United States, across from the Statue of Liberty. The sculpture, weighing 175 tonnes, was dedicated by the artist to the victims of the terrorist attacks that took place on September 11th, 2001. You can also see the works of this talented sculptor in England, Spain, France, Japan, and Russia. At the Zurab Tsereteli Museum of Modern Art in Tbilisi, you can not only learn more about this artist, but about modern art in Georgia.",
+          fourthTitle: "Tbilisi Conservatory",
+          fourthDescription:
+            "As you’re wandering around Tbilisi, if you turn from Rustaveli Avenue onto the small Mitropan Laghidze Street, you’ll find a building constructed in a neoclassical style. This is the Tbilisi State Conservatory, where countless influential musicians have studied and honed their crafts over the years.",
+          fourthImg: "/assets/location/tbilisi-state-conservatoire-gnta.webp",
+          fifthImg: "/assets/location/kashueti-church-gnta.webp",
+          fifthTitle: "Kashveti Church",
+          fifthDescription:
+            "Kashveti church is humbly standing at Rustaveli Avenue between the National Gallery and the Georgian Museum of Fine Arts. It also has a great artistic value! Behind its white walls, the colourful masterpieces by the famous artist Lado Gudiashvili are awaiting. Come in to discover the mysteries of this church!",
+          sixthTitle: "Georgian Museum of Fine Arts",
+          sixthDescription:
+            "You can tell a great deal about a nation’s character through the art it produces, be it dances, songs, literature, or fine art. To get a better understanding of Georgia’s character, you should pay a visit to the Georgian Museum of Fine Arts.",
+          sixthImg: "/assets/location/museum-of-fine-arts-gnta.webp",
+          seventhImg:
+            "/assets/location/georgian-national-museum-simon-janashia-museum-of-georgia-gnta.webp",
+          seventhTitle: "The National Museum of Georgia",
+          seventhDescription:
+            "If you’re intrigued by Georgia’s long and fascinating history, the Simon Janashia State Museum is a must-see. Possessing one of the largest collections of artifacts in the country, the museum has representations of virtually every era of Georgian and Caucasian history. Its collections contain monuments of both natural and cultural heritage, bringing ancient and modern history to life before your eyes.",
+          eighthImg:
+            "/assets/location/tbilisi-zakaria-paliashvili-state-opera-and-ballet-theatre-gnta.webp",
+          eighthTitle: "Tbilisi Opera House",
+          eighthDescription:
+            "The Tbilisi Opera House is one of the best examples of Moorish architecture in Georgia. Designed by German architect Viktor Gottlieb Schroter, this outstanding cultural space is on Rustaveli Avenue in the country’s capital city.",
+          ninthImg: "/assets/location/tbs.webp",
+          ninthTitle: "Tbilisi",
+          ninthDescription:
+            "Tbilisi is like polyphonic music. Words cannot adequately describe it. You have to experience it for yourself: evaluating its harmonies, savouring its complexity, and soaking in its history as you uncover your own personal relationship with the city.",
+        },
+        {
+          id: 2,
+          title: "A Short Tour through Old Tbilisi",
+          description:
+            "The majority of the sights of Tbilisi are located in Old Tbilisi, so, on this short tour, you will find yourself in the very popular district of Abanotubani, where you will see churches and museums, as well as going to the restaurants, night clubs, and café-bars of Shardeni Street.",
+          img: "/assets/location/old-tbilisi-dzveli-tbilisi-2.webp",
+          firstImg: "/assets/location/abanotubani-gnta.webp",
+          firstTitle: "Abanotubani in Tbilisi",
+          firstDescription:
+            "Tbilisi's historic districts on both banks of the Mtkvari river have survived many wars and raids. One of the oldest among those districts is Abanotubani, mentioned in the legend of the founding of Tbilisi by King Vakhtang Gorgasali (Vakhtang I of Iberia) in the 5th century. The existence of the previous city is confirmed by the 4th-century map created by the Roman geographer Castorius, where Tbilisi is called 'Philado'. Tbilisi, a fortress city, is also mentioned in the 360s chronicle 'Moktsevai Kartlisai' which tells the story of how Georgians converted to Christianity.",
+          secondTitle: "Great Synagogue",
+          secondDescription:
+            "The Jewish diaspora in multicultural Georgia is one of the oldest in the world. According to historical sources, Jews settled in Tbilisi immediately after the city was founded where they built a synagogue. Today, there are two active synagogues in Tbilisi. The larger of the two, Sephardic synagogue is located on Kote Abkhazi Street and was built in 1910.",
+          secondImg: "/assets/location/great-synagogue-gnta.webp",
+          thirdImg: "/assets/location/leghvtakhevi-waterfall-gnta.webp",
+          thirdTitle: "Leghvtakhevi Waterfall",
+          thirdDescription:
+            "Leghvtakhevi Gorge is the birthplace of Tbilisi’s famous sulfur waters, the very same waters that gave Tbilisi its name. Nowadays, it is one of the many popular tourist districts in old Tbilisi. If you walk its narrow lands, you’ll come upon a truly beautiful corner of the city - the Botanical Garden.",
+          fourthTitle: "Meidan Bazaar",
+          fourthDescription:
+            "Meidani Square in Old Tbilisi is a kind of place where the distant past, with all its charm and exoticism, comes to life. This ancient district of Tbilisi has been known as the main bazaar since time immemorial, not only in Georgia, but in all of the Caucasus. Merchants were coming there to trade from all over the East, and there were craftspeople workshops around there as all. “The market area is both a meeting place and a bazaar at the same time. You will not find so many different foreigners in the world as you will there. There are Armenians, Greeks, Jews, Persians, Indians, Turks, Moscovites, and Europeans,” wrote the French jeweler, gem seller, and traveler, Jean Chardin, when he visited Georgia in 1672 - 1673.",
+          fourthImg: "/assets/location/meidan-bazaar-gnta.webp",
+          fifthImg: "/assets/location/tbilisi-botanical-garden-gnta.webp",
+          fifthTitle: "The Botanical Garden",
+          fifthDescription:
+            "If you follow a steep ascent from the sulfur baths in Old Tbilisi and enter the main gates at  Botanikuri Street 1, you’ll begin your journey into a garden that is four centuries old, and has been a botanical garden for the past 180 years.",
+          sixthTitle: "Metekhi Church",
+          sixthDescription:
+            "Proudly standing on the rocky bank of the river Mtkvari, Metekhi church and the adjacent monument of equestrian King Gorgasali look at Old Tbilisi, making up one of the most iconic landmarks in Tbilisi.",
+          sixthImg: "/assets/location/metekhi-church-gnta.webp",
+          seventhImg:
+            "/assets/location/catholic-church-of-the-ascension-of-the-virgin-mary-gnta.webp",
+          seventhTitle:
+            "Tbilisi Catholic Church of the Ascension of the Virgin Mary",
+          seventhDescription:
+            "While the Orthodox religion is predominant in Georgia, the Catholic community in Tbilisi has been active for centuries. It was only at the beginning of the 19th century, however, that the community constructed their own place of worship. This church, the Tbilisi Catholic Church of the Ascension of the Virgin Mary, is now the main place of worship for Tbilisi’s Catholic community.",
+          eighthTitle: "Jumah Mosque",
+          eighthDescription:
+            "In Old Tbilisi, at the foot of Narikala Fortress, near the Botanical Garden, stands the Jumah Mosque.",
+          eighthImg: "/assets/location/jumah-mosque-gnta.webp",
+          ninthImg: "/assets/location/tbs.webp",
+          ninthTitle: "Tbilisi",
+          ninthDescription:
+            "Tbilisi is like polyphonic music. Words cannot adequately describe it. You have to experience it for yourself: evaluating its harmonies, savouring its complexity, and soaking in its history as you uncover your own personal relationship with the city.",
+        },
+      ],
     });
   },
 

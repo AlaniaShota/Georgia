@@ -1,14 +1,6 @@
 import { Button } from "../../../../../Components";
-import { useContext } from "react";
-import { LocationContext } from "../../../../../Providers/ThemeProvider";
 
 export const TourCard = ({ tourData, openModal }) => {
-  const data = useContext(LocationContext);
-
-  if (!Array.isArray(data)) {
-    return <div>Loading...</div>;
-  }
-
   return (
     <>
       <div className="grid grid-cols-2 gap-16 my-20">

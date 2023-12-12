@@ -91,13 +91,22 @@ export const GeorgiaMap = () => {
               <Link to={item.link} key={item.id}>
                 <motion.path
                   key={item.id}
-                  whileHover={{ scale: 1.03 }}
+                  whileHover={{
+                    scale: 1.03,
+                    fill: "#ef3a50",
+                  }}
                   style={{
                     transition: "all 0.9s",
                   }}
                   d={item.d}
                   name={item.name}
-                  className="hover:fill-[#ef3a50] fill-[#ececec] stroke-black stroke-1 cursor-pointer border-none"
+                  initial={{
+                    fill: item.name === "Abkhazia" ? "#ef3a50" : "#ececec",
+                  }}
+                  fill={
+                    popover && popover.itemName === item.name ? "#ef3a50" : null
+                  }
+                  className="hover:fill-[#ef3a50] stroke-black stroke-1 cursor-pointer border-none"
                   onMouseOver={(event) =>
                     handleMouseOve(event, item.name, item.img)
                   }

@@ -28,15 +28,14 @@ import {
   DetailFood,
   TraditionalFoodLibery,
 } from "../Pages/TraditionalFood/Components/index";
-import { LocationProvider } from "../Providers/ThemeProvider";
 
 export const router = createBrowserRouter([
   {
     element: (
-      <LocationProvider>
+      <>
         <Layout />,
         <ScrollToTop />
-      </LocationProvider>
+      </>
     ),
 
     children: [
