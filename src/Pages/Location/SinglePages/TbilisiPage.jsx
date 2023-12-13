@@ -1,7 +1,12 @@
 import { useLocationStore } from "../../../Store/store";
 import React, { useState, useEffect } from "react";
 import { Header } from "../../../Components";
-import { FoodCard, ButtonViewMore, Tour } from "./Components/index";
+import {
+  FoodCard,
+  ButtonViewMore,
+  Tour,
+  PopularPlace,
+} from "./Components/index";
 import {
   Cuisine_Tbilisi_Title,
   Cuisine_Tbilisi_Description,
@@ -98,14 +103,15 @@ export const TbilisiPage = () => {
               </div>
             </div>
             <Tour tourData={item.tour} />
+            <FoodCard
+              cuisineTitle={Cuisine_Tbilisi_Title}
+              cuisineDescription={Cuisine_Tbilisi_Description}
+              filterCuisine={"Tbilisi"}
+            />
+            <PopularPlace placeData={item.popular} />
           </div>
         </React.Fragment>
       ))}
-      <FoodCard
-        cuisineTitle={Cuisine_Tbilisi_Title}
-        cuisineDescription={Cuisine_Tbilisi_Description}
-        filterCuisine={"Tbilisi"}
-      />
     </>
   );
 };

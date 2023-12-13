@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Header } from "../../../Components";
-import { FoodCard, ButtonViewMore, Tour } from "./Components/index";
+import {
+  FoodCard,
+  ButtonViewMore,
+  Tour,
+  PopularPlace,
+} from "./Components/index";
 import {
   Cuisine_Kakheti_Title,
   Cuisine_Kakheti_Description,
@@ -95,14 +100,15 @@ export const KakhetiPage = () => {
               </div>
             </div>
             <Tour tourData={item.tour} />
+            <FoodCard
+              cuisineTitle={Cuisine_Kakheti_Title}
+              cuisineDescription={Cuisine_Kakheti_Description}
+              filterCuisine={"Kakheti"}
+            />
+            <PopularPlace placeData={item.popular} />
           </div>
         </React.Fragment>
       ))}
-      <FoodCard
-        cuisineTitle={Cuisine_Kakheti_Title}
-        cuisineDescription={Cuisine_Kakheti_Description}
-        filterCuisine={"Kakheti"}
-      />
     </>
   );
 };

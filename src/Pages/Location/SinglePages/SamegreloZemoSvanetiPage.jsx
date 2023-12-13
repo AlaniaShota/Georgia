@@ -5,6 +5,7 @@ import {
   ButtonViewMore,
   Tour,
   PopularPlace,
+  Banner,
 } from "./Components/index";
 import {
   Cuisine_Samegrelo_Description,
@@ -155,15 +156,16 @@ export const SamegreloZemoSvanetiPage = () => {
               </div>
             </div>
             <Tour tourData={item.tour} />
+            <FoodCard
+              cuisineTitle={Cuisine_Samegrelo_Title}
+              cuisineDescription={Cuisine_Samegrelo_Description}
+              filterCuisine={"Samegrelo - Zemo Svaneti"}
+            />
+            <Banner bannerData={item.topExperiences} />
             <PopularPlace placeData={item.popular} />
           </div>
         </React.Fragment>
       ))}
-      <FoodCard
-        cuisineTitle={Cuisine_Samegrelo_Title}
-        cuisineDescription={Cuisine_Samegrelo_Description}
-        filterCuisine={"Samegrelo - Zemo Svaneti"}
-      />
     </>
   );
 };

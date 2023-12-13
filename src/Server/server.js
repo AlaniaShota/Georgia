@@ -1215,6 +1215,96 @@ createServer({
             "The small town of Martvili lies in western Georgia, in the region of Samegrelo. As you walk through this picturesque town, your eye will inevitably be drawn to the monastery built on a spot overlooking the town. This is Chkondidi, a monastery raised by the King David Agmashenebeli (the Builder).",
         },
       ],
+      topExperiences: [
+        {
+          id: 1,
+          bgImg: "/assets/location/tower-in-georgia.webp",
+          firstTitle: "Tsalenjikha Ethnographic Museum",
+          firstDescription:
+            "It may be true that many ancient stories are now forgotten, but there are still many interesting acts that have persevered through the years, some of which date back as far as the Stone Age. For those interested in such stories, a visit to the Tsalenjikha Ethnographic Museum in the Samegrelo Region will provide you with the opportunity to learn more about the people who once lived in this region.",
+          firstImg: "/assets/location/tsalenjikha-museum.webp",
+          secondTitle: "Senaki Local Lore Museum - Ancient Georgian Artifacts",
+          secondDescription:
+            "Senaki Museum of Local Lore in Samegrelo Region displays the rich history of this ancient part of Georgia. The area was inhabited long before the birth of Christ. Indeed, one of the most important monuments of the 4th-3rd centuries AD, Nokalakevi settlement, the old capital of Lazika kingdom, was located near Senaki, in the Tekhura River Basin.",
+          secondImg: "/assets/location/senaki-museum-of-local-lore(1).webp",
+          thirdTitle:
+            "Konstantine Gamsakhurdia House Museum - A Landmark of Samegrelo",
+          thirdDescription:
+            "Konstantine Gamsakhurdia, one of the most important authors of the Classicism period in literature, was born in the village of Old Abasha, in Samegrelo region. The village is surrounded by lush greenery and it was in a small wooden house in here that Gamsakhurdia (1893-1975) began his fascinating life. Later, he went to Europe to pursue his studies at the universities of St. Petersburg, Königsberg, Leipzig, Munich, and Berlin. In 1919, at the University of Berlin, he obtained his PhD.",
+          thirdImg:
+            "/assets/location/konstantine-gamsakhurdia-house-museum-gnta.webp",
+          fourthTitle: "Martvili Museum of Local Lore",
+          fourthDescription:
+            "The rich archaeological finds that have happened in Georgia over the years allow you to travel through the country’s ancient history and learn about the existence of people from the Early Stone and Bronze Ages. In this regard, the Museum of Local Lore of Martvili in Samegrelo Region makes for a scintillating visit.",
+          fourthImg: "/assets/location/martvili-museum-of-local-lore.webp",
+          fifthTitle: "Chkaduashi Dadiani Residence",
+          fifthDescription:
+            "The Dadiani hunting residence, built in 1735, is located 17 kilometers from Zugdidi, in the beautiful village of Chkaduashi. Remarkably, the guide at the Chkaduashi Dadiani Residence is a direct descendant of the Ruler of Samegrelo and the Emperor of France, Napoleon III.",
+          fifthImg: "/assets/location/tchkaduashi-dadiani-residence.webp",
+          sixthTitle: "Poti Museum of Colchian Culture",
+          sixthDescription:
+            "In Poti Museum of Colchian Culture, there are more than 20,000 exhibits, convincing of Georgia´s western-influenced culture.",
+          sixthImg: "/assets/location/poti-colchian-culture-museum.webp",
+        },
+        {
+          id: 2,
+          bgImg: "/assets/location/arts-and-culture-in-georgia.webp",
+          firstTitle: "Koruldi Lakes",
+          firstDescription:
+            "An alpine zone, 2,850 meters above sea level, including the highest peaks of Georgia - Shkhara, Tetnuldi, Ushba, and Laila - form an arch around the plateau on which Koruldi Lakes are located.",
+          firstImg: "/assets/location/mestia-koruldi-lakes-1.webp",
+          secondTitle: "Svaneti’s Glaciers - Chalaati",
+          secondDescription:
+            "No visit to Georgia would be complete without a visit to beautiful Svaneti, and no visit to Svaneti would be complete without seeing Chalaati Glacier, the only glacier in the world that passes into a forest zone.",
+          secondImg: "/assets/location/chalaadi-glacier-gnta.webp",
+          thirdTitle: "Ushba",
+          thirdDescription:
+            "The two-headed peak, Ushba, is located southeast of Elbrus Peak in the Svaneti Caucasus Mountains of the Mestia Municipality. The height of the southern peak of Ushbi is 4700 meters, and the northern one reaches 4697 meters.",
+          thirdImg: "/assets/location/Ushba.jpeg",
+          fourthTitle: "Shdugra Waterfall",
+          fourthDescription:
+            "Shudgra Waterfall is the largest and the most abundant waterfall in Georgia. It is another enchanting element of picture-perfect Svaneti and a worthwhile inclusion in any visit to the region. This remarkable natural site is also known as Ushba Waterfall.",
+          fourthImg: "/assets/location/ShdugraWaterfall.jpg",
+          fifthTitle: "Balda Canyon Natural Monument",
+          fifthDescription:
+            "Georgia is a country rich in varied landscapes, unspoiled wilderness, and centuries-old cultural monuments. The best example of this can be found in Samegrelo, where you’ll see mossy valleys, turquoise waters, and boundless wilderness. Within Balda Canyon, where you’ll also be able to see the historic Balda Monastery, you’ll find all of the above in abundance.",
+          fifthImg: "/assets/location/balda-canyon-natural-monument-gnta.webp",
+          sixthTitle: "Shkhara Peak",
+          sixthDescription:
+            "Shkhara is the highest peak in the main watershed range of the Caucasus Mountains. At a height of 5,203 metres above sea level, the peak is composed of granite and crystalline shale, and stands on the Khalde (Bezengi) Wall of the central Caucasus Mountains.",
+          sixthImg: "/assets/location/shkhara-peak-gnta.webp",
+        },
+
+        {
+          id: 3,
+          bgImg: "/assets/location/nature-of-georgia.webp",
+          firstTitle: "Tower of Love in Svaneti",
+          firstDescription:
+            "As you make your way from Mestia to Ushguli, one of the highest settlements in Europe, look out for the “Tower of Love”, which stands on a huge boulder in the river Enguri.",
+          firstImg: "/assets/location/svan-tower-of-love-gnta.webp",
+          secondTitle: "Margiani House Museum",
+          secondDescription:
+            "From the roaring rivers in the valleys to mountains reaching the sky, and proudly standing Svan towers, Svaneti has many incredible sites to explore. The Svans used the towers as part of their residential homes and shelters during the enemy invasion.",
+          secondImg:
+            "/assets/location/margiani-defence-tower-and-museum-gnta.webp",
+          thirdTitle: "Rukhi Fortress",
+          thirdDescription:
+            "An important fortification built by Levan II Dadiani in 1647, Rukhi Fortress is today a popular tourist destination, where picnics are held and even concerts are hosted. Located in the village of Rukhi in Samegrelo’s Zugdidi Municipality, it is a fascinating cultural and historical monument.",
+          thirdImg: "/assets/location/rukhi-fortress-gnta-m.webp",
+          fourthTitle: "Enguri Hydropower Dam",
+          fourthDescription:
+            "Enguri Hydropower Dam was built-in 60-70 years of the 20th century and represents one of the most fascinating examples of civil engineering achievements in Georgia.",
+          fourthImg: "/assets/location/Enguri Hydropower Dam.jpeg",
+          fifthTitle: "Nogha Fortress",
+          fifthDescription:
+            "There are four villages in Georgia with the name Nogha. Three of them are in Imereti, while the last one is in Samegrelo. It is there, at the highest point in the village, that the 16th-17th century Nogha Fortress, was built. The fortress was first owned by the Jaianis, then later by the Dadianis.",
+          fifthImg: "/assets/location/nogha-fortress-gnta.webp",
+          sixthTitle: "Omune Jikha",
+          sixthDescription:
+            "Samegrelo, a wonderful corner of western Georgia, is an equally attractive place for adventure seekers and lovers of quiet relaxation. Its blue lakes, mystical canyons, and historical monuments from different eras make this a very popular spot for tourists.",
+          sixthImg: "/assets/location/Omune Jikha.jpg",
+        },
+      ],
       popular: [
         {
           firstImg: "/assets/location/mestia.jpg",
@@ -1808,7 +1898,6 @@ createServer({
         },
       ],
     });
-    //აქედან უნდა გავაგრძელო
     server.create("location", {
       id: 7,
       title: "Kakheti",
@@ -1923,6 +2012,17 @@ createServer({
           seventhTitle: "Bodbe",
           seventhDescription:
             "Linked to Saint Nino, the villages of Upper and Lower Bodbe are perhaps best known for the beautiful Bodbe Monastery. A short drive from Sighnaghi, these quaint villages and their iconic monastery are a fantastic day trip from Tbilisi or Sighnaghi.",
+        },
+      ],
+      popular: [
+        {
+          firstImg: "/assets/location/telavi.jpg",
+          secondImg: "/assets/location/Lagodekhi.jpg",
+          thirdImg: "/assets/location/Kvareli.jpg",
+          fourthImg: "/assets/location/Sighnaghi.jpg",
+          title: "Popular Destinations in Kakheti",
+          description:
+            "Here you will see spectacular examples of Georgian church architecture, such as the cathedrals of Alaverdi, Ikalto, Shuamta, Bodbe, and Gremi. Feel the atmosphere of the towns of Telavi, Gurjaani, Kvareli, and Sighnaghi. Explore the cultural sights, dive into cellars and vineyards, have fun and let Kakheti open up its hospitable soul to you!",
         },
       ],
     });
@@ -2040,6 +2140,17 @@ createServer({
             "The small town of Martvili lies in western Georgia, in the region of Samegrelo. As you walk through this picturesque town, your eye will inevitably be drawn to the monastery built on a spot overlooking the town. This is Chkondidi, a monastery raised by the King David Agmashenebeli (the Builder).",
         },
       ],
+      popular: [
+        {
+          firstImg: "/assets/location/kutaisi-gnta.webp",
+          secondImg: "/assets/location/Tskaltubo.jpg",
+          thirdImg: "/assets/location/zestaponi-gnta-m.webp",
+          fourthImg: "/assets/location/Sachkhere.jpg",
+          title: "Popular Destinations in Imereti",
+          description:
+            "The green heart of Georgia, Imereti is a region of rolling mountains, vineyards climbing steep hills, waterfalls and caverns, canyons and rivers. It’s the homeland of many Georgian poets and writers, and of course, it’s a region of limitless hospitality and unbelievable food. Get closer to mother nature by visiting Okatse Canyon and Kinchkha Waterfall, Sataplia and Prometheus Cave, Khani and Mukhara Waterfalls, hike to Tskhrajvari Mountain and explore nature in Sachkhere and Marelisi. Get to know the rich history and urban legends of Kutaisi, feel the industrial vibe of Zestafoni and Chiatura, and soak in the healing waters of Sairme and Tskaltubo.",
+        },
+      ],
     });
     server.create("location", {
       id: 9,
@@ -2128,6 +2239,17 @@ createServer({
           fourthDescription:
             "On the Georgian coast of the Black Sea, 45 km north of Batumi, there is a small seaside resort called Shekvetili, known for its relatively peaceful atmosphere which makes it a popular spot for family vacation.",
           fourthImg: "/assets/location/shekvetili-gnta.webp",
+        },
+      ],
+      popular: [
+        {
+          firstImg: "/assets/location/bakhmaro-gnta.webp",
+          secondImg: "/assets/location/lanchkhuti-gnta.webp",
+          thirdImg: "/assets/location/ozurgeti-gnta.webp",
+          fourthImg: "/assets/location/Chokhatauri.jpg",
+          title: "Popular Destinations in Guria",
+          description:
+            "Guria Region boasts the most beautiful sunsets! Watch them from the mountain resorts Bakhmaro and Gomismta or the seaside resorts - Ureki, Grigoleti, or Shekvetili. Taste a variety of Gurian tea, wine, and famous Nabeghlavi mineral water and get to know the humorous Gurian people in Lanchkhuti, Ozurgeti, and Chokhatauri.",
         },
       ],
     });
@@ -2250,6 +2372,17 @@ createServer({
           eighthDescription:
             "Have you ever dreamed of waking up one beautiful morning in a cottage deep within the woods, the smells and sounds of the forest serving as your alarm clock? Have you ever wanted to see the clouds so close at hand that you could reach out and touch them? Have you ever wondered what it might be like to lay on your back and look up at the unspoiled beauty of the stars? All this and more is waiting for you in Beshumi.",
           eighthImg: "/assets/location/beshumi-gnta.webp",
+        },
+      ],
+      popular: [
+        {
+          firstImg: "/assets/location/Kobuleti.jpg",
+          secondImg: "/assets/location/Sarpi.jpg",
+          thirdImg: "/assets/location/Gonio.jpg",
+          fourthImg: "/assets/location/Kvariati.jpg",
+          title: "Popular Destinations in Adjara",
+          description:
+            "Ajara is a subtropical region of fantastic beauty. The four protected areas of the region are similar in their pristine wilderness and different in the variety of animal and plant species. The mountains of Ajara are hiding steep vineyards, babbling waterfalls and lakes, old fortresses and cute wooden houses standing on high “legs”. Visit the mountains of Beshumi, Goderdzi and Gomarduli to find calmness and peace, and have fun at the seaside resorts of Batumi, Kvariati, Gonio, Sarpi and Mtsvane Kontskhi.",
         },
       ],
     });
@@ -2379,6 +2512,17 @@ createServer({
           ninthTitle: "Tbilisi",
           ninthDescription:
             "Tbilisi is like polyphonic music. Words cannot adequately describe it. You have to experience it for yourself: evaluating its harmonies, savouring its complexity, and soaking in its history as you uncover your own personal relationship with the city.",
+        },
+      ],
+      popular: [
+        {
+          firstImg: "/assets/location/Parks&Gardens.jpg",
+          secondImg: "/assets/location/FineDiningDrinking&Nightlife.jpg",
+          thirdImg: "/assets/location/Museums.jpg",
+          fourthImg: "/assets/location/Spas&Baths.jpg",
+          title: "Experience Top Activities in Tbilisi",
+          description:
+            "Discover why Tbilisi has captivated visitors for centuries. Feel its unique rhythm and lively character, explore the city, and fall under its charm. Whether you're looking for adventure or relaxation, the city has something to offer every traveler. Immerse yourself in the culture of Tbilisi and create memories that will last a lifetime.",
         },
       ],
     });

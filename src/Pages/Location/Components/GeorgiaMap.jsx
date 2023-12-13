@@ -24,7 +24,7 @@ export const GeorgiaMap = () => {
         opacity: 1,
         y: 0,
         translateX: -70,
-        transition: { duration: 2, delay: 0.5 },
+        transition: { duration: 1, delay: 0.2 },
       });
     }
   }, [inView, mapAnimation]);

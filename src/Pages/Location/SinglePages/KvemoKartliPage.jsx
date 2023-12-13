@@ -100,15 +100,15 @@ export const KvemoKartliPage = () => {
               </div>
             </div>
             <Tour tourData={item.tour} />
+            <FoodCard
+              cuisineTitle={Cuisine_Kvemo_Kartli_Title}
+              cuisineDescription={Cuisine_Kvemo_Kartli_Description}
+              filterCuisine={"Kvemo Kartli"}
+            />
             <PopularPlace placeData={item.popular} />
           </div>
         </React.Fragment>
       ))}
-      <FoodCard
-        cuisineTitle={Cuisine_Kvemo_Kartli_Title}
-        cuisineDescription={Cuisine_Kvemo_Kartli_Description}
-        filterCuisine={"Kvemo Kartli"}
-      />
     </>
   );
 };

@@ -14,7 +14,7 @@ export const Tour = ({ tourData }) => {
   };
 
   return (
-    <div>
+    <>
       <TourCard tourData={tourData} openModal={openModal} />
       <TourModal
         isOpen={!!openModalId}
@@ -22,6 +22,6 @@ export const Tour = ({ tourData }) => {
         tourData={tourData}
         openModalId={openModalId}
       />
-    </div>
+    </>
   );
 };

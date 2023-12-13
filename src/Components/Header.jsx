@@ -106,7 +106,7 @@ export const Header = ({ titlePage, titleText, descriptionText, img }) => {
             animate={inView ? "visible" : "hidden"}
             variants={titleVariants}
             transition={{ duration: 1 }}
-            className="absolute  ml-40 bg-transparent opacity-100"
+            className="absolute  ml-40 bg-transparent opacity-100 "
           >
             <motion.h1
               className={`${titleSizeClass}  text-4xl text-white font-bold `}
@@ -117,7 +117,7 @@ export const Header = ({ titlePage, titleText, descriptionText, img }) => {
             <motion.p
               initial={{ opacity: 0 }}
               animate={descriptionAnimation}
-              className={` ${descriptionSizeClass} text-lg pt-4 text-whiteSecondText  `}
+              className={` ${descriptionSizeClass} text-lg mt-4 text-white `}
             >
               {descriptionText ? descriptionText : null}
             </motion.p>

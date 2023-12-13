@@ -26,7 +26,7 @@ export const FoodCard = ({
       cardAnimation.start({
         opacity: 1,
         y: 0,
-        transition: { duration: 2, delay: 0.5 },
+        transition: { duration: 1, delay: 0.2 },
       });
     }
   }, [inView, cardAnimation]);
@@ -42,11 +42,11 @@ export const FoodCard = ({
       variants={cardVariants}
       initial={{ opacity: 0, y: 70 }}
       animate={cardAnimation}
-      className="grid grid-cols-3 my-20 lg:container sm:mx-8 lg:mx-0 cursor-default gap-5 h-[480px] "
+      className="grid grid-cols-3 my-20 gap-5 h-[480px] "
     >
-      <motion.div className="flex flex-col justify-around items-start cursor-default p-4   bg-white">
+      <motion.div className="flex flex-col justify-around items-start cursor-default  bg-white">
         <motion.h1 className="text-2xl font-bold ">{cuisineTitle}</motion.h1>
-        <motion.p className="text-sm text-BlackSecondColor pr-8">
+        <motion.p className=" text-BlackSecondColor pr-8">
           {cuisineDescription}
         </motion.p>
         <Link to="/library">
@@ -59,17 +59,17 @@ export const FoodCard = ({
         .filter((item) => item.cuisine === filterCuisine)
         .slice(0, 2)
         .map((item) => (
-          <div key={item.id} className="flex drop-shadow-lg rounded-md ">
+          <div key={item.id} className="flex">
             <Link to={`/library/${item.id}`}>
               <motion.img
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.9 }}
                 style={{
                   transition: "all 0.9s",
                 }}
                 src={item.img}
                 alt={item.name}
-                className="h-full object-cover rounded-md "
+                className="h-full object-cover drop-shadow-lg rounded-md "
               />
             </Link>
           </div>

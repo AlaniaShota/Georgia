@@ -136,15 +136,15 @@ export const SamtskheJavakhetiPage = () => {
               </div>
             </div>
             <Tour tourData={item.tour} />
+            <FoodCard
+              cuisineTitle={Cuisine_Samtskhe_Javakheti_Title}
+              cuisineDescription={Cuisine_Samtskhe_Javakheti_Description}
+              filterCuisine={"Samtskhe-Javakheti"}
+            />
             <PopularPlace placeData={item.popular} />
           </div>
         </React.Fragment>
       ))}
-      <FoodCard
-        cuisineTitle={Cuisine_Samtskhe_Javakheti_Title}
-        cuisineDescription={Cuisine_Samtskhe_Javakheti_Description}
-        filterCuisine={"Samtskhe-Javakheti"}
-      />
     </>
   );
 };

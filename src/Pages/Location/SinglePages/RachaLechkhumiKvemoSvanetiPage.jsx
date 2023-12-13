@@ -133,15 +133,15 @@ export const RachaLechkhumiKvemoSvanetiPage = () => {
               </div>
             </div>
             <Tour tourData={item.tour} />
+            <FoodCard
+              cuisineTitle={Cuisine_Racha_Lechkhumi_Title}
+              cuisineDescription={Cuisine_Racha_Lechkhumi_Description}
+              filterCuisine={"Racha Lechkhumi"}
+            />
             <PopularPlace placeData={item.popular} />
           </div>
         </React.Fragment>
       ))}
-      <FoodCard
-        cuisineTitle={Cuisine_Racha_Lechkhumi_Title}
-        cuisineDescription={Cuisine_Racha_Lechkhumi_Description}
-        filterCuisine={"Racha Lechkhumi"}
-      />
     </>
   );
 };

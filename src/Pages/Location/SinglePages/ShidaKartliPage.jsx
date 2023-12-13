@@ -112,15 +112,15 @@ export const ShidaKartliPage = () => {
               </div>
             </div>
             <Tour tourData={item.tour} />
+            <FoodCard
+              cuisineTitle={Cuisine_Shida_Kartli_Title}
+              cuisineDescription={Cuisine_Shida_Kartli_Description}
+              filterCuisine={"Shida Kartli"}
+            />
             <PopularPlace placeData={item.popular} />
           </div>
         </React.Fragment>
       ))}
-      <FoodCard
-        cuisineTitle={Cuisine_Shida_Kartli_Title}
-        cuisineDescription={Cuisine_Shida_Kartli_Description}
-        filterCuisine={"Shida Kartli"}
-      />
     </>
   );
 };

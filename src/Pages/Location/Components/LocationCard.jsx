@@ -21,7 +21,7 @@ export const LocationCard = () => {
       cardAnimation.start({
         opacity: 1,
         y: 0,
-        transition: { duration: 2, delay: 0.5 },
+        transition: { duration: 1, delay: 0.2 },
       });
     }
   }, [inView, cardAnimation]);
