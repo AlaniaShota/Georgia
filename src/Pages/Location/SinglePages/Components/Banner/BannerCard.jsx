@@ -44,6 +44,16 @@ export const BannerCard = ({ bannerData, openModal }) => {
             animate={cardAnimation}
             key={item.id}
             className="relative  cursor-pointer "
+            onClick={() =>
+              openModal(
+                item.id,
+                item.monument
+                  ? "monument"
+                  : item.culture
+                    ? "culture"
+                    : "nature",
+              )
+            }
             onMouseEnter={() => handleMouseEnter(item.id)}
             onMouseLeave={handleMouseLeave}
           >

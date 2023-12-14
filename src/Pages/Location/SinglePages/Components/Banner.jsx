@@ -3,24 +3,28 @@ import { BannerCard } from "./Banner/BannerCard";
 import { BannerModal } from "./Banner/BannerModal";
 
 export const Banner = ({ bannerData }) => {
-  const [openModalId, setOpenModalId] = useState(null);
+  const [openModalInfo, setOpenModalInfo] = useState(null);
 
-  const openModal = (id) => {
-    setOpenModalId(id);
+  const openModal = (id, category) => {
+    setOpenModalInfo({ id, category });
   };
 
   const closeModal = () => {
-    setOpenModalId(null);
+    setOpenModalInfo(null);
   };
+
   return (
     <div className="">
       <BannerCard bannerData={bannerData} openModal={openModal} />
-      <BannerModal
-        bannerData={bannerData}
-        isOpen={!!openModalId}
-        closeModal={closeModal}
-        openModalId={openModalId}
-      />
+      {openModalInfo && (
+        <BannerModal
+          bannerData={bannerData}
+          isOpen={true}
+          closeModal={closeModal}
+          openModalId={openModalInfo.id}
+          modalCategory={openModalInfo.category}
+        />
+      )}
     </div>
   );
 };
