@@ -5,6 +5,7 @@ import {
   ButtonViewMore,
   Tour,
   PopularPlace,
+  Banner,
 } from "./Components/index";
 import { Cuisine_Guria_Description, Cuisine_Guria_Title } from "../constant";
 import { useLocationStore } from "../../../Store/store";
@@ -123,6 +124,7 @@ export const GuriaPage = () => {
               cuisineDescription={Cuisine_Guria_Description}
               filterCuisine={"Guria"}
             />
+            <Banner bannerData={item.topExperiences} />
             <PopularPlace placeData={item.popular} />
           </div>
         </React.Fragment>

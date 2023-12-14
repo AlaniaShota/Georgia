@@ -5,6 +5,7 @@ import {
   ButtonViewMore,
   Tour,
   PopularPlace,
+  Banner,
 } from "./Components/index";
 import { Cuisine_Ajara_Description, Cuisine_Ajara_Title } from "../constant";
 import { useLocationStore } from "../../../Store/store";
@@ -115,6 +116,7 @@ export const AjaraPage = () => {
               cuisineDescription={Cuisine_Ajara_Description}
               filterCuisine={"Ajara"}
             />
+            <Banner bannerData={item.topExperiences} />
             <PopularPlace placeData={item.popular} />
           </div>
         </React.Fragment>

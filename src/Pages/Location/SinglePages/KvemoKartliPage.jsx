@@ -5,6 +5,7 @@ import {
   ButtonViewMore,
   Tour,
   PopularPlace,
+  Banner,
 } from "./Components/index";
 import {
   Cuisine_Kvemo_Kartli_Title,
@@ -105,6 +106,7 @@ export const KvemoKartliPage = () => {
               cuisineDescription={Cuisine_Kvemo_Kartli_Description}
               filterCuisine={"Kvemo Kartli"}
             />
+            <Banner bannerData={item.topExperiences} />
             <PopularPlace placeData={item.popular} />
           </div>
         </React.Fragment>

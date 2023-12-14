@@ -5,6 +5,7 @@ import {
   ButtonViewMore,
   Tour,
   PopularPlace,
+  Banner,
 } from "./Components/index";
 import {
   Cuisine_Shida_Kartli_Description,
@@ -117,6 +118,7 @@ export const ShidaKartliPage = () => {
               cuisineDescription={Cuisine_Shida_Kartli_Description}
               filterCuisine={"Shida Kartli"}
             />
+            <Banner bannerData={item.topExperiences} />
             <PopularPlace placeData={item.popular} />
           </div>
         </React.Fragment>

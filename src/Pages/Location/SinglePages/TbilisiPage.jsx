@@ -6,6 +6,7 @@ import {
   ButtonViewMore,
   Tour,
   PopularPlace,
+  Banner,
 } from "./Components/index";
 import {
   Cuisine_Tbilisi_Title,
@@ -108,6 +109,7 @@ export const TbilisiPage = () => {
               cuisineDescription={Cuisine_Tbilisi_Description}
               filterCuisine={"Tbilisi"}
             />
+            <Banner bannerData={item.topExperiences} />
             <PopularPlace placeData={item.popular} />
           </div>
         </React.Fragment>

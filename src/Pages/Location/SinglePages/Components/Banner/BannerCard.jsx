@@ -1,8 +1,9 @@
 import { useAnimation, motion } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
 export const BannerCard = ({ bannerData, openModal }) => {
+  const [hoveredIndex, setHoveredIndex] = useState(null);
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.5,
@@ -24,6 +25,15 @@ export const BannerCard = ({ bannerData, openModal }) => {
     hidden: { opacity: 0, x: 0 },
     visible: { opacity: 1, x: 0 },
   };
+
+  const handleMouseEnter = (id) => {
+    setHoveredIndex(id);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredIndex(null);
+  };
+
   return (
     <>
       <div ref={ref} className="grid grid-cols-3 gap-16 my-20">
@@ -33,16 +43,35 @@ export const BannerCard = ({ bannerData, openModal }) => {
             initial={{ opacity: 0, y: 70 }}
             animate={cardAnimation}
             key={item.id}
-            className="cursor-pointer"
+            className="relative  cursor-pointer "
+            onMouseEnter={() => handleMouseEnter(item.id)}
+            onMouseLeave={handleMouseLeave}
           >
             <motion.img
-              whileHover={{ scale: 1.02 }}
-              transition={{ type: "spring", velocity: 0.2 }}
+              // whileHover={{ scale: 1.02 }}/
+              // transition={{ type: "spring", velocity: 0.2 }}/
               src={item.bgImg}
               alt="Georgia"
-              onClick={() => openModal(item.id)}
-              className="object-cover drop-shadow-lg rounded-lg h-[480px]"
+              className={`object-cover drop-shadow-lg rounded-lg h-[480px] `}
             />
+            {hoveredIndex === item.id && (
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3 }}
+                className="absolute inset-0 flex items-center justify-center backdrop-blur rounded-lg "
+                onClick={() => openModal(item.id)}
+              >
+                <motion.h1
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.9 }}
+                  className="text-center text-6xl font-light "
+                >
+                  {item.title}
+                </motion.h1>
+              </motion.div>
+            )}
           </motion.div>
         ))}
       </div>
