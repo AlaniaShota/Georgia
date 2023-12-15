@@ -71,7 +71,7 @@ export const BannerModal = ({
         onClick={(e) => e.stopPropagation()}
       >
         <span
-          className="text-3xl absolute top-13 left-[1430px] border border-black hover:border-white bg-white hover:bg-black hover:text-white transition ease-linear px-2 mt-1 rounded-full  cursor-pointer"
+          className="text-3xl z-50 absolute top-13 left-[1430px] border border-black hover:border-white bg-white hover:bg-black hover:text-white transition ease-linear px-2 mt-1 rounded-full  cursor-pointer"
           onClick={handleClose}
         >
           &times;

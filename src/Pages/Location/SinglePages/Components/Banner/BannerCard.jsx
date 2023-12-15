@@ -58,8 +58,6 @@ export const BannerCard = ({ bannerData, openModal }) => {
             onMouseLeave={handleMouseLeave}
           >
             <motion.img
-              // whileHover={{ scale: 1.02 }}/
-              // transition={{ type: "spring", velocity: 0.2 }}/
               src={item.bgImg}
               alt="Georgia"
               className={`object-cover drop-shadow-lg rounded-lg h-[480px] `}

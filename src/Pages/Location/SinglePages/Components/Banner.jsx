@@ -14,7 +14,7 @@ export const Banner = ({ bannerData }) => {
   };
 
   return (
-    <div className="">
+    <>
       <BannerCard bannerData={bannerData} openModal={openModal} />
       {openModalInfo && (
         <BannerModal
@@ -25,6 +25,6 @@ export const Banner = ({ bannerData }) => {
           modalCategory={openModalInfo.category}
         />
       )}
-    </div>
+    </>
   );
 };

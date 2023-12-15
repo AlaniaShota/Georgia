@@ -1,5 +1,9 @@
 import { Header } from "../../Components";
-import { GeorgiaMap, LocationCard } from "../Location/Components/index";
+import {
+  GeorgiaMap,
+  LocationCard,
+  SeasonDisplay,
+} from "../Location/Components/index";
 import { Location_Description, Location_Title } from "./constant";
 import locationImg from "../../assets/location/Macon-beauty-spots-in-Georgia.jpg";
 
@@ -13,7 +17,8 @@ export const Location = () => {
         img={locationImg}
       />
 
-      <div className="lg:container sm:mx-8 lg:mx-0 ">
+      <div className="lg:container sm:mx-8 lg:mx-0 cursor-default">
+        <SeasonDisplay />
         <LocationCard />
         <GeorgiaMap />
       </div>

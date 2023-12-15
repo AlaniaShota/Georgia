@@ -7,6 +7,7 @@ createServer({
     guides: Model,
     maps: Model,
     locations: Model,
+    seasons: Model,
   },
 
   seeds(server) {
@@ -1078,6 +1079,168 @@ createServer({
       link: "shida-kartli",
       d: "M669.4 371.3l-2.4 5.2-10.4 0.3-3.4-1.4-2.4-2.9-2.7-1.3-9 4.3-7.2 1.3-7-1.7-4.7 0.8-4.6 1.5-34.4-3.4-6.3-7.6-10 0.1-5.6 0.9-5.1-3-4.8-1.8-2.2-5.3-4.6-0.8-5.1-4.4-1.5-2.3-2-1.7-0.8-3.2-1.4-2.8-5.2-2.5-9.7-2.3-4.1 0.2 1-7.7 5.4-4.8 2.3-7.2 0.6-8.5 4.1-4.1 4.8-3.7 2.8-5.2 2-5.8 4-3.8 0.9-5.3-0.9-6.4 1.2-5.9 10-7.2 11.4-3.1 0.2-6.6 1.7-6.5-3.3-4.1-4.8 0.7-4.1 2.3-4.3 1-5.8-0.9-5.2-3.2 12.1-9.8 20.7-1.7 2.8-1.3 3.3-5.9 7.9-5.7 0.9-10.3 1.8 1.5 2.9 1.4 2.7-0.5 2.2-1.9 3.7-5.1 2-2.2 6.5-3.1 14.3-0.7 5.2-1.5 2.1 6 3.1 4.2 7 1.9 5 8.9 2.6 2.3 2.3 3.3-4.8 6-2.3 7.2 1.7 1 1 2.1 0.4 3.2 0.6 3.1 2 2 2.1 2.8 0.3 6-0.5 6.4 2.5 5.3 1.2 6.3-2.6 3.5-3.1 2.4-2.3 5.1-3.7 2.9-2.3 9.8-0.3 10.3-1.3 4 0.6 3.3 4.1 2.3 0.7 5.1 4.4-4 4.3-3.3 5.1 0.2 10.6 2.4 5.2 2.9 1.8 6.2 1.2 7.2 4.9 5.8 4 6.3-2 5.7-5.5 0.2-4.1 4 0.5 7.7-2.9 3.4 0 5.2z",
       img: "/assets/Guide/Shida Kartli.jpg",
+    });
+    server.create("season", {
+      spring: [
+        {
+          id: 1,
+          title: "Blooming Beauty: Springtime Explorations in Georgia",
+          description:
+            " As nature awakens, Georgia welcomes spring with vibrant colors. Explore Tbilisi`s historic charm, Mtskheta`s ancient churches, Kakheti`s wine country, and Batumi`s coastal allure.",
+          firstPlace: [
+            {
+              id: 1,
+              title: "Tbilisi",
+              img: "/assets/location/tbilisi-capital-of-georgia-country.webp",
+              link: "tbilisi",
+            },
+          ],
+          secondPlace: [
+            {
+              id: 2,
+              title: "Mtskheta",
+              img: "/assets/location/mtskheta-svetitskhoveli.webp",
+              link: "kvemo-kartli",
+            },
+          ],
+          thirdPlace: [
+            {
+              id: 3,
+              title: "Kakheti",
+              img: "/assets/location/kakheti-gnta.webp",
+              link: "kakheti",
+            },
+          ],
+          fourthPlace: [
+            {
+              id: 4,
+              title: "Batumi",
+              img: "/assets/location/batumi-gnta (1).webp",
+              link: "ajara",
+            },
+          ],
+        },
+      ],
+      summer: [
+        {
+          id: 2,
+          title: "Summer Serenity: Embrace Georgia's Season of Sunshine",
+          description:
+            " Enjoy Georgia's warm summer exploring Svaneti's majestic mountains, adventure in Gudauri, delve into Uplistsikhe's ancient ruins, and experience Borjomi's natural wonders.",
+          firstPlace: [
+            {
+              id: 1,
+              title: "Svaneti Region",
+              img: "/assets/location/Svaneti-towers.jpg",
+              link: "samegrelo-zemo-svaneti",
+            },
+          ],
+          secondPlace: [
+            {
+              id: 2,
+              title: "Gudauri",
+              img: "/assets/location/gudauri-gnta (1).webp",
+              link: "mtskheta-mtianeti",
+            },
+          ],
+          thirdPlace: [
+            {
+              id: 3,
+              title: "Uplistsikhe",
+              img: "/assets/location/uplistsikhe-cave-town-gnta-m.webp",
+              link: "shida-kartli",
+            },
+          ],
+          fourthPlace: [
+            {
+              id: 4,
+              title: "Borjomi",
+              img: "/assets/location/mineral-water-park-borjomi-central-park-resort-1.webp",
+              link: "samtskhe-javakheti",
+            },
+          ],
+        },
+      ],
+      autumn: [
+        {
+          id: 3,
+          title: "Autumn Enchantment: Georgia's Picture-Perfect Season",
+          description:
+            "Georgia's autumn captivates with Vardzia's cave monastery, Kutaisi's historic landmarks, Bakuriani's mountain retreat, and Ananuri's medieval fortress by the river.",
+          firstPlace: [
+            {
+              id: 1,
+              title: "Vardzia",
+              img: "/assets/location/vardzia-gnta (1).webp",
+              link: "samtskhe-javakheti",
+            },
+          ],
+          secondPlace: [
+            {
+              id: 2,
+              title: "Kutaisi",
+              img: "/assets/location/kutaisi-gnta (1).webp",
+              link: "imereti",
+            },
+          ],
+          thirdPlace: [
+            {
+              id: 3,
+              title: "Bakuriani",
+              img: "/assets/location/bakuriani.webp",
+              link: "samtskhe-javakheti",
+            },
+          ],
+          fourthPlace: [
+            {
+              id: 4,
+              title: "Ananuri",
+              img: "/assets/location/ananuri-fortified-castle-ensamble-gnta (1).webp",
+              link: "samtskhe-javakheti",
+            },
+          ],
+        },
+      ],
+      winter: [
+        {
+          id: 4,
+          title: "Winter Magic: Georgia's Snowy Delights",
+          description:
+            "Welcome to Georgia – a country of breathtaking landscapes and incredible experiences. Travel from the Caucasus Mountains to the Black Sea, take in the soaring peaks, broad valleys, and majestic forests. Whether you're looking for an extreme adventure or a relaxing getaway, Georgia has something for everyone. Plan your next trip today!",
+          firstPlace: [
+            {
+              id: 1,
+              title: "Bakuriani",
+              img: "/assets/location/bakuriani.webp",
+              link: "samtskhe-javakheti",
+            },
+          ],
+          secondPlace: [
+            {
+              id: 2,
+              title: "Gudauri",
+              img: "/assets/location/gudauri-gnta (1).webp",
+              link: "mtskheta-mtianeti",
+            },
+          ],
+          thirdPlace: [
+            {
+              id: 3,
+              title: "Tbilisi",
+              img: "/assets/location/tbilisi-capital-of-georgia-country.webp",
+              link: "tbilisi",
+            },
+          ],
+          fourthPlace: [
+            {
+              id: 4,
+              title: "Borjomi-Bakuriani Railway",
+              img: "/assets/location/Borjomi-Bakuriani Railway.jpg",
+              link: "samtskhe-javakheti",
+            },
+          ],
+        },
+      ],
     });
     server.create("location", {
       id: 1,
@@ -4122,6 +4285,14 @@ createServer({
       "/locations",
       (schema, request) => {
         return schema.locations.all();
+      },
+      // { timing: 2000, headers: { "Cache-Control": "no-store" } }
+    );
+
+    this.get(
+      "/seasons",
+      (schema, request) => {
+        return schema.seasons.all();
       },
       // { timing: 2000, headers: { "Cache-Control": "no-store" } }
     );
