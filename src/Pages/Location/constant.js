@@ -2,9 +2,8 @@ export const Location_Title = "Discover Unique Georgia";
 export const Location_Description =
   "A country of ancient culture, where the breathtaking beauty of nature provides the perfect backdrop for infinite adventures and memorable experiences that will stay with you forever.";
 
-export const To_Do_Title = "365 Days With Lots To Do";
-export const To_Do_Description =
-  "Feel the thrill of an adventure in Georgia. From skiing in the mysterious mountains of Bakuriani to rafting down the Aragvi River or stargazing at 4,000 meters, the country offers a range of exciting activities.";
+export const Title_Destinations = "Popular Destinations";
+
 export const Things_To_Do_Title = "Things To Do";
 export const Things_To_Do_Description =
   "Georgia is both charming and eccentric; dripping with history and tradition and bubbling with creative energy. It’s the kind of place that draws you in. Explore all the exciting events and places.";
@@ -45,3 +44,7 @@ export const Cuisine_Kakheti_Description =
 export const Cuisine_Imereti_Title = "The Cuisine of Imereti";
 export const Cuisine_Imereti_Description =
   "Famous for its variety of flavors, Imeretian cuisine is exceptional not just in Georgia. The stellar dish that made it to the menus of Georgian restaurants in the country and beyond is Imeretian khachapuri, whose secret ingredient is its Imeretian cheese. The region also stands out for its diverse vegetarian options, like chopped veggies with walnuts - Pkhali and Imeretian bean stew - Lobio. However, the local housewives are also masters of preparing meat dishes, such as the satsivi - chicken in walnut sauce, the highlight of the New Year’s table.";
+
+export const Recommendation_Title = "Why you should visit Batumi";
+export const Recommendation_Description =
+  "Discover the beauty of Batumi, Georgia's vibrant subtropical city. Enjoy the clear waters of the Black Sea, explore the surrounding mountains, have the time of your life at music festivals in summer, and enjoy the fantastic local cuisine. With something to offer all year round, Batumi is the perfect destination for your next holiday.";

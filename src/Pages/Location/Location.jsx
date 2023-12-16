@@ -6,6 +6,7 @@ import {
 } from "../Location/Components/index";
 import { Location_Description, Location_Title } from "./constant";
 import locationImg from "../../assets/location/Macon-beauty-spots-in-Georgia.jpg";
+import { RecommendationCard } from "./Components/RecommendationCard";
 
 export const Location = () => {
   return (
@@ -19,8 +20,9 @@ export const Location = () => {
 
       <div className="lg:container sm:mx-8 lg:mx-0 cursor-default">
         <SeasonDisplay />
-        <LocationCard />
         <GeorgiaMap />
+        <LocationCard />
+        <RecommendationCard />
       </div>
     </>
   );
