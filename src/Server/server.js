@@ -838,6 +838,32 @@ createServer({
       last_name: "Hyde-Chambers",
       email: "ghydechambers0@berkeley.edu",
       img: "/assets/Guide/alex-suprun-ZHvM3XIOHoE-unsplash.jpg",
+      recommended: [
+        {
+          id: 1,
+          img: [
+            "/assets/location/mestia.jpg",
+            "/assets/location/Zugdidi-town-center.jpg",
+            "/assets/location/martvili.jpg",
+            "/assets/location/ushguli-gnta.webp",
+          ],
+          title: "Popular Destinations in Samegrelo-Zemo Svaneti",
+          description:
+            "Tucked in the lush greenery, with proud Greater Caucasus Mountains in the background, Samegrelo and Zemo Svaneti Regions have amazing experiences to offer. Challenge yourself with a hike to Tobavarchkhili Lake, enjoy the natural diversity in the protected areas of Martvili Canyon and Paliastomi Lake, raise a glass of Ojaleshi wine from Salkhino, looking at the sunset from Anaklia Bridge. Ski from the pristine slopes of Tetnuldi and Hatsvali, and get to know the local traditions in Zugdidi, Mestia and Ushguli.",
+        },
+        {
+          id: 2,
+          img: [
+            "/assets/location/Tsageri.jpg",
+            "/assets/location/Shovi.jpg",
+            "/assets/location/oni-gnta.webp",
+            "/assets/location/ambrolauri-gnta.webp",
+          ],
+          title: "Destinations in Racha-Lechkhumi & Kvemo Svaneti",
+          description:
+            "The historical regions Racha-Lechkhumi & Kvemo Svaneti offer a wonderful mix of history and unspoiled natural beauty. Visit Shaori and Udziro Lakes, marvel at the frescoes of Nikortsminda Cathedral, feel the time slowing down in Oni and Shovi, ascend to the top of Khvamli Mountain, enjoy the views of Lailashi reservoir and Tsageri panorama from Muri Fortress, and unwind in the wineries around Ambrolauri and Tvishi.",
+        },
+      ],
       gender: "Male",
       status: false,
       description:
@@ -850,6 +876,32 @@ createServer({
       email: "cconklin1@epa.gov",
       gender: "Female",
       img: "/assets/Guide/photo-1605993439219-9d09d2020fa5.avif",
+      recommended: [
+        {
+          id: 1,
+          img: [
+            "/assets/location/Kaspi.jpg",
+            "/assets/location/Gori.jpg",
+            "/assets/location/Kareli.jpg",
+            "/assets/location/Khashuri.jpg",
+          ],
+          title: "Popular Destinations in Shida Kartli",
+          description:
+            "In Shida Kartli, you can immerse yourself in the depth of Georgian history. Walk along the streets of the rock-hewn town Uplistsikhe, visit the picturesque monasteries of Dzama Valley, hike to Biisi Waterfall, and marvel at the terraced vineyards next to the fantastic Ateni’s Sioni Monastery. Taste Atenuri wine and sweet bread Nazuki in Surami. Ascend to the top of Jamjama Mountain.",
+        },
+        {
+          id: 2,
+          img: [
+            "/assets/location/Stepantsminda.jpg",
+            "/assets/location/Shatili.jpg",
+            "/assets/location/mtskheta-gnta.webp",
+            "/assets/location/gudauri-gnta.webp",
+          ],
+          title: "Popular Destinations in Mtskheta-Mtianeti",
+          description:
+            "Mtskheta-Mtianeti Region promises to be an amazing adventure for you! Challenge yourself with mountainous routes in Kazbegi, Truso, Juta and Abudelauri, try the white water rafting at Aragvi River, spend a night in a fortress-village of Shatili, and explore the mysterious abandoned Mutso fortress. Enjoy the fresh powder at the slopes of Gudauri. Feel the closeness to nature!",
+        },
+      ],
       status: true,
       description:
         "Embark on a journey through the Caucasus, exploring picturesque mountain landscapes, ancient fortresses, and vibrant local traditions. Your guide will illuminate the rich history and cultural tapestry of Georgia's highlands.",
@@ -861,6 +913,32 @@ createServer({
       email: "cironmonger2@goo.gl",
       gender: "Male",
       img: "/assets/Guide/photo-1517070208541-6ddc4d3efbcb.avif",
+      recommended: [
+        {
+          id: 1,
+          img: [
+            "/assets/location/telavi.jpg",
+            "/assets/location/Lagodekhi.jpg",
+            "/assets/location/Kvareli.jpg",
+            "/assets/location/sighnaghi.webp",
+          ],
+          title: "Popular Destinations in Kakheti",
+          description:
+            "Here you will see spectacular examples of Georgian church architecture, such as the cathedrals of Alaverdi, Ikalto, Shuamta, Bodbe, and Gremi. Feel the atmosphere of the towns of Telavi, Gurjaani, Kvareli, and Sighnaghi. Explore the cultural sights, dive into cellars and vineyards, have fun and let Kakheti open up its hospitable soul to you!",
+        },
+        {
+          id: 2,
+          img: [
+            "/assets/location/Tsalka.jpg",
+            "/assets/location/tetritskaro-gnta.webp",
+            "/assets/location/bolnisi-gnta.webp",
+            "/assets/location/urban-archaeology-of-dmanisi-gnta.webp",
+          ],
+          title: "Popular Destinations in Kvemo Kartli",
+          description:
+            "Kvemo Kartli is a multicultural region with a rich history, where you will find numerous archaeological sites, churches and mosques, fortresses and old German houses. One discovery of worldwide importance is Dmanisi Settlement, where the hominids used to live 1.8 million years ago. The former German colonies of Asureti and Bolnisi will offer your amazing stories and great wine, Algeti National Park will welcome you to the unspoiled nature and great views, and in the ancient site of Samshvilde, you’d feel like you are in an adventure movie.",
+        },
+      ],
       status: false,
       description:
         "Delight in Georgia's renowned wine culture with a guide who leads you through vineyards, ancient cellars, and wine-tasting sessions. Learn about traditional winemaking methods and savor the diverse flavors of Georgian wines.",
@@ -872,6 +950,32 @@ createServer({
       email: "aoneary3@addthis.com",
       gender: "Male",
       img: "/assets/Guide/photo-1528892952291-009c663ce843.avif",
+      recommended: [
+        {
+          id: 1,
+          img: [
+            "/assets/location/Parks&Gardens.jpg",
+            "/assets/location/FineDiningDrinking&Nightlife.jpg",
+            "/assets/location/Museums.jpg",
+            "/assets/location/Spas&Baths.jpg",
+          ],
+          title: "Experience Top Activities in Tbilisi",
+          description:
+            "Discover why Tbilisi has captivated visitors for centuries. Feel its unique rhythm and lively character, explore the city, and fall under its charm. Whether you're looking for adventure or relaxation, the city has something to offer every traveler. Immerse yourself in the culture of Tbilisi and create memories that will last a lifetime.",
+        },
+        {
+          id: 2,
+          img: [
+            "/assets/location/Akhaltsikhe.jpg",
+            "/assets/location/Borjomi.jpg",
+            "/assets/location/Adigeni.jpg",
+            "/assets/location/Abastumani.jpg",
+          ],
+          title: "Popular Destinations in Samtskhe-Javakheti",
+          description:
+            "Here you will find abandoned cyclopic fortresses built by ancient civilizations, along with Christian monuments with outstanding architecture and frescos. Visit the Paravani, Saghamo, and Khanchali Lakes to see amazing bird species. Feel the flow of centuries in cave city Vardzia, embrace the multiculturality in Akhaltsikhe Castle, and visit the Doukhobor villages. Hike in Borjomi-Kharagauli National Park and quench your thirst for adventure with Georgia’s most famous mineral water, Borjomi. Enjoy the fresh air and beautiful nature in Likani, Bakuriani, or Abastumani.",
+        },
+      ],
       status: false,
       description:
         "Explore the charming Black Sea coastline with a guide who unveils the beauty of Batumi and its surroundings. Immerse yourself in botanical gardens, waterfront promenades, and the unique blend of Georgian and Ottoman influences.",
@@ -883,6 +987,32 @@ createServer({
       email: "cjermin4@boston.com",
       gender: "Female",
       img: "/assets/Guide/photo-1546961329-78bef0414d7c.avif",
+      recommended: [
+        {
+          id: 1,
+          img: [
+            "/assets/location/kutaisi-gnta.webp",
+            "/assets/location/Tskaltubo.webp",
+            "/assets/location/zestaponi-gnta-m.webp",
+            "/assets/location/Sachkhere.jpg",
+          ],
+          title: "Popular Destinations in Imereti",
+          description:
+            "The green heart of Georgia, Imereti is a region of rolling mountains, vineyards climbing steep hills, waterfalls and caverns, canyons and rivers. It’s the homeland of many Georgian poets and writers, and of course, it’s a region of limitless hospitality and unbelievable food. Get closer to mother nature by visiting Okatse Canyon and Kinchkha Waterfall, Sataplia and Prometheus Cave, Khani and Mukhara Waterfalls, hike to Tskhrajvari Mountain and explore nature in Sachkhere and Marelisi. Get to know the rich history and urban legends of Kutaisi, feel the industrial vibe of Zestafoni and Chiatura, and soak in the healing waters of Sairme and Tskaltubo.",
+        },
+        {
+          id: 2,
+          img: [
+            "/assets/location/Kobuleti.jpg",
+            "/assets/location/Sarpi.jpg",
+            "/assets/location/Gonio.jpg",
+            "/assets/location/Kvariati.jpg",
+          ],
+          title: "Popular Destinations in Adjara",
+          description:
+            "Ajara is a subtropical region of fantastic beauty. The four protected areas of the region are similar in their pristine wilderness and different in the variety of animal and plant species. The mountains of Ajara are hiding steep vineyards, babbling waterfalls and lakes, old fortresses and cute wooden houses standing on high “legs”. Visit the mountains of Beshumi, Goderdzi and Gomarduli to find calmness and peace, and have fun at the seaside resorts of Batumi, Kvariati, Gonio, Sarpi and Mtsvane Kontskhi.",
+        },
+      ],
       status: true,
       description:
         "Embark on a time-traveling adventure with a guide who navigates you through the archaeological wonders of Georgia. From ancient ruins to UNESCO World Heritage Sites, discover the layers of history etched in Georgia's landscapes.",
@@ -894,6 +1024,32 @@ createServer({
       email: "lmcfade5@tinypic.com",
       gender: "Female",
       img: "/assets/Guide/photo-1438761681033-6461ffad8d80.avif",
+      recommended: [
+        {
+          id: 1,
+          img: [
+            "/assets/location/mestia.jpg",
+            "/assets/location/Zugdidi-town-center.jpg",
+            "/assets/location/martvili.jpg",
+            "/assets/location/ushguli-gnta.webp",
+          ],
+          title: "Popular Destinations in Samegrelo-Zemo Svaneti",
+          description:
+            "Tucked in the lush greenery, with proud Greater Caucasus Mountains in the background, Samegrelo and Zemo Svaneti Regions have amazing experiences to offer. Challenge yourself with a hike to Tobavarchkhili Lake, enjoy the natural diversity in the protected areas of Martvili Canyon and Paliastomi Lake, raise a glass of Ojaleshi wine from Salkhino, looking at the sunset from Anaklia Bridge. Ski from the pristine slopes of Tetnuldi and Hatsvali, and get to know the local traditions in Zugdidi, Mestia and Ushguli.",
+        },
+        {
+          id: 2,
+          img: [
+            "/assets/location/Tsageri.jpg",
+            "/assets/location/Shovi.jpg",
+            "/assets/location/oni-gnta.webp",
+            "/assets/location/ambrolauri-gnta.webp",
+          ],
+          title: "Destinations in Racha-Lechkhumi & Kvemo Svaneti",
+          description:
+            "The historical regions Racha-Lechkhumi & Kvemo Svaneti offer a wonderful mix of history and unspoiled natural beauty. Visit Shaori and Udziro Lakes, marvel at the frescoes of Nikortsminda Cathedral, feel the time slowing down in Oni and Shovi, ascend to the top of Khvamli Mountain, enjoy the views of Lailashi reservoir and Tsageri panorama from Muri Fortress, and unwind in the wineries around Ambrolauri and Tvishi.",
+        },
+      ],
       status: true,
       description:
         "Indulge your taste buds with a guide who leads you through bustling markets and local eateries. Experience the richness of Georgian cuisine, from khachapuri to khinkali, as you uncover the culinary secrets of the region.",
@@ -905,6 +1061,32 @@ createServer({
       email: "pledrun6@sitemeter.com",
       gender: "Male",
       img: "/assets/Guide/photo-1530268729831-4b0b9e170218.avif",
+      recommended: [
+        {
+          id: 1,
+          img: [
+            "/assets/location/Kaspi.jpg",
+            "/assets/location/Gori.jpg",
+            "/assets/location/Kareli.jpg",
+            "/assets/location/Khashuri.jpg",
+          ],
+          title: "Popular Destinations in Shida Kartli",
+          description:
+            "In Shida Kartli, you can immerse yourself in the depth of Georgian history. Walk along the streets of the rock-hewn town Uplistsikhe, visit the picturesque monasteries of Dzama Valley, hike to Biisi Waterfall, and marvel at the terraced vineyards next to the fantastic Ateni’s Sioni Monastery. Taste Atenuri wine and sweet bread Nazuki in Surami. Ascend to the top of Jamjama Mountain.",
+        },
+        {
+          id: 2,
+          img: [
+            "/assets/location/Stepantsminda.jpg",
+            "/assets/location/Shatili.jpg",
+            "/assets/location/mtskheta-gnta.webp",
+            "/assets/location/gudauri-gnta.webp",
+          ],
+          title: "Popular Destinations in Mtskheta-Mtianeti",
+          description:
+            "Mtskheta-Mtianeti Region promises to be an amazing adventure for you! Challenge yourself with mountainous routes in Kazbegi, Truso, Juta and Abudelauri, try the white water rafting at Aragvi River, spend a night in a fortress-village of Shatili, and explore the mysterious abandoned Mutso fortress. Enjoy the fresh powder at the slopes of Gudauri. Feel the closeness to nature!",
+        },
+      ],
       status: true,
       description:
         "Immerse yourself in Georgia's vibrant art scene with a guide who showcases the country's contemporary and traditional artistic expressions. Visit galleries, street art hotspots, and engage with local artists, uncovering the creative pulse of Georgia.",
@@ -916,6 +1098,32 @@ createServer({
       email: "jchastelain7@indiegogo.com",
       gender: "Male",
       img: "/assets/Guide/photo-1568602471122-7832951cc4c5.avif",
+      recommended: [
+        {
+          id: 1,
+          img: [
+            "/assets/location/telavi.jpg",
+            "/assets/location/Lagodekhi.jpg",
+            "/assets/location/Kvareli.jpg",
+            "/assets/location/sighnaghi.webp",
+          ],
+          title: "Popular Destinations in Kakheti",
+          description:
+            "Here you will see spectacular examples of Georgian church architecture, such as the cathedrals of Alaverdi, Ikalto, Shuamta, Bodbe, and Gremi. Feel the atmosphere of the towns of Telavi, Gurjaani, Kvareli, and Sighnaghi. Explore the cultural sights, dive into cellars and vineyards, have fun and let Kakheti open up its hospitable soul to you!",
+        },
+        {
+          id: 2,
+          img: [
+            "/assets/location/Tsalka.jpg",
+            "/assets/location/tetritskaro-gnta.webp",
+            "/assets/location/bolnisi-gnta.webp",
+            "/assets/location/urban-archaeology-of-dmanisi-gnta.webp",
+          ],
+          title: "Popular Destinations in Kvemo Kartli",
+          description:
+            "Kvemo Kartli is a multicultural region with a rich history, where you will find numerous archaeological sites, churches and mosques, fortresses and old German houses. One discovery of worldwide importance is Dmanisi Settlement, where the hominids used to live 1.8 million years ago. The former German colonies of Asureti and Bolnisi will offer your amazing stories and great wine, Algeti National Park will welcome you to the unspoiled nature and great views, and in the ancient site of Samshvilde, you’d feel like you are in an adventure movie.",
+        },
+      ],
       status: true,
       description:
         "Embark on a spiritual journey with a guide who reveals the sacred treasures of Georgian monasteries. From mountain retreats to UNESCO-listed sites, witness the architectural beauty and profound religious significance embedded in Georgia's monastic heritage.",
@@ -927,6 +1135,32 @@ createServer({
       email: "jmccree8@imdb.com",
       gender: "Male",
       img: "/assets/Guide/photo-1573740144655-bbb6e88fb18a.avif",
+      recommended: [
+        {
+          id: 1,
+          img: [
+            "/assets/location/Parks&Gardens.jpg",
+            "/assets/location/FineDiningDrinking&Nightlife.jpg",
+            "/assets/location/Museums.jpg",
+            "/assets/location/Spas&Baths.jpg",
+          ],
+          title: "Experience Top Activities in Tbilisi",
+          description:
+            "Discover why Tbilisi has captivated visitors for centuries. Feel its unique rhythm and lively character, explore the city, and fall under its charm. Whether you're looking for adventure or relaxation, the city has something to offer every traveler. Immerse yourself in the culture of Tbilisi and create memories that will last a lifetime.",
+        },
+        {
+          id: 2,
+          img: [
+            "/assets/location/Akhaltsikhe.jpg",
+            "/assets/location/Borjomi.jpg",
+            "/assets/location/Adigeni.jpg",
+            "/assets/location/Abastumani.jpg",
+          ],
+          title: "Popular Destinations in Samtskhe-Javakheti",
+          description:
+            "Here you will find abandoned cyclopic fortresses built by ancient civilizations, along with Christian monuments with outstanding architecture and frescos. Visit the Paravani, Saghamo, and Khanchali Lakes to see amazing bird species. Feel the flow of centuries in cave city Vardzia, embrace the multiculturality in Akhaltsikhe Castle, and visit the Doukhobor villages. Hike in Borjomi-Kharagauli National Park and quench your thirst for adventure with Georgia’s most famous mineral water, Borjomi. Enjoy the fresh air and beautiful nature in Likani, Bakuriani, or Abastumani.",
+        },
+      ],
       status: true,
       description:
         "Escape to the countryside with a guide who introduces you to the tranquility of Georgian villages. Experience rural life, partake in local traditions, and enjoy the breathtaking landscapes that define the charm of Georgia's pastoral regions.",
@@ -938,6 +1172,32 @@ createServer({
       email: "lweale9@usgs.gov",
       gender: "Male",
       img: "/assets/Guide/photo-1601455763557-db1bea8a9a5a.avif",
+      recommended: [
+        {
+          id: 1,
+          img: [
+            "/assets/location/kutaisi-gnta.webp",
+            "/assets/location/Tskaltubo.webp",
+            "/assets/location/zestaponi-gnta-m.webp",
+            "/assets/location/Sachkhere.jpg",
+          ],
+          title: "Popular Destinations in Imereti",
+          description:
+            "The green heart of Georgia, Imereti is a region of rolling mountains, vineyards climbing steep hills, waterfalls and caverns, canyons and rivers. It’s the homeland of many Georgian poets and writers, and of course, it’s a region of limitless hospitality and unbelievable food. Get closer to mother nature by visiting Okatse Canyon and Kinchkha Waterfall, Sataplia and Prometheus Cave, Khani and Mukhara Waterfalls, hike to Tskhrajvari Mountain and explore nature in Sachkhere and Marelisi. Get to know the rich history and urban legends of Kutaisi, feel the industrial vibe of Zestafoni and Chiatura, and soak in the healing waters of Sairme and Tskaltubo.",
+        },
+        {
+          id: 2,
+          img: [
+            "/assets/location/Kobuleti.jpg",
+            "/assets/location/Sarpi.jpg",
+            "/assets/location/Gonio.jpg",
+            "/assets/location/Kvariati.jpg",
+          ],
+          title: "Popular Destinations in Adjara",
+          description:
+            "Ajara is a subtropical region of fantastic beauty. The four protected areas of the region are similar in their pristine wilderness and different in the variety of animal and plant species. The mountains of Ajara are hiding steep vineyards, babbling waterfalls and lakes, old fortresses and cute wooden houses standing on high “legs”. Visit the mountains of Beshumi, Goderdzi and Gomarduli to find calmness and peace, and have fun at the seaside resorts of Batumi, Kvariati, Gonio, Sarpi and Mtsvane Kontskhi.",
+        },
+      ],
       status: true,
       description:
         "Embark on a culinary odyssey with a guide who navigates you through the diverse flavors of Georgia's regional cuisines. From Svaneti to Kakheti, savor unique dishes and learn about the cultural significance of Georgian gastronomy.",
@@ -949,6 +1209,33 @@ createServer({
       email: "kaudritta@tumblr.com",
       gender: "Male",
       img: "/assets/Guide/photo-1603415526960-f7e0328c63b1.avif",
+      recommended: [
+        {
+          id: 1,
+          img: [
+            "/assets/location/mestia.jpg",
+            "/assets/location/Zugdidi-town-center.jpg",
+            "/assets/location/martvili.jpg",
+            "/assets/location/ushguli-gnta.webp",
+          ],
+          title: "Popular Destinations in Samegrelo-Zemo Svaneti",
+          description:
+            "Tucked in the lush greenery, with proud Greater Caucasus Mountains in the background, Samegrelo and Zemo Svaneti Regions have amazing experiences to offer. Challenge yourself with a hike to Tobavarchkhili Lake, enjoy the natural diversity in the protected areas of Martvili Canyon and Paliastomi Lake, raise a glass of Ojaleshi wine from Salkhino, looking at the sunset from Anaklia Bridge. Ski from the pristine slopes of Tetnuldi and Hatsvali, and get to know the local traditions in Zugdidi, Mestia and Ushguli.",
+        },
+        {
+          id: 2,
+          img: [
+            "/assets/location/Tsageri.jpg",
+            "/assets/location/Shovi.jpg",
+            "/assets/location/oni-gnta.webp",
+            "/assets/location/ambrolauri-gnta.webp",
+          ],
+          title: "Destinations in Racha-Lechkhumi & Kvemo Svaneti",
+          description:
+            "The historical regions Racha-Lechkhumi & Kvemo Svaneti offer a wonderful mix of history and unspoiled natural beauty. Visit Shaori and Udziro Lakes, marvel at the frescoes of Nikortsminda Cathedral, feel the time slowing down in Oni and Shovi, ascend to the top of Khvamli Mountain, enjoy the views of Lailashi reservoir and Tsageri panorama from Muri Fortress, and unwind in the wineries around Ambrolauri and Tvishi.",
+        },
+      ],
+
       status: true,
       description:
         "Discover the 'Balcony of Europe' – Borjomi – with a guide who leads you through lush landscapes, mineral springs, and the historical heart of this spa town. Uncover the rejuvenating secrets and cultural significance of this Georgian gem.",
@@ -960,6 +1247,32 @@ createServer({
       email: "grufflerb@shop-pro.jp",
       gender: "Female",
       img: "/assets/Guide/photo-1522228115018-d838bcce5c3a.avif",
+      recommended: [
+        {
+          id: 1,
+          img: [
+            "/assets/location/Kaspi.jpg",
+            "/assets/location/Gori.jpg",
+            "/assets/location/Kareli.jpg",
+            "/assets/location/Khashuri.jpg",
+          ],
+          title: "Popular Destinations in Shida Kartli",
+          description:
+            "In Shida Kartli, you can immerse yourself in the depth of Georgian history. Walk along the streets of the rock-hewn town Uplistsikhe, visit the picturesque monasteries of Dzama Valley, hike to Biisi Waterfall, and marvel at the terraced vineyards next to the fantastic Ateni’s Sioni Monastery. Taste Atenuri wine and sweet bread Nazuki in Surami. Ascend to the top of Jamjama Mountain.",
+        },
+        {
+          id: 2,
+          img: [
+            "/assets/location/Stepantsminda.jpg",
+            "/assets/location/Shatili.jpg",
+            "/assets/location/mtskheta-gnta.webp",
+            "/assets/location/gudauri-gnta.webp",
+          ],
+          title: "Popular Destinations in Mtskheta-Mtianeti",
+          description:
+            "Mtskheta-Mtianeti Region promises to be an amazing adventure for you! Challenge yourself with mountainous routes in Kazbegi, Truso, Juta and Abudelauri, try the white water rafting at Aragvi River, spend a night in a fortress-village of Shatili, and explore the mysterious abandoned Mutso fortress. Enjoy the fresh powder at the slopes of Gudauri. Feel the closeness to nature!",
+        },
+      ],
       status: false,
       description:
         "Journey through Mtskheta with a guide who unveils the spiritual and historical significance of Svetitskhoveli Cathedral. Explore the UNESCO World Heritage Site, learn about its legends, and witness the architectural grandeur of this iconic Georgian landmark.",
@@ -971,6 +1284,32 @@ createServer({
       email: "dborellc@istockphoto.com",
       gender: "Female",
       img: "/assets/Guide/photo-1532074205216-d0e1f4b87368.avif",
+      recommended: [
+        {
+          id: 1,
+          img: [
+            "/assets/location/telavi.jpg",
+            "/assets/location/Lagodekhi.jpg",
+            "/assets/location/Kvareli.jpg",
+            "/assets/location/sighnaghi.webp",
+          ],
+          title: "Popular Destinations in Kakheti",
+          description:
+            "Here you will see spectacular examples of Georgian church architecture, such as the cathedrals of Alaverdi, Ikalto, Shuamta, Bodbe, and Gremi. Feel the atmosphere of the towns of Telavi, Gurjaani, Kvareli, and Sighnaghi. Explore the cultural sights, dive into cellars and vineyards, have fun and let Kakheti open up its hospitable soul to you!",
+        },
+        {
+          id: 2,
+          img: [
+            "/assets/location/Tsalka.jpg",
+            "/assets/location/tetritskaro-gnta.webp",
+            "/assets/location/bolnisi-gnta.webp",
+            "/assets/location/urban-archaeology-of-dmanisi-gnta.webp",
+          ],
+          title: "Popular Destinations in Kvemo Kartli",
+          description:
+            "Kvemo Kartli is a multicultural region with a rich history, where you will find numerous archaeological sites, churches and mosques, fortresses and old German houses. One discovery of worldwide importance is Dmanisi Settlement, where the hominids used to live 1.8 million years ago. The former German colonies of Asureti and Bolnisi will offer your amazing stories and great wine, Algeti National Park will welcome you to the unspoiled nature and great views, and in the ancient site of Samshvilde, you’d feel like you are in an adventure movie.",
+        },
+      ],
       status: false,
       description:
         "Unearth the mysteries of Vardzia with a guide who navigates you through this ancient cave city. Marvel at the rock-hewn architecture, delve into the history of medieval Georgia, and witness the cultural legacy preserved within Vardzia's labyrinthine chambers.",
@@ -982,6 +1321,32 @@ createServer({
       email: "eslottd@wikimedia.org",
       gender: "Female",
       img: "/assets/Guide/photo-1586297135537-94bc9ba060aa.avif",
+      recommended: [
+        {
+          id: 1,
+          img: [
+            "/assets/location/Parks&Gardens.jpg",
+            "/assets/location/FineDiningDrinking&Nightlife.jpg",
+            "/assets/location/Museums.jpg",
+            "/assets/location/Spas&Baths.jpg",
+          ],
+          title: "Experience Top Activities in Tbilisi",
+          description:
+            "Discover why Tbilisi has captivated visitors for centuries. Feel its unique rhythm and lively character, explore the city, and fall under its charm. Whether you're looking for adventure or relaxation, the city has something to offer every traveler. Immerse yourself in the culture of Tbilisi and create memories that will last a lifetime.",
+        },
+        {
+          id: 2,
+          img: [
+            "/assets/location/Akhaltsikhe.jpg",
+            "/assets/location/Borjomi.jpg",
+            "/assets/location/Adigeni.jpg",
+            "/assets/location/Abastumani.jpg",
+          ],
+          title: "Popular Destinations in Samtskhe-Javakheti",
+          description:
+            "Here you will find abandoned cyclopic fortresses built by ancient civilizations, along with Christian monuments with outstanding architecture and frescos. Visit the Paravani, Saghamo, and Khanchali Lakes to see amazing bird species. Feel the flow of centuries in cave city Vardzia, embrace the multiculturality in Akhaltsikhe Castle, and visit the Doukhobor villages. Hike in Borjomi-Kharagauli National Park and quench your thirst for adventure with Georgia’s most famous mineral water, Borjomi. Enjoy the fresh air and beautiful nature in Likani, Bakuriani, or Abastumani.",
+        },
+      ],
       status: false,
       description:
         "Step back in time with a guide who illuminates the wonders of Uplistsikhe, Georgia's rock-hewn town. Explore the ancient streets, chambers, and theaters carved into the rock, uncovering the historical significance of this archaeological marvel.",
@@ -993,6 +1358,32 @@ createServer({
       email: "ereusse@sbwire.com",
       gender: "Male",
       img: "/assets/Guide/photo-1619895862022-09114b41f16f.avif",
+      recommended: [
+        {
+          id: 1,
+          img: [
+            "/assets/location/kutaisi-gnta.webp",
+            "/assets/location/Tskaltubo.webp",
+            "/assets/location/zestaponi-gnta-m.webp",
+            "/assets/location/Sachkhere.jpg",
+          ],
+          title: "Popular Destinations in Imereti",
+          description:
+            "The green heart of Georgia, Imereti is a region of rolling mountains, vineyards climbing steep hills, waterfalls and caverns, canyons and rivers. It’s the homeland of many Georgian poets and writers, and of course, it’s a region of limitless hospitality and unbelievable food. Get closer to mother nature by visiting Okatse Canyon and Kinchkha Waterfall, Sataplia and Prometheus Cave, Khani and Mukhara Waterfalls, hike to Tskhrajvari Mountain and explore nature in Sachkhere and Marelisi. Get to know the rich history and urban legends of Kutaisi, feel the industrial vibe of Zestafoni and Chiatura, and soak in the healing waters of Sairme and Tskaltubo.",
+        },
+        {
+          id: 2,
+          img: [
+            "/assets/location/Kobuleti.jpg",
+            "/assets/location/Sarpi.jpg",
+            "/assets/location/Gonio.jpg",
+            "/assets/location/Kvariati.jpg",
+          ],
+          title: "Popular Destinations in Adjara",
+          description:
+            "Ajara is a subtropical region of fantastic beauty. The four protected areas of the region are similar in their pristine wilderness and different in the variety of animal and plant species. The mountains of Ajara are hiding steep vineyards, babbling waterfalls and lakes, old fortresses and cute wooden houses standing on high “legs”. Visit the mountains of Beshumi, Goderdzi and Gomarduli to find calmness and peace, and have fun at the seaside resorts of Batumi, Kvariati, Gonio, Sarpi and Mtsvane Kontskhi.",
+        },
+      ],
       status: false,
       description:
         "Traverse the crossroads of cultures with a guide who leads you through Georgia's diverse heritage. From Silk Road influences to modern-day intersections, discover the cultural tapestry that defines Georgia's unique identity at the crossroads of Europe and Asia.",
