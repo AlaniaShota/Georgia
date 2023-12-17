@@ -31,3 +31,19 @@ export const useSeasonsStore = create((set) => ({
     }
   },
 }));
+
+export const useGuideStore = create((set) => ({
+  guides: [],
+  fetchGuide: async () => {
+    try {
+      const response = await fetch(`/api/guides`);
+      if (!response.ok) {
+        throw new Error("Network response was not ok.");
+      }
+      const data = await response.json();
+      set({ guides: data });
+    } catch (error) {
+      console.error("There was a problem fetching the tour data:", error);
+    }
+  },
+}));

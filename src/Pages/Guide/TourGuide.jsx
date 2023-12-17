@@ -1,24 +1,43 @@
 import { Header } from "../../Components";
 import tourGuideImg from "../../assets/TourGuide/Georgia.jpeg";
-import { Tour_Guide_Description, Tour_Guide_Title } from "./constants";
+import {
+  Title,
+  Description,
+  Tour_Guide_Title,
+  Tour_Guide_Description,
+} from "./constants";
 import { useEffect } from "react";
+import "../../App.css";
+import { useGuideStore } from "../../Store/store";
+import { Guide } from "./Components";
 
 export const TourGuide = () => {
+  const { guides = [] } = useGuideStore((state) => state.guides);
+  const fetchGuide = useGuideStore((state) => state.fetchGuide);
+
   useEffect(() => {
-    fetch("/api/guides")
-      .then((res) => res.json())
-      .then((data) => console.log(data));
-  }, []);
+    fetchGuide();
+  }, [fetchGuide]);
 
   return (
     <>
       <Header
         titlePage={"Tour Guide"}
-        titleText={Tour_Guide_Title}
-        descriptionText={Tour_Guide_Description}
+        titleText={Title}
+        descriptionText={Description}
         img={tourGuideImg}
       />
-      <div className="lg:container sm:mx-8 lg:mx-0 "></div>
+      <div className="lg:container sm:mx-8 lg:mx-0 ">
+        <div className="flex flex-col justify-center items-center my-20">
+          <h1 className="text-3xl font-bold  text-center px-40">
+            {Tour_Guide_Title}
+          </h1>
+          <p className="text-BlackSecondColor text-lg my-5 text-center w-[740px] ">
+            {Tour_Guide_Description}
+          </p>
+        </div>
+        <Guide guides={guides} />
+      </div>
     </>
   );
 };

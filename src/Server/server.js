@@ -1250,6 +1250,7 @@ createServer({
       recommended: [
         {
           id: 1,
+          link: "mtskheta-mtianeti",
           img: [
             "/assets/location/Kaspi.jpg",
             "/assets/location/Gori.jpg",
@@ -1262,6 +1263,7 @@ createServer({
         },
         {
           id: 2,
+          link: "mtskheta-mtianeti",
           img: [
             "/assets/location/Stepantsminda.jpg",
             "/assets/location/Shatili.jpg",
@@ -1287,6 +1289,7 @@ createServer({
       recommended: [
         {
           id: 1,
+          link: "kakheti",
           img: [
             "/assets/location/telavi.jpg",
             "/assets/location/Lagodekhi.jpg",
@@ -1299,6 +1302,7 @@ createServer({
         },
         {
           id: 2,
+          link: "kvemo-kartli",
           img: [
             "/assets/location/Tsalka.jpg",
             "/assets/location/tetritskaro-gnta.webp",
@@ -1324,6 +1328,7 @@ createServer({
       recommended: [
         {
           id: 1,
+          link: "tbilisi",
           img: [
             "/assets/location/Parks&Gardens.jpg",
             "/assets/location/FineDiningDrinking&Nightlife.jpg",
@@ -1336,6 +1341,7 @@ createServer({
         },
         {
           id: 2,
+          link: "samtskhe-javakheti",
           img: [
             "/assets/location/Akhaltsikhe.jpg",
             "/assets/location/Borjomi.jpg",
@@ -1361,6 +1367,7 @@ createServer({
       recommended: [
         {
           id: 1,
+          link: "imereti",
           img: [
             "/assets/location/kutaisi-gnta.webp",
             "/assets/location/Tskaltubo.webp",
@@ -1373,6 +1380,7 @@ createServer({
         },
         {
           id: 2,
+          link: "adjara",
           img: [
             "/assets/location/Kobuleti.jpg",
             "/assets/location/Sarpi.jpg",
