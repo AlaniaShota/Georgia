@@ -6,3 +6,4 @@ export { RecommendationRestaurant } from "./Recommendation/RecommendationRestaur
 export { FilterButton } from "./FilterButton";
 export { TraditionalFoodLibery } from "./TraditionalFoodLibery";
 export { DetailFood } from "./DetailFood";
+export { Slide } from "./Slide";

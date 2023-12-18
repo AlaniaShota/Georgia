@@ -7,9 +7,8 @@ import {
   Tour_Guide_Description,
 } from "./constants";
 import { useEffect } from "react";
-import "../../App.css";
 import { useGuideStore } from "../../Store/store";
-import { Guide } from "./Components";
+import { Guide, Slide } from "./Components";
 
 export const TourGuide = () => {
   const { guides = [] } = useGuideStore((state) => state.guides);
@@ -36,6 +35,7 @@ export const TourGuide = () => {
             {Tour_Guide_Description}
           </p>
         </div>
+        <Slide />
         <Guide guides={guides} />
       </div>
     </>

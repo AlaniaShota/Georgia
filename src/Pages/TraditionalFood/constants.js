@@ -15,3 +15,24 @@ export const Recommendation_Word =
 export const Tamada_Title = "Tamada";
 export const Tamada_Description =
   "The concept of Tamada, the toastmasters, has no analogs in the world. This is a sort of a governance model, rooted in the past centuries. As a proof of it, a bronze figure of a man holding a horn, dating back to the 7th century, was found in the archaeological excavations of Vani (Imereti Region).";
+
+export const Culinary_Title =
+  "Culinary Chronicles: Tracing Georgia`s Gastronomic Evolution";
+export const Culinary_Description =
+  "Journey through eras with Georgian cuisine, a flavorful saga intertwining Persian, Ottoman, and Silk Road influences. Delve into recipes embodying centuries-old tales of conquests, trade, and cultural fusion.";
+export const Heritage_Title =
+  "Taste Through Time: Unveiling Centuries of Georgian Culinary Heritage";
+export const Heritage_Description =
+  "Georgian culinary history resonates in every dish, a melange of Byzantine, Arabic, and European flavors. Explore recipes that echo narratives of invasions, aristocratic feasts, and communal gatherings across time.";
+export const Legacy_Title =
+  "Legacy on a Plate: Exploring the Rich Tapestry of Georgian Cuisine";
+export const Legacy_Description =
+  "Uncover Georgia's culinary legacy, an amalgamation of Greek, Mongol, and Russian impacts. Experience recipes that narrate the country's historic battles, royal banquets, and the warmth of familial celebrations.";
+export const Antiquity_Title =
+  "Flavors of Antiquity: Unraveling the Historical Depths of Georgian Cooking";
+export const Antiquity_Description =
+  "Taste the historical mosaic of Georgian gastronomy, blending ancient Anatolian, Caucasian, and Persian influences. Savor recipes enriched by wars, cultural exchanges, and the resilience of a people steeped in tradition.";
+export const Discovering_Title =
+  "From Past to Palate: Discovering the Historic Roots of Georgian Dishes";
+export const Discovering_Description =
+  "Explore Georgian culinary heritage, a fusion of indigenous traditions and Anatolian spices. Delight in recipes that tell stories of agricultural prowess, nomadic influences, and the resilience of a vibrant culture.";
