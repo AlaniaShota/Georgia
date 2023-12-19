@@ -12,7 +12,6 @@ export const TourModal = ({ isOpen, closeModal, tourData, openModalId }) => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{
-            // ease: "linear",
             duration: 0.5,
             delay: 0.5,
           }}
@@ -43,7 +42,6 @@ export const TourModal = ({ isOpen, closeModal, tourData, openModalId }) => {
                         className="object-cover h-630 snap-center"
                       />
                       <img
-                        // ref={(el) => (ref.current = el)}
                         src={item.firstImg}
                         alt={item.marginiTitle}
                         className="rounded-l-md object-cover h-630 snap-center "

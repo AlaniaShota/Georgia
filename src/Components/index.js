@@ -5,3 +5,4 @@ export { Layout } from "./Layout";
 export { MenuBar } from "./MenuBar";
 export { NavLinks } from "./NavLinks";
 export { ScrollToTop } from "./ScrollToTop";
+export { Card } from "./Card/Card";

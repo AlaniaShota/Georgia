@@ -1,4 +1,4 @@
-import { Header } from "../../Components/index";
+import { Card, Header } from "../../Components/index";
 import foodImg from "../../assets/traditional-food-img/georgia-traditional-food-image2.jpg";
 import { Slide } from "./Components/Slide";
 import { RestaurantCard, FoodCard, Tamada } from "./Components";
@@ -8,8 +8,6 @@ import {
   Tradition_Title,
   Tradition_First_Description,
   Tradition_Second_Description,
-  Recommendation_Title,
-  Recommendation_Word,
 } from "./constants";
 
 export const TraditionalFood = () => {
@@ -34,11 +32,7 @@ export const TraditionalFood = () => {
           </p>
         </div>
         <Slide />
-        <div className="flex flex-col my-20 ">
-          <h1 className="text-3xl font-semibold ">{Recommendation_Title}</h1>
-          <p className="text-lg font-light py-3 ">{Recommendation_Word}</p>
-          <RestaurantCard />
-        </div>
+        <RestaurantCard />
         <Tamada />
         <FoodCard />
       </div>

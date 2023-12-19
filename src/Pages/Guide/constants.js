@@ -15,3 +15,7 @@ export const Civilization_Description =
 export const Ushguli_Title = "Ushguli - The Highest Settlement in Europe";
 export const Ushguli_Description =
   "The village of Ushguli is one of the outermost points of Svaneti, with paths leading from there to the highest peaks of the Caucasus Mountains. Ushguli is 2,200 meters above sea level, and is connected to the rest of the country (and world) by the Ushguli-Mestia and Ushguli-Lentekhi roads, which can only be traveled during the four months of the year when they are not blocked by snow.";
+
+export const Why_Guides_Title = "Why Guides are Indispensable?";
+export const Why_Guides_Description =
+  "These guides enrich journeys with local wisdom, expertise.";

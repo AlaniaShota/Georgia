@@ -875,7 +875,7 @@ createServer({
       last_name: "Conklin",
       email: "cconklin1@epa.gov",
       gender: "Female",
-      img: "/assets/Guide/photo-1605993439219-9d09d2020fa5.avif",
+      img: "/assets/Guide/photo-1605993439219-9d09d2020fa5.jpg",
       recommended: [
         {
           id: 1,
@@ -912,7 +912,7 @@ createServer({
       last_name: "Ironmonger",
       email: "cironmonger2@goo.gl",
       gender: "Male",
-      img: "/assets/Guide/photo-1517070208541-6ddc4d3efbcb.avif",
+      img: "/assets/Guide/photo-1517070208541-6ddc4d3efbcb.jpg",
       recommended: [
         {
           id: 1,
@@ -1246,7 +1246,7 @@ createServer({
       last_name: "Ruffler",
       email: "grufflerb@shop-pro.jp",
       gender: "Female",
-      img: "/assets/Guide/photo-1522228115018-d838bcce5c3a.avif",
+      img: "/assets/Guide/photo-1522228115018-d838bcce5c3a.jpg",
       recommended: [
         {
           id: 1,
@@ -1285,7 +1285,7 @@ createServer({
       last_name: "Borell",
       email: "dborellc@istockphoto.com",
       gender: "Female",
-      img: "/assets/Guide/photo-1532074205216-d0e1f4b87368.avif",
+      img: "/assets/Guide/photo-1532074205216-d0e1f4b87368.jpg",
       recommended: [
         {
           id: 1,
@@ -4704,6 +4704,11 @@ createServer({
     this.get("/locations/:id", (schema, request) => {
       const id = request.params.id;
       return schema.locations.find(id);
+    });
+
+    this.get("/guides/:id", (schema, request) => {
+      const id = request.params.id;
+      return schema.guides.find(id);
     });
 
     // this.get("/restaurants/:contact", (schema, request) => {
