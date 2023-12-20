@@ -1,12 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Header } from "../../../Components";
-import {
-  FoodCard,
-  ButtonViewMore,
-  Tour,
-  PopularPlace,
-  Banner,
-} from "./Components/index";
+import { FoodCard, Header } from "../../../Components";
+import { ButtonViewMore, Tour, PopularPlace, Banner } from "./Components/index";
 import { Cuisine_Guria_Description, Cuisine_Guria_Title } from "../constant";
 import { useLocationStore } from "../../../Store/store";
 
@@ -120,8 +114,8 @@ export const GuriaPage = () => {
             </div>
             <Tour tourData={item.tour} />
             <FoodCard
-              cuisineTitle={Cuisine_Guria_Title}
-              cuisineDescription={Cuisine_Guria_Description}
+              title={Cuisine_Guria_Title}
+              description={Cuisine_Guria_Description}
               filterCuisine={"Guria"}
             />
             <Banner bannerData={item.topExperiences} />

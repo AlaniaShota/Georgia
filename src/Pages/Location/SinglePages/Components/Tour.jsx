@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { TourCard } from "./Tour/TourCard";
 import { TourModal } from "./Tour/TourModal";
+import { Modal } from "../../../../Components/Modal/Modal";
 
 export const Tour = ({ tourData }) => {
   const [openModalId, setOpenModalId] = useState(null);

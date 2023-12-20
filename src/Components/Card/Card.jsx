@@ -20,7 +20,7 @@ export const Card = ({ data, title, description }) => {
           {data.slice(0, next).map((item) => (
             <div
               key={item.id}
-              className="flex flex-col border drop-shadow-lg rounded-md bg-white"
+              className="flex flex-col border drop-shadow-lg rounded-md !bg-white"
             >
               <img
                 src={item.img}
@@ -28,7 +28,7 @@ export const Card = ({ data, title, description }) => {
                 loading="lazy"
                 className="rounded-t-md object-cover w-full h-52"
               />
-              <div className="grid grid-cols-3  m-4">
+              <div className="grid grid-cols-3  p-4">
                 <div className="col-span-2">
                   {item.name ? (
                     <h1 className="text-lg font-semibold">{item.name}</h1>
@@ -40,7 +40,7 @@ export const Card = ({ data, title, description }) => {
                     <h1 className="text-lg font-semibold">{item.first_name}</h1>
                   ) : null}
                 </div>
-                <div className=" col-span-1 ">
+                <div className=" col-span-1 items-center">
                   {item.visit ? (
                     <Link
                       to={item.visit}
@@ -57,7 +57,7 @@ export const Card = ({ data, title, description }) => {
                   {item.status ? (
                     <Link
                       to={`/tour-guide/${item.id}`}
-                      className="flex justify-end items-end"
+                      className="flex justify-end items-end my-1"
                     >
                       <Button>
                         <span className=" text-darkBlueText font-medium">

@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { Modal } from "../../../../../Components/index";
 
 export const BannerModal = ({
   isOpen,
@@ -53,19 +53,7 @@ export const BannerModal = ({
   }
 
   return (
-    <motion.div
-      className={`flex justify-center items-center px-10 z-50 bg-black fixed inset-0  bg-opacity-50 backdrop-blur-xl overflow-hidden ${
-        isOpen ? "show" : "hide"
-      }`}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{
-        duration: 0.5,
-        delay: 0.5,
-      }}
-      onClick={handleClose}
-    >
+    <Modal isOpen={isOpen} closeModal={closeModal}>
       <div
         className="snap-y  snap-mandatory overflow-y-auto h-630 rounded-md scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-300"
         onClick={(e) => e.stopPropagation()}
@@ -78,6 +66,6 @@ export const BannerModal = ({
         </span>
         {content}
       </div>
-    </motion.div>
+    </Modal>
   );
 };

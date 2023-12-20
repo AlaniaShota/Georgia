@@ -30,7 +30,6 @@ export const PopularPlace = ({ placeData }) => {
       {placeData.map((item, index) => (
         <div key={index} className="flex justify-between my-20 ">
           <motion.div
-            // ref={ref}
             variants={cardVariants}
             initial={{ opacity: 0, x: -70 }}
             animate={cardAnimation}

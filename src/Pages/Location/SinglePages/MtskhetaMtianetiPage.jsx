@@ -1,12 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Header } from "../../../Components";
-import {
-  FoodCard,
-  ButtonViewMore,
-  Tour,
-  PopularPlace,
-  Banner,
-} from "./Components/index";
+import { FoodCard, Header } from "../../../Components";
+import { ButtonViewMore, Tour, PopularPlace, Banner } from "./Components/index";
 import {
   Cuisine_Mtskheta_Mtianeti_Description,
   Cuisine_Mtskheta_Mtianeti_Title,
@@ -106,8 +100,8 @@ export const MtskhetaMtianetiPage = () => {
             </div>
             <Tour tourData={item.tour} />
             <FoodCard
-              cuisineTitle={Cuisine_Mtskheta_Mtianeti_Title}
-              cuisineDescription={Cuisine_Mtskheta_Mtianeti_Description}
+              title={Cuisine_Mtskheta_Mtianeti_Title}
+              description={Cuisine_Mtskheta_Mtianeti_Description}
               filterCuisine={"Mtskheta Mtianeti"}
             />
             <Banner bannerData={item.topExperiences} />

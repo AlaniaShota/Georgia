@@ -1,13 +1,15 @@
-import { Card, Header } from "../../Components/index";
+import { Header, FoodCard } from "../../Components/index";
 import foodImg from "../../assets/traditional-food-img/georgia-traditional-food-image2.jpg";
 import { Slide } from "./Components/Slide";
-import { RestaurantCard, FoodCard, Tamada } from "./Components";
+import { RestaurantCard, Tamada } from "./Components";
 import {
   Page_Title,
   About_Page,
   Tradition_Title,
   Tradition_First_Description,
   Tradition_Second_Description,
+  Dishes_Title,
+  Dishes_Description,
 } from "./constants";
 
 export const TraditionalFood = () => {
@@ -34,7 +36,7 @@ export const TraditionalFood = () => {
         <Slide />
         <RestaurantCard />
         <Tamada />
-        <FoodCard />
+        <FoodCard title={Dishes_Title} description={Dishes_Description} />
       </div>
     </>
   );

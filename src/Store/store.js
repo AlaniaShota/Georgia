@@ -16,6 +16,22 @@ export const useLocationStore = create((set) => ({
   },
 }));
 
+export const useFoodStore = create((set) => ({
+  foods: [],
+  fetchFoods: async () => {
+    try {
+      const response = await fetch(`/api/foods`);
+      if (!response.ok) {
+        throw new Error("Network response was not ok.");
+      }
+      const data = await response.json();
+      set({ foods: data });
+    } catch (error) {
+      console.error("There was a problem fetching the tour data:", error);
+    }
+  },
+}));
+
 export const useSeasonsStore = create((set) => ({
   seasons: [],
   fetchSeasons: async () => {
