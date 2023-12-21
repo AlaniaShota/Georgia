@@ -38,9 +38,9 @@ export const Comments = () => {
     { id: 10, name: Eva_Title, description: Festivals_Events },
   ];
   return (
-    <div>
+    <div className="flex flex-col items-start">
       {data.map((item) => (
-        <div key={item.id}>
+        <div key={item.id} className="flex mt-1">
           <FontAwesomeIcon icon={faUser} className="mt-2 ml-2" size="xl" />
           <div className="flex flex-col ml-4">
             <h1 className="text-xl font-medium">{item.name}</h1>
