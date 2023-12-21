@@ -5,7 +5,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import batumiImg from "../../../assets/location/batumi.jpeg";
 import { Recommendation_Title, Recommendation_Description } from "../constant";
-import { Button, ExploreButton } from "../../../Components";
+import { ExploreButton } from "../../../Components";
 import { Link } from "react-router-dom";
 
 gsap.registerPlugin(TextPlugin);

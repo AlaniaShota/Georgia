@@ -1,13 +1,16 @@
-import { Helmet } from "react-helmet";
+import { Header } from "../../Components";
+import img from "../../assets/hotel/Macon-beauty-spots-in-Georgia.jpg";
+import { Page_Description, Page_Title } from "./constants";
 
 export const Hotel = () => {
   return (
-    <div>
-      <Helmet>
-        {/* <meta charSet="utf-8" /> */}
-        <title>Hotel</title>
-      </Helmet>
-      Hotel
-    </div>
+    <>
+      <Header
+        titlePage={"Georgian Hotels"}
+        titleText={Page_Title}
+        descriptionText={Page_Description}
+        img={img}
+      />
+    </>
   );
 };

@@ -5,7 +5,7 @@ import {
   SeasonDisplay,
 } from "../Location/Components/index";
 import { Location_Description, Location_Title } from "./constant";
-import locationImg from "../../assets/location/Macon-beauty-spots-in-Georgia.jpg";
+import locationImg from "../../assets/location/georgia-roadtrip-tbilisi_3x2.avif";
 import { RecommendationCard } from "./Components/RecommendationCard";
 
 export const Location = () => {
