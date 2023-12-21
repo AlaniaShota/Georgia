@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useParams, useLocation } from "react-router-dom";
 
 import RecommendationRestaurant from "./Recommendation/RecommendationRestaurant";
+import { Button } from "../../../Components/Button";
 
 const DetailFood = () => {
   const [moreInformation, setMoreInformation] = useState(null);
@@ -26,24 +27,24 @@ const DetailFood = () => {
           className="rounded-t-lg object-contain"
         />
         <Link to={`..${search}`} relative="path" className="flex mt-2 pl-4">
-          <button className="border border-middleBlueBorderColor hover:bg-middleBlueHoverColor rounded-md py-2 px-4">
+          <Button>
             <span className="text-darkBlueText font-medium">
               &larr; BACK TO {searchCategory}
             </span>
-          </button>
+          </Button>
         </Link>
         <div className="flex justify-between">
           <div className="flex flex-col flex-wrap justify-center items-start px-4">
             {moreInformation.type ? (
-              <h6 className="text-secondColor">{moreInformation.type}</h6>
+              <h6 className="text-BlackSecondColor">{moreInformation.type}</h6>
             ) : null}
             <h1 className="text-4xl">{moreInformation.name}</h1>
             {moreInformation.location ? (
-              <h4 className="text-secondColor text-xl">
+              <h4 className="text-BlackSecondColor text-xl">
                 {moreInformation.location}
               </h4>
             ) : (
-              <h4 className="text-secondColor text-xl">Most iconic:</h4>
+              <h4 className="text-BlackSecondColor text-xl">Most iconic:</h4>
             )}
           </div>
           <div className="my-8 px-4">

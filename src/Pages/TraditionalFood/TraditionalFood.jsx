@@ -1,4 +1,7 @@
 import { Helmet } from "react-helmet";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { TextPlugin } from "gsap/TextPlugin";
 import foodImg from "../../assets/traditional-food-img/georgia-traditional-food-image2.jpg";
 import tamadaImg from "../../assets/traditional-food-img/tamada.jpg";
 import RestaurantCard from "./Components/Card/RestaurantCard";
@@ -19,6 +22,31 @@ import {
 } from "./constants";
 
 const TraditionalFood = () => {
+  const titleTextRef = useRef(null);
+  const descriptionTextRef = useRef(null);
+
+  useEffect(() => {
+    const firstTextElement = titleTextRef.current;
+    const secondTextElement = descriptionTextRef.current;
+
+    gsap.registerPlugin(TextPlugin);
+
+    gsap.to(firstTextElement, {
+      stagger: 0.02,
+      duration: 3,
+      delay: 1,
+      text: Page_Title,
+      ease: "power1.inOut",
+    });
+
+    gsap.to(secondTextElement, {
+      stagger: 0.02,
+      duration: 5,
+      delay: 3,
+      text: About_Page,
+      ease: "power1.inOut",
+    });
+  });
   return (
     <div>
       <Helmet>
@@ -32,12 +60,14 @@ const TraditionalFood = () => {
           className="object-cover h-[737px] w-full"
         />
         <div className="absolute ml-40">
-          <h1 className="text-left text-2xl text-white font-bold cursor-default">
-            {Page_Title}
-          </h1>
-          <p className="w-[497px] text-white font-normal cursor-default">
-            {About_Page}
-          </p>
+          <h1
+            className="text-left pb-2 text-4xl text-white font-bold cursor-default"
+            ref={titleTextRef}
+          ></h1>
+          <p
+            className="w-497 pt-2 text-white font-normal cursor-default"
+            ref={descriptionTextRef}
+          ></p>
         </div>
       </div>
       <div className="my-20 lg:container sm:mx-8 lg:mx-0 ">
@@ -45,10 +75,10 @@ const TraditionalFood = () => {
           <h1 className="text-2xl font-bold mb-5 text-center cursor-default">
             {Tradition_Title}
           </h1>
-          <p className="text-secondColor font-medium mb-5 text-center w-[740px] cursor-default">
+          <p className="text-BlackSecondColor font-medium mb-5 text-center w-[740px] cursor-default">
             {Tradition_First_Description}
           </p>
-          <p className="text-center text-secondColor font-medium w-[740px] cursor-default">
+          <p className="text-center text-BlackSecondColor font-medium w-[740px] cursor-default">
             {Tradition_Second_Description}
           </p>
         </div>
@@ -81,7 +111,7 @@ const TraditionalFood = () => {
               <h1 className="text-left text-2xl text-white font-bold cursor-default">
                 {Tamada_Title}
               </h1>
-              <p className="w-[497px] text-white font-normal cursor-default">
+              <p className="w-497 text-white font-normal cursor-default">
                 {Tamada_Description}
               </p>
             </div>

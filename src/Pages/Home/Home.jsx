@@ -1,6 +1,63 @@
+import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import MultiHeaderParallax from "./Components/MultiHeaderParallax";
+import MultiAlphabetDrag from "./Components/MultiAlphabetDrag";
+import MultiHeritageAnimation from "./Components/MultiHeritageAnimation";
+import MultiCuisineMouseMove from "./Components/MultiCuisineMouseMove";
+import UniqueFolk from "./Components/UniqueFolk";
+import LanguageDance from "./Components/LanguageDance";
+import MultiAdventureScroll from "./Components/MultiAdventureScroll";
 
+const cardVariants = {
+  offscreen: {
+    y: 100,
+  },
+
+  onscreen: {
+    y: 70,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 0.8,
+    },
+  },
+};
+
+function Card({ customComponent, isFirst }) {
+  const renderComponent = () => {
+    switch (customComponent) {
+      case "A":
+        return <MultiAlphabetDrag />;
+      case "B":
+        return <MultiCuisineMouseMove />;
+      case "C":
+        return <MultiHeritageAnimation />;
+      case "D":
+        return <UniqueFolk />;
+      case "E":
+        return <LanguageDance />;
+      case "F":
+        return <MultiAdventureScroll />;
+      default:
+        return null;
+    }
+  };
+
+  return (
+    <motion.div
+      className={` ${isFirst ? "" : "scroll-py-40 my-20"}`}
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: true, amount: 0.8 }}
+    >
+      <motion.div className="card" variants={cardVariants}>
+        {renderComponent()}
+      </motion.div>
+    </motion.div>
+  );
+}
+
+const customComponentsData = [["A"], ["B"], ["C"], ["D"], ["E"], ["F"]];
 const Home = () => {
   return (
     <div>
@@ -10,6 +67,15 @@ const Home = () => {
       </Helmet>
       <div>
         <MultiHeaderParallax />
+      </div>
+      <div className="lg:container sm:mx-8 lg:mx-0 ">
+        {customComponentsData.map(([componentType], index) => (
+          <Card
+            customComponent={componentType}
+            key={index}
+            isFirst={index === 0}
+          />
+        ))}
       </div>
     </div>
   );

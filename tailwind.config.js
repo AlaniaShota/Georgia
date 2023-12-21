@@ -12,14 +12,25 @@ export default {
       backgroundColor: {
         middleBlueHoverColor: "rgb(59 130 246 / 0.1)",
         darkBlueBackground: "#1976D2",
+        whiteSecondBackground: "#ffffffcc",
       },
       textColor: {
         darkBlueText: "#1976D2",
-        secondColor: "#00000099",
+        BlackSecondColor: "#00000099",
+        whiteSecondText: "#ffffffcc",
       },
       opacity: {
         5: 0.2,
       },
+      height: {
+        630: "630px",
+      },
+      width: {
+        497: "497px",
+      },
+      // scrollMargin: {
+      //   '96': '24rem',
+      // },
     },
   },
   plugins: [],

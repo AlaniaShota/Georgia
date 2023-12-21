@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { Button } from "../../../../Components/Button";
 
 const RecommendationRestaurant = () => {
   const [randomRestaurant, setRandomRestaurant] = useState([]);
@@ -30,16 +31,16 @@ const RecommendationRestaurant = () => {
             />
             <div className="flex flex-col justify-center my-6 pl-4 ">
               <h1 className="text-xl font-normal">{item.name}</h1>
-              <h3 className="text-sm text-secondColor font-light">
+              <h3 className="text-sm text-BlackSecondColor font-light">
                 {item.location}
               </h3>
             </div>
-            <Link to={item.visit} className="ml-2 mb-2">
-              <button className=" hover:bg-middleBlueHoverColor hover:rounded-md py-1 px-2">
+            <Link to={item.visit} className="ml-4 mb-2">
+              <Button>
                 <span className="text-darkBlueText text-sm font-medium">
                   WEBSITE
                 </span>
-              </button>
+              </Button>
             </Link>
           </div>
         ))}
