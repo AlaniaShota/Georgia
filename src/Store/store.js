@@ -109,3 +109,19 @@ export const useRestaurantStore = create((set) => ({
     }
   },
 }));
+
+export const useHotelStore = create((set) => ({
+  hotels: [],
+  fetchHotels: async () => {
+    try {
+      const response = await fetch("/api/hotels");
+      if (!response.ok) {
+        throw new Error("Network response was not ok.");
+      }
+      const data = await response.json();
+      set({ hotels: data });
+    } catch (error) {
+      console.error("There was a problem fetching the tour data:", error);
+    }
+  },
+}));

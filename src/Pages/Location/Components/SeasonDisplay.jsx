@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useSeasonsStore } from "../../../Store/store";
 import { Link } from "react-router-dom";
-import { useAnimation, motion, easeIn, easeInOut } from "framer-motion";
+import { useAnimation, motion, easeInOut } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 export const SeasonDisplay = () => {

@@ -4833,6 +4833,7 @@ createServer({
     });
     server.create("hotel", {
       id: 1,
+      date: new Date(),
       name: "Babaneuris Marani",
       location: "village babaneuri, 0909 Babaneuri",
       link: "kakheti",
@@ -4890,6 +4891,7 @@ createServer({
     });
     server.create("hotel", {
       id: 2,
+      date: new Date(),
       name: "Holiday Inn Telavi",
       location: "2 Rustaveli Avenue, 2200 Telavi",
       link: "tbilisi",
@@ -4944,7 +4946,8 @@ createServer({
       ],
     });
     server.create("hotel", {
-      id: 4,
+      id: 3,
+      date: new Date(),
       name: "Kundzuli",
       location: "Ilia Lake Road, 4800 Kvareli",
       link: "khakheti",
@@ -4980,7 +4983,8 @@ createServer({
       ],
     });
     server.create("hotel", {
-      id: 4,
+      id: 5,
+      date: new Date(),
       name: "WOOD HOUSE LAGODEKHI",
       location: "125 Vashlovani St, Lagodekhi 2700",
       link: "khakheti",
@@ -5033,7 +5037,8 @@ createServer({
       ],
     });
     server.create("hotel", {
-      id: 5,
+      id: 6,
+      date: new Date(),
       name: "Comfy Home ll",
       location: "4 Besik Street, Mtatsminda, 0108",
       link: "tbilisi",
@@ -5084,7 +5089,8 @@ createServer({
       ],
     });
     server.create("hotel", {
-      id: 6,
+      id: 7,
+      date: new Date(),
       name: "House & Yard Sesil",
       location: "kaprovani hotel sesil 1, 3522",
       link: "guria",
@@ -5136,7 +5142,8 @@ createServer({
       ],
     });
     server.create("hotel", {
-      id: 7,
+      id: 8,
+      date: new Date(),
       name: "Pine Aparthotel",
       location: "Shekvetili(kaprovani), Shekvetili,",
       link: "guria",
@@ -5188,7 +5195,8 @@ createServer({
       ],
     });
     server.create("hotel", {
-      id: 8,
+      id: 9,
+      date: new Date(),
       name: "Kapro",
       location: "village Kaprovani, 3521",
       link: "guria",
@@ -5240,7 +5248,8 @@ createServer({
       ],
     });
     server.create("hotel", {
-      id: 9,
+      id: 10,
+      date: new Date(),
       name: "Hotel Legiandro Surami",
       location: "guramishvili 37, 5706",
       link: "shida-kartli",
@@ -5291,7 +5300,8 @@ createServer({
       ],
     });
     server.create("hotel", {
-      id: 10,
+      id: 11,
+      date: new Date(),
       name: "Eco Oasis",
       location: "Devadze str.5, 7090 ",
       link: "shida-kartli",
@@ -5334,7 +5344,8 @@ createServer({
       ],
     });
     server.create("hotel", {
-      id: 11,
+      id: 12,
+      date: new Date(),
       name: "Gori Apartments",
       location: "Petre Bagrationi Street #74, 1400",
       link: "shida-kartli",
@@ -5388,7 +5399,8 @@ createServer({
       ],
     });
     server.create("hotel", {
-      id: 12,
+      id: 13,
+      date: new Date(),
       name: "Oldtown Kutaisi",
       location: "6 Sagaradze Street, 4600",
       link: "imereti",
@@ -5440,7 +5452,8 @@ createServer({
       ],
     });
     server.create("hotel", {
-      id: 13,
+      id: 14,
+      date: new Date(),
       name: "Dani Apartment",
       location: "Javakhishvili Street 41, 4600",
       link: "imereti",
@@ -5486,7 +5499,8 @@ createServer({
       ],
     });
     server.create("hotel", {
-      id: 14,
+      id: 15,
+      date: new Date(),
       name: "Hotel West Face",
       location: "Kutaisi banoja 17/40, 5406",
       link: "imereti",
@@ -5540,7 +5554,8 @@ createServer({
       ],
     });
     server.create("hotel", {
-      id: 15,
+      id: 16,
+      date: new Date(),
       name: "Our Apartment",
       location: "21a Tsereteli Street, 4600",
       link: "imereti",
@@ -5591,7 +5606,8 @@ createServer({
       ],
     });
     server.create("hotel", {
-      id: 16,
+      id: 17,
+      date: new Date(),
       name: "Orbi ",
       location: "21a Tsereteli Street, 4600",
       link: "ajara",
@@ -5646,7 +5662,8 @@ createServer({
       ],
     });
     server.create("hotel", {
-      id: 17,
+      id: 18,
+      date: new Date(),
       name: "Barakah Apartmets Batumi",
       location: "Sherif Khimshiashvili Street, 6000 ",
       link: "ajara",
@@ -5701,7 +5718,8 @@ createServer({
       ],
     });
     server.create("hotel", {
-      id: 18,
+      id: 19,
+      date: new Date(),
       name: "JRW Welmond",
       location: "Shavsheti Street 2/4, 6010 ",
       link: "ajara",
@@ -5756,7 +5774,8 @@ createServer({
       ],
     });
     server.create("hotel", {
-      id: 19,
+      id: 20,
+      date: new Date(),
       name: "Brotseulebi",
       location: "Giorgi Brtskinvale street",
       link: "racha-lechkumi-kvemo-svaneti",
@@ -5808,7 +5827,8 @@ createServer({
       ],
     });
     server.create("hotel", {
-      id: 20,
+      id: 21,
+      date: new Date(),
       name: "WoodStar",
       location: "Shishinashvili Street, 0400",
       link: "racha-lechkumi-kvemo-svaneti",
@@ -5861,7 +5881,8 @@ createServer({
       ],
     });
     server.create("hotel", {
-      id: 21,
+      id: 22,
+      date: new Date(),
       name: "Chalet Panorama Nikortsminda",
       location: "Nikortsminda, ambrolauri 0408",
       link: "racha-lechkumi-kvemo-svaneti",
@@ -5899,7 +5920,8 @@ createServer({
       ],
     });
     server.create("hotel", {
-      id: 22,
+      id: 23,
+      date: new Date(),
       name: "Karse",
       location: "Village Sadmeli, 0410 ",
       link: "racha-lechkumi-kvemo-svaneti",
@@ -5954,7 +5976,8 @@ createServer({
       ],
     });
     server.create("hotel", {
-      id: 23,
+      id: 24,
+      date: new Date(),
       name: "Crystal Hotel & SPA",
       location: "Didveli Funicular Railway, 1204 ",
       link: "samtskhe-javakheti",
@@ -6013,7 +6036,8 @@ createServer({
       ],
     });
     server.create("hotel", {
-      id: 24,
+      id: 25,
+      date: new Date(),
       name: "Bakuriani Inn",
       location: "12 Tsakadze street, 1204 ",
       link: "samtskhe-javakheti",
@@ -6072,7 +6096,8 @@ createServer({
       ],
     });
     server.create("hotel", {
-      id: 25,
+      id: 26,
+      date: new Date(),
       name: "Borjomi Likani Health & Spa Centre",
       location: "Meskheti Street 16, 1200",
       link: "samtskhe-javakheti",
@@ -6131,7 +6156,8 @@ createServer({
       ],
     });
     server.create("hotel", {
-      id: 26,
+      id: 27,
+      date: new Date(),
       name: "LETO",
       location: "31 Zviad Gamsakhurdia Avenue, 2100",
       link: "samegrelo-zemo-svaneti",
@@ -6191,7 +6217,8 @@ createServer({
       ],
     });
     server.create("hotel", {
-      id: 27,
+      id: 28,
+      date: new Date(),
       name: "Gistola",
       location: "39, Boris Kakhiani street, 3200",
       link: "samegrelo-zemo-svaneti",
@@ -6248,7 +6275,8 @@ createServer({
       ],
     });
     server.create("hotel", {
-      id: 28,
+      id: 29,
+      date: new Date(),
       name: "Hotel Posta",
       location: "Seti Square, 3200 ",
       link: "samegrelo-zemo-svaneti",
@@ -6308,7 +6336,8 @@ createServer({
       ],
     });
     server.create("hotel", {
-      id: 28,
+      id: 30,
+      date: new Date(),
       name: "Grand Hotel",
       location: "35 Gamsakhurdia Street, 2100",
       link: "samegrelo-zemo-svaneti",
@@ -6333,7 +6362,7 @@ createServer({
         "/assets/hotel/203109244.jpg",
         "/assets/hotel/203113529.jpg",
         "/assets/hotel/203111545.jpg",
-        "/assets/hotel/368064611.jpg",
+        "/assets/hotel/203111554.jpg",
       ],
       comments: [
         {
@@ -6351,6 +6380,151 @@ createServer({
           countryImg: "/assets/hotel/Si.png",
           comment:
             "Very good location, huge room, nice staff, breakfast with the view on 6th. floor",
+        },
+      ],
+    });
+    server.create("hotel", {
+      id: 31,
+      date: new Date(),
+      name: "Hotel Late",
+      location: "Javaxishvili st 1, 3300",
+      link: "mtskheta-mtianeti",
+      firstDescription:
+        "Set in Mtskheta, 19 km from Medical University Metro Station, Hotel Late offers accommodation with a garden, free private parking, a shared lounge and a terrace. Featuring a restaurant, the 4-star hotel has air-conditioned rooms with free WiFi, each with a private bathroom. The accommodation provides a shared kitchen, free shuttle service and currency exchange for guests.",
+      secondDescription: "At the hotel all rooms include bed linen and towels.",
+      img: "/assets/hotel/267881422.jpg",
+      price: 115,
+      facilities: [
+        "Airport shuttle",
+        "Non-smoking rooms",
+        "Restaurant",
+        "Bar",
+        "Breakfast",
+        "Free WiFi",
+        "Free parking",
+        "Family rooms",
+      ],
+      breakfast: ["Continental", "Vegetarian", "Vegan", "Kosher"],
+      imgLibrary: [
+        "/assets/hotel/267886935.jpg",
+        "/assets/hotel/267883356.jpg",
+        "/assets/hotel/267885339.jpg",
+        "/assets/hotel/267885290.jpg",
+        "/assets/hotel/267885280.jpg",
+      ],
+      comments: [
+        {
+          id: 1,
+          name: "Rusudan",
+          country: "Georgia",
+          countryImg: "/assets/hotel/Ge.png",
+          comment:
+            "We took apartment with two bedroom, private bathroom and small living room. Beds in each room was queen size and was super comfortable. bedrooms also have private balcony with city view. There was refrigerator in living room and and little table...",
+        },
+      ],
+    });
+    server.create("hotel", {
+      id: 32,
+      date: new Date(),
+      name: "Levanto",
+      location: "58 Arsukidze Street, 3300 ",
+      link: "mtskheta-mtianeti",
+      firstDescription:
+        "Situated in Mtskheta, Levanto is a recently renovated accommodation, 21 km from Medical University Metro Station and 24 km from Tbilisi Opera and Ballet Theatre. Featuring mountain and river views, this apartment also comes with free WiFi. The property is non-smoking and is located 25 km from Rustaveli Theatre.",
+      secondDescription:
+        "The spacious apartment has a terrace, 2 bedrooms, a living room and a well-equipped kitchen with a fridge and kitchenware. The air-conditioned unit at the property features a bath and a dressing room. The property offers city views.",
+      img: "/assets/hotel/332266611.jpg",
+      price: 115,
+      facilities: [
+        "Non-smoking rooms",
+
+        "Free WiFi",
+        "Free parking",
+        "Family rooms",
+      ],
+      imgLibrary: [
+        "/assets/hotel/332266928.jpg",
+        "/assets/hotel/330868597.jpg",
+        "/assets/hotel/330733595.jpg",
+        "/assets/hotel/478807079.jpg",
+        "/assets/hotel/478807230.jpg",
+      ],
+      comments: [
+        {
+          id: 1,
+          name: "Wojciech",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment: "Very nice and clean apartment in the heart of Mtsketa",
+        },
+        {
+          id: 2,
+          name: "Syed",
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
+            "The house is spectacularly located, the view is breath taking. You can see the Jvari Monestry in the distance and its situated in the Old Town. Literally the best location.",
+        },
+        {
+          id: 3,
+          name: "Anastassia",
+          country: "Russia",
+          countryImg: "/assets/hotel/Ru.png",
+          comment:
+            "Wonderful place in the middle of the city center! Very cozy, with beautiful views and friendly hosts. Very thankful to Keti and her family for their hospitality.",
+        },
+      ],
+    });
+    server.create("hotel", {
+      id: 33,
+      date: new Date(),
+      name: "Guest house Ebralidze",
+      location: "Merab Kostava Street 37, 3300 ",
+      link: "mtskheta-mtianeti",
+      firstDescription:
+        "Featuring mountain views, Guest house Ebralidze offers accommodation with balcony, around 20 km from Medical University Metro Station. The property has garden and city views, and is 24 km from Tbilisi Opera and Ballet Theatre. Boasting family rooms, this property also provides guests with a sun terrace.",
+      secondDescription:
+        "The air-conditioned units have a fully equipped kitchenette with dining area, a fridge, kettle, and a minibar. Featuring a private bathroom with a bath and slippers, units at the guest house also have free WiFi. At the guest house, the units have bed linen and towels.",
+      img: "/assets/hotel/332266611.jpg",
+      price: 55,
+      facilities: [
+        "Non-smoking rooms",
+        "Tea/coffee maker in all rooms",
+        "Free WiFi",
+        "Free parking",
+        "Family rooms",
+      ],
+      imgLibrary: [
+        "/assets/hotel/332266928.jpg",
+        "/assets/hotel/330868597.jpg",
+        "/assets/hotel/330733595.jpg",
+        "/assets/hotel/478807079.jpg",
+        "/assets/hotel/478807230.jpg",
+      ],
+      comments: [
+        {
+          id: 1,
+          name: "Attila",
+          country: "Hungary",
+          countryImg: "/assets/hotel/Hu.png",
+          comment:
+            "very nice guest house very close to the main attraction, the cathedral. it was winter when visited, however the garden is exceptional, i could imagine it's a wonderful place during warmer months. we asked for a breakfast which was also great.",
+        },
+        {
+          id: 2,
+          name: "Dustin",
+          country: "United States",
+          countryImg: "/assets/hotel/Us.png",
+          comment:
+            "Good location right in the city. Room was comfortable and clean. Bathroom was clean, shower was hot and with good pressure. The owners are very friendly, French and Russian is spoken. It's a great place to stay if you have a dog - they have a very...",
+        },
+        {
+          id: 3,
+          name: "R",
+          country: "Netherlands",
+          countryImg: "/assets/hotel/Ru.png",
+          comment:
+            "Great location and comfortable room! Also a very nice garden.",
         },
       ],
     });
@@ -6403,6 +6577,14 @@ createServer({
       "/seasons",
       (schema, request) => {
         return schema.seasons.all();
+      },
+      // { timing: 2000, headers: { "Cache-Control": "no-store" } }
+    );
+
+    this.get(
+      "/hotels",
+      (schema, request) => {
+        return schema.hotels.all();
       },
       // { timing: 2000, headers: { "Cache-Control": "no-store" } }
     );

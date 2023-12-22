@@ -31,6 +31,7 @@ export default {
       },
       width: {
         280: "280px",
+        370: "370px",
         497: "497px",
       },
       // scrollMargin: {
