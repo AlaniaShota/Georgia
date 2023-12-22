@@ -29,6 +29,7 @@ import {
   TraditionalFoodLibery,
 } from "../Pages/TraditionalFood/Components/index";
 import { GuidePortfolio } from "../Pages/Guide/Components";
+import { DayPickerProvider } from "react-day-picker";
 
 export const router = createBrowserRouter([
   {
@@ -114,7 +115,11 @@ export const router = createBrowserRouter([
       },
       {
         path: "hotel",
-        element: <Hotel />,
+        element: (
+          <>
+            <Hotel />
+          </>
+        ),
       },
       {
         path: "traditional-food",

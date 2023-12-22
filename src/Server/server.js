@@ -13,7 +13,7 @@ createServer({
 
   seeds(server) {
     server.create("food", {
-      id: "el1",
+      id: 1,
       img: "/assets/georgian-traditional-food/Khachapuri.jpg",
       type: "SAVORY PIE",
       name: "Khachapuri",
@@ -25,7 +25,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Khachapuri.png",
     });
     server.create("food", {
-      id: "el2",
+      id: 2,
       img: "/assets/georgian-traditional-food/Khinkali.jpg",
       type: "DUMPLINGS",
       name: "Khinkali",
@@ -37,7 +37,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Khinkali.png",
     });
     server.create("food", {
-      id: "el3",
+      id: 3,
       img: "/assets/georgian-traditional-food/Lobio.jpg",
       type: "STEW",
       name: "Lobio",
@@ -49,7 +49,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Lobio.png",
     });
     server.create("food", {
-      id: "el4",
+      id: 4,
       img: "/assets/georgian-traditional-food/Chicken-tabaka.jpg",
       type: "CHICKEN DISH",
       name: "Chicken tabaka",
@@ -60,7 +60,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Chicken-tabaka.png",
     });
     server.create("food", {
-      id: "el5",
+      id: 5,
       img: "/assets/georgian-traditional-food/Ajika.jpg",
       type: "DIP",
       name: "Ajika",
@@ -72,7 +72,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Ajika.png",
     });
     server.create("food", {
-      id: "el6",
+      id: 6,
       img: "/assets/georgian-traditional-food/Mtsvadi.jpg",
       type: "MEAT DISH",
       name: "Mtsvadi",
@@ -84,7 +84,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Mtsvadi.png",
     });
     server.create("food", {
-      id: "el7",
+      id: 7,
       img: "/assets/georgian-traditional-food/Imeruli-khachapuri.jpg",
       type: "SAVORY PIE",
       name: "Imeruli khachapuri",
@@ -96,7 +96,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Imeruli-khachapuri.png",
     });
     server.create("food", {
-      id: "el8",
+      id: 8,
       img: "/assets/georgian-traditional-food/Kharcho.jpg",
       type: "MEAT SOUP",
       name: "Kharcho",
@@ -108,7 +108,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Kharcho.png",
     });
     server.create("food", {
-      id: "el9",
+      id: 9,
       img: "/assets/georgian-traditional-food/Lobiani.jpg",
       type: "BREAD",
       name: "Lobiani",
@@ -120,7 +120,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Lobiani.png",
     });
     server.create("food", {
-      id: "el10",
+      id: 10,
       img: "/assets/georgian-traditional-food/Adjarian-khachapuri.jpg",
       type: "SAVORY PIE",
       name: "Adjarian khachapuri",
@@ -132,7 +132,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Adjarian-khachapuri.png",
     });
     server.create("food", {
-      id: "el11",
+      id: 11,
       img: "/assets/georgian-traditional-food/Tolma.jpg",
       type: "GROUND MEAT DISH",
       name: "Tolma",
@@ -143,7 +143,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Tolma.png",
     });
     server.create("food", {
-      id: "el12",
+      id: 12,
       img: "/assets/georgian-traditional-food/Churchkhela.jpg",
       type: "DESSERT",
       name: "Churchkhela",
@@ -154,7 +154,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Churchkhela.png",
     });
     server.create("food", {
-      id: "el13",
+      id: 13,
       img: "/assets/georgian-traditional-food/Kupati.jpg",
       type: "SAUSAGE",
       name: "Kupati",
@@ -166,7 +166,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Kupati.png",
     });
     server.create("food", {
-      id: "el14",
+      id: 14,
       img: "/assets/georgian-traditional-food/Badrijani.jpg",
       type: "APPETIZER",
       name: "Badrijani",
@@ -178,7 +178,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Badrijani.png",
     });
     server.create("food", {
-      id: "el15",
+      id: 15,
       img: "/assets/georgian-traditional-food/Tkemali.jpg",
       type: "SAUCE",
       name: "Tkemali",
@@ -189,7 +189,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Tkemali.png",
     });
     server.create("food", {
-      id: "el16",
+      id: 16,
       img: "/assets/georgian-traditional-food/Kubdari.jpg",
       type: "SAVORY PIE",
       name: "Kubdari",
@@ -201,7 +201,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Kubdari.png",
     });
     server.create("food", {
-      id: "el17",
+      id: 17,
       img: "/assets/georgian-traditional-food/Pkhali.jpg",
       type: "SIDE DISH",
       name: "Pkhali",
@@ -213,7 +213,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Pkhali.png",
     });
     server.create("food", {
-      id: "el18",
+      id: 18,
       img: "/assets/georgian-traditional-food/Ghomi.jpg",
       type: "PORRIDGE",
       name: "Ghomi",
@@ -225,7 +225,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Ghomi.png",
     });
     server.create("food", {
-      id: "el19",
+      id: 19,
       img: "/assets/georgian-traditional-food/Chakhokhbili.jpg",
       type: "STEW",
       name: "Chakhokhbili",
@@ -237,7 +237,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Chakhokhbili.png",
     });
     server.create("food", {
-      id: "el20",
+      id: 20,
       img: "/assets/georgian-traditional-food/Elarji.jpg",
       type: "PORRIDGE",
       name: "Elarji",
@@ -249,7 +249,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Elarji.png",
     });
     server.create("food", {
-      id: "el21",
+      id: 21,
       img: "/assets/georgian-traditional-food/Skhmeruli.jpg",
       type: "CHICKEN DISH",
       name: "Skhmeruli",
@@ -261,7 +261,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Skhmeruli.png",
     });
     server.create("food", {
-      id: "el22",
+      id: 22,
       img: "/assets/georgian-traditional-food/Chikhirtma.jpg",
       type: "CHICKEN SOUP",
       name: "Chikhirtma",
@@ -273,7 +273,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Chikhirtma.png",
     });
     server.create("food", {
-      id: "el23",
+      id: 23,
       img: "/assets/georgian-traditional-food/Mingrelian-khachapuri.jpg",
       type: "SAVORY PIE",
       name: "Mingrelian khachapuri",
@@ -285,7 +285,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Mingrelian-khachapuri.png",
     });
     server.create("food", {
-      id: "el24",
+      id: 24,
       img: "/assets/georgian-traditional-food/Gozinaki.jpg",
       type: "DESSERT",
       name: "Gozinaki",
@@ -297,7 +297,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Gozinaki.png",
     });
     server.create("food", {
-      id: "el25",
+      id: 25,
       img: "/assets/georgian-traditional-food/Ajapsandali.jpg",
       type: "STEW",
       name: "Ajapsandali",
@@ -309,7 +309,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Ajapsandali.png",
     });
     server.create("food", {
-      id: "el26",
+      id: 26,
       img: "/assets/georgian-traditional-food/Chashushuli.jpg",
       type: "STEW",
       name: "Chashushuli",
@@ -321,7 +321,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Chashushuli.png",
     });
     server.create("food", {
-      id: "el27",
+      id: 27,
       img: "/assets/georgian-traditional-food/Chakapuli.jpg",
       type: "STEW",
       name: "Chakapuli",
@@ -332,7 +332,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Chakapuli.png",
     });
     server.create("food", {
-      id: "el28",
+      id: 28,
       img: "/assets/georgian-traditional-food/Shotis-puri.jpg",
       type: "BREAD",
       name: "Shotis puri",
@@ -343,7 +343,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Shotis-puri.png",
     });
     server.create("food", {
-      id: "el29",
+      id: 29,
       img: "/assets/georgian-traditional-food/Khashlama.jpg",
       type: "MEAT DISH",
       name: "Khashlama",
@@ -355,7 +355,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Khashlama.png",
     });
     server.create("food", {
-      id: "el30",
+      id: 30,
       img: "/assets/georgian-traditional-food/Bazhe.jpg",
       type: "SAUCE",
       name: "Bazhe",
@@ -367,7 +367,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Bazhe.png",
     });
     server.create("food", {
-      id: "el31",
+      id: 31,
       img: "/assets/georgian-traditional-food/Mchadi.jpg",
       type: "CORN BREAD",
       name: "Mchadi",
@@ -379,7 +379,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Mchadi.png",
     });
     server.create("food", {
-      id: "el32",
+      id: 32,
       img: "/assets/georgian-traditional-food/Satsebeli.jpg",
       type: "SAUCE",
       name: "Satsebeli",
@@ -391,7 +391,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Satsebeli.png",
     });
     server.create("food", {
-      id: "el33",
+      id: 33,
       img: "/assets/georgian-traditional-food/Ojakhuri.jpg",
       type: "MEAT DISH",
       name: "Ojakhuri",
@@ -403,7 +403,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Ojakhuri.png",
     });
     server.create("food", {
-      id: "el34",
+      id: 34,
       img: "/assets/georgian-traditional-food/Chanakhi.jpg",
       type: "STEW",
       name: "Chanakhi",
@@ -414,7 +414,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Chanakhi.png",
     });
     server.create("food", {
-      id: "el35",
+      id: 35,
       img: "/assets/georgian-traditional-food/Satsivi.jpg",
       type: "SAUCE",
       name: "Satsivi",
@@ -426,7 +426,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Satsivi.png",
     });
     server.create("food", {
-      id: "el36",
+      id: 36,
       img: "/assets/georgian-traditional-food/Tklapi.jpg",
       type: "DESSERT",
       name: "Tklapi",
@@ -437,7 +437,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Tklapi.png",
     });
     server.create("food", {
-      id: "el37",
+      id: 37,
       img: "/assets/georgian-traditional-food/Penovani-khachapuri.jpg",
       type: "SAVORY PIE",
       name: "Penovani khachapuri",
@@ -448,7 +448,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Penovani-khachapuri.png",
     });
     server.create("food", {
-      id: "el38",
+      id: 38,
       img: "/assets/georgian-traditional-food/Kuchmachi.jpg",
       type: "OFFAL DISH",
       name: "Kuchmachi",
@@ -459,7 +459,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Kuchmachi.png",
     });
     server.create("food", {
-      id: "el39",
+      id: 39,
       img: "/assets/georgian-traditional-food/Pelamushi.jpg",
       type: "DESSERT",
       name: "Pelamushi",
@@ -470,7 +470,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Pelamushi.png",
     });
     server.create("food", {
-      id: "el40",
+      id: 40,
       img: "/assets/georgian-traditional-food/Mujuji.jpg",
       type: "OFFAL DISH",
       name: "Mujuji",
@@ -481,7 +481,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Mujuji.png",
     });
     server.create("food", {
-      id: "el41",
+      id: 41,
       img: "/assets/georgian-traditional-food/Abkhazura.jpg",
       type: "MEATBALLS",
       name: "Abkhazura",
@@ -493,7 +493,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Abkhazura.png",
     });
     server.create("food", {
-      id: "el42",
+      id: 42,
       img: "/assets/georgian-traditional-food/Gurian-khachapuri.jpg",
       type: "SAVORY PIE",
       name: "Gurian khachapuri",
@@ -505,7 +505,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Gurian-khachapuri.png",
     });
     server.create("food", {
-      id: "el43",
+      id: 43,
       img: "/assets/georgian-traditional-food/Svanetian-khachapuri.jpg",
       type: "SAVORY PIE",
       name: "Svanetian khachapuri",
@@ -517,7 +517,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Svanetian-khachapuri.png",
     });
     server.create("food", {
-      id: "el44",
+      id: 44,
       img: "/assets/georgian-traditional-food/Khashi.jpg",
       type: "OFFAL SOUP",
       name: "Khashi",
@@ -529,7 +529,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Khashi.png",
     });
     server.create("food", {
-      id: "el45",
+      id: 45,
       img: "/assets/georgian-traditional-food/Jonjoli.jpg",
       type: "PICKLING",
       name: "Jonjoli",
@@ -541,7 +541,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Jonjoli.png",
     });
     server.create("food", {
-      id: "el46",
+      id: 46,
       img: "/assets/georgian-traditional-food/Achma.jpg",
       type: "SAVORY PASTRY",
       name: "Achma",
@@ -553,7 +553,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Achma.png",
     });
     server.create("food", {
-      id: "el47",
+      id: 47,
       img: "/assets/georgian-traditional-food/Buglama.jpg",
       type: "STEW",
       name: "Buglama",
@@ -564,7 +564,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Buglama.png",
     });
     server.create("food", {
-      id: "el48",
+      id: 48,
       img: "/assets/georgian-traditional-food/Soko-kecze.jpg",
       type: "SNACK",
       name: "Clay Pot Mushrooms",
@@ -576,7 +576,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Soko-kecze.png",
     });
     server.create("food", {
-      id: "el49",
+      id: 49,
       img: "/assets/georgian-traditional-food/Chvishtari.jpg",
       type: "CORN BREAD",
       name: "Chvishtari",
@@ -587,7 +587,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Chvishtari.png",
     });
     server.create("food", {
-      id: "el50",
+      id: 50,
       img: "/assets/georgian-traditional-food/Ispanakhis-pkhali.jpg",
       type: "DIP",
       name: "Ispanakhis pkhali",
@@ -598,7 +598,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Ispanakhis-pkhali.png",
     });
     server.create("food", {
-      id: "el51",
+      id: 51,
       img: "/assets/georgian-traditional-food/Sulguni.jpg",
       type: "CHEESE",
       name: "Sulguni",
@@ -609,7 +609,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Sulguni.png",
     });
     server.create("food", {
-      id: "el52",
+      id: 52,
       img: "/assets/georgian-traditional-food/Tenili.jpg",
       type: "CHEESE",
       name: "Tenili",
@@ -620,7 +620,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Tenili.png",
     });
     server.create("food", {
-      id: "el53",
+      id: 53,
       img: "/assets/georgian-traditional-food/Megruli-Sulguni.jpg",
       type: "CHEESE",
       name: "Shebolili Megruli Sulguni",
@@ -631,7 +631,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Megruli-Sulguni.png",
     });
     server.create("food", {
-      id: "el54",
+      id: 54,
       img: "/assets/georgian-traditional-food/Imeruli.jpg",
       type: "CHEESE",
       name: "Imeruli",
@@ -642,7 +642,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Imeruli.png",
     });
     server.create("food", {
-      id: "el55",
+      id: 55,
       img: "/assets/georgian-traditional-food/Khmeli-Suneli.jpg",
       type: "SPICE BLEND AND SEASONING",
       name: "Khmeli Suneli",
@@ -653,7 +653,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Khmeli-Suneli.png",
     });
     server.create("food", {
-      id: "el56",
+      id: 56,
       img: "/assets/georgian-traditional-food/Trigonella-Caerulea.jpg",
       type: "SPICE",
       name: "Khmeli Suneli",
@@ -4950,7 +4950,7 @@ createServer({
       date: new Date(),
       name: "Kundzuli",
       location: "Ilia Lake Road, 4800 Kvareli",
-      link: "khakheti",
+      link: "kakheti",
       firstDescription:
         "A good location for a relaxing holiday in Kvareli, Kundzuli is an apartment surrounded by views of the lake. The property features a private beach area, bar, and parking on-site among other facilities. This apartment offers air-conditioned accommodations with a balcony. When staying at the apartment, guests can use private entrance. At the apartment complex, units include a desk. Accommodation includes a terrace with mountain views, a fully equipped kitchen, an outdoor dining area, and a private bathroom with shower. At the apartment complex, the units come with bed linen and towels.",
       secondDescription:
@@ -4987,7 +4987,7 @@ createServer({
       date: new Date(),
       name: "WOOD HOUSE LAGODEKHI",
       location: "125 Vashlovani St, Lagodekhi 2700",
-      link: "khakheti",
+      link: "kakheti",
       firstDescription:
         "A good location for a relaxing holiday in Lagodekhi, WOOD HOUSE LAGODEKHI is a villa surrounded by views of the inner courtyard. The property features a seasonal outdoor swimming pool, garden, and parking on-site among other facilities. This villa provides air-conditioned accommodations with a balcony. The villa offers pool views, a picnic area, a 24-hour front desk, and free Wifi is available throughout the property.",
       secondDescription:

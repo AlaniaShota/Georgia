@@ -66,6 +66,18 @@ export const Card = ({ data, title, description }) => {
                       </Button>
                     </Link>
                   ) : null}
+                  {item.link ? (
+                    <Link
+                      to={`/location/${item.link}`}
+                      className="flex justify-end items-center my-1"
+                    >
+                      <Button>
+                        <span className=" text-darkBlueText font-medium">
+                          Location
+                        </span>
+                      </Button>
+                    </Link>
+                  ) : null}
                 </div>
               </div>
             </div>
