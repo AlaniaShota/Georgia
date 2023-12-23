@@ -1,15 +1,29 @@
-import { Helmet } from "react-helmet";
+import { Header } from "../../Components";
+import {
+  GeorgiaMap,
+  LocationCard,
+  SeasonDisplay,
+} from "../Location/Components/index";
+import { Location_Description, Location_Title } from "./constant";
+import locationImg from "../../assets/location/georgia-roadtrip-tbilisi_3x2.avif";
+import { RecommendationCard } from "./Components/RecommendationCard";
 
-const Location = () => {
+export const Location = () => {
   return (
-    <div>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Location</title>
-      </Helmet>
-      Location
-    </div>
+    <>
+      <Header
+        titlePage={"Georgian Location"}
+        titleText={Location_Title}
+        descriptionText={Location_Description}
+        img={locationImg}
+      />
+
+      <div className="lg:container sm:mx-8 lg:mx-0 cursor-default">
+        <SeasonDisplay />
+        <GeorgiaMap />
+        <LocationCard />
+        <RecommendationCard />
+      </div>
+    </>
   );
 };
-
-export default Location;

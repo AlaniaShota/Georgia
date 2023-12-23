@@ -1,36 +1,121 @@
 import { createBrowserRouter } from "react-router-dom";
-import Layout from "../Components/Layout";
-import Home from "../Pages/Home/Home";
-import Location from "../Pages/Location/Location";
-import Hotel from "../Pages/Hotel/Hotel";
-import TraditionalFood from "../Pages/TraditionalFood/TraditionalFood";
-import TourGuide from "../Pages/Gid/Gid";
-import DetailFood from "../Pages/TraditionalFood/Components/DetailFood";
-import TraditionalFoodLibery from "../Pages/TraditionalFood/Components/TraditionalFoodLibery";
-import LanguagePage from "../Pages/SinglePage/LanguagePage";
-import HeritagePage from "../Pages/SinglePage/HeritagePage";
-import NationalBalletPage from "../Pages/SinglePage/NationalBalletPage";
-import UniqueFolkPage from "../Pages/SinglePage/UniqueFolkPage";
-import DeliciousPage from "../Pages/SinglePage/DeliciousPage";
-import SeasonsPage from "../Pages/SinglePage/SeasonsPage";
-import TravelAndCreatePage from "../Pages/SinglePage/TravelAndCreatePage";
-import UniqueNaturePage from "../Pages/SinglePage/UniqueNaturePage";
+import { Layout, ScrollToTop } from "../Components";
+import { Home, TourGuide, Hotel, Location, TraditionalFood } from "../index";
+import {
+  DeliciousPage,
+  HeritagePage,
+  LanguagePage,
+  NationalBalletPage,
+  SeasonsPage,
+  TravelAndCreatePage,
+  UniqueFolkPage,
+  UniqueNaturePage,
+} from "../Pages/Home/index";
+import {
+  AjaraPage,
+  GuriaPage,
+  ImeretiPage,
+  KakhetiPage,
+  KvemoKartliPage,
+  MtskhetaMtianetiPage,
+  RachaLechkhumiKvemoSvanetiPage,
+  SamegreloZemoSvanetiPage,
+  SamtskheJavakhetiPage,
+  ShidaKartliPage,
+  TbilisiPage,
+} from "../Pages/Location/index";
+import { TraditionalFoodLibery } from "../Pages/TraditionalFood/Components/index";
+import { GuidePortfolio } from "../Pages/Guide/Components";
 
 export const router = createBrowserRouter([
   {
-    element: <Layout />,
+    element: (
+      <>
+        <Layout />,
+        <ScrollToTop />
+      </>
+    ),
+
     children: [
       {
         path: "/",
-        element: <Home />,
+        // element: <Home />,
+        children: [
+          { index: "/", element: <Home /> },
+          { path: "language", element: <LanguagePage /> },
+          { path: "delicious", element: <DeliciousPage /> },
+          { path: "heritage", element: <HeritagePage /> },
+          { path: "national-ballet", element: <NationalBalletPage /> },
+          { path: "unique-folk", element: <UniqueFolkPage /> },
+          { path: "seasons", element: <SeasonsPage /> },
+          { path: "travel-and-create", element: <TravelAndCreatePage /> },
+          { path: "unique-nature", element: <UniqueNaturePage /> },
+        ],
       },
       {
         path: "location",
-        element: <Location />,
+        children: [
+          {
+            index: "location",
+            element: (
+              <>
+                <Location />
+              </>
+            ),
+          },
+          {
+            path: "ajara",
+            element: <AjaraPage />,
+          },
+          {
+            path: "guria",
+            element: <GuriaPage />,
+          },
+          {
+            path: "imereti",
+            element: <ImeretiPage />,
+          },
+          {
+            path: "kakheti",
+            element: <KakhetiPage />,
+          },
+          {
+            path: "kvemo-kartli",
+            element: <KvemoKartliPage />,
+          },
+          {
+            path: "mtskheta-mtianeti",
+            element: <MtskhetaMtianetiPage />,
+          },
+          {
+            path: "racha-lechkumi-kvemo-svaneti",
+            element: <RachaLechkhumiKvemoSvanetiPage />,
+          },
+          {
+            path: "samegrelo-zemo-svaneti",
+            element: <SamegreloZemoSvanetiPage />,
+          },
+          {
+            path: "samtskhe-javakheti",
+            element: <SamtskheJavakhetiPage />,
+          },
+          {
+            path: "shida-kartli",
+            element: <ShidaKartliPage />,
+          },
+          {
+            path: "tbilisi",
+            element: <TbilisiPage />,
+          },
+        ],
       },
       {
         path: "hotel",
-        element: <Hotel />,
+        element: (
+          <>
+            <Hotel />
+          </>
+        ),
       },
       {
         path: "traditional-food",
@@ -40,23 +125,14 @@ export const router = createBrowserRouter([
         path: "library",
         element: <TraditionalFoodLibery />,
       },
-
       {
-        path: "library/:id",
-        element: <DetailFood />,
-      },
-      {
-        path: "gid",
+        path: "tour-guide",
         element: <TourGuide />,
       },
-      { path: "language", element: <LanguagePage /> },
-      { path: "delicious", element: <DeliciousPage /> },
-      { path: "heritage", element: <HeritagePage /> },
-      { path: "national-ballet", element: <NationalBalletPage /> },
-      { path: "unique-folk", element: <UniqueFolkPage /> },
-      { path: "seasons", element: <SeasonsPage /> },
-      { path: "travel-and-create", element: <TravelAndCreatePage /> },
-      { path: "unique-nature", element: <UniqueNaturePage /> },
+      {
+        path: "tour-guide/:id",
+        element: <GuidePortfolio />,
+      },
     ],
   },
 ]);

@@ -19,13 +19,19 @@ export default {
         BlackSecondColor: "#00000099",
         whiteSecondText: "#ffffffcc",
       },
+
       opacity: {
         5: 0.2,
       },
       height: {
+        220: "220px",
+        470: "470px",
         630: "630px",
+        737: "737px",
       },
       width: {
+        280: "280px",
+        370: "370px",
         497: "497px",
       },
       // scrollMargin: {
@@ -33,5 +39,5 @@ export default {
       // },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 };

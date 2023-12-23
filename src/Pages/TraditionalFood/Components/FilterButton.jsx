@@ -1,25 +1,23 @@
 import { motion } from "framer-motion";
-import { Button } from "../../../Components/Button";
+import { Button } from "../../../Components/index";
 
-const FilterButton = ({ search, categoryFilter }) => {
+export const FilterButton = ({ search, categoryFilter }) => {
   return (
-    <div className="mb-5 mt-20">
-      <Button margin="4" onClick={() => search({ type: "SAVORY PIE" })}>
-        <span className="text-sm font-normal text-darkBlueText">
-          SAVORY PIE
-        </span>
+    <div className="mb-5 mt-20 text-lg text-darkBlueText">
+      <Button border margin="4" onClick={() => search({ type: "SAVORY PIE" })}>
+        <span>SAVORY PIE</span>
       </Button>
-      <Button margin="4" onClick={() => search({ type: "STEW" })}>
-        <span className="text-sm font-normal text-darkBlueText">STEW</span>
+      <Button border margin="4" onClick={() => search({ type: "STEW" })}>
+        <span>STEW</span>
       </Button>
-      <Button margin="4" onClick={() => search({ type: "CHEESE" })}>
-        <span className="text-sm font-normal text-darkBlueText">CHEESE</span>
+      <Button border margin="4" onClick={() => search({ type: "CHEESE" })}>
+        <span>CHEESE</span>
       </Button>
-      <Button margin="4" onClick={() => search({ type: "SAUCE" })}>
-        <span className="text-sm font-normal text-darkBlueText">SAUCE</span>
+      <Button border margin="4" onClick={() => search({ type: "SAUCE" })}>
+        <span>SAUCE</span>
       </Button>
-      <Button margin="4" onClick={() => search({ type: "DESSERT" })}>
-        <span className="text-sm font-normal text-darkBlueText">DESSERT</span>
+      <Button border margin="4" onClick={() => search({ type: "DESSERT" })}>
+        <span>DESSERT</span>
       </Button>
       {categoryFilter ? (
         <motion.button
@@ -28,11 +26,9 @@ const FilterButton = ({ search, categoryFilter }) => {
           transition={{ type: "spring", stiffness: 400, damping: 17 }}
           onClick={() => search({})}
         >
-          <span>Clear filter</span>
+          <span className="text-black">Clear filter</span>
         </motion.button>
       ) : null}
     </div>
   );
 };
-
-export default FilterButton;
