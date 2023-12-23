@@ -8,11 +8,12 @@ createServer({
     maps: Model,
     locations: Model,
     seasons: Model,
+    hotels: Model,
   },
 
   seeds(server) {
     server.create("food", {
-      id: "el1",
+      id: 1,
       img: "/assets/georgian-traditional-food/Khachapuri.jpg",
       type: "SAVORY PIE",
       name: "Khachapuri",
@@ -24,7 +25,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Khachapuri.png",
     });
     server.create("food", {
-      id: "el2",
+      id: 2,
       img: "/assets/georgian-traditional-food/Khinkali.jpg",
       type: "DUMPLINGS",
       name: "Khinkali",
@@ -36,7 +37,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Khinkali.png",
     });
     server.create("food", {
-      id: "el3",
+      id: 3,
       img: "/assets/georgian-traditional-food/Lobio.jpg",
       type: "STEW",
       name: "Lobio",
@@ -48,7 +49,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Lobio.png",
     });
     server.create("food", {
-      id: "el4",
+      id: 4,
       img: "/assets/georgian-traditional-food/Chicken-tabaka.jpg",
       type: "CHICKEN DISH",
       name: "Chicken tabaka",
@@ -59,7 +60,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Chicken-tabaka.png",
     });
     server.create("food", {
-      id: "el5",
+      id: 5,
       img: "/assets/georgian-traditional-food/Ajika.jpg",
       type: "DIP",
       name: "Ajika",
@@ -71,7 +72,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Ajika.png",
     });
     server.create("food", {
-      id: "el6",
+      id: 6,
       img: "/assets/georgian-traditional-food/Mtsvadi.jpg",
       type: "MEAT DISH",
       name: "Mtsvadi",
@@ -83,7 +84,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Mtsvadi.png",
     });
     server.create("food", {
-      id: "el7",
+      id: 7,
       img: "/assets/georgian-traditional-food/Imeruli-khachapuri.jpg",
       type: "SAVORY PIE",
       name: "Imeruli khachapuri",
@@ -95,7 +96,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Imeruli-khachapuri.png",
     });
     server.create("food", {
-      id: "el8",
+      id: 8,
       img: "/assets/georgian-traditional-food/Kharcho.jpg",
       type: "MEAT SOUP",
       name: "Kharcho",
@@ -107,7 +108,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Kharcho.png",
     });
     server.create("food", {
-      id: "el9",
+      id: 9,
       img: "/assets/georgian-traditional-food/Lobiani.jpg",
       type: "BREAD",
       name: "Lobiani",
@@ -119,7 +120,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Lobiani.png",
     });
     server.create("food", {
-      id: "el10",
+      id: 10,
       img: "/assets/georgian-traditional-food/Adjarian-khachapuri.jpg",
       type: "SAVORY PIE",
       name: "Adjarian khachapuri",
@@ -131,7 +132,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Adjarian-khachapuri.png",
     });
     server.create("food", {
-      id: "el11",
+      id: 11,
       img: "/assets/georgian-traditional-food/Tolma.jpg",
       type: "GROUND MEAT DISH",
       name: "Tolma",
@@ -142,7 +143,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Tolma.png",
     });
     server.create("food", {
-      id: "el12",
+      id: 12,
       img: "/assets/georgian-traditional-food/Churchkhela.jpg",
       type: "DESSERT",
       name: "Churchkhela",
@@ -153,7 +154,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Churchkhela.png",
     });
     server.create("food", {
-      id: "el13",
+      id: 13,
       img: "/assets/georgian-traditional-food/Kupati.jpg",
       type: "SAUSAGE",
       name: "Kupati",
@@ -165,7 +166,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Kupati.png",
     });
     server.create("food", {
-      id: "el14",
+      id: 14,
       img: "/assets/georgian-traditional-food/Badrijani.jpg",
       type: "APPETIZER",
       name: "Badrijani",
@@ -177,7 +178,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Badrijani.png",
     });
     server.create("food", {
-      id: "el15",
+      id: 15,
       img: "/assets/georgian-traditional-food/Tkemali.jpg",
       type: "SAUCE",
       name: "Tkemali",
@@ -188,7 +189,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Tkemali.png",
     });
     server.create("food", {
-      id: "el16",
+      id: 16,
       img: "/assets/georgian-traditional-food/Kubdari.jpg",
       type: "SAVORY PIE",
       name: "Kubdari",
@@ -200,7 +201,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Kubdari.png",
     });
     server.create("food", {
-      id: "el17",
+      id: 17,
       img: "/assets/georgian-traditional-food/Pkhali.jpg",
       type: "SIDE DISH",
       name: "Pkhali",
@@ -212,7 +213,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Pkhali.png",
     });
     server.create("food", {
-      id: "el18",
+      id: 18,
       img: "/assets/georgian-traditional-food/Ghomi.jpg",
       type: "PORRIDGE",
       name: "Ghomi",
@@ -224,7 +225,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Ghomi.png",
     });
     server.create("food", {
-      id: "el19",
+      id: 19,
       img: "/assets/georgian-traditional-food/Chakhokhbili.jpg",
       type: "STEW",
       name: "Chakhokhbili",
@@ -236,7 +237,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Chakhokhbili.png",
     });
     server.create("food", {
-      id: "el20",
+      id: 20,
       img: "/assets/georgian-traditional-food/Elarji.jpg",
       type: "PORRIDGE",
       name: "Elarji",
@@ -248,7 +249,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Elarji.png",
     });
     server.create("food", {
-      id: "el21",
+      id: 21,
       img: "/assets/georgian-traditional-food/Skhmeruli.jpg",
       type: "CHICKEN DISH",
       name: "Skhmeruli",
@@ -260,7 +261,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Skhmeruli.png",
     });
     server.create("food", {
-      id: "el22",
+      id: 22,
       img: "/assets/georgian-traditional-food/Chikhirtma.jpg",
       type: "CHICKEN SOUP",
       name: "Chikhirtma",
@@ -272,7 +273,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Chikhirtma.png",
     });
     server.create("food", {
-      id: "el23",
+      id: 23,
       img: "/assets/georgian-traditional-food/Mingrelian-khachapuri.jpg",
       type: "SAVORY PIE",
       name: "Mingrelian khachapuri",
@@ -284,7 +285,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Mingrelian-khachapuri.png",
     });
     server.create("food", {
-      id: "el24",
+      id: 24,
       img: "/assets/georgian-traditional-food/Gozinaki.jpg",
       type: "DESSERT",
       name: "Gozinaki",
@@ -296,7 +297,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Gozinaki.png",
     });
     server.create("food", {
-      id: "el25",
+      id: 25,
       img: "/assets/georgian-traditional-food/Ajapsandali.jpg",
       type: "STEW",
       name: "Ajapsandali",
@@ -308,7 +309,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Ajapsandali.png",
     });
     server.create("food", {
-      id: "el26",
+      id: 26,
       img: "/assets/georgian-traditional-food/Chashushuli.jpg",
       type: "STEW",
       name: "Chashushuli",
@@ -320,7 +321,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Chashushuli.png",
     });
     server.create("food", {
-      id: "el27",
+      id: 27,
       img: "/assets/georgian-traditional-food/Chakapuli.jpg",
       type: "STEW",
       name: "Chakapuli",
@@ -331,7 +332,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Chakapuli.png",
     });
     server.create("food", {
-      id: "el28",
+      id: 28,
       img: "/assets/georgian-traditional-food/Shotis-puri.jpg",
       type: "BREAD",
       name: "Shotis puri",
@@ -342,7 +343,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Shotis-puri.png",
     });
     server.create("food", {
-      id: "el29",
+      id: 29,
       img: "/assets/georgian-traditional-food/Khashlama.jpg",
       type: "MEAT DISH",
       name: "Khashlama",
@@ -354,7 +355,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Khashlama.png",
     });
     server.create("food", {
-      id: "el30",
+      id: 30,
       img: "/assets/georgian-traditional-food/Bazhe.jpg",
       type: "SAUCE",
       name: "Bazhe",
@@ -366,7 +367,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Bazhe.png",
     });
     server.create("food", {
-      id: "el31",
+      id: 31,
       img: "/assets/georgian-traditional-food/Mchadi.jpg",
       type: "CORN BREAD",
       name: "Mchadi",
@@ -378,7 +379,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Mchadi.png",
     });
     server.create("food", {
-      id: "el32",
+      id: 32,
       img: "/assets/georgian-traditional-food/Satsebeli.jpg",
       type: "SAUCE",
       name: "Satsebeli",
@@ -390,7 +391,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Satsebeli.png",
     });
     server.create("food", {
-      id: "el33",
+      id: 33,
       img: "/assets/georgian-traditional-food/Ojakhuri.jpg",
       type: "MEAT DISH",
       name: "Ojakhuri",
@@ -402,7 +403,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Ojakhuri.png",
     });
     server.create("food", {
-      id: "el34",
+      id: 34,
       img: "/assets/georgian-traditional-food/Chanakhi.jpg",
       type: "STEW",
       name: "Chanakhi",
@@ -413,7 +414,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Chanakhi.png",
     });
     server.create("food", {
-      id: "el35",
+      id: 35,
       img: "/assets/georgian-traditional-food/Satsivi.jpg",
       type: "SAUCE",
       name: "Satsivi",
@@ -425,7 +426,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Satsivi.png",
     });
     server.create("food", {
-      id: "el36",
+      id: 36,
       img: "/assets/georgian-traditional-food/Tklapi.jpg",
       type: "DESSERT",
       name: "Tklapi",
@@ -436,7 +437,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Tklapi.png",
     });
     server.create("food", {
-      id: "el37",
+      id: 37,
       img: "/assets/georgian-traditional-food/Penovani-khachapuri.jpg",
       type: "SAVORY PIE",
       name: "Penovani khachapuri",
@@ -447,7 +448,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Penovani-khachapuri.png",
     });
     server.create("food", {
-      id: "el38",
+      id: 38,
       img: "/assets/georgian-traditional-food/Kuchmachi.jpg",
       type: "OFFAL DISH",
       name: "Kuchmachi",
@@ -458,7 +459,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Kuchmachi.png",
     });
     server.create("food", {
-      id: "el39",
+      id: 39,
       img: "/assets/georgian-traditional-food/Pelamushi.jpg",
       type: "DESSERT",
       name: "Pelamushi",
@@ -469,7 +470,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Pelamushi.png",
     });
     server.create("food", {
-      id: "el40",
+      id: 40,
       img: "/assets/georgian-traditional-food/Mujuji.jpg",
       type: "OFFAL DISH",
       name: "Mujuji",
@@ -480,7 +481,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Mujuji.png",
     });
     server.create("food", {
-      id: "el41",
+      id: 41,
       img: "/assets/georgian-traditional-food/Abkhazura.jpg",
       type: "MEATBALLS",
       name: "Abkhazura",
@@ -492,7 +493,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Abkhazura.png",
     });
     server.create("food", {
-      id: "el42",
+      id: 42,
       img: "/assets/georgian-traditional-food/Gurian-khachapuri.jpg",
       type: "SAVORY PIE",
       name: "Gurian khachapuri",
@@ -504,7 +505,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Gurian-khachapuri.png",
     });
     server.create("food", {
-      id: "el43",
+      id: 43,
       img: "/assets/georgian-traditional-food/Svanetian-khachapuri.jpg",
       type: "SAVORY PIE",
       name: "Svanetian khachapuri",
@@ -516,7 +517,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Svanetian-khachapuri.png",
     });
     server.create("food", {
-      id: "el44",
+      id: 44,
       img: "/assets/georgian-traditional-food/Khashi.jpg",
       type: "OFFAL SOUP",
       name: "Khashi",
@@ -528,7 +529,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Khashi.png",
     });
     server.create("food", {
-      id: "el45",
+      id: 45,
       img: "/assets/georgian-traditional-food/Jonjoli.jpg",
       type: "PICKLING",
       name: "Jonjoli",
@@ -540,7 +541,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Jonjoli.png",
     });
     server.create("food", {
-      id: "el46",
+      id: 46,
       img: "/assets/georgian-traditional-food/Achma.jpg",
       type: "SAVORY PASTRY",
       name: "Achma",
@@ -552,7 +553,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Achma.png",
     });
     server.create("food", {
-      id: "el47",
+      id: 47,
       img: "/assets/georgian-traditional-food/Buglama.jpg",
       type: "STEW",
       name: "Buglama",
@@ -563,7 +564,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Buglama.png",
     });
     server.create("food", {
-      id: "el48",
+      id: 48,
       img: "/assets/georgian-traditional-food/Soko-kecze.jpg",
       type: "SNACK",
       name: "Clay Pot Mushrooms",
@@ -575,7 +576,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Soko-kecze.png",
     });
     server.create("food", {
-      id: "el49",
+      id: 49,
       img: "/assets/georgian-traditional-food/Chvishtari.jpg",
       type: "CORN BREAD",
       name: "Chvishtari",
@@ -586,7 +587,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Chvishtari.png",
     });
     server.create("food", {
-      id: "el50",
+      id: 50,
       img: "/assets/georgian-traditional-food/Ispanakhis-pkhali.jpg",
       type: "DIP",
       name: "Ispanakhis pkhali",
@@ -597,7 +598,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Ispanakhis-pkhali.png",
     });
     server.create("food", {
-      id: "el51",
+      id: 51,
       img: "/assets/georgian-traditional-food/Sulguni.jpg",
       type: "CHEESE",
       name: "Sulguni",
@@ -608,7 +609,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Sulguni.png",
     });
     server.create("food", {
-      id: "el52",
+      id: 52,
       img: "/assets/georgian-traditional-food/Tenili.jpg",
       type: "CHEESE",
       name: "Tenili",
@@ -619,7 +620,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Tenili.png",
     });
     server.create("food", {
-      id: "el53",
+      id: 53,
       img: "/assets/georgian-traditional-food/Megruli-Sulguni.jpg",
       type: "CHEESE",
       name: "Shebolili Megruli Sulguni",
@@ -630,7 +631,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Megruli-Sulguni.png",
     });
     server.create("food", {
-      id: "el54",
+      id: 54,
       img: "/assets/georgian-traditional-food/Imeruli.jpg",
       type: "CHEESE",
       name: "Imeruli",
@@ -641,7 +642,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Imeruli.png",
     });
     server.create("food", {
-      id: "el55",
+      id: 55,
       img: "/assets/georgian-traditional-food/Khmeli-Suneli.jpg",
       type: "SPICE BLEND AND SEASONING",
       name: "Khmeli Suneli",
@@ -652,7 +653,7 @@ createServer({
       map: "/assets/georgian-traditional-food/traditional-food-map/Khmeli-Suneli.png",
     });
     server.create("food", {
-      id: "el56",
+      id: 56,
       img: "/assets/georgian-traditional-food/Trigonella-Caerulea.jpg",
       type: "SPICE",
       name: "Khmeli Suneli",
@@ -4830,6 +4831,1703 @@ createServer({
         },
       ],
     });
+    server.create("hotel", {
+      id: 1,
+      date: new Date(),
+      name: "Babaneuris Marani",
+      location: "village babaneuri, 0909 Babaneuri",
+      link: "kakheti",
+      firstDescription:
+        "Located in Babaneuri, 4.9 miles from Alaverdi St. George Cathedral, Babaneuris Marani has accommodations with a seasonal outdoor swimming pool, free private parking, a garden and a terrace. With free WiFi, this 4-star hotel has a restaurant and a bar. The property provides room service, and luggage storage for guests. All guest rooms come with air conditioning, a flat-screen TV with cable channels, a fridge, a electric tea pot, a shower, free toiletries and a closet. The rooms include a safety deposit box, while certain rooms also offer a balcony and others also have pool views. At the hotel the rooms are equipped with bed linen and towels.",
+      secondDescription:
+        "The area is popular for hiking and cycling, and bike rental is available at Babaneuris Marani. King Erekle II Palace is 17 miles from the accommodation, while King Erekle II Palace is 17 miles from the property. The nearest airport is Tbilisi International, 63 miles from Babaneuris Marani, and the property offers a paid airport shuttle service.",
+      img: "/assets/hotel/136861404.jpg",
+      price: 150,
+      facilities: [
+        "Outdoor swimming pool (temporarily closed)",
+        "Airport shuttle",
+        "Non-smoking rooms",
+        "Free parking",
+        "Room service",
+        "Free WiFi",
+        "Family rooms",
+        "Restaurant",
+        "Bar",
+      ],
+      breakfast: ["Continental", "Vegetarian", "Vegan", "Kosher"],
+      imgLibrary: [
+        "/assets/hotel/166810589.jpg",
+        "/assets/hotel/314404017.jpg",
+        "/assets/hotel/264739360.jpg",
+        "/assets/hotel/136861417.jpg",
+        "/assets/hotel/116800072.jpg",
+      ],
+      comments: [
+        {
+          id: 1,
+          name: "Yana",
+          country: "Ukraine",
+          countryImg: "/assets/hotel/Ua.png",
+          comment:
+            "amazing hidden gem, we loved everything, dreaming to come back again",
+        },
+        {
+          id: 2,
+          name: "Ana",
+          country: "United States of America",
+          countryImg: "/assets/hotel/Us.png",
+          comment:
+            "“Beautiful terrace with views of Caucasus mountains, comfortable rooms, vineyard surrounded garden, swimming pool and awesome house wines.”",
+        },
+        {
+          id: 3,
+          name: "Kimmo",
+          country: "Finland",
+          countryImg: "/assets/hotel/Us.png",
+          comment:
+            "Good food, exceptional wine, good service, nice pool, cleanliness, good-sized rooms. Friendly dog, very interesting insight into the qvevri process.",
+        },
+      ],
+    });
+    server.create("hotel", {
+      id: 2,
+      date: new Date(),
+      name: "Holiday Inn Telavi",
+      location: "2 Rustaveli Avenue, 2200 Telavi",
+      link: "tbilisi",
+      firstDescription:
+        "Holiday Inn Telavi, an IHG Hotel has a fitness center, shared lounge, a restaurant and bar in Telavi. The property is around 13 miles from Gremi Citadel, 13 miles from Alaverdi St. George Cathedral and 25 miles from Ilia Chavchavadze State Museum. The property has a 24-hour front desk, airport transportation, room service and free WiFi throughout the property. All rooms in the hotel are equipped with an electric tea pot. The rooms come with air conditioning, a safety deposit box and a flat-screen TV, and some rooms at Holiday Inn Telavi, an IHG Hotel have a terrace.",
+      secondDescription:
+        "The accommodation offers 4-star accommodations with an indoor pool and hammam. Popular points of interest near Holiday Inn Telavi, an IHG Hotel include King Erekle II Palace, King Erekle II Palace and Giant Plane Tree. The nearest airport is Tbilisi International Airport, 52 miles from the hotel.",
+      img: "/assets/hotel/488967776.jpg",
+      price: 150,
+      facilities: [
+        "Indoor swimming pool",
+        "Airport shuttle",
+        "Non-smoking rooms",
+        "Fitness center",
+        "Room service",
+        "Free WiFi",
+        "Family rooms",
+        "Bar",
+      ],
+      imgLibrary: [
+        "/assets/hotel/359487390.jpg",
+        "/assets/hotel/318097361.jpg",
+        "/assets/hotel/285288411.jpg",
+        "/assets/hotel/285286287.jpg",
+        "/assets/hotel/359487391.jpg",
+      ],
+      comments: [
+        {
+          id: 1,
+          name: "Ruby",
+          country: "United States of America",
+          countryImg: "/assets/hotel/Us.png",
+          comment:
+            "Location is great, room is great, a little balcony! Staff was very nice and helpful",
+        },
+        {
+          id: 2,
+          name: "Nino",
+          country: "Georgia",
+          countryImg: "/assets/hotel/Ge.png",
+          comment:
+            "Sraff was very kind and helful. Good and clean rooms. Great location",
+        },
+        {
+          id: 3,
+          name: "Mariam",
+          country: "Georgia",
+          countryImg: "/assets/hotel/Ge.png",
+          comment:
+            "The room was very clean and the staff was amazing. The location is in the city center with lots of shops nearby. A comfortable bed and a huge plus for me is lots of electrical outlets near the bed. I definitely didn't expect a walk in closet.",
+        },
+      ],
+    });
+    server.create("hotel", {
+      id: 3,
+      date: new Date(),
+      name: "Kundzuli",
+      location: "Ilia Lake Road, 4800 Kvareli",
+      link: "kakheti",
+      firstDescription:
+        "A good location for a relaxing holiday in Kvareli, Kundzuli is an apartment surrounded by views of the lake. The property features a private beach area, bar, and parking on-site among other facilities. This apartment offers air-conditioned accommodations with a balcony. When staying at the apartment, guests can use private entrance. At the apartment complex, units include a desk. Accommodation includes a terrace with mountain views, a fully equipped kitchen, an outdoor dining area, and a private bathroom with shower. At the apartment complex, the units come with bed linen and towels.",
+      secondDescription:
+        "A bicycle rental service is available at Kundzuli. Ilia Chavchavadze State Museum is 2.4 miles from the accommodation, while Gremi Citadel is 10 miles away. The nearest airport is Tbilisi International Airport, 74 miles from Kundzuli.",
+      img: "/assets/hotel/498636290.jpg",
+      price: 100,
+      facilities: [
+        "Non-smoking rooms",
+        "Free parking",
+        "Free WiFi",
+        "Family rooms",
+        "Bar",
+      ],
+      imgLibrary: [
+        "/assets/hotel/498646232.jpg",
+        "/assets/hotel/498652982.jpg",
+        "/assets/hotel/498617357.jpg",
+        "/assets/hotel/498617340.jpg",
+        "/assets/hotel/498637670.jpg",
+      ],
+      comments: [
+        {
+          id: 1,
+          name: "Aleksei",
+          country: "Russia",
+          countryImg: "/assets/hotel/Ru.png",
+          comment:
+            "I liked the hotel for its unique location on the lake, among the hills. Apartments on the water are a new idea. Separately, I would like to note the professional work of the hotel manager Maryam, who received us late in the evening like family and...",
+        },
+      ],
+    });
+    server.create("hotel", {
+      id: 5,
+      date: new Date(),
+      name: "WOOD HOUSE LAGODEKHI",
+      location: "125 Vashlovani St, Lagodekhi 2700",
+      link: "kakheti",
+      firstDescription:
+        "A good location for a relaxing holiday in Lagodekhi, WOOD HOUSE LAGODEKHI is a villa surrounded by views of the inner courtyard. The property features a seasonal outdoor swimming pool, garden, and parking on-site among other facilities. This villa provides air-conditioned accommodations with a balcony. The villa offers pool views, a picnic area, a 24-hour front desk, and free Wifi is available throughout the property.",
+      secondDescription:
+        "The villa provides guests with a terrace, mountain views, a seating area, a flat-screen TV, a fully equipped kitchen with kitchenware, and a private bathroom with bath and bathrobes. At the villa complex, all units are allergy-free and soundproof. There is an on-site bar, and during warmer months you can make use of the barbecue facilities.",
+      img: "/assets/hotel/497313321.jpg",
+      price: 150,
+      facilities: [
+        "Outdoor swimming pool",
+        "Airport shuttle (free)",
+        "Free WiFi",
+        "Free parking",
+        "Family rooms",
+        "Bar",
+      ],
+      imgLibrary: [
+        "/assets/hotel/504726344.jpg",
+        "/assets/hotel/502156342.jpg",
+        "/assets/hotel/502156193.jpg",
+        "/assets/hotel/471714003.jpg",
+        "/assets/hotel/475059552.jpg",
+      ],
+      comments: [
+        {
+          id: 1,
+          name: "Niko",
+          country: "Croatia",
+          countryImg: "/assets/hotel/Hr.png",
+          comment:
+            "Very kind, helpful and easy going host, excellent location, huge garden, pool and swings.",
+        },
+        {
+          id: 2,
+          name: "Monika",
+          country: "Georgia",
+          countryImg: "/assets/hotel/Ge.png",
+          comment:
+            "Great facilities, incredibly clean, lovely interior to make the cabin feel like home away from home! Tika was friendly, welcoming, and went out of her way to settle us in! The cabin had everything we could need - hairdryer, stocked kitchen to cook...",
+        },
+        {
+          id: 3,
+          name: "Meunargia",
+          country: "Georgia",
+          countryImg: "/assets/hotel/Ge.png",
+          comment:
+            "Great facilities, incredibly clean, lovely interior to make the cabin feel like home away from home! Tika was friendly, welcoming, and went out of her way to settle us in! The cabin had everything we could need - hairdryer, stocked kitchen to cook...",
+        },
+      ],
+    });
+    server.create("hotel", {
+      id: 6,
+      date: new Date(),
+      name: "Comfy Home ll",
+      location: "4 Besik Street, Mtatsminda, 0108",
+      link: "tbilisi",
+      firstDescription:
+        "In the heart of Tbilisi City, set within a short distance of Freedom Square and Rustaveli Theatre, Comfy Home ll offers free WiFi, air conditioning and household amenities such as an oven and kettle. The property features garden and city views, and is 500 metres from Tbilisi Opera and Ballet Theatre. There is free private parking and the property offers paid airport shuttle service.",
+      secondDescription:
+        "The spacious apartment is fitted with 2 bedrooms, 1 bathroom, bed linen, towels, a flat-screen TV with cable channels, a dining area, a fully equipped kitchen, and a balcony with mountain views. The unit at the property features a bidet and a dressing room. This apartment is non-smoking and soundproof.",
+      img: "/assets/hotel/375151508.jpg",
+      price: 90,
+      facilities: [
+        "Airport shuttle",
+        "Free WiFi",
+        "Free parking",
+        "Family rooms",
+      ],
+      imgLibrary: [
+        "/assets/hotel/375541124.jpg",
+        "/assets/hotel/375541136.jpg",
+        "/assets/hotel/375541143.jpg",
+        "/assets/hotel/375151607.jpg",
+        "/assets/hotel/241443.webp",
+      ],
+      comments: [
+        {
+          id: 1,
+          name: "Mohamed",
+          country: "Saudi Arabia",
+          countryImg: "/assets/hotel/Sa.png",
+          comment:
+            "This apartment fulfilled all expectations! It has the greatest location and is perfect for a group of people. The apartment is nice and spacious, and beautifully decorated. Also perfectly clean. The host let us check in early which I really...",
+        },
+        {
+          id: 2,
+          name: "Ervin",
+          country: "Hungary",
+          countryImg: "/assets/hotel/Hu.png",
+          comment:
+            "Giorgi's apartment was very nice. He was very responsive and communicated very well. The bed is comfortable, the shower was great, the internet was fast, and the location was great. Giorgi was very helpful, accommodating and flexible to meet us..",
+        },
+        {
+          id: 3,
+          name: "Andrey",
+          country: "Russia",
+          countryImg: "/assets/hotel/Ru.png",
+          comment:
+            "This spacious and central apartment was perfect for our stay. Very modern and with the potential of up to 6 people staying here. The flat is nicely equipped with modern furniture. Easy communication with Giorgi all the time and very friendly!",
+        },
+      ],
+    });
+    server.create("hotel", {
+      id: 7,
+      date: new Date(),
+      name: "House & Yard Sesil",
+      location: "kaprovani hotel sesil 1, 3522",
+      link: "guria",
+      firstDescription:
+        "Surrounded by views of the quiet street, House & Yard Sesil XS 60m to beach is a sustainable holiday home in Ureki, offering guests an environmentally friendly accommodation close to Shekvetili Beach. This beachfront property offers access to a patio, free private parking and free WiFi. The holiday home offers a picnic area and a 24-hour front desk. The holiday home is fitted with 1 bedroom, 1 bathroom, bed linen, towels, a flat-screen TV with streaming services, a dining area, a fully equipped kitchen, and a terrace with garden views. For added privacy, the accommodation has a private entrance and soundproofing.",
+      secondDescription:
+        "Guests at the holiday home will be able to enjoy activities in and around Ureki, like cycling, fishing and hiking. House & Yard Sesil XS 60m to beach features a barbecue and a garden, which can be enjoyed by guests if the weather permits. Kobuleti Train Station is 24 km from the accommodation, while Petra Fortress is 29 km away. The nearest airport is Batumi International Airport, 54 km from House & Yard Sesil XS 60m to beach.",
+      img: "/assets/hotel/405239050.jpg",
+      price: 150,
+      facilities: [
+        "Beachfront",
+        "Private beach area",
+        "Free WiFi",
+        "Free parking",
+        "Family rooms",
+      ],
+      imgLibrary: [
+        "/assets/hotel/405038154.jpg",
+        "/assets/hotel/399276530.jpg",
+        "/assets/hotel/405054343.jpg",
+        "/assets/hotel/400376395.jpg",
+        "/assets/hotel/405049054.jpg",
+      ],
+      comments: [
+        {
+          id: 1,
+          name: "Enmityx",
+          country: "Georgia",
+          countryImg: "/assets/hotel/Ge.png",
+          comment:
+            "The best place to stay in this area✨ Everything was perfect, the house is close to the beach, the yard is very nice 💛 And included bicycles is a great option",
+        },
+        {
+          id: 2,
+          name: "Maria",
+          country: "Argentina",
+          countryImg: "/assets/hotel/Ar.png",
+          comment:
+            "The owner is an architect so you can feel it in every detail of the house. It was warm enough with the heating in winter. The place is really charming, near to the sea and all the houses around are very beautiful. The shop is very close. ",
+        },
+        {
+          id: 3,
+          name: "Paulius",
+          country: "Lithuania",
+          countryImg: "/assets/hotel/Lt.png",
+          comment:
+            "Real getaway treasure! Location is great, the house is right next to the magnetic beach. The host is very kind and welcoming",
+        },
+      ],
+    });
+    server.create("hotel", {
+      id: 8,
+      date: new Date(),
+      name: "Pine Aparthotel",
+      location: "Shekvetili(kaprovani), Shekvetili,",
+      link: "guria",
+      firstDescription:
+        "Located in Shekvetili, Pine Aparthotel offers beachfront accommodation a few steps from Shekvetili Beach and provides various facilities, such as a garden and a shared lounge. Boasting a 24-hour front desk, this property also provides guests with a picnic area. Featuring family rooms, this property also provides guests with an outdoor fireplace.",
+      secondDescription:
+        "At the guest house, the units have a wardrobe. Every unit includes a kettle, a private bathroom and free WiFi, while selected rooms are equipped with a terrace and some have sea views. At the guest house, each unit includes air conditioning and a flat-screen TV. Kobuleti Train Station is 24 km from the guest house, while Petra Fortress is 29 km away. The nearest airport is Batumi International, 54 km from Pine Aparthotel, and the property offers a paid airport shuttle service.",
+      img: "/assets/hotel/477841456.jpg",
+      price: 90,
+      facilities: [
+        "Airport shuttle",
+        "Non-smoking rooms",
+        "Beachfront",
+        "Free WiFi",
+        "Free parking",
+        "Family rooms",
+      ],
+      imgLibrary: [
+        "/assets/hotel/405038154.jpg",
+        "/assets/hotel/399276530.jpg",
+        "/assets/hotel/405054343.jpg",
+        "/assets/hotel/400376395.jpg",
+        "/assets/hotel/405049054.jpg",
+      ],
+      comments: [
+        {
+          id: 1,
+          name: "Sani",
+          country: "Georgia",
+          countryImg: "/assets/hotel/Ge.png",
+          comment: "Super , clean, modern Aparthotel with perfect stuff.",
+        },
+        {
+          id: 2,
+          name: "Alexander",
+          country: "Georgia",
+          countryImg: "/assets/hotel/Ge.png",
+          comment:
+            "Wonderful place - silence, the smell of pine trees, the sea across the road The room is clean, warm, comfortable, the view of the sunset over the sea from the balcony is amazing Friendly and helpful staff",
+        },
+        {
+          id: 3,
+          name: "Elena",
+          country: "Georgia",
+          countryImg: "/assets/hotel/Ge.png",
+          comment:
+            "Very convenient location. The sea is nearby, the beach is empty, even clean; in the morning they cleaned the beach with special equipment. Quiet place, surrounded by coniferous forest.",
+        },
+      ],
+    });
+    server.create("hotel", {
+      id: 9,
+      date: new Date(),
+      name: "Kapro",
+      location: "village Kaprovani, 3521",
+      link: "guria",
+      firstDescription:
+        "Boasting air-conditioned accommodation with a patio, beachfront apartments, kapro-one, is situated in Ureki. This beachfront property offers access to a balcony, free private parking and free WiFi. The property is soundproof and is set 70 metres from Shekvetili Beach.",
+      secondDescription:
+        "The spacious apartment features 2 bedrooms, 2 bathrooms, bed linen, towels, a flat-screen TV with streaming services, a dining area, a fully equipped kitchen, and a terrace with sea views. Guests can enjoy a meal on an outdoor dining area while overlooking the garden views. This apartment is allergy-free and non-smoking. The apartment complex has a picnic area where you can spend a day out in the open.",
+      img: "/assets/hotel/402427938.jpg",
+      price: 140,
+      facilities: [
+        "Non-smoking rooms",
+        "Beachfront",
+        "Free WiFi",
+        "Free parking",
+        "Family rooms",
+      ],
+      imgLibrary: [
+        "/assets/hotel/402427395.jpg",
+        "/assets/hotel/402427331.jpg",
+        "/assets/hotel/402426497.jpg",
+        "/assets/hotel/402427275.jpg",
+        "/assets/hotel/402427856.jpg",
+      ],
+      comments: [
+        {
+          id: 1,
+          name: "Christian",
+          country: "Germany",
+          countryImg: "/assets/hotel/De.png",
+          comment:
+            "Great appartment. Good equipped and quiet (in october). Directly at the beach. The host was great. It cannot be better.",
+        },
+        {
+          id: 2,
+          name: "Nerijus",
+          country: "Lithuania",
+          countryImg: "/assets/hotel/Lt.png",
+          comment:
+            "Everything was perfect! Place like paradice! Leonard very feiendly and helpful!",
+        },
+        {
+          id: 3,
+          name: "Ilya",
+          country: "Georgia",
+          countryImg: "/assets/hotel/Ge.png",
+          comment:
+            "All was simply perfect You have everything in the room and even more. Very comfortable to be with kids. Very close to the see and nice view from the window.",
+        },
+      ],
+    });
+    server.create("hotel", {
+      id: 10,
+      date: new Date(),
+      name: "Hotel Legiandro Surami",
+      location: "guramishvili 37, 5706",
+      link: "shida-kartli",
+      firstDescription:
+        "Located in Surami, Hotel Legiandro Surami features an outdoor swimming pool, garden, terrace, and free WiFi throughout the property. The accommodation provides room service and a 24-hour front desk for guests.",
+      secondDescription:
+        "All units in the hotel are fitted with a kettle. Featuring a private bathroom with a bidet and free toiletries, rooms at Hotel Legiandro Surami also offer a city view. Guest rooms in the accommodation are equipped with a flat-screen TV and a hairdryer.",
+      img: "/assets/hotel/466112032.jpg",
+      price: 350,
+      facilities: [
+        "Outdoor swimming pool",
+        "Non-smoking rooms",
+        "Free WiFi",
+        "Free parking",
+        "Family rooms",
+      ],
+      imgLibrary: [
+        "/assets/hotel/466112025.jpg",
+        "/assets/hotel/466111929.jpg",
+        "/assets/hotel/466112018.jpg",
+        "/assets/hotel/452685296.jpg",
+        "/assets/hotel/452685310.jpg",
+      ],
+      comments: [
+        {
+          id: 1,
+          name: "Remko",
+          country: "Germany",
+          countryImg: "/assets/hotel/De.png",
+          comment:
+            "The most hospitable hotel owner that we have ever met! Fantastic location, amazing food prepared by the owner. You can not wish for anything more.",
+        },
+        {
+          id: 2,
+          name: "Ketevan",
+          country: "Georgia",
+          countryImg: "/assets/hotel/Ge.png",
+          comment:
+            "I felt myself at home. Attitude of the staff- brilliant, they are extremely helpful. Location, facility, yard, pool food- everything is beyond expectations- excellent place",
+        },
+        {
+          id: 3,
+          name: "Julia",
+          country: "Georgia",
+          countryImg: "/assets/hotel/Ge.png",
+          comment: "I liked the place and the view a lot! The pool is amazing.",
+        },
+      ],
+    });
+    server.create("hotel", {
+      id: 11,
+      date: new Date(),
+      name: "Eco Oasis",
+      location: "Devadze str.5, 7090 ",
+      link: "shida-kartli",
+      firstDescription:
+        "Eco Oasis is set in Surami and offers a garden and a shared lounge. This property offers access to a terrace and free private parking. The accommodation offers a 24-hour front desk, a shared kitchen and luggage storage for guests. This guest house comes with a fully equipped kitchen, a seating area, a dining area and a satellite flat-screen TV. Guests can take in the views of the mountain from the balcony, which also has outdoor furniture. Additional in-room amenities include chocolates or cookies.",
+      secondDescription:
+        "There is a coffee shop, and packed lunches are also available. For guests with children, the guest house features an indoor play area. Eco Oasis features an outdoor fireplace and a children's playground.",
+      img: "/assets/hotel/390514203.jpg",
+      price: 180,
+      facilities: [
+        "Non-smoking rooms",
+        "Free WiFi",
+        "Free parking",
+        "Family rooms",
+      ],
+      imgLibrary: [
+        "/assets/hotel/390514263.jpg",
+        "/assets/hotel/390514276.jpg",
+        "/assets/hotel/390514368.jpg",
+        "/assets/hotel/460337731.jpg",
+        "/assets/hotel/495011521.jpg",
+      ],
+      comments: [
+        {
+          id: 1,
+          name: "Ronen",
+          country: "Israel",
+          countryImg: "/assets/hotel/Il.png",
+          comment:
+            "Excellent for families, very nice and warm people and excellent facilities! Thank you so much.",
+        },
+        {
+          id: 2,
+          name: "Ganna",
+          country: "Georgia",
+          countryImg: "/assets/hotel/Ge.png",
+          comment:
+            "Hotel has great location with direct access to the forest , fire place and facilities for kids. We simply loved spacious room with balcony looking to the forest !",
+        },
+      ],
+    });
+    server.create("hotel", {
+      id: 12,
+      date: new Date(),
+      name: "Gori Apartments",
+      location: "Petre Bagrationi Street #74, 1400",
+      link: "shida-kartli",
+      firstDescription:
+        "Located in Gori, less than 1 km from Stalin Museum, Gori Apartments features views of the mountain. This 4-star hotel offers a concierge service and luggage storage space. The accommodation provides a 24-hour front desk, airport transfers, room service and free WiFi throughout the property. At the hotel every room is equipped with air conditioning, a wardrobe, a flat-screen TV, a private bathroom, bed linen, towels and a balcony with a city view. All units will provide guests with a fridge.",
+      secondDescription:
+        "Uplistsiche Cave Town is 14 km from Gori Apartments, while Gori Fortress is 1.1 km away. The nearest airport is Tbilisi International Airport, 98 km from the accommodation.",
+      img: "/assets/hotel/466937739.jpg",
+      price: 120,
+      facilities: [
+        "Airport shuttle",
+        "Room service",
+        "Tea/coffee maker in all rooms",
+        "Non-smoking rooms",
+        "Free WiFi",
+        "Free parking",
+        "Family rooms",
+      ],
+      imgLibrary: [
+        "/assets/hotel/508077338.jpg",
+        "/assets/hotel/466937561.jpg",
+        "/assets/hotel/466069883.jpg",
+        "/assets/hotel/466072332.jpg",
+        "/assets/hotel/459981554.jpg",
+      ],
+      comments: [
+        {
+          id: 1,
+          name: "Evelyne",
+          country: "France",
+          countryImg: "/assets/hotel/Fr.png",
+          comment:
+            "The location is great, parking around, the new flat is perfect and well fitted. The 3 men at reception are kind and handsome, the lobby is elegant.",
+        },
+        {
+          id: 2,
+          name: "Kristine",
+          country: "Georgia",
+          countryImg: "/assets/hotel/Ge.png",
+          comment:
+            "Clean, well equiped and modern rooms, excellent service and frinedly staff",
+        },
+        {
+          id: 3,
+          name: "Ocimax",
+          country: "Germany",
+          countryImg: "/assets/hotel/De.png",
+          comment:
+            "Very new, clean and well-equipped apartment in Gori with friendly staff. Good location to explore the city.",
+        },
+      ],
+    });
+    server.create("hotel", {
+      id: 13,
+      date: new Date(),
+      name: "Oldtown Kutaisi",
+      location: "6 Sagaradze Street, 4600",
+      link: "imereti",
+      firstDescription:
+        "Situated in Kutaisi, 600 metres from Colchis Fountain and 300 metres from White Bridge, Oldtown Kutaisi offers a terrace and air conditioning. Among the facilities at this property are a lift and an ATM, along with free WiFi throughout the property. The property is non-smoking and is located 1.5 km from Kutaisi Train Station.",
+      secondDescription:
+        "The apartment features 1 bedroom, 1 bathroom, bed linen, towels, a flat-screen TV, a dining area, a fully equipped kitchen, and a balcony with city views. For added privacy, the accommodation has a private entrance and soundproofing. A minimarket is available at the apartment.",
+      img: "/assets/hotel/503656773.jpg",
+      price: 120,
+      facilities: [
+        "Airport shuttle",
+        "Non-smoking rooms",
+        "Free WiFi",
+        "Free parking",
+        "Family rooms",
+      ],
+      imgLibrary: [
+        "/assets/hotel/501907253.jpg",
+        "/assets/hotel/501907260.jpg",
+        "/assets/hotel/501907262.jpg",
+        "/assets/hotel/501907264.jpg",
+        "/assets/hotel/501907267.jpg",
+      ],
+      comments: [
+        {
+          id: 1,
+          name: "Jurģis",
+          country: "Latvia",
+          countryImg: "/assets/hotel/Lv.png",
+          comment:
+            "Very nice place in Kutaisi. Owners picked us up at airport and helped with sim card and with best suggestions regarding city and places for meal.",
+        },
+        {
+          id: 2,
+          name: "Kristine",
+          country: "Georgia",
+          countryImg: "/assets/hotel/Ge.png",
+          comment:
+            "Clean, well equiped and modern rooms, excellent service and frinedly staff",
+        },
+        {
+          id: 3,
+          name: "Salome",
+          country: "Georgia",
+          countryImg: "/assets/hotel/Ge.png",
+          comment:
+            "Host is gorgeous, she cooked my breakfast herself 💚 I felt like home. Apartment is very stylish and cozy. Location just perfect. Good choice I made.",
+        },
+      ],
+    });
+    server.create("hotel", {
+      id: 14,
+      date: new Date(),
+      name: "Dani Apartment",
+      location: "Javakhishvili Street 41, 4600",
+      link: "imereti",
+      firstDescription:
+        "Set in Kutaisi, 2 km from White Bridge and 2.6 km from Colchis Fountain, Dani Apartment offers spacious air-conditioned accommodation with a terrace and free WiFi. With city views, this accommodation provides a balcony. The property is non-smoking and is located 3.1 km from Bagrati Cathedral.",
+      secondDescription:
+        "This apartment comes with 2 bedrooms, a kitchen with a microwave and a fridge, a flat-screen TV, a seating area and 1 bathroom equipped with a bidet. The unit at the property features a bath and a dressing room. For added privacy, the accommodation has a private entrance and soundproofing.",
+      img: "/assets/hotel/482609688.jpg",
+      price: 220,
+      facilities: ["Non-smoking rooms", "Free WiFi", "Free parking"],
+      imgLibrary: [
+        "/assets/hotel/487043688.jpg",
+        "/assets/hotel/487043888.jpg",
+        "/assets/hotel/482609756.jpg",
+        "/assets/hotel/487656861.jpg",
+        "/assets/hotel/487661766.jpg",
+      ],
+      comments: [
+        {
+          id: 1,
+          name: "Jurģis",
+          country: "Latvia",
+          countryImg: "/assets/hotel/Lv.png",
+          comment:
+            "Very nice place in Kutaisi. Owners picked us up at airport and helped with sim card and with best suggestions regarding city and places for meal.",
+        },
+        {
+          id: 2,
+          name: "Kristine",
+          country: "Georgia",
+          countryImg: "/assets/hotel/Ge.png",
+          comment:
+            "Clean, well equiped and modern rooms, excellent service and frinedly staff",
+        },
+        {
+          id: 3,
+          name: "Salome",
+          country: "Georgia",
+          countryImg: "/assets/hotel/Ge.png",
+          comment:
+            "Host is gorgeous, she cooked my breakfast herself 💚 I felt like home. Apartment is very stylish and cozy. Location just perfect. Good choice I made.",
+        },
+      ],
+    });
+    server.create("hotel", {
+      id: 15,
+      date: new Date(),
+      name: "Hotel West Face",
+      location: "Kutaisi banoja 17/40, 5406",
+      link: "imereti",
+      firstDescription:
+        "Situated in Kutaisi, 3.2 km from White Bridge, Hotel West Face features accommodation with a seasonal outdoor swimming pool, free private parking, a garden and a shared lounge. Featuring a bar, the property is located within 3.9 km of Colchis Fountain. The accommodation provides a 24-hour front desk, airport transfers, room service and free WiFi. At the hotel, rooms include a desk. Complete with a private bathroom fitted with a shower and free toiletries, the rooms at Hotel West Face have a flat-screen TV and air conditioning, and certain rooms have a terrace.",
+      secondDescription:
+        "You can play table tennis at this 5-star hotel, and the area is popular for cycling. Bagrati Cathedral is 4.4 km from the accommodation, while Kutaisi Train Station is 5.2 km from the property. The nearest airport is Kutaisi International Airport, 19 km from Hotel West Face.",
+      img: "/assets/hotel/490213940.jpg",
+      price: 135,
+      facilities: [
+        "Airport shuttle",
+        "Bar",
+        "Breakfast",
+        "Non-smoking rooms",
+        "Family rooms",
+        "Free WiFi",
+        "Free parking",
+        "Room service",
+      ],
+      imgLibrary: [
+        "/assets/hotel/486358780.jpg",
+        "/assets/hotel/490206880.jpg",
+        "/assets/hotel/490210160.jpg",
+        "/assets/hotel/490222051.jpg",
+        "/assets/hotel/490228637.jpg",
+      ],
+      comments: [
+        {
+          id: 1,
+          name: "Linda",
+          country: "Latvia",
+          countryImg: "/assets/hotel/Lv.png",
+          comment:
+            "The family that was working there , was super friendly, always help with every our request. The biggest thank you - Nino, who helped us with excursions, taxi and etc.",
+        },
+        {
+          id: 2,
+          name: "Emil",
+          country: "Germany",
+          countryImg: "/assets/hotel/De.png",
+          comment:
+            "very nice and cozy family owned/ operated hotel in Kutaisi.",
+        },
+        {
+          id: 3,
+          name: "Julia",
+          country: "Germany",
+          countryImg: "/assets/hotel/De.png",
+          comment: "very friendly staff, good price, nice & quiet location",
+        },
+      ],
+    });
+    server.create("hotel", {
+      id: 16,
+      date: new Date(),
+      name: "Our Apartment",
+      location: "21a Tsereteli Street, 4600",
+      link: "imereti",
+      firstDescription:
+        "Set 500 metres from Colchis Fountain and 1.2 km from Kutaisi Train Station, Our Apartment in Kutaisi offers air-conditioned accommodation with views of the river and free WiFi. The property has city and inner courtyard views, and is 1.4 km from Bagrati Cathedral. The property offers soundproof units and is located 500 metres from White Bridge.",
+      secondDescription:
+        "The apartment provides guests with a balcony, mountain views, a seating area, a flat-screen TV, a fully equipped kitchen with an oven and a microwave, and a private bathroom with bidet and slippers. Guests can have wine or champagne, fruits and chocolates or cookies delivered to their room. At the apartment complex, units are equipped with bed linen and towels.",
+      img: "/assets/hotel/490213940.jpg",
+      price: 85,
+      facilities: [
+        "Non-smoking rooms",
+        "Free WiFi",
+        "Free parking",
+        "Room service",
+      ],
+      imgLibrary: [
+        "/assets/hotel/299418653.jpg",
+        "/assets/hotel/299418716.jpg",
+        "/assets/hotel/299418650.jpg",
+        "/assets/hotel/299418698.jpg",
+        "/assets/hotel/298998297.jpg",
+      ],
+      comments: [
+        {
+          id: 1,
+          name: "Jurģis",
+          country: "Latvia",
+          countryImg: "/assets/hotel/Lv.png",
+          comment:
+            "Very nice place in Kutaisi. Owners picked us up at airport and helped with sim card and with best suggestions regarding city and places for meal.",
+        },
+        {
+          id: 2,
+          name: "Kristine",
+          country: "Georgia",
+          countryImg: "/assets/hotel/Ge.png",
+          comment:
+            "Clean, well equiped and modern rooms, excellent service and frinedly staff",
+        },
+        {
+          id: 3,
+          name: "Salome",
+          country: "Georgia",
+          countryImg: "/assets/hotel/Ge.png",
+          comment:
+            "Host is gorgeous, she cooked my breakfast herself 💚 I felt like home. Apartment is very stylish and cozy. Location just perfect. Good choice I made.",
+        },
+      ],
+    });
+    server.create("hotel", {
+      id: 17,
+      date: new Date(),
+      name: "Orbi ",
+      location: "21a Tsereteli Street, 4600",
+      link: "ajara",
+      firstDescription:
+        "Set 500 metres from Colchis Fountain and 1.2 km from Kutaisi Train Station, Our Apartment in Kutaisi offers air-conditioned accommodation with views of the river and free WiFi. The property has city and inner courtyard views, and is 1.4 km from Bagrati Cathedral. The property offers soundproof units and is located 500 metres from White Bridge.",
+      secondDescription:
+        "The apartment provides guests with a balcony, mountain views, a seating area, a flat-screen TV, a fully equipped kitchen with an oven and a microwave, and a private bathroom with bidet and slippers. Guests can have wine or champagne, fruits and chocolates or cookies delivered to their room. At the apartment complex, units are equipped with bed linen and towels.",
+      img: "/assets/hotel/509528004.jpg",
+      price: 70,
+      facilities: [
+        "Outdoor swimming pool",
+        "Airport shuttle",
+        "Spa and wellness centre",
+        "Room service",
+        "Fitness centre",
+        "Free WiFi",
+        "Free parking",
+        "Breakfast",
+      ],
+      imgLibrary: [
+        "/assets/hotel/514220029.jpg",
+        "/assets/hotel/514219948.jpg",
+        "/assets/hotel/509531561.jpg",
+        "/assets/hotel/509529740.jpg",
+        "/assets/hotel/509529738.jpg",
+      ],
+      comments: [
+        {
+          id: 1,
+          name: "Ina",
+          country: "Lithuania",
+          countryImg: "/assets/hotel/Lt.png",
+          comment:
+            "Nice view, good price, comfortable bed, opportunity to pay in euros.",
+        },
+        {
+          id: 2,
+          name: "Veale",
+          country: "Ireland",
+          countryImg: "/assets/hotel/Ie.png",
+          comment:
+            "Great location beside the beach, spotlessly clean and comfortable",
+        },
+        {
+          id: 3,
+          name: "Mariia",
+          country: "Russia",
+          countryImg: "/assets/hotel/Ru.png",
+          comment:
+            "Beautiful view of the sea. Spacious room. There are good restaurants nearby. Checked in quickly",
+        },
+      ],
+    });
+    server.create("hotel", {
+      id: 18,
+      date: new Date(),
+      name: "Barakah Apartmets Batumi",
+      location: "Sherif Khimshiashvili Street, 6000 ",
+      link: "ajara",
+      firstDescription:
+        "Barakah Apartmets Batumi is a sustainable apartment in Batumi, offering free WiFi, private beach area and infinity pool. Guests can take in the sea views and spend some time on the beach. Each accommodation at the 5-star apartment has mountain views, and guests can enjoy access to spa facilities and a fitness room. The apartment features family rooms as well as facilities for disabled guests.",
+      secondDescription:
+        "The units come with air conditioning, a flat-screen TV with satellite channels, a fridge, a kettle, a bidet, bathrobes and a desk. There is a private bathroom with shower in every unit, along with slippers, a hair dryer and free toiletries. At the apartment complex, the units are fitted with bed linen and towels.",
+      img: "/assets/hotel/477076859.jpg",
+      price: 380,
+      facilities: [
+        "Outdoor swimming pool",
+        "Airport shuttle",
+        "Spa and wellness centre",
+        "Room service",
+        "Fitness centre",
+        "Free WiFi",
+        "Free parking",
+        "Breakfast",
+      ],
+      imgLibrary: [
+        "/assets/hotel/475206730.jpg",
+        "/assets/hotel/475206649.jpg",
+        "/assets/hotel/479471423.jpg",
+        "/assets/hotel/474407248.jpg",
+        "/assets/hotel/474407433.jpg",
+      ],
+      comments: [
+        {
+          id: 1,
+          name: "Ina",
+          country: "Lithuania",
+          countryImg: "/assets/hotel/Lt.png",
+          comment:
+            "Nice view, good price, comfortable bed, opportunity to pay in euros.",
+        },
+        {
+          id: 2,
+          name: "Veale",
+          country: "Ireland",
+          countryImg: "/assets/hotel/Ie.png",
+          comment:
+            "Great location beside the beach, spotlessly clean and comfortable",
+        },
+        {
+          id: 3,
+          name: "Mariia",
+          country: "Russia",
+          countryImg: "/assets/hotel/Ru.png",
+          comment:
+            "Beautiful view of the sea. Spacious room. There are good restaurants nearby. Checked in quickly",
+        },
+      ],
+    });
+    server.create("hotel", {
+      id: 19,
+      date: new Date(),
+      name: "JRW Welmond",
+      location: "Shavsheti Street 2/4, 6010 ",
+      link: "ajara",
+      firstDescription:
+        "Located 700 metres from Argo Cable Car in Batumi, JRW Welmond Hotel features a restaurant, bar and free WiFi. The hotel has a spa centre and sauna, and guests can enjoy a meal at the restaurant. Free private parking is available on site. Certain units have a seating area for your convenience. Views of the sea, mountain or city are featured in certain rooms. A flat-screen TV is featured.",
+      secondDescription:
+        "You will find a 24-hour front desk and hairdresser's, on-site shops souvenir shops and a wine house at the property. The hotel also offers car hire. Batumi Sea Port is 800 metres from JRW Welmond Hotel, while Piazza is 800 metres away. The nearest airport is Batumi International Airport, 5 km from JRW Welmond Hotel.",
+      img: "/assets/hotel/50349301.jpg",
+      price: 230,
+      facilities: [
+        "Outdoor swimming pool",
+        "Airport shuttle",
+        "Spa and wellness centre",
+        "Room service",
+        "Fitness centre",
+        "Free WiFi",
+        "Free parking",
+        "Breakfast",
+      ],
+      imgLibrary: [
+        "/assets/hotel/49339896.jpg",
+        "/assets/hotel/199458010.jpg",
+        "/assets/hotel/101472129.jpg",
+        "/assets/hotel/246414389.jpg",
+        "/assets/hotel/360539504.jpg",
+      ],
+      comments: [
+        {
+          id: 1,
+          name: "Ina",
+          country: "Israel",
+          countryImg: "/assets/hotel/Il.png",
+          comment:
+            "The breakfast was great , The staff in the dining room was amazing, took care of everything and made us want to return to the hotel again and again",
+        },
+        {
+          id: 2,
+          name: "Szymon",
+          country: "Poland",
+          countryImg: "/assets/hotel/Ie.png",
+          comment:
+            "An incredible selection of breakfast dishes, plenty of extras, colorful vegetables, and fruits. The service is very helpful; many times, we have experienced assistance, care, and hospitality from the staff.",
+        },
+        {
+          id: 3,
+          name: "Mariia",
+          country: "Russia",
+          countryImg: "/assets/hotel/Ru.png",
+          comment:
+            "Beautiful view of the sea. Spacious room. There are good restaurants nearby. Checked in quickly",
+        },
+      ],
+    });
+    server.create("hotel", {
+      id: 20,
+      date: new Date(),
+      name: "Brotseulebi",
+      location: "Giorgi Brtskinvale street",
+      link: "racha-lechkumi-kvemo-svaneti",
+      firstDescription:
+        "Set in Ambrolauri, Brotseulebi offers a restaurant and bar. With a garden, the 5-star hotel has air-conditioned rooms with free WiFi, each with a private bathroom. The rooms include a balcony.",
+      secondDescription:
+        "All guest rooms in the hotel are fitted with a coffee machine. At Brotseulebi all rooms include bed linen and towels. Speaking English, Georgian and Russian, staff at the 24-hour front desk can help you plan your stay.",
+      img: "/assets/hotel/484899511.jpg",
+      price: 150,
+      facilities: [
+        "Room service",
+        "Free WiFi",
+        "Free parking",
+        "Bar",
+        "Breakfast",
+      ],
+      imgLibrary: [
+        "/assets/hotel/484899601.jpg",
+        "/assets/hotel/484899607.jpg",
+        "/assets/hotel/484899625.jpg",
+        "/assets/hotel/484899645.jpg",
+        "/assets/hotel/484899806.jpg",
+      ],
+      comments: [
+        {
+          id: 1,
+          name: "Ina",
+          country: "Israel",
+          countryImg: "/assets/hotel/Il.png",
+          comment:
+            "The breakfast was great , The staff in the dining room was amazing, took care of everything and made us want to return to the hotel again and again",
+        },
+        {
+          id: 2,
+          name: "Szymon",
+          country: "Poland",
+          countryImg: "/assets/hotel/Ie.png",
+          comment:
+            "An incredible selection of breakfast dishes, plenty of extras, colorful vegetables, and fruits. The service is very helpful; many times, we have experienced assistance, care, and hospitality from the staff.",
+        },
+        {
+          id: 3,
+          name: "Mariia",
+          country: "Russia",
+          countryImg: "/assets/hotel/Ru.png",
+          comment:
+            "Beautiful view of the sea. Spacious room. There are good restaurants nearby. Checked in quickly",
+        },
+      ],
+    });
+    server.create("hotel", {
+      id: 21,
+      date: new Date(),
+      name: "WoodStar",
+      location: "Shishinashvili Street, 0400",
+      link: "racha-lechkumi-kvemo-svaneti",
+      firstDescription:
+        "A recently renovated holiday home located in Ambrolauri, WoodStar/ტყის ვარსკვლავი features a garden. This property offers access to a balcony, tennis at the tennis court, free private parking and free WiFi. ",
+      secondDescription:
+        "Featuring a PS3, the holiday home has a fully equipped kitchen with an oven, a microwave and a toaster, a living room with a seating area and a dining area, 2 bedrooms, and 1 bathroom with a walk-in shower and a bath. The unit is air conditioned and includes a terrace with an outdoor dining area as well as a flat-screen TV with streaming services. For added privacy, the accommodation has a private entrance and soundproofing.",
+      img: "/assets/hotel/492424797.jpg",
+      price: 245,
+      facilities: [
+        "Room service",
+        "Free WiFi",
+        "Free parking",
+        "Family rooms",
+        "Bar",
+        "Breakfast",
+      ],
+      imgLibrary: [
+        "/assets/hotel/465050167.jpg",
+        "/assets/hotel/476108044.jpg",
+        "/assets/hotel/490738756.jpg",
+        "/assets/hotel/492424794.jpg",
+        "/assets/hotel/472043234.jpg",
+      ],
+      comments: [
+        {
+          id: 1,
+          name: "Yaros",
+          country: "Georgia",
+          countryImg: "/assets/hotel/Ge.png",
+          comment:
+            "The host is really great. They cooked a wonderful and really tasty dinner. Everything was amazing.",
+        },
+        {
+          id: 2,
+          name: "Marina",
+          country: "Georgia",
+          countryImg: "/assets/hotel/Ge.png",
+          comment:
+            "Very cozy big house, stylish design. All liked it. Everything is there for living. I was very pleased with the karma heating. I recommend this holiday home.",
+        },
+        {
+          id: 3,
+          name: "Anna",
+          country: "Russia",
+          countryImg: "/assets/hotel/Ru.png",
+          comment:
+            "magnificent house and friendly owners. I liked everything - the quiet location, the beautiful location among the mountains, the cozy atmosphere of the house and the cleanliness. We enjoyed spending the weekend with friends.",
+        },
+      ],
+    });
+    server.create("hotel", {
+      id: 22,
+      date: new Date(),
+      name: "Chalet Panorama Nikortsminda",
+      location: "Nikortsminda, ambrolauri 0408",
+      link: "racha-lechkumi-kvemo-svaneti",
+      firstDescription:
+        "A recently renovated holiday home located in Ambrolauri, WoodStar/ტყის ვარსკვლავი features a garden. This property offers access to a balcony, tennis at the tennis court, free private parking and free WiFi. ",
+      secondDescription:
+        "Featuring a PS3, the holiday home has a fully equipped kitchen with an oven, a microwave and a toaster, a living room with a seating area and a dining area, 2 bedrooms, and 1 bathroom with a walk-in shower and a bath. The unit is air conditioned and includes a terrace with an outdoor dining area as well as a flat-screen TV with streaming services. For added privacy, the accommodation has a private entrance and soundproofing.",
+      img: "/assets/hotel/390692215.jpg",
+      price: 480,
+      facilities: ["Free WiFi", "Free parking", "Family rooms"],
+      imgLibrary: [
+        "/assets/hotel/510593889.jpg",
+        "/assets/hotel/510593004.jpg",
+        "/assets/hotel/510592777.jpg",
+        "/assets/hotel/510589626.jpg",
+        "/assets/hotel/411174372.jpg",
+      ],
+      comments: [
+        {
+          id: 1,
+          name: "Denis",
+          country: "Georgia",
+          countryImg: "/assets/hotel/Ge.png",
+          comment:
+            "The host is really great. They cooked a wonderful and really tasty dinner. Everything was amazing.",
+        },
+        {
+          id: 2,
+          name: "Roman",
+          country: "Georgia",
+          countryImg: "/assets/hotel/Ge.png",
+          comment:
+            "Very cozy big house, stylish design. All liked it. Everything is there for living. I was very pleased with the karma heating. I recommend this holiday home.",
+        },
+      ],
+    });
+    server.create("hotel", {
+      id: 23,
+      date: new Date(),
+      name: "Karse",
+      location: "Village Sadmeli, 0410 ",
+      link: "racha-lechkumi-kvemo-svaneti",
+      firstDescription:
+        "Karse is a guesthouse in the middle of the vineyard and has a very nice view of the mountains. Featuring barbecue facilities and a garden, Karse is situated in Ambrolauri. The accommodation provides a 24-hour front desk. At the guest house, the rooms have a wardrobe and a TV. The private bathroom is fitted with a shower.",
+      secondDescription:
+        "A continental breakfast is served each morning at the property.",
+      img: "/assets/hotel/308118502.jpg",
+      price: 160,
+      facilities: [
+        "Non-smoking rooms",
+        "Restaurant",
+        "Bar",
+        "Breakfast",
+        "Free WiFi",
+        "Free parking",
+        "Family rooms",
+      ],
+      breakfast: ["Continental", "Vegetarian", "Vegan", "Kosher"],
+      imgLibrary: [
+        "/assets/hotel/459927150.jpg",
+        "/assets/hotel/459927154.jpg",
+        "/assets/hotel/459927160.jpg",
+        "/assets/hotel/459927184.jpg",
+        "/assets/hotel/446437273.jpg",
+      ],
+      comments: [
+        {
+          id: 1,
+          name: "Giorgi",
+          country: "Georgia",
+          countryImg: "/assets/hotel/Ge.png",
+          comment:
+            "The host is really great. They cooked a wonderful and really tasty dinner. Everything was amazing.",
+        },
+        {
+          id: 2,
+          name: "Oseledko",
+          country: "Georgia",
+          countryImg: "/assets/hotel/Ge.png",
+          comment:
+            "Very cozy big house, stylish design. All liked it. Everything is there for living. I was very pleased with the karma heating. I recommend this holiday home.",
+        },
+        {
+          id: 3,
+          name: "Ramaz",
+          country: "Czech Republic",
+          countryImg: "/assets/hotel/Cz.png",
+          comment:
+            "Very nice place situated in a nice vineyard, modern look, comfortable beds.",
+        },
+      ],
+    });
+    server.create("hotel", {
+      id: 24,
+      date: new Date(),
+      name: "Crystal Hotel & SPA",
+      location: "Didveli Funicular Railway, 1204 ",
+      link: "samtskhe-javakheti",
+      firstDescription:
+        "Crystal Hotel & Spa is located is located in a picturesque area, within a 5-minute drive from Bakuriani Train Station. It features a spa centre and a swimming pool. Free Wi-Fi and free private parking are provided. All bright rooms come with a flat-screen TV, a kettle and a minibar. Some boast a spa bath and a balcony with mountain view.",
+      secondDescription:
+        "The on-site restaurant serves various European and Georgian dishes, and guests can have a drink in the elegant lobby bar. Crystal Hotel & Spa offers various treatments and massage services. Guests can swim in the indoor pool, work out in the gym or relax in the sauna or the hot tub. It is possible to ski or to play billiards. For the youngest guests there is a children’s playground.",
+      img: "/assets/hotel/496524927.jpg",
+      price: 380,
+      facilities: [
+        "2 swimming pools",
+        "Spa and wellness centre",
+        "Airport shuttle",
+        "Room service",
+        "Non-smoking rooms",
+        "Restaurant",
+        "Bar",
+        "Breakfast",
+        "Free WiFi",
+        "Free parking",
+        "Family rooms",
+      ],
+      breakfast: ["Continental", "Vegetarian", "Vegan", "Kosher"],
+      imgLibrary: [
+        "/assets/hotel/496524926.jpg",
+        "/assets/hotel/496524928.jpg",
+        "/assets/hotel/199846493.jpg",
+        "/assets/hotel/270407002.jpg",
+        "/assets/hotel/309655744.jpg",
+      ],
+      comments: [
+        {
+          id: 1,
+          name: "Giorgi",
+          country: "Georgia",
+          countryImg: "/assets/hotel/Ge.png",
+          comment:
+            "The host is really great. They cooked a wonderful and really tasty dinner. Everything was amazing.",
+        },
+        {
+          id: 2,
+          name: "Oseledko",
+          country: "Georgia",
+          countryImg: "/assets/hotel/Ge.png",
+          comment:
+            "Very cozy big house, stylish design. All liked it. Everything is there for living. I was very pleased with the karma heating. I recommend this holiday home.",
+        },
+        {
+          id: 3,
+          name: "Ramaz",
+          country: "Czech Republic",
+          countryImg: "/assets/hotel/Cz.png",
+          comment:
+            "Very nice place situated in a nice vineyard, modern look, comfortable beds.",
+        },
+      ],
+    });
+    server.create("hotel", {
+      id: 25,
+      date: new Date(),
+      name: "Bakuriani Inn",
+      location: "12 Tsakadze street, 1204 ",
+      link: "samtskhe-javakheti",
+      firstDescription:
+        "Bakuriani Inn has a shared lounge, terrace, a restaurant and bar in Bakuriani. A hot tub is available for guests. The accommodation features a 24-hour front desk, airport transfers, room service and free WiFi. Some rooms include a kitchenette with a fridge and a stovetop. The hotel offers a buffet or continental breakfast.",
+      secondDescription:
+        "Guests can relax in the wellness area, including an indoor pool, a fitness centre and a sauna, or in the garden equipped with a children's playground. The area is popular for skiing, and bike hire is available at this 5-star hotel.",
+      img: "/assets/hotel/497141444.jpg",
+      price: 230,
+      facilities: [
+        "Indoor swimming pool",
+        "Spa and wellness centre",
+        "Airport shuttle",
+        "Room service",
+        "Non-smoking rooms",
+        "Restaurant",
+        "Bar",
+        "Breakfast",
+        "Free WiFi",
+        "Free parking",
+        "Family rooms",
+      ],
+      breakfast: ["Continental", "Vegetarian", "Vegan", "Kosher"],
+      imgLibrary: [
+        "/assets/hotel/478608101.jpg",
+        "/assets/hotel/233763993.jpg",
+        "/assets/hotel/478623783.jpg",
+        "/assets/hotel/478624982.jpg",
+        "/assets/hotel/478588249.jpg",
+      ],
+      comments: [
+        {
+          id: 1,
+          name: "Shelena",
+          country: "Georgia",
+          countryImg: "/assets/hotel/Ge.png",
+          comment:
+            "The location is great and the view of mountains is amazing. The room was cozy and comfortable. We also liked the pool and sauna!",
+        },
+        {
+          id: 2,
+          name: "Gerges",
+          country: "Kuwait",
+          countryImg: "/assets/hotel/Kw.png",
+          comment:
+            "The hotel was almoat prefect. Location, Food, Staff, Pool and service, all of it was great",
+        },
+        {
+          id: 3,
+          name: "Maria",
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
+            "Buffet Dinner and Breakfast were delicious and have a lot of selections. We were granted late check-out at 3pm at no extra cost.",
+        },
+      ],
+    });
+    server.create("hotel", {
+      id: 26,
+      date: new Date(),
+      name: "Borjomi Likani Health & Spa Centre",
+      location: "Meskheti Street 16, 1200",
+      link: "samtskhe-javakheti",
+      firstDescription:
+        "Located 350 metres from the Kura River, Borjomi Likani features a spa and wellness center with indoor pool, sauna, hammam, hot tub and medical treatments. Free WiFi and free private parking are available on site. The rooms offer air conditioning and a flat-screen TV. The bathrooms provide a hairdryer, bathrobes and slippers.",
+      secondDescription:
+        "Guests can dine in the hotel’s restaurant or order room service and breakfasts in the room. Dinners can also be enjoyed in hotel's private park. Property offers cooking master classes which allows guests to prepare various dishes themselves.",
+      img: "/assets/hotel/497141444.jpg",
+      price: 320,
+      facilities: [
+        "Indoor swimming pool",
+        "Spa and wellness centre",
+        "Airport shuttle",
+        "Room service",
+        "Non-smoking rooms",
+        "Restaurant",
+        "Bar",
+        "Breakfast",
+        "Free WiFi",
+        "Free parking",
+        "Family rooms",
+      ],
+      breakfast: ["Continental", "Vegetarian", "Vegan", "Kosher"],
+      imgLibrary: [
+        "/assets/hotel/478608101.jpg",
+        "/assets/hotel/233763993.jpg",
+        "/assets/hotel/478623783.jpg",
+        "/assets/hotel/478624982.jpg",
+        "/assets/hotel/478588249.jpg",
+      ],
+      comments: [
+        {
+          id: 1,
+          name: "Magicalkhachapuri",
+          country: "Georgia",
+          countryImg: "/assets/hotel/Ge.png",
+          comment:
+            "This place is loaded with the thing to do. If you love spa then it's your place.",
+        },
+        {
+          id: 2,
+          name: "Saleem",
+          country: "Kuwait",
+          countryImg: "/assets/hotel/Kw.png",
+          comment:
+            "The seclusion and comfort was exceptional. Since we were celebrating our wedding anniversary, the client relationship manager Daniel upgraded our room to the one with jaccuzi. We are grateful to him for enhancing our experience with Borjomi Likani.",
+        },
+        {
+          id: 3,
+          name: "Mikalai",
+          country: "Georgia",
+          countryImg: "/assets/hotel/Ge.png",
+          comment:
+            "Wonderfull SPA and warm pool Breakfasts are really good! 6th froor Restraunt is great!",
+        },
+      ],
+    });
+    server.create("hotel", {
+      id: 27,
+      date: new Date(),
+      name: "LETO",
+      location: "31 Zviad Gamsakhurdia Avenue, 2100",
+      link: "samegrelo-zemo-svaneti",
+      firstDescription:
+        "Located in Zugdidi, LETO Boutique Hotel Zugdidi offers 5-star accommodation with a terrace, a restaurant and a bar. Among the facilities at this property are a 24-hour front desk and an ATM, along with free WiFi throughout the property. The hotel features an outdoor swimming pool, fitness centre, nightclub and room service.",
+      secondDescription:
+        "The hotel will provide guests with air-conditioned rooms with a desk, a kettle, a minibar, a safety deposit box, a flat-screen TV and a private bathroom with a bidet. At LETO Boutique Hotel Zugdidi every room is fitted with bed linen and towels.",
+      img: "/assets/hotel/201208337.jpg",
+      price: 290,
+      facilities: [
+        "Outdoor swimming pool",
+        "Spa and wellness centre",
+        "Airport shuttle",
+        "Room service",
+        "Non-smoking rooms",
+        "Restaurant",
+        "Bar",
+        "Breakfast",
+        "Free WiFi",
+        "Free parking",
+        "Family rooms",
+        "Fitness centre",
+      ],
+      breakfast: ["Continental", "Vegetarian", "Vegan", "Kosher"],
+      imgLibrary: [
+        "/assets/hotel/201889321.jpg",
+        "/assets/hotel/201208292.jpg",
+        "/assets/hotel/201210520.jpg",
+        "/assets/hotel/205744877.jpg",
+        "/assets/hotel/201209802.jpg",
+      ],
+      comments: [
+        {
+          id: 1,
+          name: "Nick",
+          country: "United Kingdom",
+          countryImg: "/assets/hotel/Gb.png",
+          comment:
+            "A beautiful hotel with all the basics and more. Large, well equipped bedroom and bathroom with a great shower. Helpful and friendly staff. Restaurant on site.",
+        },
+        {
+          id: 2,
+          name: "Georgiy",
+          country: "Grenada",
+          countryImg: "/assets/hotel/Gd.png",
+          comment:
+            "Beautiful view on the roof. Clean room. Beautiful building. Located in the city center.",
+        },
+        {
+          id: 3,
+          name: "Beat",
+          country: "Switzerland",
+          countryImg: "/assets/hotel/Ch.png",
+          comment:
+            "Very friendly and accommodating staff. Good bed. Centrally located in Zugdidi Centre. Rooftop restaurant.",
+        },
+      ],
+    });
+    server.create("hotel", {
+      id: 28,
+      date: new Date(),
+      name: "Gistola",
+      location: "39, Boris Kakhiani street, 3200",
+      link: "samegrelo-zemo-svaneti",
+      firstDescription:
+        "Located in Mestia, 1.8 km from Museum of History and Ethnography, Gistola Hotel Mestia provides accommodation with a shared lounge, free private parking, a terrace and a restaurant. Each accommodation at the 4-star hotel has mountain views, and guests can enjoy access to a children's playground and to an indoor pool. The accommodation features a 24-hour front desk, airport transfers, room service and free WiFi throughout the property.",
+      secondDescription:
+        "Guest rooms are equipped with a flat-screen TV with satellite channels, fridge, a kettle, a bidet, free toiletries and a desk. Featuring a private bathroom with a shower and a hairdryer, rooms at the hotel also offer a city view. All guest rooms include a safety deposit box. A buffet breakfast is available daily at Gistola Hotel Mestia.",
+      img: "/assets/hotel/201208337.jpg",
+      price: 450,
+      facilities: [
+        "Indoor swimming pool",
+        "Spa and wellness centre",
+        "Airport shuttle",
+        "Room service",
+        "Non-smoking rooms",
+        "Bar",
+        "Free WiFi",
+        "Free parking",
+        "Family rooms",
+        "Fitness centre",
+      ],
+      imgLibrary: [
+        "/assets/hotel/201889321.jpg",
+        "/assets/hotel/201208292.jpg",
+        "/assets/hotel/201210520.jpg",
+        "/assets/hotel/205744877.jpg",
+        "/assets/hotel/201209802.jpg",
+      ],
+      comments: [
+        {
+          id: 1,
+          name: "Abdus",
+          country: "United Arab Emirates",
+          countryImg: "/assets/hotel/Ae.png",
+          comment:
+            "Everything was fabulous! Their staff is simply great from the reception, Maya(Manager), Tedo, housekeeping, and 2 ladies from the reception( sorry, forgot their names). The room with a balcony was of a decent size with all amenities and has a..",
+        },
+        {
+          id: 2,
+          name: "As",
+          country: "India",
+          countryImg: "/assets/hotel/In.png",
+          comment:
+            "Its a new, clean hotel with best facilities in this area. Location wise, its walkable distance to center and Museum but a little more distance to Khergiani museum. The view from balcony was awesome, the breakfast was a rich and 'splendid to",
+        },
+        {
+          id: 3,
+          name: "George",
+          country: "Georgia",
+          countryImg: "/assets/hotel/Ge.png",
+          comment:
+            "Hotel is very clean and very well maintained. We have really enjoyed our stay.",
+        },
+      ],
+    });
+    server.create("hotel", {
+      id: 29,
+      date: new Date(),
+      name: "Hotel Posta",
+      location: "Seti Square, 3200 ",
+      link: "samegrelo-zemo-svaneti",
+      firstDescription:
+        "Set in Mestia, 800 metres from Museum of History and Ethnography, Hotel Posta offers accommodation with a shared lounge, free private parking, a terrace and a restaurant. This 4-star hotel offers a bar. The accommodation features a 24-hour front desk, airport transfers, room service and free WiFi throughout the property.",
+      secondDescription:
+        "All guest rooms in the hotel are fitted with a kettle. The rooms are equipped with air conditioning and a flat-screen TV, and some units at Hotel Posta have a city view. Guests at the accommodation will be able to enjoy activities in and around Mestia, like skiing.",
+      img: "/assets/hotel/347450275.jpg",
+      price: 340,
+      facilities: [
+        "Indoor swimming pool",
+        "Spa and wellness centre",
+        "Airport shuttle",
+        "Room service",
+        "Non-smoking rooms",
+        "Restaurant",
+        "Bar",
+        "Breakfast",
+        "Free WiFi",
+        "Free parking",
+        "Family rooms",
+        "Fitness centre",
+      ],
+      breakfast: ["Continental", "Vegetarian", "Vegan", "Kosher"],
+      imgLibrary: [
+        "/assets/hotel/368069225.jpg",
+        "/assets/hotel/204601831.jpg",
+        "/assets/hotel/368070418.jpg",
+        "/assets/hotel/201998930.jpg",
+        "/assets/hotel/368064611.jpg",
+      ],
+      comments: [
+        {
+          id: 1,
+          name: "Ekaterina",
+          country: "Russia",
+          countryImg: "/assets/hotel/Ru.png",
+          comment:
+            "Stunning view, very good restaurant, nice people, nice interiors and design. The best one in this location, I think",
+        },
+        {
+          id: 2,
+          name: "Hamad",
+          country: "Saudi Arabia",
+          countryImg: "/assets/hotel/Sa.png",
+          comment:
+            "Great hospitality, specially sandrika and another workers .they were very cooperative and helpful all the time.. god bless you all",
+        },
+        {
+          id: 3,
+          name: "Gary",
+          country: "New Zealand",
+          countryImg: "/assets/hotel/Nz.png",
+          comment:
+            "Loved the new and modern decor, warm and spacious rooms, staff were friendly and helpful, boutique size so easy to get around.",
+        },
+      ],
+    });
+    server.create("hotel", {
+      id: 30,
+      date: new Date(),
+      name: "Grand Hotel",
+      location: "35 Gamsakhurdia Street, 2100",
+      link: "samegrelo-zemo-svaneti",
+      firstDescription:
+        "Set in Zugdidi, Hotel Grand offers 4-star accommodation with a terrace, a restaurant and a bar. The hotel offers both free WiFi and free private parking. With staff speaking German, English, Georgian and Russian, information is available at the reception.",
+      secondDescription:
+        "The nearest airport is Kutaisi International Airport, 84 km from the hotel.",
+      img: "/assets/hotel/203101498.jpg",
+      price: 125,
+      facilities: [
+        "Non-smoking rooms",
+        "Restaurant",
+        "Bar",
+        "Breakfast",
+        "Free WiFi",
+        "Free parking",
+        "Family rooms",
+      ],
+      breakfast: ["Continental", "Vegetarian", "Vegan", "Kosher"],
+      imgLibrary: [
+        "/assets/hotel/203108778.jpg",
+        "/assets/hotel/203109244.jpg",
+        "/assets/hotel/203113529.jpg",
+        "/assets/hotel/203111545.jpg",
+        "/assets/hotel/203111554.jpg",
+      ],
+      comments: [
+        {
+          id: 1,
+          name: "Rusudan",
+          country: "Georgia",
+          countryImg: "/assets/hotel/Ge.png",
+          comment:
+            "We took apartment with two bedroom, private bathroom and small living room. Beds in each room was queen size and was super comfortable. bedrooms also have private balcony with city view. There was refrigerator in living room and and little table...",
+        },
+        {
+          id: 2,
+          name: "Emanuel",
+          country: "Slovenia",
+          countryImg: "/assets/hotel/Si.png",
+          comment:
+            "Very good location, huge room, nice staff, breakfast with the view on 6th. floor",
+        },
+      ],
+    });
+    server.create("hotel", {
+      id: 31,
+      date: new Date(),
+      name: "Hotel Late",
+      location: "Javaxishvili st 1, 3300",
+      link: "mtskheta-mtianeti",
+      firstDescription:
+        "Set in Mtskheta, 19 km from Medical University Metro Station, Hotel Late offers accommodation with a garden, free private parking, a shared lounge and a terrace. Featuring a restaurant, the 4-star hotel has air-conditioned rooms with free WiFi, each with a private bathroom. The accommodation provides a shared kitchen, free shuttle service and currency exchange for guests.",
+      secondDescription: "At the hotel all rooms include bed linen and towels.",
+      img: "/assets/hotel/267881422.jpg",
+      price: 115,
+      facilities: [
+        "Airport shuttle",
+        "Non-smoking rooms",
+        "Restaurant",
+        "Bar",
+        "Breakfast",
+        "Free WiFi",
+        "Free parking",
+        "Family rooms",
+      ],
+      breakfast: ["Continental", "Vegetarian", "Vegan", "Kosher"],
+      imgLibrary: [
+        "/assets/hotel/267886935.jpg",
+        "/assets/hotel/267883356.jpg",
+        "/assets/hotel/267885339.jpg",
+        "/assets/hotel/267885290.jpg",
+        "/assets/hotel/267885280.jpg",
+      ],
+      comments: [
+        {
+          id: 1,
+          name: "Rusudan",
+          country: "Georgia",
+          countryImg: "/assets/hotel/Ge.png",
+          comment:
+            "We took apartment with two bedroom, private bathroom and small living room. Beds in each room was queen size and was super comfortable. bedrooms also have private balcony with city view. There was refrigerator in living room and and little table...",
+        },
+      ],
+    });
+    server.create("hotel", {
+      id: 32,
+      date: new Date(),
+      name: "Levanto",
+      location: "58 Arsukidze Street, 3300 ",
+      link: "mtskheta-mtianeti",
+      firstDescription:
+        "Situated in Mtskheta, Levanto is a recently renovated accommodation, 21 km from Medical University Metro Station and 24 km from Tbilisi Opera and Ballet Theatre. Featuring mountain and river views, this apartment also comes with free WiFi. The property is non-smoking and is located 25 km from Rustaveli Theatre.",
+      secondDescription:
+        "The spacious apartment has a terrace, 2 bedrooms, a living room and a well-equipped kitchen with a fridge and kitchenware. The air-conditioned unit at the property features a bath and a dressing room. The property offers city views.",
+      img: "/assets/hotel/332266611.jpg",
+      price: 115,
+      facilities: [
+        "Non-smoking rooms",
+
+        "Free WiFi",
+        "Free parking",
+        "Family rooms",
+      ],
+      imgLibrary: [
+        "/assets/hotel/332266928.jpg",
+        "/assets/hotel/330868597.jpg",
+        "/assets/hotel/330733595.jpg",
+        "/assets/hotel/478807079.jpg",
+        "/assets/hotel/478807230.jpg",
+      ],
+      comments: [
+        {
+          id: 1,
+          name: "Wojciech",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment: "Very nice and clean apartment in the heart of Mtsketa",
+        },
+        {
+          id: 2,
+          name: "Syed",
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
+            "The house is spectacularly located, the view is breath taking. You can see the Jvari Monestry in the distance and its situated in the Old Town. Literally the best location.",
+        },
+        {
+          id: 3,
+          name: "Anastassia",
+          country: "Russia",
+          countryImg: "/assets/hotel/Ru.png",
+          comment:
+            "Wonderful place in the middle of the city center! Very cozy, with beautiful views and friendly hosts. Very thankful to Keti and her family for their hospitality.",
+        },
+      ],
+    });
+    server.create("hotel", {
+      id: 33,
+      date: new Date(),
+      name: "Guest house Ebralidze",
+      location: "Merab Kostava Street 37, 3300 ",
+      link: "mtskheta-mtianeti",
+      firstDescription:
+        "Featuring mountain views, Guest house Ebralidze offers accommodation with balcony, around 20 km from Medical University Metro Station. The property has garden and city views, and is 24 km from Tbilisi Opera and Ballet Theatre. Boasting family rooms, this property also provides guests with a sun terrace.",
+      secondDescription:
+        "The air-conditioned units have a fully equipped kitchenette with dining area, a fridge, kettle, and a minibar. Featuring a private bathroom with a bath and slippers, units at the guest house also have free WiFi. At the guest house, the units have bed linen and towels.",
+      img: "/assets/hotel/332266611.jpg",
+      price: 55,
+      facilities: [
+        "Non-smoking rooms",
+        "Tea/coffee maker in all rooms",
+        "Free WiFi",
+        "Free parking",
+        "Family rooms",
+      ],
+      imgLibrary: [
+        "/assets/hotel/332266928.jpg",
+        "/assets/hotel/330868597.jpg",
+        "/assets/hotel/330733595.jpg",
+        "/assets/hotel/478807079.jpg",
+        "/assets/hotel/478807230.jpg",
+      ],
+      comments: [
+        {
+          id: 1,
+          name: "Attila",
+          country: "Hungary",
+          countryImg: "/assets/hotel/Hu.png",
+          comment:
+            "very nice guest house very close to the main attraction, the cathedral. it was winter when visited, however the garden is exceptional, i could imagine it's a wonderful place during warmer months. we asked for a breakfast which was also great.",
+        },
+        {
+          id: 2,
+          name: "Dustin",
+          country: "United States",
+          countryImg: "/assets/hotel/Us.png",
+          comment:
+            "Good location right in the city. Room was comfortable and clean. Bathroom was clean, shower was hot and with good pressure. The owners are very friendly, French and Russian is spoken. It's a great place to stay if you have a dog - they have a very...",
+        },
+        {
+          id: 3,
+          name: "R",
+          country: "Netherlands",
+          countryImg: "/assets/hotel/Ru.png",
+          comment:
+            "Great location and comfortable room! Also a very nice garden.",
+        },
+      ],
+    });
   },
 
   routes() {
@@ -4879,6 +6577,14 @@ createServer({
       "/seasons",
       (schema, request) => {
         return schema.seasons.all();
+      },
+      // { timing: 2000, headers: { "Cache-Control": "no-store" } }
+    );
+
+    this.get(
+      "/hotels",
+      (schema, request) => {
+        return schema.hotels.all();
       },
       // { timing: 2000, headers: { "Cache-Control": "no-store" } }
     );

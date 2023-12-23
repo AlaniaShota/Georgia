@@ -36,9 +36,6 @@ export const Card = ({ data, title, description }) => {
                   <p className="text-xs  text-BlackSecondColor font-light">
                     {item.location}
                   </p>
-                  {item.first_name ? (
-                    <h1 className="text-lg font-semibold">{item.first_name}</h1>
-                  ) : null}
                 </div>
                 <div className=" col-span-1 items-center">
                   {item.visit ? (
@@ -62,6 +59,18 @@ export const Card = ({ data, title, description }) => {
                       <Button>
                         <span className=" text-darkBlueText font-medium">
                           CONTACT
+                        </span>
+                      </Button>
+                    </Link>
+                  ) : null}
+                  {item.link ? (
+                    <Link
+                      to={`/location/${item.link}`}
+                      className="flex justify-end items-center my-1"
+                    >
+                      <Button>
+                        <span className=" text-darkBlueText font-medium">
+                          Location
                         </span>
                       </Button>
                     </Link>

@@ -1,4 +1,4 @@
-import { Header } from "../../Components";
+import { Header, Section } from "../../Components";
 import tourGuideImg from "../../assets/TourGuide/Georgia.jpeg";
 import {
   Title,
@@ -27,14 +27,10 @@ export const TourGuide = () => {
         img={tourGuideImg}
       />
       <div className="lg:container sm:mx-8 lg:mx-0 ">
-        <div className="flex flex-col justify-center items-center my-20">
-          <h1 className="text-3xl font-bold  text-center px-40">
-            {Tour_Guide_Title}
-          </h1>
-          <p className="text-BlackSecondColor text-lg my-5 text-center w-[740px] ">
-            {Tour_Guide_Description}
-          </p>
-        </div>
+        <Section
+          title={Tour_Guide_Title}
+          firstDescription={Tour_Guide_Description}
+        />
         <Slide />
         <GuideCard guides={guides} />
         <Comments />
