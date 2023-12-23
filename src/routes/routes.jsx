@@ -24,12 +24,8 @@ import {
   ShidaKartliPage,
   TbilisiPage,
 } from "../Pages/Location/index";
-import {
-  DetailFood,
-  TraditionalFoodLibery,
-} from "../Pages/TraditionalFood/Components/index";
+import { TraditionalFoodLibery } from "../Pages/TraditionalFood/Components/index";
 import { GuidePortfolio } from "../Pages/Guide/Components";
-import { DayPickerProvider } from "react-day-picker";
 
 export const router = createBrowserRouter([
   {
@@ -128,10 +124,6 @@ export const router = createBrowserRouter([
       {
         path: "library",
         element: <TraditionalFoodLibery />,
-      },
-      {
-        path: "library/:id",
-        element: <DetailFood />,
       },
       {
         path: "tour-guide",

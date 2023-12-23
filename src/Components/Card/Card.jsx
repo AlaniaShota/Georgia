@@ -36,9 +36,6 @@ export const Card = ({ data, title, description }) => {
                   <p className="text-xs  text-BlackSecondColor font-light">
                     {item.location}
                   </p>
-                  {item.first_name ? (
-                    <h1 className="text-lg font-semibold">{item.first_name}</h1>
-                  ) : null}
                 </div>
                 <div className=" col-span-1 items-center">
                   {item.visit ? (
