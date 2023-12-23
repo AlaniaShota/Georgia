@@ -28,6 +28,7 @@ import {
   DetailFood,
   TraditionalFoodLibery,
 } from "../Pages/TraditionalFood/Components/index";
+import { GuidePortfolio } from "../Pages/Guide/Components";
 
 export const router = createBrowserRouter([
   {
@@ -128,14 +129,12 @@ export const router = createBrowserRouter([
         element: <DetailFood />,
       },
       {
-        path: "gid",
-        // element: <TourGuide />,
-        children: [
-          {
-            index: "gid",
-            element: <TourGuide />,
-          },
-        ],
+        path: "tour-guide",
+        element: <TourGuide />,
+      },
+      {
+        path: "tour-guide/:id",
+        element: <GuidePortfolio />,
       },
     ],
   },

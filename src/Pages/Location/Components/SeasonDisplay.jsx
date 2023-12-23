@@ -106,7 +106,7 @@ export const SeasonDisplay = () => {
               <Link
                 to={item.link}
                 key={item.id}
-                className="w-[280px] h-[220px] relative"
+                className="w-280 h-220 relative"
                 onMouseEnter={() => handleMouseEnter(item.id)}
                 onMouseLeave={handleMouseLeave}
               >
@@ -232,9 +232,7 @@ export const SeasonDisplay = () => {
             ))}
           </motion.div>
         </div>
-      ) : (
-        <div>Loading...</div>
-      )}
+      ) : null}
     </>
   );
 };

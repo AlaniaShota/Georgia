@@ -1,15 +1,14 @@
 import { motion, useAnimation } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import { Button } from "../../../../Components/Button";
 import { Link } from "react-router-dom";
+import { Button } from "../Button";
+import { useFoodStore } from "../../Store/store";
 
-export const FoodCard = ({
-  cuisineTitle,
-  cuisineDescription,
-  filterCuisine,
-}) => {
-  const [foodCard, setFoodCard] = useState([]);
+export const FoodCard = ({ filterCuisine, title, description }) => {
+  const { foods = [] } = useFoodStore((state) => state.foods);
+  const fetchFoods = useFoodStore((state) => state.fetchFoods);
+
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.5,
@@ -18,9 +17,7 @@ export const FoodCard = ({
   const cardAnimation = useAnimation();
 
   useEffect(() => {
-    fetch("/api/foods")
-      .then((res) => res.json())
-      .then((data) => setFoodCard(data.foods));
+    fetchFoods();
 
     if (inView) {
       cardAnimation.start({
@@ -29,7 +26,7 @@ export const FoodCard = ({
         transition: { duration: 1, delay: 0.2 },
       });
     }
-  }, [inView, cardAnimation]);
+  }, [inView, cardAnimation, fetchFoods]);
 
   const cardVariants = {
     hidden: { opacity: 0, y: 0 },
@@ -44,18 +41,18 @@ export const FoodCard = ({
       animate={cardAnimation}
       className="grid grid-cols-3 my-20 gap-5 h-[480px] "
     >
-      <motion.div className="flex flex-col justify-around items-start cursor-default  bg-white">
-        <motion.h1 className="text-2xl font-bold ">{cuisineTitle}</motion.h1>
-        <motion.p className=" text-BlackSecondColor pr-8">
-          {cuisineDescription}
-        </motion.p>
+      <motion.div className="flex flex-col justify-between items-start cursor-default  bg-white">
+        <motion.h1 className="text-2xl font-bold ">{title}</motion.h1>
+        <motion.p className="text-lg font-light pr-8">{description}</motion.p>
         <Link to="/library">
           <Button border>
-            <span className="font-normal text-darkBlueText">EXPLORE MORE</span>
+            <span className="font-medium text-lg text-darkBlueText">
+              EXPLORE MORE
+            </span>
           </Button>
         </Link>
       </motion.div>
-      {foodCard
+      {foods
         .filter((item) => item.cuisine === filterCuisine)
         .slice(0, 2)
         .map((item) => (

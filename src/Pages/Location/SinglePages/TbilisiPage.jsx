@@ -1,13 +1,7 @@
 import { useLocationStore } from "../../../Store/store";
 import React, { useState, useEffect } from "react";
-import { Header } from "../../../Components";
-import {
-  FoodCard,
-  ButtonViewMore,
-  Tour,
-  PopularPlace,
-  Banner,
-} from "./Components/index";
+import { FoodCard, Header } from "../../../Components";
+import { ButtonViewMore, Tour, PopularPlace, Banner } from "./Components/index";
 import {
   Cuisine_Tbilisi_Title,
   Cuisine_Tbilisi_Description,
@@ -105,8 +99,8 @@ export const TbilisiPage = () => {
             </div>
             <Tour tourData={item.tour} />
             <FoodCard
-              cuisineTitle={Cuisine_Tbilisi_Title}
-              cuisineDescription={Cuisine_Tbilisi_Description}
+              title={Cuisine_Tbilisi_Title}
+              description={Cuisine_Tbilisi_Description}
               filterCuisine={"Tbilisi"}
             />
             <Banner bannerData={item.topExperiences} />

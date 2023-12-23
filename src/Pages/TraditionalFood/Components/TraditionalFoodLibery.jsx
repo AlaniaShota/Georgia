@@ -6,22 +6,21 @@ import { Dishes_Title, Dishes_Description } from "./Card/constants";
 import { FilterButton, RandomFood } from "./index";
 import { Header, Button } from "../../../Components/index";
 import foodImg from "../../../assets/traditional-food-img/georgia-traditional-food-image.jpg";
+import { useFoodStore } from "../../../Store/store";
 
 gsap.registerPlugin(TextPlugin);
 
-const loadMoreContentCount = 15;
-
 export const TraditionalFoodLibery = () => {
-  const [traditionalFood, setTraditionalFood] = useState([]);
+  const loadMoreContentCount = 15;
+  const { foods = [] } = useFoodStore((state) => state.foods);
+  const fetchFoods = useFoodStore((state) => state.fetchFoods);
   const [next, setNext] = useState(loadMoreContentCount);
   const [showMore, setShowMore] = useState(false);
   const [searchParams, setSearchParams] = useSearchParams();
 
   useEffect(() => {
-    fetch("/api/foods")
-      .then((res) => res.json())
-      .then((data) => setTraditionalFood(data.foods));
-  }, []);
+    fetchFoods();
+  }, [fetchFoods]);
 
   const handleMoreItem = () => {
     setNext(next + loadMoreContentCount);
@@ -30,8 +29,8 @@ export const TraditionalFoodLibery = () => {
   const categoryFilter = searchParams.get("type");
 
   const displayedTraditionalFood = categoryFilter
-    ? traditionalFood.filter((van) => van.type === categoryFilter)
-    : traditionalFood;
+    ? foods.filter((van) => van.type === categoryFilter)
+    : foods;
 
   return (
     <>
@@ -41,13 +40,8 @@ export const TraditionalFoodLibery = () => {
         descriptionText={Dishes_Description}
         img={foodImg}
       />
-      <div className="lg:container sm:mx-8 lg:mx-0 my-20 [&>*:nth-child(2)]:flex-row-reverse">
-        {traditionalFood
-          .sort(() => 0.5 - Math.random())
-          .slice(0, 2)
-          .map((item, index) => (
-            <RandomFood key={index} randomFood={item} />
-          ))}
+      <div className="lg:container sm:mx-8 lg:mx-0 my-20 ">
+        <RandomFood />
         <FilterButton
           search={setSearchParams}
           categoryFilter={categoryFilter}
@@ -98,7 +92,7 @@ export const TraditionalFoodLibery = () => {
       </div>
       {categoryFilter ? null : (
         <div className="flex justify-center items-center my-10">
-          {next < traditionalFood?.length && (
+          {next < foods?.length && (
             <Button border onClick={handleMoreItem}>
               <span className=" text-md text-darkBlueText">LOAD MORE</span>
             </Button>

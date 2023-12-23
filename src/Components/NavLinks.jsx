@@ -24,7 +24,7 @@ export const NavLinks = ({ scrolled }) => {
     },
     {
       id: "el5",
-      to: "gid",
+      to: "tour-guide",
       name: "Tour Guide",
     },
   ];
