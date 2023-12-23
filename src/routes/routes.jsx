@@ -1,6 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Layout, ScrollToTop } from "../Components";
-import { Home, TourGuide, Hotel, Location, TraditionalFood } from "../index";
+import {
+  Home,
+  TourGuide,
+  Hotel,
+  Location,
+  TraditionalFood,
+  Detail,
+} from "../index";
 import {
   DeliciousPage,
   HeritagePage,
@@ -111,12 +118,9 @@ export const router = createBrowserRouter([
       },
       {
         path: "hotel",
-        element: (
-          <>
-            <Hotel />
-          </>
-        ),
+        element: <Hotel />,
       },
+      { path: "hotel/:id", element: <Detail /> },
       {
         path: "traditional-food",
         element: <TraditionalFood />,

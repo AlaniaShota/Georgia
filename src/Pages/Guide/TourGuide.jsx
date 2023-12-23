@@ -26,7 +26,7 @@ export const TourGuide = () => {
         descriptionText={Description}
         img={tourGuideImg}
       />
-      <div className="lg:container sm:mx-8 lg:mx-0 ">
+      <div className="m-auto w-10/12">
         <Section
           title={Tour_Guide_Title}
           firstDescription={Tour_Guide_Description}

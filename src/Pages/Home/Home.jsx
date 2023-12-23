@@ -66,7 +66,7 @@ export const Home = () => {
       <>
         <MultiHeaderParallax />
       </>
-      <div className="lg:container sm:mx-8 lg:mx-0 ">
+      <div className="m-auto w-10/12">
         {customComponentsData.map(([componentType], index) => (
           <Card
             customComponent={componentType}

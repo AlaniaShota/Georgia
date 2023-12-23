@@ -11,7 +11,7 @@ export function SliderLibrary({ data }) {
       }}
       navigation={true}
       modules={[Autoplay, Navigation]}
-      className="sm:h-[550px] my-20 rounded-md border shadow-xl mySwiper"
+      className="sm:h-[550px] my-20 rounded-md border shadow-xl  mySwiper"
     >
       {data.map((item) => (
         <SwiperSlide key={item.id}>

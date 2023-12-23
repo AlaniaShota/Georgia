@@ -9,3 +9,4 @@ export { Section } from "./Section";
 export { Card } from "./Card/Card";
 export { FoodCard } from "./Card/FoodCard";
 export { Modal } from "./Modal/Modal";
+export { UsersComments } from "./User/UsersComments";

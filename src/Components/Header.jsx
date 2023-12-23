@@ -60,13 +60,13 @@ export const Header = ({ titlePage, titleText, descriptionText, img }) => {
         <title>{titlePage}</title>
       </Helmet>
       <div className="flex flex-col">
-        <div className="flex w-full justify-start items-center flex-wrap cursor-default">
+        <div className="flex w-full  justify-start items-center flex-wrap cursor-default">
           <img
             src={img}
             alt={titleText}
-            className="object-cover h-737 w-full"
+            className="object-cover  h-737 w-full"
           />
-          <div className="absolute h-full w-full bg-black bg-opacity-50">
+          <div className="absolute h-737 w-full bg-black bg-opacity-50">
             <motion.div
               ref={ref}
               initial="hidden"

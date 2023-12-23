@@ -30,7 +30,7 @@ export const MtskhetaMtianetiPage = () => {
             descriptionText={item.title_Description}
             img={item.title_Img}
           />
-          <div className="lg:container sm:mx-8 lg:mx-0 ">
+          <div className="m-auto w-10/12">
             <div className="flex flex-col my-20 px-40">
               <h1 className="text-3xl mb-6 font-semibold">
                 {item.major_Title}
@@ -99,11 +99,6 @@ export const MtskhetaMtianetiPage = () => {
               </div>
             </div>
             <Tour tourData={item.tour} />
-            <FoodCard
-              title={Cuisine_Mtskheta_Mtianeti_Title}
-              description={Cuisine_Mtskheta_Mtianeti_Description}
-              filterCuisine={"Mtskheta Mtianeti"}
-            />
             <Banner bannerData={item.topExperiences} />
             <PopularPlace placeData={item.popular} />
           </div>

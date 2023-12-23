@@ -18,7 +18,7 @@ export const Location = () => {
         img={locationImg}
       />
 
-      <div className="lg:container sm:mx-8 lg:mx-0 cursor-default">
+      <div className="m-auto w-10/12 cursor-default">
         <SeasonDisplay />
         <GeorgiaMap />
         <LocationCard />

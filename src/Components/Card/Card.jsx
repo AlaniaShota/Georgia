@@ -13,7 +13,7 @@ export const Card = ({ data, title, description }) => {
 
   return (
     <>
-      <div className="flex flex-col my-20">
+      <div className="flex flex-col my-20 ">
         <h1 className="text-3xl font-semibold ">{title}</h1>
         <p className="text-lg font-light py-3 ">{description}</p>
         <div className="grid grid-cols-3 gap-16 mt-5">
@@ -64,16 +64,22 @@ export const Card = ({ data, title, description }) => {
                     </Link>
                   ) : null}
                   {item.link ? (
-                    <Link
-                      to={`/location/${item.link}`}
-                      className="flex justify-end items-center my-1"
-                    >
-                      <Button>
-                        <span className=" text-darkBlueText font-medium">
-                          Location
-                        </span>
-                      </Button>
-                    </Link>
+                    <div className="flex flex-col  items-end -my-1">
+                      <Link to={`/hotel/${item.id}`}>
+                        <Button>
+                          <span className=" text-darkBlueText font-bold">
+                            Reverse
+                          </span>
+                        </Button>
+                      </Link>
+                      <Link to={`/location/${item.link}`} target="_blank">
+                        <Button>
+                          <span className=" text-darkBlueText font-bold">
+                            Location
+                          </span>
+                        </Button>
+                      </Link>
+                    </div>
                   ) : null}
                 </div>
               </div>

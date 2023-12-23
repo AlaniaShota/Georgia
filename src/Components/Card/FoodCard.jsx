@@ -56,7 +56,7 @@ export const FoodCard = ({ filterCuisine, title, description }) => {
         .filter((item) => item.cuisine === filterCuisine)
         .slice(0, 2)
         .map((item) => (
-          <div key={item.id} className="flex">
+          <div key={item.id} className="flex ">
             <Link to={`/library/${item.id}`}>
               <motion.img
                 whileHover={{ scale: 1.02 }}

@@ -869,32 +869,42 @@ createServer({
       comments: [
         {
           id: 1,
-          name: "Liam Hughes",
-          description:
-            "Focused on eco-tourism, exploring Georgia's pristine nature reserves.",
+          name: "David Carter",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Focused on adventurous tours through Georgia's rugged mountainous regions.",
         },
         {
           id: 2,
-          name: "Ella Thompson",
-          description:
-            "Expert in showcasing Georgia's diverse wildlife and natural habitats.",
+          name: "Emma Foster",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Expert in showcasing the spiritual essence of Georgian culture.",
         },
         {
           id: 3,
-          name: "Ava Turner",
-          description:
-            "Passionate about sharing the art and culture of Georgian wineries.",
+          name: "Liam Hughes",
+          country: "Indonesia",
+          countryImg: "/assets/hotel/Id.png",
+          comment:
+            "Passionate about sustainability and preserving Georgia's ecosystems.",
         },
         {
           id: 4,
-          name: "Noah Patel",
-          description:
-            "Expert in historical tours, uncovering Georgia's architectural marvels.",
+          name: "Ava Turner",
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
+            "Passionate about sharing the art and culture of Georgian wineries.",
         },
         {
           id: 5,
           name: "Mia Lewis",
-          description:
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
             "Focused on adventurous expeditions to Georgia's remote natural wonders.",
         },
       ],
@@ -942,32 +952,42 @@ createServer({
       comments: [
         {
           id: 1,
-          name: "Alice Thompson",
-          description:
-            "A journey through Georgia`s history, breathtaking and awe-inspiring!",
+          name: "David Carter",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Focused on adventurous tours through Georgia's rugged mountainous regions.",
         },
         {
           id: 2,
-          name: "David Roberts",
-          description:
-            "Passionate about revealing Georgia's hidden treasures and local traditions.",
+          name: "Emma Foster",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Expert in showcasing the spiritual essence of Georgian culture.",
         },
         {
           id: 3,
-          name: "David Roberts",
-          description:
-            "Passionate about revealing Georgia's hidden treasures and local traditions.",
+          name: "Liam Hughes",
+          country: "Indonesia",
+          countryImg: "/assets/hotel/Id.png",
+          comment:
+            "Passionate about sustainability and preserving Georgia's ecosystems.",
         },
         {
           id: 4,
-          name: "Alex Parker",
-          description:
-            "Specialized in immersive tours through Georgia's diverse landscapes.",
+          name: "Ava Turner",
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
+            "Passionate about sharing the art and culture of Georgian wineries.",
         },
         {
           id: 5,
           name: "Mia Lewis",
-          description:
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
             "Focused on adventurous expeditions to Georgia's remote natural wonders.",
         },
       ],
@@ -1021,32 +1041,42 @@ createServer({
       comments: [
         {
           id: 1,
-          name: "Alice Thompson",
-          description:
-            "A journey through Georgia`s history, breathtaking and awe-inspiring!",
+          name: "David Carter",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Focused on adventurous tours through Georgia's rugged mountainous regions.",
         },
         {
           id: 2,
-          name: "David Roberts",
-          description:
-            "Passionate about revealing Georgia's hidden treasures and local traditions.",
+          name: "Emma Foster",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Expert in showcasing the spiritual essence of Georgian culture.",
         },
         {
           id: 3,
-          name: "David Roberts",
-          description:
-            "Passionate about revealing Georgia's hidden treasures and local traditions.",
+          name: "Liam Hughes",
+          country: "Indonesia",
+          countryImg: "/assets/hotel/Id.png",
+          comment:
+            "Passionate about sustainability and preserving Georgia's ecosystems.",
         },
         {
           id: 4,
-          name: "Alex Parker",
-          description:
-            "Specialized in immersive tours through Georgia's diverse landscapes.",
+          name: "Ava Turner",
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
+            "Passionate about sharing the art and culture of Georgian wineries.",
         },
         {
           id: 5,
           name: "Mia Lewis",
-          description:
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
             "Focused on adventurous expeditions to Georgia's remote natural wonders.",
         },
       ],
@@ -1091,32 +1121,42 @@ createServer({
       comments: [
         {
           id: 1,
-          name: "Sophie Bennett",
-          description:
-            "Experienced guide exploring Georgia's ancient sites and architectural wonders",
+          name: "David Carter",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Focused on adventurous tours through Georgia's rugged mountainous regions.",
         },
         {
           id: 2,
-          name: "Lucas Morgan",
-          description:
-            "Expert in introducing travelers to Georgia's picturesque countryside.",
+          name: "Emma Foster",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Expert in showcasing the spiritual essence of Georgian culture.",
         },
         {
           id: 3,
-          name: "David Roberts",
-          description:
-            "Passionate about sharing the beauty of Georgian cultural traditions.",
+          name: "Liam Hughes",
+          country: "Indonesia",
+          countryImg: "/assets/hotel/Id.png",
+          comment:
+            "Passionate about sustainability and preserving Georgia's ecosystems.",
         },
         {
           id: 4,
-          name: "Alex Parker",
-          description:
-            "Focused on guiding through Georgia's vibrant cities and bustling markets.",
+          name: "Ava Turner",
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
+            "Passionate about sharing the art and culture of Georgian wineries.",
         },
         {
           id: 5,
           name: "Mia Lewis",
-          description:
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
             "Focused on adventurous expeditions to Georgia's remote natural wonders.",
         },
       ],
@@ -1162,32 +1202,42 @@ createServer({
       comments: [
         {
           id: 1,
-          name: "Sophie Bennett",
-          description:
-            "Specialized in cultural immersion tours, unveiling Georgia's local life.",
+          name: "David Carter",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Focused on adventurous tours through Georgia's rugged mountainous regions.",
         },
         {
           id: 2,
-          name: "Ella Thompson",
-          description:
-            "Expert in showcasing the flavors and culinary delights of Georgia.",
+          name: "Emma Foster",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Expert in showcasing the spiritual essence of Georgian culture.",
         },
         {
           id: 3,
-          name: "David Roberts",
-          description:
-            "Passionate about introducing visitors to Georgia's outdoor adventures.",
+          name: "Liam Hughes",
+          country: "Indonesia",
+          countryImg: "/assets/hotel/Id.png",
+          comment:
+            "Passionate about sustainability and preserving Georgia's ecosystems.",
         },
         {
           id: 4,
-          name: "Emma Foster",
-          description:
-            "Expert in showcasing the spiritual essence of Georgian culture",
+          name: "Ava Turner",
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
+            "Passionate about sharing the art and culture of Georgian wineries.",
         },
         {
           id: 5,
           name: "Mia Lewis",
-          description:
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
             "Focused on adventurous expeditions to Georgia's remote natural wonders.",
         },
       ],
@@ -1231,32 +1281,42 @@ createServer({
       comments: [
         {
           id: 1,
-          name: "Liam Hughes",
-          description:
-            "Focused on eco-tourism, exploring Georgia's pristine nature reserves.",
+          name: "David Carter",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Focused on adventurous tours through Georgia's rugged mountainous regions.",
         },
         {
           id: 2,
-          name: "Ella Thompson",
-          description:
-            "Expert in showcasing Georgia's diverse wildlife and natural habitats.",
+          name: "Emma Foster",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Expert in showcasing the spiritual essence of Georgian culture.",
         },
         {
           id: 3,
-          name: "Ava Turner",
-          description:
-            "Passionate about sharing the art and culture of Georgian wineries.",
+          name: "Liam Hughes",
+          country: "Indonesia",
+          countryImg: "/assets/hotel/Id.png",
+          comment:
+            "Passionate about sustainability and preserving Georgia's ecosystems.",
         },
         {
           id: 4,
-          name: "Noah Patel",
-          description:
-            "Expert in historical tours, uncovering Georgia's architectural marvels.",
+          name: "Ava Turner",
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
+            "Passionate about sharing the art and culture of Georgian wineries.",
         },
         {
           id: 5,
           name: "Mia Lewis",
-          description:
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
             "Focused on adventurous expeditions to Georgia's remote natural wonders.",
         },
       ],
@@ -1301,32 +1361,42 @@ createServer({
       comments: [
         {
           id: 1,
-          name: "Noah Patel",
-          description:
-            "Focused on exploring Georgia's vibrant art scene and cultural heritage.",
+          name: "David Carter",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Focused on adventurous tours through Georgia's rugged mountainous regions.",
         },
         {
           id: 2,
-          name: "Isabella Chang",
-          description:
-            "Experienced in showcasing Georgia's rural life and traditional villages.",
+          name: "Emma Foster",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Expert in showcasing the spiritual essence of Georgian culture.",
         },
         {
           id: 3,
-          name: "Mia Lewis",
-          description:
-            "Specialized in immersive experiences, unveiling Georgia's local customs.",
+          name: "Liam Hughes",
+          country: "Indonesia",
+          countryImg: "/assets/hotel/Id.png",
+          comment:
+            "Passionate about sustainability and preserving Georgia's ecosystems.",
         },
         {
           id: 4,
-          name: "Ethan O'Connor",
-          description:
-            "Passionate about revealing Georgia's off-the-beaten-path cultural gems.",
+          name: "Ava Turner",
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
+            "Passionate about sharing the art and culture of Georgian wineries.",
         },
         {
           id: 5,
           name: "Mia Lewis",
-          description:
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
             "Focused on adventurous expeditions to Georgia's remote natural wonders.",
         },
       ],
@@ -1371,32 +1441,42 @@ createServer({
       comments: [
         {
           id: 1,
-          name: "Mia Lewis",
-          description:
-            "Focused on adventurous expeditions to Georgia's remote natural wonders.",
+          name: "David Carter",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Focused on adventurous tours through Georgia's rugged mountainous regions.",
         },
         {
           id: 2,
-          name: "Oliver Wright",
-          description:
-            "Experienced in leading tours through Georgia's bustling urban centers.",
+          name: "Emma Foster",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Expert in showcasing the spiritual essence of Georgian culture.",
         },
         {
           id: 3,
-          name: "Chloe Brooks",
-          description:
-            "Focused on coastal tours, exploring the uniqueness of Georgian coastlines.",
+          name: "Liam Hughes",
+          country: "Indonesia",
+          countryImg: "/assets/hotel/Id.png",
+          comment:
+            "Passionate about sustainability and preserving Georgia's ecosystems.",
         },
         {
           id: 4,
-          name: "Jackie Nguyen",
-          description:
-            "Specialized in showcasing Georgia's lively music and cultural events.",
+          name: "Ava Turner",
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
+            "Passionate about sharing the art and culture of Georgian wineries.",
         },
         {
           id: 5,
           name: "Mia Lewis",
-          description:
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
             "Focused on adventurous expeditions to Georgia's remote natural wonders.",
         },
       ],
@@ -1441,32 +1521,42 @@ createServer({
       comments: [
         {
           id: 1,
-          name: "Alex Parker",
-          description:
-            "Passionate about revealing Georgia's hidden treasures and local traditions.",
+          name: "David Carter",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Focused on adventurous tours through Georgia's rugged mountainous regions.",
         },
         {
           id: 2,
-          name: "Sophie Bennett",
-          description:
-            "Passionate about sharing the beauty of Georgian cultural traditions.",
+          name: "Emma Foster",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Expert in showcasing the spiritual essence of Georgian culture.",
         },
         {
           id: 3,
-          name: "Lucas Morgan",
-          description:
-            "Expert in showcasing the flavors and culinary delights of Georgia.",
+          name: "Liam Hughes",
+          country: "Indonesia",
+          countryImg: "/assets/hotel/Id.png",
+          comment:
+            "Passionate about sustainability and preserving Georgia's ecosystems.",
         },
         {
           id: 4,
-          name: "Ella Thompson",
-          description:
-            "Experienced in revealing Georgia's historic narratives and ancient ruins.",
+          name: "Ava Turner",
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
+            "Passionate about sharing the art and culture of Georgian wineries.",
         },
         {
           id: 5,
           name: "Mia Lewis",
-          description:
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
             "Focused on adventurous expeditions to Georgia's remote natural wonders.",
         },
       ],
@@ -1512,31 +1602,41 @@ createServer({
         {
           id: 1,
           name: "David Carter",
-          description:
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
             "Focused on adventurous tours through Georgia's rugged mountainous regions.",
         },
         {
           id: 2,
           name: "Emma Foster",
-          description:
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
             "Expert in showcasing the spiritual essence of Georgian culture.",
         },
         {
           id: 3,
           name: "Liam Hughes",
-          description:
+          country: "Indonesia",
+          countryImg: "/assets/hotel/Id.png",
+          comment:
             "Passionate about sustainability and preserving Georgia's ecosystems.",
         },
         {
           id: 4,
           name: "Ava Turner",
-          description:
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
             "Passionate about sharing the art and culture of Georgian wineries.",
         },
         {
           id: 5,
           name: "Mia Lewis",
-          description:
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
             "Focused on adventurous expeditions to Georgia's remote natural wonders.",
         },
       ],
@@ -4882,7 +4982,7 @@ createServer({
         {
           id: 3,
           name: "Kimmo",
-          country: "Finland",
+          country: "United States of America",
           countryImg: "/assets/hotel/Us.png",
           comment:
             "Good food, exceptional wine, good service, nice pool, cleanliness, good-sized rooms. Friendly dog, very interesting insight into the qvevri process.",
@@ -6602,6 +6702,11 @@ createServer({
     this.get("/guides/:id", (schema, request) => {
       const id = request.params.id;
       return schema.guides.find(id);
+    });
+
+    this.get("/hotels/:id", (schema, request) => {
+      const id = request.params.id;
+      return schema.hotels.find(id);
     });
 
     // this.get("/restaurants/:contact", (schema, request) => {

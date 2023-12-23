@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Link, useParams } from "react-router-dom";
-import { Button, Header } from "../../../Components";
-import { UsersComments } from "./Users/UsersComments";
+import { Button, Header, UsersComments } from "../../../Components";
 
 export const GuidePortfolio = () => {
   const [guide, setGuide] = useState([]);
@@ -39,7 +38,7 @@ export const GuidePortfolio = () => {
         descriptionText={guide.description}
         img={guide.img}
       />
-      <div className="flex flex-col [&>*:nth-child(2)]:flex-row-reverse [&>*:nth-child(2)]:text-end lg:container sm:mx-8 lg:mx-0 my-20">
+      <div className="flex flex-col [&>*:nth-child(2)]:flex-row-reverse [&>*:nth-child(2)]:text-end m-auto w-10/12 my-20">
         {guide.gender === "Male" ? (
           <h1 className="text-4xl font-medium py-4">He recommends</h1>
         ) : (

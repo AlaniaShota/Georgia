@@ -27,7 +27,7 @@ export const Hotel = () => {
         descriptionText={Page_Description}
         img={img}
       />
-      <div className="lg:container sm:mx-8 lg:mx-0 cursor-default">
+      <div className="m-auto w-10/12 cursor-default">
         <Section
           title={Hotel_Title}
           firstDescription={Hotel_First_Description}

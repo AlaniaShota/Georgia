@@ -42,8 +42,8 @@ export const UsersComments = ({ data, img }) => {
   return (
     <>
       <h1 className="text-4xl font-medium my-4">User`s Reviews</h1>
-      <div className="grid grid-cols-2 gap-10">
-        <div className="col-span-1 border shadow-md rounded-md !bg-white">
+      <div className="grid grid-cols-3 gap-10">
+        <div className="col-span-2 border shadow-md rounded-md !bg-white">
           {data && data.length > 0
             ? data.map((item) => (
                 <ul key={item.id} className="p-4 ">
@@ -62,12 +62,20 @@ export const UsersComments = ({ data, img }) => {
                       className="flex flex-col ml-4"
                     >
                       <h1 className="text-xl font-medium">{item.name}</h1>
+                      <div className="flex items-center">
+                        <img
+                          src={item.countryImg}
+                          alt={item.country}
+                          className="object-cover w-4 h-4"
+                        />
+                        <span className="font-light pl-1">{item.country}</span>
+                      </div>
                       <motion.p
                         initial={{ opacity: 0 }}
                         animate={descriptionAnimation}
                         className="text-lg font-light"
                       >
-                        {item.description}
+                        {item.comment}
                       </motion.p>
                     </motion.div>
                   </li>
