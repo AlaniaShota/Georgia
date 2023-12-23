@@ -22,7 +22,7 @@ export const FoodCard = () => {
       cardAnimation.start({
         opacity: 1,
         y: 0,
-        transition: { duration: 2, delay: 0.5 },
+        transition: { duration: 1, delay: 0.2 },
       });
     }
   }, [inView, cardAnimation]);
@@ -55,7 +55,7 @@ export const FoodCard = () => {
         <div key={item.id} className="flex border drop-shadow-lg rounded-md">
           <Link to={`/library/${item.id}`}>
             <motion.img
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.9 }}
               style={{
                 transition: "all 0.9s",

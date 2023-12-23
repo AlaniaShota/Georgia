@@ -1,5 +1,4 @@
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -8,26 +7,12 @@ import { Things_To_Do_Title, Things_To_Do_Description } from "../constant";
 export const GeorgiaMap = () => {
   const [place, setPlace] = useState([]);
   const [popover, setPopover] = useState(null);
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-  });
-
-  const mapAnimation = useAnimation();
 
   useEffect(() => {
     fetch("/api/maps")
       .then((res) => res.json())
       .then((data) => setPlace(data.maps));
-
-    if (inView) {
-      mapAnimation.start({
-        opacity: 1,
-        y: 0,
-        translateX: -70,
-        transition: { duration: 2, delay: 0.5 },
-      });
-    }
-  }, [inView, mapAnimation]);
+  }, []);
 
   const handleMouseOve = (event, itemName, itemImg) => {
     setPopover({
@@ -57,7 +42,7 @@ export const GeorgiaMap = () => {
           {Things_To_Do_Description}
         </p>
       </div>
-      <div ref={ref} className="grid grid-cols-2 gap-10 my-20 ">
+      <div className="grid grid-cols-2 gap-10 my-20 ">
         {popover && (
           <div
             className={`col-start-1 col-span-1 top-${popover.y} left-${popover.x} relative `}
@@ -76,11 +61,7 @@ export const GeorgiaMap = () => {
             </div>
           </div>
         )}
-        <motion.div
-          animate={mapAnimation}
-          initial={{ opacity: 0, x: 70 }}
-          className="col-start-2 col-span-2 "
-        >
+        <motion.div className="col-start-2 col-span-2 ">
           <svg
             baseProfile="tiny"
             version="1.2"
@@ -91,13 +72,19 @@ export const GeorgiaMap = () => {
               <Link to={item.link} key={item.id}>
                 <motion.path
                   key={item.id}
-                  whileHover={{ scale: 1.03 }}
-                  style={{
-                    transition: "all 0.9s",
+                  whileHover={{
+                    scale: 1.01,
+                    fill: "#ef3a50",
                   }}
                   d={item.d}
                   name={item.name}
-                  className="hover:fill-[#ef3a50] fill-[#ececec] stroke-black stroke-1 cursor-pointer border-none"
+                  initial={{
+                    fill: item.name === "Abkhazia" ? "#ef3a50" : "#ececec",
+                  }}
+                  fill={
+                    popover && popover.itemName === item.name ? "#ef3a50" : null
+                  }
+                  className="hover:fill-[#ef3a50] stroke-black stroke-1 cursor-pointer border-none"
                   onMouseOver={(event) =>
                     handleMouseOve(event, item.name, item.img)
                   }

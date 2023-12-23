@@ -9,7 +9,7 @@ export const MenuBar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 670) {
+      if (window.scrollY > 10) {
         setScrolled(true);
       } else {
         setScrolled(false);

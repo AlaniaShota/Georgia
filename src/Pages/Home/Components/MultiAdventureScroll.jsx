@@ -41,7 +41,7 @@ export const MultiAdventureScroll = () => {
   ];
 
   return (
-    <div className="relative h-630 border drop-shadow-md rounded-md overflow-hidden">
+    <div className="relative h-630 border drop-shadow-md rounded-md overflow-hidden ">
       <Swiper
         navigation={true}
         autoplay={{

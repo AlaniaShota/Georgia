@@ -57,7 +57,14 @@ export const router = createBrowserRouter([
       {
         path: "location",
         children: [
-          { index: "location", element: <Location /> },
+          {
+            index: "location",
+            element: (
+              <>
+                <Location />
+              </>
+            ),
+          },
           {
             path: "ajara",
             element: <AjaraPage />,
@@ -116,7 +123,6 @@ export const router = createBrowserRouter([
         path: "library",
         element: <TraditionalFoodLibery />,
       },
-
       {
         path: "library/:id",
         element: <DetailFood />,

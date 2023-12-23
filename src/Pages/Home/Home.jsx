@@ -49,9 +49,7 @@ function Card({ customComponent, isFirst }) {
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.8 }}
     >
-      <motion.div className="card" variants={cardVariants}>
-        {renderComponent()}
-      </motion.div>
+      <motion.div variants={cardVariants}>{renderComponent()}</motion.div>
     </motion.div>
   );
 }
