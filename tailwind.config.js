@@ -19,11 +19,13 @@ export default {
         BlackSecondColor: "#00000099",
         whiteSecondText: "#ffffffcc",
       },
+
       opacity: {
         5: 0.2,
       },
       height: {
         630: "630px",
+        737: "737px",
       },
       width: {
         497: "497px",

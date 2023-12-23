@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
-import MultiHeaderParallax from "./Components/MultiHeaderParallax";
-import MultiAlphabetDrag from "./Components/MultiAlphabetDrag";
-import MultiHeritageAnimation from "./Components/MultiHeritageAnimation";
-import MultiCuisineMouseMove from "./Components/MultiCuisineMouseMove";
-import UniqueFolk from "./Components/UniqueFolk";
-import LanguageDance from "./Components/LanguageDance";
-import MultiAdventureScroll from "./Components/MultiAdventureScroll";
+import {
+  MultiAdventureScroll,
+  MultiAlphabetDrag,
+  MultiCuisineMouseMove,
+  MultiHeaderParallax,
+  MultiHeritageAnimation,
+  Video,
+} from "./Components/index";
 
 const cardVariants = {
   offscreen: {
@@ -33,10 +34,8 @@ function Card({ customComponent, isFirst }) {
       case "C":
         return <MultiHeritageAnimation />;
       case "D":
-        return <UniqueFolk />;
+        return <Video />;
       case "E":
-        return <LanguageDance />;
-      case "F":
         return <MultiAdventureScroll />;
       default:
         return null;
@@ -57,17 +56,18 @@ function Card({ customComponent, isFirst }) {
   );
 }
 
-const customComponentsData = [["A"], ["B"], ["C"], ["D"], ["E"], ["F"]];
-const Home = () => {
+const customComponentsData = [["A"], ["B"], ["C"], ["D"], ["E"]];
+
+export const Home = () => {
   return (
     <div>
       <Helmet>
-        <meta charSet="utf-8" />
+        {/* <meta charSet="utf-8" /> */}
         <title>Home</title>
       </Helmet>
-      <div>
+      <>
         <MultiHeaderParallax />
-      </div>
+      </>
       <div className="lg:container sm:mx-8 lg:mx-0 ">
         {customComponentsData.map(([componentType], index) => (
           <Card
@@ -80,5 +80,3 @@ const Home = () => {
     </div>
   );
 };
-
-export default Home;
