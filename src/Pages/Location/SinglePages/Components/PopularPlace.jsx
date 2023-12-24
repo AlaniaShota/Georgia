@@ -1,6 +1,7 @@
 import { useAnimation, motion } from "framer-motion";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
+import { Button } from "../../../../Components";
 
 export const PopularPlace = ({ placeData }) => {
   const [ref, inView] = useInView({
@@ -69,10 +70,17 @@ export const PopularPlace = ({ placeData }) => {
             variants={cardVariants}
             initial={{ opacity: 0, x: 70 }}
             animate={cardAnimation}
-            className="flex flex-col justify-center items-end text-right mr-4 w-2/3 text-black"
+            className="flex flex-col justify-between items-end text-right mr-4 w-2/3 text-black"
           >
-            <h1 className="text-4xl font-bold mb-5">{item.title}</h1>
+            <h1 className="text-4xl font-bold ">{item.title}</h1>
             <p className="text-lg font-light">{item.description}</p>
+            <div>
+              <Button border>
+                <span className="lg:text-lg sm:text-base text-darkBlueText">
+                  Plane Tour
+                </span>
+              </Button>
+            </div>
           </motion.div>
         </div>
       ))}

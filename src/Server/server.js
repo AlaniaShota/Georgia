@@ -4935,6 +4935,7 @@ createServer({
       id: 1,
       date: new Date(),
       name: "Babaneuris Marani",
+      type: "Restaurant",
       location: "village babaneuri, 0909 Babaneuri",
       link: "kakheti",
       firstDescription:
@@ -5050,6 +5051,7 @@ createServer({
       date: new Date(),
       name: "Kundzuli",
       location: "Ilia Lake Road, 4800 Kvareli",
+      type: "Popular",
       link: "kakheti",
       firstDescription:
         "A good location for a relaxing holiday in Kvareli, Kundzuli is an apartment surrounded by views of the lake. The property features a private beach area, bar, and parking on-site among other facilities. This apartment offers air-conditioned accommodations with a balcony. When staying at the apartment, guests can use private entrance. At the apartment complex, units include a desk. Accommodation includes a terrace with mountain views, a fully equipped kitchen, an outdoor dining area, and a private bathroom with shower. At the apartment complex, the units come with bed linen and towels.",
@@ -5086,6 +5088,7 @@ createServer({
       id: 5,
       date: new Date(),
       name: "WOOD HOUSE LAGODEKHI",
+      type: "Popular",
       location: "125 Vashlovani St, Lagodekhi 2700",
       link: "kakheti",
       firstDescription:
@@ -5191,6 +5194,8 @@ createServer({
     server.create("hotel", {
       id: 7,
       date: new Date(),
+      popular: true,
+      type: "Popular",
       name: "House & Yard Sesil",
       location: "kaprovani hotel sesil 1, 3522",
       link: "guria",
@@ -5245,6 +5250,8 @@ createServer({
       id: 8,
       date: new Date(),
       name: "Pine Aparthotel",
+      type: "Popular",
+      popular: true,
       location: "Shekvetili(kaprovani), Shekvetili,",
       link: "guria",
       firstDescription:
@@ -5447,6 +5454,8 @@ createServer({
       id: 12,
       date: new Date(),
       name: "Gori Apartments",
+      type: "Popular",
+      popular: true,
       location: "Petre Bagrationi Street #74, 1400",
       link: "shida-kartli",
       firstDescription:
@@ -5663,7 +5672,7 @@ createServer({
         "Set 500 metres from Colchis Fountain and 1.2 km from Kutaisi Train Station, Our Apartment in Kutaisi offers air-conditioned accommodation with views of the river and free WiFi. The property has city and inner courtyard views, and is 1.4 km from Bagrati Cathedral. The property offers soundproof units and is located 500 metres from White Bridge.",
       secondDescription:
         "The apartment provides guests with a balcony, mountain views, a seating area, a flat-screen TV, a fully equipped kitchen with an oven and a microwave, and a private bathroom with bidet and slippers. Guests can have wine or champagne, fruits and chocolates or cookies delivered to their room. At the apartment complex, units are equipped with bed linen and towels.",
-      img: "/assets/hotel/490213940.jpg",
+      img: "/assets/hotel/299418653.jpg",
       price: 85,
       facilities: [
         "Non-smoking rooms",
@@ -5709,6 +5718,8 @@ createServer({
       id: 17,
       date: new Date(),
       name: "Orbi ",
+      type: "Popular",
+      popular: true,
       location: "21a Tsereteli Street, 4600",
       link: "ajara",
       firstDescription:
@@ -5765,6 +5776,7 @@ createServer({
       id: 18,
       date: new Date(),
       name: "Barakah Apartmets Batumi",
+      type: "Popular Restaurant",
       location: "Sherif Khimshiashvili Street, 6000 ",
       link: "ajara",
       firstDescription:
@@ -5821,6 +5833,7 @@ createServer({
       id: 19,
       date: new Date(),
       name: "JRW Welmond",
+      type: "Popular",
       location: "Shavsheti Street 2/4, 6010 ",
       link: "ajara",
       firstDescription:
@@ -6023,6 +6036,7 @@ createServer({
       id: 23,
       date: new Date(),
       name: "Karse",
+      type: "Restaurant",
       location: "Village Sadmeli, 0410 ",
       link: "racha-lechkumi-kvemo-svaneti",
       firstDescription:
@@ -6078,6 +6092,7 @@ createServer({
     server.create("hotel", {
       id: 24,
       date: new Date(),
+      type: "Restaurant",
       name: "Crystal Hotel & SPA",
       location: "Didveli Funicular Railway, 1204 ",
       link: "samtskhe-javakheti",
@@ -6139,6 +6154,7 @@ createServer({
       id: 25,
       date: new Date(),
       name: "Bakuriani Inn",
+      type: "Popular",
       location: "12 Tsakadze street, 1204 ",
       link: "samtskhe-javakheti",
       firstDescription:
@@ -6199,6 +6215,7 @@ createServer({
       id: 26,
       date: new Date(),
       name: "Borjomi Likani Health & Spa Centre",
+      type: "Popular",
       location: "Meskheti Street 16, 1200",
       link: "samtskhe-javakheti",
       firstDescription:
@@ -6259,6 +6276,7 @@ createServer({
       id: 27,
       date: new Date(),
       name: "LETO",
+      type: "Restaurant",
       location: "31 Zviad Gamsakhurdia Avenue, 2100",
       link: "samegrelo-zemo-svaneti",
       firstDescription:
@@ -6326,7 +6344,7 @@ createServer({
         "Located in Mestia, 1.8 km from Museum of History and Ethnography, Gistola Hotel Mestia provides accommodation with a shared lounge, free private parking, a terrace and a restaurant. Each accommodation at the 4-star hotel has mountain views, and guests can enjoy access to a children's playground and to an indoor pool. The accommodation features a 24-hour front desk, airport transfers, room service and free WiFi throughout the property.",
       secondDescription:
         "Guest rooms are equipped with a flat-screen TV with satellite channels, fridge, a kettle, a bidet, free toiletries and a desk. Featuring a private bathroom with a shower and a hairdryer, rooms at the hotel also offer a city view. All guest rooms include a safety deposit box. A buffet breakfast is available daily at Gistola Hotel Mestia.",
-      img: "/assets/hotel/201208337.jpg",
+      img: "/assets/hotel/301797213.jpg",
       price: 450,
       facilities: [
         "Indoor swimming pool",
@@ -6378,6 +6396,7 @@ createServer({
       id: 29,
       date: new Date(),
       name: "Hotel Posta",
+      type: "Restaurant",
       location: "Seti Square, 3200 ",
       link: "samegrelo-zemo-svaneti",
       firstDescription:
@@ -6439,6 +6458,7 @@ createServer({
       id: 30,
       date: new Date(),
       name: "Grand Hotel",
+      type: "Restaurant",
       location: "35 Gamsakhurdia Street, 2100",
       link: "samegrelo-zemo-svaneti",
       firstDescription:
@@ -6487,6 +6507,7 @@ createServer({
       id: 31,
       date: new Date(),
       name: "Hotel Late",
+      type: "Restaurant",
       location: "Javaxishvili st 1, 3300",
       link: "mtskheta-mtianeti",
       firstDescription:
@@ -6578,15 +6599,15 @@ createServer({
     server.create("hotel", {
       id: 33,
       date: new Date(),
-      name: "Guest house Ebralidze",
-      location: "Merab Kostava Street 37, 3300 ",
+      name: "La Home",
+      location: " Kostava Street 2, 3300",
       link: "mtskheta-mtianeti",
       firstDescription:
-        "Featuring mountain views, Guest house Ebralidze offers accommodation with balcony, around 20 km from Medical University Metro Station. The property has garden and city views, and is 24 km from Tbilisi Opera and Ballet Theatre. Boasting family rooms, this property also provides guests with a sun terrace.",
+        "Offering a garden and lake view, La Home is located in Mtskheta, 23 km from Tbilisi Opera and Ballet Theatre and 24 km from Rustaveli Theatre. The air-conditioned accommodation is 20 km from Medical University Metro Station, and guests can benefit from private parking available on site and free WiFi. The guest house features family rooms.",
       secondDescription:
-        "The air-conditioned units have a fully equipped kitchenette with dining area, a fridge, kettle, and a minibar. Featuring a private bathroom with a bath and slippers, units at the guest house also have free WiFi. At the guest house, the units have bed linen and towels.",
-      img: "/assets/hotel/332266611.jpg",
-      price: 55,
+        "The guest house provides guests with a balcony, mountain views, a seating area, a flat-screen TV, a fully equipped kitchen with an oven and a microwave, and a private bathroom with shower and a hair dryer. A toaster, a fridge and kitchenware are also featured, as well as a coffee machine and a kettle. At the guest house, the units are equipped with bed linen and towels.",
+      img: "/assets/hotel/355501487.jpg",
+      price: 65,
       facilities: [
         "Non-smoking rooms",
         "Tea/coffee maker in all rooms",
@@ -6595,11 +6616,11 @@ createServer({
         "Family rooms",
       ],
       imgLibrary: [
-        "/assets/hotel/332266928.jpg",
-        "/assets/hotel/330868597.jpg",
-        "/assets/hotel/330733595.jpg",
-        "/assets/hotel/478807079.jpg",
-        "/assets/hotel/478807230.jpg",
+        "/assets/hotel/376058884.jpg",
+        "/assets/hotel/376058225.jpg",
+        "/assets/hotel/362806850.jpg",
+        "/assets/hotel/352453606.jpg",
+        "/assets/hotel/361353952.jpg",
       ],
       comments: [
         {

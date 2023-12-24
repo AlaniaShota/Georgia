@@ -3,6 +3,7 @@ import { useSeasonsStore } from "../../../Store/store";
 import { Link } from "react-router-dom";
 import { useAnimation, motion, easeInOut } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { Button } from "../../../Components/Button";
 
 export const SeasonDisplay = () => {
   const fetchSeasons = useSeasonsStore((state) => state.fetchSeasons);
@@ -82,31 +83,38 @@ export const SeasonDisplay = () => {
   return (
     <>
       {currentSeasonData ? (
-        <div ref={ref} className="grid grid-cols-2 gap-20 my-20 h-470">
+        <div ref={ref} className="flex justify-between my-20 ">
           <motion.div
             variants={cardVariants}
             initial={{ opacity: 0, x: -70 }}
             animate={cardAnimation}
-            className=" col-span-1 row-span-2 "
+            className="flex flex-col justify-evenly basis-5/12"
           >
-            <h1 className="text-4xl font-bold mt-12 ">
+            <h1 className="lg:text-4xl sm:text-lg font-bold ">
               {currentSeasonData[0].title}
             </h1>
-            <p className="text-lg font-medium text-BlackSecondColor mt-6">
+            <p className="lg:text-lg sm:text-xs font-medium text-BlackSecondColor">
               {currentSeasonData[0].description}
             </p>
+            <div>
+              <Button border>
+                <span className="lg:text-lg sm:text-base text-darkBlueText">
+                  Plane Tour
+                </span>
+              </Button>
+            </div>
           </motion.div>
           <motion.div
             variants={cardVariants}
             initial={{ opacity: 0, x: 70 }}
             animate={cardAnimation}
-            className=" flex flex-row flex-wrap gap-1"
+            className="grid grid-cols-2  gap-1"
           >
             {currentSeasonData[0].firstPlace.map((item) => (
               <Link
                 to={item.link}
                 key={item.id}
-                className="w-280 h-220 relative"
+                className="lg:w-280 sm:w-[180px] lg:h-220 sm:h-[120px] relative"
                 onMouseEnter={() => handleMouseEnter(item.id)}
                 onMouseLeave={handleMouseLeave}
               >
@@ -120,13 +128,13 @@ export const SeasonDisplay = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="absolute inset-0 flex items-center justify-center backdrop-blur rounded-lg "
+                    className="absolute inset-0 flex items-center justify-center backdrop-blur-lg rounded-lg "
                   >
                     <motion.h1
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.9, ease: easeInOut }}
-                      className="text-center text-6xl font-light "
+                      className="text-center text-3xl font-light text-white"
                     >
                       {item.title}
                     </motion.h1>
@@ -138,7 +146,7 @@ export const SeasonDisplay = () => {
               <Link
                 to={item.link}
                 key={item.id}
-                className="w-[280px] h-[220px] relative "
+                className="lg:w-280 sm:w-[180px] lg:h-220 sm:h-[120px] relative"
                 onMouseEnter={() => handleMouseEnter(item.id)}
                 onMouseLeave={handleMouseLeave}
               >
@@ -152,13 +160,13 @@ export const SeasonDisplay = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="absolute inset-0 flex items-center justify-center backdrop-blur rounded-lg "
+                    className="absolute inset-0 flex items-center justify-center backdrop-blur-lg rounded-lg "
                   >
                     <motion.h1
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.9, ease: easeInOut }}
-                      className="text-center text-6xl font-light "
+                      className="text-center text-3xl text-white font-light "
                     >
                       {item.title}
                     </motion.h1>
@@ -170,7 +178,7 @@ export const SeasonDisplay = () => {
               <Link
                 to={item.link}
                 key={item.id}
-                className="w-[280px] h-[220px] relative"
+                className="lg:w-280 sm:w-[180px] lg:h-220 sm:h-[120px] relative"
                 onMouseEnter={() => handleMouseEnter(item.id)}
                 onMouseLeave={handleMouseLeave}
               >
@@ -184,13 +192,13 @@ export const SeasonDisplay = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="absolute inset-0 flex items-center justify-center backdrop-blur rounded-lg "
+                    className="absolute inset-0 flex items-center justify-center backdrop-blur-lg rounded-lg "
                   >
                     <motion.h1
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.9, ease: easeInOut }}
-                      className="text-center text-6xl font-light "
+                      className="text-center text-3xl text-white font-light "
                     >
                       {item.title}
                     </motion.h1>
@@ -202,7 +210,7 @@ export const SeasonDisplay = () => {
               <Link
                 to={item.link}
                 key={item.id}
-                className="w-[280px] h-[220px] relative"
+                className="lg:w-280 sm:w-[180px] lg:h-220 sm:h-[120px] relative"
                 onMouseEnter={() => handleMouseEnter(item.id)}
                 onMouseLeave={handleMouseLeave}
               >
@@ -216,13 +224,13 @@ export const SeasonDisplay = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="absolute inset-0 flex items-center justify-center backdrop-blur rounded-lg "
+                    className="absolute inset-0 flex items-center justify-center backdrop-blur-lg rounded-lg "
                   >
                     <motion.h1
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.9, ease: easeInOut }}
-                      className="text-center text-6xl font-light "
+                      className="text-center text-3xl text-white font-light "
                     >
                       {item.title}
                     </motion.h1>

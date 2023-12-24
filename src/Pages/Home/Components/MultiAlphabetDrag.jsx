@@ -54,13 +54,13 @@ export const MultiAlphabetDrag = () => {
       animate={inView ? "visible" : "hidden"}
       variants={titleVariants}
       transition={{ duration: 1 }}
-      className="flex items-center justify-between h-630 border drop-shadow-md rounded-md "
+      className="flex items-center justify-between  lg:h-630 sm:h-470 border drop-shadow-md rounded-md "
       ref={ref}
     >
       <img
         src={alphabetImg}
         alt="Alphabet"
-        className="rounded-md h-630 w-full bg-cover"
+        className="rounded-md  lg:h-630 sm:h-470 w-full bg-cover"
       />
       <div className="absolute ml-40 bg-transparent opacity-100 cursor-default">
         <motion.h1

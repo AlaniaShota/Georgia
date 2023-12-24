@@ -4,6 +4,7 @@ import "react-day-picker/dist/style.css";
 import { format } from "date-fns";
 import { DayPicker } from "react-day-picker";
 import { Card } from "../../../Components";
+import { Outlet } from "react-router-dom";
 
 const today = new Date();
 const pastMonth = new Date();
@@ -60,7 +61,7 @@ export const Calendar = ({ data }) => {
             selected={range}
             onSelect={handleDateSelect}
             fromMonth={new Date()}
-            className="flex justify-center items-center z-20  bg-white bg-opacity-50 rounded-md w-370 h-470"
+            className="flex justify-center items-center z-20  bg-white bg-opacity-50 rounded-md  p-10"
           />
         </div>
       </div>

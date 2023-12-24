@@ -41,21 +41,25 @@ export const MultiAdventureScroll = () => {
   ];
 
   return (
-    <div className="relative h-630 border drop-shadow-md rounded-md overflow-hidden ">
+    <div className="relative lg:h-630 sm:h-470 border drop-shadow-md rounded-md overflow-hidden ">
       <Swiper
         navigation={true}
         autoplay={{
           delay: 10000,
           disableOnInteraction: false,
         }}
-        className="h-630 rounded-md"
+        className=" lg:h-630 sm:h-470 rounded-md"
         modules={[Navigation, Autoplay]}
       >
         {slides.map((item) => (
-          <SwiperSlide key={item.id} className="relative object-cover">
-            <img src={item.image} alt={item.title} />
-            <div className="absolute ml-40 top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-start  bg-transparent opacity-100">
-              <div className="flex items-center opacity-100 cursor-default">
+          <SwiperSlide key={item.id} className="relative object-cover ">
+            <img
+              src={item.image}
+              alt={item.title}
+              className="object-cover w-full h-full"
+            />
+            <div className="absolute ml-40 top-0 left-0 right-0 bottom-0  flex flex-col justify-center items-start  bg-transparent opacity-100">
+              <div className="flex items-center opacity-100 cursor-default ">
                 <h1 className="text-3xl text-white font-bold ">{item.title}</h1>
               </div>
               <div>

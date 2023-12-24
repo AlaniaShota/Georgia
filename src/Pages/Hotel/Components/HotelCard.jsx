@@ -1,13 +1,14 @@
 import { useState } from "react";
-import { Button } from "../../../../Components";
+import { Button } from "../../../Components/Button";
+import { Link } from "react-router-dom";
 
-export const FoodCard = ({ foods, openModal, categoryFilter }) => {
-  const loadMoreContentCount = 15;
+export const HotelCard = ({ data, categoryFilter }) => {
+  const loadMoreContentCount = 6;
   const [next, setNext] = useState(loadMoreContentCount);
 
-  const displayedTraditionalFood = categoryFilter
-    ? foods.filter((item) => item.type === categoryFilter)
-    : foods;
+  const displayedHotel = categoryFilter
+    ? data.filter((item) => item.type === categoryFilter)
+    : data;
 
   const handleMoreItem = () => {
     setNext(next + loadMoreContentCount);
@@ -16,7 +17,7 @@ export const FoodCard = ({ foods, openModal, categoryFilter }) => {
   return (
     <>
       <div className="grid grid-cols-3 gap-7 my-20">
-        {displayedTraditionalFood.slice(0, next).map((item) => (
+        {displayedHotel.slice(0, next).map((item) => (
           <div
             key={item.id}
             className="border drop-shadow-lg rounded-md bg-white"
@@ -36,12 +37,21 @@ export const FoodCard = ({ foods, openModal, categoryFilter }) => {
                   <p className="font-light">Most iconic:</p>
                 )}
               </div>
-              <div className="flex justify-end items-end mt-6">
-                <Button border onClick={() => openModal(item.id)}>
-                  <span className="font-medium text-darkBlueText">
-                    SEE MORE
-                  </span>
-                </Button>
+              <div className="flex flex-col  items-end -my-1">
+                <Link to={`/hotel/${item.id}`}>
+                  <Button>
+                    <span className=" text-darkBlueText font-bold">
+                      REVERSE
+                    </span>
+                  </Button>
+                </Link>
+                <Link to={`/location/${item.link}`} target="_blank">
+                  <Button>
+                    <span className=" text-darkBlueText font-bold">
+                      LOCATION
+                    </span>
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -49,7 +59,7 @@ export const FoodCard = ({ foods, openModal, categoryFilter }) => {
       </div>
       {categoryFilter ? null : (
         <div className="flex justify-center items-center my-10">
-          {next < foods?.length && (
+          {next < data?.length && (
             <Button border onClick={handleMoreItem}>
               <span className=" text-md text-darkBlueText">LOAD MORE</span>
             </Button>

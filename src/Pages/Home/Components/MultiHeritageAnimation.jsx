@@ -12,13 +12,13 @@ export const MultiHeritageAnimation = () => {
   return (
     <motion.div
       ref={ref}
-      className="flex flex-row justify-center items-center h-630  border drop-shadow-md rounded-md "
+      className="flex flex-row justify-center items-center  lg:h-630 sm:h-470  border drop-shadow-md rounded-md "
     >
       <div className="flex w-full justify-start items-center flex-wrap">
         <motion.img
           src={kvevriImg}
           alt="Kvevri"
-          className="rounded-md h-630 w-full bg-cover"
+          className="rounded-md  lg:h-630 sm:h-470 w-full bg-cover"
           style={{
             transform: isInView ? "none" : "translateX(80px)",
             opacity: isInView ? 1 : 0,

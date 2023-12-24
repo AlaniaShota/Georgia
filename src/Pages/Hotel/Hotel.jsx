@@ -1,23 +1,27 @@
 import { useEffect } from "react";
-import { Header, Section } from "../../Components";
+import { Header } from "../../Components";
 import { useHotelStore } from "../../Store/store";
 import img from "../../assets/hotel/Macon-beauty-spots-in-Georgia.jpg";
+import { Page_Description, Page_Title } from "./constants";
 import {
-  Hotel_First_Description,
-  Hotel_Second_Description,
-  Hotel_Title,
-  Page_Description,
-  Page_Title,
-} from "./constants";
-import { Calendar } from "./Components";
+  Calendar,
+  FilterButton,
+  PopularHotels,
+  HotelCard,
+  Recommendation,
+} from "./Components";
+import { useSearchParams } from "react-router-dom";
 
 export const Hotel = () => {
   const fetchHotels = useHotelStore((state) => state.fetchHotels);
   const { hotels = [] } = useHotelStore((state) => state.hotels);
+  const [searchParams, setSearchParams] = useSearchParams();
 
   useEffect(() => {
     fetchHotels();
   }, [fetchHotels]);
+
+  const categoryFilter = searchParams.get("type");
 
   return (
     <>
@@ -28,12 +32,14 @@ export const Hotel = () => {
         img={img}
       />
       <div className="m-auto w-10/12 cursor-default">
-        <Section
-          title={Hotel_Title}
-          firstDescription={Hotel_First_Description}
-          secondDescription={Hotel_Second_Description}
-        />
+        <PopularHotels data={hotels} />
         <Calendar data={hotels} />
+        <FilterButton
+          search={setSearchParams}
+          categoryFilter={categoryFilter}
+        />
+        <HotelCard data={hotels} categoryFilter={categoryFilter} />
+        <Recommendation />
       </div>
     </>
   );

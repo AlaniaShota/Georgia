@@ -41,7 +41,7 @@ export const UsersComments = ({ data, img }) => {
   };
   return (
     <>
-      <h1 className="text-4xl font-medium my-4">User`s Reviews</h1>
+      <h1 className="text-4xl font-medium my-10">User`s Reviews</h1>
       <div className="grid grid-cols-3 gap-10">
         <div className="col-span-2 border shadow-md rounded-md !bg-white">
           {data && data.length > 0
