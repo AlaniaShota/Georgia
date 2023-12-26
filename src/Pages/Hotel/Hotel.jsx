@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { Header } from "../../Components";
 import { useHotelStore } from "../../Store/store";
 import img from "../../assets/hotel/Macon-beauty-spots-in-Georgia.jpg";
 import { Page_Description, Page_Title } from "./constants";
@@ -11,6 +10,7 @@ import {
   Recommendation,
 } from "./Components";
 import { useSearchParams } from "react-router-dom";
+import { Header } from "../../Components";
 
 export const Hotel = () => {
   const fetchHotels = useHotelStore((state) => state.fetchHotels);

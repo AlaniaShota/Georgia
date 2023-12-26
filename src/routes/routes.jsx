@@ -7,6 +7,7 @@ import {
   Location,
   TraditionalFood,
   Detail,
+  Plane,
 } from "../index";
 import {
   DeliciousPage,
@@ -137,6 +138,7 @@ export const router = createBrowserRouter([
         path: "tour-guide/:id",
         element: <GuidePortfolio />,
       },
+      { path: "plane", element: <Plane /> },
     ],
   },
 ]);

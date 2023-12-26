@@ -1,21 +1,11 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { Header } from "./../../Components/Header";
 import { Button, UsersComments } from "../../Components";
-import { ReserveModal } from "./Components";
 
 export const Detail = () => {
   const [hotel, setHotel] = useState([]);
-  const [showModal, setShowModal] = useState(false);
   const params = useParams();
-
-  const openModal = () => {
-    setShowModal(true);
-  };
-
-  const closeModal = () => {
-    setShowModal(false);
-  };
 
   useEffect(() => {
     fetch(`/api/hotels/${params.id}`)
@@ -31,16 +21,13 @@ export const Detail = () => {
           <h1 className="text-3xl font-bold">{hotel.name}</h1>
           <p className="text-lg font-medium mt-2">{hotel.location}</p>
           <h3 className="text-lg font-bold my-2">Price: {hotel.price} Gel</h3>
-          <Button onClick={() => openModal()} border>
-            <span className="text-darkBlueText text-lg font-medium">
-              Reserve
-            </span>
-          </Button>
-          <ReserveModal
-            isOpen={!!showModal}
-            closeModal={closeModal}
-            openModalId={showModal}
-          />
+          <Link to="/plane">
+            <Button border>
+              <span className="text-darkBlueText text-lg font-medium">
+                Reserve
+              </span>
+            </Button>
+          </Link>
         </div>
         <div className="grid grid-cols-4 gap-4 ">
           <div className="col-span-3">
@@ -91,11 +78,13 @@ export const Detail = () => {
               : null}
           </div>
           <div className="mt-4">
-            <Button onClick={() => openModal()} border>
-              <span className="text-darkBlueText text-lg font-medium">
-                Reserve
-              </span>
-            </Button>
+            <Link to="/plane">
+              <Button border>
+                <span className="text-darkBlueText text-lg font-medium">
+                  Reserve
+                </span>
+              </Button>
+            </Link>
           </div>
           <UsersComments data={hotel.comments} img={hotel.img} />
         </div>

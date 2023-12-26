@@ -30,17 +30,16 @@ import {
   Why_Georgia_Second_Description,
   Why_Georgia_Third_Description,
 } from "./constants";
-import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useFoodStore } from "../../../Store/store";
 
 export const DeliciousPage = () => {
-  const [food, setFood] = useState([]);
+  const { foods = [] } = useFoodStore((state) => state.foods);
+  const fetchFoods = useFoodStore((state) => state.fetchFoods);
 
   useEffect(() => {
-    fetch("/api/foods")
-      .then((res) => res.json())
-      .then((data) => setFood(data.foods));
-  });
+    fetchFoods();
+  }, [fetchFoods]);
 
   return (
     <>
@@ -113,12 +112,10 @@ export const DeliciousPage = () => {
           />
           <h3 className="mb-4 text-BlackSecondColor">{Answer_First_Word}</h3>
           <h3 className="mb-4 text-BlackSecondColor">{Answer_Second_Word}</h3>
-          {food.slice(0, 14).map((item) => (
+          {foods.slice(0, 14).map((item) => (
             <ul key={item.id}>
               <li className="my-1 hover:text-red-500 p-1 duration-400">
-                <Link to={`/library/${item.id}`}>
-                  <span>{item.name}</span>
-                </Link>
+                <span>{item.name}</span>
               </li>
             </ul>
           ))}

@@ -1,5 +1,42 @@
 import { create } from "zustand";
 
+export const useReverseStore = create((set) => ({
+  user: {
+    firstName: "",
+    lastName: "",
+    age: "",
+    email: "",
+    number: "",
+    hotel: "",
+    price: "",
+    selectedGuide: "",
+    selectedHotel: "",
+  },
+
+  updateUser: (newUserData) =>
+    set((state) => ({
+      user: {
+        ...state.user,
+        ...newUserData,
+      },
+    })),
+
+  resetUser: () =>
+    set({
+      user: {
+        firstName: "",
+        lastName: "",
+        age: "",
+        email: "",
+        number: "",
+        hotel: "",
+        price: "",
+        selectedGuide: "",
+        selectedHotel: "",
+      },
+    }),
+}));
+
 export const useLocationStore = create((set) => ({
   locations: [],
   fetchLocations: async () => {
