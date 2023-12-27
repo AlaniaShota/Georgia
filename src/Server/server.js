@@ -836,6 +836,7 @@ createServer({
     server.create("guide", {
       id: 1,
       name: "Gianni Hyde-Chambers",
+      price: 800,
       email: "ghydechambers0@berkeley.edu",
       img: "/assets/Guide/alex-suprun-ZHvM3XIOHoE-unsplash.jpg",
       recommended: [
@@ -916,6 +917,7 @@ createServer({
     server.create("guide", {
       id: 2,
       name: "Cassaundra Conklin",
+      price: 700,
       email: "cconklin1@epa.gov",
       gender: "Female",
       img: "/assets/Guide/photo-1605993439219-9d09d2020fa5.jpg",
@@ -1007,6 +1009,7 @@ createServer({
     server.create("guide", {
       id: 4,
       name: "Archibaldo O'Neary",
+      price: 900,
       email: "aoneary3@addthis.com",
       gender: "Male",
       img: "/assets/Guide/photo-1528892952291-009c663ce843.avif",
@@ -1088,6 +1091,7 @@ createServer({
       id: 5,
       name: "Cam Jermin",
       email: "cjermin4@boston.com",
+      price: 700,
       gender: "Female",
       img: "/assets/Guide/photo-1546961329-78bef0414d7c.avif",
       recommended: [
@@ -1167,6 +1171,7 @@ createServer({
     server.create("guide", {
       id: 6,
       name: "Lexie McFade",
+      price: 500,
       email: "lmcfade5@tinypic.com",
       gender: "Female",
       img: "/assets/Guide/photo-1438761681033-6461ffad8d80.avif",
@@ -1321,6 +1326,7 @@ createServer({
         },
       ],
       status: true,
+      price: 500,
       description:
         "Immerse yourself in Georgia's vibrant art scene with a guide who showcases the country's contemporary and traditional artistic expressions. Visit galleries, street art hotspots, and engage with local artists, uncovering the creative pulse of Georgia.",
     });
@@ -1401,6 +1407,7 @@ createServer({
         },
       ],
       status: true,
+      price: 700,
       description:
         "Embark on a spiritual journey with a guide who reveals the sacred treasures of Georgian monasteries. From mountain retreats to UNESCO-listed sites, witness the architectural beauty and profound religious significance embedded in Georgia's monastic heritage.",
     });
@@ -1481,6 +1488,7 @@ createServer({
         },
       ],
       status: true,
+      price: 900,
       description:
         "Escape to the countryside with a guide who introduces you to the tranquility of Georgian villages. Experience rural life, partake in local traditions, and enjoy the breathtaking landscapes that define the charm of Georgia's pastoral regions.",
     });
@@ -1561,6 +1569,7 @@ createServer({
         },
       ],
       status: true,
+      price: 800,
       description:
         "Embark on a culinary odyssey with a guide who navigates you through the diverse flavors of Georgia's regional cuisines. From Svaneti to Kakheti, savor unique dishes and learn about the cultural significance of Georgian gastronomy.",
     });
@@ -1641,6 +1650,7 @@ createServer({
         },
       ],
       status: true,
+      price: 900,
       description:
         "Discover the 'Balcony of Europe' – Borjomi – with a guide who leads you through lush landscapes, mineral springs, and the historical heart of this spa town. Uncover the rejuvenating secrets and cultural significance of this Georgian gem.",
     });

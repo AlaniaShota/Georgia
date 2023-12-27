@@ -44,115 +44,123 @@ export const FormReserve = () => {
             lastName: "",
             email: "",
             number: "",
-            selectedGuide: "", // Добавляем поле для выбора гида
+            selectedGuide: "",
             selectedHotel: "",
           }}
           validationSchema={schema}
-          onSubmit={(values) => {
-            console.log("Submitting form with values:", values);
+          onSubmit={(values, { resetForm }) => {
             updateUser(values);
-            console.log(values);
-            console.log(updateUser(values));
+            resetForm();
           }}
         >
           {({ errors, touched }) => (
-            <Form className="grid grid-cols-2 gap-7">
-              <div className="col-span-1">
-                <Field
-                  name="firstName"
-                  placeholder="First Name"
-                  className="border rounded-md px-2 w-370 h-9"
-                />
-                {errors.firstName && touched.firstName ? (
-                  <div className="px-2 text-red-700 font-medium">
-                    {errors.firstName}
+            <Form className="flex justify-between">
+              <div className="flex flex-col">
+                <div className="flex flex-col">
+                  <Field
+                    name="email"
+                    type="email"
+                    placeholder="Email"
+                    className="border rounded-md py-2 px-6"
+                  />
+                  {errors.email && touched.email ? (
+                    <div className="px-2 text-red-700 font-medium">
+                      {errors.email}
+                    </div>
+                  ) : null}
+                  <Field
+                    name="number"
+                    type="number"
+                    placeholder="Phone Number"
+                    className="border rounded-md py-2 px-6 mt-3 mr-64"
+                  />
+                  {errors.phone && touched.phone ? (
+                    <div className="px-2 text-red-700 font-medium">
+                      {errors.phone}
+                    </div>
+                  ) : null}
+                </div>
+                <div className="flex flex-row mt-4">
+                  <Field
+                    name="firstName"
+                    placeholder="First Name"
+                    className="border rounded-md py-2 px-6 mr-4"
+                  />
+                  {errors.firstName && touched.firstName ? (
+                    <div className="py-2 px-1 text-red-700 font-medium">
+                      {errors.firstName}
+                    </div>
+                  ) : null}
+                  <Field
+                    name="lastName"
+                    placeholder="Last Name"
+                    className="border rounded-md py-2 px-6 "
+                  />
+                  <div>
+                    {errors.lastName && touched.lastName ? (
+                      <div className="py-2 px-1 text-red-700 font-medium">
+                        {errors.lastName}
+                      </div>
+                    ) : null}
                   </div>
-                ) : null}
-                <Field
-                  name="lastName"
-                  placeholder="Last Name"
-                  className="border rounded-md px-2 w-370 h-9 mt-3"
-                />
-                {errors.lastName && touched.lastName ? (
-                  <div className="px-2 text-red-700 font-medium">
-                    {errors.lastName}
-                  </div>
-                ) : null}
-                <Field
-                  name="email"
-                  type="email"
-                  placeholder="Email"
-                  className="border rounded-md px-2 w-370 h-9 mt-3"
-                />
-                {errors.email && touched.email ? (
-                  <div className="px-2 text-red-700 font-medium">
-                    {errors.email}
-                  </div>
-                ) : null}
-                <Field
-                  name="number"
-                  type="number"
-                  placeholder="Phone Number"
-                  className="border rounded-md px-2 w-370 h-9 mt-3"
-                />
-                {errors.phone && touched.phone ? (
-                  <div className="px-2 text-red-700 font-medium">
-                    {errors.phone}
-                  </div>
-                ) : null}
+                </div>
               </div>
-              <div className="col-span-1">
-                <label htmlFor="selectedGuide">Select a guide:</label>
-                <Field
-                  as="select"
-                  name="selectedGuide"
-                  className="border rounded-md px-2 w-370 h-9"
-                >
-                  <option value="" disabled>
-                    Select a guide
-                  </option>
-                  {choiceGuide.map((guide) => (
-                    <option key={guide.id} value={guide.name}>
-                      {guide.name}
+              <div className="flex flex-col">
+                <div className="flex flex-wrap items-center w-full">
+                  <label htmlFor="selectedGuide" />
+                  <Field
+                    as="select"
+                    name="selectedGuide"
+                    className="border rounded-md py-2 px-3 w-full"
+                  >
+                    <option value="" disabled>
+                      Select a guide
                     </option>
-                  ))}
-                </Field>
+                    {choiceGuide.map((guide) => (
+                      <option key={guide.id} value={guide.name}>
+                        {guide.name}
+                      </option>
+                    ))}
+                  </Field>
+                </div>
                 {errors.selectedGuide && touched.selectedGuide ? (
                   <div className="px-2 text-red-700 font-medium">
                     {errors.selectedGuide}
                   </div>
                 ) : null}
 
-                <label htmlFor="selectedHotel">Select a hotel:</label>
-                <Field
-                  as="select"
-                  name="selectedHotel"
-                  className="border rounded-md px-2 w-370 h-9"
-                >
-                  <option value="" disabled>
-                    Select a hotel
-                  </option>
-                  {hotels.map((hotel) => (
-                    <option
-                      key={hotel.id}
-                      value={`${hotel.name} - ${hotel.price}`}
-                    >
-                      {`${hotel.name} - ${hotel.price} Gel`}
+                <div className="flex flex-wrap">
+                  <label htmlFor="selectedHotel" />
+                  <Field
+                    as="select"
+                    name="selectedHotel"
+                    className="border rounded-md py-2 px-3 mt-3"
+                  >
+                    <option value="" disabled>
+                      Select a hotel
                     </option>
-                  ))}
-                </Field>
-                {errors.selectedHotel && touched.selectedHotel ? (
-                  <div className="px-2 text-red-700 font-medium">
-                    {errors.selectedHotel}
-                  </div>
-                ) : null}
-              </div>
-              <div className="pt-5 flex justify-center">
-                <Button border margin="4" type="submit">
-                  <span className="text-darkBlueText text-lg font-medium">
-                    Send
-                  </span>
-                </Button>
+                    {hotels.map((hotel) => (
+                      <option
+                        key={hotel.id}
+                        value={`${hotel.name} - ${hotel.price}`}
+                      >
+                        {`${hotel.name} - ${hotel.price} Gel`}
+                      </option>
+                    ))}
+                  </Field>
+                  {errors.selectedHotel && touched.selectedHotel ? (
+                    <div className="px-2 text-red-700 font-medium">
+                      {errors.selectedHotel}
+                    </div>
+                  ) : null}
+                </div>
+                <div className="pt-5 flex justify-center">
+                  <Button border margin="4" type="submit">
+                    <span className="text-darkBlueText text-lg font-medium">
+                      Send
+                    </span>
+                  </Button>
+                </div>
               </div>
             </Form>
           )}
