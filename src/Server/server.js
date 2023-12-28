@@ -843,6 +843,7 @@ createServer({
         {
           id: 1,
           link: "samegrelo-zemo-svaneti",
+          name: "Samegrelo Zemo Svaneti",
           img: [
             "/assets/location/mestia.jpg",
             "/assets/location/Zugdidi-town-center.jpg",
@@ -856,6 +857,7 @@ createServer({
         {
           id: 2,
           link: "racha-lechkumi-kvemo-svaneti",
+          name: "Racha Lechkumi Kvemo Svaneti",
           img: [
             "/assets/location/Tsageri.jpg",
             "/assets/location/Shovi.jpg",
@@ -926,6 +928,7 @@ createServer({
         {
           id: 1,
           link: "shida-kartli",
+          name: "Shida Kartli",
           img: [
             "/assets/location/Kaspi.jpg",
             "/assets/location/Gori.jpg",
@@ -939,6 +942,7 @@ createServer({
         {
           id: 2,
           link: "mtskheta-mtianeti",
+          name: "Mtskheta Mtianeti",
           img: [
             "/assets/location/Stepantsminda.jpg",
             "/assets/location/Shatili.jpg",
@@ -1017,6 +1021,7 @@ createServer({
         {
           id: 1,
           link: "tbilisi",
+          name: "Tbilisi",
           img: [
             "/assets/location/Parks&Gardens.jpg",
             "/assets/location/FineDiningDrinking&Nightlife.jpg",
@@ -1030,6 +1035,7 @@ createServer({
         {
           id: 2,
           link: "samtskhe-javakheti",
+          name: "Samtskhe Javakheti",
           img: [
             "/assets/location/Akhaltsikhe.jpg",
             "/assets/location/Borjomi.jpg",
@@ -1098,6 +1104,7 @@ createServer({
         {
           id: 1,
           link: "imereti",
+          name: "Imereti",
           img: [
             "/assets/location/kutaisi-gnta.webp",
             "/assets/location/Tskaltubo.webp",
@@ -1111,6 +1118,7 @@ createServer({
         {
           id: 2,
           link: "ajara",
+          name: "Ajara",
           img: [
             "/assets/location/Kobuleti.jpg",
             "/assets/location/Sarpi.jpg",
@@ -1179,6 +1187,7 @@ createServer({
         {
           id: 1,
           link: "samegrelo-zemo-svaneti",
+          name: "Samegrelo Zemo Svaneti",
           img: [
             "/assets/location/mestia.jpg",
             "/assets/location/Zugdidi-town-center.jpg",
@@ -1192,6 +1201,7 @@ createServer({
         {
           id: 2,
           link: "racha-lechkumi-kvemo-svaneti",
+          name: "Racha Lechkumi Kvemo Svaneti",
           img: [
             "/assets/location/Tsageri.jpg",
             "/assets/location/Shovi.jpg",
@@ -1259,6 +1269,7 @@ createServer({
         {
           id: 1,
           link: "shida-kartli",
+          name: "Shida Kartli",
           img: [
             "/assets/location/Kaspi.jpg",
             "/assets/location/Gori.jpg",
@@ -1272,6 +1283,7 @@ createServer({
         {
           id: 2,
           link: "mtskheta-mtianeti",
+          name: "Mtskheta Mtianeti",
           img: [
             "/assets/location/Stepantsminda.jpg",
             "/assets/location/Shatili.jpg",
@@ -1340,6 +1352,7 @@ createServer({
         {
           id: 1,
           link: "kakheti",
+          name: "Kakheti",
           img: [
             "/assets/location/telavi.jpg",
             "/assets/location/Lagodekhi.jpg",
@@ -1353,6 +1366,7 @@ createServer({
         {
           id: 2,
           link: "kvemo-kartli",
+          name: "Kvemo Kartli",
           img: [
             "/assets/location/Tsalka.jpg",
             "/assets/location/tetritskaro-gnta.webp",
@@ -1421,6 +1435,7 @@ createServer({
         {
           id: 1,
           link: "tbilisi",
+          name: "Tbilisi",
           img: [
             "/assets/location/Parks&Gardens.jpg",
             "/assets/location/FineDiningDrinking&Nightlife.jpg",
@@ -1434,6 +1449,7 @@ createServer({
         {
           id: 2,
           link: "samtskhe-javakheti",
+          name: "Samtskhe Javakheti",
           img: [
             "/assets/location/Akhaltsikhe.jpg",
             "/assets/location/Borjomi.jpg",
@@ -1502,6 +1518,7 @@ createServer({
         {
           id: 1,
           link: "imereti",
+          name: "Imereti",
           img: [
             "/assets/location/kutaisi-gnta.webp",
             "/assets/location/Tskaltubo.webp",
@@ -1515,6 +1532,7 @@ createServer({
         {
           id: 2,
           link: "ajara",
+          name: "Ajara",
           img: [
             "/assets/location/Kobuleti.jpg",
             "/assets/location/Sarpi.jpg",
@@ -1583,6 +1601,7 @@ createServer({
         {
           id: 1,
           link: "samegrelo-zemo-svaneti",
+          name: "Samegrelo Zemo Svaneti",
           img: [
             "/assets/location/mestia.jpg",
             "/assets/location/Zugdidi-town-center.jpg",
@@ -1596,6 +1615,7 @@ createServer({
         {
           id: 2,
           link: "racha-lechkumi-kvemo-svaneti",
+          name: "Racha Lechkumi Kvemo Svaneti",
           img: [
             "/assets/location/Tsageri.jpg",
             "/assets/location/Shovi.jpg",
