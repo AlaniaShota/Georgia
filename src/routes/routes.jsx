@@ -39,7 +39,7 @@ export const router = createBrowserRouter([
   {
     element: (
       <>
-        <Layout />,
+        <Layout />
         <ScrollToTop />
       </>
     ),
@@ -65,11 +65,7 @@ export const router = createBrowserRouter([
         children: [
           {
             index: "location",
-            element: (
-              <>
-                <Location />
-              </>
-            ),
+            element: <Location />,
           },
           {
             path: "ajara",

@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Header } from "./../../Components/Header";
-import { Button, UsersComments } from "../../Components";
+import { Button } from "../../Components";
+import { UsersComments } from "../../Components/User/index";
 
 export const Detail = () => {
   const [hotel, setHotel] = useState([]);

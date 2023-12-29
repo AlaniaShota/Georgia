@@ -16,15 +16,21 @@ export function SliderLibrary({ data }) {
       {data.map((item) => (
         <SwiperSlide key={item.id}>
           <div className="flex flex-row justify-between h-full">
-            <div className="flex flex-col justify-center ml-14">
-              <h1 className="text-3xl font-medium">{item.title}</h1>
-              <p className="text-lg font-light pt-8 pr-6">{item.description}</p>
+            <div className="flex flex-col justify-center w-1/2 ml-14">
+              <h1 className="lg:text-3xl sm:text-lg font-medium">
+                {item.title}
+              </h1>
+              <p className=" lg:text-lg sm:text-xs font-light pt-8 pr-6">
+                {item.description}
+              </p>
             </div>
-            <img
-              src={item.img}
-              alt={item.title}
-              className="object-cover lg:w-[550px] sm:w-[450px] h-full rounded-r-md"
-            />
+            <div>
+              <img
+                src={item.img}
+                alt={item.title}
+                className="object-cover lg:w-[550px] sm:w-[450px] h-full rounded-r-md"
+              />
+            </div>
           </div>
         </SwiperSlide>
       ))}

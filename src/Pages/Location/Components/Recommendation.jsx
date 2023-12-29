@@ -1,4 +1,4 @@
-import { RecommendationCard } from "../../../Components";
+import { RecommendationCard } from "../../../Components/Card/RecommendationCard";
 import batumiImg from "../../../assets/location/batumi.jpeg";
 import { Recommendation_Title, Recommendation_Description } from "../constant";
 

@@ -41,7 +41,9 @@ export const UsersComments = ({ data, img }) => {
   };
   return (
     <>
-      <h1 className="text-4xl font-medium my-10">User`s Reviews</h1>
+      <h1 className="lg:text-4xl sm:text-3xl font-medium my-10">
+        User`s Reviews
+      </h1>
       <div className="grid grid-cols-3 gap-10">
         <div className="col-span-2 border shadow-md rounded-md !bg-white">
           {data && data.length > 0
@@ -61,7 +63,9 @@ export const UsersComments = ({ data, img }) => {
                       transition={{ duration: 0.5 }}
                       className="flex flex-col ml-4"
                     >
-                      <h1 className="text-xl font-medium">{item.name}</h1>
+                      <h1 className="lg:text-xl sm:text-lg font-medium">
+                        {item.name}
+                      </h1>
                       <div className="flex items-center">
                         <img
                           src={item.countryImg}
@@ -73,7 +77,7 @@ export const UsersComments = ({ data, img }) => {
                       <motion.p
                         initial={{ opacity: 0 }}
                         animate={descriptionAnimation}
-                        className="text-lg font-light"
+                        className=" lg:text-lg sm:text-base font-light"
                       >
                         {item.comment}
                       </motion.p>
@@ -87,7 +91,7 @@ export const UsersComments = ({ data, img }) => {
           <img
             src={img}
             alt="Guide"
-            className="w-full h-full object-cover rounded-md"
+            className="w-auto h-auto object-cover shadow-xl rounded-md"
           />
         </div>
       </div>

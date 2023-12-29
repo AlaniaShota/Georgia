@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { FoodCard, Header } from "../../../Components";
+import { Header } from "../../../Components";
 import { ButtonViewMore, Tour, PopularPlace, Banner } from "./Components/index";
-import { Cuisine_Guria_Description, Cuisine_Guria_Title } from "../constant";
 import { useLocationStore } from "../../../Store/store";
 
 export const GuriaPage = () => {

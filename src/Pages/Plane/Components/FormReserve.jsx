@@ -25,40 +25,41 @@ export const FormReserve = () => {
   const updateUser = useReverseStore((state) => state.updateUser);
 
   return (
-    <div className=" flex justify-center items-center my-20 drop-shadow-md">
-      <Formik
-        initialValues={{
-          firstName: "",
-          lastName: "",
-          email: "",
-          number: "",
-          selectedGuide: "",
-          selectedHotel: "",
-          guideRecommendation: "",
-          selectedLocation: "",
-        }}
-        validationSchema={schema}
-        onSubmit={(values, { resetForm }) => {
-          updateUser(values);
-          console.log(values);
-          resetForm();
-        }}
-      >
-        {({ values }) => (
-          <Form className="flex flex-col">
-            <UserForm />
-            <SelectGuide values={values} />
-            <SelectHotel />
-            <div className="flex justify-center mt-5 ">
-              <Button border margin="4" type="submit">
-                <span className="text-darkBlueText text-lg font-medium">
-                  Send
-                </span>
-              </Button>
-            </div>
-          </Form>
-        )}
-      </Formik>
-    </div>
+    <>
+      <div className=" flex justify-center items-center my-20 drop-shadow-md">
+        <Formik
+          initialValues={{
+            firstName: "",
+            lastName: "",
+            email: "",
+            number: "",
+            selectedGuide: "",
+            selectedHotel: "",
+            guideRecommendation: "",
+            selectedLocation: "",
+          }}
+          validationSchema={schema}
+          onSubmit={(values, { resetForm }) => {
+            updateUser(values);
+            resetForm();
+          }}
+        >
+          {({ values }) => (
+            <Form className="flex flex-col">
+              <UserForm />
+              <SelectGuide values={values} />
+              <SelectHotel />
+              <div className="flex justify-center mt-5 ">
+                <Button border margin="4" type="submit">
+                  <span className="text-darkBlueText text-lg font-medium">
+                    Send
+                  </span>
+                </Button>
+              </div>
+            </Form>
+          )}
+        </Formik>
+      </div>
+    </>
   );
 };

@@ -3,8 +3,7 @@ import img from "../../../assets/hotel/gelati-monastery-gnta.webp";
 import "react-day-picker/dist/style.css";
 import { format } from "date-fns";
 import { DayPicker } from "react-day-picker";
-import { Card } from "../../../Components";
-import { Outlet } from "react-router-dom";
+import { Card } from "../../../Components/Card/index";
 
 const today = new Date();
 const pastMonth = new Date();

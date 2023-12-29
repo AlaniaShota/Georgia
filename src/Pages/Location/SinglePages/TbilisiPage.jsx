@@ -1,11 +1,7 @@
 import { useLocationStore } from "../../../Store/store";
 import React, { useState, useEffect } from "react";
-import { FoodCard, Header } from "../../../Components";
+import { Header } from "../../../Components";
 import { ButtonViewMore, Tour, PopularPlace, Banner } from "./Components/index";
-import {
-  Cuisine_Tbilisi_Title,
-  Cuisine_Tbilisi_Description,
-} from "../constant";
 
 export const TbilisiPage = () => {
   const { locations = [] } = useLocationStore((state) => state.locations);

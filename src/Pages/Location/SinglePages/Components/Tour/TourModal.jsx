@@ -1,6 +1,6 @@
 import { Button } from "../../../../../Components";
 import { ButtonTour } from "../ButtonViewMore";
-import { Modal } from "../../../../../Components/index";
+import { Modal } from "../../../../../Components/Modal/index";
 
 export const TourModal = ({ isOpen, closeModal, tourData, openModalId }) => {
   return (

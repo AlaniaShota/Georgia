@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Link, useParams } from "react-router-dom";
-import { Button, Header, UsersComments } from "../../../Components";
+import { Button, Header } from "../../../Components";
+import { UsersComments } from "../../../Components/User/index";
 
 export const GuidePortfolio = () => {
   const [guide, setGuide] = useState([]);
@@ -40,9 +41,13 @@ export const GuidePortfolio = () => {
       />
       <div className="flex flex-col [&>*:nth-child(2)]:flex-row-reverse [&>*:nth-child(2)]:text-end m-auto w-10/12 my-20">
         {guide.gender === "Male" ? (
-          <h1 className="text-4xl font-medium py-4">He recommends</h1>
+          <h1 className="lg:text-4xl sm:text-2xl font-medium py-4">
+            He recommends
+          </h1>
         ) : (
-          <h1 className="text-4xl font-medium py-4">She recommends</h1>
+          <h1 className="lg:text-4xl sm:text-2xl font-medium py-4">
+            She recommends
+          </h1>
         )}
         {guide.recommended
           ? guide.recommended.map((item) => (
@@ -57,17 +62,21 @@ export const GuidePortfolio = () => {
                   initial={{ opacity: 0, x: -70 }}
                   animate={cardAnimation}
                 >
-                  <h1 className="text-4xl font-medium">{item.title}</h1>
-                  <p className="font-light my-10 ">{item.description}</p>
+                  <h1 className="lg:text-4xl sm:text-lg font-medium">
+                    {item.title}
+                  </h1>
+                  <p className="font-light lg:text-base sm:text-xs my-10 ">
+                    {item.description}
+                  </p>
                   <Link to={`/location/${item.link}`}>
                     <Button border>
-                      <span className="text-lg text-darkBlueText">
+                      <span className="lg:text-lg sm:text-base text-darkBlueText">
                         SEE MORE
                       </span>
                     </Button>
                   </Link>
                 </motion.div>
-                <div className="flex-1 grid grid-cols-2 gap-5">
+                <div className="flex-1 grid grid-cols-2 lg:gap-5 sm:gap-2">
                   {Array.isArray(item.img) &&
                     item.img.map((imgSrc, index) => (
                       <motion.div
@@ -75,7 +84,7 @@ export const GuidePortfolio = () => {
                         variants={cardVariants}
                         initial={{ opacity: 0, x: 70 }}
                         animate={cardAnimation}
-                        className="w-280 h-220"
+                        className="w-auto h-auto"
                       >
                         <img
                           src={imgSrc}

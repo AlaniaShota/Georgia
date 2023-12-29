@@ -101,7 +101,6 @@ export const Comments = () => {
   ];
   return (
     <div className="flex flex-col border shadow-md rounded-md !bg-white w-3/5 items-start">
-      {/* <h1 className="text-4xl font-medium ">User`s Reviews</h1> */}
       {data.map((item) => (
         <div key={item.id} className="flex border-b mt-1 p-4">
           <FontAwesomeIcon icon={faUser} className="mt-2 ml-2" size="xl" />

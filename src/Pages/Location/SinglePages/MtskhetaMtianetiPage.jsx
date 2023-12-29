@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { FoodCard, Header } from "../../../Components";
+import { Header } from "../../../Components";
 import { ButtonViewMore, Tour, PopularPlace, Banner } from "./Components/index";
-import {
-  Cuisine_Mtskheta_Mtianeti_Description,
-  Cuisine_Mtskheta_Mtianeti_Title,
-} from "../constant";
 import { useLocationStore } from "../../../Store/store";
 
 export const MtskhetaMtianetiPage = () => {

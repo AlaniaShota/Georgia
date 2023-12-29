@@ -68,15 +68,15 @@ export const RecommendationCard = ({ data }) => {
               ref={titleTextRef}
               initial={{ opacity: 0 }}
               animate={titleAnimation}
-              className="text-left text-4xl text-white font-semibold"
+              className="text-left lg:text-4xl sm:text-xl text-white font-semibold"
             ></motion.h1>
             <motion.div initial={{ opacity: 0 }} animate={descriptionAnimation}>
-              <p className="w-497 py-6 text-white text-lg font-light">
+              <p className="w-497 py-6 text-white  lg:text-lg sm:text-base font-light">
                 {item.description}
               </p>
               <Link to={item.link}>
                 <ExploreButton>
-                  <span className="text-lg ">SEE MORE</span>
+                  <span className=" lg:text-lg sm:text-base">SEE MORE</span>
                 </ExploreButton>
               </Link>
             </motion.div>

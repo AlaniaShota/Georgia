@@ -4,8 +4,9 @@ import { useEffect } from "react";
 
 export const SelectGuide = ({ values }) => {
   const { guides = [] } = useGuideStore((state) => state.guides);
-  const fetchGuide = useGuideStore((state) => state.fetchGuide);
   const { locations = [] } = useLocationStore((state) => state.locations);
+
+  const fetchGuide = useGuideStore((state) => state.fetchGuide);
   const fetchLocations = useLocationStore((state) => state.fetchLocations);
 
   useEffect(() => {

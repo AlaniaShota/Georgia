@@ -1,4 +1,4 @@
-import { RecommendationCard } from "../../../Components";
+import { RecommendationCard } from "../../../Components/Card/index";
 import { Recommendation_Description, Recommendation_Title } from "../constants";
 import tbilisiImg from "../../../assets/hotel/tbilisi-botanical-garden-gnta.jpg";
 

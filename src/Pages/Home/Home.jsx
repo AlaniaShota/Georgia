@@ -44,7 +44,7 @@ function Card({ customComponent, isFirst }) {
 
   return (
     <motion.div
-      className={` ${isFirst ? "" : "scroll-py-40 my-20"}`}
+      className={` ${isFirst ? "" : " my-16"}`}
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.8 }}
@@ -58,9 +58,8 @@ const customComponentsData = [["A"], ["B"], ["C"], ["D"], ["E"]];
 
 export const Home = () => {
   return (
-    <div>
+    <>
       <Helmet>
-        {/* <meta charSet="utf-8" /> */}
         <title>Home</title>
       </Helmet>
       <>
@@ -75,6 +74,6 @@ export const Home = () => {
           />
         ))}
       </div>
-    </div>
+    </>
   );
 };
