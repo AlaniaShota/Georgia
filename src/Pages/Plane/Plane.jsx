@@ -12,9 +12,9 @@ export const Plane = () => {
         titleText={Title_Page}
         descriptionText={Description_Page}
       />
-      <div className="m-auto w-10/12 my-20">
+      <div className="m-auto w-1/2 my-20">
         <FormReserve />
-        <FinalForm />
+        {/* <FinalForm /> */}
       </div>
     </>
   );
