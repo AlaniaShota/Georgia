@@ -33,6 +33,7 @@ export default {
         280: "280px",
         370: "370px",
         497: "497px",
+        740: "740px",
       },
       // scrollMargin: {
       //   '96': '24rem',

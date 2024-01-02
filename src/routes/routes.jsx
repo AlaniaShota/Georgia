@@ -1,6 +1,14 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Layout, ScrollToTop } from "../Components";
-import { Home, TourGuide, Hotel, Location, TraditionalFood } from "../index";
+import {
+  Home,
+  TourGuide,
+  Hotel,
+  Location,
+  TraditionalFood,
+  Detail,
+  Plane,
+} from "../index";
 import {
   DeliciousPage,
   HeritagePage,
@@ -10,7 +18,7 @@ import {
   TravelAndCreatePage,
   UniqueFolkPage,
   UniqueNaturePage,
-} from "../Pages/Home/index";
+} from "../Pages/Home/SinglePage/index";
 import {
   AjaraPage,
   GuriaPage,
@@ -23,7 +31,7 @@ import {
   SamtskheJavakhetiPage,
   ShidaKartliPage,
   TbilisiPage,
-} from "../Pages/Location/index";
+} from "../Pages/Location/SinglePages/index";
 import { TraditionalFoodLibery } from "../Pages/TraditionalFood/Components/index";
 import { GuidePortfolio } from "../Pages/Guide/Components";
 
@@ -31,7 +39,7 @@ export const router = createBrowserRouter([
   {
     element: (
       <>
-        <Layout />,
+        <Layout />
         <ScrollToTop />
       </>
     ),
@@ -57,11 +65,7 @@ export const router = createBrowserRouter([
         children: [
           {
             index: "location",
-            element: (
-              <>
-                <Location />
-              </>
-            ),
+            element: <Location />,
           },
           {
             path: "ajara",
@@ -111,12 +115,9 @@ export const router = createBrowserRouter([
       },
       {
         path: "hotel",
-        element: (
-          <>
-            <Hotel />
-          </>
-        ),
+        element: <Hotel />,
       },
+      { path: "hotel/:id", element: <Detail /> },
       {
         path: "traditional-food",
         element: <TraditionalFood />,
@@ -133,6 +134,7 @@ export const router = createBrowserRouter([
         path: "tour-guide/:id",
         element: <GuidePortfolio />,
       },
+      { path: "plane", element: <Plane /> },
     ],
   },
 ]);

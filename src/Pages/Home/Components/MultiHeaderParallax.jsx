@@ -48,7 +48,7 @@ export const MultiHeaderParallax = () => {
         <AnimatePresence>
           <motion.div
             style={{ y: textY }}
-            className="font-light text-white text-9xl md:text-9xl relative z-20"
+            className="font-light text-white text-5xl md:text-9xl relative z-20"
           >
             <h1>
               Why <span ref={textRef}>Georgia</span>
@@ -56,18 +56,30 @@ export const MultiHeaderParallax = () => {
           </motion.div>
         </AnimatePresence>
         <motion.div
-          className="absolute inset-0 z-0 bg-cover bg-bottom	"
+          className="absolute inset-0 z-0 bg-cover bg-bottom"
           style={{
             y: backgroundY,
           }}
         >
-          <img src={homeImg} alt="Town" />
+          <img
+            src={homeImg}
+            alt="City"
+            className="w-full h-full object-cover"
+          />
         </motion.div>
-        <motion.div className="absolute inset-0 z-20 bg-cover bg-bottom	">
-          <img src={parallaxButtonImg} alt="Town" />
+        <motion.div className="absolute inset-0 z-20 bg-cover bg-bottom">
+          <img
+            src={parallaxButtonImg}
+            alt="City"
+            className="w-full h-full object-cover"
+          />
         </motion.div>
         <motion.div className="absolute inset-0 z-10 opacity-5 bg-cover">
-          <img src={cloudsImg} alt="Cloud" />
+          <img
+            src={cloudsImg}
+            alt="Облако"
+            className="w-full h-full object-cover"
+          />
         </motion.div>
       </div>
     </div>

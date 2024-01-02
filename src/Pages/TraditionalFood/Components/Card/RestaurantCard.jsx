@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Card } from "../../../../Components";
+import { Card } from "../../../../Components/Card/index";
 import { useRestaurantStore } from "../../../../Store/store";
 import { Recommendation_Title, Recommendation_Word } from "../../constants";
 

@@ -1,7 +1,8 @@
-import { Header, FoodCard, Section } from "../../Components/index";
+import { Header, Section } from "../../Components/index";
+import { FoodCard } from "../../Components/Card/index";
 import foodImg from "../../assets/traditional-food-img/georgia-traditional-food-image2.jpg";
 import { Slide } from "./Components/Slide";
-import { RestaurantCard, Tamada } from "./Components";
+import { RestaurantCard, Tamada } from "./Components/Card/index";
 import {
   Page_Title,
   About_Page,
@@ -21,7 +22,7 @@ export const TraditionalFood = () => {
         descriptionText={About_Page}
         img={foodImg}
       />
-      <div className="lg:container sm:mx-8 lg:mx-0 cursor-default">
+      <div className="m-auto w-10/12 cursor-default">
         <Section
           title={Tradition_Title}
           firstDescription={Tradition_First_Description}

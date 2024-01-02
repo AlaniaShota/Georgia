@@ -49,7 +49,11 @@ export const MultiCuisineMouseMove = () => {
   return (
     <div className="flex items-center justify-center">
       <div className="flex w-full justify-end place-items-center flex-wrap">
-        <img src={testImg} alt="Test" className="bg-cover h-630 rounded-md" />
+        <img
+          src={testImg}
+          alt="Test"
+          className="bg-cover  lg:h-630 sm:h-470 rounded-md"
+        />
         <div className="fixed mr-8 bg-white rounded-full cursor-none">
           <div
             onMouseEnter={textEnter}

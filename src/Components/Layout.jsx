@@ -1,5 +1,4 @@
-// import { MenuBar, Footer } from "./index";
-import { MenuBar } from "./MenuBar";
+import { MenuBar } from "./MenuBar/MenuBar";
 import { Footer } from "./Footer";
 import { Outlet } from "react-router-dom";
 

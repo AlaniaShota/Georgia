@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { NavLinks } from "./index";
-import iconImg from "../assets/icon/pngwing.com.png";
+import iconImg from "../../assets/icon/pngwing.com.png";
 
 export const MenuBar = () => {
-  const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -16,12 +15,8 @@ export const MenuBar = () => {
       }
     };
     window.addEventListener("scroll", handleScroll);
-
-    //მაქვს ბაგი ვფიქრობ სქროლვის ბრალია სხვა ფეიჯზე გადასვილას დასქროლილ ადგილას მტოვებს
-    // return () => {
-    //   window.removeEventListener("scroll", handleScroll);
-    // };
   });
+
   return (
     <div
       className={`shadow-md fixed w-full top-0 px-6 py-3 flex  z-50 transition-colors duration-500 ease-in 
@@ -39,14 +34,6 @@ export const MenuBar = () => {
             GEORGIA
           </span>
         </Link>
-        <button onClick={() => setOpen(!open)}>
-          {/* <FontAwesomeIcon
-        //[object OBJECT] დასაფიქსია
-        icon={`${open} ? ${faXmark} : ${faBars}`}
-        size="lg"
-        color={"#3b82f6"}
-      /> */}
-        </button>
         <NavLinks scrolled={scrolled} />
       </div>
     </div>

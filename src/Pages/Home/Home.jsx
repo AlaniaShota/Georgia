@@ -44,7 +44,7 @@ function Card({ customComponent, isFirst }) {
 
   return (
     <motion.div
-      className={` ${isFirst ? "" : "scroll-py-40 my-20"}`}
+      className={` ${isFirst ? "" : " my-16"}`}
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.8 }}
@@ -58,15 +58,14 @@ const customComponentsData = [["A"], ["B"], ["C"], ["D"], ["E"]];
 
 export const Home = () => {
   return (
-    <div>
+    <>
       <Helmet>
-        {/* <meta charSet="utf-8" /> */}
         <title>Home</title>
       </Helmet>
       <>
         <MultiHeaderParallax />
       </>
-      <div className="lg:container sm:mx-8 lg:mx-0 ">
+      <div className="m-auto w-10/12">
         {customComponentsData.map(([componentType], index) => (
           <Card
             customComponent={componentType}
@@ -75,6 +74,6 @@ export const Home = () => {
           />
         ))}
       </div>
-    </div>
+    </>
   );
 };

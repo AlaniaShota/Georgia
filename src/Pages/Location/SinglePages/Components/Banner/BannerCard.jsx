@@ -36,7 +36,7 @@ export const BannerCard = ({ bannerData, openModal }) => {
 
   return (
     <>
-      <div ref={ref} className="grid grid-cols-3 gap-16 my-20">
+      <div ref={ref} className="grid grid-cols-3 lg:gap-6 sm:gap-5 my-20">
         {bannerData.map((item) => (
           <motion.div
             variants={cardVariants}
@@ -60,7 +60,7 @@ export const BannerCard = ({ bannerData, openModal }) => {
             <motion.img
               src={item.bgImg}
               alt="Georgia"
-              className={`object-cover drop-shadow-lg rounded-lg h-[480px] `}
+              className={`object-cover drop-shadow-lg rounded-lg lg:h-470 sm:h-auto `}
             />
             {hoveredIndex === item.id && (
               <motion.div

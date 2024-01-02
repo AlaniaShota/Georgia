@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "../../../../Components";
 
 export const ButtonViewMore = ({ setViewMore }) => {
@@ -20,9 +21,11 @@ export const ButtonTour = ({ closeModal }) => {
       <Button border margin="4" onClick={closeModal}>
         <span className="text-lg text-darkBlueText">CLOSE</span>
       </Button>
-      <Button border>
-        <span className="text-lg text-darkBlueText">PLANE TOUR</span>
-      </Button>
+      <Link to="/plane">
+        <Button border>
+          <span className="text-lg text-darkBlueText">PLANE TOUR</span>
+        </Button>
+      </Link>
     </>
   );
 };

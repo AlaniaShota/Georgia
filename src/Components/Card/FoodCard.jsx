@@ -39,14 +39,18 @@ export const FoodCard = ({ filterCuisine, title, description }) => {
       variants={cardVariants}
       initial={{ opacity: 0, y: 70 }}
       animate={cardAnimation}
-      className="grid grid-cols-3 my-20 gap-5 h-[480px] "
+      className="grid grid-cols-3 my-20 gap-5 "
     >
       <motion.div className="flex flex-col justify-between items-start cursor-default  bg-white">
-        <motion.h1 className="text-2xl font-bold ">{title}</motion.h1>
-        <motion.p className="text-lg font-light pr-8">{description}</motion.p>
+        <motion.h1 className="lg:text-2xl sm:text-lg font-bold ">
+          {title}
+        </motion.h1>
+        <motion.p className="lg:text-lg sm:text-base font-light py-3 pr-8">
+          {description}
+        </motion.p>
         <Link to="/library">
           <Button border>
-            <span className="font-medium text-lg text-darkBlueText">
+            <span className="font-medium lg:text-lg sm:text-base text-darkBlueText">
               EXPLORE MORE
             </span>
           </Button>
@@ -56,8 +60,8 @@ export const FoodCard = ({ filterCuisine, title, description }) => {
         .filter((item) => item.cuisine === filterCuisine)
         .slice(0, 2)
         .map((item) => (
-          <div key={item.id} className="flex">
-            <Link to={`/library/${item.id}`}>
+          <div key={item.id} className="flex ">
+            <Link to={`/library`}>
               <motion.img
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.9 }}

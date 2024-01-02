@@ -13,7 +13,7 @@ export function ExploreButton({ children }) {
   );
 }
 
-export function Button({ children, onClick, margin, border }) {
+export function Button({ children, onClick, margin, border, type }) {
   const marginStyle = margin ? `mr-${margin}` : "";
   const borderStyle = border
     ? `border border-middleBlueBorderColor hover:bg-middleBlueHoverColor rounded-md py-1 px-4`
@@ -25,6 +25,7 @@ export function Button({ children, onClick, margin, border }) {
       whileTap={{ scale: 0.9 }}
       transition={{ type: "spring", stiffness: 400, damping: 17 }}
       className={`${borderStyle} ${marginStyle}`}
+      type={type ? type : null}
       onClick={onClick}
     >
       {children}

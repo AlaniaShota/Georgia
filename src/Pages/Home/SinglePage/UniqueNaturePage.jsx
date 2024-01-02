@@ -46,7 +46,7 @@ export const UniqueNaturePage = () => {
         descriptionText={Land_First_Description}
         img={natureImg}
       />
-      <div className="my-20 lg:container sm:mx-8 lg:mx-0 ">
+      <div className="my-20 m-auto w-10/12">
         <div className="flex flex-col justify-center items-start mb-10 px-20">
           <h1 className="mb-6 text-3xl font-bold">{Land_Title}</h1>
           <img
