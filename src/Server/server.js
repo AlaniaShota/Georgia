@@ -836,12 +836,14 @@ createServer({
     server.create("guide", {
       id: 1,
       name: "Gianni Hyde-Chambers",
+      price: 800,
       email: "ghydechambers0@berkeley.edu",
       img: "/assets/Guide/alex-suprun-ZHvM3XIOHoE-unsplash.jpg",
       recommended: [
         {
           id: 1,
           link: "samegrelo-zemo-svaneti",
+          name: "Samegrelo Zemo Svaneti",
           img: [
             "/assets/location/mestia.jpg",
             "/assets/location/Zugdidi-town-center.jpg",
@@ -855,6 +857,7 @@ createServer({
         {
           id: 2,
           link: "racha-lechkumi-kvemo-svaneti",
+          name: "Racha Lechkumi Kvemo Svaneti",
           img: [
             "/assets/location/Tsageri.jpg",
             "/assets/location/Shovi.jpg",
@@ -869,32 +872,42 @@ createServer({
       comments: [
         {
           id: 1,
-          name: "Liam Hughes",
-          description:
-            "Focused on eco-tourism, exploring Georgia's pristine nature reserves.",
+          name: "David Carter",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Focused on adventurous tours through Georgia's rugged mountainous regions.",
         },
         {
           id: 2,
-          name: "Ella Thompson",
-          description:
-            "Expert in showcasing Georgia's diverse wildlife and natural habitats.",
+          name: "Emma Foster",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Expert in showcasing the spiritual essence of Georgian culture.",
         },
         {
           id: 3,
-          name: "Ava Turner",
-          description:
-            "Passionate about sharing the art and culture of Georgian wineries.",
+          name: "Liam Hughes",
+          country: "Indonesia",
+          countryImg: "/assets/hotel/Id.png",
+          comment:
+            "Passionate about sustainability and preserving Georgia's ecosystems.",
         },
         {
           id: 4,
-          name: "Noah Patel",
-          description:
-            "Expert in historical tours, uncovering Georgia's architectural marvels.",
+          name: "Ava Turner",
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
+            "Passionate about sharing the art and culture of Georgian wineries.",
         },
         {
           id: 5,
           name: "Mia Lewis",
-          description:
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
             "Focused on adventurous expeditions to Georgia's remote natural wonders.",
         },
       ],
@@ -906,6 +919,7 @@ createServer({
     server.create("guide", {
       id: 2,
       name: "Cassaundra Conklin",
+      price: 700,
       email: "cconklin1@epa.gov",
       gender: "Female",
       img: "/assets/Guide/photo-1605993439219-9d09d2020fa5.jpg",
@@ -914,6 +928,7 @@ createServer({
         {
           id: 1,
           link: "shida-kartli",
+          name: "Shida Kartli",
           img: [
             "/assets/location/Kaspi.jpg",
             "/assets/location/Gori.jpg",
@@ -927,6 +942,7 @@ createServer({
         {
           id: 2,
           link: "mtskheta-mtianeti",
+          name: "Mtskheta Mtianeti",
           img: [
             "/assets/location/Stepantsminda.jpg",
             "/assets/location/Shatili.jpg",
@@ -942,32 +958,42 @@ createServer({
       comments: [
         {
           id: 1,
-          name: "Alice Thompson",
-          description:
-            "A journey through Georgia`s history, breathtaking and awe-inspiring!",
+          name: "David Carter",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Focused on adventurous tours through Georgia's rugged mountainous regions.",
         },
         {
           id: 2,
-          name: "David Roberts",
-          description:
-            "Passionate about revealing Georgia's hidden treasures and local traditions.",
+          name: "Emma Foster",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Expert in showcasing the spiritual essence of Georgian culture.",
         },
         {
           id: 3,
-          name: "David Roberts",
-          description:
-            "Passionate about revealing Georgia's hidden treasures and local traditions.",
+          name: "Liam Hughes",
+          country: "Indonesia",
+          countryImg: "/assets/hotel/Id.png",
+          comment:
+            "Passionate about sustainability and preserving Georgia's ecosystems.",
         },
         {
           id: 4,
-          name: "Alex Parker",
-          description:
-            "Specialized in immersive tours through Georgia's diverse landscapes.",
+          name: "Ava Turner",
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
+            "Passionate about sharing the art and culture of Georgian wineries.",
         },
         {
           id: 5,
           name: "Mia Lewis",
-          description:
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
             "Focused on adventurous expeditions to Georgia's remote natural wonders.",
         },
       ],
@@ -987,6 +1013,7 @@ createServer({
     server.create("guide", {
       id: 4,
       name: "Archibaldo O'Neary",
+      price: 900,
       email: "aoneary3@addthis.com",
       gender: "Male",
       img: "/assets/Guide/photo-1528892952291-009c663ce843.avif",
@@ -994,6 +1021,7 @@ createServer({
         {
           id: 1,
           link: "tbilisi",
+          name: "Tbilisi",
           img: [
             "/assets/location/Parks&Gardens.jpg",
             "/assets/location/FineDiningDrinking&Nightlife.jpg",
@@ -1007,6 +1035,7 @@ createServer({
         {
           id: 2,
           link: "samtskhe-javakheti",
+          name: "Samtskhe Javakheti",
           img: [
             "/assets/location/Akhaltsikhe.jpg",
             "/assets/location/Borjomi.jpg",
@@ -1021,32 +1050,42 @@ createServer({
       comments: [
         {
           id: 1,
-          name: "Alice Thompson",
-          description:
-            "A journey through Georgia`s history, breathtaking and awe-inspiring!",
+          name: "David Carter",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Focused on adventurous tours through Georgia's rugged mountainous regions.",
         },
         {
           id: 2,
-          name: "David Roberts",
-          description:
-            "Passionate about revealing Georgia's hidden treasures and local traditions.",
+          name: "Emma Foster",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Expert in showcasing the spiritual essence of Georgian culture.",
         },
         {
           id: 3,
-          name: "David Roberts",
-          description:
-            "Passionate about revealing Georgia's hidden treasures and local traditions.",
+          name: "Liam Hughes",
+          country: "Indonesia",
+          countryImg: "/assets/hotel/Id.png",
+          comment:
+            "Passionate about sustainability and preserving Georgia's ecosystems.",
         },
         {
           id: 4,
-          name: "Alex Parker",
-          description:
-            "Specialized in immersive tours through Georgia's diverse landscapes.",
+          name: "Ava Turner",
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
+            "Passionate about sharing the art and culture of Georgian wineries.",
         },
         {
           id: 5,
           name: "Mia Lewis",
-          description:
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
             "Focused on adventurous expeditions to Georgia's remote natural wonders.",
         },
       ],
@@ -1058,12 +1097,14 @@ createServer({
       id: 5,
       name: "Cam Jermin",
       email: "cjermin4@boston.com",
+      price: 700,
       gender: "Female",
       img: "/assets/Guide/photo-1546961329-78bef0414d7c.avif",
       recommended: [
         {
           id: 1,
           link: "imereti",
+          name: "Imereti",
           img: [
             "/assets/location/kutaisi-gnta.webp",
             "/assets/location/Tskaltubo.webp",
@@ -1077,6 +1118,7 @@ createServer({
         {
           id: 2,
           link: "ajara",
+          name: "Ajara",
           img: [
             "/assets/location/Kobuleti.jpg",
             "/assets/location/Sarpi.jpg",
@@ -1091,32 +1133,42 @@ createServer({
       comments: [
         {
           id: 1,
-          name: "Sophie Bennett",
-          description:
-            "Experienced guide exploring Georgia's ancient sites and architectural wonders",
+          name: "David Carter",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Focused on adventurous tours through Georgia's rugged mountainous regions.",
         },
         {
           id: 2,
-          name: "Lucas Morgan",
-          description:
-            "Expert in introducing travelers to Georgia's picturesque countryside.",
+          name: "Emma Foster",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Expert in showcasing the spiritual essence of Georgian culture.",
         },
         {
           id: 3,
-          name: "David Roberts",
-          description:
-            "Passionate about sharing the beauty of Georgian cultural traditions.",
+          name: "Liam Hughes",
+          country: "Indonesia",
+          countryImg: "/assets/hotel/Id.png",
+          comment:
+            "Passionate about sustainability and preserving Georgia's ecosystems.",
         },
         {
           id: 4,
-          name: "Alex Parker",
-          description:
-            "Focused on guiding through Georgia's vibrant cities and bustling markets.",
+          name: "Ava Turner",
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
+            "Passionate about sharing the art and culture of Georgian wineries.",
         },
         {
           id: 5,
           name: "Mia Lewis",
-          description:
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
             "Focused on adventurous expeditions to Georgia's remote natural wonders.",
         },
       ],
@@ -1127,6 +1179,7 @@ createServer({
     server.create("guide", {
       id: 6,
       name: "Lexie McFade",
+      price: 500,
       email: "lmcfade5@tinypic.com",
       gender: "Female",
       img: "/assets/Guide/photo-1438761681033-6461ffad8d80.avif",
@@ -1134,6 +1187,7 @@ createServer({
         {
           id: 1,
           link: "samegrelo-zemo-svaneti",
+          name: "Samegrelo Zemo Svaneti",
           img: [
             "/assets/location/mestia.jpg",
             "/assets/location/Zugdidi-town-center.jpg",
@@ -1147,6 +1201,7 @@ createServer({
         {
           id: 2,
           link: "racha-lechkumi-kvemo-svaneti",
+          name: "Racha Lechkumi Kvemo Svaneti",
           img: [
             "/assets/location/Tsageri.jpg",
             "/assets/location/Shovi.jpg",
@@ -1162,32 +1217,42 @@ createServer({
       comments: [
         {
           id: 1,
-          name: "Sophie Bennett",
-          description:
-            "Specialized in cultural immersion tours, unveiling Georgia's local life.",
+          name: "David Carter",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Focused on adventurous tours through Georgia's rugged mountainous regions.",
         },
         {
           id: 2,
-          name: "Ella Thompson",
-          description:
-            "Expert in showcasing the flavors and culinary delights of Georgia.",
+          name: "Emma Foster",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Expert in showcasing the spiritual essence of Georgian culture.",
         },
         {
           id: 3,
-          name: "David Roberts",
-          description:
-            "Passionate about introducing visitors to Georgia's outdoor adventures.",
+          name: "Liam Hughes",
+          country: "Indonesia",
+          countryImg: "/assets/hotel/Id.png",
+          comment:
+            "Passionate about sustainability and preserving Georgia's ecosystems.",
         },
         {
           id: 4,
-          name: "Emma Foster",
-          description:
-            "Expert in showcasing the spiritual essence of Georgian culture",
+          name: "Ava Turner",
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
+            "Passionate about sharing the art and culture of Georgian wineries.",
         },
         {
           id: 5,
           name: "Mia Lewis",
-          description:
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
             "Focused on adventurous expeditions to Georgia's remote natural wonders.",
         },
       ],
@@ -1204,6 +1269,7 @@ createServer({
         {
           id: 1,
           link: "shida-kartli",
+          name: "Shida Kartli",
           img: [
             "/assets/location/Kaspi.jpg",
             "/assets/location/Gori.jpg",
@@ -1217,6 +1283,7 @@ createServer({
         {
           id: 2,
           link: "mtskheta-mtianeti",
+          name: "Mtskheta Mtianeti",
           img: [
             "/assets/location/Stepantsminda.jpg",
             "/assets/location/Shatili.jpg",
@@ -1231,36 +1298,47 @@ createServer({
       comments: [
         {
           id: 1,
-          name: "Liam Hughes",
-          description:
-            "Focused on eco-tourism, exploring Georgia's pristine nature reserves.",
+          name: "David Carter",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Focused on adventurous tours through Georgia's rugged mountainous regions.",
         },
         {
           id: 2,
-          name: "Ella Thompson",
-          description:
-            "Expert in showcasing Georgia's diverse wildlife and natural habitats.",
+          name: "Emma Foster",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Expert in showcasing the spiritual essence of Georgian culture.",
         },
         {
           id: 3,
-          name: "Ava Turner",
-          description:
-            "Passionate about sharing the art and culture of Georgian wineries.",
+          name: "Liam Hughes",
+          country: "Indonesia",
+          countryImg: "/assets/hotel/Id.png",
+          comment:
+            "Passionate about sustainability and preserving Georgia's ecosystems.",
         },
         {
           id: 4,
-          name: "Noah Patel",
-          description:
-            "Expert in historical tours, uncovering Georgia's architectural marvels.",
+          name: "Ava Turner",
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
+            "Passionate about sharing the art and culture of Georgian wineries.",
         },
         {
           id: 5,
           name: "Mia Lewis",
-          description:
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
             "Focused on adventurous expeditions to Georgia's remote natural wonders.",
         },
       ],
       status: true,
+      price: 500,
       description:
         "Immerse yourself in Georgia's vibrant art scene with a guide who showcases the country's contemporary and traditional artistic expressions. Visit galleries, street art hotspots, and engage with local artists, uncovering the creative pulse of Georgia.",
     });
@@ -1274,6 +1352,7 @@ createServer({
         {
           id: 1,
           link: "kakheti",
+          name: "Kakheti",
           img: [
             "/assets/location/telavi.jpg",
             "/assets/location/Lagodekhi.jpg",
@@ -1287,6 +1366,7 @@ createServer({
         {
           id: 2,
           link: "kvemo-kartli",
+          name: "Kvemo Kartli",
           img: [
             "/assets/location/Tsalka.jpg",
             "/assets/location/tetritskaro-gnta.webp",
@@ -1301,36 +1381,47 @@ createServer({
       comments: [
         {
           id: 1,
-          name: "Noah Patel",
-          description:
-            "Focused on exploring Georgia's vibrant art scene and cultural heritage.",
+          name: "David Carter",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Focused on adventurous tours through Georgia's rugged mountainous regions.",
         },
         {
           id: 2,
-          name: "Isabella Chang",
-          description:
-            "Experienced in showcasing Georgia's rural life and traditional villages.",
+          name: "Emma Foster",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Expert in showcasing the spiritual essence of Georgian culture.",
         },
         {
           id: 3,
-          name: "Mia Lewis",
-          description:
-            "Specialized in immersive experiences, unveiling Georgia's local customs.",
+          name: "Liam Hughes",
+          country: "Indonesia",
+          countryImg: "/assets/hotel/Id.png",
+          comment:
+            "Passionate about sustainability and preserving Georgia's ecosystems.",
         },
         {
           id: 4,
-          name: "Ethan O'Connor",
-          description:
-            "Passionate about revealing Georgia's off-the-beaten-path cultural gems.",
+          name: "Ava Turner",
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
+            "Passionate about sharing the art and culture of Georgian wineries.",
         },
         {
           id: 5,
           name: "Mia Lewis",
-          description:
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
             "Focused on adventurous expeditions to Georgia's remote natural wonders.",
         },
       ],
       status: true,
+      price: 700,
       description:
         "Embark on a spiritual journey with a guide who reveals the sacred treasures of Georgian monasteries. From mountain retreats to UNESCO-listed sites, witness the architectural beauty and profound religious significance embedded in Georgia's monastic heritage.",
     });
@@ -1344,6 +1435,7 @@ createServer({
         {
           id: 1,
           link: "tbilisi",
+          name: "Tbilisi",
           img: [
             "/assets/location/Parks&Gardens.jpg",
             "/assets/location/FineDiningDrinking&Nightlife.jpg",
@@ -1357,6 +1449,7 @@ createServer({
         {
           id: 2,
           link: "samtskhe-javakheti",
+          name: "Samtskhe Javakheti",
           img: [
             "/assets/location/Akhaltsikhe.jpg",
             "/assets/location/Borjomi.jpg",
@@ -1371,36 +1464,47 @@ createServer({
       comments: [
         {
           id: 1,
-          name: "Mia Lewis",
-          description:
-            "Focused on adventurous expeditions to Georgia's remote natural wonders.",
+          name: "David Carter",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Focused on adventurous tours through Georgia's rugged mountainous regions.",
         },
         {
           id: 2,
-          name: "Oliver Wright",
-          description:
-            "Experienced in leading tours through Georgia's bustling urban centers.",
+          name: "Emma Foster",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Expert in showcasing the spiritual essence of Georgian culture.",
         },
         {
           id: 3,
-          name: "Chloe Brooks",
-          description:
-            "Focused on coastal tours, exploring the uniqueness of Georgian coastlines.",
+          name: "Liam Hughes",
+          country: "Indonesia",
+          countryImg: "/assets/hotel/Id.png",
+          comment:
+            "Passionate about sustainability and preserving Georgia's ecosystems.",
         },
         {
           id: 4,
-          name: "Jackie Nguyen",
-          description:
-            "Specialized in showcasing Georgia's lively music and cultural events.",
+          name: "Ava Turner",
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
+            "Passionate about sharing the art and culture of Georgian wineries.",
         },
         {
           id: 5,
           name: "Mia Lewis",
-          description:
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
             "Focused on adventurous expeditions to Georgia's remote natural wonders.",
         },
       ],
       status: true,
+      price: 900,
       description:
         "Escape to the countryside with a guide who introduces you to the tranquility of Georgian villages. Experience rural life, partake in local traditions, and enjoy the breathtaking landscapes that define the charm of Georgia's pastoral regions.",
     });
@@ -1414,6 +1518,7 @@ createServer({
         {
           id: 1,
           link: "imereti",
+          name: "Imereti",
           img: [
             "/assets/location/kutaisi-gnta.webp",
             "/assets/location/Tskaltubo.webp",
@@ -1427,6 +1532,7 @@ createServer({
         {
           id: 2,
           link: "ajara",
+          name: "Ajara",
           img: [
             "/assets/location/Kobuleti.jpg",
             "/assets/location/Sarpi.jpg",
@@ -1441,36 +1547,47 @@ createServer({
       comments: [
         {
           id: 1,
-          name: "Alex Parker",
-          description:
-            "Passionate about revealing Georgia's hidden treasures and local traditions.",
+          name: "David Carter",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Focused on adventurous tours through Georgia's rugged mountainous regions.",
         },
         {
           id: 2,
-          name: "Sophie Bennett",
-          description:
-            "Passionate about sharing the beauty of Georgian cultural traditions.",
+          name: "Emma Foster",
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
+            "Expert in showcasing the spiritual essence of Georgian culture.",
         },
         {
           id: 3,
-          name: "Lucas Morgan",
-          description:
-            "Expert in showcasing the flavors and culinary delights of Georgia.",
+          name: "Liam Hughes",
+          country: "Indonesia",
+          countryImg: "/assets/hotel/Id.png",
+          comment:
+            "Passionate about sustainability and preserving Georgia's ecosystems.",
         },
         {
           id: 4,
-          name: "Ella Thompson",
-          description:
-            "Experienced in revealing Georgia's historic narratives and ancient ruins.",
+          name: "Ava Turner",
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
+            "Passionate about sharing the art and culture of Georgian wineries.",
         },
         {
           id: 5,
           name: "Mia Lewis",
-          description:
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
             "Focused on adventurous expeditions to Georgia's remote natural wonders.",
         },
       ],
       status: true,
+      price: 800,
       description:
         "Embark on a culinary odyssey with a guide who navigates you through the diverse flavors of Georgia's regional cuisines. From Svaneti to Kakheti, savor unique dishes and learn about the cultural significance of Georgian gastronomy.",
     });
@@ -1484,6 +1601,7 @@ createServer({
         {
           id: 1,
           link: "samegrelo-zemo-svaneti",
+          name: "Samegrelo Zemo Svaneti",
           img: [
             "/assets/location/mestia.jpg",
             "/assets/location/Zugdidi-town-center.jpg",
@@ -1497,6 +1615,7 @@ createServer({
         {
           id: 2,
           link: "racha-lechkumi-kvemo-svaneti",
+          name: "Racha Lechkumi Kvemo Svaneti",
           img: [
             "/assets/location/Tsageri.jpg",
             "/assets/location/Shovi.jpg",
@@ -1512,35 +1631,46 @@ createServer({
         {
           id: 1,
           name: "David Carter",
-          description:
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
             "Focused on adventurous tours through Georgia's rugged mountainous regions.",
         },
         {
           id: 2,
           name: "Emma Foster",
-          description:
+          country: "Australia",
+          countryImg: "/assets/hotel/Au.png",
+          comment:
             "Expert in showcasing the spiritual essence of Georgian culture.",
         },
         {
           id: 3,
           name: "Liam Hughes",
-          description:
+          country: "Indonesia",
+          countryImg: "/assets/hotel/Id.png",
+          comment:
             "Passionate about sustainability and preserving Georgia's ecosystems.",
         },
         {
           id: 4,
           name: "Ava Turner",
-          description:
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
             "Passionate about sharing the art and culture of Georgian wineries.",
         },
         {
           id: 5,
           name: "Mia Lewis",
-          description:
+          country: "Qatar",
+          countryImg: "/assets/hotel/Qa.png",
+          comment:
             "Focused on adventurous expeditions to Georgia's remote natural wonders.",
         },
       ],
       status: true,
+      price: 900,
       description:
         "Discover the 'Balcony of Europe' – Borjomi – with a guide who leads you through lush landscapes, mineral springs, and the historical heart of this spa town. Uncover the rejuvenating secrets and cultural significance of this Georgian gem.",
     });
@@ -4835,6 +4965,7 @@ createServer({
       id: 1,
       date: new Date(),
       name: "Babaneuris Marani",
+      type: "Restaurant",
       location: "village babaneuri, 0909 Babaneuri",
       link: "kakheti",
       firstDescription:
@@ -4882,7 +5013,7 @@ createServer({
         {
           id: 3,
           name: "Kimmo",
-          country: "Finland",
+          country: "United States of America",
           countryImg: "/assets/hotel/Us.png",
           comment:
             "Good food, exceptional wine, good service, nice pool, cleanliness, good-sized rooms. Friendly dog, very interesting insight into the qvevri process.",
@@ -4950,6 +5081,7 @@ createServer({
       date: new Date(),
       name: "Kundzuli",
       location: "Ilia Lake Road, 4800 Kvareli",
+      type: "Popular",
       link: "kakheti",
       firstDescription:
         "A good location for a relaxing holiday in Kvareli, Kundzuli is an apartment surrounded by views of the lake. The property features a private beach area, bar, and parking on-site among other facilities. This apartment offers air-conditioned accommodations with a balcony. When staying at the apartment, guests can use private entrance. At the apartment complex, units include a desk. Accommodation includes a terrace with mountain views, a fully equipped kitchen, an outdoor dining area, and a private bathroom with shower. At the apartment complex, the units come with bed linen and towels.",
@@ -4986,6 +5118,7 @@ createServer({
       id: 5,
       date: new Date(),
       name: "WOOD HOUSE LAGODEKHI",
+      type: "Popular",
       location: "125 Vashlovani St, Lagodekhi 2700",
       link: "kakheti",
       firstDescription:
@@ -5091,6 +5224,8 @@ createServer({
     server.create("hotel", {
       id: 7,
       date: new Date(),
+      popular: true,
+      type: "Popular",
       name: "House & Yard Sesil",
       location: "kaprovani hotel sesil 1, 3522",
       link: "guria",
@@ -5145,6 +5280,8 @@ createServer({
       id: 8,
       date: new Date(),
       name: "Pine Aparthotel",
+      type: "Popular",
+      popular: true,
       location: "Shekvetili(kaprovani), Shekvetili,",
       link: "guria",
       firstDescription:
@@ -5347,6 +5484,8 @@ createServer({
       id: 12,
       date: new Date(),
       name: "Gori Apartments",
+      type: "Popular",
+      popular: true,
       location: "Petre Bagrationi Street #74, 1400",
       link: "shida-kartli",
       firstDescription:
@@ -5563,7 +5702,7 @@ createServer({
         "Set 500 metres from Colchis Fountain and 1.2 km from Kutaisi Train Station, Our Apartment in Kutaisi offers air-conditioned accommodation with views of the river and free WiFi. The property has city and inner courtyard views, and is 1.4 km from Bagrati Cathedral. The property offers soundproof units and is located 500 metres from White Bridge.",
       secondDescription:
         "The apartment provides guests with a balcony, mountain views, a seating area, a flat-screen TV, a fully equipped kitchen with an oven and a microwave, and a private bathroom with bidet and slippers. Guests can have wine or champagne, fruits and chocolates or cookies delivered to their room. At the apartment complex, units are equipped with bed linen and towels.",
-      img: "/assets/hotel/490213940.jpg",
+      img: "/assets/hotel/299418653.jpg",
       price: 85,
       facilities: [
         "Non-smoking rooms",
@@ -5609,6 +5748,8 @@ createServer({
       id: 17,
       date: new Date(),
       name: "Orbi ",
+      type: "Popular",
+      popular: true,
       location: "21a Tsereteli Street, 4600",
       link: "ajara",
       firstDescription:
@@ -5665,6 +5806,7 @@ createServer({
       id: 18,
       date: new Date(),
       name: "Barakah Apartmets Batumi",
+      type: "Popular Restaurant",
       location: "Sherif Khimshiashvili Street, 6000 ",
       link: "ajara",
       firstDescription:
@@ -5721,6 +5863,7 @@ createServer({
       id: 19,
       date: new Date(),
       name: "JRW Welmond",
+      type: "Popular",
       location: "Shavsheti Street 2/4, 6010 ",
       link: "ajara",
       firstDescription:
@@ -5923,6 +6066,7 @@ createServer({
       id: 23,
       date: new Date(),
       name: "Karse",
+      type: "Restaurant",
       location: "Village Sadmeli, 0410 ",
       link: "racha-lechkumi-kvemo-svaneti",
       firstDescription:
@@ -5978,6 +6122,7 @@ createServer({
     server.create("hotel", {
       id: 24,
       date: new Date(),
+      type: "Restaurant",
       name: "Crystal Hotel & SPA",
       location: "Didveli Funicular Railway, 1204 ",
       link: "samtskhe-javakheti",
@@ -6039,6 +6184,7 @@ createServer({
       id: 25,
       date: new Date(),
       name: "Bakuriani Inn",
+      type: "Popular",
       location: "12 Tsakadze street, 1204 ",
       link: "samtskhe-javakheti",
       firstDescription:
@@ -6099,6 +6245,7 @@ createServer({
       id: 26,
       date: new Date(),
       name: "Borjomi Likani Health & Spa Centre",
+      type: "Popular",
       location: "Meskheti Street 16, 1200",
       link: "samtskhe-javakheti",
       firstDescription:
@@ -6159,6 +6306,7 @@ createServer({
       id: 27,
       date: new Date(),
       name: "LETO",
+      type: "Restaurant",
       location: "31 Zviad Gamsakhurdia Avenue, 2100",
       link: "samegrelo-zemo-svaneti",
       firstDescription:
@@ -6226,7 +6374,7 @@ createServer({
         "Located in Mestia, 1.8 km from Museum of History and Ethnography, Gistola Hotel Mestia provides accommodation with a shared lounge, free private parking, a terrace and a restaurant. Each accommodation at the 4-star hotel has mountain views, and guests can enjoy access to a children's playground and to an indoor pool. The accommodation features a 24-hour front desk, airport transfers, room service and free WiFi throughout the property.",
       secondDescription:
         "Guest rooms are equipped with a flat-screen TV with satellite channels, fridge, a kettle, a bidet, free toiletries and a desk. Featuring a private bathroom with a shower and a hairdryer, rooms at the hotel also offer a city view. All guest rooms include a safety deposit box. A buffet breakfast is available daily at Gistola Hotel Mestia.",
-      img: "/assets/hotel/201208337.jpg",
+      img: "/assets/hotel/301797213.jpg",
       price: 450,
       facilities: [
         "Indoor swimming pool",
@@ -6278,6 +6426,7 @@ createServer({
       id: 29,
       date: new Date(),
       name: "Hotel Posta",
+      type: "Restaurant",
       location: "Seti Square, 3200 ",
       link: "samegrelo-zemo-svaneti",
       firstDescription:
@@ -6339,6 +6488,7 @@ createServer({
       id: 30,
       date: new Date(),
       name: "Grand Hotel",
+      type: "Restaurant",
       location: "35 Gamsakhurdia Street, 2100",
       link: "samegrelo-zemo-svaneti",
       firstDescription:
@@ -6387,6 +6537,7 @@ createServer({
       id: 31,
       date: new Date(),
       name: "Hotel Late",
+      type: "Restaurant",
       location: "Javaxishvili st 1, 3300",
       link: "mtskheta-mtianeti",
       firstDescription:
@@ -6478,15 +6629,15 @@ createServer({
     server.create("hotel", {
       id: 33,
       date: new Date(),
-      name: "Guest house Ebralidze",
-      location: "Merab Kostava Street 37, 3300 ",
+      name: "La Home",
+      location: " Kostava Street 2, 3300",
       link: "mtskheta-mtianeti",
       firstDescription:
-        "Featuring mountain views, Guest house Ebralidze offers accommodation with balcony, around 20 km from Medical University Metro Station. The property has garden and city views, and is 24 km from Tbilisi Opera and Ballet Theatre. Boasting family rooms, this property also provides guests with a sun terrace.",
+        "Offering a garden and lake view, La Home is located in Mtskheta, 23 km from Tbilisi Opera and Ballet Theatre and 24 km from Rustaveli Theatre. The air-conditioned accommodation is 20 km from Medical University Metro Station, and guests can benefit from private parking available on site and free WiFi. The guest house features family rooms.",
       secondDescription:
-        "The air-conditioned units have a fully equipped kitchenette with dining area, a fridge, kettle, and a minibar. Featuring a private bathroom with a bath and slippers, units at the guest house also have free WiFi. At the guest house, the units have bed linen and towels.",
-      img: "/assets/hotel/332266611.jpg",
-      price: 55,
+        "The guest house provides guests with a balcony, mountain views, a seating area, a flat-screen TV, a fully equipped kitchen with an oven and a microwave, and a private bathroom with shower and a hair dryer. A toaster, a fridge and kitchenware are also featured, as well as a coffee machine and a kettle. At the guest house, the units are equipped with bed linen and towels.",
+      img: "/assets/hotel/355501487.jpg",
+      price: 65,
       facilities: [
         "Non-smoking rooms",
         "Tea/coffee maker in all rooms",
@@ -6495,11 +6646,11 @@ createServer({
         "Family rooms",
       ],
       imgLibrary: [
-        "/assets/hotel/332266928.jpg",
-        "/assets/hotel/330868597.jpg",
-        "/assets/hotel/330733595.jpg",
-        "/assets/hotel/478807079.jpg",
-        "/assets/hotel/478807230.jpg",
+        "/assets/hotel/376058884.jpg",
+        "/assets/hotel/376058225.jpg",
+        "/assets/hotel/362806850.jpg",
+        "/assets/hotel/352453606.jpg",
+        "/assets/hotel/361353952.jpg",
       ],
       comments: [
         {
@@ -6602,6 +6753,11 @@ createServer({
     this.get("/guides/:id", (schema, request) => {
       const id = request.params.id;
       return schema.guides.find(id);
+    });
+
+    this.get("/hotels/:id", (schema, request) => {
+      const id = request.params.id;
+      return schema.hotels.find(id);
     });
 
     // this.get("/restaurants/:contact", (schema, request) => {

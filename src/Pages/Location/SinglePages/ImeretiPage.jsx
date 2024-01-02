@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { FoodCard, Header } from "../../../Components";
+import { Header } from "../../../Components";
 import { ButtonViewMore, Tour, PopularPlace, Banner } from "./Components/index";
-import {
-  Cuisine_Imereti_Title,
-  Cuisine_Imereti_Description,
-} from "../constant";
 import { useLocationStore } from "../../../Store/store";
 
 export const ImeretiPage = () => {
@@ -30,8 +26,8 @@ export const ImeretiPage = () => {
             descriptionText={item.title_Description}
             img={item.title_Img}
           />
-          <div className="lg:container sm:mx-8 lg:mx-0 ">
-            <div className="flex flex-col my-20 px-40">
+          <div className="m-auto w-10/12">
+            <div className="flex flex-col my-20 px-20">
               <h1 className="text-3xl mb-6 font-semibold">
                 {item.major_Title}
               </h1>
@@ -104,11 +100,6 @@ export const ImeretiPage = () => {
               </div>
             </div>
             <Tour tourData={item.tour} />
-            <FoodCard
-              title={Cuisine_Imereti_Title}
-              description={Cuisine_Imereti_Description}
-              filterCuisine={"Imereti"}
-            />
             <Banner bannerData={item.topExperiences} />
             <PopularPlace placeData={item.popular} />
           </div>

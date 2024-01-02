@@ -3,16 +3,17 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Things_To_Do_Title, Things_To_Do_Description } from "../constant";
+import { useMapStore } from "../../../Store/store";
 
 export const GeorgiaMap = () => {
-  const [place, setPlace] = useState([]);
   const [popover, setPopover] = useState(null);
 
+  const { maps = [] } = useMapStore((state) => state.maps);
+  const fetchMaps = useMapStore((state) => state.fetchMaps);
+
   useEffect(() => {
-    fetch("/api/maps")
-      .then((res) => res.json())
-      .then((data) => setPlace(data.maps));
-  }, []);
+    fetchMaps();
+  }, [fetchMaps]);
 
   const handleMouseOve = (event, itemName, itemImg) => {
     setPopover({
@@ -68,7 +69,7 @@ export const GeorgiaMap = () => {
             viewBox="0 0 1000 512"
             xmlns="http://www.w3.org/2000/svg"
           >
-            {place.map((item) => (
+            {maps.map((item) => (
               <Link to={item.link} key={item.id}>
                 <motion.path
                   key={item.id}

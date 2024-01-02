@@ -1,13 +1,12 @@
 import { useState } from "react";
 import { Button } from "../../../../Components";
-import { useSearchParams } from "react-router-dom";
 
 export const FoodCard = ({ foods, openModal, categoryFilter }) => {
   const loadMoreContentCount = 15;
   const [next, setNext] = useState(loadMoreContentCount);
 
   const displayedTraditionalFood = categoryFilter
-    ? foods.filter((van) => van.type === categoryFilter)
+    ? foods.filter((item) => item.type === categoryFilter)
     : foods;
 
   const handleMoreItem = () => {

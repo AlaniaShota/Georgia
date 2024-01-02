@@ -1,0 +1,11 @@
+export { AjaraPage } from "./AjaraPage";
+export { GuriaPage } from "./GuriaPage";
+export { ImeretiPage } from "./ImeretiPage";
+export { KakhetiPage } from "./KakhetiPage";
+export { KvemoKartliPage } from "./KvemoKartliPage";
+export { MtskhetaMtianetiPage } from "./MtskhetaMtianetiPage";
+export { RachaLechkhumiKvemoSvanetiPage } from "./RachaLechkhumiKvemoSvanetiPage";
+export { SamegreloZemoSvanetiPage } from "./SamegreloZemoSvanetiPage";
+export { SamtskheJavakhetiPage } from "./SamtskheJavakhetiPage";
+export { ShidaKartliPage } from "./ShidaKartliPage";
+export { TbilisiPage } from "./TbilisiPage";

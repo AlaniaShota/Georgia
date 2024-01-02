@@ -2,11 +2,11 @@ import { Header } from "../../Components";
 import {
   GeorgiaMap,
   LocationCard,
+  Recommendation,
   SeasonDisplay,
 } from "../Location/Components/index";
 import { Location_Description, Location_Title } from "./constant";
 import locationImg from "../../assets/location/georgia-roadtrip-tbilisi_3x2.avif";
-import { RecommendationCard } from "./Components/RecommendationCard";
 
 export const Location = () => {
   return (
@@ -18,11 +18,11 @@ export const Location = () => {
         img={locationImg}
       />
 
-      <div className="lg:container sm:mx-8 lg:mx-0 cursor-default">
+      <div className="m-auto w-10/12 cursor-default">
         <SeasonDisplay />
         <GeorgiaMap />
         <LocationCard />
-        <RecommendationCard />
+        <Recommendation />
       </div>
     </>
   );

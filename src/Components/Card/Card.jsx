@@ -13,10 +13,12 @@ export const Card = ({ data, title, description }) => {
 
   return (
     <>
-      <div className="flex flex-col my-20">
-        <h1 className="text-3xl font-semibold ">{title}</h1>
-        <p className="text-lg font-light py-3 ">{description}</p>
-        <div className="grid grid-cols-3 gap-16 mt-5">
+      <div className="flex flex-col my-20 ">
+        <h1 className="lg:text-3xl sm:text-lg font-semibold ">{title}</h1>
+        <p className="lg:text-lg sm:text-base font-light py-3 ">
+          {description}
+        </p>
+        <div className="grid grid-cols-3 lg:gap-10 sm:gap-5 mt-5">
           {data.slice(0, next).map((item) => (
             <div
               key={item.id}
@@ -26,10 +28,10 @@ export const Card = ({ data, title, description }) => {
                 src={item.img}
                 alt={item.name}
                 loading="lazy"
-                className="rounded-t-md object-cover w-full h-52"
+                className="rounded-t-md object-cover w-full lg:h-48 sm:h-36"
               />
-              <div className="grid grid-cols-3  p-4">
-                <div className="col-span-2">
+              <div className="grid grid-cols-3 lg:p-4 sm:p-2 ">
+                <div className="lg:col-span-2 sm:col-span-3">
                   {item.name ? (
                     <h1 className="text-lg font-semibold">{item.name}</h1>
                   ) : null}
@@ -37,12 +39,12 @@ export const Card = ({ data, title, description }) => {
                     {item.location}
                   </p>
                 </div>
-                <div className=" col-span-1 items-center">
+                <div className=" col-span-1">
                   {item.visit ? (
                     <Link
                       to={item.visit}
                       target="_blank"
-                      className="flex justify-end items-end mt-6"
+                      className="flex justify-end items-end lg:mt-6 sm:mt-1"
                     >
                       <Button>
                         <span className="text-darkBlueText font-medium">
@@ -64,16 +66,22 @@ export const Card = ({ data, title, description }) => {
                     </Link>
                   ) : null}
                   {item.link ? (
-                    <Link
-                      to={`/location/${item.link}`}
-                      className="flex justify-end items-center my-1"
-                    >
-                      <Button>
-                        <span className=" text-darkBlueText font-medium">
-                          Location
-                        </span>
-                      </Button>
-                    </Link>
+                    <div className="flex lg:flex-col sm:flex-row  items-end -my-1">
+                      <Link to={`/hotel/${item.id}`}>
+                        <Button>
+                          <span className=" text-darkBlueText font-bold sm:pr-2 lg:pr-0">
+                            Reverse
+                          </span>
+                        </Button>
+                      </Link>
+                      <Link to={`/location/${item.link}`} target="_blank">
+                        <Button>
+                          <span className=" text-darkBlueText font-bold">
+                            Location
+                          </span>
+                        </Button>
+                      </Link>
+                    </div>
                   ) : null}
                 </div>
               </div>
