@@ -27,7 +27,7 @@ export const TbilisiPage = () => {
             img={item.title_Img}
           />
           <div className="m-auto w-10/12">
-            <div className="flex flex-col my-20 px-40">
+            <div className="flex flex-col my-20 px-20">
               <h1 className="text-3xl text-center mb-6 font-semibold">
                 {item.major_Title}
               </h1>

@@ -2,6 +2,7 @@ import { useAnimation, motion } from "framer-motion";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { Button } from "../../../../Components";
+import { Link } from "react-router-dom";
 
 export const PopularPlace = ({ placeData }) => {
   const [ref, inView] = useInView({
@@ -34,14 +35,14 @@ export const PopularPlace = ({ placeData }) => {
             variants={cardVariants}
             initial={{ opacity: 0, x: -70 }}
             animate={cardAnimation}
-            className="flex flex-wrap gap-4 "
+            className="grid grid-cols-2 gap-1 w-2/4 h-auto"
           >
             <motion.img
               whileHover={{ scale: 1.02 }}
               transition={{ type: "spring", velocity: 0.5 }}
               src={item.firstImg}
               alt="Popular Place"
-              className="w-[285px] h-[222px] object-cover rounded-lg drop-shadow-md  transition-all"
+              className="w-full h-full object-cover rounded-lg drop-shadow-md  transition-all"
             />
 
             <motion.img
@@ -49,38 +50,40 @@ export const PopularPlace = ({ placeData }) => {
               transition={{ type: "spring", velocity: 0.5 }}
               src={item.secondImg}
               alt="Popular Place"
-              className="w-[285px] h-[222px] object-cover rounded-lg drop-shadow-md"
+              className="w-full h-full object-cover rounded-lg drop-shadow-md"
             />
             <motion.img
               whileHover={{ scale: 1.02 }}
               transition={{ type: "spring", velocity: 0.5 }}
               src={item.thirdImg}
               alt="Popular Place"
-              className="w-[285px] h-[222px] object-cover rounded-lg drop-shadow-md"
+              className="w-full h-full object-cover rounded-lg drop-shadow-md"
             />
             <motion.img
               whileHover={{ scale: 1.02 }}
               transition={{ type: "spring", velocity: 0.5 }}
               src={item.fourthImg}
               alt="Popular Place"
-              className="w-[285px] h-[222px] object-cover rounded-lg drop-shadow-md"
+              className="w-full h-full object-cover rounded-lg drop-shadow-md"
             />
           </motion.div>
           <motion.div
             variants={cardVariants}
             initial={{ opacity: 0, x: 70 }}
             animate={cardAnimation}
-            className="flex flex-col justify-between items-end text-right mr-4 w-2/3 text-black"
+            className="flex flex-col justify-between items-end text-right ml-10 w-2/4 text-black"
           >
-            <h1 className="text-4xl font-bold ">{item.title}</h1>
-            <p className="text-lg font-light">{item.description}</p>
-            <div>
+            <h1 className="lg:text-4xl sm:text-xl font-bold ">{item.title}</h1>
+            <p className="lg:text-lg sm:text-base font-light">
+              {item.description}
+            </p>
+            <Link to="/plane">
               <Button border>
                 <span className="lg:text-lg sm:text-base text-darkBlueText">
                   Plane Tour
                 </span>
               </Button>
-            </div>
+            </Link>
           </motion.div>
         </div>
       ))}

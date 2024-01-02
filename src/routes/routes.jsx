@@ -18,7 +18,7 @@ import {
   TravelAndCreatePage,
   UniqueFolkPage,
   UniqueNaturePage,
-} from "../Pages/Home/index";
+} from "../Pages/Home/SinglePage/index";
 import {
   AjaraPage,
   GuriaPage,
@@ -31,7 +31,7 @@ import {
   SamtskheJavakhetiPage,
   ShidaKartliPage,
   TbilisiPage,
-} from "../Pages/Location/index";
+} from "../Pages/Location/SinglePages/index";
 import { TraditionalFoodLibery } from "../Pages/TraditionalFood/Components/index";
 import { GuidePortfolio } from "../Pages/Guide/Components";
 

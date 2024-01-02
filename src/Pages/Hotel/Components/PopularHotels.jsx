@@ -47,7 +47,7 @@ export const PopularHotels = ({ data }) => {
         variants={cardVariants}
         initial={{ opacity: 0, x: -70 }}
         animate={cardAnimation}
-        className="flex flex-col justify-evenly basis-5/12"
+        className="flex flex-col justify-evenly basis-10/12"
       >
         <h1 className="lg:text-4xl sm:text-lg font-bold ">{Hotel_Title}</h1>
         <p className="lg:text-lg sm:text-xs font-medium text-BlackSecondColor mt-6 ">
@@ -58,7 +58,7 @@ export const PopularHotels = ({ data }) => {
         </p>
       </motion.div>
       <motion.div
-        className=" grid grid-cols-2 gap-1"
+        className="basis-10/12 grid grid-cols-2 gap-1"
         variants={cardVariants}
         initial={{ opacity: 0, x: 70 }}
         animate={cardAnimation}
@@ -67,7 +67,7 @@ export const PopularHotels = ({ data }) => {
           <Link
             key={item.id}
             to={item.id}
-            className=" shrink lg:w-280 sm:w-[180px] lg:h-220 sm:h-[120px]  relative"
+            className=" shrink w-auto  h-auto  relative"
             onMouseEnter={() => handleMouseEnter(item.id)}
             onMouseLeave={handleMouseLeave}
           >
@@ -81,7 +81,7 @@ export const PopularHotels = ({ data }) => {
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3 }}
-                className="absolute inset-0 flex items-center justify-center backdrop-blur-lg rounded-lg "
+                className="absolute inset-0 flex items-center justify-center backdrop-blur-lg rounded-md w-full h-full"
               >
                 <motion.h1
                   initial={{ opacity: 0, y: 10 }}

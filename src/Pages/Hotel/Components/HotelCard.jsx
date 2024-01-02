@@ -28,16 +28,16 @@ export const HotelCard = ({ data, categoryFilter }) => {
               alt={item.name}
               className="object-cover rounded-t-md w-full h-52"
             />
-            <div className="grid grid-cols-3  p-4">
-              <div className="col-span-2">
-                <h1 className="text-lg font-semibold">{item.name}</h1>
-                {item.location ? (
-                  <p className="font-light">{item.location}</p>
-                ) : (
-                  <p className="font-light">Most iconic:</p>
-                )}
+            <div className="grid grid-cols-3 p-4">
+              <div className="col-span-3">
+                <h1 className="lg:text-lg sm:text-base font-semibold">
+                  {item.name}
+                </h1>
+                <p className="lg:text-base sm:text-xs font-light py-2">
+                  {item.location}
+                </p>
               </div>
-              <div className="flex flex-col  items-end -my-1">
+              <div className="col-span-3 ">
                 <Link to={`/hotel/${item.id}`}>
                   <Button>
                     <span className=" text-darkBlueText font-bold">
@@ -45,7 +45,11 @@ export const HotelCard = ({ data, categoryFilter }) => {
                     </span>
                   </Button>
                 </Link>
-                <Link to={`/location/${item.link}`} target="_blank">
+                <Link
+                  to={`/location/${item.link}`}
+                  target="_blank"
+                  className="ml-2"
+                >
                   <Button>
                     <span className=" text-darkBlueText font-bold">
                       LOCATION

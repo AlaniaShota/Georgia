@@ -88,7 +88,7 @@ export const SeasonDisplay = () => {
             variants={cardVariants}
             initial={{ opacity: 0, x: -70 }}
             animate={cardAnimation}
-            className="flex flex-col justify-evenly basis-5/12"
+            className="flex flex-col justify-between basis-10/12 lg:pr-8 sm:pr-12"
           >
             <h1 className="lg:text-4xl sm:text-lg font-bold ">
               {currentSeasonData[0].title}
@@ -96,25 +96,25 @@ export const SeasonDisplay = () => {
             <p className="lg:text-lg sm:text-xs font-medium text-BlackSecondColor">
               {currentSeasonData[0].description}
             </p>
-            <div>
+            <Link to="/plane">
               <Button border>
                 <span className="lg:text-lg sm:text-base text-darkBlueText">
                   Plane Tour
                 </span>
               </Button>
-            </div>
+            </Link>
           </motion.div>
           <motion.div
             variants={cardVariants}
             initial={{ opacity: 0, x: 70 }}
             animate={cardAnimation}
-            className="grid grid-cols-2  gap-1"
+            className="grid grid-cols-2  gap-1 basis-8/12"
           >
             {currentSeasonData[0].firstPlace.map((item) => (
               <Link
                 to={item.link}
                 key={item.id}
-                className="lg:w-280 sm:w-[180px] lg:h-220 sm:h-[120px] relative"
+                className=" shrink w-auto  h-auto relative"
                 onMouseEnter={() => handleMouseEnter(item.id)}
                 onMouseLeave={handleMouseLeave}
               >
@@ -146,7 +146,7 @@ export const SeasonDisplay = () => {
               <Link
                 to={item.link}
                 key={item.id}
-                className="lg:w-280 sm:w-[180px] lg:h-220 sm:h-[120px] relative"
+                className="w-auto h-auto relative"
                 onMouseEnter={() => handleMouseEnter(item.id)}
                 onMouseLeave={handleMouseLeave}
               >
@@ -178,7 +178,7 @@ export const SeasonDisplay = () => {
               <Link
                 to={item.link}
                 key={item.id}
-                className="lg:w-280 sm:w-[180px] lg:h-220 sm:h-[120px] relative"
+                className="w-auto h-auto relative"
                 onMouseEnter={() => handleMouseEnter(item.id)}
                 onMouseLeave={handleMouseLeave}
               >
@@ -210,7 +210,7 @@ export const SeasonDisplay = () => {
               <Link
                 to={item.link}
                 key={item.id}
-                className="lg:w-280 sm:w-[180px] lg:h-220 sm:h-[120px] relative"
+                className="w-auto h-auto relative"
                 onMouseEnter={() => handleMouseEnter(item.id)}
                 onMouseLeave={handleMouseLeave}
               >

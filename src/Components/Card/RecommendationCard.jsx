@@ -56,7 +56,7 @@ export const RecommendationCard = ({ data }) => {
           animate={inView ? "visible" : "hidden"}
           variants={titleVariants}
           transition={{ duration: 1 }}
-          className="my-20 flex w-full justify-start items-center flex-wrap h-630 border drop-shadow-xl rounded-md"
+          className="my-20 flex w-full justify-start items-center flex-wrap h-full border drop-shadow-xl rounded-md"
         >
           <img
             src={item.img}

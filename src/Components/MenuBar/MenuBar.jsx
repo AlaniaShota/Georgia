@@ -15,11 +15,6 @@ export const MenuBar = () => {
       }
     };
     window.addEventListener("scroll", handleScroll);
-
-    //მაქვს ბაგი ვფიქრობ სქროლვის ბრალია სხვა ფეიჯზე გადასვილას დასქროლილ ადგილას მტოვებს
-    // return () => {
-    //   window.removeEventListener("scroll", handleScroll);
-    // };
   });
 
   return (

@@ -41,7 +41,7 @@ export const Video = () => {
           key={item.id}
           className="flex lg:justify-between sm:justify-center items-center  lg:h-630 sm:h-470 bg-black border drop-shadow-md rounded-md mb-20"
         >
-          <div onClick={handleClick} className="w-auto h-auto">
+          <div onClick={handleClick} className="lg:w-1/2 ">
             <ReactPlayer
               url={item.video}
               playing={isPlaying}

@@ -2,7 +2,7 @@ import { Header, Section } from "../../Components/index";
 import { FoodCard } from "../../Components/Card/index";
 import foodImg from "../../assets/traditional-food-img/georgia-traditional-food-image2.jpg";
 import { Slide } from "./Components/Slide";
-import { RestaurantCard, Tamada } from "./Components";
+import { RestaurantCard, Tamada } from "./Components/Card/index";
 import {
   Page_Title,
   About_Page,

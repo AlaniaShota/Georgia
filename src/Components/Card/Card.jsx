@@ -18,7 +18,7 @@ export const Card = ({ data, title, description }) => {
         <p className="lg:text-lg sm:text-base font-light py-3 ">
           {description}
         </p>
-        <div className="grid grid-cols-3 lg:gap-16 sm:gap-5 mt-5">
+        <div className="grid grid-cols-3 lg:gap-10 sm:gap-5 mt-5">
           {data.slice(0, next).map((item) => (
             <div
               key={item.id}
@@ -28,7 +28,7 @@ export const Card = ({ data, title, description }) => {
                 src={item.img}
                 alt={item.name}
                 loading="lazy"
-                className="rounded-t-md object-cover w-full lg:h-52 sm:h-36"
+                className="rounded-t-md object-cover w-full lg:h-48 sm:h-36"
               />
               <div className="grid grid-cols-3 lg:p-4 sm:p-2 ">
                 <div className="lg:col-span-2 sm:col-span-3">

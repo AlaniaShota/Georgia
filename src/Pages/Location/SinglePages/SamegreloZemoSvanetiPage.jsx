@@ -27,7 +27,7 @@ export const SamegreloZemoSvanetiPage = () => {
             img={item.title_Img}
           />
           <div className="m-auto w-10/12">
-            <div className="flex flex-col my-20 px-40">
+            <div className="flex flex-col my-20 px-20">
               <p className="text-lg font-light text-BlackSecondColor pb-4">
                 {item.major_First_Description}
               </p>

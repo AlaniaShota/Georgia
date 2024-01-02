@@ -1,6 +1,7 @@
 import { Button } from "../../../../../Components";
 import { ButtonTour } from "../ButtonViewMore";
 import { Modal } from "../../../../../Components/Modal/index";
+import { Link } from "react-router-dom";
 
 export const TourModal = ({ isOpen, closeModal, tourData, openModalId }) => {
   return (
@@ -86,16 +87,7 @@ export const TourModal = ({ isOpen, closeModal, tourData, openModalId }) => {
                       <h1 className="text-3xl font-bold">{item.fifthTitle}</h1>
                       <p className="font-light my-9">{item.fifthDescription}</p>
                       <div>
-                        <Button border margin="4" onClick={closeModal}>
-                          <span className="text-lg text-darkBlueText">
-                            CLOSE
-                          </span>
-                        </Button>
-                        <Button border>
-                          <span className="text-lg text-darkBlueText">
-                            PLANE TOUR
-                          </span>
-                        </Button>
+                        <ButtonTour closeModal={closeModal} />
                       </div>
                     </div>
                     {item.sixthTitle ? (
@@ -108,16 +100,7 @@ export const TourModal = ({ isOpen, closeModal, tourData, openModalId }) => {
                             {item.sixthDescription}
                           </p>
                           <div>
-                            <Button border margin="4" onClick={closeModal}>
-                              <span className="text-lg text-darkBlueText">
-                                CLOSE
-                              </span>
-                            </Button>
-                            <Button border o>
-                              <span className="text-lg text-darkBlueText">
-                                PLANE TOUR
-                              </span>
-                            </Button>
+                            <ButtonTour closeModal={closeModal} />
                           </div>
                         </div>
                         <img
@@ -140,16 +123,7 @@ export const TourModal = ({ isOpen, closeModal, tourData, openModalId }) => {
                                 {item.seventhDescription}
                               </p>
                               <div>
-                                <Button border margin="4" onClick={closeModal}>
-                                  <span className="text-lg text-darkBlueText">
-                                    CLOSE
-                                  </span>
-                                </Button>
-                                <Button border>
-                                  <span className="text-lg text-darkBlueText">
-                                    PLANE TOUR
-                                  </span>
-                                </Button>
+                                <ButtonTour closeModal={closeModal} />
                               </div>
                             </div>
                             {item.eighthTitle ? (
@@ -162,20 +136,7 @@ export const TourModal = ({ isOpen, closeModal, tourData, openModalId }) => {
                                     {item.eighthDescription}
                                   </p>
                                   <div>
-                                    <Button
-                                      border
-                                      margin="4"
-                                      onClick={closeModal}
-                                    >
-                                      <span className="text-lg text-darkBlueText">
-                                        CLOSE
-                                      </span>
-                                    </Button>
-                                    <Button border>
-                                      <span className="text-lg text-darkBlueText">
-                                        PLANE TOUR
-                                      </span>
-                                    </Button>
+                                    <ButtonTour closeModal={closeModal} />
                                   </div>
                                 </div>
                                 <img
@@ -198,20 +159,7 @@ export const TourModal = ({ isOpen, closeModal, tourData, openModalId }) => {
                                         {item.ninthDescription}
                                       </p>
                                       <div>
-                                        <Button
-                                          border
-                                          margin="4"
-                                          onClick={closeModal}
-                                        >
-                                          <span className="text-lg text-darkBlueText">
-                                            CLOSE
-                                          </span>
-                                        </Button>
-                                        <Button border>
-                                          <span className="text-lg text-darkBlueText">
-                                            PLANE TOUR
-                                          </span>
-                                        </Button>
+                                        <ButtonTour closeModal={closeModal} />
                                       </div>
                                     </div>
                                   </>
