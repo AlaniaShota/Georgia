@@ -9,7 +9,7 @@ export const FinalForm = () => {
       <p>Last Name: {user.lastName}</p>
       <p>Last Name: {user.selectedHotel}</p>
       <p>{user.price}</p>
-      {/* Добавьте остальные данные для отображения */}
+      
     </div>
   );
 };
