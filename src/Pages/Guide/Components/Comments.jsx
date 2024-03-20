@@ -105,16 +105,20 @@ export const Comments = () => {
         <div key={item.id} className="flex border-b mt-1 p-4">
           <FontAwesomeIcon icon={faUser} className="mt-2 ml-2" size="xl" />
           <div className="flex flex-col ml-4">
-            <h1 className="text-xl font-medium">{item.name}</h1>
+            <h1 className="text-xl min-2xl:text-2xl font-medium">
+              {item.name}
+            </h1>
             <div className="flex items-center">
               <img
                 src={item.countryImg}
                 alt={item.country}
-                className="object-cover w-4 h-4"
+                className="object-cover w-4 h-4 min-2xl:w-8 min-2xl:h-8"
               />
-              <span className="font-light pl-1">{item.country}</span>
+              <span className="font-light pl-1 min-2xl:text-lg">
+                {item.country}
+              </span>
             </div>
-            <p className="text-lg font-light ">{item.description}</p>
+            <p className="text-lg font-light min-2xl:text-2xl">{item.description}</p>
           </div>
         </div>
       ))}

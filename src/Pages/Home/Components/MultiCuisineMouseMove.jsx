@@ -52,21 +52,21 @@ export const MultiCuisineMouseMove = () => {
         <img
           src={testImg}
           alt="Test"
-          className="bg-cover  lg:h-630 sm:h-470 rounded-md"
+          className="bg-cover min-2xl:w-full min-2xl:h-837 lg:h-630 sm:h-470 rounded-md"
         />
         <div className="fixed mr-8 bg-white rounded-full cursor-none">
           <div
             onMouseEnter={textEnter}
             onMouseLeave={textLeave}
-            className="flex flex-col justify-center items-center h-[479px] w-full cursor-none"
+            className="flex flex-col justify-center items-center min-2xl:h-600 h-[479px] w-full min-2xl:w-600 cursor-none"
           >
             <h1 className=" text-4xl  font-bold ">{Cuisine_Title}</h1>
-            <p className="w-497 py-8 px-4 text-center text-black text-lg font-light">
+            <p className="w-497 py-8 px-4 text-center text-black min-2xl:text-2xl text-lg font-light">
               {Cuisine_Description}
             </p>
             <Link to="delicious">
               <ExploreButton>
-                <span className="text-lg text-black ">EXPLORE</span>
+                <span className="text-lg min-2xl:text-2xl text-black ">EXPLORE</span>
               </ExploreButton>
             </Link>
           </div>

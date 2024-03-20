@@ -41,16 +41,16 @@ export const FoodCard = ({ filterCuisine, title, description }) => {
       animate={cardAnimation}
       className="grid grid-cols-3 my-20 gap-5 "
     >
-      <motion.div className="flex flex-col justify-between items-start cursor-default  bg-white">
-        <motion.h1 className="lg:text-2xl sm:text-lg font-bold ">
+      <motion.div className="flex flex-col justify-between items-start cursor-default h-auto min-2xl:h-737 min-2xl:justify-around  bg-white">
+        <motion.h1 className="lg:text-2xl min-2xl:text-4xl sm:text-lg font-bold ">
           {title}
         </motion.h1>
-        <motion.p className="lg:text-lg sm:text-base font-light py-3 pr-8">
+        <motion.p className="lg:text-lg min-2xl:text-3xl sm:text-base font-light py-3 pr-8">
           {description}
         </motion.p>
         <Link to="/library">
           <Button border>
-            <span className="font-medium lg:text-lg sm:text-base text-darkBlueText">
+            <span className="font-medium min-2xl:text-2xl lg:text-lg sm:text-base text-darkBlueText">
               EXPLORE MORE
             </span>
           </Button>

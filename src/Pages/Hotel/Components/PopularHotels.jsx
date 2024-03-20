@@ -47,18 +47,20 @@ export const PopularHotels = ({ data }) => {
         variants={cardVariants}
         initial={{ opacity: 0, x: -70 }}
         animate={cardAnimation}
-        className="flex flex-col justify-evenly basis-10/12"
+        className="flex flex-col justify-center basis-10/12 min-2xl:basis-9/12"
       >
-        <h1 className="lg:text-4xl sm:text-lg font-bold ">{Hotel_Title}</h1>
-        <p className="lg:text-lg sm:text-xs font-medium text-BlackSecondColor mt-6 ">
+        <h1 className="lg:text-4xl min-2xl:text-5xl sm:text-lg font-bold ">
+          {Hotel_Title}
+        </h1>
+        <p className="lg:text-lg min-2xl:text-2xl sm:text-xs font-medium text-BlackSecondColor mt-6 ">
           {Hotel_First_Description}
         </p>
-        <p className="lg:text-lg sm:text-xs font-medium text-BlackSecondColor mt-6 ">
+        <p className="lg:text-lg min-2xl:text-2xl sm:text-xs font-medium text-BlackSecondColor mt-6 ">
           {Hotel_Second_Description}
         </p>
       </motion.div>
       <motion.div
-        className="basis-10/12 grid grid-cols-2 gap-1"
+        className="basis-10/12 min-2xl:basis-9/12 grid grid-cols-2 gap-2"
         variants={cardVariants}
         initial={{ opacity: 0, x: 70 }}
         animate={cardAnimation}
@@ -87,7 +89,7 @@ export const PopularHotels = ({ data }) => {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.9, ease: easeInOut }}
-                  className="text-center text-3xl font-light text-white "
+                  className="text-center text-3xl min-2xl:text-4xl font-light text-white "
                 >
                   {item.name}
                 </motion.h1>

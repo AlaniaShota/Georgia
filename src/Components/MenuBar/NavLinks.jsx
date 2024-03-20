@@ -30,7 +30,7 @@ export const NavLinks = ({ scrolled }) => {
   ];
   return (
     <>
-      <header className="flex items-center justify-around lg:text-xl sm:text-base text-white ">
+      <header className="flex items-center justify-around min-2xl:text-2xl lg:text-xl sm:text-base text-white ">
         {links.map((item) => (
           <div
             className={`flex  flex-row  transition-colors duration-500 ease-in ${
@@ -38,7 +38,10 @@ export const NavLinks = ({ scrolled }) => {
             } ${open ? "sm:opacity-100" : "sm:hidden lg:inline"} `}
             key={item.id}
           >
-            <Link to={item.to} className=" mr-4 py-1 lg:px-4 ">
+            <Link
+              to={item.to}
+              className=" mr-4 py-1 lg:px-4 min-2xl:px-5 min-2xl:py-5 min-2xl:text-2xl"
+            >
               {item.name}
             </Link>
           </div>

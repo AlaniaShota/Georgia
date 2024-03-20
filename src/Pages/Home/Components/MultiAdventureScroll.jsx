@@ -41,14 +41,14 @@ export const MultiAdventureScroll = () => {
   ];
 
   return (
-    <div className="relative lg:h-630 sm:h-470 border drop-shadow-md rounded-md overflow-hidden my-20">
+    <div className="relative min-2xl:h-837  lg:h-630 sm:h-470 border drop-shadow-md rounded-md overflow-hidden my-20">
       <Swiper
         navigation={true}
         autoplay={{
           delay: 10000,
           disableOnInteraction: false,
         }}
-        className=" lg:h-630 sm:h-470 rounded-md"
+        className="min-2xl:h-full lg:h-630 sm:h-470 rounded-md"
         modules={[Navigation, Autoplay]}
       >
         {slides.map((item) => (
@@ -60,16 +60,20 @@ export const MultiAdventureScroll = () => {
             />
             <div className="absolute ml-40 top-0 left-0 right-0 bottom-0  flex flex-col justify-center items-start  bg-transparent opacity-100">
               <div className="flex items-center opacity-100 cursor-default ">
-                <h1 className="text-3xl text-white font-bold ">{item.title}</h1>
+                <h1 className="text-3xl min-2xl:text-5xl text-white font-bold ">
+                  {item.title}
+                </h1>
               </div>
               <div>
-                <p className="text-lg w-497 font-light py-8 pr-20 text-whiteSecondText">
+                <p className="text-lg min-2xl:text-2xl w-497 min-2xl:w-597 font-light py-8 pr-20 text-whiteSecondText">
                   {item.description}
                 </p>
               </div>
               <Link to={item.link}>
                 <ExploreButton>
-                  <span className="text-lg font-normal">EXPLORE</span>
+                  <span className="text-lg min-2xl:text-2xl font-normal">
+                    EXPLORE
+                  </span>
                 </ExploreButton>
               </Link>
             </div>

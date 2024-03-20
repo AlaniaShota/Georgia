@@ -88,17 +88,17 @@ export const SeasonDisplay = () => {
             variants={cardVariants}
             initial={{ opacity: 0, x: -70 }}
             animate={cardAnimation}
-            className="flex flex-col justify-between basis-10/12 lg:pr-8 sm:pr-12"
+            className="flex flex-col justify-center basis-10/12 min-2xl:basis-9/12 lg:pr-8 sm:pr-12"
           >
             <h1 className="lg:text-4xl sm:text-lg font-bold ">
               {currentSeasonData[0].title}
             </h1>
-            <p className="lg:text-lg sm:text-xs font-medium text-BlackSecondColor">
+            <p className="lg:text-lg min-2xl:text-2xl sm:text-xs font-medium text-BlackSecondColor my-6 ">
               {currentSeasonData[0].description}
             </p>
             <Link to="/plane">
               <Button border>
-                <span className="lg:text-lg sm:text-base text-darkBlueText">
+                <span className="lg:text-lg min-2xl:text-2xl sm:text-base text-darkBlueText">
                   Plane Tour
                 </span>
               </Button>
@@ -108,7 +108,7 @@ export const SeasonDisplay = () => {
             variants={cardVariants}
             initial={{ opacity: 0, x: 70 }}
             animate={cardAnimation}
-            className="grid grid-cols-2  gap-1 basis-8/12"
+            className="grid grid-cols-2 gap-1 basis-10/12 min-2xl:basis-9/12"
           >
             {currentSeasonData[0].firstPlace.map((item) => (
               <Link

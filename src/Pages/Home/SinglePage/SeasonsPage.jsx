@@ -33,67 +33,77 @@ export const SeasonsPage = () => {
         descriptionText={Season_Description}
         img={natureImg}
       />
-      <div className="my-20 m-auto w-10/12">
+      <div className="my-20 m-auto w-10/12 min-2xl:my-28 min-2xl:w-9/12">
         <div className="flex flex-col justify-center items-start mb-10 px-20">
-          <h1 className="mb-6 text-3xl font-bold">{Spring_Title}</h1>
+          <h1 className="mb-6 text-3xl min-2xl:text-4xl min-2xl:mb-8 font-bold">
+            {Spring_Title}
+          </h1>
           <img
             src={fallImg}
             alt="Image"
-            className="mb-6 object-cover rounded-md drop-shadow-md"
+            className="mb-6 min-2xl:mb-8 object-cover rounded-md drop-shadow-md"
           />
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 text-BlackSecondColor min-2xl:text-2xl min-2xl:mb-5">
             {Spring_First_Description}
           </p>
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 text-BlackSecondColor min-2xl:text-2xl min-2xl:mb-5">
             {Spring_Second_Description}
           </p>
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 text-BlackSecondColor min-2xl:text-2xl min-2xl:mb-5">
             {Spring_Third_Description}
           </p>
         </div>
         <div className="flex flex-col justify-center items-start my-10 px-20">
-          <h2 className="mb-6 text-3xl font-bold">{Summer_Title}</h2>
+          <h2 className="mb-6 text-3xl min-2xl:text-4xl min-2xl:mb-8 font-bold">
+            {Summer_Title}
+          </h2>
           <img
             src={springImg}
             alt="Image"
-            className="mb-6 object-cover rounded-md drop-shadow-md"
+            className="mb-6 min-2xl:mb-8 object-cover rounded-md drop-shadow-md"
           />
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 text-BlackSecondColor min-2xl:text-2xl min-2xl:mb-5">
             {Summer_First_Description}
           </p>
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 text-BlackSecondColor min-2xl:text-2xl min-2xl:mb-5">
             {Summer_Second_Description}
           </p>
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 text-BlackSecondColor min-2xl:text-2xl min-2xl:mb-5">
             {Summer_Third_Description}
           </p>
         </div>
         <div className="flex flex-col justify-center items-start my-10 px-20">
-          <h2 className="mb-6 text-3xl font-bold">{Fall_Title}</h2>
+          <h2 className="mb-6 text-3xl min-2xl:text-4xl min-2xl:mb-8 font-bold">
+            {Fall_Title}
+          </h2>
           <img
             src={summerImg}
             alt="Image"
-            className="mb-6 object-cover rounded-md drop-shadow-md"
+            className="mb-6 min-2xl:mb-8 object-cover rounded-md drop-shadow-md"
           />
-          <p className="mb-4 text-BlackSecondColor">{Fall_First_Description}</p>
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 text-BlackSecondColor min-2xl:text-2xl min-2xl:mb-5">
+            {Fall_First_Description}
+          </p>
+          <p className="mb-4 text-BlackSecondColor min-2xl:text-2xl min-2xl:mb-5">
             {Fall_Second_Description}
           </p>
         </div>
         <div className="flex flex-col justify-center items-start my-10 px-20">
-          <h2 className="mb-6 text-3xl font-bold">{Winter_Title}</h2>
+          <h2 className="mb-6 text-3xl min-2xl:text-4xl min-2xl:mb-8 font-bold">
+            {Winter_Title}
+          </h2>
           <img
             src={winterImg}
             alt="Image"
-            className="mb-6 object-cover rounded-md drop-shadow-md"
+            className="mb-6 min-2xl:mb-8 object-cover rounded-md drop-shadow-md"
           />
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 text-BlackSecondColor min-2xl:text-2xl min-2xl:mb-5">
             {Winter_First_Description}
           </p>
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 text-BlackSecondColor min-2xl:text-2xl min-2xl:mb-5">
             {Winter_Second_Description}
           </p>
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 text-BlackSecondColor min-2xl:text-2xl min-2xl:mb-5">
             {Winter_Third_Description}
           </p>
         </div>

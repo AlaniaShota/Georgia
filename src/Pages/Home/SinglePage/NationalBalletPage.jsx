@@ -24,34 +24,38 @@ export const NationalBalletPage = () => {
         descriptionText={Dance_Description}
         img={balletImg}
       />
-      <div className="my-20 m-auto w-10/12">
+      <div className="my-20 m-auto w-10/12 min-2xl:my-28 min-2xl:w-9/12">
         <div className="flex flex-col justify-center items-start mb-10 px-20">
-          <h1 className="mb-6 text-3xl font-bold">{Dance_Era_Title}</h1>
+          <h1 className="mb-6 text-3xl min-2xl:mb-8 min-2xl:text-4xl font-bold">
+            {Dance_Era_Title}
+          </h1>
           <img
             src={coupleImg}
             alt="Image"
-            className="mb-6 object-cover rounded-md drop-shadow-md"
+            className="mb-6 min-2xl:mb-8 object-cover rounded-md drop-shadow-md"
           />
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 text-BlackSecondColor min-2xl:mb-5 min-2xl:text-2xl">
             {Dance_Era_First_Description}
           </p>
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 text-BlackSecondColor min-2xl:mb-5 min-2xl:text-2xl">
             {Dance_Era_Second_Description}
           </p>
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 text-BlackSecondColor min-2xl:mb-5 min-2xl:text-2xl">
             {Dance_Era_Third_Description}
           </p>
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 text-BlackSecondColor min-2xl:mb-5 min-2xl:text-2xl">
             {Dance_Era_Fourth_Description}
           </p>
-          <h2 className="mb-6 text-3xl font-bold">{Dance_Universal_Title}</h2>
-          <p className="mb-4 text-BlackSecondColor">
+          <h2 className="mb-6 text-3xl min-2xl:mb-8 min-2xl:text-4xl font-bold">
+            {Dance_Universal_Title}
+          </h2>
+          <p className="mb-4 text-BlackSecondColor min-2xl:mb-5 min-2xl:text-2xl">
             {Dance_Universal_First_Description}
           </p>
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 text-BlackSecondColor min-2xl:mb-5 min-2xl:text-2xl">
             {Dance_Universal_Second_Description}
           </p>
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 text-BlackSecondColor min-2xl:mb-5 min-2xl:text-2xl">
             {Dance_Universal_Third_Description}
           </p>
         </div>

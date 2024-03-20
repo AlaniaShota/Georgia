@@ -64,7 +64,7 @@ export const LocationCard = () => {
         animate={cardAnimation}
         variants={cardVariants}
         initial={{ opacity: 0, y: 70 }}
-        className="grid grid-cols-10 grid-rows-2 gap-3 "
+        className="grid grid-cols-10 items-center grid-rows-2 gap-1 "
       >
         {data.map((item) => (
           <motion.div
@@ -88,7 +88,7 @@ export const LocationCard = () => {
                 className="object-cover w-full h-full rounded-md"
               />
               <div className=" absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-end items-start  bg-transparent opacity-100">
-                <h1 className="text-2xl ml-4 mb-4 text-white font-light">
+                <h1 className="text-2xl min-2xl:text-4xl ml-4 mb-4 text-white font-light">
                   {item.name}
                 </h1>
               </div>

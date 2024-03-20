@@ -14,11 +14,13 @@ export const Card = ({ data, title, description }) => {
   return (
     <>
       <div className="flex flex-col my-20 ">
-        <h1 className="lg:text-3xl sm:text-lg font-semibold ">{title}</h1>
-        <p className="lg:text-lg sm:text-base font-light py-3 ">
+        <h1 className="lg:text-3xl min-2xl:text-4xl sm:text-lg font-semibold ">
+          {title}
+        </h1>
+        <p className="lg:text-lg min-2xl:text-2xl sm:text-base font-light py-3 ">
           {description}
         </p>
-        <div className="grid grid-cols-3 lg:gap-10 sm:gap-5 mt-5">
+        <div className="grid grid-cols-3 min-2xl:gap-16 lg:gap-10 sm:gap-5 mt-5">
           {data.slice(0, next).map((item) => (
             <div
               key={item.id}
@@ -28,14 +30,16 @@ export const Card = ({ data, title, description }) => {
                 src={item.img}
                 alt={item.name}
                 loading="lazy"
-                className="rounded-t-md object-cover w-full lg:h-48 sm:h-36"
+                className="rounded-t-md object-cover w-full min-2xl:h-72 lg:h-48 sm:h-36"
               />
               <div className="grid grid-cols-3 lg:p-4 sm:p-2 ">
                 <div className="lg:col-span-2 sm:col-span-3">
                   {item.name ? (
-                    <h1 className="text-lg font-semibold">{item.name}</h1>
+                    <h1 className="text-lg min-2xl:text-2xl font-semibold">
+                      {item.name}
+                    </h1>
                   ) : null}
-                  <p className="text-xs  text-BlackSecondColor font-light">
+                  <p className="text-xs min-2xl:text-xl  text-BlackSecondColor font-light">
                     {item.location}
                   </p>
                 </div>
@@ -47,7 +51,7 @@ export const Card = ({ data, title, description }) => {
                       className="flex justify-end items-end lg:mt-6 sm:mt-1"
                     >
                       <Button>
-                        <span className="text-darkBlueText font-medium">
+                        <span className="text-darkBlueText font-medium min-2xl:text-2xl">
                           WEBSITE
                         </span>
                       </Button>
@@ -59,7 +63,7 @@ export const Card = ({ data, title, description }) => {
                       className="flex justify-end items-end my-1"
                     >
                       <Button>
-                        <span className=" text-darkBlueText font-medium">
+                        <span className="min-2xl:text-2xl text-darkBlueText font-medium">
                           CONTACT
                         </span>
                       </Button>
@@ -69,14 +73,14 @@ export const Card = ({ data, title, description }) => {
                     <div className="flex lg:flex-col sm:flex-row  items-end -my-1">
                       <Link to={`/hotel/${item.id}`}>
                         <Button>
-                          <span className=" text-darkBlueText font-bold sm:pr-2 lg:pr-0">
+                          <span className="min-2xl:text-2xl text-darkBlueText font-bold sm:pr-2 lg:pr-0">
                             Reverse
                           </span>
                         </Button>
                       </Link>
                       <Link to={`/location/${item.link}`} target="_blank">
                         <Button>
-                          <span className=" text-darkBlueText font-bold">
+                          <span className="min-2xl:text-2xl text-darkBlueText font-bold">
                             Location
                           </span>
                         </Button>
@@ -91,7 +95,9 @@ export const Card = ({ data, title, description }) => {
         <div className="flex justify-center items-center mt-10">
           {next < data?.length && (
             <Button border onClick={handleMoreItem}>
-              <span className=" text-md text-darkBlueText ">LOAD MORE</span>
+              <span className="min-2xl:text-2xl text-md text-darkBlueText ">
+                LOAD MORE
+              </span>
             </Button>
           )}
         </div>

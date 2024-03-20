@@ -17,14 +17,18 @@ export const Detail = () => {
   return (
     <>
       <Header titlePage={hotel.name} titleText={hotel.name} img={hotel.img} />
-      <div className="m-auto w-10/12 my-20">
-        <div className="flex flex-col items-start my-5">
-          <h1 className="text-3xl font-bold">{hotel.name}</h1>
-          <p className="text-lg font-medium mt-2">{hotel.location}</p>
-          <h3 className="text-lg font-bold my-2">Price: {hotel.price} Gel</h3>
+      <div className="m-auto w-10/12 my-20 min-2xl:w-9/12">
+        <div className="flex flex-col items-start my-5 min-2xl:my-10">
+          <h1 className="text-3xl min-2xl:text-4xl font-bold">{hotel.name}</h1>
+          <p className="text-lg min-2xl:text-2xl font-medium mt-2">
+            {hotel.location}
+          </p>
+          <h3 className="text-lg min-2xl:text-2xl font-bold my-2">
+            Price: {hotel.price} Gel
+          </h3>
           <Link to="/plane">
             <Button border>
-              <span className="text-darkBlueText text-lg font-medium">
+              <span className="text-darkBlueText min-2xl:text-2xl text-lg font-medium">
                 Reserve
               </span>
             </Button>
@@ -36,7 +40,7 @@ export const Detail = () => {
               src={hotel.img}
               alt={hotel.name}
               loading="lazy"
-              className="object-cover rounded-md"
+              className="object-cover w-full rounded-md"
             />
           </div>
           {hotel.imgLibrary && hotel.imgLibrary.length > 0
@@ -53,27 +57,31 @@ export const Detail = () => {
             : null}
         </div>
         <div className="flex flex-col  my-10 ">
-          <div className=" w-10/12">
-            <p>{hotel.firstDescription}</p>
-            <p className="pt-5">{hotel.secondDescription}</p>
+          <div className="min-2xl:w-9/12 w-10/12">
+            <p className="min-2xl:text-2xl">{hotel.firstDescription}</p>
+            <p className="pt-5 min-2xl:text-2xl">{hotel.secondDescription}</p>
           </div>
 
-          <div className="flex flex-wrap mt-5">
-            <span className="text-lg font-bold">Most popular facilities:</span>
+          <div className="flex flex-wrap items-center mt-5 min-2xl:mt-10">
+            <span className="text-lg min-2xl:text-2xl font-bold">
+              Most popular facilities:
+            </span>
             {hotel.facilities && hotel.facilities.length > 0
               ? hotel.facilities.map((item, index) => (
                   <ul key={index} className="pl-3 inline-flex">
-                    <li>{item}</li>
+                    <li className="min-2xl:text-2xl">{item},</li>
                   </ul>
                 ))
               : null}
           </div>
-          <div className="flex  flex-wrap mt-5">
-            <span className="text-lg font-bold">Breakfast info:</span>
+          <div className="flex items-center flex-wrap mt-5">
+            <span className="text-lg min-2xl:text-2xl font-bold">
+              Breakfast info:
+            </span>
             {hotel.breakfast && hotel.breakfast.length > 0
               ? hotel.breakfast.map((item, index) => (
                   <ul key={index} className="pl-3 inline-flex">
-                    <li>{item}</li>
+                    <li className="min-2xl:text-2xl">{item}</li>
                   </ul>
                 ))
               : null}
@@ -81,7 +89,7 @@ export const Detail = () => {
           <div className="mt-4">
             <Link to="/plane">
               <Button border>
-                <span className="text-darkBlueText text-lg font-medium">
+                <span className="text-darkBlueText text-lg min-2xl:text-2xl font-medium">
                   Reserve
                 </span>
               </Button>

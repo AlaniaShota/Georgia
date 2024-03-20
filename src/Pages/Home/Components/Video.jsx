@@ -31,7 +31,7 @@ export const Video = () => {
       title: Dance_Title,
       description: Dance_Description,
       video: danceVideo,
-      link: "unique-folk",
+      link: "national-ballet",
     },
   ];
   return (
@@ -39,9 +39,9 @@ export const Video = () => {
       {videoContent.map((item) => (
         <div
           key={item.id}
-          className="flex lg:justify-between sm:justify-center items-center  lg:h-630 sm:h-470 bg-black border drop-shadow-md rounded-md mb-20"
+          className="flex lg:justify-between sm:justify-center items-center min-2xl:h-837 lg:h-630 sm:h-470 bg-black border drop-shadow-md rounded-md mb-20"
         >
-          <div onClick={handleClick} className="lg:w-1/2 ">
+          <div onClick={handleClick} className="lg:w-1/2 min-2xl:w-auto">
             <ReactPlayer
               url={item.video}
               playing={isPlaying}
@@ -54,15 +54,15 @@ export const Video = () => {
             />
           </div>
           <div className="flex flex-col flex-wrap justify-center text-right items-end bg-transparent opacity-100 pr-10  cursor-default">
-            <h1 className="lg:text-4xl sm:text-xl sm:pl-10 lg:pl-0 sm:pb-4 lg:pb-0 text-white font-bold ">
+            <h1 className="lg:text-4xl min-2xl:text-5xl sm:text-xl sm:pl-10 lg:pl-0 sm:pb-4 lg:pb-0 text-white font-bold ">
               {item.title}
             </h1>
-            <p className="text-lg  text-whiteSecondText font-light  pl-20 py-8 md:hidden lg:flex">
+            <p className="text-lg min-2xl:text-2xl text-whiteSecondText font-light  pl-20 py-8 md:hidden lg:flex">
               {item.description}
             </p>
             <Link to={item.link}>
               <ExploreButton>
-                <span className="lg:text-lg sm:text-base font-normal">
+                <span className="lg:text-lg min-2xl:text-2xl sm:text-base font-normal">
                   EXPLORE
                 </span>
               </ExploreButton>

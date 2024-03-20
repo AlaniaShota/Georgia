@@ -37,9 +37,11 @@ export const GeorgiaMap = () => {
 
   return (
     <>
-      <div className="flex flex-col items-center my-20">
-        <h1 className=" text-4xl font-medium">{Things_To_Do_Title}</h1>
-        <p className="text-center text-lg font-light pt-3 px-56">
+      <div className="flex flex-col items-center my-20 ">
+        <h1 className=" text-4xl min-2xl:text-5xl font-medium">
+          {Things_To_Do_Title}
+        </h1>
+        <p className="text-center min-2xl:text-2xl text-lg font-light pt-3 px-56 ">
           {Things_To_Do_Description}
         </p>
       </div>
@@ -52,11 +54,11 @@ export const GeorgiaMap = () => {
               <img
                 src={popover.itemImg}
                 alt={popover.itemName}
-                className="object-cover relative h-[310px] w-full rounded-md"
+                className="object-cover relative min-2xl:h-470 h-[310px] w-full rounded-md"
               />
             ) : null}
             <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-end items-start  bg-transparent opacity-100">
-              <h1 className="text-2xl ml-4 mb-4 text-white font-light ">
+              <h1 className="text-2xl min-2xl:text-3xl ml-4 mb-4 text-white font-light ">
                 {popover.itemName}
               </h1>
             </div>

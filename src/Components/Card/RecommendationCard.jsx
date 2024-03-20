@@ -56,7 +56,7 @@ export const RecommendationCard = ({ data }) => {
           animate={inView ? "visible" : "hidden"}
           variants={titleVariants}
           transition={{ duration: 1 }}
-          className="my-20 flex w-full justify-start items-center flex-wrap h-full border drop-shadow-xl rounded-md"
+          className="my-20 flex w-full justify-start items-center flex-wrap min-2xl:h-737 h-full border drop-shadow-xl rounded-md"
         >
           <img
             src={item.img}
@@ -68,15 +68,17 @@ export const RecommendationCard = ({ data }) => {
               ref={titleTextRef}
               initial={{ opacity: 0 }}
               animate={titleAnimation}
-              className="text-left lg:text-4xl sm:text-xl text-white font-semibold"
+              className="text-left min-2xl:text-5xl lg:text-4xl sm:text-xl text-white font-semibold"
             ></motion.h1>
             <motion.div initial={{ opacity: 0 }} animate={descriptionAnimation}>
-              <p className="w-497 py-6 text-white  lg:text-lg sm:text-base font-light">
+              <p className="w-497 min-2xl:w-697 py-6 text-white min-2xl:text-2xl lg:text-lg sm:text-base font-light">
                 {item.description}
               </p>
               <Link to={item.link}>
                 <ExploreButton>
-                  <span className=" lg:text-lg sm:text-base">SEE MORE</span>
+                  <span className="min-2xl:text-2xl lg:text-lg sm:text-base">
+                    SEE MORE
+                  </span>
                 </ExploreButton>
               </Link>
             </motion.div>

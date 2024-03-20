@@ -64,9 +64,9 @@ export const Header = ({ titlePage, titleText, descriptionText, img }) => {
           <img
             src={img}
             alt={titleText}
-            className="object-cover  h-737 w-full"
+            className="object-cover min-2xl:h-screen  h-737 w-full"
           />
-          <div className="absolute h-737 w-full bg-black bg-opacity-50">
+          <div className="absolute min-2xl:h-full  h-737 w-full bg-black bg-opacity-50">
             <motion.div
               ref={ref}
               initial="hidden"
@@ -76,7 +76,7 @@ export const Header = ({ titlePage, titleText, descriptionText, img }) => {
               className="flex flex-col justify-center h-full w-1/2 ml-40 text-white "
             >
               <motion.h1
-                className="text-4xl text-white font-bold"
+                className="text-4xl min-2xl:text-5xl text-white font-bold"
                 ref={titleTextRef}
                 initial={{ opacity: 0, y: 50 }}
                 animate={titleAnimation}
@@ -84,7 +84,7 @@ export const Header = ({ titlePage, titleText, descriptionText, img }) => {
               <motion.p
                 initial={{ opacity: 0 }}
                 animate={descriptionAnimation}
-                className="text-lg mt-4 text-white "
+                className="text-lg min-2xl:text-2xl mt-4 text-white "
               >
                 {descriptionText ? descriptionText : null}
               </motion.p>

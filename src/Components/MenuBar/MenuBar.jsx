@@ -19,7 +19,7 @@ export const MenuBar = () => {
 
   return (
     <div
-      className={`shadow-md fixed w-full top-0 px-6 py-3 flex  z-50 transition-colors duration-500 ease-in 
+      className={`shadow-md fixed w-full top-0 px-6 py-3 min-2xl:px-20 min-2xl:py-5 flex  z-50 transition-colors duration-500 ease-in 
   ${scrolled ? "bg-white" : "bg-transparent"}
   `}
     >
@@ -27,7 +27,7 @@ export const MenuBar = () => {
         <Link to="/" className="flex items-center">
           <img src={iconImg} alt="Georgia Flag" className="w-10 object-cover" />
           <span
-            className={`ml-4 transition-colors text-xl duration-500 ease-in ${
+            className={`ml-4 transition-colors text-xl min-2xl:text-2xl duration-500 ease-in ${
               scrolled ? "text-black" : " text-white"
             }`}
           >

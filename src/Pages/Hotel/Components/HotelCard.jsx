@@ -16,7 +16,7 @@ export const HotelCard = ({ data, categoryFilter }) => {
 
   return (
     <>
-      <div className="grid grid-cols-3 gap-7 my-20">
+      <div className="grid grid-cols-3 gap-7 min-2xl:gap-9 my-20">
         {displayedHotel.slice(0, next).map((item) => (
           <div
             key={item.id}
@@ -26,21 +26,21 @@ export const HotelCard = ({ data, categoryFilter }) => {
               loading="lazy"
               src={item.img}
               alt={item.name}
-              className="object-cover rounded-t-md w-full h-52"
+              className="object-cover rounded-t-md w-full h-52 min-2xl:h-64"
             />
             <div className="grid grid-cols-3 p-4">
               <div className="col-span-3">
-                <h1 className="lg:text-lg sm:text-base font-semibold">
+                <h1 className="lg:text-lg min-2xl:text-2xl sm:text-base font-semibold">
                   {item.name}
                 </h1>
-                <p className="lg:text-base sm:text-xs font-light py-2">
+                <p className="lg:text-base min-2xl:text-xl sm:text-xs font-light py-2">
                   {item.location}
                 </p>
               </div>
               <div className="col-span-3 ">
                 <Link to={`/hotel/${item.id}`}>
                   <Button>
-                    <span className=" text-darkBlueText font-bold">
+                    <span className="min-2xl:text-2xl min-2xl:font-semibold text-darkBlueText font-bold">
                       REVERSE
                     </span>
                   </Button>
@@ -51,7 +51,7 @@ export const HotelCard = ({ data, categoryFilter }) => {
                   className="ml-2"
                 >
                   <Button>
-                    <span className=" text-darkBlueText font-bold">
+                    <span className="min-2xl:text-2xl min-2xl:font-semibold text-darkBlueText font-bold">
                       LOCATION
                     </span>
                   </Button>
@@ -65,7 +65,9 @@ export const HotelCard = ({ data, categoryFilter }) => {
         <div className="flex justify-center items-center my-10">
           {next < data?.length && (
             <Button border onClick={handleMoreItem}>
-              <span className=" text-md text-darkBlueText">LOAD MORE</span>
+              <span className="min-2xl:text-2xl text-md text-darkBlueText">
+                LOAD MORE
+              </span>
             </Button>
           )}
         </div>

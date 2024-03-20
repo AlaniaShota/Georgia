@@ -46,113 +46,129 @@ export const UniqueNaturePage = () => {
         descriptionText={Land_First_Description}
         img={natureImg}
       />
-      <div className="my-20 m-auto w-10/12">
+      <div className="my-20 m-auto w-10/12 min-2xl:my-28 min-2xl:w-9/12">
         <div className="flex flex-col justify-center items-start mb-10 px-20">
-          <h1 className="mb-6 text-3xl font-bold">{Land_Title}</h1>
+          <h1 className="mb-6 text-3xl min-2xl:text-4xl min-2xl:mb-8 font-bold">
+            {Land_Title}
+          </h1>
           <img
             src={hikingImg}
             alt="Image"
-            className="mb-6 object-cover rounded-md drop-shadow-md"
+            className="mb-6 object-cover min-2xl:mb-8 rounded-md drop-shadow-md"
           />
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 text-BlackSecondColor min-2xl:text-2xl min-2xl:mb-5">
             {Land_Second_Description}
           </p>
         </div>
         <div className="flex flex-col justify-center items-start my-10 px-20">
-          <h2 className="mb-6 text-3xl font-bold">{Forests_Title}</h2>
+          <h2 className="mb-6 text-3xl min-2xl:text-4xl min-2xl:mb-8 font-bold">
+            {Forests_Title}
+          </h2>
           <img
             src={goderdziImg}
             alt="Mount"
-            className="mb-6 object-cover rounded-md drop-shadow-md"
+            className="mb-6 object-cover min-2xl:mb-8 rounded-md drop-shadow-md"
           />
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 text-BlackSecondColor min-2xl:text-2xl min-2xl:mb-5">
             {Forests_First_Description}
           </p>
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 text-BlackSecondColor min-2xl:text-2xl min-2xl:mb-5">
             {Forests_Second_Description}
           </p>
         </div>
         <div className="flex flex-col justify-center items-start my-10 px-20">
-          <h2 className="mb-6 text-3xl font-bold">{Mountains_Title}</h2>
+          <h2 className="mb-6 text-3xl min-2xl:text-4xl min-2xl:mb-8 font-bold">
+            {Mountains_Title}
+          </h2>
           <img
             src={gomiImg}
             alt="Image"
-            className="mb-6 object-cover rounded-md drop-shadow-md"
+            className="mb-6 object-cover min-2xl:mb-8 rounded-md drop-shadow-md"
           />
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 text-BlackSecondColor min-2xl:text-2xl min-2xl:mb-5">
             {Mountains_First_Description}
           </p>
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 text-BlackSecondColor min-2xl:text-2xl min-2xl:mb-5">
             {Mountains_Second_Description}
           </p>
         </div>
         <div className="flex flex-col justify-center items-start my-10 px-20">
-          <h2 className="mb-6 text-3xl font-bold">
+          <h2 className="mb-6 text-3xl min-2xl:text-4xl min-2xl:mb-8 font-bold">
             {Rivers_Waterfalls_Lakes_Title}
           </h2>
           <img
             src={tabatskuriImg}
             alt="Image"
-            className="mb-6 object-cover rounded-md drop-shadow-md"
+            className="mb-6 object-cover min-2xl:mb-8 rounded-md drop-shadow-md"
           />
-          <h3 className="mb-4 text-BlackSecondColor">
+          <h3 className="mb-4 text-BlackSecondColor min-2xl:text-2xl min-2xl:mb-5">
             {Rivers_Waterfalls_Lakes_First_Description}
           </h3>
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 text-BlackSecondColor min-2xl:text-2xl min-2xl:mb-5">
             {Rivers_Waterfalls_Lakes_Second_Description}
           </p>
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 text-BlackSecondColor min-2xl:text-2xl min-2xl:mb-5">
             {Rivers_Waterfalls_Lakes_Third_Description}
           </p>
         </div>
         <div className="flex flex-col justify-center items-start my-10 px-20">
-          <h2 className="mb-6 text-3xl font-bold">{Canyons_Title}</h2>
+          <h2 className="mb-6 text-3xl min-2xl:text-4xl min-2xl:mb-8 font-bold">
+            {Canyons_Title}
+          </h2>
           <img
             src={martviliImg}
             alt="Image"
-            className="mb-6 object-cover rounded-md drop-shadow-md"
+            className="mb-6 object-cover min-2xl:mb-8 rounded-md drop-shadow-md"
           />
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 text-BlackSecondColor min-2xl:text-2xl min-2xl:mb-5">
             {Canyons_First_Description}
           </p>
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 text-BlackSecondColor min-2xl:text-2xl min-2xl:mb-5">
             {Canyons_Second_Description}
           </p>
         </div>
         <div className="flex flex-col justify-center items-start my-10 px-20">
-          <h2 className="mb-6 text-3xl font-bold">{Caves_Caverns_Title}</h2>
+          <h2 className="mb-6 text-3xl min-2xl:text-4xl min-2xl:mb-8 font-bold">
+            {Caves_Caverns_Title}
+          </h2>
           <img
             src={caveImg}
             alt="Image"
-            className="mb-6 object-cover rounded-md drop-shadow-md"
+            className="mb-6 object-cover min-2xl:mb-8 rounded-md drop-shadow-md"
           />
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 text-BlackSecondColor min-2xl:text-2xl min-2xl:mb-5">
             {Caves_Caverns_First_Description}
           </p>
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 text-BlackSecondColor min-2xl:text-2xl min-2xl:mb-5">
             {Caves_Caverns_Second_Description}
           </p>
         </div>
         <div className="flex flex-col justify-center items-start my-10 px-20">
-          <h2 className="mb-6 text-3xl font-bold">{Black_Sea_Title}</h2>
+          <h2 className="mb-6 text-3xl min-2xl:text-4xl min-2xl:mb-8 font-bold">
+            {Black_Sea_Title}
+          </h2>
           <img
             src={seaImg}
             alt="Image"
-            className="mb-6 object-cover rounded-md drop-shadow-md"
+            className="mb-6 object-cover min-2xl:mb-8 rounded-md drop-shadow-md"
           />
-          <p className="mb-4 text-BlackSecondColor">{Black_Sea_Description}</p>
+          <p className="mb-4 text-BlackSecondColor min-2xl:text-2xl min-2xl:mb-5">
+            {Black_Sea_Description}
+          </p>
         </div>
         <div className="flex flex-col justify-center items-start my-10 px-20">
-          <p className="mb-6 text-3xl font-bold">{Why_Georgia_Second_Title}</p>
+          <p className="mb-6 text-3xl min-2xl:text-4xl min-2xl:mb-8 font-bold">
+            {Why_Georgia_Second_Title}
+          </p>
           <img
             src={kaykingImg}
             alt="Image"
-            className="mb-6 object-cover rounded-md drop-shadow-md"
+            className="mb-6 object-cover min-2xl:mb-8 rounded-md drop-shadow-md"
           />
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 text-BlackSecondColor min-2xl:text-2xl min-2xl:mb-5">
             {Why_Georgia_Second_First_Description}
           </p>
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 text-BlackSecondColor min-2xl:text-2xl min-2xl:mb-5">
             {Why_Georgia_Second_Second_Description}
           </p>
         </div>

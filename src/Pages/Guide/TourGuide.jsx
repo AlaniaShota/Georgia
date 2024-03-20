@@ -26,7 +26,7 @@ export const TourGuide = () => {
         descriptionText={Description}
         img={tourGuideImg}
       />
-      <div className="m-auto w-10/12">
+      <div className="m-auto w-10/12 min-2xl:w-9/12">
         <Section
           title={Tour_Guide_Title}
           firstDescription={Tour_Guide_Description}

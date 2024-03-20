@@ -31,7 +31,7 @@ export const Hotel = () => {
         descriptionText={Page_Description}
         img={img}
       />
-      <div className="m-auto w-10/12 cursor-default">
+      <div className="m-auto w-10/12 min-2xl:w-9/12 cursor-default">
         <PopularHotels data={hotels} />
         <Calendar data={hotels} />
         <FilterButton

@@ -30,7 +30,6 @@ import {
   Why_Georgia_Second_Description,
   Why_Georgia_Third_Description,
 } from "./constants";
-import { Link } from "react-router-dom";
 import { useFoodStore } from "../../../Store/store";
 
 export const DeliciousPage = () => {
@@ -49,92 +48,106 @@ export const DeliciousPage = () => {
         descriptionText={Delicious_Cuisine_Description}
         img={deliciousImg}
       />
-      <div className="my-20 m-auto w-10/12">
+      <div className="my-20 m-auto w-10/12 min-2xl:my-28 min-2xl:w-9/12">
         <div className="flex flex-col justify-center items-start mb-10 px-20">
-          <h1 className="mb-6 text-3xl font-bold">{Wine_Wheat_Honey_Title}</h1>
+          <h1 className="mb-6  min-2xl:mb-8 text-3xl min-2xl:text-4xl font-bold">
+            {Wine_Wheat_Honey_Title}
+          </h1>
           <img
             src={supraImg}
             alt="Image"
-            className="mb-6 object-cover rounded-md drop-shadow-md w-full"
+            className="mb-6 min-2xl:mb-8 object-cover rounded-md drop-shadow-md w-full"
           />
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 min-2xl:mb-6 min-2xl:text-2xl  text-BlackSecondColor">
             {Wine_Wheat_Honey_First_Description}
           </p>
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 min-2xl:mb-6 min-2xl:text-2xl  text-BlackSecondColor">
             {Wine_Wheat_Honey_Second_Description}
           </p>
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 min-2xl:mb-6 min-2xl:text-2xl  text-BlackSecondColor">
             {Wine_Wheat_Honey_Third_Description}
           </p>
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 min-2xl:mb-6 min-2xl:text-2xl  text-BlackSecondColor">
             {Wine_Wheat_Honey_Fourth_Description}
           </p>
         </div>
         <div className="flex flex-col justify-center items-start my-10 px-20">
-          <h2 className="mb-6 text-3xl font-bold">{Kind_Of_Flavor_Title}</h2>
+          <h2 className="mb-6 min-2xl:mb-8 text-3xl min-2xl:text-4xl font-bold">
+            {Kind_Of_Flavor_Title}
+          </h2>
           <img
             src={badriganiImg}
             alt="Image"
-            className="mb-6 object-cover rounded-md drop-shadow-md"
+            className="mb-6 min-2xl:mb-8 object-cover rounded-md drop-shadow-md"
           />
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 min-2xl:mb-6 min-2xl:text-2xl  text-BlackSecondColor">
             {Kind_Of_Flavor_First_Description}
           </p>
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 min-2xl:mb-6 min-2xl:text-2xl  text-BlackSecondColor">
             {Kind_Of_Flavor_Second_Description}
           </p>
         </div>
         <div className="flex flex-col justify-center items-start my-10 px-20">
-          <h2 className="mb-6 text-3xl font-bold">
+          <h2 className="mb-6 min-2xl:mb-8 text-3xl min-2xl:text-4xl  font-bold">
             {Vegetarians_Vegans_Title}
           </h2>
           <img
             src={pkhaliImg}
             alt="Image"
-            className="mb-6 object-cover rounded-md drop-shadow-md"
+            className="mb-6 min-2xl:mb-8 object-cover rounded-md drop-shadow-md"
           />
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 min-2xl:mb-6 min-2xl:text-2xl  text-BlackSecondColor">
             {Vegetarians_Vegans_First_Description}
           </p>
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 min-2xl:mb-6 min-2xl:text-2xl  text-BlackSecondColor">
             {Vegetarians_Vegans_Second_Description}
           </p>
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 min-2xl:mb-6 min-2xl:text-2xl  text-BlackSecondColor">
             {Vegetarians_Vegans_Third_Description}
           </p>
         </div>
         <div className="flex flex-col justify-center items-start my-10 px-20">
-          <h2 className="mb-6 text-3xl font-bold">{Question_Title}</h2>
+          <h2 className="mb-6 min-2xl:mb-8 text-3xl min-2xl:text-4xl  font-bold">
+            {Question_Title}
+          </h2>
           <img
             src={khinkaliImg}
             alt="Image"
-            className="mb-6 object-cover rounded-md drop-shadow-md"
+            className="mb-6 min-2xl:mb-8 object-cover rounded-md drop-shadow-md"
           />
-          <h3 className="mb-4 text-BlackSecondColor">{Answer_First_Word}</h3>
-          <h3 className="mb-4 text-BlackSecondColor">{Answer_Second_Word}</h3>
+          <h3 className="mb-4 min-2xl:mb-6 min-2xl:text-2xl  text-BlackSecondColor">
+            {Answer_First_Word}
+          </h3>
+          <h3 className="mb-4 min-2xl:mb-6 min-2xl:text-2xl  text-BlackSecondColor">
+            {Answer_Second_Word}
+          </h3>
           {foods.slice(0, 14).map((item) => (
             <ul key={item.id}>
-              <li className="my-1 hover:text-red-500 p-1 duration-400">
+              <li className="my-1 min-2xl:my-2 hover:text-red-500 p-1 min-2xl:text-2xl  duration-400">
                 <span>{item.name}</span>
               </li>
             </ul>
           ))}
-          <p className="my-4 text-BlackSecondColor">{Answer_Description}</p>
+          <p className="my-4 min-2xl:text-2xl  text-BlackSecondColor">
+            {Answer_Description}
+          </p>
         </div>
         <div className="flex flex-col justify-center items-start my-10 px-20">
-          <h2 className="mb-6 text-3xl font-bold">{Why_Georgia_Title}</h2>
+          <h2 className="mb-6 min-2xl:mb-8 text-3xl min-2xl:text-4xl  font-bold">
+            {Why_Georgia_Title}
+          </h2>
           <img
             src={acharuliImg}
             alt="Image"
-            className="mb-6 object-cover rounded-md drop-shadow-md"
+            className="mb-6 min-2xl:mb-8 object-cover rounded-md drop-shadow-md"
           />
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 min-2xl:mb-6 min-2xl:text-2xl  text-BlackSecondColor">
             {Why_Georgia_First_Description}
           </p>
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 min-2xl:mb-6 min-2xl:text-2xl  text-BlackSecondColor">
             {Why_Georgia_Second_Description}
           </p>
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 min-2xl:mb-6 min-2xl:text-2xl  text-BlackSecondColor">
             {Why_Georgia_Third_Description}
           </p>
         </div>

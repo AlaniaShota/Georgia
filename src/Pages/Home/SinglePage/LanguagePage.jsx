@@ -31,43 +31,57 @@ export const LanguagePage = () => {
         descriptionText={Language_Description}
         img={languageImg}
       />
-      <div className="my-20 m-auto w-10/12">
-        <div className="px-20">
-          <h1 className="mb-6 text-3xl font-bold">{Stages_Title}</h1>
-          <p className="mb-4 text-BlackSecondColor">{Stages_description}</p>
-          <h2 className="mb-6 text-3xl font-bold">{Source_Title}</h2>
-          <p className="mb-4 text-BlackSecondColor">
+      <div className="my-20 m-auto w-10/12 min-2xl:my-28 min-2xl:w-9/12">
+        <div className="lg:px-20 ">
+          <h1 className="mb-6 min-2xl:mb-8 text-3xl min-2xl:text-4xl font-bold">
+            {Stages_Title}
+          </h1>
+          <p className="mb-4 min-2xl:mb-5 text-lg text-BlackSecondColor min-2xl:text-2xl">
+            {Stages_description}
+          </p>
+          <h2 className="mb-6 min-2xl:mb-8 text-3xl min-2xl:text-4xl font-bold">
+            {Source_Title}
+          </h2>
+          <p className="mb-4 min-2xl:mb-5 text-lg text-BlackSecondColor min-2xl:text-2xl">
             {Sources_First_Description}
           </p>
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 min-2xl:mb-5 text-lg text-BlackSecondColor min-2xl:text-2xl">
             {Sources_Second_Description}
           </p>
-          <h2 className="mb-6 text-3xl font-bold">{Scientific_Title}</h2>
-          <p className="mb-4 text-BlackSecondColor">
+          <h2 className="mb-6 min-2xl:mb-8 text-3xl min-2xl:text-4xl font-bold">
+            {Scientific_Title}
+          </h2>
+          <p className="mb-4 min-2xl:mb-5 text-lg text-BlackSecondColor min-2xl:text-2xl">
             {Scientific_First_Description}
           </p>
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 min-2xl:mb-5 text-lg text-BlackSecondColor min-2xl:text-2xl">
             {Scientific_Second_Description}
           </p>
-          <h2 className="mb-6 text-3xl font-bold">{Different_Writing_Title}</h2>
-          <p className="mb-4 text-BlackSecondColor">
+          <h2 className="mb-6 min-2xl:mb-8 text-3xl min-2xl:text-4xl font-bold">
+            {Different_Writing_Title}
+          </h2>
+          <p className="mb-4 min-2xl:mb-5 text-lg text-BlackSecondColor min-2xl:text-2xl">
             {Different_Writing_First_Description}
           </p>
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 min-2xl:mb-5 text-lg text-BlackSecondColor min-2xl:text-2xl">
             {Different_Writing_Second_Description}
           </p>
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 min-2xl:mb-5 text-lg text-BlackSecondColor min-2xl:text-2xl">
             {Different_Writing_Third_Description}
           </p>
-          <h2 className="mb-6 text-3xl font-bold">{Features_Title}</h2>
-          <h3 className="mb-4 text-BlackSecondColor">{Features_Word}</h3>
-          <p className="mb-4 text-BlackSecondColor">
+          <h2 className="mb-6 min-2xl:mb-8 text-3xl min-2xl:text-4xl font-bold">
+            {Features_Title}
+          </h2>
+          <h3 className="mb-4 min-2xl:mb-5 text-lg text-BlackSecondColor min-2xl:text-2xl">
+            {Features_Word}
+          </h3>
+          <p className="mb-4 min-2xl:mb-5 text-lg text-BlackSecondColor min-2xl:text-2xl">
             {Features_First_Description}
           </p>
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 min-2xl:mb-5 text-lg text-BlackSecondColor min-2xl:text-2xl">
             {Features_Second_Description}
           </p>
-          <p className="mb-4 text-BlackSecondColor">
+          <p className="mb-4 min-2xl:mb-5 text-lg text-BlackSecondColor min-2xl:text-2xl">
             {Features_Third_Description}
           </p>
         </div>

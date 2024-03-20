@@ -41,11 +41,11 @@ export const UsersComments = ({ data, img }) => {
   };
   return (
     <>
-      <h1 className="lg:text-4xl sm:text-3xl font-medium my-10">
+      <h1 className="lg:text-4xl min-2xl:text-5xl sm:text-3xl font-medium my-10">
         User`s Reviews
       </h1>
       <div className="grid grid-cols-3 gap-10">
-        <div className="col-span-2 border shadow-md rounded-md !bg-white">
+        <div className="col-span-2 border shadow-md rounded-md !bg-white ">
           {data && data.length > 0
             ? data.map((item) => (
                 <ul key={item.id} className="p-4 ">
@@ -61,9 +61,9 @@ export const UsersComments = ({ data, img }) => {
                       animate={inView ? "visible" : "hidden"}
                       variants={titleVariants}
                       transition={{ duration: 0.5 }}
-                      className="flex flex-col ml-4"
+                      className="flex flex-col ml-4 "
                     >
-                      <h1 className="lg:text-xl sm:text-lg font-medium">
+                      <h1 className="lg:text-xl sm:text-lg min-2xl:text-2xl font-medium">
                         {item.name}
                       </h1>
                       <div className="flex items-center">
@@ -77,7 +77,7 @@ export const UsersComments = ({ data, img }) => {
                       <motion.p
                         initial={{ opacity: 0 }}
                         animate={descriptionAnimation}
-                        className=" lg:text-lg sm:text-base font-light"
+                        className=" lg:text-lg sm:text-base min-2xl:text-2xl font-light"
                       >
                         {item.comment}
                       </motion.p>

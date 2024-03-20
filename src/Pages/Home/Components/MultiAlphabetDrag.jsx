@@ -54,28 +54,28 @@ export const MultiAlphabetDrag = () => {
       animate={inView ? "visible" : "hidden"}
       variants={titleVariants}
       transition={{ duration: 1 }}
-      className="flex items-center justify-between  lg:h-630 sm:h-470 border drop-shadow-md rounded-md "
+      className="flex items-center justify-between min-2xl:h-837 lg:h-630 sm:h-470 border drop-shadow-md rounded-md "
       ref={ref}
     >
       <img
         src={alphabetImg}
         alt="Alphabet"
-        className="rounded-md  lg:h-630 sm:h-470 w-full bg-cover"
+        className="rounded-md min-2xl:h-full lg:h-full sm:h-full w-full bg-cover"
       />
       <div className="absolute ml-40 bg-transparent opacity-100 cursor-default">
         <motion.h1
-          className="text-4xl text-white font-bold "
+          className="text-4xl min-2xl:text-5xl text-white font-bold "
           ref={titleTextRef}
           initial={{ opacity: 0, y: 50 }}
           animate={titleAnimation}
         />
         <motion.div initial={{ opacity: 0 }} animate={descriptionAnimation}>
-          <p className="w-497 transition-opacity  ease-in-out text-lg font-light py-8 pr-18 text-whiteSecondText">
+          <p className="w-497 min-2xl:w-597 transition-opacity  ease-in-out min-2xl:text-2xl text-lg font-light py-8 pr-18 text-whiteSecondText">
             {Alphabet_Description}
           </p>
           <Link to="language">
             <ExploreButton>
-              <span className="text-lg font-normal">EXPLORE</span>
+              <span className="text-lg min-2xl:text-2xl font-normal">EXPLORE</span>
             </ExploreButton>
           </Link>
         </motion.div>
