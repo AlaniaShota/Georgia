@@ -39,24 +39,32 @@ export const Video = () => {
       {videoContent.map((item) => (
         <div
           key={item.id}
-          className="flex justify-between items-center h-630 bg-black border drop-shadow-md rounded-md my-20"
+          className="flex lg:justify-between sm:justify-center items-center  lg:h-630 sm:h-470 bg-black border drop-shadow-md rounded-md mb-20"
         >
-          <div onClick={handleClick}>
+          <div onClick={handleClick} className="lg:w-1/2 ">
             <ReactPlayer
               url={item.video}
               playing={isPlaying}
               controls
-              style={{ objectFit: "cover", marginLeft: "20px" }}
+              style={{
+                objectFit: "cover",
+                marginLeft: "20px",
+                position: "relative",
+              }}
             />
           </div>
-          <div className="flex flex-col justify-center items-end bg-transparent opacity-100 pr-10  cursor-default">
-            <h1 className=" text-4xl text-white font-bold ">{item.title}</h1>
-            <p className="w-497 text-lg text-right text-whiteSecondText font-light  pl-7 py-8 ">
+          <div className="flex flex-col flex-wrap justify-center text-right items-end bg-transparent opacity-100 pr-10  cursor-default">
+            <h1 className="lg:text-4xl sm:text-xl sm:pl-10 lg:pl-0 sm:pb-4 lg:pb-0 text-white font-bold ">
+              {item.title}
+            </h1>
+            <p className="text-lg  text-whiteSecondText font-light  pl-20 py-8 md:hidden lg:flex">
               {item.description}
             </p>
             <Link to={item.link}>
               <ExploreButton>
-                <span className="text-lg font-normal">EXPLORE</span>
+                <span className="lg:text-lg sm:text-base font-normal">
+                  EXPLORE
+                </span>
               </ExploreButton>
             </Link>
           </div>

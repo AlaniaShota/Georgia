@@ -1,4 +1,4 @@
-import { Card } from "../../../Components";
+import { Card } from "../../../Components/Card/index";
 import { Why_Guides_Title, Why_Guides_Description } from "../constants";
 
 export const GuideCard = ({ guides }) => {

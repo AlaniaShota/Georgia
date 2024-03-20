@@ -1,5 +1,42 @@
 import { create } from "zustand";
 
+export const useReverseStore = create((set) => ({
+  user: {
+    firstName: "",
+    lastName: "",
+    age: "",
+    email: "",
+    number: "",
+    hotel: "",
+    price: "",
+    selectedGuide: "",
+    selectedHotel: "",
+  },
+
+  updateUser: (newUserData) =>
+    set((state) => ({
+      user: {
+        ...state.user,
+        ...newUserData,
+      },
+    })),
+
+  resetUser: () =>
+    set({
+      user: {
+        firstName: "",
+        lastName: "",
+        age: "",
+        email: "",
+        number: "",
+        hotel: "",
+        price: "",
+        selectedGuide: "",
+        selectedHotel: "",
+      },
+    }),
+}));
+
 export const useLocationStore = create((set) => ({
   locations: [],
   fetchLocations: async () => {
@@ -48,6 +85,22 @@ export const useSeasonsStore = create((set) => ({
   },
 }));
 
+export const useMapStore = create((set) => ({
+  maps: [],
+  fetchMaps: async () => {
+    try {
+      const response = await fetch(`/api/maps`);
+      if (!response.ok) {
+        throw new Error("Network response was not ok.");
+      }
+      const data = await response.json();
+      set({ maps: data });
+    } catch (error) {
+      console.error("There was a problem fetching the tour data:", error);
+    }
+  },
+}));
+
 export const useGuideStore = create((set) => ({
   guides: [],
   selectedGuide: null,
@@ -77,22 +130,6 @@ export const useGuideStore = create((set) => ({
     }
   },
 }));
-
-// export const useGuideIdStore = create((set) => ({
-//   guidesId: [],
-//   fetchGuideId: async () => {
-//     try {
-//       const response = await fetch(`/api/guides/:id`);
-//       if (!response.ok) {
-//         throw new Error("Network response was not ok.");
-//       }
-//       const data = await response.json();
-//       set({ guidesId: data });
-//     } catch (error) {
-//       console.error("There was a problem fetching the tour data:", error);
-//     }
-//   },
-// }));
 
 export const useRestaurantStore = create((set) => ({
   restaurants: [],

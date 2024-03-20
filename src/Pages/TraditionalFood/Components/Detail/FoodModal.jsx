@@ -1,4 +1,5 @@
-import { Button, Modal } from "../../../../Components";
+import { Button } from "../../../../Components";
+import { Modal } from "../../../../Components/Modal/index";
 
 export const FoodModal = ({ isOpen, closeModal, foods, openModalId }) => {
   return (
