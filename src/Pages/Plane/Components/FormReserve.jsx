@@ -16,7 +16,7 @@ const schema = Yup.object().shape({
   email: Yup.string().email("Invalid email").required("Required"),
   number: Yup.number().required("Required"),
   guideRecommendation: Yup.string().required(
-    "Please select guide recommendation",
+    "Please select guide recommendation"
   ),
   selectedHotel: Yup.string().required("Please select hotel"),
 });
@@ -26,7 +26,7 @@ export const FormReserve = () => {
 
   return (
     <>
-      <div className=" flex justify-center items-center my-20 drop-shadow-md">
+      <div className=" flex justify-center items-center  my-20 drop-shadow-md">
         <Formik
           initialValues={{
             firstName: "",
@@ -45,13 +45,13 @@ export const FormReserve = () => {
           }}
         >
           {({ values }) => (
-            <Form className="flex flex-col">
+            <Form className="flex flex-col ">
               <UserForm />
               <SelectGuide values={values} />
               <SelectHotel />
               <div className="flex justify-center mt-5 ">
                 <Button border margin="4" type="submit">
-                  <span className="text-darkBlueText text-lg font-medium">
+                  <span className="text-darkBlueText text-lg min-2xl:text-2xl font-medium">
                     Send
                   </span>
                 </Button>

@@ -5,7 +5,7 @@ export const Modal = ({ isOpen, closeModal, children }) => {
     <>
       {isOpen && (
         <motion.div
-          className="flex justify-center items-center px-10 z-50 bg-black fixed inset-0  bg-opacity-50 backdrop-blur-xl overflow-hidden"
+          className="flex justify-center  items-center px-10 z-50 bg-black fixed inset-0  bg-opacity-50 backdrop-blur-xl overflow-hidden"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -15,7 +15,7 @@ export const Modal = ({ isOpen, closeModal, children }) => {
           }}
           onClick={closeModal}
         >
-          <div className="snap-y  snap-mandatory overflow-y-auto h-630 rounded-md scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-300">
+          <div className="snap-y min-2xl:h-737  snap-mandatory overflow-y-auto h-630 rounded-md scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-300">
             {children}
           </div>
         </motion.div>

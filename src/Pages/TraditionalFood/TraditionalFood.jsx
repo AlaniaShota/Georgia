@@ -22,7 +22,7 @@ export const TraditionalFood = () => {
         descriptionText={About_Page}
         img={foodImg}
       />
-      <div className="m-auto w-10/12 cursor-default">
+      <div className="m-auto w-10/12 min-2xl:w-9/12 cursor-default">
         <Section
           title={Tradition_Title}
           firstDescription={Tradition_First_Description}

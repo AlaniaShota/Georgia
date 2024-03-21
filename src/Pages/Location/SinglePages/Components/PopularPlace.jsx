@@ -35,7 +35,7 @@ export const PopularPlace = ({ placeData }) => {
             variants={cardVariants}
             initial={{ opacity: 0, x: -70 }}
             animate={cardAnimation}
-            className="grid grid-cols-2 gap-1 w-2/4 h-auto"
+            className="grid grid-cols-2 gap-1 w-2/4 h-auto min-2xl:h-737"
           >
             <motion.img
               whileHover={{ scale: 1.02 }}
@@ -71,15 +71,17 @@ export const PopularPlace = ({ placeData }) => {
             variants={cardVariants}
             initial={{ opacity: 0, x: 70 }}
             animate={cardAnimation}
-            className="flex flex-col justify-between items-end text-right ml-10 w-2/4 text-black"
+            className="flex flex-col justify-center items-end text-right ml-10 w-2/4 text-black"
           >
-            <h1 className="lg:text-4xl sm:text-xl font-bold ">{item.title}</h1>
-            <p className="lg:text-lg sm:text-base font-light">
+            <h1 className="lg:text-4xl sm:text-xl min-2xl:text-5xl font-bold ">
+              {item.title}
+            </h1>
+            <p className="lg:text-lg sm:text-base min-2xl:text-2xl my-6 font-light">
               {item.description}
             </p>
             <Link to="/plane">
               <Button border>
-                <span className="lg:text-lg sm:text-base text-darkBlueText">
+                <span className="lg:text-lg min-2xl:text-2xl sm:text-base text-darkBlueText">
                   Plane Tour
                 </span>
               </Button>

@@ -6,7 +6,7 @@ import { Recommendation_Title, Recommendation_Word } from "../../constants";
 export const RestaurantCard = () => {
   const { restaurants = [] } = useRestaurantStore((state) => state.restaurants);
   const fetchRestaurants = useRestaurantStore(
-    (state) => state.fetchRestaurants,
+    (state) => state.fetchRestaurants
   );
 
   useEffect(() => {

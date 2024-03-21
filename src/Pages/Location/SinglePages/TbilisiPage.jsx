@@ -26,67 +26,67 @@ export const TbilisiPage = () => {
             descriptionText={item.title_Description}
             img={item.title_Img}
           />
-          <div className="m-auto w-10/12">
+          <div className="m-auto w-10/12 min-2xl:w-9/12">
             <div className="flex flex-col my-20 px-20">
-              <h1 className="text-3xl text-center mb-6 font-semibold">
+              <h1 className="text-3xl min-2xl:text-4xl min-2xl:mb-8 text-center mb-6 font-semibold">
                 {item.major_Title}
               </h1>
-              <p className="text-lg font-light text-BlackSecondColor pb-4">
+              <p className="text-lg font-light min-2xl:text-2xl text-BlackSecondColor pb-4">
                 {item.major_First_Description}
               </p>
-              <p className="text-lg font-light text-BlackSecondColor pb-4">
+              <p className="text-lg font-light min-2xl:text-2xl text-BlackSecondColor pb-4">
                 {item.major_Second_Description}
               </p>
-              <p className="text-lg font-light text-BlackSecondColor pb-4">
+              <p className="text-lg font-light min-2xl:text-2xl text-BlackSecondColor pb-4">
                 {item.major_Third_Description}
               </p>
               <div className="flex justify-center items-center">
                 {!viewMore && <ButtonViewMore setViewMore={setViewMore} />}
                 {viewMore && (
                   <div className="flex flex-col">
-                    <p className="text-lg font-light text-BlackSecondColor pb-4">
+                    <p className="text-lg font-light min-2xl:text-2xl text-BlackSecondColor pb-4">
                       {item.major_Fourth_Description}
                     </p>
                     <img
                       loading="lazy"
                       src={item.minor_Img}
                       alt={item.major_Title}
-                      className="rounded-md my-6 object-cover "
+                      className="rounded-md my-6 min-2xl:my-8 object-cover "
                     />
-                    <p className="text-lg font-light text-BlackSecondColor pb-4">
+                    <p className="text-lg font-light min-2xl:text-2xl text-BlackSecondColor pb-4">
                       {item.minor_First_Description}
                     </p>
-                    <p className="text-lg font-light text-BlackSecondColor pb-4">
+                    <p className="text-lg font-light min-2xl:text-2xl text-BlackSecondColor pb-4">
                       {item.minor_Second_Description}
                     </p>
-                    <p className="text-lg font-light text-BlackSecondColor pb-4">
+                    <p className="text-lg font-light min-2xl:text-2xl text-BlackSecondColor pb-4">
                       {item.minor_Third_Description}
                     </p>
-                    <p className="text-lg font-light text-BlackSecondColor pb-4">
+                    <p className="text-lg font-light min-2xl:text-2xl text-BlackSecondColor pb-4">
                       {item.minor_Fourth_Description}
                     </p>
                     <img
                       loading="lazy"
                       src={item.minor_Second_Img}
                       alt={item.major_Title}
-                      className="rounded-md my-6 object-cover "
+                      className="rounded-md my-6 min-2xl:my-8 object-cover "
                     />
-                    <p className="text-lg font-light text-BlackSecondColor pb-4">
+                    <p className="text-lg font-light min-2xl:text-2xl text-BlackSecondColor pb-4">
                       {item.minor_Fifth_Description}
                     </p>
-                    <p className="text-lg font-light text-BlackSecondColor pb-4">
+                    <p className="text-lg font-light min-2xl:text-2xl text-BlackSecondColor pb-4">
                       {item.minor_Sixth_Description}
                     </p>
                     <img
                       loading="lazy"
                       src={item.minor_Third_Img}
                       alt={item.major_Title}
-                      className="rounded-md my-6 object-cover "
+                      className="rounded-md my-6 min-2xl:my-8 object-cover "
                     />
-                    <p className="text-lg font-light text-BlackSecondColor pb-4">
+                    <p className="text-lg font-light min-2xl:text-2xl text-BlackSecondColor pb-4">
                       {item.minor_Seventh_Description}
                     </p>
-                    <p className="text-lg font-light text-BlackSecondColor pb-4">
+                    <p className="text-lg font-light min-2xl:text-2xl text-BlackSecondColor pb-4">
                       {item.minor_Eighth_Description}
                     </p>
                   </div>

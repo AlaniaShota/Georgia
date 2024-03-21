@@ -16,7 +16,7 @@ export const SelectHotel = () => {
       <Field
         as="select"
         name="selectedHotel"
-        className="border rounded-md py-2 px-3 w-full"
+        className="border rounded-md py-2 px-3 min-2xl:py-4 min-2xl:px-10 min-2xl:text-xl w-full"
       >
         <option value="" disabled>
           Select a Hotel
@@ -30,7 +30,9 @@ export const SelectHotel = () => {
 
       <ErrorMessage name="selectedHotel">
         {(msg) => (
-          <div className="px-2 text-red-700 font-medium mt-1">{msg}</div>
+          <div className="px-2 min-2xl:text-xl text-red-700 font-medium mt-1">
+            {msg}
+          </div>
         )}
       </ErrorMessage>
     </div>

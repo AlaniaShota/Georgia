@@ -26,76 +26,76 @@ export const ShidaKartliPage = () => {
             descriptionText={item.title_Description}
             img={item.title_Img}
           />
-          <div className="m-auto w-10/12">
+          <div className="m-auto w-10/12 min-2xl:w-9/12">
             <div className="flex flex-col my-20 px-20">
-              <h1 className="text-3xl mb-6 font-semibold">
+              <h1 className="text-3xl mb-6 min-2xl:text-4xl min-2xl:mb-8 font-semibold">
                 {item.major_Title}
               </h1>
               <img
                 src={item.major_Img}
                 alt={item.major_Title}
-                className="rounded-md my-6 object-cover "
+                className="rounded-md my-6 min-2xl:my-8 object-cover "
               />
-              <p className="text-lg font-light text-BlackSecondColor pb-4">
+              <p className="text-lg font-light min-2xl:text-2xl text-BlackSecondColor pb-4">
                 {item.major_First_Description}
               </p>
-              <p className="text-lg font-light text-BlackSecondColor pb-4">
+              <p className="text-lg font-light min-2xl:text-2xl text-BlackSecondColor pb-4">
                 {item.major_Second_Description}
               </p>
-              <h1 className="text-3xl mb-6 font-semibold">
+              <h1 className="text-3xl mb-6 min-2xl:text-4xl min-2xl:mb-8 font-semibold">
                 {item.major_Historical_Title}
               </h1>
-              <p className="text-lg font-light text-BlackSecondColor pb-4">
+              <p className="text-lg font-light min-2xl:text-2xl text-BlackSecondColor pb-4">
                 {item.major_Historical_First_Description}
               </p>
-              <p className="text-lg font-light text-BlackSecondColor pb-4">
+              <p className="text-lg font-light min-2xl:text-2xl text-BlackSecondColor pb-4">
                 {item.major_Historical_Second_Description}
               </p>
               <img
                 src={item.major_Historical_Img}
                 alt={item.major_Historical_Title}
-                className="rounded-md my-6 object-cover "
+                className="rounded-md my-6 min-2xl:my-8 object-cover "
               />
-              <p className="text-lg font-light text-BlackSecondColor pb-4">
+              <p className="text-lg font-light min-2xl:text-2xl text-BlackSecondColor pb-4">
                 {item.major_Historical_Third_Description}
               </p>
-              <p className="text-lg font-light text-BlackSecondColor pb-4">
+              <p className="text-lg font-light min-2xl:text-2xl text-BlackSecondColor pb-4">
                 {item.major_Historical_Fourth_Description}
               </p>
               <div className="flex justify-center items-center">
                 {!viewMore && <ButtonViewMore setViewMore={setViewMore} />}
                 {viewMore && (
                   <div className="flex flex-col">
-                    <h1 className="text-3xl mb-6 font-semibold">
+                    <h1 className="text-3xl mb-6 min-2xl:text-4xl min-2xl:mb-8 font-semibold">
                       {item.minor_Sights_Title}
                     </h1>
                     <img
                       src={item.minor_Sights_Img}
                       alt={item.minor_Sights_Title}
-                      className="rounded-md my-6 object-cover "
+                      className="rounded-md my-6 min-2xl:my-8 object-cover "
                     />
-                    <p className="text-lg font-light text-BlackSecondColor pb-4">
+                    <p className="text-lg font-light min-2xl:text-2xl text-BlackSecondColor pb-4">
                       {item.minor_Sights_First_Description}
                     </p>
-                    <p className="text-lg font-light text-BlackSecondColor pb-4">
+                    <p className="text-lg font-light min-2xl:text-2xl text-BlackSecondColor pb-4">
                       {item.minor_Sights_Second_Description}
                     </p>
-                    <p className="text-lg font-light text-BlackSecondColor pb-4">
+                    <p className="text-lg font-light min-2xl:text-2xl text-BlackSecondColor pb-4">
                       {item.minor_Sights_Third_Description}
                     </p>
-                    <h1 className="text-3xl mb-6 font-semibold">
+                    <h1 className="text-3xl mb-6 min-2xl:text-4xl min-2xl:mb-8 font-semibold">
                       {item.minor_Nature_Title}
                     </h1>
-                    <p className="text-lg font-light text-BlackSecondColor pb-4">
+                    <p className="text-lg font-light min-2xl:text-2xl text-BlackSecondColor pb-4">
                       {item.minor_Nature_Description}
                     </p>
-                    <h1 className="text-3xl mb-6 font-semibold">
+                    <h1 className="text-3xl mb-6 min-2xl:text-4xl min-2xl:mb-8 font-semibold">
                       {item.minor_Cuisine_Title}
                     </h1>
-                    <p className="text-lg font-light text-BlackSecondColor pb-4">
+                    <p className="text-lg font-light min-2xl:text-2xl text-BlackSecondColor pb-4">
                       {item.minor_Cuisine_First_Description}
                     </p>
-                    <p className="text-lg font-light text-BlackSecondColor pb-4">
+                    <p className="text-lg font-light min-2xl:text-2xl text-BlackSecondColor pb-4">
                       {item.minor_Cuisine_Second_Description}
                     </p>
                   </div>

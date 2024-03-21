@@ -12,7 +12,7 @@ export const Plane = () => {
         titleText={Title_Page}
         descriptionText={Description_Page}
       />
-      <div className="m-auto w-1/2 my-20">
+      <div className="m-auto w-1/2 my-20 min-2xl:h-screen flex justify-center items-center">
         <FormReserve />
       </div>
     </>

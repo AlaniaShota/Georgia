@@ -29,7 +29,7 @@ export const TraditionalFoodLibery = () => {
         descriptionText={Dishes_Description}
         img={foodImg}
       />
-      <div className="m-auto w-10/12 my-20 ">
+      <div className="m-auto w-10/12 min-2xl:w-9/12 my-20 ">
         <FilterButton
           search={setSearchParams}
           categoryFilter={categoryFilter}

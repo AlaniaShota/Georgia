@@ -22,7 +22,7 @@ export const SelectGuide = ({ values }) => {
       <Field
         as="select"
         name="selectedGuide"
-        className="border rounded-md py-2 px-3 w-full"
+        className="border rounded-md py-2 px-3 min-2xl:py-4 min-2xl:px-10 min-2xl:text-xl w-full"
       >
         <option value="" disabled>
           Select a Guide
@@ -35,12 +35,14 @@ export const SelectGuide = ({ values }) => {
       </Field>
       <ErrorMessage name="guideRecommendation">
         {(msg) => (
-          <div className="px-2 text-red-700 font-medium mt-1">{msg}</div>
+          <div className="px-2 min-2xl:text-xl text-red-700 font-medium mt-1">
+            {msg}
+          </div>
         )}
       </ErrorMessage>
 
-      <div className="flex items-center mt-3">
-        <span className="mr-2">Recommendations</span>
+      <div className="flex items-center mt-3  min-2xl:text-2xl">
+        <span className="mr-2 min-2xl:mr-4">Recommendations</span>
         <label>
           <Field type="radio" name="guideRecommendation" value="recommended" />
           Yes
@@ -60,7 +62,7 @@ export const SelectGuide = ({ values }) => {
           <Field
             as="select"
             name="selectedLocation"
-            className="border rounded-md py-2 px-3 mt-2 w-full"
+            className="border rounded-md py-2 px-3 mt-2 min-2xl:py-4 min-2xl:px-10 min-2xl:text-xl w-full"
           >
             <option value="" disabled>
               Select Your Desired Location
@@ -87,7 +89,7 @@ export const SelectGuide = ({ values }) => {
           <Field
             as="select"
             name="selectedLocation"
-            className="border rounded-md py-2 px-3 mt-2 w-full"
+            className="border rounded-md py-2 px-3 mt-2 w-full min-2xl:py-4 min-2xl:px-10 min-2xl:text-xl"
           >
             <option value="" disabled>
               Select Your Desired Location

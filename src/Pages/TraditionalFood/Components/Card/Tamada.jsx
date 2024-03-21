@@ -53,24 +53,24 @@ export const Tamada = () => {
       animate={inView ? "visible" : "hidden"}
       variants={titleVariants}
       transition={{ duration: 1 }}
-      className="my-20 flex w-full justify-start items-center flex-wrap h-630 border drop-shadow-xl rounded-md"
+      className="my-20 flex w-full justify-start items-center flex-wrap h-630 min-2xl:h-737 border drop-shadow-xl rounded-md"
     >
       <img
         src={tamadaImg}
         alt="Tamada"
-        className="w-full object-cover rounded-md h-630 "
+        className="w-full h-full object-cover rounded-md  "
       />
       <div className="absolute ml-20 opacity-100 ">
         <motion.h1
           ref={titleTextRef}
           initial={{ opacity: 0 }}
           animate={titleAnimation}
-          className="text-left text-4xl text-white font-semibold"
+          className="text-left text-4xl min-2xl:text-5xl text-white font-semibold"
         ></motion.h1>
         <motion.p
           initial={{ opacity: 0 }}
           animate={descriptionAnimation}
-          className="w-497 pt-6 text-white text-lg font-light"
+          className="w-497 min-2xl:w-697 pt-6 text-white text-lg min-2xl:text-2xl font-light"
         >
           {Tamada_Description}
         </motion.p>

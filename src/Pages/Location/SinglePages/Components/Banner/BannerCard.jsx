@@ -43,15 +43,11 @@ export const BannerCard = ({ bannerData, openModal }) => {
             initial={{ opacity: 0, y: 70 }}
             animate={cardAnimation}
             key={item.id}
-            className="relative  cursor-pointer "
+            className="relative cursor-pointer "
             onClick={() =>
               openModal(
                 item.id,
-                item.monument
-                  ? "monument"
-                  : item.culture
-                    ? "culture"
-                    : "nature",
+                item.monument ? "monument" : item.culture ? "culture" : "nature"
               )
             }
             onMouseEnter={() => handleMouseEnter(item.id)}
@@ -60,7 +56,7 @@ export const BannerCard = ({ bannerData, openModal }) => {
             <motion.img
               src={item.bgImg}
               alt="Georgia"
-              className={`object-cover drop-shadow-lg rounded-lg lg:h-470 sm:h-auto `}
+              className={`object-cover drop-shadow-lg rounded-lg w-full min-2xl:h-737 lg:h-470 sm:h-auto `}
             />
             {hoveredIndex === item.id && (
               <motion.div

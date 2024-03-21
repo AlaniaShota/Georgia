@@ -3,7 +3,7 @@ import { Button } from "../../../Components/index";
 
 export const FilterButton = ({ search, categoryFilter }) => {
   return (
-    <div className="mb-5 mt-20 text-lg text-darkBlueText">
+    <div className="mb-5 mt-20 text-lg min-2xl:text-2xl text-darkBlueText">
       <Button border margin="4" onClick={() => search({ type: "SAVORY PIE" })}>
         <span>SAVORY PIE</span>
       </Button>
@@ -26,7 +26,7 @@ export const FilterButton = ({ search, categoryFilter }) => {
           transition={{ type: "spring", stiffness: 400, damping: 17 }}
           onClick={() => search({})}
         >
-          <span className="text-black">Clear filter</span>
+          <span className="text-black min-2xl:text-2xl">Clear filter</span>
         </motion.button>
       ) : null}
     </div>

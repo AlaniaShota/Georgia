@@ -16,7 +16,9 @@ export const RecommendationRestaurant = () => {
 
   return (
     <div className="mt-8 ">
-      <h1 className="pl-4 text-3xl font-medium">Recommendation Restaurant</h1>
+      <h1 className="pl-4 text-3xl min-2xl:text-4xl font-medium">
+        Recommendation Restaurant
+      </h1>
       <div className="grid grid-cols-3 gap-12 mt-5">
         {randomData.map((item) => (
           <div
