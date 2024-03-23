@@ -40,7 +40,7 @@ export const NavLinks = ({ scrolled }) => {
           >
             <Link
               to={item.to}
-              className=" mr-4 py-1 lg:px-4 min-2xl:px-5 min-2xl:py-5 min-2xl:text-2xl"
+              className=" md:px-2 py-1 lg:px-4 min-2xl:px-5 min-2xl:py-5 min-2xl:text-3xl"
             >
               {item.name}
             </Link>
